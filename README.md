@@ -7,7 +7,9 @@ Right now, though the data has been collected, it has not been synthesized into 
 
 Polar Deep Search Engine for CSCI401 Capstone
 
-######Set up
+#####Set up
+
+######Maven
 
 You will need to install Maven if you do not have it already.
 
@@ -17,9 +19,19 @@ For mac, if you have homebrew:
 
 `brew install maven`
 
+######Install static dependencies
+
 `npm install`
 
 `bower install` or `node_modules/.bin/bower install`
+
+You need to place static dependencies in resources:
+
+`cp bower_components/startbootstrap-scrolling-nav/css src/main/resources/edu/usc/polar/`
+
+`cp bower_components/startbootstrap-scrolling-nav/js src/main/resources/edu/usc/polar/`
+
+`cp bower_components/startbootstrap-scrolling-nav/fonts src/main/resources/edu/usc/polar/`
 
 ######Start command:
 

@@ -7,8 +7,36 @@ Right now, though the data has been collected, it has not been synthesized into 
 
 Polar Deep Search Engine for CSCI401 Capstone
 
-Start command:
+#####Set up
 
-mvn jetty:run
+######Maven
 
-Then navigate to http://http://localhost:8080/
+You will need to install Maven if you do not have it already.
+
+https://maven.apache.org/
+
+For mac, if you have homebrew:
+
+`brew install maven`
+
+######Install static dependencies
+
+`npm install`
+
+`bower install` or `node_modules/.bin/bower install`
+
+You need to place static dependencies in resources:
+
+`cp bower_components/startbootstrap-scrolling-nav/css src/main/resources/edu/usc/polar/`
+
+`cp bower_components/startbootstrap-scrolling-nav/js src/main/resources/edu/usc/polar/`
+
+`cp bower_components/startbootstrap-scrolling-nav/fonts src/main/resources/edu/usc/polar/`
+
+######Start command:
+
+From the root directory, run:
+
+`mvn jetty:run`
+
+Then navigate to http://localhost:8080/

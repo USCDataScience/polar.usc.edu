@@ -7,8 +7,24 @@ Right now, though the data has been collected, it has not been synthesized into 
 
 Polar Deep Search Engine for CSCI401 Capstone
 
-Start command:
+######Set up
 
-mvn jetty:run
+You will need to install Maven if you do not have it already.
 
-Then navigate to http://http://localhost:8080/
+https://maven.apache.org/
+
+For mac, if you have homebrew:
+
+`brew install maven`
+
+`npm install`
+
+`bower install` or `node_modules/.bin/bower install`
+
+######Start command:
+
+From the root directory, run:
+
+`mvn jetty:run`
+
+Then navigate to //http://localhost:8080/

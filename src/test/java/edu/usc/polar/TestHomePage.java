@@ -1,4 +1,4 @@
-package edu.usc;
+package edu.usc.polar;
 
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;

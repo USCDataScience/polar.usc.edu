@@ -27,4 +27,4 @@ From the root directory, run:
 
 `mvn jetty:run`
 
-Then navigate to //http://localhost:8080/
+Then navigate to http://localhost:8080/

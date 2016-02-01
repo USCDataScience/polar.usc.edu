@@ -1,0 +1,26 @@
+{
+  "name": "polar.usc.edu",
+  "description": "Polar Deep Search Engine",
+  "main": "index.js",
+  "authors": [
+    "llsposto <llsposto@usc.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/USCDataScience/polar.usc.edu",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "startbootstrap-scrolling-nav": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git#~1.0.4"
+  }
+}

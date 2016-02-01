@@ -1,0 +1,22 @@
+{
+  "name": "polar.usc.edu",
+  "version": "1.0.0",
+  "description": "Polar Deep Search Engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USCDataScience/polar.usc.edu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/USCDataScience/polar.usc.edu/issues"
+  },
+  "homepage": "https://github.com/USCDataScience/polar.usc.edu#readme",
+  "devDependencies": {
+    "bower": "^1.7.7"
+  }
+}

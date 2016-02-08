@@ -21,6 +21,7 @@
   "dependencies": {
     "jquery": "~2.2.0",
     "bootstrap": "~3.3.6",
-    "startbootstrap-scrolling-nav": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git#~1.0.4"
+    "startbootstrap-scrolling-nav": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git#~1.0.4",
+    "d3": "~3.5.14"
   }
 }

@@ -93,6 +93,7 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<finalName>Polar</finalName>
 		<resources>
 			<resource>
 				<filtering>false</filtering>
@@ -109,7 +110,7 @@
 				</excludes>
 			</resource>
 			<resource>
-				<filtering>true</filtering>
+				<filtering>false</filtering>
 				<directory>src/main/webapp</directory>
 			</resource>
 		</resources>
@@ -127,6 +128,10 @@
 				<excludes>
 					<exclude>**/*.java</exclude>
 				</excludes>
+			</testResource>
+			<testResource>
+				<filtering>false</filtering>
+				<directory>src/main/webapp</directory>
 			</testResource>
 		</testResources>
 		<plugins>
@@ -164,6 +169,16 @@
 				<configuration>
 					<downloadSources>true</downloadSources>
 					<wtpversion>${wtp.version}</wtpversion>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager</url>
+					<server>localhost</server>
+					<path>/</path>
 				</configuration>
 			</plugin>
 		</plugins>

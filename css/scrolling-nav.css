@@ -4,6 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ @font-face {
+     font-family: National; src: url('//www.usc.edu/assets/fonts/NationalWeb-Regular.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.svg') format('svg');
+     font-weight: 500;
+     font-style: normal;
+ }
+
 body {
     width: 100%;
     height: 100%;
@@ -20,6 +26,7 @@ html {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+        background-color: #990000;
     }
 
     .top-nav-collapse {
@@ -28,33 +35,86 @@ html {
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
     padding-top: 150px;
+    color: white;
     text-align: center;
     background: #fff;
+    background-image: url('../images/iceberg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
 }
 
 .about-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #fff;
 }
 
-.services-section {
+.features-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+
+.search-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
 }
 
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+/* Custom CSS */
+
+/* Navbar */
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #FFCC00;
+}
+
+/* Buttons */
+
+.btn-default {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #FFCC00;
+    border-color: #fff;
+}
+
+.btn-default:focus,
+.btn-default.focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+/* Other classes */
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+#intro .title {
+    font-size: 50px;
 }

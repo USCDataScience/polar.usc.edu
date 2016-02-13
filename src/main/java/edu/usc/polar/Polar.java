@@ -1,16 +1,19 @@
 package edu.usc.polar;
+import org.apache.wicket.ajax.json.JSONObject;
+import org.apache.wicket.ajax.json.JSONTokener;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.head.JavaScriptHeaderItem;
 import org.apache.wicket.markup.head.OnDomReadyHeaderItem;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.request.resource.PackageResourceReference;
-import org.apache.wicket.resource.TextTemplateResourceReference;
-import org.apache.wicket.util.lang.Objects;
+import org.apache.wicket.util.io.IOUtils;
 import org.apache.wicket.util.template.PackageTextTemplate;
 import org.apache.wicket.util.template.TextTemplate;
 
+import java.io.InputStream;
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Polar extends WebPage {
     private static final String jsResourceFiles[] = {
@@ -18,12 +21,22 @@ public class Polar extends WebPage {
             "bootstrap.min.js",
             "jquery.easing.min.js",
             "scrolling-nav.js",
-            "d3.min.js"
+            "d3.min.js",
+            "topojson.v1.min.js"
     };
     private static final String jsResourceTemplates[] = {
-        "d3examples.js"
+        "d3/Team6.js", "d3/Team29.js"
     };
+
+    private JSONObject jsonObject;
+
     public Polar() {
+        try {
+            jsonObject = getJsonObject("data/D3ExampleSetup.json");
+        } catch (Exception e) {
+            jsonObject = null;
+            e.printStackTrace();
+        }
         add(new Label("message", "Polar Deep Search Engine!"));
     }
 
@@ -35,13 +48,42 @@ public class Polar extends WebPage {
             response.render(js);
         }
 
-        for (String jsTemplate : jsResourceTemplates) {
-            TextTemplate template = new PackageTextTemplate(Polar.class, "js/" + jsTemplate, "text/javascript", "UTF-8");
-            HashMap<String, Object> vars = new HashMap<String, Object>();
-            vars.put("dataResourcePath", urlFor(new PackageResourceReference(getClass(), "data/data.tsv"), null));
-            String jsString = template.asString(vars);
-            response.render(OnDomReadyHeaderItem.forScript(jsString));
+        if (jsonObject != null) {
+            Iterator<?> keys = jsonObject.keys();
+            // Iterate Team Member Keys
+            while (keys.hasNext()) {
+                String key = (String) keys.next();
+                // Load the javascript file template
+                TextTemplate template = new PackageTextTemplate(Polar.class, String.format("js/d3/Team%1$s.js", key), "text/javascript", "UTF-8");
+                HashMap<String, Object> vars = new HashMap<String, Object>();
+                // get file values
+                JSONObject filesObject = jsonObject.getJSONObject(key);
+                Iterator<?> fileKeys = filesObject.keys();
+                while (fileKeys.hasNext()) {
+                    String fKey = (String) fileKeys.next();
+                    String filename = filesObject.getString(fKey);
+                    vars.put(fKey, urlFor(new PackageResourceReference(getClass(), String.format("data/%1$s", filename)), null));
+                }
+                String jsString = template.asString(vars);
+                response.render(OnDomReadyHeaderItem.forScript(jsString));
+            }
+//            for (String jsTemplate : jsResourceTemplates) {
+//                // get the team # key
+//
+//                TextTemplate template = new PackageTextTemplate(Polar.class, "js/" + jsTemplate, "text/javascript", "UTF-8");
+//                HashMap<String, Object> vars = new HashMap<String, Object>();
+//
+//                // Read the vars from jsonObject
+//                vars.put("dataResourcePath", urlFor(new PackageResourceReference(getClass(), "data/Team6ex1.tsv"), null));
+//                String jsString = template.asString(vars);
+//                response.render(OnDomReadyHeaderItem.forScript(jsString));
+//            }
         }
     }
 
+    public static JSONObject getJsonObject(String filename) throws Exception {
+        InputStream is = Polar.class.getResourceAsStream(filename);
+        String jsonString = IOUtils.toString(is);
+        return new JSONObject(jsonString);
+    }
 }

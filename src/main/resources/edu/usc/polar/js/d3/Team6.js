@@ -23,13 +23,13 @@ $(document).on('ready', function() {
         .x(function (d) { return x(d.date); })
         .y(function (d) { return y(d.close); });
 
-    var svg = d3.select("#d3example1").append("svg")
+    var svg = d3.select("#Team6ex1").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.tsv("${dataResourcePath}", function (error, data) {
+    d3.tsv("${data1.tsv}", function (error, data) {
         data.forEach(function (d) {
             d.date = parseDate(d.date);
             d.close = +d.close;

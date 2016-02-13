@@ -1,7 +1,18 @@
 $(document).on('ready', function() {
+    $(window).on('resize', function() {
+        var svg = $("#Team6ex1").find('svg').get(0);
+        d3.select(svg).remove();
+        drawGraph();
+    });
+
+    drawGraph();
+});
+
+function drawGraph() {
     var margin = { top: 20, right: 20, bottom: 30, left: 50 },
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        width = $('#Team6ex1').width() - margin.left - margin.right,
+    //height = 500 - margin.top - margin.bottom;
+        height = width * 0.52;
 
     var parseDate = d3.time.format("%d-%b-%y").parse;
 
@@ -58,4 +69,4 @@ $(document).on('ready', function() {
             .attr("class", "line")
             .attr("d", line);
     });
-});
+}

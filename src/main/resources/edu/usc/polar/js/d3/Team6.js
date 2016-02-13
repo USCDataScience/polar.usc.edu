@@ -1,7 +1,18 @@
 $(document).on('ready', function() {
+    $(window).on('resize', function() {
+        var svg = $("#Team6ex1").find('svg').get(0);
+        d3.select(svg).remove();
+        drawGraph();
+    });
+
+    drawGraph();
+});
+
+function drawGraph() {
     var margin = { top: 20, right: 20, bottom: 30, left: 50 },
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        width = $('#Team6ex1').width() - margin.left - margin.right,
+    //height = 500 - margin.top - margin.bottom;
+        height = width * 0.52;
 
     var parseDate = d3.time.format("%d-%b-%y").parse;
 
@@ -23,13 +34,13 @@ $(document).on('ready', function() {
         .x(function (d) { return x(d.date); })
         .y(function (d) { return y(d.close); });
 
-    var svg = d3.select("#d3example1").append("svg")
+    var svg = d3.select("#Team6ex1").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.tsv("${dataResourcePath}", function (error, data) {
+    d3.tsv("${data1.tsv}", function (error, data) {
         data.forEach(function (d) {
             d.date = parseDate(d.date);
             d.close = +d.close;
@@ -58,4 +69,4 @@ $(document).on('ready', function() {
             .attr("class", "line")
             .attr("d", line);
     });
-});
+}

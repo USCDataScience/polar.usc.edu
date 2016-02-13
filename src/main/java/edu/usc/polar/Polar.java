@@ -1,6 +1,5 @@
 package edu.usc.polar;
 import org.apache.wicket.ajax.json.JSONObject;
-import org.apache.wicket.ajax.json.JSONTokener;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.head.JavaScriptHeaderItem;
 import org.apache.wicket.markup.head.OnDomReadyHeaderItem;
@@ -24,17 +23,14 @@ public class Polar extends WebPage {
             "d3.min.js",
             "topojson.v1.min.js"
     };
-    private static final String jsResourceTemplates[] = {
-        "d3/Team6.js", "d3/Team29.js"
-    };
 
-    private JSONObject jsonObject;
+    private JSONObject jsonSetUpObject;
 
     public Polar() {
         try {
-            jsonObject = getJsonObject("data/D3ExampleSetup.json");
+            jsonSetUpObject = getJsonObject("data/D3ExampleSetup.json");
         } catch (Exception e) {
-            jsonObject = null;
+            jsonSetUpObject = null;
             e.printStackTrace();
         }
         add(new Label("message", "Polar Deep Search Engine!"));
@@ -48,8 +44,8 @@ public class Polar extends WebPage {
             response.render(js);
         }
 
-        if (jsonObject != null) {
-            Iterator<?> keys = jsonObject.keys();
+        if (jsonSetUpObject != null) {
+            Iterator<?> keys = jsonSetUpObject.keys();
             // Iterate Team Member Keys
             while (keys.hasNext()) {
                 String key = (String) keys.next();
@@ -57,7 +53,7 @@ public class Polar extends WebPage {
                 TextTemplate template = new PackageTextTemplate(Polar.class, String.format("js/d3/Team%1$s.js", key), "text/javascript", "UTF-8");
                 HashMap<String, Object> vars = new HashMap<String, Object>();
                 // get file values
-                JSONObject filesObject = jsonObject.getJSONObject(key);
+                JSONObject filesObject = jsonSetUpObject.getJSONObject(key);
                 Iterator<?> fileKeys = filesObject.keys();
                 while (fileKeys.hasNext()) {
                     String fKey = (String) fileKeys.next();
@@ -67,17 +63,6 @@ public class Polar extends WebPage {
                 String jsString = template.asString(vars);
                 response.render(OnDomReadyHeaderItem.forScript(jsString));
             }
-//            for (String jsTemplate : jsResourceTemplates) {
-//                // get the team # key
-//
-//                TextTemplate template = new PackageTextTemplate(Polar.class, "js/" + jsTemplate, "text/javascript", "UTF-8");
-//                HashMap<String, Object> vars = new HashMap<String, Object>();
-//
-//                // Read the vars from jsonObject
-//                vars.put("dataResourcePath", urlFor(new PackageResourceReference(getClass(), "data/Team6ex1.tsv"), null));
-//                String jsString = template.asString(vars);
-//                response.render(OnDomReadyHeaderItem.forScript(jsString));
-//            }
         }
     }
 

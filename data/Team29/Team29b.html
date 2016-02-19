@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Celgene Facet View</title>
+<style>
+  .country:hover{
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.text{
+  font-size:10px;
+  text-transform:capitalize;
+}
+.hidden { 
+  display: none; 
+}
+div.tooltip {
+  color: #222; 
+  background: #fff; 
+  padding: .5em; 
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px; 
+  box-shadow: 0px 0px 2px 0px #a6a6a6; 
+  opacity: 0.9; 
+  position: absolute;
+}
+.graticule {
+  fill: none;
+  stroke: #bbb;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+.equator {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+ 
+</style>
+    <script type="text/javascript" src="vendor/jquery/1.7.1/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/linkify/1.0/jquery.linkify-1.0-min.js"></script>
+    <link rel="stylesheet" href="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.css">
+    <script type="text/javascript" src="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.min.js"></script>
+    <link rel="stylesheet" href="css/facetview.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" ></script>
+    <script src="js/timeSeriesChart.js"></script>
+    <script src="js/startEndSlider.js"></script>
+    <script src="js/clickPanel.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
+    <script src="js/Map.js"></script>
+      <script type="text/javascript">
+  // set up form
+  $('.demo-form').submit(function(e) {
+    e.preventDefault();
+    var $form = $(e.target);
+    var _data = {};
+    $.each($form.serializeArray(), function(idx, item) {
+      _data[item.name] = item.value;
+    });
+    $('.facet-view-here').facetview(_data);
+  });
+  </script>
+</head>
+
+<body>
+
+<div class="container"> 
+  <div class="content">
+      <div class="page-header">
+    </div>
+  <div class="facet-view-simple">            
+    <div id="facetview">              
+      <div class="row-fluid">                
+        <div class="span3">                  
+        <div id="facetview_filters">
+          <h3>Filter by</h3>                     
+          <div class="btn-group">                     
+          <a id="dropdownMenu" style="text-align:left; min-width:70%;" class="facetview_filtershow btn" rel="year_exact">           
+          <i class="icon-plus"></i> Select Data</a>                       
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>                 
+          <ul id="dataChange" class="dropdown-menu">                         
+          <li onclick="drawMap('data/glaciers_geodata.csv','Glaciers Data')"><a class="facetview_sort facetview_count">Glaciers Data</a></li>                         
+          <li onclick="drawMap('data/icesheet_geodata.csv','Icesheet Data')"><a class="facetview_sort facetview_term">Icesheet Data</a></li>                       
+          <li onclick="drawMap('data/snowmelt_geodata.csv','Snowmelt Data')"><a class="facetview_sort facetview_rcount">Snowmelt Data</a></li>  
+          </ul>         
+          </div>             
+        </div>            
+        </div>            
+      </div>
+<div id="container">
+  <p></p>
+</div>
+</div>
+</body>
+</html>

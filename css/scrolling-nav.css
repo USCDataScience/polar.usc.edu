@@ -3,13 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
- @font-face {
-     font-family: National; src: url('//www.usc.edu/assets/fonts/NationalWeb-Regular.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.svg') format('svg');
-     font-weight: 500;
-     font-style: normal;
- }
-
 body {
     width: 100%;
     height: 100%;
@@ -71,50 +64,4 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: #fff;
-}
-
-/* Custom CSS */
-
-/* Navbar */
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    background-color: #FFCC00;
-}
-
-/* Buttons */
-
-.btn-default {
-    color: #fff;
-    background-color: transparent;
-    border-color: #fff;
-}
-
-.btn-default:hover {
-    color: #fff;
-    background-color: #FFCC00;
-    border-color: #fff;
-}
-
-.btn-default:focus,
-.btn-default.focus {
-    color: #fff;
-    background-color: transparent;
-    border-color: #fff;
-}
-
-/* Other classes */
-
-.vertical-center {
-    min-height: 100%;
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-}
-
-#intro .title {
-    font-size: 50px;
 }

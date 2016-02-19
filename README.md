@@ -110,3 +110,12 @@ OR
 In the Banana dashboard just configure the name of the field the widgets should be querying (the cog icon at the top of each panel).
 
 In relation to our Wicket project, Banana is already placed in the project's webapp folder (`src/main/webapp`). You can see the same results of the Banana dashboard at <http://localhost:8080/banana/#/dashboard> when you start the tomcat/jetty server.
+
+#### Pushing to gh-pages
+Here's a straightforward guide to adding things to the static github page:
+
+* Checkout the gh-pages branch
+* Modify whatever files you want to
+* Commit and push to `origin gh-pages`
+
+That's it.

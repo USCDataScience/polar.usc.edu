@@ -1,0 +1,126 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FacetView</title>
+    <style type="text/css">
+    .btn .caret {
+    margin-top: 7px;
+    margin-left: 0;
+    margin-bottom: 7;}
+  </style>
+  
+  <script type="text/javascript" src="vendor/jquery/1.7.1/jquery-1.7.1.min.js"></script>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="vendor/linkify/1.0/jquery.linkify-1.0-min.js"></script>
+  <link rel="stylesheet" href="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.css">
+  <script type="text/javascript" src="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.min.js"></script>
+  <link rel="stylesheet" href="css/facetview.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+    $('.demo-form').submit(function(e) {
+    e.preventDefault();
+    var $form = $(e.target);
+    var _data = {};
+    $.each($form.serializeArray(), function(idx, item) {
+      _data[item.name] = item.value;
+    });
+    $('.facet-view-here').facetview(_data);
+    });
+    });
+  </script>
+</head>
+
+<body>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script src="js/timeSeriesChart.js"></script>
+<script src="js/startEndSlider.js"></script>
+<script src="js/clickPanel.js"></script>
+<script src="js/topojson.v1.min.js"></script>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">FacetView</a>
+      <ul class="nav">
+       <li><a href="timeSeriesChart.html">Q1</a></li>
+       <li><a href="worldmap-template.html">Q2</a></li>
+       <li><a href="widget3.html">Q3</a></li>
+       <li><a href="widget4.html">Q4</a></li>
+       <li><a href="widget5.html">Q5</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container"> 
+  <div class="content">
+  <div class="facet-view-simple">            
+    <div id="facetview">              
+      <div class="row-fluid">                
+        <div class="span3">                  
+        <div id="facetview_filters">
+          <h3>Filter by</h3>                     
+          <div class="btn-group">                     
+          <a id="dropdownMenu" style="text-align:left; min-width:70%;" class="facetview_filtershow btn" rel="year_exact">           
+          <i class="icon-plus"></i> Select Data</a>                       
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>                 
+          <ul id="dataChange" class="dropdown-menu">                         
+          <li onclick="drawTimeSeries('data/warming_times.csv','Warming')"><a class="facetview_sort facetview_count">Warming </a></li>                         
+          <li onclick="drawTimeSeries('data/oceancirculation_times.csv','Ocean Circulation')"><a class="facetview_sort facetview_term">Ocean Circulation</a></li>                       
+          <li onclick="drawTimeSeries('data/co2_times.csv','Carbon Dioxide')"><a class="facetview_sort facetview_rcount">Carbon Dioxide</a></li>  
+          </ul>         
+          </div>             
+        </div>            
+        </div>            
+      </div>
+<div id="chart"></div>
+</div>
+
+</div>
+
+
+<script>
+
+function drawTimeSeries(dataFile, anchorText) {
+      $('#dropdownMenu').text(anchorText);
+      jQuery('#chart').html('');
+      var elt = d3.select("#chart");
+      var width = 720, 
+        height = 400;
+      var tsData = null;
+
+      var rangeWidget = d3.elts.startEndSlider().minRange(1*365*24*3600*1000); 
+      var clickPanel = d3.elts.makeClickPanel();
+      var tsChart = d3.elts.timeSeriesChart()
+                  .width(width)
+                  .height(height)
+                  .x(function(d) { return d3.time.format("%Y%m%d").parse(d[0]); })
+                  .xAxisText(function(textSel) {  // rotates x labels 90 degrees
+                    textSel.attr("x", -29)
+                      .attr("y", 0)
+                      .attr("dy", ".35em")
+                      .attr("transform", "rotate(-90)")
+                      .style("text-anchor", "end");
+                  })
+                  .fillColor(["#F2F2F6", "#A8A8E0"])
+                  .strokeColor("#602080")
+                  .rangeWidget(rangeWidget)
+                  .notesMarkerClick(function(elt, note, closeHandler) {
+                    clickPanel(elt, note && ("<h3>"+note.title+"</h3><p>"+note.desc+"</p>"+(note.link&&"<a href='"+note.link+"' target='_blank'>Read more&hellip;</a>")), closeHandler);
+                  })
+                  .margin({top: 40, right: 25, bottom: 80, left: 70});
+      tsChart.yAxis(tsChart.yAxis().tickFormat(d3.format(".0f")));
+
+      d3.csv(dataFile, function(data) {
+        d3.csv('data/wheatNotes.csv', function(notes) {
+          tsChart.notes(notes);
+          tsData = _.map(data, function(d) { return [d.date, d.price] });
+          elt.datum(tsData).call(tsChart);
+        });
+      });
+}
+//drawTimeSeries();
+</script>
+</body></html>

@@ -1,25 +1,24 @@
+  /*
+  var myMap = {}; 
+
+
+    $.getJSON("http://localhost:8983/solr/collection1/select/?q={!func}sum(mul(sum(tf(content,oil),tf(content,gas)),5),tf(content,Arctic))&wt=json&json.wrf=?&indent=true&rows=1000&facet=true&facet.field=location", function(result){
+    //  alert(result['facet_counts']['facet_fields']['location']);
+       var count = 0;
+      var key;
+      $.each(result['facet_counts']['facet_fields']['location'], function(v,d){
+        if(count%2===0)
+          key = d;
+        else
+        {
+          if(d>200&&key.indexOf("Earth")===-1)
+            if(key.indexOf("earth")===-1)
+          myMap[key] = d;
+        }  
+        count++;
+      });
+  */
 $(document).ready(function () {
-    var  totalNum = 0;
-    var totalNumQuery = "http://localhost:8983/solr/collection1/select?q=Region:%22North%20America%22";
-
-    $.getJSON( totalNumQuery + "&indent=true&wt=json", {})
-    .done(function( data ) {
-      totalNum = data.response.numFound;      
-    });
-
-  var counts = [0,0,0,0,0];
-  var topics = ["Ice", "Sea","Human","Space","Education"];
-  for(var i = 0; i < 5; i++){
-    var query = totalNumQuery + "AND%20(title:*" + topics[i] + 
-            "*%20OR%20Description:*" + topics[i] + "*%20OR%20Content:*" + topics[i]
-        + "*)%20&indent=true&wt=json";
-
-    $.getJSON( query, {})
-    .done(function( data ) {
-      counts[i] = ((data.response.numFound)/totalNum).toFixed(4)*100;
-    });
-  }
-
   var bubbleChart = new d3.svg.BubbleChart({
     supportResponsive: true,
     //container: => use @default
@@ -33,15 +32,20 @@ $(document).ready(function () {
     //intersectInc: use @default
     //circleColor: use @default
 
-
+/*
+    earth,1509,Earth,734,Arctic,554,United States,356,Arctic Ocean,319,Alaska,301,Republic of Benin,286,Canada,242,Commonwealth of Australia,230,Colorado,152,Tennessee,131,Europe,122,Oak Ridge,121,Russian Federation,112,People’s Republic of China,110,California,108,Federative Republic of Brazil,99,*/
 
     data: {
       items: [
-        {text: "Space", count: 0.66},
-        {text: "Ice", count:0.59},
-        {text: "Sea", count: 0.51},
-        {text: "Human", count: 0.77},
-        {text: "Education", count: 0.44},
+        {text: "Arctic", count: "554"},
+        {text: "United States", count: "356"},
+        {text: "Arctic Ocean", count: "319"},
+        {text: "Alaska", count: "301"},
+        {text: "Republic of Benin", count: "286"},
+        {text: "Canada", count: "242"},
+        {text: "Commonwealth of Australia", count: "230"},
+        {text: "Colorado", count: "152"},
+        {text: "Tennessee", count: "131"},
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}
@@ -50,7 +54,7 @@ $(document).ready(function () {
       {
         name: "central-click",
         options: {
-          //text: "(See more detail)",
+          
           style: {
             "font-size": "12px",
             "font-style": "italic",
@@ -60,6 +64,7 @@ $(document).ready(function () {
             "fill": "white"
           },
           attr: {dy: "65px"},
+          
         }
       },
       {

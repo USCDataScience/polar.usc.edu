@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>CSCI 572 D3</title>
+
+  <script type="text/javascript" src="vendor/jquery/1.7.1/jquery-1.7.1.min.js"></script>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="vendor/linkify/1.0/jquery.linkify-1.0-min.js"></script>
+  <link rel="stylesheet" href="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.css">
+  <script type="text/javascript" src="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.min.js"></script>
+  <link rel="stylesheet" href="css/facetview.css">
+  <link rel="stylesheet" href="css/facetStyle.css">
+  <style>
+   #nav {
+    line-height:30px;
+    background-color:#ffffff;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px; 
+  }
+  #section {
+    width:350px;
+    float:left;
+    padding:10px; 
+  }
+  </style>
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">D3 Visualizations</a>
+      <ul class="nav">
+        <li><a href="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/banana/src/index.html#/dashboard">Banana Dashboard</a></li>
+        <li><a href="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/facetview/index.html">FacetView</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="content">
+      <h3>
+      What time-based trends exist for discussion of oil, iron and other natural resources in the Arctic region? Are documents and topics collocated to geographic region?
+      </h3>
+      <iframe src="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/d3/vis4.html" width="100%" height="550px"></iframe>
+      <h3>
+      How many regions of interest are represented by the data you collected? Identify geographic “regions” as e.g., Circumpolar Arctic region, Antarctica and the Southern Ocean. Can you use the distribution of your documents to represent territories?
+      </h3>
+      <iframe src="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/d3/vis1.html" width="100%" height="690px"></iframe>
+      <h3>
+      Can you predict areas in which there are national security interests (maritime/air/sea and land)? Which areas and why?
+      </h3>
+      <iframe src="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/d3/vis6.html" width="100%" height="570px"></iframe>
+      <h3>
+      Is there a trend with respect to science data and measurements related to Climate Change? Is it time-based and/or geographic region based? What areas show a high document relevancy for sea-ice extent and decline?
+      </h3>
+      <iframe src="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/d3/vis3.html" width="100%" height="570px"></iframe>
+      <h3>
+      Can you observe any trends in the usage of instruments over time?
+      </h3>
+      <iframe src="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/d3/vis5.html" width="100%" height="390px"></iframe>
+      <h3>
+      What are the important scientific and biological concepts found in the dataset? Which major regions are being studied?
+      </h3>
+      <iframe src="http://ec2-54-149-243-158.us-west-2.compute.amazonaws.com:9000/solr/d3/vis2.html" width="100%" height="1190px"></iframe>
+  </div>
+
+</div>
+
+</body>
+</html>
+

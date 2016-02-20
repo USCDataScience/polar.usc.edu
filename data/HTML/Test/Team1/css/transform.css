@@ -1,0 +1,26 @@
+.Blues .q0-9{fill:rgb(247,251,255)}
+.Blues .q1-9{fill:rgb(222,235,247)}
+.Blues .q2-9{fill:rgb(198,219,239)}
+.Blues .q3-9{fill:rgb(158,202,225)}
+.Blues .q4-9{fill:rgb(107,174,214)}
+.Blues .q5-9{fill:rgb(66,146,198)}
+.Blues .q6-9{fill:rgb(33,113,181)}
+.Blues .q7-9{fill:rgb(8,81,156)}
+.Blues .q8-9{fill:rgb(8,48,107)}
+.Blues .q9-9{fill:rgb(7,46,106)}
+
+
+.background {fill: none;
+  pointer-events: all;
+}
+
+#countries {
+  fill: #aaa;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+#countries .active {
+  fill: orange;
+}
+

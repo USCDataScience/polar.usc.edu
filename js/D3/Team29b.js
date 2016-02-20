@@ -38,7 +38,7 @@ function drawMap(dataFile,anchorText) {
 
   }
 
-  d3.json("../../data/world-topo-min.json", function(error, world) {
+  d3.json("../../data/Team29.world-topo-min.json", function(error, world) {
 
     var countries = topojson.feature(world, world.objects.countries).features;
     topo = countries;

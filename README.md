@@ -1,4 +1,4 @@
-## D3 Visualizations
+#D3 Visualizations
 
-# Getting familiar with the file organization
+##Getting familiar with the file organization
 

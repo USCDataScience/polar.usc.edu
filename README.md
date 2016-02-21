@@ -32,18 +32,18 @@ A lot of these files already exist in our Github page repo. Files such as bootst
 ######Explicit Steps
 - Copy timeSeriesChart.html over to the TEST folder. Open the copied version of the file.
 - Remove unnecessary links/scripts in timeSeriesChart.html
-- Place all necessary js and css files into the appropriate folders. You will have to change the src (for scripts) or href (for links) links in timeSeriesChart.html so that they navigate to the correct folder. For this example, you can simply put all the css and js dependencies in the TEST folder so that linking it will be easier. For example, I can just place bootstrap.min.js in TEST, and then in timeSeriesChart.html I can change the src to src="bootstramp.min.js".
+- For this example, you can simply put all the css and js dependencies in the TEST folder so that linking it will be easier. For example, I can just place bootstrap.min.js in TEST, and then in timeSeriesChart.html I can change the src to src="bootstramp.min.js". However, when placing it in the main Github page, put all necessary js and css files into the appropriate folders. You will have to change the src (for scripts) or href (for links) links in timeSeriesChart.html so that they navigate to the correct folder. 
  
 #####Javascript Function Extraction
 
 After all the js and css dependencies are sorted out, we can move on to separating the javascript functions from the HTML files. As you can see in timeSeriesChart.html near the bottom of the file, there is a function drawTimeSeries() javascript function. We want to remove this and place it in a separate file. I simply just cut and paste it into another file and named it Team29c.js. It can be found in js/D3/Team29c.js if you want to reference it. 
 
 - Remove any javascript functions, typically found near the bottom of the HTML file, and place it in a separate file. Place this file in the js/D3 directory. Once again in this test example, put the js file in the TEST folder. 
-- 
+- Locate any file dependencies within the javascript function file. In this example, you can see that it needs wheatNotes.csv. Take wheatNotes.csv and place it in the TEST folder and change the link within the js file.
 
 #####Data dependencies
+Now that everything above has been finished, the D3 example should display. However, it needs data to plot the necessary points. If you go back and look at timeSeriesChart.html and scroll down to the "facet-view-simple" class divison, you can see it calls the function drawTimeSeries which we extracted out in the previous step. It passes in data files as an argument so we need to take these files and place them in the appropriate folder as well. For the main github page, these files would go in the data directory.
 
-Now that everything above has been finish, the D3
  
 
 

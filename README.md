@@ -35,7 +35,7 @@ A lot of these files already exist in our Github page repo. Files such as bootst
 
 - Place all necessary js and css files into the appropriate folders. You will have to change the src (for scripts) or href (for links) links in timeSeriesChart.html so that they navigate to the correct folder. For this example, you can simply put all the css and js dependencies in the TEST folder so that linking it will be easier. For example, I can just place bootstrap.min.js in TEST, and then in timeSeriesChart.html I can change the src to src="bootstramp.min.js".
  
-#######Javascript Function Extraction
+######Javascript Function Extraction
 
 After all the js and css dependencies are sorted out, we can move on to separating the javascript functions from the HTML files. As you can see in timeSeriesChart.html near the bottom of the file, there is a function drawTimeSeries() javascript function. We want to remove this and place it in a separate file. I simply just cut and paste it into another file and named it Team29c.js. It can be found in js/D3/Team29c.js if you want to reference it. 
 

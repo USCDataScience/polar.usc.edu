@@ -42,6 +42,8 @@ Now that everything above has been finished, the D3 example should display. Howe
 - Remove any javascript functions, typically found near the bottom of the HTML file, and place it in a separate file. Place this file in the js/D3 directory. Once again in this test example, put the js file in the TEST folder. 
 - Locate any file dependencies within the javascript function file. In this example, you can see that it needs wheatNotes.csv. Take wheatNotes.csv and place it in the TEST folder and change the link within the js file.
 - Locate any data dependencies within the main HTML page and place them in the appropriate folder. In this example, we will need warming_times.csv, oceancirculation_times.csv, and co2_times.csv. Take these files and place them in the TEST folder.
+- Open timeSeriesChart.html with Firefox if you are doing it locally. Browsers such as Chrome and Safari do not allow loading files through a local directory unless you change around some settings. If you upload these files to a local server or the GitHub IO website, you can use Chrome or Safari.
+- The D3 example should now be displaying.
  
 
 

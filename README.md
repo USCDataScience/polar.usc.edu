@@ -23,6 +23,7 @@ Every team has a different structure for their project. To add to the confusion,
 
 I took three widgets from Team 29's project. One of them Lorraine had demonstrated on the main Wicket page, worldmap-template.html. The other two that I extracted were timeSeriesChart.html and widget3.html. I will just focus on timeSeriesChart.html.
 
-
+#####Open up timeSeriesChart.html.
+You will
 
 

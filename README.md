@@ -17,11 +17,6 @@ Every team has a different structure for their project. To add to this confusion
 
 ####Example: Extracting D3 stuff from Team 29
 -------------------
-- Create a folder on your Desktop. This will be our test folder and I will reference it as TEST.
-- Navigate to Team 29's HW3 Submission folder. 
-- Follow this path: TOTAL_PRERNAN_CSCI572_HW_DATAVIS/src
-- Extract hw3.zip and open the hw3 folder
-
 I took three widgets from Team 29's project. One of them Lorraine had demonstrated on the main Wicket page, worldmap-template.html. The other two that I extracted were timeSeriesChart.html and widget3.html. I will just focus on timeSeriesChart.html. Explicit steps can be found at the bottom of this example. The following information is a description of the overall process.
 
 #####Javascript/CSS File Dependencies
@@ -36,6 +31,10 @@ After all the js and css dependencies are sorted out, we can move on to separati
 The D3 example should now be displaying. However, it needs data to plot the necessary points. If you go back and look at timeSeriesChart.html and scroll down to the "facet-view-simple" class divison, you can see it calls the function drawTimeSeries which we extracted out above. It passes in data files as an argument so we need to take these files and place them in the appropriate folder. A majority of teams have offline data stored in the form of csv, json, or txt. For the main GitHub repo, these files would go in the data directory.
 
 ######Explicit Steps
+- Create a folder on your Desktop. This will be our test folder and I will reference it as TEST.
+- Navigate to Team 29's HW3 Submission folder. 
+- Follow this path: TOTAL_PRERNAN_CSCI572_HW_DATAVIS/src
+- Extract hw3.zip and open the hw3 folder
 - Copy timeSeriesChart.html over to the TEST folder. Open the copied version of the file.
 - Remove unnecessary links/scripts in timeSeriesChart.html
 - For this example, you can simply put all the css and js dependencies in the TEST folder so that linking it will be easier. For example, I can just place bootstrap.min.js in TEST, and then in timeSeriesChart.html I can change the src to src="bootstramp.min.js". However, when placing it in the main Github page, put all necessary js and css files into the appropriate folders. You will have to change the src (for scripts) or href (for links) links in timeSeriesChart.html so that they navigate to the correct folder. 

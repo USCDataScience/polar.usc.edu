@@ -27,7 +27,7 @@ I took three widgets from Team 29's project. One of them Lorraine had demonstrat
 - Open timeSeriesChart.html
 
 
-Immediately, you will see a ton of scripts and links that this HTML file is dependent on. However, a majority of these links are actually not needed and can be removed. If you compare this to the file to the file I altered, which can be found in the Github page's data/HTML/Team29SiteC.html, you can see the number of links that I removed.
+Immediately, you will see a ton of scripts and links that this HTML file is dependent on. However, a majority of these links are actually not needed and can be removed. If you compare this to the file to the file I altered, which can be found in the Github page's data/HTML/Team29SiteC.html, you can see links that I removed.
 
 - Remove unnecessary links/scripts in timeSeriesChart.html
 

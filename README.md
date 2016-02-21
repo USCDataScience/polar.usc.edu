@@ -36,13 +36,13 @@ A majority of teams have offline data stored in the form of csv, json, or txt so
 3. Follow this path: TOTAL_PRERNAN_CSCI572_HW_DATAVIS/src
 4. Extract hw3.zip and open the hw3 folder
 5. Copy timeSeriesChart.html over to the TEST folder. Open the copied version of the file.
-6. Remove unnecessary links/scripts in timeSeriesChart.html
-7. For this example, you can simply put all the css and js dependencies in the TEST folder so that linking it will be easier. For example, I can just place bootstrap.min.js in TEST, and then in timeSeriesChart.html I can change the src to src="bootstramp.min.js". However, when placing it in the main Github page, put all necessary js and css files into the appropriate folders. You will have to change the src (for scripts) or href (for links) links in timeSeriesChart.html so that they navigate to the correct folder. 
-8. Remove any javascript functions, typically found near the bottom of the HTML file, and place it in a separate file. Place this file in the js/D3 directory. Once again in this test example, put the js file in the TEST folder. 
-9. Locate any file dependencies within the javascript function file. In this example, you can see that it needs wheatNotes.csv. Take wheatNotes.csv and place it in the TEST folder and change the link within the js file.
-10. Locate any data dependencies within the main HTML page and place them in the appropriate folder. In this example, we will need warming_times.csv, oceancirculation_times.csv, and co2_times.csv. Take these files and place them in the TEST folder.
-11. Open timeSeriesChart.html with Firefox if you are doing it locally. Browsers such as Chrome and Safari do not allow loading files through a local directory unless you change around some settings. If you upload these files to a local server or the GitHub IO website, you can use Chrome or Safari.
-12. The D3 example should now be displaying.
+6. Remove unnecessary links/scripts in timeSeriesChart.html. Reference data/HTML/Team29SiteC.html in our GitHub branch for help.
+7. Place all css/js dependencies in their appropriate folder. You will have to change the src (for scripts) or href (for links) links in timeSeriesChart.html so that they navigate to the correct folder. For this example, you can simply put all the css and js dependencies in the TEST folder so that linking will be easier. For example, I see that bootstrap.min.js is a dependency. I can just place bootstrap.min.js in TEST, and then in timeSeriesChart.html I can change the src to src="bootstramp.min.js".
+8. Remove any javascript functions, typically found near the bottom of the HTML file, and place it in a separate file. Place this file in the js/D3 directory. Once again in this test example, put the js file in the TEST folder. See js/D3/Team29c.js in our GitHub branch for help.
+9. Locate any data dependencies within the javascript function file. This is different from the main html file. In this example, you should be looking at Team29c.js or whatever you called your separated javascript function file. You can see that it needs wheatNotes.csv. Therefore, take wheatNotes.csv and place it in the TEST folder and change the link within the js file.
+10. Locate any data dependencies within the main HTML page and place them in the appropriate folder. In this example, we will need warming_times.csv, oceancirculation_times.csv, and co2_times.csv. Take these files and place them in the TEST folder and change the links accordingly in the HTML file.
+11. The D3 visualization should be working now. Open timeSeriesChart.html with Firefox if you are doing it locally. This is because browsers such as Chrome and Safari do not allow loading files through a local directory unless you change around some settings. If you upload these files to a local server or the GitHub IO website, Chrome or Safari can be used.
+
  
 
 

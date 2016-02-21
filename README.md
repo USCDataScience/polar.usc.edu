@@ -24,15 +24,14 @@ Every team has a different structure for their project. To add to the confusion,
 
 I took three widgets from Team 29's project. One of them Lorraine had demonstrated on the main Wicket page, worldmap-template.html. The other two that I extracted were timeSeriesChart.html and widget3.html. I will just focus on timeSeriesChart.html.
 
-######File Dependencies
-- Copy timeSeriesChart.html over to the TEST folder. Open the copied version of the file.
-
+######Javascript/CSS File Dependencies
 Immediately, you will see a ton of scripts and links that this HTML file is dependent on. However, a majority of these links are actually not needed and can be removed. If you compare this to the file to the file I altered, which can be found in the Github page's data/HTML/Team29SiteC.html, you can see links that I removed.
-
-- Remove unnecessary links/scripts in timeSeriesChart.html
 
 A lot of these files already exist in our Github page repo. Files such as bootstrap.min.js, jquery-1.7.1.min.js, etc are located in the js directory and can be linked accordingly. However, a couple of files such as timeSeriesChart.js and clickPanel.js have been created by the Team themselves and need to be transferred over to our repo. As stated above, these javascript files can be placed in the js/D3 directory. 
 
+######Instructions
+- Copy timeSeriesChart.html over to the TEST folder. Open the copied version of the file.
+- Remove unnecessary links/scripts in timeSeriesChart.html
 - Place all necessary js and css files into the appropriate folders. You will have to change the src (for scripts) or href (for links) links in timeSeriesChart.html so that they navigate to the correct folder. For this example, you can simply put all the css and js dependencies in the TEST folder so that linking it will be easier. For example, I can just place bootstrap.min.js in TEST, and then in timeSeriesChart.html I can change the src to src="bootstramp.min.js".
  
 ######Javascript Function Extraction
@@ -40,8 +39,11 @@ A lot of these files already exist in our Github page repo. Files such as bootst
 After all the js and css dependencies are sorted out, we can move on to separating the javascript functions from the HTML files. As you can see in timeSeriesChart.html near the bottom of the file, there is a function drawTimeSeries() javascript function. We want to remove this and place it in a separate file. I simply just cut and paste it into another file and named it Team29c.js. It can be found in js/D3/Team29c.js if you want to reference it. 
 
 - Remove any javascript functions, typically found near the bottom of the HTML file, and place it in a separate file. Place this file in the js/D3 directory. Once again in this test example, put the js file in the TEST folder. 
+- 
 
+######Data dependencies
 
+Now that everything above has been finish, the D3
  
 
 

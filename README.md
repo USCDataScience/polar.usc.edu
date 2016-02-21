@@ -17,6 +17,13 @@ Every team has a different structure for their project. To add to the confusion,
 
 #####Example: Extracting D3 stuff from Team 29
 -------------------
+1. Navigate to Team 29's HW3 Submission folder. 
+2. Follow this path: TOTAL_PRERNAN_CSCI572_HW_DATAVIS/src
+3. Extract hw3.zip and open the hw3 folder
+
+I took three widgets from Team 29's project. One of them Lorraine had demonstrated on the main Wicket page, worldmap-template.html. The other two that I extracted were timeSeriesChart.html and widget3.html.
+
+#####I will just focus on timeSeriesChart.html.
 
 
 

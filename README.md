@@ -10,3 +10,8 @@ Files such as json, txt, and csv files belong in the data directory. Javascript 
 
 When adding a new HTML file to the page, navigate to data/HTML/D3.html. Scroll down to the D3 section and simply add another link.
 
+####How To Start Finding Projects
+We will be mainly looking at D3 so this focuses on the HW3 project submissions found in the Dropbox link that Dr. Mattmann provided us.
+
+Every team has a different structure for their project. 
+

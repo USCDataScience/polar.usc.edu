@@ -23,10 +23,8 @@ Every team has a different structure for their project. To add to the confusion,
 - Extract hw3.zip and open the hw3 folder
 
 I took three widgets from Team 29's project. One of them Lorraine had demonstrated on the main Wicket page, worldmap-template.html. The other two that I extracted were timeSeriesChart.html and widget3.html. I will just focus on timeSeriesChart.html.
-
+\n
 - Copy timeSeriesChart.html over to the TEST folder. Open the copied version of the file.
-
-
 
 Immediately, you will see a ton of scripts and links that this HTML file is dependent on. However, a majority of these links are actually not needed and can be removed. If you compare this to the file to the file I altered, which can be found in the Github page's data/HTML/Team29SiteC.html, you can see links that I removed.
 

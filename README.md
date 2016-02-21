@@ -15,6 +15,7 @@ We will be mainly looking at D3, so focus on the HW3 project submissions found i
 
 Every team has a different structure for their project. To add to the confusion, half of the teams' submissions are incomplete and cannot be used. Additionally, some projects, such as Mohammad's (Team 40), request data from Solr to generate data for D3 to consume and cannot be used (as of yet). However, there are still quite a few projects that may be useful at this time -- we just need to find them.
 
+#####Example: Extracting D3 stuff from Team 29
 
 
 

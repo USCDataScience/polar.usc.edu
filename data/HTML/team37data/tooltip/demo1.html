@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Set tooltip HTML content</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="themes/1/tooltip.css" rel="stylesheet" type="text/css" />
+    <script src="themes/1/tooltip.js" type="text/javascript"></script>
+    <style type="text/css">
+        h4 { font-size: 16px; font-family: "Trebuchet MS", Verdana; line-height:18px;} 
+    </style>
+</head>
+<body>
+    <div style="margin: 100px auto; width: 600px;">    
+        <p>demo1 &nbsp; <a href="demo2.html">demo2</a> &nbsp; <a href="demo3.html">demo3</a> &nbsp; <a href="demo4.html">demo4</a></p>
+        <h4>1. tooltip.pop(targetElement, text [, options])</h4>
+        <span class="tooltip" onmouseover="tooltip.pop(this, '<h3>Lorem ipsum</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in consequat neque, eget tempor ipsum.')">Hover me</span>
+        <p>Email: <input type="text" onfocus = "tooltip.pop(this, 'Trigger by onfocus event: <br />Ensure your email is valid and correct.');" /></p>
+        <h4>2. tooltip.pop(targetElement, '#contentElementId' [, options])</h4>
+        <a class="tooltip" href="#demo2_tip" onmouseover="tooltip.pop(this, '#demo2_tip', {sticky:true})">Hover me</a>
+        <div style="display:none;">
+            <div id="demo2_tip">
+                <img src="src/tooltips.gif" style="float:right;margin-left:12px;" alt="" />
+                <b>SEO</b><br /><br />
+                The tooltip content comes from an element on the page. So this approach is <strong>Search Engine Friendly</strong>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/**
+ * Variable power
+ */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 100;
+  background-color: #ccc;
+  background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.5) 25%);
+  background-size: 4px 4px;
+}
+body ul {
+  list-style: none;
+}
+body ul, body li {
+  margin: 0;
+  padding: 0;
+}
+
+.chart {
+  min-height: 400px;
+  border-bottom: 1px solid #eee;
+  padding: 1em;
+}
+
+.chart--headline, .chart--subHeadline {
+  text-align: center;
+}
+/*
+.chart--headline {
+  position: relative;
+  font-weight: 100;
+  font-size: 28px;
+}*//*
+.chart--headline:before {
+  position: absolute;
+  content: '';
+  bottom: 133%;
+  left: 50%;
+  width: 25%;
+  margin: 0 0 0 -12.5%;
+  border-top: 1px dashed #999999;
+}
+*/
+/*.chart--subHeadline {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.charts--container {
+  background-color: #fff;
+  width: 100%;
+}*/
+/*@media screen and (min-width: 700px) {
+  .charts--container {
+    max-width: 700px;
+    left: 50%;
+    top: 10%;
+    margin: 5em auto;
+    box-shadow: 0 2em 2em #333;
+  }
+}*/
+/*
+.charts--headline {
+  text-align: center;
+  color: #444;
+  background-color: #fff;
+  padding: 1em;
+}
+*/
+.lineChart--area {
+  fill: url(#lineChart--gradientBackgroundArea);
+}
+
+.lineChart--areaLine {
+  fill: none;
+  stroke: #6bb7c7;
+  stroke-width: 3;
+}
+
+.lineChart--bubble--label {
+  fill: none;
+  stroke: #6bb7c7;
+  font-size: 12.6px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.lineChart--bubble--value {
+  fill: #fff;
+  stroke: #fff;
+  font-size: 21px;
+  font-weight: 100;
+}
+
+.lineChart--circle {
+  fill: #6bb7c7;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.lineChart--circle__highlighted {
+  fill: #fff;
+  stroke: #3f94a7;
+}
+
+.lineChart--gradientBackgroundArea--top {
+  stop-color: #6bb7c7;
+  stop-opacity: 0.1;
+}
+
+.lineChart--gradientBackgroundArea--bottom {
+  stop-color: #6bb7c7;
+  stop-opacity: 0.6;
+}
+
+.lineChart--svg {
+  border: 1px solid #eee;
+}
+
+.lineChart--xAxisTicks .domain, .lineChart--xAxis .domain, .lineChart--yAxisTicks .domain {
+  display: none;
+}
+
+.lineChart--xAxis .tick line {
+  display: none;
+}
+
+.lineChart--xAxisTicks .tick line, .lineChart--yAxisTicks .tick line {
+  fill: none;
+  stroke: #b3b3b3;
+  stroke-width: 1;
+  stroke-dasharray: 2,2;
+}
+
+.pieChart--center--innerCircle {
+  fill: #fff;
+}
+
+.pieChart--center--text {
+  font-size: 28px;
+}
+
+.pieChart--center--outerCircle {
+  fill: rgba(255, 255, 255, 0.75);
+}
+
+.pieChart--detail--divider {
+  stroke: gray;
+  stroke-width: 1;
+}
+
+.pieChart--detail--percentage {
+  font-size: 42px;
+  font-weight: 100;
+  fill: #333;
+  stroke-width: 1px;
+}
+
+.pieChart--detail--textContainer {
+  background-color: transparent;
+  padding: 10px 0 0 0;
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+.pieChart--detail__left {
+  text-align: left;
+}
+
+.pieChart--detail__right {
+  text-align: right;
+}
+
+.pieChart__blue {
+  fill: #6bb7c7;
+}
+
+.pieChart__red {
+  fill: #d79d91;
+}
+
+/**
+ * Helper classes
+ */
+.hidden {
+  display: none;
+}

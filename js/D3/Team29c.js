@@ -29,7 +29,7 @@ function drawTimeSeries(dataFile, anchorText) {
       tsChart.yAxis(tsChart.yAxis().tickFormat(d3.format(".0f")));
 
       d3.csv(dataFile, function(data) {
-        d3.csv('../../data/Team29.wheatNotes.csv', function(notes) {
+        d3.csv('../data/team29-wheat-notes.csv', function(notes) {
           tsChart.notes(notes);
           tsData = _.map(data, function(d) { return [d.date, d.price] });
           elt.datum(tsData).call(tsChart);

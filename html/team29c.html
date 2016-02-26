@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FacetView</title>
+    <style type="text/css">
+    .btn .caret {
+    margin-top: 7px;
+    margin-left: 0;
+    margin-bottom: 7;}
+  </style>
+  
+  <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+  <link rel="stylesheet" href="../css/Team29-c.css">
+  <script type="text/javascript" src="../js/D3/Team29.Bootstrap.js"></script>
+</head>
+
+<body>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script src="../js/D3/Team29c.timeSeriesChart.js"></script>
+<script src="../js/D3/Team29c.startEndSlider.js"></script>
+<script src="../js/D3/Team29c.clickPanel.js"></script>
+<script src="../js/topojson.v1.min.js"></script>
+<script src="../js/D3/Team29c.js"></script>
+
+
+<div class="container"> 
+  <div class="content">
+  <div class="facet-view-simple">            
+    <div id="facetview">              
+      <div class="row-fluid">                
+        <div class="span3">                  
+        <div id="facetview_filters">
+          <h3>Filter by</h3>                     
+          <div class="btn-group">                     
+          <a id="dropdownMenu" style="text-align:left; min-width:70%;" class="facetview_filtershow btn" rel="year_exact">           
+          <i class="icon-plus"></i> Select Data</a>                       
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>                 
+          <ul id="dataChange" class="dropdown-menu">                         
+          <li onclick="drawTimeSeries('../data/team29-warming-times.csv','Warming')"><a class="facetview_sort facetview_count">Warming </a></li>
+          <li onclick="drawTimeSeries('../data/team29-oceancirculation-times.csv','Ocean Circulation')"><a class="facetview_sort facetview_term">Ocean Circulation</a></li>
+          <li onclick="drawTimeSeries('../data/team29-co2-times.csv','Carbon Dioxide')"><a class="facetview_sort facetview_rcount">Carbon Dioxide</a></li>
+          </ul>         
+          </div>             
+        </div>            
+        </div>            
+      </div>
+<div id="chart"></div>
+
+</body></html>

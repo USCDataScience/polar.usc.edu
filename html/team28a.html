@@ -44,7 +44,7 @@ var map = new google.maps.Map(d3.select("#map").node(), {
 });
 
 // Load the station data. When the data comes back, create an overlay.
-d3.json("../Team28Data.json", function(data) {
+d3.json("../data/json/team28.json", function(data) {
   var overlay = new google.maps.OverlayView();
 
   // Add the container when the overlay is added to the map.

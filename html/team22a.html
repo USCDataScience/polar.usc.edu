@@ -3,8 +3,8 @@
 	<head>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
-		<script src="../../js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="../../css/bootstrap.min.css">
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<style>
 		.axis path,
 .axis line {
@@ -61,7 +61,7 @@
 		//Set up stack method
 		var stack = d3.layout.stack();
 
-		d3.json("json/19.json",function(json){
+		d3.json("../data/json/team22.json",function(json){
 			dataset = json;
 
 			//Data, stacked

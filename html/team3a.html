@@ -120,7 +120,7 @@ svg.append("path")
     .attr("class", "graticule")
     .attr("d", path);
 
-d3.json("../Team3.World.json", function(error, world) {
+d3.json("../data/json/team3-world.json", function(error, world) {
   svg.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
@@ -131,7 +131,7 @@ d3.json("../Team3.World.json", function(error, world) {
       .attr("class", "boundary")
       .attr("d", path);
       
-	d3.json("../Team3.Query.txt", function(error, jsondata) {
+	d3.json("../data/team3-query.txt", function(error, jsondata) {
 		
 		x.domain(['Iron','Oil','Others']);
 		

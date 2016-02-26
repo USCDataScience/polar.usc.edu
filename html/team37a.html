@@ -51,10 +51,10 @@ var path = d3.geo.path()
 var g = svg.append("g");
 
 // load and display the World
-d3.json("team37data/world-110m2.json", function(error, topology) {
+d3.json("../data/team37data/world-110m2.json", function(error, topology) {
 
 // load and display the cities
-d3.csv("team37data/citiesRed.csv", function(error, data) {
+d3.csv("../data/team37data/citiesRed.csv", function(error, data) {
     g.selectAll("circle")
        .data(data)
        .enter()
@@ -78,7 +78,7 @@ d3.csv("team37data/citiesRed.csv", function(error, data) {
 
 
 // load and display the cities
-d3.csv("team37data/citiesGreen.csv", function(error, data) {
+d3.csv("../data/team37data/citiesGreen.csv", function(error, data) {
     g.selectAll("circle")
        .data(data)
        .enter()
@@ -101,7 +101,7 @@ d3.csv("team37data/citiesGreen.csv", function(error, data) {
 });
 
 // load and display the cities
-d3.csv("team37data/citiesYellow.csv", function(error, data) {
+d3.csv("../data/team37data/citiesYellow.csv", function(error, data) {
     g.selectAll("circle")
        .data(data)
        .enter()
@@ -125,7 +125,7 @@ d3.csv("team37data/citiesYellow.csv", function(error, data) {
 
 
 // load and display the cities
-d3.csv("team37data/citiesBlue.csv", function(error, data) {
+d3.csv("../data/team37data/citiesBlue.csv", function(error, data) {
     g.selectAll("circle")
        .data(data)
        .enter()

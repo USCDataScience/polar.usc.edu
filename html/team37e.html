@@ -40,7 +40,7 @@ body {
 <script>
 
 
-d3.csv("team37data/data.csv", function(error, data) {
+d3.csv("../data/team37data/data.csv", function(error, data) {
   var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Species"; });
 
   data.forEach(function(d) {
@@ -142,7 +142,7 @@ var c=document.getElementsByTagName('svg');
     	c[0].parentElement.removeChild(c[0]);
         
         
-    	d3.csv("team37data/data1.csv", function(error, data) {
+    	d3.csv("../data/team37data/data1.csv", function(error, data) {
   var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Species"; });
 
   data.forEach(function(d) {
@@ -243,7 +243,7 @@ var svg = d3.select("body").append("svg")
     	c[0].parentElement.removeChild(c[0]);
         
     	
-    	    	d3.csv("team37data/data2.csv", function(error, data) {
+    	    	d3.csv("../data/team37data/data2.csv", function(error, data) {
   var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Species"; });
 
   data.forEach(function(d) {
@@ -343,7 +343,7 @@ var c=document.getElementsByTagName('svg');
     	c[0].parentElement.removeChild(c[0]);
         
 
-    	    	d3.csv("team37data/data3.csv", function(error, data) {
+    	    	d3.csv("../data/team37data/data3.csv", function(error, data) {
   var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Species"; });
 
   data.forEach(function(d) {
@@ -443,7 +443,7 @@ var svg = d3.select("body").append("svg")
     	
     	c[0].parentElement.removeChild(c[0]);
         
-    	d3.csv("team37data/data.csv", function(error, data) {
+    	d3.csv("../data/team37data/data.csv", function(error, data) {
   var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Species"; });
 
   data.forEach(function(d) {

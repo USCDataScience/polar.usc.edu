@@ -43,8 +43,41 @@
 	}
 
 	function getPercent(d){
-		return (d.endAngle-d.startAngle > 0.2 ? 
-				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+'%' : '');
+		var per = Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10;
+		if(per > 44)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% United States" : '');
+		if(per > 30)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(100*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Montana" : '');
+		if(per > 25)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Grinnell Glacier" : '');
+		if(per > 23)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Mid-Atlantic Ridge" : '');
+		if(per > 20)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Hawaii" : '');
+		if(per > 15)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Wyoming" : '');
+		if(per > 10)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+					Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Greenland" : '');
+		if(per > 8)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Barents Sea" : '');
+		if(per > 5)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Bering Sea" : '');
+		if(per > 3)
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% Hudson Bay" : '');
+		else
+			return (d.endAngle-d.startAngle > 0.2 ? 
+				Math.round(1000*(d.endAngle-d.startAngle)/(Math.PI*2))/10+"% California" : '');
+
 	}	
 	
 	Donut3D.transition = function(id, data, rx, ry, h, ir){

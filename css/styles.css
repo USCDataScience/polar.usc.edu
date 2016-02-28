@@ -49,3 +49,29 @@
 #intro .title {
     font-size: 50px;
 }
+
+#D3 .thumbnail{
+    min-width: 400px;
+    min-height: 400px;
+    padding: 2mm;
+}
+
+#D3 .thumbnail h3{
+   padding: 3mm 0cm 0cm 0cm;
+}
+
+#D3 .thumbnail img{
+    height: 200px;
+    width: 400px;
+}
+
+#D3other .thumbnail{
+    min-width:400px;
+    min-height:300px;
+}
+
+#D3other .thumbnail img{
+    height: 200px;
+    width: 400px;
+}
+

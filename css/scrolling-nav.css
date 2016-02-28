@@ -33,7 +33,7 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     color: white;
     text-align: center;
     background: #fff;
@@ -46,22 +46,15 @@ of those sections to manage the look and feel of the site. */
 
 .about-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
-    background: #fff;
+    background: #fffffa;
 }
 
 .features-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    color: #fff;
-    background: #000;
-}
-
-.search-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
     background: #fff;
 }
+

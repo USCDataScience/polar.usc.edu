@@ -103,3 +103,7 @@
     transform: rotate(360deg);
 }
 
+#intro .carousel{
+    background: #2f4357;
+    opacity: 0.8;
+}

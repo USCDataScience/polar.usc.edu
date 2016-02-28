@@ -66,8 +66,9 @@
 }
 
 #D3other .thumbnail{
-    min-width:400px;
-    min-height:300px;
+    width:400px;
+    height:320px;
+    padding: 2mm;
 }
 
 #D3other .thumbnail img{

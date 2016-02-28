@@ -23,5 +23,8 @@
     "bootstrap": "~3.3.6",
     "startbootstrap-scrolling-nav": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git#~1.0.4",
     "d3": "~3.5.14"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
   }
 }

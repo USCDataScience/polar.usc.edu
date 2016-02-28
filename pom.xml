@@ -178,18 +178,18 @@
 					<wtpversion>${wtp.version}</wtpversion>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<url>http://localhost:8080/manager/text</url>
-					<server>TomcatServer</server>
-					<path>/</path>
-					<username>admin</username>
-					<password>password</password>
-				</configuration>
-			</plugin>
+			<!--<plugin>-->
+				<!--<groupId>org.apache.tomcat.maven</groupId>-->
+				<!--<artifactId>tomcat7-maven-plugin</artifactId>-->
+				<!--<version>2.2</version>-->
+				<!--<configuration>-->
+					<!--<url>http://localhost:8080/manager/text</url>-->
+					<!--<server>TomcatServer</server>-->
+					<!--<path>/</path>-->
+					<!--<username>admin</username>-->
+					<!--<password>password</password>-->
+				<!--</configuration>-->
+			<!--</plugin>-->
 		</plugins>
 	</build>
 

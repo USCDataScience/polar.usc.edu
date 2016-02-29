@@ -16,6 +16,14 @@
 }
 
 /* Buttons */
+.btn-primary {
+    background-color: #ffcc00;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffdb4d;
+}
 
 .btn-default {
     color: #fff;

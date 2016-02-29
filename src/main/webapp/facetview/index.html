@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>FacetView</title>
+
+    <!-- callouts -->
+    <link rel="stylesheet" href="callouts.css">
+
+    <!--<script type="text/javascript" src="vendor/jquery/1.7.1/jquery-1.7.1.min.js"></script>-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.light.min.css">
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="vendor/linkify/1.0/jquery.linkify-1.0-min.js"></script>
+
+    <link rel="stylesheet" href="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.css">
+    <script type="text/javascript" src="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.min.js"></script>
+
+    <script type="text/javascript" src="jquery.facetview.js"></script>
+
+    <link rel="stylesheet" href="css/facetview.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.facet-view-simple').facetview({
+                search_url: "http://localhost:8983/solr/collection1/query?",
+                search_index: "solr",
+                linkify: false,
+                default_operator: "AND",
+                display_images: false,
+                searchwrap_start: "<div id='facetview_results'>",
+                searchwrap_end: "</div>",
+                resultwrap_start: "<div class='bs-callout bs-callout-primary'>",
+                resultwrap_end: "</div>",
+                highlight_fields: ["text"],
+                highlight_pre: "<mark><strong>",
+                highlight_post: "</mark></strong>",
+                //search_sortby: [
+                //{'display':'Date added','field':'created_date'},
+                //{'display':'Title','field':'title'},
+                //{'display':'Publication Year','field':'year'},
+                //{'display':'Edition','field':'edition.exact'},
+                //{'display':'Price','field':'price'}
+                //],
+                result_display: [
+                    [
+                        {
+                            pre: "<a target='_blank' href='http://localhost:8888",
+                            field: "id",
+                            post: "'>"
+                        },
+                        {
+                            pre: "<h4>",
+                            field: "title",
+                            alternative_field: "id",
+                            post: "</h4></a>"
+                        },
+                        {
+                            pre: "<span class='text-muted'>",
+                            field: "stream_name",
+                            alternative_field: "id",
+                            post: "</span>"
+                        }
+                    ],
+                    [
+                        {
+                            field: "subject",
+                            alternative_field: "dc_subject"
+                        },
+                        {
+                            pre: "by ",
+                            field: "author",
+                            alternative_field: "meta_author"
+                        },
+                        {
+                            pre: "| Created using ",
+                            field: "creator",
+                            alternative_field: "dc_creator"
+                        }
+                    ],
+                    [
+                        {
+                            pre: "Using ",
+                            field: "make_str",
+                            alternative_field: "tiff_make",
+                            post: ","
+                        },
+                        {
+                            field: "model_str",
+                            alternative_field: "tiff_model"
+                        },
+                        {
+                            pre: "| Processed using ",
+                            field: "software_str",
+                            alternative_field: "tiff_software"
+                        }
+                    ],
+                    [
+                        {
+                            highlight_field: "text"
+                        }
+                    ]
+                ],
+                facets: [
+                    {
+                        field: "location_country_str",
+                        order: "count",
+                        display: "Country",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "topic_features_str",
+                        display: "Topic",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "location_feature_str",
+                        display: "Location Feature",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "location_admin1_area_str",
+                        display: "Main Admin Area",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "location_admin2_area_str",
+                        display: "Sub-Admin Area",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "content_type",
+                        display: "Content Type",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "author_str",
+                        display: "Author",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "company_str",
+                        display: "Company",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "software_str",
+                        display: "Software",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "make_str",
+                        display: "Camera Brand",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    },
+                    {
+                        field: "model_str",
+                        display: "Camera Model",
+                        order: "count",
+                        size: 10,
+                        mincount: 1
+                    }
+                    /*,
+                    {
+                        'field': 'stream_size',
+                        'display': 'File Size',
+                        "type": "range",
+                        "range": [{
+                            "to": 10240,
+                            "display": "< 10KB"
+                        }, {
+                            "from": 10241,
+                            "to": 1048576,
+                            "display": "10KB - 1MB"
+                        }, {
+                            "from": 1048577,
+                            "to": 5242880,
+                            "display": "1MB - 5MB"
+                        }, {
+                            "from": 5242881,
+                            "display": "> 5MB"
+                        }],
+                        "open": true
+                    },*/
+                ],
+                paging: {
+                    from: 0,
+                    size: 20
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <span class="brand">FacetView</span>
+                <ul class="nav">
+                    <li><a href="http://localhost:8000/solr-d3/d3_gallery.html">D3 Gallery</a>
+                    </li>
+                    <li><a href="../banana/src/index.html#/dashboard">Banana Dashboard</a>
+                    </li>
+                    <!--<li class="active"><a href="#">FacetView</a>
+                    </li>-->
+                    <li><a href="http://localhost:8000/solr-d3/googlemap.html">Google Map</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="page-header">
+                <h2>FacetView Search</h2>
+            </div>
+            <div class="facet-view-simple"></div>
+        </div>
+    </div>
+</body>
+</html>

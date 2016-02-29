@@ -102,3 +102,12 @@
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+
+    
+.footer {
+  position: absolute;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #fffffa;
+}

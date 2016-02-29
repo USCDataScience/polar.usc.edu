@@ -43,22 +43,29 @@
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top" style="color:white"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about" style="color:white">About</a>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">About <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="page-scroll" href="#about">What Is Polar Data Insights?</a></li>
+                            <li><a class="page-scroll" href="#features">Visualization Features</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="page-scroll" href="#started">Getting Started</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#features" style="color:white">Features</a>
-                    </li>
+                    
                     <!--TODO: Change this to polar.usc.edu/solr once it is up and running -->
                     <li>
-                        <a class="page-scroll" href="http://localhost:8983/solr/banana/src/index.html#/dashboard" style="color:#ffcc00">Search</a>
+                        <a class="page-scroll" href="http://localhost:8983/solr/banana/src/index.html#/dashboard" style="color:#ffffff">Search</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="html/d3-examples.html" style="color:#ffcc00">Visualizations</a>
+                        <a class="page-scroll" href="html/d3-examples.html" style="color:#ffffff">Visualizations</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://irds.usc.edu/" style="color:#ffcc00">USC Data Science Group</a>
+                        <a class="page-scroll" href="http://irds.usc.edu/" style="color:#ffffff">USC Data Science Group</a>
                     </li>
+
+
                 </ul>
                 <a href="http://usc.edu" class="pull-right">
                   <img src="images/usc-primary-logotype.svg" width="176px" height="38px">
@@ -77,34 +84,6 @@
                     <h1 class="title">Polar Data Insights</h1>
                     <h3>USC Data Science</h3>
                     <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p> -->
-                    
-                    <!--Test Carousel
-                    <div class="carousel" style="margin-top:10%">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active" align=center>
-                                    <img src="images/carousel/slide1.png" alt="Babs Slide">
-                                </div>
-                                <div class="item" align=center>
-                                    <img src="images/carousel/slide2.png" alt="Second Slide">
-                                </div>
-                                <div class="item" align=center>
-                                    <img src="images/carousel/slide3.png" alt="Third Slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>-->
                     
                     <a class="btn btn-default btn-lg page-scroll" href="#about" style="margin-top:25%">Learn More</a>
                 </div>
@@ -156,17 +135,88 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Features Section -->
     <section id="features" class="features-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Features</h1>
+                    <hr class="featurette-divider">
+                    <h1>Visualization Features</h1>
+                    <hr class="featurette-divider">
+                    
+                    <!--Banana Feature-->
+                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                        <div class="col-md-7">
+                          <h2 align=left class="featurette-heading">Banana For Solr. <span class="text-muted">Search Simplified</span></h2>
+                          <p align=left class="lead">Search multiple keywords simultaneously for thousands of relevant URLs.</p>
+                          <p align=left class="lead"> Add filters for more refined results using Banana's live-updating visualizations.'</p>
+                        </div>
+                        <div class="col-md-5">
+                          <img class="featurette-image img-responsive center-block" src="images/banana_feature.png" alt="Generic placeholder image">
+                        </div>
+                    </div>
+                    
+                    <hr class="featurette-divider">
+
+                    <!--D3.js Feature-->
+                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                        <div class="col-md-7 col-md-push-5">
+                          <h2 align=left class="featurette-heading">D3.js. <span class="text-muted">See for yourself.</span></h2>
+                          <p align=left class="lead">View data sets from a variety of media </p>
+                        </div>
+                        <div class="col-md-5 col-md-pull-7">
+                          <img class="featurette-image img-responsive center-block" src="images/d3_feature.png" alt="Generic placeholder image">
+                        </div>
+                    </div>
+                    
+                    <hr class="featurette-divider">
+
+                    <!--Facetview Feature-->
+                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                        <div class="col-md-7">
+                        <h2 align=left class="featurette-heading">Facetview. <span class="text-muted">Experience Solr.</span></h2>
+                        <p align=left class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        </div>
+                        <div class="col-md-5">
+                        <img class="featurette-image img-responsive center-block" src="images/facetview_feature.png" alt="Generic placeholder image">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    <!-- Getting Started Section -->
+    <section id="started" class="gettingstarted-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="featurette-divider">
+                    <h1>Getting Started</h1>
+                    <h2><span class="text-muted">Start your search here. Select a search framework to begin.</span></h2>
+                    <hr class="featurette-divider">
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-lg-12" style="clear: both">
+                    <!--TODO: Change links to point to Banana and Facetview on polar website-->
+                    <a href="" style="float: left; margin-left:18%"><span class="text-muted"><h2>Banana</h2></span></a>
+                    <a href="" style="float: right; margin-right:18%"><span class="text-muted"><h2>Facetview</h2></span></a>
+                </div>
+            </div>
+            <!--TODO: Insert image links here
+            <div class="row" style="margin-top:5%" align="left">
+                <img width="50%" height="50%" class="featurette-image img-responsive" src="images/banana_start.png" alt="Generic placeholder image">
+            </div>-->
+        </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="container">
+        <p align=right class="text-muted">© USC Data Science Group 2016. All rights reserved.</p>
+      </div>
+    </footer>
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 

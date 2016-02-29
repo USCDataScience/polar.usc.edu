@@ -55,10 +55,13 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 90px;
     text-align: center;
-<<<<<<< HEAD
     background: #fffffd;
-=======
-    background: #ffffff;
->>>>>>> ece1fd5db0ef292dd539f58830101e69c6cb9ab7
+}
+
+.gettingstarted-section {
+    height: 100%;
+    padding-top: 90px;
+    text-align: center;
+    background: #fffffa;
 }
 

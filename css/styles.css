@@ -16,6 +16,14 @@
 }
 
 /* Buttons */
+.btn-primary {
+    background-color: #ffcc00;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffdb4d;
+}
 
 .btn-default {
     color: #fff;
@@ -103,11 +111,3 @@
     transform: rotate(360deg);
 }
 
-    
-.footer {
-  position: absolute;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 20px;
-  background-color: #fffffa;
-}

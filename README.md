@@ -119,3 +119,11 @@ Here's a straightforward guide to adding things to the static github page:
 * Commit and push to `origin gh-pages`
 
 That's it.
+
+#### Where you have to change solr url on polardeploy
+
+Banana dashboard json configurations
+
+Banana's config.js
+
+Facetviews index.html

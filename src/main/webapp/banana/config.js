@@ -31,7 +31,8 @@ function (Settings) {
      * your banana web application.
      * @type {String}
      */
-    solr: "/solr/",
+    //solr: "http://polar.usc.edu/solr/",
+    solr: "http://localhost:8983/solr/",
     solr_core: "logstash_logs",
 
     /**

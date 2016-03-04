@@ -46,6 +46,7 @@ def main(argv):
 
     print 'inputDir =', inputDir
     print 'solrUrl =', solrUrl
+    sys.stdout.flush()
 
     ### testing requests lib
     # r = requests.get('http://www.google.com')
@@ -59,13 +60,16 @@ def main(argv):
         #     print os.path.join(root, directory)
         for filename in filenames:
             fileList.append(os.path.join(root, filename))
+            print os.path.join(root, filename)
+            sys.stdout.flush()
 
-    print(fileList)
+    # print(fileList)
 
     successCounter = 0
     errorCounter = 0
 
     print("Indexing ...")
+    sys.stdout.flush()
 
     startTime = time.time()
     for filename in fileList:

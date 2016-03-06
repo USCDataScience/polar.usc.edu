@@ -15,6 +15,9 @@
     background-color: #FFCC00;
 }
 
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #FFCC00;
+}
 /* Buttons */
 .btn-primary {
     background-color: #ffcc00;
@@ -55,6 +58,10 @@
 }
 
 #intro .title {
+    font-size: 50px;
+}
+
+#extras .title {
     font-size: 50px;
 }
 
@@ -109,5 +116,13 @@
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+
+#started .btn-group .btn-default{
+    color: #000;
+}
+
+#started .btn-group{
+    border: 1px solid lightgray;
 }
 

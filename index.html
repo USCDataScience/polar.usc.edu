@@ -47,28 +47,25 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">About <span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                            <li class="dropdown-header">About Us</li>
                             <li><a class="page-scroll" href="#about">What Is Polar Data Insights?</a></li>
                             <li><a class="page-scroll" href="#features">Visualization Features</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="page-scroll" href="#started">Getting Started</a>
                         </ul>
                     </li>
                     
-                    <!--TODO: Change this to polar.usc.edu/solr once it is up and running -->
-                    <li>
-                    <!--    <a class="page-scroll" href=" html/placeholder.html " style="color:#ffffff">Search</a>-->
-
-
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">Search <span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                            <li class="dropdown-header">Search</li>
                             <li><a class="page-scroll" href="http://polar.usc.edu/Polar/banana/#/dashboard"> Banana </a></li>
                             <li><a class="page-scroll" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="html/d3-examples.html" style="color:#ffffff">Visualizations</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://irds.usc.edu/" style="color:#ffffff">USC Data Science Group</a>
-                    </li>
+
+                    <li><a class="page-scroll" href="html/d3-examples.html" style="color:#ffffff">Visualizations</a></li>
+                    <li><a class="page-scroll" style="color:#ffffff" href="html/datascience.html">USC Data Science Group</a></li>
 
 
                 </ul>
@@ -85,7 +82,7 @@
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12" style="margin-top:10%">
+                <div class="col-lg-12" style="margin-top:8%">
                     <h1 class="title">Polar Data Insights</h1>
                     <h3>USC Data Science</h3>
                     <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p> -->
@@ -97,100 +94,156 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="jumbotron">
-                    <h1>What Is Polar Data Insights?</h1>
-                    <p class="lead text-center" style="margin-top:5%">JPL and USC, under the direction of Dr. Mattmann, have worked to collect a corpus of “deep web” polar datasets spanning many file types containing scientific data such as images, videos, and other information on the Web. These pieces of data were collected using Apache Nutch, Apache Tika, and Apache Solr.</p>
-                    <p class="lead text-center">Our goal is to aggregate this data into an intuitive search engine that scientists can utilize for polar research. Additionally, the data is analyzed and illustrated using visualization APIs Banana and D3.js, providing researchers a better understanding of the data's relationship within the Polar ecosystem.</p>
-                </div>
-                <div class="col-lg-12"  style="margin-top:3%">
-                    <h2>Our Goals</h2>
-                </div>
-                <!--Animated circles-->
-                <div class="container">
-                    <div class="row stylish-panel">
-                      <div class="col-md-4">
-                        <div>
-                          <img src="images/searchimg.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                          <h2>Search Engine</h2>
-                          <p>Providing researchers with a powerful tool to easily find relevant data sets and websites
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div>
-                          <img src="http://lorempixel.com/200/200/abstract/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                          <h2>Visualizer</h2>
-                          <p>Illustrating data set connections and related terms to narrow searches
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div>
-                          <img src="images/publicizer.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                          <h2>Publicizer</h2>
-                          <p>Demonstrate the value of these polar data sets to the NSF, USC, and NASA
-                          </p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <hr class="featurette-divider">
-                    <h1>Visualization Features</h1>
-                    <hr class="featurette-divider">
-                    
-                    <!--Banana Feature-->
-                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
-                        <div class="col-md-7">
-                          <h2 align=left class="featurette-heading">Banana For Solr. <span class="text-muted">Search Simplified</span></h2>
-                          <p align=left class="lead">Search multiple keywords simultaneously for thousands of relevant URLs.</p>
-                          <p align=left class="lead"> Add filters for more refined results using Banana's live-updating visualizations.'</p>
-                        </div>
-                        <div class="col-md-5">
-                          <img class="featurette-image img-responsive center-block" src="images/banana_feature.png" alt="Generic placeholder image">
-                        </div>
+    <div>
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="jumbotron">
+                        <h1>What Is Polar Data Insights?</h1>
+                        <p class="lead text-center" style="margin-top:5%">JPL and USC, under the direction of Dr. Chris Mattmann, have worked to collect a corpus of “deep web” polar datasets spanning many file types containing scientific data such as images, videos, and other information on the Web. These pieces of data were collected using Apache Nutch, Apache Tika, and Apache Solr.</p>
+                        <p class="lead text-center">Our goal is to aggregate this data into an intuitive search engine that scientists can utilize for polar research. Additionally, the data is analyzed and illustrated using visualization APIs Banana and D3.js, providing researchers a better understanding of the data's relationship within the Polar ecosystem.</p>
                     </div>
-                    
-                    <hr class="featurette-divider">
-
-                    <!--D3.js Feature-->
-                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
-                        <div class="col-md-7 col-md-push-5">
-                          <h2 align=left class="featurette-heading">D3.js. <span class="text-muted">See for yourself.</span></h2>
-                          <p align=left class="lead">View data sets from a variety of sources to better understand polar relationships. </p>
-                        </div>
-                        <div class="col-md-5 col-md-pull-7">
-                          <img class="featurette-image img-responsive center-block" src="images/d3_feature.png" alt="Generic placeholder image">
-                        </div>
+                    <div class="col-lg-12"  style="margin-top:3%">
+                        <h2>Our Goals</h2>
                     </div>
-                    
-                    <hr class="featurette-divider">
-
-                    <!--Facetview Feature-->
-                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
-                        <div class="col-md-7">
-                        <h2 align=left class="featurette-heading">Facetview. <span class="text-muted">Experience Solr.</span></h2>
-                        <p align=left class="lead">Filter searches using facets and easily save, share, and consume documents from the Deep Web. </p>
-                        </div>
-                        <div class="col-md-5">
-                        <img class="featurette-image img-responsive center-block" src="images/facetview_feature.png" alt="Generic placeholder image">
-                        </div>
+                    <!--Animated circles-->
+                    <div class="container">
+                        <div class="row stylish-panel">
+                          <div class="col-md-4">
+                            <div>
+                              <img src="images/searchimg.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                              <h2>Search Engine</h2>
+                              <p>Providing researchers with a powerful tool to easily find relevant data sets and websites
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div>
+                              <img src="http://lorempixel.com/200/200/abstract/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                              <h2>Visualizer</h2>
+                              <p>Illustrating data set connections and related terms to narrow searches
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div>
+                              <img src="images/publicizer.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                              <h2>Publicizer</h2>
+                              <p>Demonstrate the value of these polar data sets to the NSF, USC, and NASA
+                              </p>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     
+    <!-- Features Section -->
+    <div>
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr class="featurette-divider">
+                        <h1>Visualization Features</h1>
+                        <hr class="featurette-divider">
+                        
+                        <!--Banana Feature-->
+                        <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                            <div class="col-md-7">
+                              <h2 align=left class="featurette-heading">Banana For Solr. <span class="text-muted">Search Simplified</span></h2>
+                              <p align=left class="lead">Search multiple keywords simultaneously for thousands of relevant URLs.</p>
+                              <p align=left class="lead"> Add filters for more refined results using Banana's live-updating visualizations.'</p>
+                            </div>
+                            <div class="col-md-5">
+                              <img class="featurette-image img-responsive center-block" src="images/banana_feature.png" alt="Generic placeholder image">
+                            </div>
+                        </div>
+                        
+                        <hr class="featurette-divider">
+
+                        <!--D3.js Feature-->
+                        <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                            <div class="col-md-7 col-md-push-5">
+                              <h2 align=left class="featurette-heading">D3.js. <span class="text-muted">See for yourself.</span></h2>
+                              <p align=left class="lead">View data sets from a variety of sources to better understand polar relationships. </p>
+                            </div>
+                            <div class="col-md-5 col-md-pull-7">
+                              <img class="featurette-image img-responsive center-block" src="images/d3_feature.png" alt="Generic placeholder image">
+                            </div>
+                        </div>
+                        
+                        <hr class="featurette-divider">
+
+                        <!--Facetview Feature-->
+                        <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                            <div class="col-md-7">
+                            <h2 align=left class="featurette-heading">Facetview. <span class="text-muted">Experience Solr.</span></h2>
+                            <p align=left class="lead">Filter searches using facets and easily save, share, and consume documents from the Deep Web. </p>
+                            </div>
+                            <div class="col-md-5">
+                            <img class="featurette-image img-responsive center-block" src="images/facetview_feature.png" alt="Generic placeholder image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Getting Started Section -->
+    <div>
+        <section id="started" class="getting-started-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr class="featurette-divider">
+                        <h1>Getting Started</h1>
+                        <hr class="featurette-divider">
+                    </div>
+                    
+                    <div class="col-lg-12" style="margin-bottom:5%">
+                        <h3><span class="text-muted">Select an option below to begin your search.</span></h3>
+                    </div>
+
+                    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+                        <div class="btn-group" role="group">
+                            <button type="button" id="facet" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+                                <div class="hidden-xs">Facetview</div>
+                            </button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" id="banana" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+                                <div class="hidden-xs">Banana</div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="well" style="height:80%">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab1">
+                                <a href="http://polar.usc.edu/Polar/facetview/"><img class="featurette-image img-responsive center-block" src="images/facetcard.png" alt="Generic placeholder image"></a>
+                            </div>
+                            <div class="tab-pane fade in" id="tab2">
+                                <a href="http://polar.usc.edu/Polar/banana/#/dashboard"><img class="featurette-image img-responsive center-block" src="images/bananacard.png" alt="Generic placeholder image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="featurette-divider">
+    <div>
+        <div class="container">
+            <footer>
+                <p align=center>©USC Data Science Group 2016, All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
     
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -201,6 +254,7 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/cardpanel.js"></script>
 </body>
 
 </html>

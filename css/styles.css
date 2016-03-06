@@ -61,6 +61,10 @@
     font-size: 50px;
 }
 
+#extras .title {
+    font-size: 50px;
+}
+
 #D3 .thumbnail{
     min-width: 400px;
     min-height: 400px;

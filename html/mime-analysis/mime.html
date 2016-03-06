@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSCI 599: Mime Diversity Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".nav-tabs li").on("click", function(e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+                $(".nav-tabs li.active").removeClass("active");
+                $(this).addClass("active");
+                var mime_type = $("#mime_type").val(),
+                    url = $("a", this).data("src") + "?mime_type=" + mime_type;
+                $("iframe").attr("src", url);
+
+            });
+            $("#mime_type").on("change", function(e) {
+
+                var mime_type = $(this).val(),
+                    url = $(".nav-tabs li.active a").data("src") + "?mime_type=" + mime_type;
+                $("iframe").attr("src", url);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="../../index.html#page-top" style="color:white">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-custom">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top" style="color:white"></a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">About Us</li>
+                            <li><a class="page-scroll" href="../../index.html#about">What Is Polar Data Insights?</a></li>
+                            <li><a class="page-scroll" href="../../index.html#features">Visualization Features</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="page-scroll" href="../../index.html#started">Getting Started</a></li>
+                        </ul>
+                        <!--TODO: Change this to polar.usc.edu/solr once it is up and running -->
+                        <li>
+                            <!--    <a class="page-scroll" href=" html/placeholder.html " style="color:#ffffff">Search</a>-->
+
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">Search <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Search</li>
+                                <li><a class="page-scroll" href="http://polar.usc.edu/Polar/banana/#/dashboard"> Banana </a></li>
+                                <li><a class="page-scroll" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
+                            </ul>
+                        </li>
+
+                    </li>
+                    <li><a style="color:#ffffff" class="page-scroll" href="../d3-examples.html">Visualizations</a></li>
+                    <li><a class="page-scroll" href="../datascience.html" style="color:#ffffff">USC Data Science Group</a></li>
+                    <li><a class="page-scroll" href="mime.html" style="color:#ffffff">MIME Analysis</a></li>
+
+                </ul>
+                <a href="http://usc.edu" class="pull-right">
+                    <img src="../../images/usc-primary-logotype.svg" width="176px" height="38px">
+                </a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+    <div class="container" style="margin-top:10%">
+        <h2>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset</h2>
+        <p class="lead">
+            Choose mime type:
+            <select id="mime_type" class="form-control">
+                <option value="application_mp4">application/mp4</option>
+                <option value="application_msword">application/msword</option>
+                <option value="application_octet-stream">application/octet stream</option>
+                <option value="application_pdf">application/pdf</option>
+                <option value="application_rss+xml">application/rss+xml</option>
+                <option value="application_xhtml+xml">application/xhtml+xml</option>
+                <option value="application_xml">application/xml</option>
+                <option value="audio_mpeg">audio/mpeg</option>
+                <option value="image_gif">image/gif</option>
+                <option value="image_jpeg">image/jpeg</option>
+                <option value="image_png">image/png</option>
+                <option value="text_html">text/html</option>
+                <option value="text_plain">text/plain</option>
+                <option value="video_mp4">video/mp4</option>
+                <option value="video_quicktime">video/quicktime</option>
+            </select>
+        </p>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#bfa" data-src="bfa.html">Byte Frequency Analysis</a></li>
+            <li><a data-toggle="tab" href="#distribution_correlation" data-src="distribution_correlation.html">Byte Frequency Distribution Correlation</a></li>
+            <li><a data-toggle="tab" href="#cross_correlation" data-src="cross_correlation.html">Byte Frequency Cross Correlation</a></li>
+            <li><a data-toggle="tab" href="#fht" data-src="fht.html">File Header Trailer (FHT) Analysis</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade in active">
+                <iframe src="bfa.html?mime_type=application_mp4" frameborder="0" height="100%" width="100%" style="min-height:600px;" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

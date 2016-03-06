@@ -42,7 +42,8 @@ of those sections to manage the look and feel of the site. */
     background-image: url('../images/iceberg.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    opacity: 0.9;
 
 }
 
@@ -69,3 +70,19 @@ of those sections to manage the look and feel of the site. */
     min-height: 800px;
 }
 
+.extras-section {
+    height: 100%;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    background: #fff;
+
+}
+
+.partner-section {
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+    background: #fffffa;
+    min-height: 500px;
+}

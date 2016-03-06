@@ -25,6 +25,8 @@ html {
     .top-nav-collapse {
         padding: 0;
     }
+    
+
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -58,5 +60,12 @@ of those sections to manage the look and feel of the site. */
     background: #fffffd;
 }
 
-
+.getting-started-section {
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+    background: #fffffa;
+    min-height: 1000px;
+}
 

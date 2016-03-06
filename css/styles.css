@@ -15,7 +15,9 @@
     background-color: #FFCC00;
 }
 
-
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #FFCC00;
+}
 /* Buttons */
 .btn-primary {
     background-color: #ffcc00;

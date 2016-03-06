@@ -78,3 +78,11 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 
 }
+
+.partner-section {
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+    background: #fffffa;
+    min-height: 500px;
+}

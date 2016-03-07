@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Scrolling Nav CSS -->
+<link href="../css/scrolling-nav.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/styles.css" rel="stylesheet">
 <style>
 
 body {
   background: #000;
+  padding-top: 7.5%;
 }
 
 .stroke {
@@ -64,7 +73,70 @@ body {
 
 
 </style>
+
+
 <body>
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="../index.html#page-top" style="color:white">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-custom">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top" style="color:white"></a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">About Us</li>
+                            <li><a class="page-scroll" href="../index.html#about">What Is Polar Data Insights?</a></li>
+                            <li><a class="page-scroll" href="../index.html#features">Visualization Features</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="page-scroll" href="../index.html#started">Getting Started</a>
+                        </ul>
+                    </li>
+                    
+                    <!--TODO: Change this to polar.usc.edu/solr once it is up and running -->
+                    <li>
+                    <!--    <a class="page-scroll" href=" html/placeholder.html " style="color:#ffffff">Search</a>-->
+
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">Search <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Search</li>
+                            <li><a class="page-scroll" href="http://polar.usc.edu/Polar/banana/#/dashboard"> Banana </a></li>
+                            <li><a class="page-scroll" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
+                    </li>
+                        </ul>
+                    </li>
+                    <li><a style="color:#ffffff" class="page-scroll" href="d3-examples.html">Visualizations</a>
+                    <li>
+                        <a class="page-scroll" href="datascience.html" style="color:#ffffff">USC Data Science Group</a>
+                    </li>
+
+
+                </ul>
+                <a href="http://usc.edu" class="pull-right">
+                  <img src="../images/usc-primary-logotype.svg" width="176px" height="38px">
+                </a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -92,12 +164,12 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 var tip = d3.tip()
-	    .attr('class', 'd3-tip')
-	    .offset([-10, 0])
-	    .html(function(d) {
-	      return d.state+"<br/><span>"+d.key+": "+d.count+"</span>";
-	    });
-	    
+      .attr('class', 'd3-tip')
+      .offset([-10, 0])
+      .html(function(d) {
+        return d.state+"<br/><span>"+d.key+": "+d.count+"</span>";
+      });
+      
 var x = d3.scale.ordinal()
             .rangeBands([0, 10]);
 svg.call(tip);
@@ -131,49 +203,49 @@ d3.json("../data/json/team3-world.json", function(error, world) {
       .attr("class", "boundary")
       .attr("d", path);
       
-	d3.json("../data/team3-query.txt", function(error, jsondata) {
-		
-		x.domain(['Iron','Oil','Others']);
-		
-		var c = 0;
-		var timerId = setInterval(function(){
-			if(c >= jsondata.length)
-				clearInterval(timerId)
-			else{
-				var keys = Object.keys(jsondata[c])
-          		var g = svg.append("g");
-          		g.selectAll("rect") 
-          			.data(jsondata[c][keys[0]])
-          			.enter()
-          			.append("rect") 
-          			.attr("x", function(d, i) {
-                		return projection([d.lon, d.lat])[0] + x(d.key);
-        			})
-        			.attr("width", 3)
-            		.attr("y", function(d) {
-                		return projection([d.lon, d.lat])[1];
-            		})
-            		.attr("height",0)
-            		.style("fill", function(d){
-            			if(d.key=='Iron')
-            				return 'red';
-            			if(d.key == 'Oil')
-            				return 'blue';
-            			return 'green';
-            		})
-           			.on('mouseover',tip.show)
-           			.on('mouseout',tip.hide)
-            		.transition()
-            		.duration(1000)
-            		.attr("y", function(d) {
-                		return projection([d.lon, d.lat])[1]-d.count*2;
-            		})
-            		.attr("height", function(d){
-            			return d.count*2;
-            		});
-			}
-			c++;
-		},2000);                	
+  d3.json("../data/team3-query.txt", function(error, jsondata) {
+    
+    x.domain(['Iron','Oil','Others']);
+    
+    var c = 0;
+    var timerId = setInterval(function(){
+      if(c >= jsondata.length)
+        clearInterval(timerId)
+      else{
+        var keys = Object.keys(jsondata[c])
+              var g = svg.append("g");
+              g.selectAll("rect") 
+                .data(jsondata[c][keys[0]])
+                .enter()
+                .append("rect") 
+                .attr("x", function(d, i) {
+                    return projection([d.lon, d.lat])[0] + x(d.key);
+              })
+              .attr("width", 3)
+                .attr("y", function(d) {
+                    return projection([d.lon, d.lat])[1];
+                })
+                .attr("height",0)
+                .style("fill", function(d){
+                  if(d.key=='Iron')
+                    return 'red';
+                  if(d.key == 'Oil')
+                    return 'blue';
+                  return 'green';
+                })
+                .on('mouseover',tip.show)
+                .on('mouseout',tip.hide)
+                .transition()
+                .duration(1000)
+                .attr("y", function(d) {
+                    return projection([d.lon, d.lat])[1]-d.count*2;
+                })
+                .attr("height", function(d){
+                  return d.count*2;
+                });
+      }
+      c++;
+    },2000);                  
     });
 });
 

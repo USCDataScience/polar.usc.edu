@@ -32,6 +32,32 @@ body {
   text-align: center;
 }
 
+.navbar-brand {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: transparent;
+}
+
+.navbar .nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+	font-weight: normal;
+}
+
+.container-fluid {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #990000;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+  border-color: #e7e7e7;
+}
+
 /* specific additions for the example index page */
 .nav-logo img {
   margin-top: 4px;

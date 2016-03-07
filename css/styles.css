@@ -57,6 +57,15 @@
     align-items: center;
 }
 
+.media-object {
+    max-width:64px;
+    max-height:64px;
+}
+
+.media-body {
+    text-align: left;
+}
+
 #intro .title {
     font-size: 50px;
 }
@@ -125,4 +134,3 @@
 #started .btn-group{
     border: 1px solid lightgray;
 }
-

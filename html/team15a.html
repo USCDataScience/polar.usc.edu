@@ -4,9 +4,47 @@
 	<title>Global Warming vs Climate Change</title>
 	<link rel="stylesheet" type="" href="../css/team15-a.css">
 	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
+<style>
+body {
+  padding-top: 5%;
+}
+</style>
 </head>
 
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="other-examples.html" style="color:white">Return</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-custom">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <!-- TODO: figure out why class doesn't affect color/style -->
+                </ul>
+                <a href="http://usc.edu" class="pull-right">
+                  <img src="../images/usc-primary-logotype.svg" width="176px" height="38px">
+                </a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 	<h1>Global Warming vs Climate Change</h1>
 
 	<p> The D3 difference chart shows the difference between the frequencies of the occurrences of the Global Warming and Climate change in the parsed crawled data. 

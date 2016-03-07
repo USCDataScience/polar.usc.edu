@@ -35,46 +35,6 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="../index.html#page-top" style="color:white">Home</a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-custom">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top" style="color:white"></a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">About<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">About Us</li>
-                            <li><a class="page-scroll" href="../index.html#about">What Is Polar Data Insights?</a></li>
-                            <li><a class="page-scroll" href="../index.html#features">Visualization Features</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a class="page-scroll" href="../index.html#started">Getting Started</a>
-                        </ul>
-                    </li>
-                    
-                    <!--TODO: Change this to polar.usc.edu/solr once it is up and running -->
-                    <li>
-                    <!--    <a class="page-scroll" href=" html/placeholder.html " style="color:#ffffff">Search</a>-->
-
-
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">Search <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">Search</li>
-                            <li><a class="page-scroll" href="http://polar.usc.edu/Polar/banana/#/dashboard"> Banana </a></li>
-                            <li><a class="page-scroll" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
-                    </li>
-                        </ul>
-                    </li>
-                    <li><a style="color:#ffffff" class="page-scroll" href="d3-examples.html">Visualizations</a>
-                    <li>
-                        <a class="page-scroll" href="datascience.html" style="color:#ffffff">USC Data Science Group</a>
-                    </li>
-
-
-                </ul>
                 <a href="http://usc.edu" class="pull-right">
                   <img src="../images/usc-primary-logotype.svg" width="176px" height="38px">
                 </a>
@@ -84,37 +44,23 @@
         <!-- /.container -->
     </nav>
 
-    
-
-    
 
     <section id="D3" class="D3-section">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-lg-12">
-                    <h1>D3 Examples</h1>
-                </div> -->
-                <!-- <div align="left" style="margin-top:10%">
-                    <p><a href="team3a.html"><span style="font-size: large">Team 3 - Globe Map</span></a></p>
-                    <p><a href="team15a.html"><span style="font-size: large">Team 15 - Line Chart</span></a></p>
-                    <p><a href="team22a.html"><span style="font-size: large">Team 22 - Bar</span></a></p>
-					<p><a href="team27a.html"><span style="font-size: large">Team 27 - Bubble Map</span></a></p>
-                    <p><a href="team28a.html"><span style="font-size: large">Team 28 - Google Maps</span></a></p>
-                    <p><a href="team34a.html"><span style="font-size: large">Team 34 - Circles</span></a></p>
-                    <p><a href="team37a.html"><span style="font-size: large">Team 37 - Map</span></a></p>
-                    <p><a href="team37a1.html"><span style="font-size: large">Team 37 - Donut</span></a></p>
-                    <p><a href="team37b.html"><span style="font-size: large">Team 37 - Clusters</span></a></p>
-                    <p><a href="team37d.html"><span style="font-size: large">Team 37 - Line Graph</span></a></p>
-                    <p><a href="team37e.html"><span style="font-size: large">Team 37 - Bar Graph</span></a></p>
-                </div> -->
-
-                <!-- <ul class="pagination" style="margin-top:10%">
-                    <li><a href="#">Atmosphere Composition</a></li>
-                    <li><a href="#">Glaciers, Icesheets and Snowmelt Data</a></li>
-                    <li><a href="#">CO2, Warming and Ocean Circulation</a></li>
-                </ul> -->
 
                 <div class="row" style="margin-top:10%">
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team28.png">
+                            <div class="caption">
+                                <h3>MIME Analysis</h3>
+                                <p>These visualisations contribute to explaning the MIME Diversity in Polar Dataset.</p>
+                                <p><a href="./team28/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Note: each image is 242x200  -->
                     <div class="col-sm-6 col-md-4">
@@ -150,30 +96,19 @@
                         </div>
                     </div>
 
+                    <div class="col-sm-6 col-md-4" align=center style="margin-top:10%">
+                      <p>
+                          <a href="other-examples.html" class="btn" role="button" style="font-size:24px">
+                          View More
+                          </a>
+                      </p>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- <button href="team29c.html" class="btn btn-primary" style="margin-left:45%">View more</button> -->
-            
             <div class="row" style="margin-left:45%">
 
-                <p>
-                    <a href="other-examples.html" class="btn btn-primary" role="button">
-                    View More
-                    </a>
-                </p>
-
-                <!-- <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="../images/team3a.png">
-                        <div class="caption">
-                            <h3 align="center">Other Visualizations</h3>
-                            <p>Example visualizations from other teams such as bubble graphs and google maps</p>
-                            <p style="margin-top:5%"><a href="other-examples.html" class="btn btn-primary" role="button">View</a>
-                        </div>
-                    </div>
-                </div> -->
-                
             </div>
         </div>
     </section>

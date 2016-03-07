@@ -10,75 +10,29 @@
     <title>USC Data Science - Polar Database</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Scrolling Nav CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="color:white">Home</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-custom">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top" style="color:white"></a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">About <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">About Us</li>
-                            <li><a class="page-scroll" href="#about">What Is Polar Data Insights?</a></li>
-                            <li><a class="page-scroll" href="#features">Visualization Features</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a class="page-scroll" href="#started">Getting Started</a>
-                        </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">Search <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-header">Search</li>
-                                <li><a class="page-scroll" href="http://polar.usc.edu/Polar/banana/#/dashboard"> Banana </a></li>
-                                <li><a class="page-scroll" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a class="page-scroll" href="html/d3-examples.html" style="color:#ffffff">Visualizations</a></li>
-                        <li><a class="page-scroll" style="color:#ffffff" href="html/datascience.html">USC Data Science Group</a></li>
-                        <li><a class="page-scroll" style="color:#ffffff" href="html/mime-analysis/mime.html">MIME Analaysis</a></li>
-
-
-                </ul>
-                <a href="http://usc.edu" class="pull-right">
-                    <img src="images/usc-primary-logotype.svg" width="176px" height="38px">
-                </a>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
+    <div id="header"></div>
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
@@ -236,18 +190,8 @@
             </section>
         </div>
 
-        <hr class="featurette-divider">
-        <div>
-            <div class="container">
-                <footer>
-                    <p align=center>©USC Data Science Group 2016, All Rights Reserved</p>
-                </footer>
-            </div>
-        </div>
+        <div id="footer"></div>
 
-
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>

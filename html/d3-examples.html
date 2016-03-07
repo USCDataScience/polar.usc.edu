@@ -18,75 +18,23 @@
     <!-- Custom CSS -->
     <link href="../css/styles.css" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="../index.html#page-top" style="color:white">Home</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-custom">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top" style="color:white"></a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">About<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">About Us</li>
-                            <li><a class="page-scroll" href="../index.html#about">What Is Polar Data Insights?</a></li>
-                            <li><a class="page-scroll" href="../index.html#features">Visualization Features</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a class="page-scroll" href="../index.html#started">Getting Started</a>
-                        </ul>
-                    </li>
-                    
-                    <!--TODO: Change this to polar.usc.edu/solr once it is up and running -->
-                    <li>
-                    <!--    <a class="page-scroll" href=" html/placeholder.html " style="color:#ffffff">Search</a>-->
-
-
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff">Search <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">Search</li>
-                            <li><a class="page-scroll" href="http://polar.usc.edu/Polar/banana/#/dashboard"> Banana </a></li>
-                            <li><a class="page-scroll" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
-                    </li>
-                        </ul>
-                    </li>
-                    <li><a style="color:#ffffff" class="page-scroll" href="d3-examples.html">Visualizations</a>
-                    <li>
-                        <a class="page-scroll" href="datascience.html" style="color:#ffffff">USC Data Science Group</a>
-                    </li>
-
-
-                </ul>
-                <a href="http://usc.edu" class="pull-right">
-                  <img src="../images/usc-primary-logotype.svg" width="176px" height="38px">
-                </a>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    
-
-    
+    <div id="header"></div>
 
     <section id="D3" class="D3-section">
         <div class="container">
@@ -154,7 +102,7 @@
             </div>
 
             <!-- <button href="team29c.html" class="btn btn-primary" style="margin-left:45%">View more</button> -->
-            
+
             <div class="row" style="margin-left:45%">
 
                 <p>
@@ -173,13 +121,12 @@
                         </div>
                     </div>
                 </div> -->
-                
+
             </div>
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <div id="footer"></div>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>

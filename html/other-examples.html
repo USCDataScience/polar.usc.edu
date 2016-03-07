@@ -18,46 +18,30 @@
     <!-- Custom CSS -->
     <link href="../css/styles.css" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="d3-examples.html" style="color:white">Return</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-custom">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <!-- TODO: figure out why class doesn't affect color/style -->
-                </ul>
-                <a href="http://usc.edu" class="pull-right">
-                  <img src="../images/usc-primary-logotype.svg" width="176px" height="38px">
-                </a>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <div id="header"></div>
 
     <section id="D3other" class="D3-section">
         <div class="container">
             <div class="row">
                 <div class="row" style="margin-top:10%;">
 
-                    <div class="col-sm-6 col-md-4" >
+                    <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
                             <img src="../images/team3a.png">
                             <div class="caption">
@@ -160,17 +144,17 @@
 
                                 <p><a href="team37b.html" class="btn btn-primary" role="button">View</a></p>
 
+                            </div>
                         </div>
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <div id="footer"></div>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>

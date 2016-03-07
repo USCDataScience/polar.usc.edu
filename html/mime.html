@@ -6,8 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(".nav-tabs li").on("click", function(e) {
@@ -30,11 +38,21 @@
         });
 
     </script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
 </head>
 
 <body>
+    <div id="header"></div>
 
-    <div class="container">
+    <div class="container" style="margin-top:10%">
         <h2>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset</h2>
         <p class="lead">
             Choose mime type:
@@ -57,19 +75,20 @@
             </select>
         </p>
         <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#bfa" data-src="bfa.html">Byte Frequency Analysis</a></li>
-            <li><a data-toggle="tab" href="#distribution_correlation" data-src="distribution_correlation.html">Byte Frequency Distribution Correlation</a></li>
-            <li><a data-toggle="tab" href="#cross_correlation" data-src="cross_correlation.html">Byte Frequency Cross Correlation</a></li>
-            <li><a data-toggle="tab" href="#fht" data-src="fht/index.html">File Header Trailer (FHT) Analysis</a></li>
+            <li class="active"><a data-toggle="tab" href="#bfa" data-src="mime-analysis/bfa.html">Byte Frequency Analysis</a></li>
+            <li><a data-toggle="tab" href="#distribution_correlation" data-src="mime-analysis/distribution_correlation.html">Byte Frequency Distribution Correlation</a></li>
+            <li><a data-toggle="tab" href="#cross_correlation" data-src="mime-analysis/cross_correlation.html">Byte Frequency Cross Correlation</a></li>
+            <li><a data-toggle="tab" href="#fht" data-src="mime-analysis/fht.html">File Header Trailer (FHT) Analysis</a></li>
         </ul>
 
         <div class="tab-content">
             <div class="tab-pane fade in active">
-                <iframe src="bfa.html?mime_type=application_mp4" frameborder="0" height="100%" width="100%" style="min-height:600px;" />
+                <iframe src="mime-analysis/bfa.html?mime_type=application_mp4" frameborder="0" height="100%" width="100%" style="min-height:600px;" />
             </div>
         </div>
     </div>
 
+    <div id="footer"></div>
 </body>
 
 </html>

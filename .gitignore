@@ -4,3 +4,4 @@ src/
 target/
 .idea/
 projectFilesBackup/
+.DS_Store

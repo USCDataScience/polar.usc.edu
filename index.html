@@ -43,7 +43,7 @@
                     <li class="hidden"><a class="page-scroll" href="#page-top" style="color:white"></a></li>
 
                     <li><a class="page-scroll" href="#about" style="color:#ffffff">About</a></li>
-                    <li><a class="page-scroll" href="#features" style="color:#ffffff">Features</a></li>
+                    <li><a class="page-scroll" href="#features" style="color:#ffffff">Insights</a></li>
                     <li><a class="page-scroll" href="#search" style="color:#ffffff">Search</a></li>
                     <li><a class="page-scroll" style="color:#ffffff" href="#learn-more">Partners</a></li>
                 </ul>
@@ -78,6 +78,7 @@
     </section>
 
     <!-- About Section -->
+    <div>
         <section id="about" class="about-section">
             <div class="container">
                 <div class="row">
@@ -87,7 +88,7 @@
                     <hr class="about-divider">
 
                     <div class="jumbotron" style="margin-bottom:5%; margin-top:3%">
-                        <h2>What are Polar Data Insights?</h2>
+                        <h2>What is Polar Data Insights?</h2>
                         <p class="lead text-left" style="margin-top:2%">JPL and USC, under the direction of Dr. Chris Mattmann, have worked to collect a corpus of “deep web” polar datasets spanning many file types containing scientific data such as images, videos, and other information on the Web. These pieces of data were collected using Apache Nutch, Apache Tika, and Apache Solr.</p>
                         <p class="lead text-left">Our goal is to aggregate this data into an intuitive search engine that scientists can utilize for polar research. Additionally, the data is analyzed and illustrated using visualization APIs Banana and D3.js, providing researchers a better understanding of the data's relationship within the Polar ecosystem.</p>
                     </div>
@@ -131,15 +132,17 @@
                 </div>
             </div>
         </section>
+    </div>
 
     <!-- Features Section -->
+    <div>
         <section id="features" class="features-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
 
                         <hr class="featurette-divider" style="margin-top:-1%">
-                        <h1>Visualization Features</h1>
+                        <h1>Insights</h1>
                         <hr class="featurette-divider">
 
                         <!--Banana Feature-->
@@ -172,7 +175,7 @@
                         <hr class="featurette-divider">
 
                         <!--Facetview Feature-->
-                        <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                        <div class="row featurette" style="margin-top:3%">
                             <div class="col-md-7">
                             <h2 align=left class="featurette-heading">Facetview. <span class="text-muted">Experience Solr.</span></h2>
                             <p align=left class="lead">Filter searches using facets and easily save, share, and consume documents from the Deep Web. </p>
@@ -195,7 +198,7 @@
           <div class="container">
               <div class="row">
 
-                <div class="col-lg-12">
+                <div class="col-lg-12" style="margin-top:3%">
                     <hr class="featurette-divider">
                     <h1 align=center>Search</h1>
                     <hr class="featurette-divider">
@@ -220,6 +223,7 @@
               </div>
           </div>
       </section>
+    </div>
 
     <!-- Learn More Section -->
     <section id="learn-more" class="learn-more-section" style="margin-top:5%">
@@ -231,20 +235,45 @@
                   <h1 align=center>USC Data Science Partner Sites</h1>
                   <hr class="featurette-divider">
               </div>
+              
+             <div class="col-md-4 col-sm-4 col-xs-6" style="margin-top:3%">
+                      <div class="panel panel-success">
+                          <div class="panel-heading">
+                           <h4>TREC/Data Description</h4>
+                          </div>
+                          <div class="panel-body">
+                               <p>
+                                  The goal of the Text Retrieval Conference (TREC) is to encourage research in information retrieval
+                                  from large text collections by providing interesting and understudied domains of documents to crawl.
+                              </p>
+                            <p>
+                                  Currently, the polar domains contains the
+                                  NSF-funded Advanced Cooperative Artic Data and Information System (ACADIS), 
+                                  NASA-funded Antarctic Master Directory (AMD), and National Snow and Ice Data Center (NSIDC) Arctic Data Explorer.
+                                  Our data was retrieved using these directories and submitted to TREC in 2015.
+                              </p>
+
+                          </div>
+                          <div class="panel-footer">
+                              <a href="http://trec-dd.org/" class="btn btn-success ">Visit TREC</a>
+                          </div>
+                      </div>
+              </div>
 
               <div class="col-md-4 col-sm-4 col-xs-6" style="margin-top:3%">
                   <div class="panel panel-info">
                           <div class="panel-heading">
-                           <h4>Polar DataVis</h4>
+                           <h4>Polar Hack - November 2014</h4>
                           </div>
                           <div class="panel-body">
                               <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                  Hosted by the NSF, the goal of this hackathon was to implement visualizations of existing
+                                  polar data sets to support new discoveries and promote cross agency collaboration between the NSF, NASA, NOAA and other Arctic/Polar related agencies.
                               </p>
                             <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                  Ultimately, the workshop fostered the understanding of the variability
+                                  of the polar regions at different timescales, allowing the NSF to make longer-term 
+                                  investments in technologies and visualizations that can be adopted by the community.
                               </p>
                           </div>
                           <div class="panel-footer">
@@ -259,14 +288,14 @@
                            <h4>IRDS</h4>
                           </div>
                           <div class="panel-body">
-
                              <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                  The Information Retrieval and Data Science Group’s (I.R.D.S.) mission is to research and develop 
+                                  new methodology and open source software to analyze, ingest, process, and manage Big Data and to turn it into 
+                                  information.
                               </p>
                             <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                  We have expertise in data collection and contribute to the world's largest and most often downloaded open-source projects, working with NASA, DARPA, DHS, NIH across a number of domains, Earth Science, 
+                                  Planetary Science, Astronomy, defense, and private industry.
                               </p>
                           </div>
                           <div class="panel-footer">
@@ -274,28 +303,6 @@
                           </div>
                       </div>
               </div>
-
-              <div class="col-md-4 col-sm-4 col-xs-6" style="margin-top:3%">
-                      <div class="panel panel-success">
-                          <div class="panel-heading">
-                           <h4>TREC</h4>
-                          </div>
-                          <div class="panel-body">
-                               <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                              </p>
-                            <p>
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                              </p>
-
-                          </div>
-                          <div class="panel-footer">
-                              <a href="http://trec-dd.org/" class="btn btn-success ">Visit TREC</a>
-                          </div>
-                      </div>
-                  </div>
             </div>
         </div>
     </section>

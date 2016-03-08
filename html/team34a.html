@@ -25,34 +25,18 @@
 
     <!-- Custom CSS -->
     <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/jquery.js"></script>
+
+    <script>
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+
+    </script>
   <div class="bubbleChart"/>
   <body>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-          <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand page-scroll" href="other-examples.html" style="color:white">Return</a>
-          </div>
+    <div id="header"> </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav navbar-custom">
-                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                  <!-- TODO: figure out why class doesn't affect color/style -->
-              </ul>
-              <a href="http://usc.edu" class="pull-right">
-                <img src="../images/usc-primary-logotype.svg" width="176px" height="38px">
-              </a>
-          </div>
-          <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-  </nav>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 
   <script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>

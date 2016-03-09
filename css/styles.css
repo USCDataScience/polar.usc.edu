@@ -127,10 +127,6 @@
     transform: rotate(360deg);
 }
 
-#started .btn-group .btn-default{
-    color: #000;
-}
-
-#started .btn-group{
-    border: 1px solid lightgray;
+#learn-more .panel .panel-body{
+    min-height:280px;
 }

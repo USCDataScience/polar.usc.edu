@@ -1,0 +1,908 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "resourceName",
+                    "size": 135
+                },
+                {
+                    "name": "X-Parsed-By",
+                    "size": 135
+                },
+                {
+                    "name": "X-TIKA:parse_time_millis",
+                    "size": 135
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 135
+                },
+                {
+                    "name": "Content-Encoding",
+                    "size": 113
+                },
+                {
+                    "name": "dc:title",
+                    "size": 83
+                },
+                {
+                    "name": "title",
+                    "size": 83
+                },
+                {
+                    "name": "Content-Type-Hint",
+                    "size": 40
+                },
+                {
+                    "name": "description",
+                    "size": 17
+                },
+                {
+                    "name": "access_permission:can_modify",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:extract_content",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:can_print",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:assemble_document",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:extract_for_accessibility",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:fill_in_form",
+                    "size": 12
+                },
+                {
+                    "name": "pdf:encrypted",
+                    "size": 12
+                },
+                {
+                    "name": "dc:format",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:can_print_degraded",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:modify_annotations",
+                    "size": 12
+                },
+                {
+                    "name": "pdf:PDFVersion",
+                    "size": 12
+                },
+                {
+                    "name": "xmpTPg:NPages",
+                    "size": 12
+                },
+                {
+                    "name": "keywords",
+                    "size": 9
+                },
+                {
+                    "name": "refresh",
+                    "size": 8
+                },
+                {
+                    "name": "dc:description",
+                    "size": 6
+                },
+                {
+                    "name": "Dimension VerticalPixelOffset",
+                    "size": 4
+                },
+                {
+                    "name": "height",
+                    "size": 4
+                },
+                {
+                    "name": "tiff:ImageLength",
+                    "size": 4
+                },
+                {
+                    "name": "Dimension HorizontalPixelOffset",
+                    "size": 4
+                },
+                {
+                    "name": "Compression NumProgressiveScans",
+                    "size": 4
+                },
+                {
+                    "name": "ImageDescriptor",
+                    "size": 4
+                },
+                {
+                    "name": "Chroma ColorSpaceType",
+                    "size": 4
+                },
+                {
+                    "name": "tiff:ImageWidth",
+                    "size": 4
+                },
+                {
+                    "name": "GraphicControlExtension",
+                    "size": 4
+                },
+                {
+                    "name": "Compression CompressionTypeName",
+                    "size": 4
+                },
+                {
+                    "name": "Dimension ImageOrientation",
+                    "size": 4
+                },
+                {
+                    "name": "Data SampleFormat",
+                    "size": 4
+                },
+                {
+                    "name": "Chroma BlackIsZero",
+                    "size": 4
+                },
+                {
+                    "name": "Chroma NumChannels",
+                    "size": 4
+                },
+                {
+                    "name": "Description",
+                    "size": 4
+                },
+                {
+                    "name": "Compression Lossless",
+                    "size": 4
+                },
+                {
+                    "name": "Keywords",
+                    "size": 4
+                },
+                {
+                    "name": "width",
+                    "size": 4
+                },
+                {
+                    "name": "Content-Style-Type",
+                    "size": 3
+                },
+                {
+                    "name": "generator",
+                    "size": 3
+                },
+                {
+                    "name": "robots",
+                    "size": 3
+                },
+                {
+                    "name": "author",
+                    "size": 2
+                },
+                {
+                    "name": "Content-language",
+                    "size": 2
+                },
+                {
+                    "name": "copyright",
+                    "size": 2
+                },
+                {
+                    "name": "viewport",
+                    "size": 2
+                },
+                {
+                    "name": "MSSmartTagsPreventParsing",
+                    "size": 2
+                },
+                {
+                    "name": "Refresh",
+                    "size": 2
+                },
+                {
+                    "name": "authors",
+                    "size": 2
+                },
+                {
+                    "name": "X-UA-Compatible",
+                    "size": 2
+                },
+                {
+                    "name": "google-site-verification",
+                    "size": 2
+                },
+                {
+                    "name": "classification",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "Generator",
+                    "size": 1
+                },
+                {
+                    "name": "revisit",
+                    "size": 1
+                },
+                {
+                    "name": "Originator",
+                    "size": 1
+                },
+                {
+                    "name": "verify-v1",
+                    "size": 1
+                },
+                {
+                    "name": "identifier-url",
+                    "size": 1
+                },
+                {
+                    "name": "ROBOTS",
+                    "size": 1
+                },
+                {
+                    "name": "ProgId",
+                    "size": 1
+                },
+                {
+                    "name": "publisher",
+                    "size": 1
+                },
+                {
+                    "name": "Transparency TransparentIndex",
+                    "size": 1
+                },
+                {
+                    "name": "imagetoolbar",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Language",
+                    "size": 1
+                },
+                {
+                    "name": "distribution",
+                    "size": 1
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "resourceName",
+                    "size": 192
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 192
+                },
+                {
+                    "name": "X-TIKA:parse_time_millis",
+                    "size": 192
+                },
+                {
+                    "name": "X-Parsed-By",
+                    "size": 192
+                },
+                {
+                    "name": "dc:title",
+                    "size": 171
+                },
+                {
+                    "name": "title",
+                    "size": 171
+                },
+                {
+                    "name": "Content-Encoding",
+                    "size": 169
+                },
+                {
+                    "name": "generator",
+                    "size": 109
+                },
+                {
+                    "name": "Content-Type-Hint",
+                    "size": 97
+                },
+                {
+                    "name": "description",
+                    "size": 94
+                },
+                {
+                    "name": "keywords",
+                    "size": 73
+                },
+                {
+                    "name": "viewport",
+                    "size": 71
+                },
+                {
+                    "name": "Content-Location",
+                    "size": 70
+                },
+                {
+                    "name": "author",
+                    "size": 70
+                },
+                {
+                    "name": "robots",
+                    "size": 48
+                },
+                {
+                    "name": "X-UA-Compatible",
+                    "size": 20
+                },
+                {
+                    "name": "access_permission:extract_for_accessibility",
+                    "size": 12
+                },
+                {
+                    "name": "pdf:encrypted",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:modify_annotations",
+                    "size": 12
+                },
+                {
+                    "name": "pdf:PDFVersion",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:extract_content",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:can_print_degraded",
+                    "size": 12
+                },
+                {
+                    "name": "xmpTPg:NPages",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:can_print",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:can_modify",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:fill_in_form",
+                    "size": 12
+                },
+                {
+                    "name": "dc:format",
+                    "size": 12
+                },
+                {
+                    "name": "access_permission:assemble_document",
+                    "size": 12
+                },
+                {
+                    "name": "og:title",
+                    "size": 10
+                },
+                {
+                    "name": "og:site_name",
+                    "size": 10
+                },
+                {
+                    "name": "og:url",
+                    "size": 10
+                },
+                {
+                    "name": "og:type",
+                    "size": 10
+                },
+                {
+                    "name": "og:image",
+                    "size": 7
+                },
+                {
+                    "name": "og:locale",
+                    "size": 6
+                },
+                {
+                    "name": "Content-Style-Type",
+                    "size": 6
+                },
+                {
+                    "name": "og:description",
+                    "size": 6
+                },
+                {
+                    "name": "google-site-verification",
+                    "size": 5
+                },
+                {
+                    "name": "dc:description",
+                    "size": 5
+                },
+                {
+                    "name": "Compression Lossless",
+                    "size": 4
+                },
+                {
+                    "name": "GraphicControlExtension",
+                    "size": 4
+                },
+                {
+                    "name": "Data SampleFormat",
+                    "size": 4
+                },
+                {
+                    "name": "Chroma BlackIsZero",
+                    "size": 4
+                },
+                {
+                    "name": "tiff:ImageWidth",
+                    "size": 4
+                },
+                {
+                    "name": "ImageDescriptor",
+                    "size": 4
+                },
+                {
+                    "name": "Compression CompressionTypeName",
+                    "size": 4
+                },
+                {
+                    "name": "content-language",
+                    "size": 4
+                },
+                {
+                    "name": "height",
+                    "size": 4
+                },
+                {
+                    "name": "width",
+                    "size": 4
+                },
+                {
+                    "name": "Compression NumProgressiveScans",
+                    "size": 4
+                },
+                {
+                    "name": "Dimension VerticalPixelOffset",
+                    "size": 4
+                },
+                {
+                    "name": "Chroma NumChannels",
+                    "size": 4
+                },
+                {
+                    "name": "tiff:ImageLength",
+                    "size": 4
+                },
+                {
+                    "name": "Chroma ColorSpaceType",
+                    "size": 4
+                },
+                {
+                    "name": "Dimension ImageOrientation",
+                    "size": 4
+                },
+                {
+                    "name": "Dimension HorizontalPixelOffset",
+                    "size": 4
+                },
+                {
+                    "name": "template",
+                    "size": 3
+                },
+                {
+                    "name": "Generator",
+                    "size": 2
+                },
+                {
+                    "name": "twitter:site",
+                    "size": 2
+                },
+                {
+                    "name": "twitter:card",
+                    "size": 2
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "extended-properties:Company",
+                    "size": 1
+                },
+                {
+                    "name": "copyright",
+                    "size": 1
+                },
+                {
+                    "name": "verify-v1",
+                    "size": 1
+                },
+                {
+                    "name": "X-Wix-Application-Instance-Id",
+                    "size": 1
+                },
+                {
+                    "name": "fragment",
+                    "size": 1
+                },
+                {
+                    "name": "csrf-param",
+                    "size": 1
+                },
+                {
+                    "name": "Transparency TransparentIndex",
+                    "size": 1
+                },
+                {
+                    "name": "alexaVerifyID",
+                    "size": 1
+                },
+                {
+                    "name": "refresh",
+                    "size": 1
+                },
+                {
+                    "name": "meta:creation-date",
+                    "size": 1
+                },
+                {
+                    "name": "meta:character-count",
+                    "size": 1
+                },
+                {
+                    "name": "fb:admins",
+                    "size": 1
+                },
+                {
+                    "name": "dcterms:created",
+                    "size": 1
+                },
+                {
+                    "name": "meta:word-count",
+                    "size": 1
+                },
+                {
+                    "name": "X-Wix-Renderer-Server",
+                    "size": 1
+                },
+                {
+                    "name": "meta:page-count",
+                    "size": 1
+                },
+                {
+                    "name": "MSSmartTagsPreventParsing",
+                    "size": 1
+                },
+                {
+                    "name": "msvalidate.01",
+                    "size": 1
+                },
+                {
+                    "name": "language",
+                    "size": 1
+                },
+                {
+                    "name": "X-Wix-Meta-Site-Id",
+                    "size": 1
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Content-language",
+                    "size": 1
+                },
+                {
+                    "name": "X-Wix-DB-Schema-Version",
+                    "size": 1
+                },
+                {
+                    "name": "creator",
+                    "size": 1
+                },
+                {
+                    "name": "authors",
+                    "size": 1
+                },
+                {
+                    "name": "GOOGLEBOT",
+                    "size": 1
+                },
+                {
+                    "name": "imagetoolbar",
+                    "size": 1
+                },
+                {
+                    "name": "csrf-token",
+                    "size": 1
+                },
+                {
+                    "name": "Creation-Date",
+                    "size": 1
+                },
+                {
+                    "name": "p:domain_verify",
+                    "size": 1
+                },
+                {
+                    "name": "expires",
+                    "size": 1
+                },
+                {
+                    "name": "date",
+                    "size": 1
+                },
+                {
+                    "name": "dc:creator",
+                    "size": 1
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "resourceName",
+                    "size": 205
+                },
+                {
+                    "name": "X-Parsed-By",
+                    "size": 205
+                },
+                {
+                    "name": "X-TIKA:parse_time_millis",
+                    "size": 205
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 205
+                },
+                {
+                    "name": "dc:title",
+                    "size": 201
+                },
+                {
+                    "name": "title",
+                    "size": 201
+                },
+                {
+                    "name": "Content-Encoding",
+                    "size": 199
+                },
+                {
+                    "name": "Content-Type-Hint",
+                    "size": 197
+                },
+                {
+                    "name": "keywords",
+                    "size": 173
+                },
+                {
+                    "name": "description",
+                    "size": 173
+                },
+                {
+                    "name": "generator",
+                    "size": 170
+                },
+                {
+                    "name": "robots",
+                    "size": 168
+                },
+                {
+                    "name": "author",
+                    "size": 162
+                },
+                {
+                    "name": "Content-Location",
+                    "size": 162
+                },
+                {
+                    "name": "Content-Style-Type",
+                    "size": 8
+                },
+                {
+                    "name": "date",
+                    "size": 6
+                },
+                {
+                    "name": "copyright",
+                    "size": 5
+                },
+                {
+                    "name": "Generator",
+                    "size": 4
+                },
+                {
+                    "name": "Content-language",
+                    "size": 4
+                },
+                {
+                    "name": "MSSmartTagsPreventParsing",
+                    "size": 4
+                },
+                {
+                    "name": "authors",
+                    "size": 4
+                },
+                {
+                    "name": "access_permission:can_modify",
+                    "size": 2
+                },
+                {
+                    "name": "access_permission:extract_content",
+                    "size": 2
+                },
+                {
+                    "name": "google-site-verification",
+                    "size": 2
+                },
+                {
+                    "name": "access_permission:can_print",
+                    "size": 2
+                },
+                {
+                    "name": "og:title",
+                    "size": 2
+                },
+                {
+                    "name": "pdf:encrypted",
+                    "size": 2
+                },
+                {
+                    "name": "dc:format",
+                    "size": 2
+                },
+                {
+                    "name": "xmpTPg:NPages",
+                    "size": 2
+                },
+                {
+                    "name": "dc:description",
+                    "size": 2
+                },
+                {
+                    "name": "access_permission:extract_for_accessibility",
+                    "size": 2
+                },
+                {
+                    "name": "og:description",
+                    "size": 2
+                },
+                {
+                    "name": "access_permission:fill_in_form",
+                    "size": 2
+                },
+                {
+                    "name": "access_permission:modify_annotations",
+                    "size": 2
+                },
+                {
+                    "name": "pdf:PDFVersion",
+                    "size": 2
+                },
+                {
+                    "name": "X-UA-Compatible",
+                    "size": 2
+                },
+                {
+                    "name": "access_permission:can_print_degraded",
+                    "size": 2
+                },
+                {
+                    "name": "access_permission:assemble_document",
+                    "size": 2
+                },
+                {
+                    "name": "Dimension VerticalPixelOffset",
+                    "size": 1
+                },
+                {
+                    "name": "height",
+                    "size": 1
+                },
+                {
+                    "name": "tiff:ImageLength",
+                    "size": 1
+                },
+                {
+                    "name": "Dimension HorizontalPixelOffset",
+                    "size": 1
+                },
+                {
+                    "name": "Compression Lossless",
+                    "size": 1
+                },
+                {
+                    "name": "Robots",
+                    "size": 1
+                },
+                {
+                    "name": "width",
+                    "size": 1
+                },
+                {
+                    "name": "Compression NumProgressiveScans",
+                    "size": 1
+                },
+                {
+                    "name": "viewport",
+                    "size": 1
+                },
+                {
+                    "name": "Pragma",
+                    "size": 1
+                },
+                {
+                    "name": "Chroma ColorSpaceType",
+                    "size": 1
+                },
+                {
+                    "name": "Language",
+                    "size": 1
+                },
+                {
+                    "name": "expires",
+                    "size": 1
+                },
+                {
+                    "name": "og:image",
+                    "size": 1
+                },
+                {
+                    "name": "GraphicControlExtension",
+                    "size": 1
+                },
+                {
+                    "name": "Compression CompressionTypeName",
+                    "size": 1
+                },
+                {
+                    "name": "Data SampleFormat",
+                    "size": 1
+                },
+                {
+                    "name": "Chroma BlackIsZero",
+                    "size": 1
+                },
+                {
+                    "name": "Chroma NumChannels",
+                    "size": 1
+                },
+                {
+                    "name": "Dimension ImageOrientation",
+                    "size": 1
+                },
+                {
+                    "name": "ImageDescriptor",
+                    "size": 1
+                },
+                {
+                    "name": "tiff:ImageWidth",
+                    "size": 1
+                },
+                {
+                    "name": "Keywords",
+                    "size": 1
+                }
+            ],
+            "name": "cluster2"
+        }
+    ],
+    "name": "clusters"
+}

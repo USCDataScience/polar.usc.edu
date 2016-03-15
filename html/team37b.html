@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+
+<script src="../js/jquery.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html"); 
+});
+
+</script>
 <style>
 
 .node {
@@ -20,7 +28,9 @@
   text-anchor: middle;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
-
+body {
+  padding-top: 5%;
+}
 .label,
 .node--root,
 .node--leaf {
@@ -28,7 +38,18 @@
 }
 
 </style>
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
 <body>
+    <div id="header"> </div>
+
+
 <script src="http://d3js.org/d3.v3.js"></script>
 <script>
 

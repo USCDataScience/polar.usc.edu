@@ -6,6 +6,9 @@ path {
   stroke-width: 0.25px;
   fill: grey;
 }
+body {
+  padding-top: 5%;
+}
 .legend { list-style: none; }
 .legend li { float: left; margin-right: 10px; }
 .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
@@ -15,7 +18,24 @@ path {
 .legend .kindaawesome { background-color: yellow; }
 .legend .notawesome { background-color: green; }
 </style>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
+
+    <script src="../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+
+    </script>
 <body>
+    <div id="header"> </div>
+
 <h1>Polar Bear Population Distribution</h1>
 <button type="button" class="btn btn-primary" style="float:right" onclick="loadDonutQuery()">Switch to different view</button>
 <ul class="legend">

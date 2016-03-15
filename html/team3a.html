@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Scrolling Nav CSS -->
+<link href="../css/scrolling-nav.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/styles.css" rel="stylesheet">
 <style>
 
 body {
   background: #000;
+  padding-top: 10%;
 }
 
 .stroke {
@@ -64,7 +73,21 @@ body {
 
 
 </style>
+<script src="../js/jquery.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html"); 
+});
+
+</script>
+
 <body>
+<!-- Navigation -->
+    <!-- Navigation -->
+    <div id="header"> </div>
+
+
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -92,12 +115,12 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 var tip = d3.tip()
-	    .attr('class', 'd3-tip')
-	    .offset([-10, 0])
-	    .html(function(d) {
-	      return d.state+"<br/><span>"+d.key+": "+d.count+"</span>";
-	    });
-	    
+      .attr('class', 'd3-tip')
+      .offset([-10, 0])
+      .html(function(d) {
+        return d.state+"<br/><span>"+d.key+": "+d.count+"</span>";
+      });
+      
 var x = d3.scale.ordinal()
             .rangeBands([0, 10]);
 svg.call(tip);
@@ -131,49 +154,49 @@ d3.json("../data/json/team3-world.json", function(error, world) {
       .attr("class", "boundary")
       .attr("d", path);
       
-	d3.json("../data/team3-query.txt", function(error, jsondata) {
-		
-		x.domain(['Iron','Oil','Others']);
-		
-		var c = 0;
-		var timerId = setInterval(function(){
-			if(c >= jsondata.length)
-				clearInterval(timerId)
-			else{
-				var keys = Object.keys(jsondata[c])
-          		var g = svg.append("g");
-          		g.selectAll("rect") 
-          			.data(jsondata[c][keys[0]])
-          			.enter()
-          			.append("rect") 
-          			.attr("x", function(d, i) {
-                		return projection([d.lon, d.lat])[0] + x(d.key);
-        			})
-        			.attr("width", 3)
-            		.attr("y", function(d) {
-                		return projection([d.lon, d.lat])[1];
-            		})
-            		.attr("height",0)
-            		.style("fill", function(d){
-            			if(d.key=='Iron')
-            				return 'red';
-            			if(d.key == 'Oil')
-            				return 'blue';
-            			return 'green';
-            		})
-           			.on('mouseover',tip.show)
-           			.on('mouseout',tip.hide)
-            		.transition()
-            		.duration(1000)
-            		.attr("y", function(d) {
-                		return projection([d.lon, d.lat])[1]-d.count*2;
-            		})
-            		.attr("height", function(d){
-            			return d.count*2;
-            		});
-			}
-			c++;
-		},2000);                	
+  d3.json("../data/team3-query.txt", function(error, jsondata) {
+    
+    x.domain(['Iron','Oil','Others']);
+    
+    var c = 0;
+    var timerId = setInterval(function(){
+      if(c >= jsondata.length)
+        clearInterval(timerId)
+      else{
+        var keys = Object.keys(jsondata[c])
+              var g = svg.append("g");
+              g.selectAll("rect") 
+                .data(jsondata[c][keys[0]])
+                .enter()
+                .append("rect") 
+                .attr("x", function(d, i) {
+                    return projection([d.lon, d.lat])[0] + x(d.key);
+              })
+              .attr("width", 3)
+                .attr("y", function(d) {
+                    return projection([d.lon, d.lat])[1];
+                })
+                .attr("height",0)
+                .style("fill", function(d){
+                  if(d.key=='Iron')
+                    return 'red';
+                  if(d.key == 'Oil')
+                    return 'blue';
+                  return 'green';
+                })
+                .on('mouseover',tip.show)
+                .on('mouseout',tip.hide)
+                .transition()
+                .duration(1000)
+                .attr("y", function(d) {
+                    return projection([d.lon, d.lat])[1]-d.count*2;
+                })
+                .attr("height", function(d){
+                  return d.count*2;
+                });
+      }
+      c++;
+    },2000);                  
     });
 });
 

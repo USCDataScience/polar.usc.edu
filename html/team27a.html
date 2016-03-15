@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
+
+    <script src="../js/jquery.js"></script>
+    <script>
+      $(function(){
+        $("#header").load("header.html"); 
+      });
+
+    </script>
+<style>
+body {
+  padding-top: 5%;
+}
+</style>
+</head>
 <body>
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <!-- I recommend you host this file on your own, since this will change without warning -->
   <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+    <div id="header"> </div>
+
+  
   <div id="container1" style="position: relative; width: 80%; max-height: 450px;"></div>
   
      

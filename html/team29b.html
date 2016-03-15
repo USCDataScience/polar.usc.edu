@@ -35,7 +35,9 @@ div.tooltip {
   stroke: #ccc;
   stroke-width: 1px;
 }
- 
+ body {
+  padding-top: 5%;
+}
 </style>
      <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
      <link rel="stylesheet" href="../css/team29-b.css">
@@ -43,9 +45,25 @@ div.tooltip {
      <script src="../js/d3.min.js"></script>
      <script src="../js/topojson.v1.min.js"></script>
      <script src="../js/D3/Team29b.js"></script>
+      <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+         <!-- Scrolling Nav CSS -->
+         <link href="../css/scrolling-nav.css" rel="stylesheet">
+
+         <!-- Custom CSS -->
+         <link href="../css/styles.css" rel="stylesheet">
+         <script src="../js/jquery.js"></script>
+
+         <script>
+         $(function(){
+           $("#header").load("header.html"); 
+         });
+
+         </script>
 </head>
 
 <body>
+    <div id="header"> </div>
 
 <div class="container"> 
   <div class="content">

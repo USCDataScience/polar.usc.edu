@@ -1,0 +1,208 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "File Size",
+                    "size": 31
+                },
+                {
+                    "name": "X Resolution",
+                    "size": 31
+                },
+                {
+                    "name": "Image Height",
+                    "size": 31
+                },
+                {
+                    "name": "Number of Components",
+                    "size": 31
+                },
+                {
+                    "name": "File Modified Date",
+                    "size": 31
+                },
+                {
+                    "name": "Image Width",
+                    "size": 31
+                },
+                {
+                    "name": "File Name",
+                    "size": 31
+                },
+                {
+                    "name": "Component 1",
+                    "size": 31
+                },
+                {
+                    "name": "Y Resolution",
+                    "size": 31
+                },
+                {
+                    "name": "tiff:ImageLength",
+                    "size": 31
+                },
+                {
+                    "name": "Data Precision",
+                    "size": 31
+                },
+                {
+                    "name": "Resolution Units",
+                    "size": 31
+                },
+                {
+                    "name": "Component 2",
+                    "size": 31
+                },
+                {
+                    "name": "Component 3",
+                    "size": 31
+                },
+                {
+                    "name": "X-TIKA:parse_time_millis",
+                    "size": 31
+                },
+                {
+                    "name": "tiff:ImageWidth",
+                    "size": 31
+                },
+                {
+                    "name": "resourceName",
+                    "size": 31
+                },
+                {
+                    "name": "Compression Type",
+                    "size": 31
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 31
+                },
+                {
+                    "name": "tiff:BitsPerSample",
+                    "size": 31
+                },
+                {
+                    "name": "X-Parsed-By",
+                    "size": 31
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "resourceName",
+                    "size": 15
+                },
+                {
+                    "name": "X-Parsed-By",
+                    "size": 15
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 15
+                },
+                {
+                    "name": "X-TIKA:parse_time_millis",
+                    "size": 15
+                },
+                {
+                    "name": "Content-Encoding",
+                    "size": 13
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "Chroma ColorSpaceType",
+                    "size": 2
+                },
+                {
+                    "name": "Chroma BlackIsZero",
+                    "size": 2
+                },
+                {
+                    "name": "Chroma NumChannels",
+                    "size": 2
+                },
+                {
+                    "name": "Transparency TransparentIndex",
+                    "size": 2
+                },
+                {
+                    "name": "ImageDescriptor",
+                    "size": 2
+                },
+                {
+                    "name": "Compression Lossless",
+                    "size": 2
+                },
+                {
+                    "name": "Dimension VerticalPixelOffset",
+                    "size": 2
+                },
+                {
+                    "name": "height",
+                    "size": 2
+                },
+                {
+                    "name": "tiff:ImageLength",
+                    "size": 2
+                },
+                {
+                    "name": "width",
+                    "size": 2
+                },
+                {
+                    "name": "Dimension ImageOrientation",
+                    "size": 2
+                },
+                {
+                    "name": "Compression NumProgressiveScans",
+                    "size": 2
+                },
+                {
+                    "name": "Data SampleFormat",
+                    "size": 2
+                },
+                {
+                    "name": "X-TIKA:parse_time_millis",
+                    "size": 2
+                },
+                {
+                    "name": "tiff:ImageWidth",
+                    "size": 2
+                },
+                {
+                    "name": "resourceName",
+                    "size": 2
+                },
+                {
+                    "name": "Dimension HorizontalPixelOffset",
+                    "size": 2
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 2
+                },
+                {
+                    "name": "GraphicControlExtension",
+                    "size": 2
+                },
+                {
+                    "name": "Compression CompressionTypeName",
+                    "size": 2
+                },
+                {
+                    "name": "X-Parsed-By",
+                    "size": 2
+                }
+            ],
+            "name": "cluster2"
+        }
+    ],
+    "name": "clusters"
+}

@@ -344,7 +344,7 @@
   },
   "solr": {
     "server": "/solr/",
-    "core_name": "team1",
+    "core_name": "polar",
     "core_list": [
       "polar",
       "team1",

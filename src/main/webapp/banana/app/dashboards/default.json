@@ -10,7 +10,7 @@
       ],
       "list": {
         "0": {
-          "query": "**",
+          "query": "*Ice*",
           "alias": "",
           "color": "#64B0C8",
           "id": 0,
@@ -38,154 +38,34 @@
   },
   "rows": [
     {
-      "title": "Query",
+      "title": "Search",
       "height": "50px",
-      "editable": false,
+      "editable": true,
       "collapse": false,
-      "collapsable": false,
+      "collapsable": true,
       "panels": [
         {
           "error": false,
-          "span": 12,
-          "editable": false,
-          "group": [
-            "default"
-          ],
+          "span": 8,
+          "editable": true,
           "type": "query",
-          "label": "Search",
-          "history": [
-            "**",
-            "*bye*",
-            "*ice*",
-            "*:*",
-            "",
-            "*no*",
-            "*god*",
-            "*hello*",
-            "*ice,hell*",
-            "*ice hell*"
-          ],
-          "remember": 10,
-          "pinned": true,
-          "query": "*",
-          "title": "Search",
-          "spyable": false,
-          "def_type": ""
-        }
-      ]
-    },
-    {
-      "title": "How",
-      "height": "80px",
-      "editable": false,
-      "collapse": false,
-      "collapsable": false,
-      "panels": [
-        {
-          "error": false,
-          "span": 12,
-          "editable": false,
-          "type": "text",
           "loadingEditor": false,
-          "status": "Stable",
-          "mode": "text",
-          "content": "1. Enter a search term between the asterisks in the Search Panel. (e.g. *ice*)\n2. To search for more than one keyword, press the '+' button on the right side of the search bar.\n3. Results will be displayed in the 'Results' panel. Click on any result for more detailed information.",
-          "style": {
-            "font-size": "12pt"
-          },
-          "title": "How To Search"
-        }
-      ]
-    },
-    {
-      "title": "Filter",
-      "height": "150px",
-      "editable": false,
-      "collapse": false,
-      "collapsable": false,
-      "panels": [
-        {
-          "span": 12,
-          "editable": false,
-          "group": [
-            "default"
+          "query": "*:*",
+          "pinned": true,
+          "history": [
+            "*Ice*",
+            "*hola*",
+            "**",
+            "*polar*",
+            "*no*"
           ],
-          "type": "table",
-          "size": 20,
-          "pages": 500,
-          "offset": 0,
-          "style": {
-            "font-size": "9pt"
-          },
-          "overflow": "min-height",
-          "fields": [
-            "title",
-            "url"
-          ],
-          "highlight": [],
-          "sortable": true,
-          "header": true,
-          "paging": true,
           "spyable": false,
-          "queries": {
-            "mode": "all",
-            "ids": [
-              0
-            ],
-            "query": "q=**&sort=title desc&wt=json&rows=10000",
-            "basic_query": "q=**&sort=title desc"
-          },
-          "field_list": false,
-          "status": "Stable",
-          "trimFactor": 300,
-          "normTimes": true,
-          "title": "Results",
-          "saveOption": "json",
-          "exportSize": 10000,
-          "exportAll": true,
-          "displayLinkIcon": true,
-          "imageFields": [],
-          "imgFieldWidth": "auto",
-          "imgFieldHeight": "85px",
-          "sort": [
-            "title",
-            "desc"
-          ],
-          "important_fields": [
-            "_version_",
-            "anchor",
-            "boost",
-            "cache",
-            "content",
-            "digest",
-            "host",
-            "id",
-            "segment",
-            "text",
-            "title",
-            "tstamp",
-            "url"
-          ],
-          "show_queries": false,
-          "show_help_message": true,
-          "info_mode": "text",
-          "info_font_size": "10pt",
-          "help_message": "Enter in a keyword in the Search field to display results in this panel.",
-          "enableHyperlink": false,
-          "enableImageField": false
-        }
-      ]
-    },
-    {
-      "title": "Events",
-      "height": "200px",
-      "editable": false,
-      "collapse": false,
-      "collapsable": false,
-      "panels": [
+          "remember": 10,
+          "title": "Search"
+        },
         {
-          "span": 6,
-          "editable": false,
+          "span": 4,
+          "editable": true,
           "type": "hits",
           "loadingEditor": false,
           "queries": {
@@ -193,26 +73,65 @@
             "ids": [
               0
             ],
-            "query": "q=**&wt=json&rows=0\n",
+            "query": "q=*Ice*&wt=json&rows=0\n",
             "basic_query": "",
             "custom": ""
           },
           "style": {
-            "font-size": "10pt"
+            "font-size": "20pt"
           },
           "arrangement": "horizontal",
-          "chart": "pie",
+          "chart": "total",
           "counter_pos": "above",
-          "donut": true,
+          "donut": false,
           "tilt": false,
           "labels": true,
           "spyable": false,
-          "show_queries": true,
-          "title": "Total Hits"
-        },
+          "show_queries": false,
+          "title": "Hits"
+        }
+      ]
+    },
+    {
+      "title": "Graphics",
+      "height": "150px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": false,
+      "panels": [
         {
-          "span": 6,
-          "editable": false,
+          "span": 12,
+          "editable": true,
+          "type": "tagcloud",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=*Ice*&wt=json&rows=0&facet=true&facet.field=title&facet.limit=100",
+            "custom": ""
+          },
+          "field": "title",
+          "size": 100,
+          "alignment": "horizontal",
+          "fontScale": 1,
+          "spyable": true,
+          "show_queries": true,
+          "title": "Tags"
+        }
+      ]
+    },
+    {
+      "title": "Terms",
+      "height": "150px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": false,
+      "panels": [
+        {
+          "span": 12,
+          "editable": true,
           "type": "terms",
           "loadingEditor": false,
           "queries": {
@@ -220,7 +139,7 @@
             "ids": [
               0
             ],
-            "query": "q=**&wt=json&rows=0&facet=true&facet.field=title&facet.limit=9&facet.missing=true",
+            "query": "q=*Ice*&wt=json&rows=0&facet=true&facet.field=title&facet.limit=10&facet.missing=true",
             "custom": ""
           },
           "mode": "count",
@@ -230,7 +149,7 @@
           "exclude": [],
           "missing": false,
           "other": false,
-          "size": 9,
+          "size": 10,
           "order": "descending",
           "style": {
             "font-size": "10pt"
@@ -242,7 +161,7 @@
           "arrangement": "horizontal",
           "chart": "bar",
           "counter_pos": "above",
-          "lastColor": "rgb(29,42,25)",
+          "lastColor": "",
           "spyable": false,
           "show_queries": true,
           "chartColors": [
@@ -303,66 +222,80 @@
             "#F9D9F9",
             "#DEDAF7"
           ],
-          "title": "Most Popular"
+          "title": "Terms"
         }
       ]
     },
     {
-      "title": "Graphics",
-      "height": "200px",
-      "editable": false,
+      "title": "Results",
+      "height": "300px",
+      "editable": true,
       "collapse": false,
       "collapsable": false,
       "panels": [
         {
-          "span": 6,
-          "editable": false,
-          "type": "tagcloud",
+          "span": 12,
+          "editable": true,
+          "type": "table",
           "loadingEditor": false,
+          "status": "Stable",
           "queries": {
             "mode": "all",
             "ids": [
               0
             ],
-            "query": "q=**&wt=json&rows=0&facet=true&facet.field=title&facet.limit=70",
+            "query": "q=*Ice*&wt=json&rows=10000",
+            "basic_query": "q=*Ice*",
             "custom": ""
           },
-          "field": "title",
-          "size": 70,
-          "alignment": "horizontal",
-          "fontScale": 15,
-          "spyable": false,
-          "show_queries": false,
-          "title": "Tags"
-        },
-        {
-          "span": 6,
-          "editable": false,
-          "type": "map",
-          "loadingEditor": false,
-          "queries": {
-            "mode": "all",
-            "ids": [
-              0
-            ],
-            "query": "q=**&wt=json&rows=0&facet=true&facet.field=content&facet.limit=200",
-            "custom": ""
-          },
-          "mode": "count",
-          "field": "content",
-          "stats_field": "",
-          "decimal_points": 0,
-          "map": "world",
-          "colors": [
-            "#A0E2E2",
-            "#265656"
+          "size": 20,
+          "pages": 500,
+          "offset": 20,
+          "sort": [
+            "event_timestamp",
+            "desc"
           ],
-          "size": 200,
-          "exclude": [],
+          "group": "default",
+          "style": {
+            "font-size": "9pt"
+          },
+          "overflow": "height",
+          "fields": [
+            "title",
+            "content"
+          ],
+          "important_fields": [
+            "_version_",
+            "anchor",
+            "boost",
+            "cache",
+            "content",
+            "digest",
+            "host",
+            "id",
+            "segment",
+            "text",
+            "title",
+            "tstamp",
+            "url"
+          ],
+          "highlight": [],
+          "sortable": false,
+          "header": true,
+          "paging": true,
+          "field_list": false,
+          "trimFactor": 300,
+          "normTimes": true,
           "spyable": false,
-          "index_limit": 0,
+          "saveOption": "json",
+          "exportSize": 10000,
+          "exportAll": true,
+          "displayLinkIcon": true,
+          "imageFields": [],
+          "imgFieldWidth": "auto",
+          "imgFieldHeight": "85px",
           "show_queries": false,
-          "title": "Map Hits"
+          "title": "Results"
         }
       ]
     },
@@ -410,10 +343,21 @@
     "dropdown_collections": false
   },
   "solr": {
-    "server": "http://localhost:8983/solr/",
-    "core_name": "collection1",
+    "server": "/solr/",
+    "core_name": "polar",
     "core_list": [
-      "collection1"
+      "polar",
+      "team1",
+      "team14",
+      "team16",
+      "team18",
+      "team22",
+      "team29",
+      "team34",
+      "team41",
+      "team42",
+      "team43",
+      "team6"
     ],
     "global_params": ""
   }

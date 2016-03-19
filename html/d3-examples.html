@@ -26,32 +26,22 @@
     </script>
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!-- Navigation -->
     <div id="header"> </div>
 
+    <ul class="nav nav-pills" id="tabs" style="margin-top:10%; margin-bottom: 5%; margin-left: 7.5%">
+        <li role="presentation" class="active"><a href="#regular-viz">Visualizations</a></li>
+        <li role="presentation"><a href="#mime-viz">MIME Analyses</a></li>
+    </ul>
 
+    <div class="tab-content">
 
+        <div role="tabpanel" class="tab-pane fade in active" id="regular-viz">
 
-    <section id="D3" class="D3-section">
-        <div class="container">
-            <div class="row">
-
-                <div class="row" style="margin-top:10%">
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <img src="../images/team28.png">
-                            <div class="caption">
-                                <h3>MIME Analysis</h3>
-                                <p>These visualisations contribute to explaning the MIME Diversity in Polar Dataset.</p>
-                                <p><a href="./team28/index.html" class="btn btn-primary" role="button">View</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="row">
 
                     <!-- Note: each image is 242x200  -->
                     <div class="col-sm-6 col-md-4">
@@ -87,17 +77,35 @@
                         </div>
                     </div>
 
+                </div>
+
+                <!-- View more button  -->
+                <div class="col-sm-12 col-md-12" align=center style="margin-top:3%">
+                    <p>
+                        <a href="other-examples.html" class="btn" role="button" style="font-size:18px">
+                      More Visualizations
+                      </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="mime-viz">
+
+            <div class="container">
+                <div class="row">
+
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                            <img src="../images/mime-analysis.png">
+                            <img src="../images/team28.png">
                             <div class="caption">
-                                <h3>Mimetype Analysis</h3>
-                                <p>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset.</p>
-                                <p><a href="mime-analysis/mime.html" class="btn btn-primary" role="button">View</a>
+                                <h3>MIME Analysis</h3>
+                                <p>These visualisations contribute to explaning the MIME Diversity in Polar Dataset.</p>
+                                <p><a href="./team28/index.html" class="btn btn-primary" role="button">View</a>
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
@@ -110,24 +118,21 @@
                         </div>
                     </div>
 
-
-
-                    <div class="col-sm-6 col-md-4" align=center style="margin-top:10%">
-                        <p>
-                            <a href="other-examples.html" class="btn" role="button" style="font-size:24px">
-                          View More
-                          </a>
-                        </p>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/mime-analysis.png">
+                            <div class="caption">
+                                <h3>Mimetype Analysis</h3>
+                                <p>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset.</p>
+                                <p><a href="mime-analysis/mime.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
-
-            <div class="row" style="margin-left:45%">
-
-            </div>
         </div>
-    </section>
+    </div>
 
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
@@ -138,6 +143,13 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="../js/jquery.easing.min.js"></script>
     <script src="../js/scrolling-nav.js"></script>
+
+    <script type="text/javascript">
+        $('#tabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+    </script>
 
 </body>
 

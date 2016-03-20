@@ -84,7 +84,7 @@
    padding: 3mm 0cm 0cm 0cm;
 }
 
-.thumbnail img{
+#mime-viz .thumbnail img{
     height: 200px;
     width: 400px;
 }

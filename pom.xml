@@ -42,7 +42,7 @@
 	</licenses>
 	<properties>
 		<wicket.version>7.2.0</wicket.version>
-		<!--<jetty9.version>9.2.13.v20150730</jetty9.version>-->
+		<jetty9.version>9.2.13.v20150730</jetty9.version>
 		<log4j.version>2.5</log4j.version>
 		<junit.version>4.12</junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -92,12 +92,12 @@
 		</dependency>
 
 		<!--  JETTY DEPENDENCIES FOR TESTING  -->
-		<!--<dependency>-->
-			<!--<groupId>org.eclipse.jetty.aggregate</groupId>-->
-			<!--<artifactId>jetty-all</artifactId>-->
-			<!--<version>${jetty9.version}</version>-->
-			<!--<scope>test</scope>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.eclipse.jetty.aggregate</groupId>
+			<artifactId>jetty-all</artifactId>
+			<version>${jetty9.version}</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>Polar</finalName>

@@ -12,7 +12,9 @@
 hs_err_pid*
 
 *.iml
-/.idea/
+*/.idea/
 bower_components
 node_modules
 target/
+projectFilesBackup/
+.DS_Store

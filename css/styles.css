@@ -70,16 +70,6 @@
     font-size: 50px;
 }
 
-#extras .title {
-    font-size: 50px;
-}
-
-#D3 .thumbnail{
-    min-width: 400px;
-    min-height: 400px;
-    padding: 2mm;
-}
-
 .thumbnail h3{
    padding: 3mm 0cm 0cm 0cm;
 }
@@ -89,13 +79,12 @@
     width: 400px;
 }
 
-#D3other .thumbnail{
-    width:400px;
-    height:320px;
-    padding: 2mm;
+#regular-viz .thumbnail img{
+    height: 200px;
+    width: 400px;
 }
 
-#D3other .thumbnail img{
+#d3-other .thumbnail img{
     height: 200px;
     width: 400px;
 }

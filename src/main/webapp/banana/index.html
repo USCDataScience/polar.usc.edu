@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width">
 
     <title>Banana 3</title>
+	<link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.light.min.css" title="Light">
     <link rel="stylesheet" href="css/timepicker.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -23,6 +24,7 @@
 
   <body ng-cloak>
 
+	<link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" ng-href="css/bootstrap.{{dashboard.current.style||'dark'}}.min.css">
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -33,20 +35,26 @@
     </div>
     <div class="navbar navbar-static-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
-          <span class="brand">
-            <!-- <img src="img/silklogo.png" data-placement="bottom"> -->
-            {{dashboard.current.title}}
-          </span>
-          <ul class="nav">
-            <li><a href="/Polar/facetview/">Facetview</a>
+        <div class="container-fluid usc-header">
+		<ul class="nav">
+			<a class="home-link" style="color:white" href="/Polar/">Home</a>
+            <li><a>
+				<!-- <img src="img/silklogo.png" data-placement="bottom"> -->
+				{{dashboard.current.title}}
+				</a>
+			</li>
+			<li><a href="/Polar/facetview/">Facetview</a>
               <!--<li><a href="/facetview/">Facetview</a>-->
             </li>
-            <li><a href="/Polar/">Home</a>
-              <!--<li><a href="/">Home</a>-->
-            </li>
           </ul>
-          <ul class="nav pull-right" ng-controller='dashLoader' ng-init="init()" ng-include="'app/partials/dashLoader.html'">
+
+          <ul class="nav pull-right">
+			<li class="nav" ng-controller='dashLoader' ng-init="init()" ng-include="'app/partials/dashLoader.html'"></li>
+			<li> <a href="http://usc.edu" style="padding: 0 0 0 0">
+					<!-- <img src="usc-primary-logotype.svg" width="176px" height="38px"> -->
+					<img src="usc-primary-logotype.svg" width="176px" height="38px">
+				</a>
+		  </li>
           </ul>
         </div>
       </div>

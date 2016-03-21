@@ -1,0 +1,40 @@
+/**********************************************
+2	  *   Generic Mods to Bootstrap
+3	  *********************************************/
+4	
+
+html, body {
+  background-color: #eee;
+}
+
+.usc-header {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: #990000;
+}
+
+.home-link {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+float: left;
+padding: 15px 15px;
+font-size: 18px;
+line-height: 20px;
+background-color: transparent;
+
+}
+
+.usc-header  .nav > a:hover, a:focus {
+	text-decoration: none;
+}
+
+
+.navbar .usc-header .nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+.navbar .usc-header  .nav > li > a:focus, .navbar .usc-header .nav > li > a:hover {
+    background-color: transparent;
+	text-decoration: none;
+}

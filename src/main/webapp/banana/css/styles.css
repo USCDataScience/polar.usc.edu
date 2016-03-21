@@ -36,4 +36,5 @@ background-color: transparent;
 
 .navbar .usc-header  .nav > li > a:focus, .navbar .usc-header .nav > li > a:hover {
     background-color: transparent;
+	text-decoration: none;
 }

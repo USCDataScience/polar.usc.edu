@@ -1,8 +1,10 @@
 import pysolr
+from pysolr import SolrError
 from tika.tika import callServer
 import json
 import re
 import copy
+import atexit
 
 __author__ = 'Lorraine Sposto'
 
@@ -11,8 +13,8 @@ __author__ = 'Lorraine Sposto'
 # Command: lucene-geo-gazetteer -server
 # Command: java -classpath location-ner-model:geotopic-mime:tika-server-1.12.jar org.apache.tika.server.TikaServerCli
 
-SOLR_SOURCE = pysolr.Solr('http://polar.usc.edu/solr/team6', timeout=10)
-SOLR_DEST = pysolr.Solr('http://localhost:8983/solr/geo', timeout=10)
+SOLR_SOURCE = pysolr.Solr('http://polar.usc.edu/solr/polar', timeout=10)
+SOLR_DEST = pysolr.Solr('http://polar.usc.edu/solr/geo_enriched', timeout=10)
 
 
 def extract_geo(doc):
@@ -92,7 +94,7 @@ def extract_geo(doc):
 def process_solr_docs():
     queries_made = 0
     start = 0
-    rows = 25
+    rows = 100
     hits = 0
     num_processed = 0
     num_total_successful = 0
@@ -121,19 +123,34 @@ def process_solr_docs():
                 if 'boost' in geo_enriched_doc.keys():
                     boost = geo_enriched_doc['boost']
                     del geo_enriched_doc['boost']
-                SOLR_DEST.add([geo_enriched_doc], boost=boost)
-                num_successful += 1
+
+                if 'tstamp' in geo_enriched_doc.keys():
+                    tstamp = geo_enriched_doc['tstamp']
+                    reg = re.findall('ERROR:SCHEMA-INDEX-MISMATCH,stringValue=(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d+Z)', tstamp)
+                    if reg is not None:
+                        tstamp = str(reg[0])
+                        geo_enriched_doc['tstamp'] = tstamp
+                try:
+                    SOLR_DEST.add([geo_enriched_doc], boost=boost)
+                except SolrError as e:
+                    print e.message
+                    exit_handler(num_total_successful)
+                num_total_successful += 1
 
         queries_made += 1
         start += rows
         num_processed += num_docs
-        num_total_successful += num_successful
         print 'Indexed', num_processed, '/', hits, 'docs'
 
     print '\n---------------'
     print 'Hit Solr', queries_made, 'times'
     print 'Processed', num_processed, 'docs'
     print 'Successfully indexed', num_total_successful, 'docs'
+
+
+def exit_handler(number):
+    print 'Total indexed', number
+    print 'Exiting...'
 
 
 if __name__ == "__main__":

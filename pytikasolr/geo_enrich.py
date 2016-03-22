@@ -4,7 +4,7 @@ from tika.tika import callServer
 import json
 import re
 import copy
-import atexit
+import argparse
 
 __author__ = 'Lorraine Sposto'
 
@@ -13,11 +13,13 @@ __author__ = 'Lorraine Sposto'
 # Command: lucene-geo-gazetteer -server
 # Command: java -classpath location-ner-model:geotopic-mime:tika-server-1.12.jar org.apache.tika.server.TikaServerCli
 
-SOLR_SOURCE = pysolr.Solr('http://polar.usc.edu/solr/polar', timeout=10)
-SOLR_DEST = pysolr.Solr('http://polar.usc.edu/solr/geo_enriched', timeout=10)
+SOLR_SOURCE = 'http://polar.usc.edu/solr/polar'
+# SOLR_SOURCE = 'http://localhost:8983/solr/collection1'
+SOLR_DEST = 'http://localhost:8983/solr/geo'
+TIKA_SERVER = 'http://localhost:9998/tika'
 
 
-def extract_geo(doc):
+def extract_geo_from_doc(doc, tika):
     """
     Uses Tika to extract geo data and returns an updated copy of the document.
 
@@ -43,7 +45,6 @@ def extract_geo(doc):
     :param doc: A document from solr, as a dict
     :return: Updated document, as a dict, or None if error
     """
-    tika_server = 'http://localhost:9998/tika'
     try:
         names = []
         coords = []
@@ -51,7 +52,7 @@ def extract_geo(doc):
             content = doc['content']
             if type(content) is list:
                 for c in content:
-                    res = callServer('put', tika_server, '/rmeta', c, {'Accept' : 'application/json', 'Content-Type' : 'application/geotopic'}, False)
+                    res = callServer('put', tika, '/rmeta', c, {'Accept' : 'application/json', 'Content-Type' : 'application/geotopic'}, False)
                     if res[0] == 200:
                         parsed = res[1]
                         parsed_json = json.loads(parsed)
@@ -91,32 +92,30 @@ def extract_geo(doc):
         return None
 
 
-def process_solr_docs():
+def process_solr_docs(start, rows, rounds, src, dest, tika):
     queries_made = 0
-    start = 0
-    rows = 100
-    hits = 0
-    num_processed = 0
     num_total_successful = 0
+    num_total_failure = 0
 
+    print 'Solr Source', src
+    print 'Solr Dest', dest
+    print 'Tika', tika
     print 'Start:', start
     print 'Rows:', rows
     print '---------------\n'
 
-    while num_processed < hits or num_processed == 0 and hits == 0:
+    solr_src = pysolr.Solr(src, timeout=10)
+    solr_dest = pysolr.Solr(dest, timeout=10)
+
+    for i in range(rounds):
         print 'Fetching', rows, 'rows from', start
-        r = SOLR_SOURCE.search('*', **{
+        r = solr_src.search('*', **{
             'start': start,
             'rows': rows
         })
-        if hits == 0:
-            hits = r.hits
 
-        num_docs = len(r.docs)
-        print 'Processing', num_docs, 'docs'
-        num_successful = 0
         for doc in r.docs:
-            geo_enriched_doc = extract_geo(doc)
+            geo_enriched_doc = extract_geo_from_doc(doc, tika)
 
             if geo_enriched_doc is not None:
                 boost = None
@@ -131,30 +130,40 @@ def process_solr_docs():
                         tstamp = str(reg[0])
                         geo_enriched_doc['tstamp'] = tstamp
                 try:
-                    SOLR_DEST.add([geo_enriched_doc], boost=boost)
+                    solr_dest.add([geo_enriched_doc], boost=boost)
+                    num_total_successful += 1
                 except SolrError as e:
                     print e.message
-                    exit_handler(num_total_successful)
-                num_total_successful += 1
-
+                    num_total_failure += 1
+                    print 'Failed at', num_total_failure, 'docs'
         queries_made += 1
         start += rows
-        num_processed += num_docs
-        print 'Indexed', num_processed, '/', hits, 'docs'
+        print 'Indexed', num_total_successful, 'docs'
 
     print '\n---------------'
     print 'Hit Solr', queries_made, 'times'
-    print 'Processed', num_processed, 'docs'
     print 'Successfully indexed', num_total_successful, 'docs'
 
 
-def exit_handler(number):
-    print 'Total indexed', number
-    print 'Exiting...'
-
-
 if __name__ == "__main__":
-    process_solr_docs()
-    # parse_date_time()
+    parser = argparse.ArgumentParser(description='Extract geospatial data from one solr core and index into another.')
+    parser.add_argument('-s', '--src', dest='source', default=SOLR_SOURCE, help='url of source solr core')
+    parser.add_argument('-d', '--dest', dest='dest', default=SOLR_DEST, help='url of destination solr core')
+    parser.add_argument('-t', '--tika', dest='tika', default=TIKA_SERVER, help='url of running tika server')
+    parser.add_argument('--start', dest='start', type=int, default=0, help='start row to query solr, default 0')
+    parser.add_argument('--rows', dest='rows', type=int, default=1000, help='number of rows to query from solr, default 1000')
+    parser.add_argument('--rounds', dest='rounds', type=int, default=1, help='number of times to query from solr, default 1')
+
+    # process_solr_docs()
+
+    args = parser.parse_args()
+    solr_src = args.source
+    solr_dest = args.dest
+    tika = args.tika
+    start = args.start
+    rows = args.rows
+    rounds = args.rounds
+
+    process_solr_docs(start, rows, rounds, solr_src, solr_dest, tika)
 
     print 'Exiting...'

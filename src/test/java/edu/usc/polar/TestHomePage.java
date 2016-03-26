@@ -23,7 +23,5 @@ public class TestHomePage
 		//start and render the test page
 		tester.startPage(Polar.class);
 
-		//assert rendered page class
-//		tester.assertRenderedPage(Polar.class);
 	}
 }

@@ -32,13 +32,6 @@ public class Polar extends WebPage {
         throw new RedirectToUrlException(
                 "http://polar.usc.edu",
                 HttpServletResponse.SC_MOVED_PERMANENTLY);
-//        try {
-//            jsonSetUpObject = getJsonObject("data/D3ExampleSetup.json");
-//        } catch (Exception e) {
-//            jsonSetUpObject = null;
-//            e.printStackTrace();
-//        }
-//        add(new Label("message", "Polar Deep Search Engine!"));
     }
 
     public void renderHead(IHeaderResponse response) {

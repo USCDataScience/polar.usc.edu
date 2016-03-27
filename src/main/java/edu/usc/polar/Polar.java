@@ -9,6 +9,8 @@ import org.apache.wicket.request.resource.PackageResourceReference;
 import org.apache.wicket.util.io.IOUtils;
 import org.apache.wicket.util.template.PackageTextTemplate;
 import org.apache.wicket.util.template.TextTemplate;
+import org.apache.wicket.request.flow.RedirectToUrlException;
+import javax.servlet.http.HttpServletResponse;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -27,13 +29,9 @@ public class Polar extends WebPage {
     private JSONObject jsonSetUpObject;
 
     public Polar() {
-        try {
-            jsonSetUpObject = getJsonObject("data/D3ExampleSetup.json");
-        } catch (Exception e) {
-            jsonSetUpObject = null;
-            e.printStackTrace();
-        }
-        add(new Label("message", "Polar Deep Search Engine!"));
+        throw new RedirectToUrlException(
+                "http://polar.usc.edu",
+                HttpServletResponse.SC_MOVED_PERMANENTLY);
     }
 
     public void renderHead(IHeaderResponse response) {

@@ -45,7 +45,6 @@ of those sections to manage the look and feel of the site. */
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
     min-height: 1000px;
 }
 

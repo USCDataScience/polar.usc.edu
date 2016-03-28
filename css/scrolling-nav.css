@@ -45,7 +45,7 @@ of those sections to manage the look and feel of the site. */
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
-
+    min-height: 1000px;
 }
 
 .about-section {
@@ -68,7 +68,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 90px;
     text-align: center;
     background: #fffffa;
-    min-height: 800px;
+    min-height: 1000px;
 }
 
 .extras-section {
@@ -85,5 +85,5 @@ of those sections to manage the look and feel of the site. */
     padding-top: 20px;
     text-align: center;
     background: #fffffa;
-    min-height: 500px;
+    min-height: 800px;
 }

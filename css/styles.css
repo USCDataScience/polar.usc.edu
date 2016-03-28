@@ -18,7 +18,11 @@
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-    background-color: #FFCC00;
+      background-color: #FFCC00;
+}
+
+body {
+    overflow-y: scroll;
 }
 
 .nav-ul-second > li > a {

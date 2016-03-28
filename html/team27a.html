@@ -30,17 +30,19 @@ body {
     <div id="header"> </div>
 
   
-  <div id="container1" style="position: relative; width: 80%; max-height: 450px;"></div>
+  <div id="container1" style="position: relative; width: 80%; max-height: 450px; margin-right: 10%; margin-left:10%;"></div>
   
      
      <script>
        //basic map config with custom fills, mercator projection
+       var h = $(window).height()*0.9;
+       var w =  $(window).width()*0.9; 
       var map = new Datamap({
         scope: 'world',
         element: document.getElementById('container1'),
         projection: 'mercator',
-        height: 2500,
-        width: 3000,
+        height:  h,
+        width: w,
         fills: {
           defaultFill: '#00CC99',
           red: '#9900FF',

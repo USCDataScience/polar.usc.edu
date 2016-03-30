@@ -1,0 +1,26 @@
+p,div {
+
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+
+.main{
+	margin-left: 40px;
+}
+
+#chart{
+	margin: 0px;
+	padding-left: 0px;
+}
+.fileselect{
+	margin-bottom: 40px;
+	
+}
+#fileselection{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.nav{
+	background-color: #FFCC00;
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
 
-    <title>Banana 3</title>
+    <title>Banana - USC Data Science - Polar Database</title>
 	<link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.light.min.css" title="Light">
     <link rel="stylesheet" href="css/timepicker.css">
@@ -33,32 +33,36 @@
       <button type="button" class="close" ng-click="dashAlerts.clear(alert)" style="padding-right:50px">&times;</button>
       <strong>{{alert.title}}</strong> <span ng-bind-html-unsafe='alert.text'></span> <div style="padding-right:10px" class='pull-right small'> {{$index + 1}} alert(s) </div>
     </div>
-    <div class="navbar navbar-static-top">
-      <div class="navbar-inner">
-        <div class="container-fluid usc-header">
-		<ul class="nav">
-			<a class="home-link" style="color:white" href="/">Home</a>
-			<li><a href="/Polar/facetview/">Facetview</a>
-              <!--<li><a href="/facetview/">Facetview</a>-->
-            </li>
-			<li><a href="">
-				<!-- <img src="img/silklogo.png" data-placement="bottom"> -->
-				Banana Dashboard
-				</a>
-			</li>
-          </ul>
 
-          <ul class="nav pull-right">
-			<li class="nav" ng-controller='dashLoader' ng-init="init()" ng-include="'app/partials/dashLoader.html'"></li>
-			<li> <a href="http://usc.edu" style="padding: 0 0 0 0">
-					<!-- <img src="usc-primary-logotype.svg" width="176px" height="38px"> -->
-					<img src="usc-primary-logotype.svg" width="176px" height="38px">
-				</a>
-		  </li>
-          </ul>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid usc-header">
+
+				        <a class="navbar-brand" href="/" style="color:white">Home</a>
+                    <ul class="nav">
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#about" style="color:#ffffff">About</a></li>
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#features" style="color:#ffffff">Insights</a></li>
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#search" style="color:#ffffff">Search</a></li>
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#learn-more"style="color:#ffffff">Partners</a></li>
+                    </ul>
+
+        				<a href="http://usc.edu" class="pull-right">
+        					<img src="usc-primary-logotype.svg" width="176px" height="38px">
+        				</a>
+
+            </div>
         </div>
-      </div>
     </div>
+
+    <div id="nav-secondary">
+      <nav class="navbar">
+        <ul class="nav navbar-nav nav-ul-secondary">
+          <li><a class="navlink" href="http://polar.usc.edu/Polar/banana/#/dashboard">Banana</a></li>
+          <li><a class="navlink" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="container-fluid main">
       <div class="row-fluid">
         <div ng-view></div>

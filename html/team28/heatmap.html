@@ -26,7 +26,7 @@
 
         .headLine {
             text-align: center;
-            background: #089EFF;
+            background: #990000;
             color: #ffffff;
             margin: auto;
             vertical-align: middle;
@@ -64,6 +64,7 @@
 
     <!-- Custom CSS -->
     <link href="../../css/styles.css" rel="stylesheet">
+
     <script src="../js/jquery.js"></script>
     <script>
     $(function(){
@@ -73,9 +74,11 @@
     </script>
   </head>
   <body>
+  <div class="container">
   <div id="header"> </div>
 
-    <nav class="navbar navbar-default navbar-static-top" style ="background-color: transparent;">      <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -83,15 +86,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">USC Polar Dataset Explorer</a>
+
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar2" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bfa.html">BFA</a></li>
-            <li ><a href="bfc.html">BF Correlation</a></li>
-            <li><a href="bfcc.html">BF Cross Correlation</a></li>
-            <li><a href="fht.html">FHT</a></li>
+            <li><a style="color:#fff" href="index.html">Home</a></li>
+            <li><a style="color:#fff" href="bfa.html">BFA</a></li>
+            <li ><a style="color:#fff" href="bfc.html">BF Correlation</a></li>
+            <li><a style="color:#fff" href="bfcc.html">BF Cross Correlation</a></li>
+            <li><a style="color:#fff" href="fht.html">FHT</a></li>
             <li class="active"><a href="#">Mime Diversity</a></li>
           </ul>
         </div>
@@ -315,4 +318,5 @@
       }());
     </script>
   </body>
+  </div>
 </html>

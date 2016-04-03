@@ -26,11 +26,17 @@ body {
 }
 
 </style>
+<script>
+        $(function(){
+          $("#header").load("headerdouble.html");
+        });
+    </script>
 </head>
+
 <body>
 
-<div style="float:left;font: 20px sans-serif;">
-
+<div id="header"> </div>
+<div class="container" style="font: 20px sans-serif;">
 <h3>Smaller Dataset</h3>
 <table border="1px" align="center">
 	<thead>
@@ -102,3 +108,5 @@ body {
 		</tr>
 	</tbody>
 </table>
+</div>
+</body>

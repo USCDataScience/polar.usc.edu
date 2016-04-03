@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.css">
     <script type="text/javascript" src="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.min.js"></script>
 
-    <script type="text/javascript" src="jquery.facetview.js"></script>
+    <script type="text/javascript" src="dist.jquery.facetview.js"></script>
 
     <link rel="stylesheet" href="css/facetview.css">
 
@@ -29,8 +29,7 @@
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $('.facet-view-simple').facetview({
-//                search_url: "http://localhost:8983/solr/collection1/query?",
-                search_url: "http://polar.usc.edu/solr/polar/query?",
+                search_url: "http://polar.usc.edu/solr/geo/query?",
                 search_index: "solr",
                 linkify: false,
                 default_operator: "AND",
@@ -42,146 +41,62 @@
                 highlight_fields: ["text"],
                 highlight_pre: "<mark><strong>",
                 highlight_post: "</mark></strong>",
-                //search_sortby: [
-                //{'display':'Date added','field':'created_date'},
-                //{'display':'Title','field':'title'},
-                //{'display':'Publication Year','field':'year'},
-                //{'display':'Edition','field':'edition.exact'},
-                //{'display':'Price','field':'price'}
-                //],
+                initialsearch: false,
+                search_sortby: [
+                {'display':'Date added','field':'tstamp'},
+                {'display':'Title','field':'title'},
+                {'display':'Host','field':'host'},
+                {'display':'ID','field':'edition.id'},
+                {'display':'Segment','field':'segment'}
+                ],
                 result_display: [
                     [
-                        {
-                            pre: "<a target='_blank' href='http://localhost:8888",
-                            field: "id",
-                            post: "'>"
-                        },
                         {
                             pre: "<h4>",
                             field: "title",
                             alternative_field: "id",
-                            post: "</h4></a>"
+                            post: "</h4>"
                         },
                         {
-                            pre: "<span class='text-muted'>",
-                            field: "stream_name",
+                            pre: "<span class='text-muted'><a>",
+                            field: "url",
                             alternative_field: "id",
-                            post: "</span>"
-                        }
-                    ],
-                    [
-                        {
-                            field: "subject",
-                            alternative_field: "dc_subject"
-                        },
-                        {
-                            pre: "by ",
-                            field: "author",
-                            alternative_field: "meta_author"
-                        },
-                        {
-                            pre: "| Created using ",
-                            field: "creator",
-                            alternative_field: "dc_creator"
-                        }
-                    ],
-                    [
-                        {
-                            pre: "Using ",
-                            field: "make_str",
-                            alternative_field: "tiff_make",
-                            post: ","
-                        },
-                        {
-                            field: "model_str",
-                            alternative_field: "tiff_model"
-                        },
-                        {
-                            pre: "| Processed using ",
-                            field: "software_str",
-                            alternative_field: "tiff_software"
-                        }
-                    ],
-                    [
-                        {
-                            highlight_field: "text"
+                            post: "</a></span>"
                         }
                     ]
                 ],
                 facets: [
                     {
-                        field: "location_country_str",
+                        field: "location_name",
                         order: "count",
-                        display: "Country",
+                        display: "Location Name",
                         size: 10,
                         mincount: 1
                     },
                     {
-                        field: "topic_features_str",
+                        field: "title",
                         display: "Topic",
                         order: "count",
                         size: 10,
                         mincount: 1
                     },
                     {
-                        field: "location_feature_str",
-                        display: "Location Feature",
+                        field: "location_coordinates",
+                        display: "Location Coordinates",
                         order: "count",
                         size: 10,
                         mincount: 1
                     },
                     {
-                        field: "location_admin1_area_str",
-                        display: "Main Admin Area",
+                        field: "id",
+                        display: "ID",
                         order: "count",
                         size: 10,
                         mincount: 1
                     },
                     {
-                        field: "location_admin2_area_str",
-                        display: "Sub-Admin Area",
-                        order: "count",
-                        size: 10,
-                        mincount: 1
-                    },
-                    {
-                        field: "content_type",
-                        display: "Content Type",
-                        order: "count",
-                        size: 10,
-                        mincount: 1
-                    },
-                    {
-                        field: "author_str",
-                        display: "Author",
-                        order: "count",
-                        size: 10,
-                        mincount: 1
-                    },
-                    {
-                        field: "company_str",
-                        display: "Company",
-                        order: "count",
-                        size: 10,
-                        mincount: 1
-                    },
-                    {
-                        field: "software_str",
-                        display: "Software",
-                        order: "count",
-                        size: 10,
-                        mincount: 1
-                    },
-                    {
-                        field: "make_str",
-                        display: "Camera Brand",
-                        order: "count",
-                        size: 10,
-                        mincount: 1
-                    },
-                    {
-                        field: "model_str",
-                        display: "Camera Model",
+                        field: "url",
+                        display: "URL",
                         order: "count",
                         size: 10,
                         mincount: 1
@@ -211,7 +126,7 @@
                 ],
                 paging: {
                     from: 0,
-                    size: 20
+                    size: 30
                 }
             });
         });
@@ -238,10 +153,10 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="width:80%">
         <div class="content">
             <div class="page-header">
-                <h2>FacetView Search</h2>
+                <h3>FacetView Search</h3>
             </div>
             <div class="facet-view-simple"></div>
         </div>

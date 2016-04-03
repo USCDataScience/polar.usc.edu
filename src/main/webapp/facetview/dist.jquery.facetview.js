@@ -1518,16 +1518,15 @@ if (!Array.prototype.indexOf) {
         }
         thefacetview += '<div class="facetview_plots_container"><div id="line_chart"/><div id="dendrogram"/></div>';
         thefacetview += '<div class="facetview_search_options_container">';
-        thefacetview += '<div class="btn-group" style="display:inline-block; margin-right:5px;"> \
-            <a class="btn btn-small" title="clear all search settings and start again" href=""><i class="icon-remove"></i></a> \
-            <a class="btn btn-small facetview_learnmore" title="click to view search help information" href="#"><b>?</b></a> \
-            <a class="btn btn-small facetview_howmany" title="change result set size" href="#">{{HOW_MANY}}</a>';
+        thefacetview += '<div class="btn-group" style="display:inline-block; margin-right:10px; height:51px"> \
+            <a class="btn" title="clear all search settings and start again" href=""><i class="icon-remove"></i></a> \
+            <a class="btn  facetview_howmany" title="change result set size" href="#">{{HOW_MANY}}</a>';
         if ( options.search_sortby.length > 0 ) {
-            thefacetview += '<a class="btn btn-small facetview_order" title="current order descending. Click to change to ascending" \
+            thefacetview += '<a class="btn facetview_order" title="current order descending. Click to change to ascending" \
                 href="desc"><i class="icon-arrow-down"></i></a>';
             thefacetview += '</div>';
             thefacetview += '<select class="facetview_orderby" style="border-radius:5px; \
-                -moz-border-radius:5px; -webkit-border-radius:5px; width:100px; background:#eee; margin:0 5px 21px 0;"> \
+                -moz-border-radius:5px; -webkit-border-radius:5px; width:150px; background:#eee; margin:0 5px 21px 0;"> \
                 <option value="">order by</option>';
             for ( var each = 0; each < options.search_sortby.length; each++ ) {
                 var obj = options.search_sortby[each];
@@ -1547,7 +1546,7 @@ if (!Array.prototype.indexOf) {
             };
             thefacetview += '</select>';
         };
-        thefacetview += '<input type="text" class="facetview_freetext span4" style="display:inline-block; margin:0 0 21px 0; background:' + options.searchbox_shade + ';" name="q" \
+        thefacetview += '<input type="text" class="facetview_freetext span4" style="display:inline-block; margin:0 0 21px 0; width:400px; background:' + options.searchbox_shade + ';" name="q" \
             value="" placeholder="search term" />';
         if ( options.sharesave_link ) {
             thefacetview += '<a class="btn facetview_sharesave" title="share or save this search" style="margin:0 0 21px 5px;" href=""><i class="icon-share-alt"></i></a>';

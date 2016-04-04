@@ -695,14 +695,14 @@
   
   // yeah, let's kick things off!!!
    $.when(
-    $.getJSON("http://polar.usc.edu/solr/geo_enriched/select?q=ozone&wt=json&json.wrf=?&indent=true", function(response) {
+    $.getJSON("http://polar.usc.edu/solr/geo/select?q=ozone&wt=json&json.wrf=?&indent=true", function(response) {
 	   data['pieChart'][2]['numResults'] = response['response']['numFound'];
 	 }),
 	 
-	$.getJSON("http://polar.usc.edu/solr/geo_enriched/select?q=CO2&wt=json&json.wrf=?&indent=true", function(response) {
+	$.getJSON("http://polar.usc.edu/solr/geo/select?q=CO2&wt=json&json.wrf=?&indent=true", function(response) {
 		data['pieChart'][0]['numResults'] = response['response']['numFound'];
 	}),
-	$.getJSON("http://polar.usc.edu/solr/geo_enriched/select?q=methane&wt=json&json.wrf=?&indent=true", function(response) {
+	$.getJSON("http://polar.usc.edu/solr/geo/select?q=methane&wt=json&json.wrf=?&indent=true", function(response) {
 		data['pieChart'][1]['numResults'] = response['response']['numFound'];
 	})
 	).then(function() {

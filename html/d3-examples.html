@@ -25,8 +25,6 @@
       $("#header").load("header.html");
     });
     </script>
-    
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -35,17 +33,15 @@
     <div id="header"> </div>
     <div id="secondary-header"> </div>
 
-    <div class="container">
-    <ul class="nav nav-pills" id="tabs" style="margin-top:7%">
-        <li role="presentation" class="active"><a href="#regular-viz">Static Visualizations</a></li>
-        <li role="presentation"><a href="#dynamic-viz">Dynamic Visualizations</a></li>
-        <li role="presentation"><a href="#mime-viz">MIME Analyses</a></li>
+    <div class="container" style="margin-bottom: 2%">
+    <ul class="nav nav-tabs" id="tabs" style="margin-top:7%">
+        <li class="active"><a href="#regular-viz" data-toggle="tab">Static Visualizations</a></li>
+        <li><a href="#dynamic-viz" data-toggle="tab">Dynamic Visualizations</a></li>
+        <li><a href="#mime-viz" data-toggle="tab">MIME Analyses</a></li>
     </ul>
-    <hr class="featurette-divider" style="margin-bottom: 2%">
     </div>
 
     <div class="tab-content">
-
         <div role="tabpanel" class="tab-pane fade in active" id="regular-viz">
             <!-- Note: each image is 242x200  -->
             <div class="container">
@@ -286,6 +282,7 @@
         </div>
     </div>
 
+
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
 
@@ -295,13 +292,27 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="../js/jquery.easing.min.js"></script>
     <script src="../js/scrolling-nav.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                localStorage.setItem('lastTab', $(this).attr('href'));
+            });
+            var lastTab = localStorage.getItem('lastTab');
+            if (lastTab) {
+                $('[href="' + lastTab + '"]').tab('show');
+            }
+        })
+    </script>
 
     <script type="text/javascript">
         $('#tabs a').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
+            e.preventDefault();
+            $(this).tab('show');
         })
     </script>
+    
+
 
 </body>
 

@@ -1,0 +1,16 @@
+id,order,score,weight,color,label
+application,1,0.4,1,#9E0041,application/pdf
+img,2,0.41,1,#C32F4B,image/png
+vid,3,0.39,1,#E1514B,video/quicktime
+aud,4,0.52,1,#F47245,audio/mpeg
+mpeg,5,0.45,1,#FB9F59,image/jpeg
+app,6,0.38,1,#FB9F80,application/mp4
+rss,7,0.51,1,#FEC574,application/rss+xml
+text,8,0.43,1,#F47523,text/html
+octet,9,0.37,1,#80FF00,application/octet-stream
+textplain,10,0.4,1,#00FF40,text/plain
+xml,11,0.38,1,#0080FF,application/xml
+video,12,0.13,1,#BF00FF,video/mp4
+msword,13,0.5,1,#FF8000,application/msword
+xhtml,14,0.48,1,#00BFFF,application/xhtml+xml
+gif,15,0.42,1,#FFFF00,image/gif

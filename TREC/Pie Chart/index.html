@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pie Chart</title>
+<meta charset="utf-8">
+<style>
+
+	text {
+		font: 10px sans-serif;
+	}
+
+</style>
+</head>
+<body>
+<div id="pieChart"></div>
+<script src="http://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+<script src="d3pie.js"></script>
+<script>
+d3.json('http://25.150.29.198:8990/solr/solr/select?q=*%3A*&wt=json&indent=true&rows=1000',function (error, jsondata) {
+				    // create the chart here with
+				    // the returned data
+				    if (error) throw error;
+
+				    console.log(jsondata);
+				    var solrData = jsondata['response']['docs'];
+				    var pie = new d3pie("pieChart", {
+							"data": {
+						    "content": classes(solrData)
+						  }
+						});
+
+				});
+
+function classes(root) {
+	var classes = [];
+	var map ={};
+	for (i = 0; i < root.length; i++) {
+		if ("sweet" in root[i]) {
+			for (j = 0; j < root[i]['sweet'].length; j++) {
+				if (root[i]['sweet'][j] in map) {
+					map[root[i]['sweet'][j]] += 1;
+				}else {
+					map[root[i]['sweet'][j]] = 1;
+				}
+			}
+		}
+	}
+	for (var key in map) {
+		if (map.hasOwnProperty(key)) {
+			classes.push({label:key, value:map[key]});
+		}
+	}
+	classes.sort(function(a,b) {
+			return parseInt(b.value) - parseInt(a.value);
+	});
+
+	return classes.slice(0,15);
+}
+</script>
+</body>
+</html>

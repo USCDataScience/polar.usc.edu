@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<script src="../../js/d3.min.js"></script>
+<script src="../../js/d3.layout.cloud.js"></script>
+
+<head>
+    <title>Word Cloud Example</title>
+</head>
+<style>
+    body {
+        font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;
+    }
+    
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 0px 100px 10px 100px;
+        padding: 8px;
+        display: inline-block;
+    }
+    
+    .bld {
+        font-weight: bold;
+    }
+
+</style>
+
+<body>
+<div id="wrapper" style="text-align: center;">
+    <div class="legend">
+        <p>This visualization shows the important words in the documents in the form of a Word Cloud.</p>
+        <p>Commonly used words are larger and slightly faded in color. Less common words are smaller and darker.</p>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery-1.12.1.min.js"></script>
+<script>
+    d3.json("../../data/antrromet-sce-data/word_cloud_data.json", function(error, frequency_list) {
+        if (error) throw error;
+        var color = d3.scale.linear()
+            .domain([0, 1, 2, 3, 4, 5, 6, 10, 15, 20, 100])
+            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
+
+        d3.layout.cloud().size([screen.width - 50, screen.height - 50])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) {
+                return d.size;
+            })
+            .on("end", draw)
+            .start();
+
+        function draw(words) {
+            d3.select("body").append("svg")
+                .attr("width", screen.width)
+                .attr("height", screen.height)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(320,200)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) {
+                    return d.size + "px";
+                })
+                .style("fill", function(d, i) {
+                    return color(i);
+                })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) {
+                    return d.text;
+                });
+        }
+
+    });
+
+</script>
+</html>

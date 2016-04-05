@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+
+    <script src="../../js/jquery-1.12.1.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+    .arc text {
+        font: 10px sans-serif;
+        text-anchor: middle;
+    }
+    
+    .arc path {
+        stroke: #fff;
+    }
+    
+    text {
+        font-family: sans-serif;
+        font-size: 12px;
+        fill: white;
+    }
+    
+    body {
+        font: 10px sans-serif;
+    }
+    
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    
+    .bar:hover {
+        fill: orangered;
+    }
+    
+    .x.axis path {
+        display: none;
+    }
+    
+    .d3-tip {
+        line-height: 2;
+        font-weight: bold;
+        position: 50px, 50px;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+    }
+
+</style>
+
+<body>
+
+
+
+
+    <script src="../../js/d3.min.js"></script>
+<!--    <script src="../js/d3.tip.v0.6.3.js"></script>-->
+    <script>
+        d3.json("../../data/antrromet-sce-data/pie_chart_data.json", function(error, data) {
+            if (error) throw error;
+            var width = 450,
+                height = 450,
+                radius = Math.min(width - 10, height - 10) / 2;
+
+            var color = d3.scale.category20()
+
+            var arc = d3.svg.arc()
+                .outerRadius(radius + 5)
+                .innerRadius(0);
+
+            var labelArc = d3.svg.arc()
+                .outerRadius(radius - 40)
+                .innerRadius(radius - 40);
+
+            var pie = d3.layout.pie()
+                .sort(null)
+                .padAngle(.0001)
+                .value(function(d) {
+                    return d.value;
+                });
+
+            var svg = d3.select("body").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([50, 0])
+                .html(function(d) {
+                    return "  <span style='color:red;font-size:200%;'>mimetype:</span>" + "<span style='color:white;font-size:200%;'>" + d.data.type + " ," + "<span style='color:red;font-size:100%;'> value:</span>" + d.data.value + "</span>";
+                })
+
+            svg.call(tip);
+
+            var g = svg.selectAll(".arc")
+                .data(pie(data.types))
+                .enter().append("g")
+                .attr("class", "arc")
+                //tooltip
+                .on("mouseover", tip.show)
+                .on("mouseout", tip.hide);
+
+
+            g.append("path")
+                .attr("d", arc)
+                .style("fill", function(d) {
+                    return color(d.data.value)
+                });
+
+        });
+
+    </script>
+</body>

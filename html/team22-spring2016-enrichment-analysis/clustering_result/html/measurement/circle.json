@@ -1,0 +1,303 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "meter",
+                    "size": 11
+                },
+                {
+                    "name": "joule",
+                    "size": 9
+                },
+                {
+                    "name": "year",
+                    "size": 5
+                },
+                {
+                    "name": "kelvin",
+                    "size": 4
+                },
+                {
+                    "name": "kilometer",
+                    "size": 4
+                },
+                {
+                    "name": "percent",
+                    "size": 3
+                },
+                {
+                    "name": "degrees",
+                    "size": 2
+                },
+                {
+                    "name": "minute",
+                    "size": 1
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "degrees",
+                    "size": 10
+                },
+                {
+                    "name": "year",
+                    "size": 8
+                },
+                {
+                    "name": "week",
+                    "size": 3
+                },
+                {
+                    "name": "degreeC",
+                    "size": 3
+                },
+                {
+                    "name": "percent",
+                    "size": 2
+                },
+                {
+                    "name": "month",
+                    "size": 1
+                },
+                {
+                    "name": "day",
+                    "size": 1
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "year",
+                    "size": 15
+                },
+                {
+                    "name": "month",
+                    "size": 12
+                },
+                {
+                    "name": "hour",
+                    "size": 10
+                },
+                {
+                    "name": "week",
+                    "size": 3
+                },
+                {
+                    "name": "decade",
+                    "size": 3
+                },
+                {
+                    "name": "percent",
+                    "size": 1
+                },
+                {
+                    "name": "minute",
+                    "size": 1
+                }
+            ],
+            "name": "cluster2"
+        },
+        {
+            "children": [
+                {
+                    "name": "percent",
+                    "size": 45
+                },
+                {
+                    "name": "year",
+                    "size": 37
+                },
+                {
+                    "name": "hour",
+                    "size": 8
+                },
+                {
+                    "name": "day",
+                    "size": 8
+                },
+                {
+                    "name": "week",
+                    "size": 5
+                },
+                {
+                    "name": "degreeC",
+                    "size": 4
+                },
+                {
+                    "name": "month",
+                    "size": 4
+                },
+                {
+                    "name": "degrees",
+                    "size": 3
+                },
+                {
+                    "name": "kilometer",
+                    "size": 2
+                },
+                {
+                    "name": "century",
+                    "size": 1
+                },
+                {
+                    "name": "meter",
+                    "size": 1
+                },
+                {
+                    "name": "centimeter",
+                    "size": 1
+                }
+            ],
+            "name": "cluster3"
+        },
+        {
+            "children": [
+                {
+                    "name": "year",
+                    "size": 164
+                },
+                {
+                    "name": "week",
+                    "size": 26
+                },
+                {
+                    "name": "percent",
+                    "size": 26
+                },
+                {
+                    "name": "day",
+                    "size": 18
+                },
+                {
+                    "name": "month",
+                    "size": 13
+                },
+                {
+                    "name": "century",
+                    "size": 12
+                },
+                {
+                    "name": "minute",
+                    "size": 12
+                },
+                {
+                    "name": "second",
+                    "size": 7
+                },
+                {
+                    "name": "decade",
+                    "size": 6
+                },
+                {
+                    "name": "degreeC",
+                    "size": 4
+                },
+                {
+                    "name": "season",
+                    "size": 4
+                },
+                {
+                    "name": "hour",
+                    "size": 3
+                },
+                {
+                    "name": "meter",
+                    "size": 3
+                },
+                {
+                    "name": "degrees",
+                    "size": 3
+                },
+                {
+                    "name": "micron",
+                    "size": 3
+                },
+                {
+                    "name": "kilometer",
+                    "size": 2
+                },
+                {
+                    "name": "candela",
+                    "size": 2
+                },
+                {
+                    "name": "degreeF",
+                    "size": 1
+                },
+                {
+                    "name": "millimeter",
+                    "size": 1
+                }
+            ],
+            "name": "cluster4"
+        },
+        {
+            "children": [
+                {
+                    "name": "kilometer",
+                    "size": 40
+                },
+                {
+                    "name": "year",
+                    "size": 38
+                },
+                {
+                    "name": "century",
+                    "size": 10
+                },
+                {
+                    "name": "percent",
+                    "size": 6
+                },
+                {
+                    "name": "meter",
+                    "size": 5
+                },
+                {
+                    "name": "season",
+                    "size": 3
+                },
+                {
+                    "name": "decade",
+                    "size": 3
+                },
+                {
+                    "name": "month",
+                    "size": 2
+                },
+                {
+                    "name": "day",
+                    "size": 2
+                },
+                {
+                    "name": "hour",
+                    "size": 1
+                },
+                {
+                    "name": "millimeter",
+                    "size": 1
+                },
+                {
+                    "name": "second",
+                    "size": 1
+                },
+                {
+                    "name": "minute",
+                    "size": 1
+                },
+                {
+                    "name": "centimeter",
+                    "size": 1
+                }
+            ],
+            "name": "cluster5"
+        }
+    ],
+    "name": "clusters"
+}

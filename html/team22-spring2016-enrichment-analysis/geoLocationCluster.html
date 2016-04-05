@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geo Location Clustering</title>
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/topojson.min.js"></script>
+	<script type="text/javascript" src="../../js/team22-spring-2016-js/datamaps.world.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+.bar {
+  fill: steelblue;
+  stroke: black;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/><br/>
+    <div class="container">
+<h2>Geo Location Clustering (documents in /gov/nasa/climate/)</h2>
+<div id="bubbles" style="width:100%; height:800px"></div>
+<script>
+$( document ).ready(function() {
+
+$.getJSON( "../../data/team22-spring-2016-data/enrichment-analysis/json/clusters.json", function( data ) {
+
+var colors = ['DarkBlue','SaddleBrown ','Crimson','DarkViolet','Gold','DarkOrange','Cyan','DeepPink','DimGray','LimeGreen']
+var fillsMap = { defaultFill: '#ABDDA4' }
+
+data['children'].forEach(function(entry, i) {
+	fillsMap[entry['name']] = colors[i]
+});
+
+var points = []
+
+data['children'].forEach(function(children) {
+	var cluster = children['children']
+	var clusterName = children['name']
+	cluster.forEach(function(doc) {
+		var point = {}
+		point['radius'] = 15
+		point['fillKey'] = clusterName
+		point['name'] = doc['name']
+		point['path'] = doc['path']
+		
+		var metadata = JSON.parse(doc['metadata']);
+		point['place'] = metadata['metadata.Geographic_NAME']
+		point['latitude'] = metadata['metadata.Geographic_LATITUDE']
+		point['longitude'] = metadata['metadata.Geographic_LONGITUDE']
+		
+		points.push(point)
+	});
+});
+
+var bubble_map = new Datamap({
+  element: document.getElementById("bubbles"),
+  geographyConfig: {
+    popupOnHover: false,
+    highlightOnHover: false
+  },
+  fills: fillsMap
+});
+bubble_map.bubbles(points, 
+{
+  popupTemplate: function(geo, data) {
+    return '<div class="hoverinfo"><strong>' + data.path + '</strong><p>Place : ' + data.place + '<br>Location : '  + data.latitude + ',' + data.longitude + '</p></div>'
+  }
+});
+
+});
+
+});
+</script>
+</div>
+</body>
+</html>

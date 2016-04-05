@@ -1,0 +1,837 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "metadata.RelatedPublications.1.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.3.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.title",
+                    "size": 18
+                },
+                {
+                    "name": "metadata.RelatedPublications.3.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.1.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.author",
+                    "size": 17
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.author",
+                    "size": 16
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.author",
+                    "size": 16
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.author",
+                    "size": 16
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.addrLine",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.booktitle",
+                    "size": 1
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "metadata.RelatedPublications.1.author",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.1.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.author",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.3.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.title",
+                    "size": 12
+                },
+                {
+                    "name": "metadata.RelatedPublications.3.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.author",
+                    "size": 11
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.forename.content",
+                    "size": 8
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.surname",
+                    "size": 8
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.forename.type",
+                    "size": 8
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.content",
+                    "size": 5
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.type",
+                    "size": 5
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.settlement",
+                    "size": 4
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.country.content",
+                    "size": 4
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.country.key",
+                    "size": 4
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.region",
+                    "size": 3
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.key",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.email",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.booktitle",
+                    "size": 1
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "metadata.RelatedPublications.3.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.1.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.1.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.3.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.author",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.title",
+                    "size": 10
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.forename.content",
+                    "size": 9
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.surname",
+                    "size": 9
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.type",
+                    "size": 9
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.forename.type",
+                    "size": 9
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.author",
+                    "size": 9
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.content",
+                    "size": 9
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.key",
+                    "size": 3
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.booktitle",
+                    "size": 3
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.settlement",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.role",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.postCode",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.email",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.region",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.postBox",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.addrLine",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.roleName",
+                    "size": 1
+                }
+            ],
+            "name": "cluster2"
+        },
+        {
+            "children": [
+                {
+                    "name": "metadata.RelatedPublications.3.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.1.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.1.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.3.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.11.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.17.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.10.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.7.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.8.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.5.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.15.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.9.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.18.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.12.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.16.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.14.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.4.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.2.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.6.author",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.13.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.RelatedPublications.0.title",
+                    "size": 7
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.forename.content",
+                    "size": 4
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.surname",
+                    "size": 4
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.forename.type",
+                    "size": 4
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.content",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName.type",
+                    "size": 2
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.settlement",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.country.content",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.RelatedPublications.19.booktitle",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.postCode",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.roleName",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.orgName",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.country.key",
+                    "size": 1
+                },
+                {
+                    "name": "metadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.affiliation.address.region",
+                    "size": 1
+                }
+            ],
+            "name": "cluster3"
+        }
+    ],
+    "name": "clusters"
+}

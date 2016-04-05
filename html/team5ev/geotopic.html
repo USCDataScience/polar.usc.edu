@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-
-.graticule {
-  fill: none;
-  stroke: #777;
-  stroke-width: .5px;
-  stroke-opacity: .5;
-}
-
-.land {
-  fill: pink;
-}
-
-.boundary {
-  fill: none;
-  stroke: #fff;
-  stroke-width: .5px;
-}
-
-
-</style>
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Scrolling Nav CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script src="../../js/d3.min.js"></script>
+    <script src="../../js/team5/topojson.v1.min.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    
+    <style>
+        .graticule {
+          fill: none;
+          stroke: #777;
+          stroke-width: .5px;
+          stroke-opacity: .5;
+        }
+
+        .land {
+          fill: pink;
+        }
+
+        .boundary {
+          fill: none;
+          stroke: #fff;
+          stroke-width: .5px;
+        }
+    </style>
 </head>
-<body>
-<script src="../../js/d3.min.js"></script>
-<script src="../../js/team5/topojson.v1.min.js"></script>
-<script>
-    $(function(){
-      $("#header").load("../headerdouble.html");
-    });
-</script>
-<div id="header" style="margin-bottom:4%"> </div>
 
 <script>
 function main(){
@@ -17507,6 +17516,7 @@ svg.selectAll(".pin")
 
 </script>
 <body onload="main();" style="position:relative;">
+    <div id="header" style="margin-bottom:4%"> </div>
     <center><h1>Geo-location Information</h1></center>
- <div id = "map" style="position:absolute;padding-left:10%;"></div>   
+    <div id = "map" style="position:absolute;padding-left:10%;"></div>
 </body>

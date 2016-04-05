@@ -30,7 +30,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
     
-d3.json("../../data/Team15_data/filetypes.json", function(error,data) {
+d3.json("../data/Team15_data/filetypes.json", function(error,data) {
 if (error) 
 {
 return console.warn(error);

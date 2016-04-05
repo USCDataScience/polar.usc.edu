@@ -16,7 +16,7 @@ var vis = d3.select("#body").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.json("../../data/Team15_data/authors.json", function(json) {
+d3.json("../data/Team15_data/authors.json", function(json) {
   root = json;
   root.x0 = h / 2;
   root.y0 = 0;

@@ -1,0 +1,82 @@
+    <!doctype html>
+            <html lang="en">
+<head> 
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+
+
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+                <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+                <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+                <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script> 
+
+<style>
+    
+   
+    
+    </style>
+</head>
+     
+    <body>            
+  
+
+    <div id="content" style="width:1200px">
+            <ul id="tabs" class="nav nav-pills" data-tabs="tabs">
+
+                <li class="active"><a href="#nm" data-toggle="tab">SWEET_Similarity</a></li>
+                <li><a href="#so" data-toggle="tab">Related_Publication_Similarity</a></li>
+                <li><a href="#mq" data-toggle="tab">Location_Similarity</a></li>
+                <li><a href="#dg" data-toggle="tab">Measurement_Similarity</a></li>
+
+            </ul>
+            <div id="my-tab-content" class="tab-content">
+                <div class="tab-pane active" id="nm">
+                    <div>
+                        <br /> Tika Similarity Clustering based on the SWEET features. 
+                    </div>
+                    <iframe name="Framename1" src="Tika_similarity_results/Sweet/circlepacking.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                    </iframe>
+                    
+                </div>
+                <div class="tab-pane" id="so">
+                    <div>
+                        <br /> Tika Similarity Clustering based on the Authors and Related Publications. 
+                    </div>
+                    <iframe name="Framename2" src="Tika_similarity_results/relatedPub/circlepacking.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                    </iframe>
+                    
+                </div>
+            
+                <div class="tab-pane" id="mq">
+                    <div>
+                        <br /> Tika Similarity Clustering based on the Extracted NER Measurments in Polar Data Set. 
+                    </div>
+                    <iframe name="Framename3" src="Tika_similarity_results/locations/circlepacking.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                    </iframe>
+                    
+                </div>
+                    
+                <div class="tab-pane" id="dg">
+                    <div>
+                        <br /> Tika Similarity Clustering based on the Locations in Polar Data Set. 
+                    </div>
+                    <iframe name="Framename4" src="Tika_similarity_results/measurements/circlepacking.html" width="1300" height="900" frameborder="0" scrolling="auto" class="frame-area">
+                    </iframe>
+                    
+                </div>
+        
+                
+        </div>
+
+            </div>
+            
+    </body>            

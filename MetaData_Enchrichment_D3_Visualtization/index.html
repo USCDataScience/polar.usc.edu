@@ -1,0 +1,139 @@
+            <!doctype html>
+                    <html lang="en">
+        <head> 
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+                        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+
+
+                  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+                  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+                        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+                        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+                        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script> 
+
+        <style>
+
+            body{
+                background-image: url(visual.jpg)
+
+            }
+
+            </style>
+        </head>
+
+            <body>            
+            <div style="position:absolute; top:50px; width:100%">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                       <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+
+                <div class="panel panel-default" >
+                  <div class="panel-heading">D3 Visualization for Trec Polar Dataset <span style="position:absolute; left:1200px"><button type="button" class="btn btn-default" href="#myCarousel" role="button" data-slide="next"> 
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      </button></span></div>
+                  <div class="panel-body"><span style="position:absolute; left:250px "> 
+                      Scientific Content Enrichment in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset Visualization.
+
+                      </span><br><br></div>
+                </div>
+                   </div>
+                <div class="item">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading"><button type="button" class="btn btn-default" href="#myCarousel" role="button" data-slide="prev">   
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> Back</span>
+                      </button>
+                </div>
+                    <div class="panel-body"><br>
+                    <div class="container">
+        <script>
+
+        </script>
+
+            <div id="content" style="width:1200px">
+                    <ul id="tabs" class="nav nav-pills" data-tabs="tabs">
+
+                        <li class="active"><a href="#ps" data-toggle="tab">Polar_SWEET Mapped Ontology</a></li>
+                        <li><a href="#so" data-toggle="tab">SWEET Ontology </a></li>
+                        <li><a href="#mq" data-toggle="tab">MetaData Quality</a></li>
+                        <li><a href="#dg" data-toggle="tab">Dendogram</a></li>
+                        <li><a href="#ar" data-toggle="tab">Author_Related Publications</a></li>
+                        <li><a href="#sm" data-toggle="tab">Statistical Measure of Metadata</a></li>
+                        <li onclick="window.open('Tika_similarity.html')"><a href="#ps" data-toggle="tab">Tika Similarity</a></li>
+
+
+                    </ul>
+                    <div id="my-tab-content" class="tab-content">
+                        <div class="tab-pane active" id="ps">
+                            <div> 
+                                <br />REALM ontology terms are mapped to the part of the Polar Data Set. Each spike tip represents the part of Ontology_CLASSNAME.For example Photosphere_ASTRO represents the Photosphere ontology with class name ASTRO being matched in the Polar Data Set.
+                            </div>
+                            <iframe name="Framename1" src="onto.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                            </iframe>
+
+                        </div>
+                        <div class="tab-pane" id="so">
+                            <div>
+                                <br />
+                                Percentage of SWEET ontologies that are mapped to the Polar Data Set
+                            </div>
+                            <iframe name="Framename2" src="SweetGraph.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                            </iframe>
+
+                        </div>
+
+                        <div class="tab-pane" id="mq">
+                            <div>
+                                <br />
+                                Metadata Quality Statistical Measure for some of the sample documents. We have tried to group all the HTML,XML,XHTML,PHP and JavaScript in to Web Data. Similarly all the MSOffice and Open Office documents are grouped into Office_docs for better clarity of the visulaization. 
+                            </div>
+                            <iframe name="Framename3" src="meta_quality.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                            </iframe>
+
+                        </div>
+
+                        <div class="tab-pane" id="dg">
+                            <div>
+                                <br /> The following Dendogram briefly describes the overall project of Scientific Content Enrichment of Polar Data Set
+                            </div>
+                            <iframe name="Framename4" src="dendo.html" width="1300" height="900" frameborder="0" scrolling="auto" class="frame-area">
+                            </iframe>
+
+                        </div>
+
+                        <div class="tab-pane" id="ar">
+                            <div>
+                                <br />
+                                The Following circle packaging describes authors and their related publications. 
+                            </div>
+                            <iframe name="Framename5" src="circlepack.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                            </iframe>
+
+                        </div>
+
+                        <div class="tab-pane" id="sm">
+
+                            <iframe name="Framename6" src="Compare_data.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                            </iframe>
+
+                        </div>
+
+                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                        </div>
+                </div>
+                </div>
+                </div>
+            </body>            

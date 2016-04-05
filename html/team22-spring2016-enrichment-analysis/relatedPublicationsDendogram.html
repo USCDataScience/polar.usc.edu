@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dendogram</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node {
+  font: 10px sans-serif;
+  
+}
+
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/><br/>
+    <div class="container">
+<h2>Dendogram showing all processed Research Papers and their related authors extracted using <a href="https://github.com/ckreibich/scholar.py/pull/65/commits/bf57ee9d24af49ac5c91898dc0672f9540648f1a">Google Scholar API</a></h2>
+<br/>
+<h3>SOLR QUERY: http://localhost:8983/solr/HW2/select?rows=50&q=metadata.RelatedPublications.0.author%3A*&fl=filePath%3Ametadata.filePath%2Ctitle%3Ametadata.TEI.teiHeader.fileDesc.titleStmt.title.content%2Cauthor%3Ametadata.TEI.teiHeader.fileDesc.sourceDesc.biblStruct.analytic.author.persName.forename.content%2CRelatedAuthor0%3Ametadata.RelatedPublications.0.author%2CRelatedAuthor1%3Ametadata.RelatedPublications.1.author%2CRelatedAuthor2%3Ametadata.RelatedPublications.2.author%2CRelatedAuthor3%3Ametadata.RelatedPublications.3.author%2CRelatedAuthor4%3Ametadata.RelatedPublications.4.author%2CRelatedAuthor5%3Ametadata.RelatedPublications.5.author&wt=json&indent=true</h3>
+<script>
+
+var width = 2460,
+    height = 4000;
+
+var cluster = d3.layout.cluster()
+    .size([height, width -2000]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select(".container").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(40,0)");
+
+d3.json("../../data/team22-spring-2016-data/enrichment-analysis/json/related_publication_grobid.json", function(error, root) {
+  if (error) throw error;
+root=root["response"];
+  var nodes = cluster.nodes(root),
+      links = cluster.links(nodes);
+
+  var link = svg.selectAll(".link")
+      .data(links)
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("d", diagonal);
+
+  var node = svg.selectAll(".node")
+      .data(nodes)
+    .enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+
+  node.append("circle")
+      .attr("r", 4.5);
+
+  node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", -19)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) { return "AUTHOR: "+d.author; });
+  node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", -30)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) {  return "TITLE: "+d.title;});
+   node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", -8)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) {  return "RELATED AUTHOR 1: "+d.RelatedAuthor0;});
+    node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", 3)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) {  return "RELATED AUTHOR 2: "+d.RelatedAuthor1;});
+    node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", 14)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) {  return "RELATED AUTHOR 3: "+d.RelatedAuthor2;});
+    node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", 25)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) {  return "RELATED AUTHOR 4: "+d.RelatedAuthor3;});
+    node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", 36)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) {  return "RELATED AUTHOR 5: "+d.RelatedAuthor4;});
+    
+
+});
+
+d3.select(self.frameElement).style("height", height + "px");
+
+</script>
+</div>
+</body>

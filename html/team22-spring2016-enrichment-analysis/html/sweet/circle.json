@@ -1,0 +1,281 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#PacificOcean",
+                    "size": 23
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realm.owl#Earth",
+                    "size": 21
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#ArcticOcean",
+                    "size": 5
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#SouthernOcean",
+                    "size": 4
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmRegion.owl#NorthernHemisphere",
+                    "size": 4
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/humanEnvirStandards.owl#EPA",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenAtmo.owl#Weather",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/stateSpace.owl#Low",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/reprSpaceCoordinate.owl#Longitude",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmRegion.owl#SouthernHemisphere",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/matrSediment.owl#Boulder",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/humanAgriculture.owl#Agriculture",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl#west",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/matrCompound.owl#CO",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmLandVolcanic.owl#Volcano",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/reprDataProduct.owl#Profile",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#IndianOcean",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenPlanetClimate.owl#GlobalWarming",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/humanEnvirStandards.owl#EnvironmentalProtectionAgency",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realm.owl#Ocean",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenCycle.owl#NorthAtlanticOscillation",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenReaction.owl#Flare",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/humanTransportation.owl#Transportation",
+                    "size": 1
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#AtlanticOcean",
+                    "size": 19
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realm.owl#Earth",
+                    "size": 16
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#CaribbeanSea",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/humanEnvirStandards.owl#EPA",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenOceanDynamics.owl#OceanConveyorBelt",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/propTime.owl#Time",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/matrOrganicCompound.owl#HCFC",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#ArcticOcean",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/reprSpaceCoordinate.owl#SouthPole",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realm.owl#Ocean",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#IndianOcean",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/stateStorm.owl#EnhancedFujitaScale",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmRegion.owl#SouthernHemisphere",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmRegion.owl#NorthernHemisphere",
+                    "size": 1
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realm.owl#Earth",
+                    "size": 257
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/humanEnvirStandards.owl#EnvironmentalProtectionAgency",
+                    "size": 8
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/humanEnvirStandards.owl#EPA",
+                    "size": 6
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#ArcticOcean",
+                    "size": 6
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmRegion.owl#SouthernHemisphere",
+                    "size": 5
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#SouthernOcean",
+                    "size": 5
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmRegion.owl#Global",
+                    "size": 5
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#GulfStream",
+                    "size": 4
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmBiolBiome.owl#Montane",
+                    "size": 4
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realm.owl#Ocean",
+                    "size": 4
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmLandCoastal.owl#Delta",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmRegion.owl#NorthernHemisphere",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFloor.owl#SeaFloor",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/propMassFlux.owl#NPP",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/propSpaceDirection.owl#Bearing",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/stateStorm.owl#Beaufort0",
+                    "size": 3
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmOceanFeature.owl#IndianOcean",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl#interior",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/realmHydroBody.owl#Reservoir",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenCycle.owl#NorthAtlanticOscillation",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenPlanetClimate.owl#GlobalWarming",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl#west",
+                    "size": 2
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/matrElement.owl#Carbon",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenStar.owl#Sun",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/phenEnergy.owl#SolarEnergy",
+                    "size": 1
+                },
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/reprSpaceCoordinate.owl#SouthPole",
+                    "size": 1
+                }
+            ],
+            "name": "cluster2"
+        },
+        {
+            "children": [
+                {
+                    "name": "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl#datum",
+                    "size": 6
+                }
+            ],
+            "name": "cluster3"
+        }
+    ],
+    "name": "clusters"
+}

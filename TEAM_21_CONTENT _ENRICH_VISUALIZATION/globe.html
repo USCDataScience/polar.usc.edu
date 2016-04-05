@@ -1,0 +1,218 @@
+<html lang="en">
+<meta charset="utf-8">
+<title>Earth globe</title>
+<head>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+</head>
+<style type="text/css">
+
+.water {
+  fill: #44619D;
+}
+
+.land {
+  fill: #4F9B00;
+  stroke: #FFF;
+  stroke-width: 0.7px;
+}
+
+.land:hover {
+  fill: #EB1C22;
+  stroke-width: 1px;
+}
+
+.focused {
+  fill: #33CC33;
+}
+
+select {
+  position: absolute;
+  top: 20px;
+  left: 580px;
+  border: solid #ccc 1px;
+  padding: 3px;
+  box-shadow: inset 1px 1px 2px #ddd8dc;
+}
+ 
+   .cities {
+	fill: red;
+	opacity:0.7;
+}
+
+.countryTooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  background: #fff;
+  padding: 5px;
+  text-align: left;
+  border: solid #ccc 1px;
+  color: #666;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+</style>
+<body>
+    
+  <script>
+
+  var width = 700,
+  height = 660,
+  sens = 0.25,
+  focused;
+
+  //Setting projection
+
+  var projection = d3.geo.orthographic()
+  .scale(320)
+  .rotate([0, 0])
+  .translate([width / 2, height / 2])
+  .clipAngle(90);
+
+  var path = d3.geo.path()
+  .projection(projection);
+//   .pointRadius(function(d) { return d.radius; });      
+  //SVG container
+
+  var svg = d3.select("body").append("svg")
+  .attr("width", width)
+  .attr("height", height);
+
+      var g = svg.append("g");
+  //Adding water
+
+  svg.append("path")
+  .datum({type: "Sphere"})
+  .attr("class", "water")
+  .attr("d", path)
+ // .style("fill", #44619D );   
+  var countryTooltip = d3.select("body").append("div").attr("class", "countryTooltip"),
+  countryList = d3.select("body").append("select").attr("name", "countries");
+
+
+  queue()
+  .defer(d3.json, "world-110m.json")
+  .defer(d3.tsv, "world-110m-country-names.tsv")
+  .await(ready);
+
+  //Main function
+
+  function ready(error, world, countryData) {
+
+    var countryById = {},
+    countries = topojson.feature(world, world.objects.countries).features;
+
+    //Adding countries to select
+
+    countryData.forEach(function(d) {
+      countryById[d.id] = d.name;
+      option = countryList.append("option");
+      option.text(d.name);
+      option.property("value", d.id);
+    });
+
+    //Drawing countries on the globe
+
+      
+    var world = svg.selectAll("path.land")
+    .data(countries)
+    .enter().append("path")
+    .attr("class", "land")
+    .attr("d", path)
+
+    //Drag event
+
+    .call(d3.behavior.drag()
+      .origin(function() { var r = projection.rotate(); return {x: r[0] / sens, y: -r[1] / sens}; })
+      .on("drag", function() {
+        var rotate = projection.rotate();
+        projection.rotate([d3.event.x * sens, -d3.event.y * sens, rotate[2]]);
+        svg.selectAll("path.land").attr("d", path);
+        svg.selectAll(".focused").classed("focused", focused = false);
+      }))
+
+    //Mouse events
+
+    .on("mouseover", function(d) {
+      countryTooltip.text(countryById[d.id])
+      .style("left", (d3.event.pageX + 7) + "px")
+      .style("top", (d3.event.pageY - 15) + "px")
+      .style("display", "block")
+      .style("opacity", 1);
+    })
+    .on("mouseout", function(d) {
+      countryTooltip.style("opacity", 0)
+      .style("display", "none");
+    })
+    .on("mousemove", function(d) {
+      countryTooltip.style("left", (d3.event.pageX + 7) + "px")
+      .style("top", (d3.event.pageY - 15) + "px");
+    });
+
+    //Country focus on option select
+
+    d3.select("select").on("change", function() {
+      var rotate = projection.rotate(),
+      focusedCountry = country(countries, this),
+      p = d3.geo.centroid(focusedCountry);
+
+      svg.selectAll(".focused").classed("focused", focused = false);
+
+    //Globe rotating
+
+    (function transition() {
+      d3.transition()
+      .duration(2500)
+      .tween("rotate", function() {
+        var r = d3.interpolate(projection.rotate(), [-p[0], -p[1]]);
+        return function(t) {
+          projection.rotate(r(t));
+          svg.selectAll("path").attr("d", path)
+          .classed("focused", function(d, i) { return d.id == focusedCountry.id ? focused = d : false; });
+        };
+      })
+      })();
+    });
+
+    function country(cnt, sel) { 
+      for(var i = 0, l = cnt.length; i < l; i++) {
+        if(cnt[i].id == sel.value) {return cnt[i];}
+      }
+    };
+
+  };
+      
+    d3.csv("cities.csv", function(error, data) {
+  data.forEach(function(d){
+     svg.append("path")
+    .datum({type: "Point", coordinates: [d['lon'], d['lat']]})
+//   .attr("xlink:href", 
+  //       " https://www.google.com/search?q=" + d.city;
+    // )
+    .attr("class", "point")
+    .attr("d", path)
+    .style ("fill", "black")
+//.attr("xlink:href", function(d) {
+//					  return "https://www.google.com/search?q="+d.city;}
+ //   .attr("d", path.pointRadius(d.Magnitude));
+   /*
+      g.selectAll("circle")
+           .data(data)
+           .enter()
+           .append("circle")
+           .attr("cx", function(d) {
+                   return projection([d.lon, d.lat])[0];
+           })
+           .attr("cy", function(d) {
+                   return projection([d.lon, d.lat])[1];
+           })
+           .attr("r", 5)
+           .style("fill", "red");
+*/  });
+});
+  </script>
+    </body>
+</html>

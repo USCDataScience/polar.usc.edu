@@ -1,0 +1,13 @@
+{
+ "name": "Author",
+ "children": [
+  {
+   "name": "Author1",
+      "children":[
+          {"name":"Pub1","size":2122},
+          {"name":"pub2","size":2122}
+      ]},   
+   {"name": "Author2","size":2323},
+   {"name": "Author3","size":2323}      
+ ]
+}

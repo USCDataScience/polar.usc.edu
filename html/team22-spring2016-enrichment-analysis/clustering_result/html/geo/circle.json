@@ -1,0 +1,70 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "metadata.Geographic_LATITUDE",
+                    "size": 15
+                },
+                {
+                    "name": "metadata.Geographic_LONGITUDE",
+                    "size": 15
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "metadata.Geographic_LATITUDE",
+                    "size": 21
+                },
+                {
+                    "name": "metadata.Geographic_LONGITUDE",
+                    "size": 21
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "metadata.Geographic_LATITUDE",
+                    "size": 249
+                },
+                {
+                    "name": "metadata.Geographic_LONGITUDE",
+                    "size": 249
+                }
+            ],
+            "name": "cluster2"
+        },
+        {
+            "children": [
+                {
+                    "name": "metadata.Geographic_LATITUDE",
+                    "size": 44
+                },
+                {
+                    "name": "metadata.Geographic_LONGITUDE",
+                    "size": 44
+                }
+            ],
+            "name": "cluster3"
+        },
+        {
+            "children": [
+                {
+                    "name": "metadata.Geographic_LATITUDE",
+                    "size": 59
+                },
+                {
+                    "name": "metadata.Geographic_LONGITUDE",
+                    "size": 59
+                }
+            ],
+            "name": "cluster4"
+        }
+    ],
+    "name": "clusters"
+}

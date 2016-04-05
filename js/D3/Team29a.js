@@ -295,7 +295,11 @@
 };
   
   var DURATION = 1500;
-  var DELAY    = 500;
+  var DELAY = 500;
+  
+
+
+  
   
   /**
    * draw the fancy line chart
@@ -685,11 +689,32 @@
   }
   
   function ಠ_ಠ() {
-    drawPieChart(     'pieChart',     data.pieChart );
     drawLineChart(    'lineChart',    data.lineChart );
   }
   
   // yeah, let's kick things off!!!
+   $.when(
+    $.getJSON("http://polar.usc.edu/solr/geo/select?q=ozone&wt=json&json.wrf=?&indent=true", function(response) {
+	   data['pieChart'][2]['numResults'] = response['response']['numFound'];
+	 }),
+	 
+	$.getJSON("http://polar.usc.edu/solr/geo/select?q=CO2&wt=json&json.wrf=?&indent=true", function(response) {
+		data['pieChart'][0]['numResults'] = response['response']['numFound'];
+	}),
+	$.getJSON("http://polar.usc.edu/solr/geo/select?q=methane&wt=json&json.wrf=?&indent=true", function(response) {
+		data['pieChart'][1]['numResults'] = response['response']['numFound'];
+	})
+	).then(function() {
+		var total = 0;
+		
+		for (i = 0; i < 3; i++) {
+			total += data['pieChart'][i]['numResults'];
+		}
+		for (i = 0; i < 3; i++) {
+			data['pieChart'][i]['value'] = data['pieChart'][i]['numResults']/total;
+		}
+		drawPieChart(     'pieChart',     data.pieChart );
+	});
   ಠ_ಠ();
   
 })();

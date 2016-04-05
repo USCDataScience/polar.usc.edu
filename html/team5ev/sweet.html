@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<script src="../../js/d3.min.js"></script>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Scrolling Nav CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-<style>
+    <link href="../../css/styles.css" rel="stylesheet">
 
-.link {
-  stroke: #aaa;
-}
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
 
-.node text {
-stroke:#333;
-cursos:pointer;
-}
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
 
-.node circle{
-stroke:#fff;
-stroke-width:3px;
-fill:#555;
-}
-
-</style>
-<script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script src="../../js/d3.min.js"></script>
+    <script src="../../js/team5/topojson.v1.min.js"></script>
+    <script>
         $(function(){
           $("#header").load("../headerdouble.html");
         });
-</script>
+    </script>
+    
+    <script src="../../js/d3.min.js"></script>
+
+    <style>
+
+    .link {
+      stroke: #aaa;
+    }
+
+    .node text {
+    stroke:#333;
+    cursos:pointer;
+    }
+
+    .node circle{
+    stroke:#fff;
+    stroke-width:3px;
+    fill:#555;
+    }
+
+    </style>
+</head>
 
 <body>
 <div id="header" style="margin-bottom:4%"> </div>
@@ -90,3 +109,4 @@ d3.json("../../data/team5/sweet.json", function(json) {
 });
 
 </script>
+</body>

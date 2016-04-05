@@ -16,20 +16,19 @@
   </style>
 
   </head>
-  <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
-  <!--<link rel="stylesheet" href="../css/team29-c.css">-->
-  <script type="text/javascript" src="../js/D3/Team29.Bootstrap.js"></script>
-  <link href="../css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/D3/Team29.Bootstrap.js"></script>
+  <link href="../../css/styles.css" rel="stylesheet">
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
       <!-- Scrolling Nav CSS -->
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
       <!-- Custom CSS -->
     <script>
     $(function(){
-      $("#header").load("header.html"); 
+      $("#header").load("../headerdouble.html");
     });
 
     </script>
@@ -39,11 +38,11 @@
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-<script src="../js/D3/Team29c.timeSeriesChart.js"></script>
-<script src="../js/D3/Team29c.startEndSlider.js"></script>
-<script src="../js/D3/Team29c.clickPanel.js"></script>
-<script src="../js/topojson.v1.min.js"></script>
-<script src="../js/D3/Team29c.js"></script>
+<script src="../../js/D3/Team29c.timeSeriesChart.js"></script>
+<script src="../../js/D3/Team29c.startEndSlider.js"></script>
+<script src="../../js/D3/Team29c.clickPanel.js"></script>
+<script src="../../js/topojson.v1.min.js"></script>
+<script src="../../js/D3/Team29c.js"></script>
 
 
 <div class="container"> 
@@ -65,9 +64,9 @@
 
           <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>                 
           <ul id="dataChange" class="dropdown-menu">                         
-          <li onclick="drawTimeSeries('../data/team29-warming-times.csv','Warming')"><a class="facetview_sort facetview_count">Warming </a></li>
-          <li onclick="drawTimeSeries('../data/team29-oceancirculation-times.csv','Ocean Circulation')"><a class="facetview_sort facetview_term">Ocean Circulation</a></li>
-          <li onclick="drawTimeSeries('../data/team29-co2-times.csv','Carbon Dioxide')"><a class="facetview_sort facetview_rcount">Carbon Dioxide</a></li>
+          <li onclick="drawTimeSeries('../../data/team29-warming-times.csv','Warming')"><a class="facetview_sort facetview_count">Warming </a></li>
+          <li onclick="drawTimeSeries('../../data/team29-oceancirculation-times.csv','Ocean Circulation')"><a class="facetview_sort facetview_term">Ocean Circulation</a></li>
+          <li onclick="drawTimeSeries('../../data/team29-co2-times.csv','Carbon Dioxide')"><a class="facetview_sort facetview_rcount">Carbon Dioxide</a></li>
           </ul>         
           </div>             
         </div>            

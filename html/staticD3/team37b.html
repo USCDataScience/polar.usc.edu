@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 
-<script src="../js/jquery.js"></script>
+<script src="../../js/jquery.js"></script>
 <script>
 $(function(){
-  $("#header").load("header.html"); 
+  $("#header").load("../headerdouble.html");
 });
 
 </script>
@@ -39,13 +39,13 @@ body {
 
 </style>
 
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Scrolling Nav CSS -->
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../../css/styles.css" rel="stylesheet">
 <body>
     <div id="header"> </div>
 
@@ -74,7 +74,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-d3.json("../data/team37data/flare.json", function(error, root) {
+d3.json("../../data/team37data/flare.json", function(error, root) {
   if (error) return console.error(error);
 
   var focus = root,

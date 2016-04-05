@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <!-- Bootstrap Core CSS -->
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Scrolling Nav CSS -->
-<link href="../css/scrolling-nav.css" rel="stylesheet">
+<link href="../../css/scrolling-nav.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="../css/styles.css" rel="stylesheet">
+<link href="../../css/styles.css" rel="stylesheet">
 <style>
 
 body {
@@ -73,10 +73,10 @@ body {
 
 
 </style>
-<script src="../js/jquery.js"></script>
+<script src="../../js/jquery.js"></script>
 <script>
 $(function(){
-  $("#header").load("header.html"); 
+  $("#header").load("../headerdouble.html");
 });
 
 </script>
@@ -143,7 +143,7 @@ svg.append("path")
     .attr("class", "graticule")
     .attr("d", path);
 
-d3.json("../data/json/team3-world.json", function(error, world) {
+d3.json("../../data/json/team3-world.json", function(error, world) {
   svg.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
@@ -154,7 +154,7 @@ d3.json("../data/json/team3-world.json", function(error, world) {
       .attr("class", "boundary")
       .attr("d", path);
       
-  d3.json("../data/team3-query.txt", function(error, jsondata) {
+  d3.json("../../data/team3-query.txt", function(error, jsondata) {
     
     x.domain(['Iron','Oil','Others']);
     

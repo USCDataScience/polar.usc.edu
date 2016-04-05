@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <title>Celgene Facet View</title>
-  <script src="../js/jquery.js"></script>
+  <script src="../../js/jquery.js"></script>
 
   <script>
   $(function(){
-    $("#header").load("header.html"); 
+    $("#header").load("../headerdouble.html");
   });
 
   </script>
@@ -53,17 +53,17 @@ div.tooltip {
 
    <!-- Custom CSS -->
   <!-- <link href="../css/bootstrap.min.css" rel="stylesheet">-->
-   <link href="../css/styles.css" rel="stylesheet">
-     <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+   <link href="../../css/styles.css" rel="stylesheet">
+     <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
   <!-- <link rel="stylesheet" href="../css/team29-b.css"> -->
     <!-- the above css file causes the header bar to mis align; but commenting it out changes the buttons-->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
-     <script type="text/javascript" src="../js/D3/Team29.Bootstrap.js"></script>
-     <script src="../js/d3.min.js"></script>
-     <script src="../js/topojson.v1.min.js"></script>
-     <script src="../js/D3/Team29b.js"></script>
+     <script type="text/javascript" src="../../js/D3/Team29.Bootstrap.js"></script>
+     <script src="../../js/d3.min.js"></script>
+     <script src="../../js/topojson.v1.min.js"></script>
+     <script src="../../js/D3/Team29b.js"></script>
 
 
 </head>
@@ -88,9 +88,9 @@ div.tooltip {
           <i class="glyphicon glyphicon-plus "></i> Select Data</a>                       
           <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>                 
           <ul id="dataChange" class="dropdown-menu">                         
-          <li onclick="drawMap('../data/team29-glaciers-geodata.csv','Glaciers Data')"><a class="facetview_sort facetview_count">Glaciers Data</a></li>
-          <li onclick="drawMap('../data/team29-icesheet-geodata.csv','Icesheet Data')"><a class="facetview_sort facetview_term">Icesheet Data</a></li>
-          <li onclick="drawMap('../data/team29-snowmelt-geodata.csv','Snowmelt Data')"><a class="facetview_sort facetview_rcount">Snowmelt Data</a></li>
+          <li onclick="drawMap('../../data/team29-glaciers-geodata.csv','Glaciers Data')"><a class="facetview_sort facetview_count">Glaciers Data</a></li>
+          <li onclick="drawMap('../../data/team29-icesheet-geodata.csv','Icesheet Data')"><a class="facetview_sort facetview_term">Icesheet Data</a></li>
+          <li onclick="drawMap('../../data/team29-snowmelt-geodata.csv','Snowmelt Data')"><a class="facetview_sort facetview_rcount">Snowmelt Data</a></li>
           </ul>         
           </div>             
         </div>            

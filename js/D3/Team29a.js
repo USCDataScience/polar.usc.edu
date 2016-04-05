@@ -295,7 +295,7 @@
 };
   
   var DURATION = 1500;
-  var DELAY    = 500;
+  var DELAY = 500;
   
 
 
@@ -689,7 +689,6 @@
   }
   
   function ಠ_ಠ() {
-    //drawPieChart(     'pieChart',     data.pieChart );
     drawLineChart(    'lineChart',    data.lineChart );
   }
   

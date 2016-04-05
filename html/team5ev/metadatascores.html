@@ -69,8 +69,24 @@
   left: 0;
 }
 </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+
 </head>
 <body style = "text-align : center; padding-top : 5%;">
+<div id="header" style="margin-bottom:4%"> </div>
+
 <H2>CONTENT-TYPE AND ITS AVERAGE SCORE</H2>
 <script src="../../js/d3.min.js"></script>
 <script src="../../js/d3.tip.v0.6.3.js"></script>

@@ -26,15 +26,15 @@
 		<!--<link rel="stylesheet" href="../css/bootstrap.min.css">-->
 
     <!-- Scrolling Nav CSS -->
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../../css/styles.css" rel="stylesheet">
 
-    <script src="../js/jquery.js"></script>
+    <script src="../../js/jquery.js"></script>
     <script>
     $(function(){
-      $("#header").load("header.html"); 
+      $("#header").load("../headerdouble.html");
     });
     </script>
 </head>
@@ -186,7 +186,7 @@
     function updateData() {
         $('#chartContainer').empty();
         var svg = dimple.newSvg("#chartContainer", 1030, 600);
-        d3.json("../data/team16data/bfa/team16-bfa.json", function (data) {
+        d3.json("../../data/team16data/bfa/team16-bfa.json", function (data) {
             data = dimple.filterData(data, "mimetype", allVals);
 
             var myChart = new dimple.chart(svg, data);

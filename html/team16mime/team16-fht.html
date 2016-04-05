@@ -40,15 +40,15 @@
 
     <script src="http://d3js.org/d3.v3.js"></script>
         <!-- Scrolling Nav CSS -->
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../../css/styles.css" rel="stylesheet">
 
-    <script src="../js/jquery.js"></script>
+    <script src="../../js/jquery.js"></script>
     <script>
     $(function(){
-      $("#header").load("header.html"); 
+      $("#header").load("../headerdouble.html");
     });
     </script>
 </head>
@@ -137,55 +137,55 @@
 
     //JSON files for each of 15 mime-types and we have 4, 8 , 16 bytes x 255 bytes matrix for each mime type
     //4 x 255 bytes json
-            FILE_XML_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_xml.json",
-            FILE_MPEG_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_mpeg.json",
-            FILE_XWAV_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_x-wav.json",
-            FILE_GZIP_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_gzip.json",
-            FILE_GIF_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_gif.json",
-            FILE_JPEG_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_jpeg.json",
-            FILE_PNG_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_png.json",
-            FILE_SVGXML_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_svgxml.json",
-            FILE_TIFF_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_tiff.json",
-            FILE_PDF_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_pdf.json",
-            FILE_HTML_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_html.json",
-            FILE_MP4_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_mp4.json",
-            FILE_QUICKTIME_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_qt.json",
-            FILE_ZIP_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_zip.json",
-            FILE_OCTET_4 = "../data/team16data/fht/FHT_4/FHT_fingerprint_octetstream.json",
+            FILE_XML_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_xml.json",
+            FILE_MPEG_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_mpeg.json",
+            FILE_XWAV_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_x-wav.json",
+            FILE_GZIP_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_gzip.json",
+            FILE_GIF_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_gif.json",
+            FILE_JPEG_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_jpeg.json",
+            FILE_PNG_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_png.json",
+            FILE_SVGXML_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_svgxml.json",
+            FILE_TIFF_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_tiff.json",
+            FILE_PDF_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_pdf.json",
+            FILE_HTML_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_html.json",
+            FILE_MP4_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_mp4.json",
+            FILE_QUICKTIME_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_qt.json",
+            FILE_ZIP_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_zip.json",
+            FILE_OCTET_4 = "../../data/team16data/fht/FHT_4/FHT_fingerprint_octetstream.json",
 
     //8 x 255 bytes json
-            FILE_XML_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_xml.json",
-            FILE_MPEG_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_mpeg.json",
-            FILE_XWAV_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_x-wav.json",
-            FILE_GZIP_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_gzip.json",
-            FILE_GIF_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_gif.json",
-            FILE_JPEG_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_jpeg.json",
-            FILE_PNG_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_png.json",
-            FILE_SVGXML_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_svgxml.json",
-            FILE_TIFF_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_tiff.json",
-            FILE_PDF_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_pdf.json",
-            FILE_HTML_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_html.json",
-            FILE_MP4_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_mp4.json",
-            FILE_QUICKTIME_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_qt.json",
-            FILE_ZIP_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_zip.json",
-            FILE_OCTET_8 = "../data/team16data/fht/FHT_8/FHT_fingerprint_octetstream.json",
+            FILE_XML_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_xml.json",
+            FILE_MPEG_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_mpeg.json",
+            FILE_XWAV_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_x-wav.json",
+            FILE_GZIP_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_gzip.json",
+            FILE_GIF_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_gif.json",
+            FILE_JPEG_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_jpeg.json",
+            FILE_PNG_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_png.json",
+            FILE_SVGXML_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_svgxml.json",
+            FILE_TIFF_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_tiff.json",
+            FILE_PDF_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_pdf.json",
+            FILE_HTML_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_html.json",
+            FILE_MP4_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_mp4.json",
+            FILE_QUICKTIME_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_qt.json",
+            FILE_ZIP_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_zip.json",
+            FILE_OCTET_8 = "../../data/team16data/fht/FHT_8/FHT_fingerprint_octetstream.json",
 
     //16 x 255 bytes json
-            FILE_XML_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_xml.json",
-            FILE_MPEG_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_mpeg.json",
-            FILE_XWAV_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_x-wav.json",
-            FILE_GZIP_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_gzip.json",
-            FILE_GIF_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_gif.json",
-            FILE_JPEG_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_jpeg.json",
-            FILE_PNG_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_png.json",
-            FILE_SVGXML_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_svgxml.json",
-            FILE_TIFF_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_tiff.json",
-            FILE_PDF_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_pdf.json",
-            FILE_HTML_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_html.json",
-            FILE_MP4_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_mp4.json",
-            FILE_QUICKTIME_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_qt.json",
-            FILE_ZIP_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_zip.json",
-            FILE_OCTET_16 = "../data/team16data/fht/FHT_16/FHT_fingerprint_octetstream.json";
+            FILE_XML_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_xml.json",
+            FILE_MPEG_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_mpeg.json",
+            FILE_XWAV_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_x-wav.json",
+            FILE_GZIP_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_gzip.json",
+            FILE_GIF_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_gif.json",
+            FILE_JPEG_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_jpeg.json",
+            FILE_PNG_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_png.json",
+            FILE_SVGXML_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_svgxml.json",
+            FILE_TIFF_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_tiff.json",
+            FILE_PDF_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_pdf.json",
+            FILE_HTML_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_html.json",
+            FILE_MP4_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_mp4.json",
+            FILE_QUICKTIME_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_qt.json",
+            FILE_ZIP_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_zip.json",
+            FILE_OCTET_16 = "../../data/team16data/fht/FHT_16/FHT_fingerprint_octetstream.json";
 
     //-------------------------------------4------------------------------------------------
 

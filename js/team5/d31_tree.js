@@ -1,5 +1,5 @@
 // Get JSON data
-treeJSON = d3.json("grobid.json", function(error, treeData) {
+treeJSON = d3.json("../../data/team5/grobid.json", function(error, treeData) {
 
     // Calculate total nodes, max label length
     var totalNodes = 0;

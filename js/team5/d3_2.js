@@ -32,7 +32,7 @@ var svg = d3.select("body").append("svg")
 
 svg.call(tip);
 
-d3.csv('aster_data1.csv', function(error, data) {
+d3.csv('../../data/team5/aster_data1.csv', function(error, data) {
 
   data.forEach(function(d) {
     d.id     =  d.id;

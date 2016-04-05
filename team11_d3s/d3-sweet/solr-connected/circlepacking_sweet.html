@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+circle {
+  fill: rgb(31, 119, 180);
+  fill-opacity: .25;
+  stroke: rgb(31, 119, 180);
+  stroke-width: 1px;
+}
+
+.leaf circle {
+  fill: #ff7f0e;
+  fill-opacity: 1;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+</style>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var diameter = 960,
+    format = d3.format(",d");
+
+var pack = d3.layout.pack()
+    .size([diameter - 4, diameter - 4])
+    .value(function(d) { return d.size; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(2,2)");
+
+$.ajax({
+      'async': false,
+      'global': false,
+      'url': 'http://localhost:8983/solr/polar_similarity/select',
+      'data': {'wt':'json', 'q':'type:sweet', 'rows': 100000},
+     
+      'success': function(data){
+          docs = data.response.docs;
+
+          dict = new Object();
+
+          for(i = 0; i < docs.length; i++){
+
+            doc = docs[i];
+
+            if(!doc.hasOwnProperty('parent'))
+              doc['parent'] = []
+
+            if(dict.hasOwnProperty(doc['parent'].length)){
+              dict[doc['parent'].length].push(doc)
+            }
+            else{
+              dict[doc['parent'].length] = [doc]
+            }
+          }
+
+          tree = new Object();
+          keys = Object.keys(dict),
+          i, len = keys.length;
+
+          keys.sort();
+
+          for (i = 0; i < len; i++) {
+            k = keys[i];
+
+            for(var index in dict[k]){
+
+              obj = dict[k][index]
+              if(k == 0){
+                tree[obj['name'][0]] = obj;
+              }
+              else{
+                root = tree[obj['parent'][0]];
+                for(var p in obj['parent'].slice(1, k)){
+                  root = root['children']
+                  root = root[obj['parent'].slice(1, k)[p]];
+                }
+                var t = new Object();
+                t[obj['name']] = obj;
+                if(!root.hasOwnProperty('children')){
+                    root['children'] = new Object();
+                }
+                root['children'][obj['name']] = obj;
+              }
+            }
+
+          }
+
+        cluster(tree.clusters);
+
+      },
+      'dataType': 'jsonp',
+      'jsonp': 'json.wrf'
+    });
+  
+
+cluster = function(root) {
+  var walk = function(node){
+    if(node.hasOwnProperty('children')){
+      node['children'] = Object.keys(node.children).map(function(key){return node.children[key]});
+    }
+    for(var i in node.children){
+      walk(node.children[i]);
+    }
+  }
+
+  walk(root);
+
+  var node = svg.datum(root).selectAll(".node")
+      .data(pack.nodes)
+    .enter().append("g")
+      .attr("class", function(d) { 
+        return d.children ? "node" : "leaf node"; 
+      })
+      .attr("transform", function(d) { 
+        return "translate(" + d.x + "," + d.y + ")"; 
+      });
+
+  node.append("title")
+      .text(function(d) {console.log(d); return d.name + (d.children ? "" : ": " + format(d.size)); });
+
+  node.append("circle")
+      .attr("r", function(d) { return d.r; });
+
+  node.filter(function(d) { return !d.children; }).append("text")
+      .attr("dy", ".3em")
+      .style("text-anchor", "middle")
+      .text(function(d) { return d.name[0].substring(0, d.r / 3); });
+}
+
+d3.select(self.frameElement).style("height", diameter + "px");
+
+</script>

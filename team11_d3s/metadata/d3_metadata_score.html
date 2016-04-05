@@ -1,0 +1,143 @@
+<html>
+<head>
+	<title>Metadata Score</title>
+	<style>
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+</style>
+	</head>
+	<body>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+	window.onload = function () {
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 1120 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(10, "");
+
+var count=0;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip");
+		
+		    
+d3.select('.tooltip').style('padding',' 10px')
+.style('background',' white')
+.style('border-radius',' 10px')
+.style('box-shadow',' 4px 4px 10px rgba(0, 0, 0, 0.4)');
+d3.csv("metadata1.csv",  function(data) {
+
+console.log("in");
+  x.domain(data.map(function(d) { d = ++count; return d;}));
+  y.domain([0, d3.max(data, function(d) { return d.score; })]);
+console.log(d3.max(d3.values(data)));
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(-6," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Score");
+count=0;
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { d=++count;return x(d); })
+      .attr("width", 5.5)
+      .attr("y", function(d) { return y(d.score); })
+      .attr("height", function(d) { return height - y(d.score); })
+      .on("mouseover", function(d) {
+          tooltip.transition()
+               .duration(200)
+               .style("opacity", .9)
+               . style('position','absolute');
+          tooltip.html("(Filename: " + d.filename+"<br> Metadata Score: "+d.score+")")
+               .style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 55) + "px");
+      })
+      .on("mouseout", function(d) {
+          tooltip.transition()
+               .duration(500)
+               .style("opacity", 0)});
+});
+	}
+function type(d) {
+  d.score = +d.score;
+  return d;
+}/*
+    var QueryString = function () {
+    var query_string = {};
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (typeof query_string[pair[0]] === "undefined") {
+            query_string[pair[0]] = decodeURIComponent(pair[1]);
+        } else if (typeof query_string[pair[0]] === "string") {
+            var a = [query_string[pair[0]], decodeURIComponent(pair[1])];
+            query_string[pair[0]] = a;
+        } else {
+            query_string[pair[0]].push(decodeURIComponent(pair[1]));
+        }
+    }
+    return query_string;
+}();
+    
+    window.onload = function() {
+
+            var mime =  QueryString.mime;
+            path = "data/" + mime + ".tsv";
+            console.log("PATH: " + path);
+            bfa(path);
+    }*/
+		</script>
+	</body>
+</html>

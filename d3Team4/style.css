@@ -1,0 +1,20 @@
+body{
+	background-color: #ffffb3;
+}
+p,div {
+
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+
+.main{
+	margin-left: 40px;
+}
+
+#chart{
+	margin: 0px;
+	padding-left: 0px;
+}
+.bfd{
+	margin: 0px;
+}

@@ -109,6 +109,15 @@ body {
     width: 400px;
 }
 
+#sce-viz .thumbnail img{
+    height: 200px;
+    width: 400px;
+}
+
+#sce-viz .thumbnail{
+    height: 30%;
+}
+
 #d3-other .thumbnail img{
     height: 200px;
     width: 400px;

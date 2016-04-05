@@ -1,0 +1,3112 @@
+{
+	"name": "Authors",
+	"children": [{
+		"children": [{
+			"size": 1,
+			"name": "['The international DORIS service (IDS): toward maturity']"
+		}, {
+			"size": 1,
+			"name": "['The Crustal Dynamics Data Information System: A resource to support scientific analysis using space geodesy']"
+		}, {
+			"size": 1,
+			"name": "['The international GLONASS experiment(IGEX-98)']"
+		}, {
+			"size": 1,
+			"name": "['The international GLONASS experiment(IGEX 98)- Organization, preliminary results and future plans']"
+		}, {
+			"size": 1,
+			"name": "['The international laser ranging service and its support for IGGOS']"
+		}, {
+			"size": 1,
+			"name": "['The IGS global data center at the CDDIS-an update']"
+		}, {
+			"size": 1,
+			"name": "['CDDIS Global Data Center Report']"
+		}, {
+			"size": 1,
+			"name": "['The development of selected data base applications for the crustal dynamics data information system']"
+		}, {
+			"size": 1,
+			"name": "['The International Laser Ranging Service']"
+		}, {
+			"size": 1,
+			"name": "['Spectroelectrochemical investigation of a flavoprotein with a flavin-modified gold electrode']"
+		}, {
+			"size": 1,
+			"name": "['Crustal dynamics project: Catalogue of site information']"
+		}, {
+			"size": 1,
+			"name": "[\"Quick-look guide to the crustal dynamics project's data information system\"]"
+		}, {
+			"size": 1,
+			"name": "[\"Crustal dynamics data information system user's guide\"]"
+		}, {
+			"size": 1,
+			"name": "['LARES Laser Relativity Satellite']"
+		}, {
+			"size": 1,
+			"name": "['The proposed International DORIS Service']"
+		}, {
+			"size": 1,
+			"name": "['The International DORIS Service (IDS): Recent Developments in Preparation for ITRF2013']"
+		}, {
+			"size": 1,
+			"name": "['Aeroservoelastic wind-tunnel investigations using the Active Flexible Wing Model: Status and recent accomplishments']"
+		}, {
+			"size": 1,
+			"name": "['ILRS Website Update']"
+		}, {
+			"size": 1,
+			"name": "['IGEX-98 data flow']"
+		}, {
+			"size": 1,
+			"name": "['Archiving space geodesy data for 20+ years at the CDDIS']"
+		}, {
+			"size": 1,
+			"name": "['The international DORIS service (IDS): toward maturity']"
+		}, {
+			"size": 1,
+			"name": "['The Crustal Dynamics Data Information System: A resource to support scientific analysis using space geodesy']"
+		}, {
+			"size": 1,
+			"name": "['The international GLONASS experiment(IGEX-98)']"
+		}, {
+			"size": 1,
+			"name": "['The international GLONASS experiment(IGEX 98)- Organization, preliminary results and future plans']"
+		}, {
+			"size": 1,
+			"name": "['The international laser ranging service and its support for IGGOS']"
+		}, {
+			"size": 1,
+			"name": "['The IGS global data center at the CDDIS-an update']"
+		}, {
+			"size": 1,
+			"name": "['CDDIS Global Data Center Report']"
+		}, {
+			"size": 1,
+			"name": "['The development of selected data base applications for the crustal dynamics data information system']"
+		}, {
+			"size": 1,
+			"name": "['The International Laser Ranging Service']"
+		}, {
+			"size": 1,
+			"name": "['Spectroelectrochemical investigation of a flavoprotein with a flavin-modified gold electrode']"
+		}, {
+			"size": 1,
+			"name": "['Crustal dynamics project: Catalogue of site information']"
+		}, {
+			"size": 1,
+			"name": "[\"Quick-look guide to the crustal dynamics project's data information system\"]"
+		}, {
+			"size": 1,
+			"name": "[\"Crustal dynamics data information system user's guide\"]"
+		}, {
+			"size": 1,
+			"name": "['LARES Laser Relativity Satellite']"
+		}, {
+			"size": 1,
+			"name": "['The proposed International DORIS Service']"
+		}, {
+			"size": 1,
+			"name": "['The International DORIS Service (IDS): Recent Developments in Preparation for ITRF2013']"
+		}, {
+			"size": 1,
+			"name": "['Aeroservoelastic wind-tunnel investigations using the Active Flexible Wing Model: Status and recent accomplishments']"
+		}, {
+			"size": 1,
+			"name": "['ILRS Website Update']"
+		}, {
+			"size": 1,
+			"name": "['IGEX-98 data flow']"
+		}, {
+			"size": 1,
+			"name": "['Archiving space geodesy data for 20+ years at the CDDIS']"
+		}, {
+			"size": 1,
+			"name": "['The international DORIS service (IDS): toward maturity']"
+		}, {
+			"size": 1,
+			"name": "['The Crustal Dynamics Data Information System: A resource to support scientific analysis using space geodesy']"
+		}, {
+			"size": 1,
+			"name": "['The international GLONASS experiment(IGEX-98)']"
+		}, {
+			"size": 1,
+			"name": "['The international GLONASS experiment(IGEX 98)- Organization, preliminary results and future plans']"
+		}, {
+			"size": 1,
+			"name": "['The international laser ranging service and its support for IGGOS']"
+		}, {
+			"size": 1,
+			"name": "['The IGS global data center at the CDDIS-an update']"
+		}, {
+			"size": 1,
+			"name": "['CDDIS Global Data Center Report']"
+		}, {
+			"size": 1,
+			"name": "['The development of selected data base applications for the crustal dynamics data information system']"
+		}, {
+			"size": 1,
+			"name": "['The International Laser Ranging Service']"
+		}, {
+			"size": 1,
+			"name": "['Spectroelectrochemical investigation of a flavoprotein with a flavin-modified gold electrode']"
+		}, {
+			"size": 1,
+			"name": "['Crustal dynamics project: Catalogue of site information']"
+		}, {
+			"size": 1,
+			"name": "[\"Quick-look guide to the crustal dynamics project's data information system\"]"
+		}, {
+			"size": 1,
+			"name": "[\"Crustal dynamics data information system user's guide\"]"
+		}, {
+			"size": 1,
+			"name": "['LARES Laser Relativity Satellite']"
+		}, {
+			"size": 1,
+			"name": "['The proposed International DORIS Service']"
+		}, {
+			"size": 1,
+			"name": "['The International DORIS Service (IDS): Recent Developments in Preparation for ITRF2013']"
+		}, {
+			"size": 1,
+			"name": "['Aeroservoelastic wind-tunnel investigations using the Active Flexible Wing Model: Status and recent accomplishments']"
+		}, {
+			"size": 1,
+			"name": "['ILRS Website Update']"
+		}, {
+			"size": 1,
+			"name": "['IGEX-98 data flow']"
+		}, {
+			"size": 1,
+			"name": "['Archiving space geodesy data for 20+ years at the CDDIS']"
+		}],
+		"name": "['Carey Noll']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Dose-dependent satiating effect of whey relative to casein or soy']"
+		}, {
+			"size": 1,
+			"name": "['Radiometric analysis of Hazara phosphate rock and fertilizers in Pakistan']"
+		}, {
+			"size": 1,
+			"name": "['Uncertainties in the design and operation of distributed energy resources: the case of micro-CHP systems']"
+		}, {
+			"size": 1,
+			"name": "['Integrated conceptual design of a robust and reliable waste-heat district heating system']"
+		}, {
+			"size": 1,
+			"name": "['Indoor radon levels and natural radioactivity in Jordanian soils']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of natural radioactivity in Jordanian sand']"
+		}, {
+			"size": 1,
+			"name": "['On the robustness, effectiveness and reliability of chemical and mechanical heat pumps for low-temperature heat source district heating: a comparative simulation- \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Presence or absence of carbohydrates and the proportion of fat in a high-protein diet affect appetite suppression but not energy expenditure in normal-weight human  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['TRH receptors in fish']"
+		}, {
+			"size": 1,
+			"name": "['Natural radioactivity in Jordanian construction materials']"
+		}, {
+			"size": 1,
+			"name": "['Effects of oral ingestion of amino acids and proteins on the somatotropic axis']"
+		}, {
+			"size": 1,
+			"name": "['The effects of four preservation methods on length, weight and condition factor of the clupeid Sardinella aurita Val. 1847']"
+		}, {
+			"size": 1,
+			"name": "['Indigenous use of medicinal trees and shrubs of Margalla Hills National Park, Islamabad.']"
+		}, {
+			"size": 1,
+			"name": "['Chemical and antimicrobial properties of leaf extracts of Zapoteca portoriceusis']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of indoor radon concentration levels in some cities of Jordan']"
+		}, {
+			"size": 1,
+			"name": "['The role of gas flaring in the rapid corrosion of zinc roofs in the Niger Delta Region of Nigeria']"
+		}, {
+			"size": 1,
+			"name": "['Effects of live foods, artificial feed and their combination on growth and survival of African clariid catfish (Heterobranchus longifilis Valenciennes, 1840)  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Proximate composition, energy content and physiochemical properties ofAfzelia africana andBrachystegia eurycoma seeds']"
+		}, {
+			"size": 1,
+			"name": "['Natural radioactivity in marble stones-Jordan']"
+		}, {
+			"size": 1,
+			"name": "['The proximate composition of some tropical legume seeds grown in two states in Nigeria']"
+		}],
+		"name": "['Ajah']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Fabrication and characterization of poly (methylmethacrylate) microfluidic devices bonded using surface modifications and solvents']"
+		}, {
+			"size": 1,
+			"name": "['Radiative corrections to pair annihilation']"
+		}, {
+			"size": 1,
+			"name": "['Immersion A-scan compared with partial coherence interferometry: outcomes analysis']"
+		}, {
+			"size": 1,
+			"name": "['Three-Pion Decay Modes of Eta and K Mesons and a Possible New Resonance']"
+		}, {
+			"size": 1,
+			"name": "['Decay Modes of the \u03b7 Meson']"
+		}, {
+			"size": 1,
+			"name": "['BDNF protects against stress\u2010induced impairments in spatial learning and memory and LTP']"
+		}, {
+			"size": 1,
+			"name": "['Recent investigations of the 0\u20135 Ma geomagnetic field recorded by lava flows']"
+		}, {
+			"size": 1,
+			"name": "['Idea of the neutrino']"
+		}, {
+			"size": 1,
+			"name": "['N-methyl-D-aspartate mediated responses decrease with age in Fischer 344 rat brain']"
+		}, {
+			"size": 1,
+			"name": "['Epoxy resins as stamps for hot embossing of microstructures and microfluidic channels']"
+		}, {
+			"size": 1,
+			"name": "['Two-component fermion theory']"
+		}, {
+			"size": 1,
+			"name": "['Structural and temporal requirements for geomagnetic field reversal deduced from lava flows']"
+		}, {
+			"size": 1,
+			"name": "['The birth of particle physics']"
+		}, {
+			"size": 1,
+			"name": "[\"'Feynman''s Thesis \u00e2 A New Approach to Quantum Theory'\"]"
+		}, {
+			"size": 1,
+			"name": "['Social modelling and public policy: application of microsimulation modelling in Australia']"
+		}, {
+			"size": 1,
+			"name": "['Tectonic and geologic evolution of the Espanola Basin, Rio Grande Rift: Structure, rate of extension, and relation to the state of stress in the western United States']"
+		}, {
+			"size": 1,
+			"name": "['Renormalization: from Lorentz to Landau (and beyond)']"
+		}, {
+			"size": 1,
+			"name": "['The Santa Rosa Event: 40 Ar/39 Ar and paleomagnetic results from the Valles rhyolite near Jaramillo Creek, Jemez Mountains, New Mexico']"
+		}, {
+			"size": 1,
+			"name": "['Ethanol and neuronal calcium channels']"
+		}, {
+			"size": 1,
+			"name": "['Porous polymer monolith assisted electrospray']"
+		}],
+		"name": "['Laurie Brown']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Animal behaviour: geomagnetic map used in sea-turtle navigation']"
+		}, {
+			"size": 1,
+			"name": "['Specific human granulocyte-macrophage colony-stimulating factor antagonists']"
+		}, {
+			"size": 1,
+			"name": "['Nature and functional implications of the cytochrome a3 transients after photodissociation of CO-cytochrome oxidase.']"
+		}, {
+			"size": 1,
+			"name": "['Pertussis toxin and the adenylate cyclase toxin from Bordetella pertussis activate human monocyte-derived dendritic cells and dominantly inhibit cytokine production  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Cholera toxin and heat-labile enterotoxin activate human monocyte-derived dendritic cells and dominantly inhibit cytokine production through a cyclic AMP-dependent \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Identification of residues in the first and fourth helices of human granulocyte-macrophage colony-stimulating factor involved in biologic activity and in binding to the  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Structure of the activation domain of the GM-CSF/IL-3/IL-5 receptor common \u03b2-chain bound to an antagonist']"
+		}, {
+			"size": 1,
+			"name": "['2012 Young Investigator Award winner: The distribution of body mass as a significant risk factor for lumbar spinal fusion postoperative infections']"
+		}, {
+			"size": 1,
+			"name": "['Limb development and evolution: a frog embryo with no apical ectodermal ridge (AER)']"
+		}, {
+			"size": 1,
+			"name": "['Molecular assembly of the ternary granulocyte-macrophage colony-stimulating factor receptor complex']"
+		}, {
+			"size": 1,
+			"name": "['Interaction of GM-CSF and IL-3 with the common beta-chain of their receptors.']"
+		}, {
+			"size": 1,
+			"name": "['Minimally invasive medical retrieval device']"
+		}, {
+			"size": 1,
+			"name": "['Local delivery of oncogel delays paresis in rat metastatic spinal tumor model']"
+		}, {
+			"size": 1,
+			"name": "['A simple and safe technique for endoscopic third ventriculocisternostomy']"
+		}, {
+			"size": 1,
+			"name": "['Effects of red pine (Pinus resinosa Ait.) mycorrhizoplane-associated actinomycetes onin vitro growth of ectomycorrhizal fungi']"
+		}, {
+			"size": 1,
+			"name": "['Timing of tracheostomy after anterior cervical spine fixation']"
+		}, {
+			"size": 1,
+			"name": "['Fractionated, single-port radiotherapy delays paresis in a metastatic spinal tumor model in rats']"
+		}, {
+			"size": 1,
+			"name": "['Thickness of subcutaneous fat as a risk factor for infection in cervical spine fusion surgery']"
+		}, {
+			"size": 1,
+			"name": "['Clinical effects of longitudinal division of the corpus callosum in normal dogs']"
+		}, {
+			"size": 1,
+			"name": "['Expression of TMPRSS4 in non-small cell lung cancer and its modulation by hypoxia']"
+		}],
+		"name": "['Timothy Bagley']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Surface air temperature and its changes over the past 150 years']"
+		}, {
+			"size": 1,
+			"name": "['Response of sea ice to the Arctic Oscillation']"
+		}, {
+			"size": 1,
+			"name": "['Variations in surface air temperature observations in the Arctic, 1979-97']"
+		}, {
+			"size": 1,
+			"name": "['Variations in the age of Arctic sea\u2010ice and summer sea\u2010ice extent']"
+		}, {
+			"size": 1,
+			"name": "['Snow depth on Arctic sea ice']"
+		}, {
+			"size": 1,
+			"name": "['A freshwater jet on the east Greenland shelf']"
+		}, {
+			"size": 1,
+			"name": "['Summer retreat of Arctic sea ice: Role of summer winds']"
+		}, {
+			"size": 1,
+			"name": "['International Arctic Buoy Program Data Report for 1 January 1992-31 December 1992']"
+		}, {
+			"size": 1,
+			"name": "['Field and satellite observations of the formation and distribution of Arctic atmospheric bromine above a rejuvenated sea ice cover']"
+		}, {
+			"size": 1,
+			"name": "['Interdecadal changes in snow depth on Arctic sea ice']"
+		}, {
+			"size": 1,
+			"name": "['Trends in Arctic sea ice and the role of atmospheric circulation']"
+		}, {
+			"size": 1,
+			"name": "['Arctic marginal ice zone trending wider in summer and narrower in winter']"
+		}, {
+			"size": 1,
+			"name": "['International Arctic Buoy Program Data Report, 1 January 1994-31 December 1994.']"
+		}, {
+			"size": 1,
+			"name": "['International Arctic Buoy Program Data Report. 1 January-31 December 1993.']"
+		}, {
+			"size": 1,
+			"name": "['Autumn atmospheric preconditioning for interannual variability of wintertime sea-ice in the Okhotsk Sea']"
+		}, {
+			"size": 1,
+			"name": "['Transport of \u00b9\u00b3\u2077Cs and with Ice-Rafted Debris in the Arctic Ocean']"
+		}, {
+			"size": 1,
+			"name": "['Studying bromine, ozone, and mercury chemistry in the Arctic']"
+		}, {
+			"size": 1,
+			"name": "['International Arctic Buoy Program data report']"
+		}, {
+			"size": 1,
+			"name": "['Uncertainties of temperature measurements on snow-covered land and sea ice from in situ and MODIS data during BROMEX']"
+		}, {
+			"size": 1,
+			"name": "['Seasonal evolution of melt ponds on Arctic sea ice']"
+		}],
+		"name": "['Ignatius G. Rigor']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Use of antibodies and nucleotide probes in diagnosis']"
+		}, {
+			"size": 1,
+			"name": "['Immigration reform and US agriculture']"
+		}, {
+			"size": 1,
+			"name": "['Biodegradable organic polymer delivery system for bone morphogenetic protein']"
+		}, {
+			"size": 1,
+			"name": "['Serial measurements of GFR in infants using the continuous iothalamate infusion technique']"
+		}, {
+			"size": 1,
+			"name": "['Health professions education and managed care: challenges and necessary reponses']"
+		}, {
+			"size": 1,
+			"name": "['Detachable balloon catheter']"
+		}, {
+			"size": 1,
+			"name": "['Integrated pest management for rice']"
+		}, {
+			"size": 1,
+			"name": "['Community health workers: integral yet often overlooked members of the health care workforce']"
+		}, {
+			"size": 1,
+			"name": "['Diffusion-weighted Imaging\u2013Fluid Attenuated Inversion Recovery Mismatch in Nocturnal Stroke Patients with Unknown Time of Onset']"
+		}, {
+			"size": 1,
+			"name": "['Chronic care in America: A 21st century challenge']"
+		}, {
+			"size": 1,
+			"name": "['Optrode for sensing hydrocarbons']"
+		}, {
+			"size": 1,
+			"name": "['Conducting substituted polyisothianaphthenes']"
+		}, {
+			"size": 1,
+			"name": "['Method for programmed release in ski bindings']"
+		}, {
+			"size": 1,
+			"name": "['Nurse practitioners: Doubling the graduates by the year 2000']"
+		}, {
+			"size": 1,
+			"name": "['Distributed hypermedia method for automatically invoking external application providing interaction and display of embedded objects within a hypermedia document']"
+		}, {
+			"size": 1,
+			"name": "['Microoptic lenses']"
+		}, {
+			"size": 1,
+			"name": "['Report on Determination of the Quantity of Oily Substances on Beaches and in Nearshore Waters']"
+		}, {
+			"size": 1,
+			"name": "['Endovascular electrolytically detachable guidewire tip for the electroformation of thrombus in arteries, veins, aneurysms, vascular malformations and arteriovenous  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Cardiac imaging and ablation catheter']"
+		}, {
+			"size": 1,
+			"name": "['Determination of antibiotics, steroids, vitamins, viruses']"
+		}],
+		"name": "['University of California']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['The effect of retarded growth upon the length of life span and upon the ultimate body size']"
+		}, {
+			"size": 1,
+			"name": "['Recommendations for the use of folic acid to reduce the number of cases of spina bifida and other neural tube defects']"
+		}, {
+			"size": 1,
+			"name": "['Focused ultrasound surgery system guided by ultrasound imaging']"
+		}, {
+			"size": 1,
+			"name": "['Molecular and clinical analyses of Greig cephalopolysyndactyly and Pallister-Hall syndromes: robust phenotype prediction from the type and position of GLI3  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Efficiency and ownership in electricity distribution: a non-parametric model of the Turkish experience']"
+		}, {
+			"size": 1,
+			"name": "['Haemostatic variables and the outcome of myocardial infarction.']"
+		}, {
+			"size": 1,
+			"name": "['A multimethod, multi-informant, and multidimensional perspective on psychosocial adjustment in preadolescents with spina bifida.']"
+		}, {
+			"size": 1,
+			"name": "['Molecular changes associated with the acquisition of oestrogen hypersensitivity in MCF-7 breast cancer cells on long-term oestrogen deprivation']"
+		}, {
+			"size": 1,
+			"name": "['Cavity search: an algorithm for the isolation and display of cavity-like binding regions']"
+		}, {
+			"size": 1,
+			"name": "['Elevation performance of 1.25 D and 1.5 D transducer arrays']"
+		}, {
+			"size": 1,
+			"name": "['The anti-oestrogen ICI 182,780, but not tamoxifen, inhibits the growth of MCF-7 breast cancer cells refractory to long-term oestrogen deprivation through down- \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Sulfur derivatives of ephedra alkaloids; new and highly efficient chiral catalysts.']"
+		}, {
+			"size": 1,
+			"name": "['Galectin-3 modulates immune and inflammatory responses during helminthic infection: impact of galectin-3 deficiency on the functions of dendritic cells']"
+		}, {
+			"size": 1,
+			"name": "['Multiple informants in the assessment of psychological, behavioral, and academic correlates of bullying and victimization in middle school']"
+		}, {
+			"size": 1,
+			"name": "['Bacterial pathogens in wild birds: a review of the frequency and effects of infection']"
+		}, {
+			"size": 1,
+			"name": "['Identification of an exon 3 deletion splice variant androgen receptor mRNA in human breast cancer']"
+		}, {
+			"size": 1,
+			"name": "['Functional Organic Materials Based on Polymerized Liquid\u2010Crystal Monomers: Supramolecular Hydrogen\u2010Bonded Systems']"
+		}, {
+			"size": 1,
+			"name": "['Oestrogen receptor mutants and variants in breast cancer']"
+		}, {
+			"size": 1,
+			"name": "['Engineering of complex order and the macroscopic deformation of liquid crystal polymer networks']"
+		}, {
+			"size": 1,
+			"name": "['Bullying and victimization among boys and girls in middle school: The influence of perceived family and school contexts']"
+		}],
+		"name": "['cmw']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Oxidative damage to DNA in diabetes mellitus']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures: Analysis of the x-ray diffraction data']"
+		}, {
+			"size": 1,
+			"name": "['Blood flow to fetal organs as a function of arterial oxygen content.']"
+		}, {
+			"size": 1,
+			"name": "['Lack of macrophage fatty-acid\u2013binding protein aP2 protects mice deficient in apolipoprotein E against atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2']"
+		}, {
+			"size": 1,
+			"name": "['The status, quality, and expansion of the NIH full-length cDNA project']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures. I. Correlated electron microscopy and x-ray diffraction.']"
+		}, {
+			"size": 1,
+			"name": "['Intracoronary stent implantation without ultrasound guidance and with replacement of conventional anticoagulation by antiplatelet therapy 30-day clinical outcome of  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Mixing plant species in cropping systems: concepts, tools and models: a review']"
+		}, {
+			"size": 1,
+			"name": "['Model-based decision support methodology with environmental applications']"
+		}, {
+			"size": 1,
+			"name": "['Screening of a library of phage-displayed peptides identifies human bcl-2 as a taxol-binding protein']"
+		}, {
+			"size": 1,
+			"name": "['The Fatty Acid-binding Protein, aP2, Coordinates Macrophage Cholesterol Trafficking and Inflammatory Activity MACROPHAGE EXPRESSION OF aP2 IMPACTS  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reducing endoplasmic reticulum stress through a macrophage lipid chaperone alleviates atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Performance limits of switched-capacitor DC-DC converters']"
+		}, {
+			"size": 1,
+			"name": "['Flexible polymeric compositions comprising a normally plastic polymer sulfonated to about 0.2 to about 10 mole% sulfonate']"
+		}, {
+			"size": 1,
+			"name": "['Fatty acid binding proteins\u2014the evolutionary crossroads of inflammatory and metabolic responses']"
+		}, {
+			"size": 1,
+			"name": "['Phage-display technology\u2013finding a needle in a vast molecular haystack']"
+		}, {
+			"size": 1,
+			"name": "['Perfect Competition and the Creativity of the Market']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of Umbilical Arterial Blood Flow to the Sheep Placenta and Fetus in Utero DISTRIBUTION TO COTYLEDONS AND THE INTERCOTYLEDONARY  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Modeling video traffic using M/G/\u221e input processes: a compromise between Markovian and LRD models']"
+		}, {
+			"size": 1,
+			"name": "['Oxidative damage to DNA in diabetes mellitus']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures: Analysis of the x-ray diffraction data']"
+		}, {
+			"size": 1,
+			"name": "['Blood flow to fetal organs as a function of arterial oxygen content.']"
+		}, {
+			"size": 1,
+			"name": "['Lack of macrophage fatty-acid\u2013binding protein aP2 protects mice deficient in apolipoprotein E against atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2']"
+		}, {
+			"size": 1,
+			"name": "['The status, quality, and expansion of the NIH full-length cDNA project']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures. I. Correlated electron microscopy and x-ray diffraction.']"
+		}, {
+			"size": 1,
+			"name": "['Intracoronary stent implantation without ultrasound guidance and with replacement of conventional anticoagulation by antiplatelet therapy 30-day clinical outcome of  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Mixing plant species in cropping systems: concepts, tools and models: a review']"
+		}, {
+			"size": 1,
+			"name": "['Model-based decision support methodology with environmental applications']"
+		}, {
+			"size": 1,
+			"name": "['Screening of a library of phage-displayed peptides identifies human bcl-2 as a taxol-binding protein']"
+		}, {
+			"size": 1,
+			"name": "['The Fatty Acid-binding Protein, aP2, Coordinates Macrophage Cholesterol Trafficking and Inflammatory Activity MACROPHAGE EXPRESSION OF aP2 IMPACTS  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reducing endoplasmic reticulum stress through a macrophage lipid chaperone alleviates atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Performance limits of switched-capacitor DC-DC converters']"
+		}, {
+			"size": 1,
+			"name": "['Flexible polymeric compositions comprising a normally plastic polymer sulfonated to about 0.2 to about 10 mole% sulfonate']"
+		}, {
+			"size": 1,
+			"name": "['Fatty acid binding proteins\u2014the evolutionary crossroads of inflammatory and metabolic responses']"
+		}, {
+			"size": 1,
+			"name": "['Phage-display technology\u2013finding a needle in a vast molecular haystack']"
+		}, {
+			"size": 1,
+			"name": "['Perfect Competition and the Creativity of the Market']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of Umbilical Arterial Blood Flow to the Sheep Placenta and Fetus in Utero DISTRIBUTION TO COTYLEDONS AND THE INTERCOTYLEDONARY  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Modeling video traffic using M/G/\u221e input processes: a compromise between Markovian and LRD models']"
+		}, {
+			"size": 1,
+			"name": "['Oxidative damage to DNA in diabetes mellitus']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures: Analysis of the x-ray diffraction data']"
+		}, {
+			"size": 1,
+			"name": "['Blood flow to fetal organs as a function of arterial oxygen content.']"
+		}, {
+			"size": 1,
+			"name": "['Lack of macrophage fatty-acid\u2013binding protein aP2 protects mice deficient in apolipoprotein E against atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2']"
+		}, {
+			"size": 1,
+			"name": "['The status, quality, and expansion of the NIH full-length cDNA project']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures. I. Correlated electron microscopy and x-ray diffraction.']"
+		}, {
+			"size": 1,
+			"name": "['Intracoronary stent implantation without ultrasound guidance and with replacement of conventional anticoagulation by antiplatelet therapy 30-day clinical outcome of  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Mixing plant species in cropping systems: concepts, tools and models: a review']"
+		}, {
+			"size": 1,
+			"name": "['Model-based decision support methodology with environmental applications']"
+		}, {
+			"size": 1,
+			"name": "['Screening of a library of phage-displayed peptides identifies human bcl-2 as a taxol-binding protein']"
+		}, {
+			"size": 1,
+			"name": "['The Fatty Acid-binding Protein, aP2, Coordinates Macrophage Cholesterol Trafficking and Inflammatory Activity MACROPHAGE EXPRESSION OF aP2 IMPACTS  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reducing endoplasmic reticulum stress through a macrophage lipid chaperone alleviates atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Performance limits of switched-capacitor DC-DC converters']"
+		}, {
+			"size": 1,
+			"name": "['Flexible polymeric compositions comprising a normally plastic polymer sulfonated to about 0.2 to about 10 mole% sulfonate']"
+		}, {
+			"size": 1,
+			"name": "['Fatty acid binding proteins\u2014the evolutionary crossroads of inflammatory and metabolic responses']"
+		}, {
+			"size": 1,
+			"name": "['Phage-display technology\u2013finding a needle in a vast molecular haystack']"
+		}, {
+			"size": 1,
+			"name": "['Perfect Competition and the Creativity of the Market']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of Umbilical Arterial Blood Flow to the Sheep Placenta and Fetus in Utero DISTRIBUTION TO COTYLEDONS AND THE INTERCOTYLEDONARY  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Modeling video traffic using M/G/\u221e input processes: a compromise between Markovian and LRD models']"
+		}, {
+			"size": 1,
+			"name": "['Oxidative damage to DNA in diabetes mellitus']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures: Analysis of the x-ray diffraction data']"
+		}, {
+			"size": 1,
+			"name": "['Blood flow to fetal organs as a function of arterial oxygen content.']"
+		}, {
+			"size": 1,
+			"name": "['Lack of macrophage fatty-acid\u2013binding protein aP2 protects mice deficient in apolipoprotein E against atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2']"
+		}, {
+			"size": 1,
+			"name": "['The status, quality, and expansion of the NIH full-length cDNA project']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures. I. Correlated electron microscopy and x-ray diffraction.']"
+		}, {
+			"size": 1,
+			"name": "['Intracoronary stent implantation without ultrasound guidance and with replacement of conventional anticoagulation by antiplatelet therapy 30-day clinical outcome of  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Mixing plant species in cropping systems: concepts, tools and models: a review']"
+		}, {
+			"size": 1,
+			"name": "['Model-based decision support methodology with environmental applications']"
+		}, {
+			"size": 1,
+			"name": "['Screening of a library of phage-displayed peptides identifies human bcl-2 as a taxol-binding protein']"
+		}, {
+			"size": 1,
+			"name": "['The Fatty Acid-binding Protein, aP2, Coordinates Macrophage Cholesterol Trafficking and Inflammatory Activity MACROPHAGE EXPRESSION OF aP2 IMPACTS  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reducing endoplasmic reticulum stress through a macrophage lipid chaperone alleviates atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Performance limits of switched-capacitor DC-DC converters']"
+		}, {
+			"size": 1,
+			"name": "['Flexible polymeric compositions comprising a normally plastic polymer sulfonated to about 0.2 to about 10 mole% sulfonate']"
+		}, {
+			"size": 1,
+			"name": "['Fatty acid binding proteins\u2014the evolutionary crossroads of inflammatory and metabolic responses']"
+		}, {
+			"size": 1,
+			"name": "['Phage-display technology\u2013finding a needle in a vast molecular haystack']"
+		}, {
+			"size": 1,
+			"name": "['Perfect Competition and the Creativity of the Market']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of Umbilical Arterial Blood Flow to the Sheep Placenta and Fetus in Utero DISTRIBUTION TO COTYLEDONS AND THE INTERCOTYLEDONARY  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Modeling video traffic using M/G/\u221e input processes: a compromise between Markovian and LRD models']"
+		}, {
+			"size": 1,
+			"name": "['Oxidative damage to DNA in diabetes mellitus']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures: Analysis of the x-ray diffraction data']"
+		}, {
+			"size": 1,
+			"name": "['Blood flow to fetal organs as a function of arterial oxygen content.']"
+		}, {
+			"size": 1,
+			"name": "['Lack of macrophage fatty-acid\u2013binding protein aP2 protects mice deficient in apolipoprotein E against atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2']"
+		}, {
+			"size": 1,
+			"name": "['The status, quality, and expansion of the NIH full-length cDNA project']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures. I. Correlated electron microscopy and x-ray diffraction.']"
+		}, {
+			"size": 1,
+			"name": "['Intracoronary stent implantation without ultrasound guidance and with replacement of conventional anticoagulation by antiplatelet therapy 30-day clinical outcome of  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Mixing plant species in cropping systems: concepts, tools and models: a review']"
+		}, {
+			"size": 1,
+			"name": "['Model-based decision support methodology with environmental applications']"
+		}, {
+			"size": 1,
+			"name": "['Screening of a library of phage-displayed peptides identifies human bcl-2 as a taxol-binding protein']"
+		}, {
+			"size": 1,
+			"name": "['The Fatty Acid-binding Protein, aP2, Coordinates Macrophage Cholesterol Trafficking and Inflammatory Activity MACROPHAGE EXPRESSION OF aP2 IMPACTS  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reducing endoplasmic reticulum stress through a macrophage lipid chaperone alleviates atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Performance limits of switched-capacitor DC-DC converters']"
+		}, {
+			"size": 1,
+			"name": "['Flexible polymeric compositions comprising a normally plastic polymer sulfonated to about 0.2 to about 10 mole% sulfonate']"
+		}, {
+			"size": 1,
+			"name": "['Fatty acid binding proteins\u2014the evolutionary crossroads of inflammatory and metabolic responses']"
+		}, {
+			"size": 1,
+			"name": "['Phage-display technology\u2013finding a needle in a vast molecular haystack']"
+		}, {
+			"size": 1,
+			"name": "['Perfect Competition and the Creativity of the Market']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of Umbilical Arterial Blood Flow to the Sheep Placenta and Fetus in Utero DISTRIBUTION TO COTYLEDONS AND THE INTERCOTYLEDONARY  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Modeling video traffic using M/G/\u221e input processes: a compromise between Markovian and LRD models']"
+		}, {
+			"size": 1,
+			"name": "['Oxidative damage to DNA in diabetes mellitus']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures: Analysis of the x-ray diffraction data']"
+		}, {
+			"size": 1,
+			"name": "['Blood flow to fetal organs as a function of arterial oxygen content.']"
+		}, {
+			"size": 1,
+			"name": "['Lack of macrophage fatty-acid\u2013binding protein aP2 protects mice deficient in apolipoprotein E against atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2']"
+		}, {
+			"size": 1,
+			"name": "['The status, quality, and expansion of the NIH full-length cDNA project']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures. I. Correlated electron microscopy and x-ray diffraction.']"
+		}, {
+			"size": 1,
+			"name": "['Intracoronary stent implantation without ultrasound guidance and with replacement of conventional anticoagulation by antiplatelet therapy 30-day clinical outcome of  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Mixing plant species in cropping systems: concepts, tools and models: a review']"
+		}, {
+			"size": 1,
+			"name": "['Model-based decision support methodology with environmental applications']"
+		}, {
+			"size": 1,
+			"name": "['Screening of a library of phage-displayed peptides identifies human bcl-2 as a taxol-binding protein']"
+		}, {
+			"size": 1,
+			"name": "['The Fatty Acid-binding Protein, aP2, Coordinates Macrophage Cholesterol Trafficking and Inflammatory Activity MACROPHAGE EXPRESSION OF aP2 IMPACTS  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reducing endoplasmic reticulum stress through a macrophage lipid chaperone alleviates atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Performance limits of switched-capacitor DC-DC converters']"
+		}, {
+			"size": 1,
+			"name": "['Flexible polymeric compositions comprising a normally plastic polymer sulfonated to about 0.2 to about 10 mole% sulfonate']"
+		}, {
+			"size": 1,
+			"name": "['Fatty acid binding proteins\u2014the evolutionary crossroads of inflammatory and metabolic responses']"
+		}, {
+			"size": 1,
+			"name": "['Phage-display technology\u2013finding a needle in a vast molecular haystack']"
+		}, {
+			"size": 1,
+			"name": "['Perfect Competition and the Creativity of the Market']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of Umbilical Arterial Blood Flow to the Sheep Placenta and Fetus in Utero DISTRIBUTION TO COTYLEDONS AND THE INTERCOTYLEDONARY  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Modeling video traffic using M/G/\u221e input processes: a compromise between Markovian and LRD models']"
+		}, {
+			"size": 1,
+			"name": "['Oxidative damage to DNA in diabetes mellitus']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures: Analysis of the x-ray diffraction data']"
+		}, {
+			"size": 1,
+			"name": "['Blood flow to fetal organs as a function of arterial oxygen content.']"
+		}, {
+			"size": 1,
+			"name": "['Lack of macrophage fatty-acid\u2013binding protein aP2 protects mice deficient in apolipoprotein E against atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of diabetes and atherosclerosis by inhibiting fatty-acid-binding protein aP2']"
+		}, {
+			"size": 1,
+			"name": "['The status, quality, and expansion of the NIH full-length cDNA project']"
+		}, {
+			"size": 1,
+			"name": "['Gap junction structures. I. Correlated electron microscopy and x-ray diffraction.']"
+		}, {
+			"size": 1,
+			"name": "['Intracoronary stent implantation without ultrasound guidance and with replacement of conventional anticoagulation by antiplatelet therapy 30-day clinical outcome of  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Mixing plant species in cropping systems: concepts, tools and models: a review']"
+		}, {
+			"size": 1,
+			"name": "['Model-based decision support methodology with environmental applications']"
+		}, {
+			"size": 1,
+			"name": "['Screening of a library of phage-displayed peptides identifies human bcl-2 as a taxol-binding protein']"
+		}, {
+			"size": 1,
+			"name": "['The Fatty Acid-binding Protein, aP2, Coordinates Macrophage Cholesterol Trafficking and Inflammatory Activity MACROPHAGE EXPRESSION OF aP2 IMPACTS  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reducing endoplasmic reticulum stress through a macrophage lipid chaperone alleviates atherosclerosis']"
+		}, {
+			"size": 1,
+			"name": "['Performance limits of switched-capacitor DC-DC converters']"
+		}, {
+			"size": 1,
+			"name": "['Flexible polymeric compositions comprising a normally plastic polymer sulfonated to about 0.2 to about 10 mole% sulfonate']"
+		}, {
+			"size": 1,
+			"name": "['Fatty acid binding proteins\u2014the evolutionary crossroads of inflammatory and metabolic responses']"
+		}, {
+			"size": 1,
+			"name": "['Phage-display technology\u2013finding a needle in a vast molecular haystack']"
+		}, {
+			"size": 1,
+			"name": "['Perfect Competition and the Creativity of the Market']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of Umbilical Arterial Blood Flow to the Sheep Placenta and Fetus in Utero DISTRIBUTION TO COTYLEDONS AND THE INTERCOTYLEDONARY  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Modeling video traffic using M/G/\u221e input processes: a compromise between Markovian and LRD models']"
+		}],
+		"name": "['makowski']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['International network of cancer genome projects']"
+		}, {
+			"size": 1,
+			"name": "['Planetary candidates observed by Kepler. III. Analysis of the first 16 months of data']"
+		}, {
+			"size": 1,
+			"name": "['Cognitive mechanisms underlying achievement deficits in children with mathematical learning disability']"
+		}, {
+			"size": 1,
+			"name": "['A closely packed system of low-mass, low-density planets transiting Kepler-11']"
+		}, {
+			"size": 1,
+			"name": "['Strategy choices in simple and complex addition: Contributions of working memory and counting knowledge for children with mathematical disability']"
+		}, {
+			"size": 1,
+			"name": "['Kepler-16: A transiting circumbinary planet']"
+		}, {
+			"size": 1,
+			"name": "['Evolution of human mate choice']"
+		}, {
+			"size": 1,
+			"name": "['Perfluoroalkyl acids and related chemistries\u2014toxicokinetics and modes of action']"
+		}, {
+			"size": 1,
+			"name": "['Development of number line representations in children with mathematical learning disability']"
+		}, {
+			"size": 1,
+			"name": "[\"Evolution and development of boys' social behavior\"]"
+		}, {
+			"size": 1,
+			"name": "['Kepler-36: A pair of planets with neighboring orbits and dissimilar densities']"
+		}, {
+			"size": 1,
+			"name": "['Transit timing observations from Kepler. IV. Confirmation of four multiple-planet systems by simple physical models']"
+		}, {
+			"size": 1,
+			"name": "['Antisense oligonucleotide inhibition of apolipoprotein C-III reduces plasma triglycerides in rodents, nonhuman primates, and humans']"
+		}, {
+			"size": 1,
+			"name": "['DISCOVERY AND ROSSITER-McLAUGHLIN EFFECT OF EXOPLANET KEPLER-8bBased in part on observations obtained at the WM Keck Observatory, which is  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['A Phase I/II Study of LY900003, an Antisense Inhibitor of Protein Kinase C-\u03b1, in Combination with Cisplatin and Gemcitabine in Patients with Advanced Non\u2013 \u2026']"
+		}, {
+			"size": 1,
+			"name": "['KELT-1b: a strongly irradiated, highly inflated, short period, 27 Jupiter-mass companion transiting a Mid-F Star']"
+		}, {
+			"size": 1,
+			"name": "['Numerical cognition: Age-related differences in the speed of executing biologically primary and biologically secondary processes']"
+		}, {
+			"size": 1,
+			"name": "['Hearing aid format selector']"
+		}, {
+			"size": 1,
+			"name": "['Co-ruminating increases stress hormone levels in women']"
+		}, {
+			"size": 1,
+			"name": "['A life history assessment of early childhood sexual abuse in women.']"
+		}, {
+			"size": 1,
+			"name": "['International network of cancer genome projects']"
+		}, {
+			"size": 1,
+			"name": "['Planetary candidates observed by Kepler. III. Analysis of the first 16 months of data']"
+		}, {
+			"size": 1,
+			"name": "['Cognitive mechanisms underlying achievement deficits in children with mathematical learning disability']"
+		}, {
+			"size": 1,
+			"name": "['A closely packed system of low-mass, low-density planets transiting Kepler-11']"
+		}, {
+			"size": 1,
+			"name": "['Strategy choices in simple and complex addition: Contributions of working memory and counting knowledge for children with mathematical disability']"
+		}, {
+			"size": 1,
+			"name": "['Kepler-16: A transiting circumbinary planet']"
+		}, {
+			"size": 1,
+			"name": "['Evolution of human mate choice']"
+		}, {
+			"size": 1,
+			"name": "['Perfluoroalkyl acids and related chemistries\u2014toxicokinetics and modes of action']"
+		}, {
+			"size": 1,
+			"name": "['Development of number line representations in children with mathematical learning disability']"
+		}, {
+			"size": 1,
+			"name": "[\"Evolution and development of boys' social behavior\"]"
+		}, {
+			"size": 1,
+			"name": "['Kepler-36: A pair of planets with neighboring orbits and dissimilar densities']"
+		}, {
+			"size": 1,
+			"name": "['Transit timing observations from Kepler. IV. Confirmation of four multiple-planet systems by simple physical models']"
+		}, {
+			"size": 1,
+			"name": "['Antisense oligonucleotide inhibition of apolipoprotein C-III reduces plasma triglycerides in rodents, nonhuman primates, and humans']"
+		}, {
+			"size": 1,
+			"name": "['DISCOVERY AND ROSSITER-McLAUGHLIN EFFECT OF EXOPLANET KEPLER-8bBased in part on observations obtained at the WM Keck Observatory, which is  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['A Phase I/II Study of LY900003, an Antisense Inhibitor of Protein Kinase C-\u03b1, in Combination with Cisplatin and Gemcitabine in Patients with Advanced Non\u2013 \u2026']"
+		}, {
+			"size": 1,
+			"name": "['KELT-1b: a strongly irradiated, highly inflated, short period, 27 Jupiter-mass companion transiting a Mid-F Star']"
+		}, {
+			"size": 1,
+			"name": "['Numerical cognition: Age-related differences in the speed of executing biologically primary and biologically secondary processes']"
+		}, {
+			"size": 1,
+			"name": "['Hearing aid format selector']"
+		}, {
+			"size": 1,
+			"name": "['Co-ruminating increases stress hormone levels in women']"
+		}, {
+			"size": 1,
+			"name": "['A life history assessment of early childhood sexual abuse in women.']"
+		}, {
+			"size": 1,
+			"name": "['International network of cancer genome projects']"
+		}, {
+			"size": 1,
+			"name": "['Planetary candidates observed by Kepler. III. Analysis of the first 16 months of data']"
+		}, {
+			"size": 1,
+			"name": "['Cognitive mechanisms underlying achievement deficits in children with mathematical learning disability']"
+		}, {
+			"size": 1,
+			"name": "['A closely packed system of low-mass, low-density planets transiting Kepler-11']"
+		}, {
+			"size": 1,
+			"name": "['Strategy choices in simple and complex addition: Contributions of working memory and counting knowledge for children with mathematical disability']"
+		}, {
+			"size": 1,
+			"name": "['Kepler-16: A transiting circumbinary planet']"
+		}, {
+			"size": 1,
+			"name": "['Evolution of human mate choice']"
+		}, {
+			"size": 1,
+			"name": "['Perfluoroalkyl acids and related chemistries\u2014toxicokinetics and modes of action']"
+		}, {
+			"size": 1,
+			"name": "['Development of number line representations in children with mathematical learning disability']"
+		}, {
+			"size": 1,
+			"name": "[\"Evolution and development of boys' social behavior\"]"
+		}, {
+			"size": 1,
+			"name": "['Kepler-36: A pair of planets with neighboring orbits and dissimilar densities']"
+		}, {
+			"size": 1,
+			"name": "['Transit timing observations from Kepler. IV. Confirmation of four multiple-planet systems by simple physical models']"
+		}, {
+			"size": 1,
+			"name": "['Antisense oligonucleotide inhibition of apolipoprotein C-III reduces plasma triglycerides in rodents, nonhuman primates, and humans']"
+		}, {
+			"size": 1,
+			"name": "['DISCOVERY AND ROSSITER-McLAUGHLIN EFFECT OF EXOPLANET KEPLER-8bBased in part on observations obtained at the WM Keck Observatory, which is  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['A Phase I/II Study of LY900003, an Antisense Inhibitor of Protein Kinase C-\u03b1, in Combination with Cisplatin and Gemcitabine in Patients with Advanced Non\u2013 \u2026']"
+		}, {
+			"size": 1,
+			"name": "['KELT-1b: a strongly irradiated, highly inflated, short period, 27 Jupiter-mass companion transiting a Mid-F Star']"
+		}, {
+			"size": 1,
+			"name": "['Numerical cognition: Age-related differences in the speed of executing biologically primary and biologically secondary processes']"
+		}, {
+			"size": 1,
+			"name": "['Hearing aid format selector']"
+		}, {
+			"size": 1,
+			"name": "['Co-ruminating increases stress hormone levels in women']"
+		}, {
+			"size": 1,
+			"name": "['A life history assessment of early childhood sexual abuse in women.']"
+		}],
+		"name": "['Jennifer Geary']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Lack of acidification in Mycobacterium phagosomes produced by exclusion of the vesicular proton-ATPase']"
+		}, {
+			"size": 1,
+			"name": "['Dissection of oxidative stress tolerance using transgenic plants.']"
+		}, {
+			"size": 1,
+			"name": "['The sequence of the human genome']"
+		}, {
+			"size": 1,
+			"name": "[\"The impact of conservation on the status of the world's vertebrates\"]"
+		}, {
+			"size": 1,
+			"name": "['Heterologous introns can enhance expression of transgenes in mice']"
+		}, {
+			"size": 1,
+			"name": "['Increased resistance to oxidative stress in transgenic plants that overexpress chloroplastic Cu/Zn superoxide dismutase.']"
+		}, {
+			"size": 1,
+			"name": "['Overexpression of glutathione S-transferase/glutathioneperoxidase enhances the growth of transgenic tobacco seedlings during stress']"
+		}, {
+			"size": 1,
+			"name": "['Gliding movement of and bidirectional transport along single native microtubules from squid axoplasm: evidence for an active role of microtubules in cytoplasmic  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Taxonomy of aerobic marine eubacteria']"
+		}, {
+			"size": 1,
+			"name": "['Video\u2010enhanced contrast, differential interference contrast (AVEC\u2010DIC) microscopy: A new method capable of analyzing microtubule\u2010related motility in the  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Overexpression of superoxide dismutase protects plants from oxidative stress (induction of ascorbate peroxidase in superoxide dismutase-overexpressing plants)']"
+		}, {
+			"size": 1,
+			"name": "['Stress tolerance in transgenic tobacco seedlings that overexpress glutathione S-transferase/glutathione peroxidase']"
+		}, {
+			"size": 1,
+			"name": "['Fast axonal transport in squid giant axon']"
+		}, {
+			"size": 1,
+			"name": "['Fast axonal transport in extruded axoplasm from squid giant axon']"
+		}, {
+			"size": 1,
+			"name": "['The zeiss-Nomarski differential interference equipment for transmitted-light microscopy.']"
+		}, {
+			"size": 1,
+			"name": "['The transcriptional landscape of the mammalian genome']"
+		}, {
+			"size": 1,
+			"name": "['Cancer immunoediting: from immunosurveillance to tumor escape']"
+		}, {
+			"size": 1,
+			"name": "['Use of transgenic plants to study antioxidant defenses']"
+		}, {
+			"size": 1,
+			"name": "['State of the art in wire electrical discharge machining (WEDM)']"
+		}, {
+			"size": 1,
+			"name": "['Structure, expression, and regulation of protein kinases involved in the phosphorylation of ribo~ somal protein S6']"
+		}],
+		"name": "['R. D. Allen']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Taking back taste: Feminism, food and visceral politics']"
+		}, {
+			"size": 1,
+			"name": "['The \u03c9-atracotoxins: selective blockers of insect M-LVA and HVA calcium channels']"
+		}, {
+			"size": 1,
+			"name": "['Visceral geographies: Mattering, relating, and defying']"
+		}, {
+			"size": 1,
+			"name": "[\"Geographies of food:'Afters'\"]"
+		}, {
+			"size": 1,
+			"name": "['Comprehensive genomic characterization defines human glioblastoma genes and core pathways']"
+		}, {
+			"size": 1,
+			"name": "['Visceral difference: Variations in feeling (slow) food']"
+		}, {
+			"size": 1,
+			"name": "['Surfaces to control tissue adhesion for osteosynthesis with metal implants: in vitro and in vivo studies to bring solutions to the patient']"
+		}, {
+			"size": 1,
+			"name": "['Ecological identity work in higher education: Theoretical perspectives and a case study']"
+		}, {
+			"size": 1,
+			"name": "['Military pollution and natural purity: Seeing nature and knowing contamination in Vieques, Puerto Rico']"
+		}, {
+			"size": 1,
+			"name": "['Veggies and visceralities: A political ecology of food and feeling']"
+		}, {
+			"size": 1,
+			"name": "['International network of cancer genome projects']"
+		}, {
+			"size": 1,
+			"name": "['Genome sequence and analysis of the Irish potato famine pathogen Phytophthora infestans']"
+		}, {
+			"size": 1,
+			"name": "['Doing nutrition differently: critical approaches to diet and dietary intervention']"
+		}, {
+			"size": 1,
+			"name": "['Circadian and CLOCK-controlled regulation of the mouse transcriptome and cell proliferation']"
+		}, {
+			"size": 1,
+			"name": "[\"School Gardens and'Actually Existing'Neoliberalism\"]"
+		}, {
+			"size": 1,
+			"name": "['Defining the role of common variation in the genomic and biological architecture of adult human height']"
+		}, {
+			"size": 1,
+			"name": "['Identification by subtractive hybridization of sequences specific for Salmonella enterica serovar Enteritidis']"
+		}, {
+			"size": 1,
+			"name": "['Cognitive environments and dissociative tendencies: Performance on the standard Stroop task for high versus low dissociators']"
+		}, {
+			"size": 1,
+			"name": "['Comparison of HER2 status by fluorescence in situ hybridization and immunohistochemistry to predict benefit from dose escalation of adjuvant doxorubicin-based  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Detection and measurement of alternative splicing using splicing-sensitive microarrays']"
+		}],
+		"name": "['Jessica Hayes']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Fungi in oceans and estuaries.']"
+		}, {
+			"size": 1,
+			"name": "['Automated activity-based management system']"
+		}, {
+			"size": 1,
+			"name": "['A survey of management training and education practices in US companies']"
+		}, {
+			"size": 1,
+			"name": "['The genus Achlya: morphology and taxonomy.']"
+		}, {
+			"size": 1,
+			"name": "['Electronic information dissemination system']"
+		}, {
+			"size": 1,
+			"name": "['Governmentality and the institutionalization of expertise']"
+		}, {
+			"size": 1,
+			"name": "['Epidermal growth factor (EGF)-like repeats of human tenascin-C as ligands for EGF receptor']"
+		}, {
+			"size": 1,
+			"name": "['Disk drive apparatus using dynamic loading/unloading']"
+		}, {
+			"size": 1,
+			"name": "['The state and the professions: peculiarities of the British']"
+		}, {
+			"size": 1,
+			"name": "['7 Expertise and the state']"
+		}, {
+			"size": 1,
+			"name": "['The structure of social theory: Dilemmas and strategies']"
+		}, {
+			"size": 1,
+			"name": "['Ribonucleic acid and protein synthesis in mitotic HeLa cells']"
+		}, {
+			"size": 1,
+			"name": "['Work and power']"
+		}, {
+			"size": 1,
+			"name": "['The changing lives of American women.']"
+		}, {
+			"size": 1,
+			"name": "['Biology and systematics of the Saprolegniaceae']"
+		}, {
+			"size": 1,
+			"name": "['Experimental evidence on unemployment insurance work-search policies']"
+		}, {
+			"size": 1,
+			"name": "['Shelving display']"
+		}, {
+			"size": 1,
+			"name": "['Health professions and the state in Europe']"
+		}, {
+			"size": 1,
+			"name": "['Determinants of Planned Retirement Age, The']"
+		}, {
+			"size": 1,
+			"name": "['Effects of unemployment insurance work-search requirements: The Maryland experiment']"
+		}],
+		"name": "['Terry Johnson']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Display screen or portion thereof with graphical user interface']"
+		}, {
+			"size": 1,
+			"name": "['An automated motion measurement system for clinical gait analysis']"
+		}, {
+			"size": 1,
+			"name": "['Imre Szeman']"
+		}, {
+			"size": 1,
+			"name": "['The fall of Hyperion']"
+		}, {
+			"size": 1,
+			"name": "['Children of the Night']"
+		}, {
+			"size": 1,
+			"name": "['SDSS-III: Massive spectroscopic surveys of the distant universe, the Milky Way, and extra-solar planetary systems']"
+		}, {
+			"size": 1,
+			"name": "['SEGUE: A Spectroscopic Survey of 240,000 Stars with g= 14-20']"
+		}, {
+			"size": 1,
+			"name": "['The sloan digital sky survey quasar catalog. V. Seventh data release']"
+		}, {
+			"size": 1,
+			"name": "['A genome-wide linkage and association scan reveals novel loci for autism']"
+		}, {
+			"size": 1,
+			"name": "['Establishing Representative No\u2010Take Areas in the Great Barrier Reef: Large\u2010Scale Implementation of Theory on Marine Protected Areas']"
+		}, {
+			"size": 1,
+			"name": "['Cytokine-inducible nitric oxide synthase (iNOS) expression in cardiac myocytes. Characterization and regulation of iNOS expression and detection of iNOS activity in  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Immune control of an SIV challenge by a T-cell-based vaccine in rhesus monkeys']"
+		}, {
+			"size": 1,
+			"name": "['Learning causal models by understanding real-world natural language explanations']"
+		}, {
+			"size": 1,
+			"name": "['Local gene knockdown in the brain using viral-mediated RNA interference']"
+		}, {
+			"size": 1,
+			"name": "['Electron beam inspection system and method']"
+		}, {
+			"size": 1,
+			"name": "['The rise of Endymion']"
+		}, {
+			"size": 1,
+			"name": "['Activation of a caspase 3-related cysteine protease is required for glutamate-mediated apoptosis of cultured cerebellar granule neurons']"
+		}, {
+			"size": 1,
+			"name": "['The secreted protein discovery initiative (SPDI), a large-scale effort to identify novel human secreted and transmembrane proteins: a bioinformatics assessment']"
+		}, {
+			"size": 1,
+			"name": "['Hyperion']"
+		}, {
+			"size": 1,
+			"name": "[\"DeLee & Drez's Orthopaedic Sports Medicine: Principles and Practice. Volume Two\"]"
+		}],
+		"name": "['Dan Simmons']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Serology of paracoccidioidomycosis. II. Correlation between class-specific antibodies and clinical forms of the disease']"
+		}, {
+			"size": 1,
+			"name": "['PIC/DSMC models for Hall effect thruster plumes: Present status and ways forward']"
+		}, {
+			"size": 1,
+			"name": "['Magnetohydrodynamic interaction in the shock layer of a wedge in a hypersonic flow']"
+		}, {
+			"size": 1,
+			"name": "['Hypersonic MHD interaction on a conical test body with a Hall electrical connection']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of energy spectra in weakly compressible turbulence']"
+		}, {
+			"size": 1,
+			"name": "['A large space simulator for electric propulsion testing: design requirements and engineering analysis']"
+		}, {
+			"size": 1,
+			"name": "['Experimental investigation on the MHD interaction around a sharp cone in an ionized argon flow']"
+		}, {
+			"size": 1,
+			"name": "['Design and preliminary characterization of a 5 kW Hall thruster prototype']"
+		}, {
+			"size": 1,
+			"name": "['Experimental investigation on the magneto-hydrodynamic interaction in the shock layer on a hypersonic body']"
+		}, {
+			"size": 1,
+			"name": "['Experimental characterization of the HT-100 Hall thruster in twin engine cluster configuration']"
+		}, {
+			"size": 1,
+			"name": "['Pathogenesis of Paracoccidioides brasiliensis granuloma']"
+		}, {
+			"size": 1,
+			"name": "['Human resource accounting for professional sports teams. management accounting']"
+		}, {
+			"size": 1,
+			"name": "['Development status of the HT-100 miniaturized hall effect thruster system']"
+		}, {
+			"size": 1,
+			"name": "['Particle Simulation of Tailored Vacuum Pumping Configurations for Electric Propulsion Testing']"
+		}, {
+			"size": 1,
+			"name": "['Plasma Thruster Plume Simulation: Effect of the Plasma Quasi Neutrality Hypothesis']"
+		}, {
+			"size": 1,
+			"name": "['Cross resonant optical antenna']"
+		}, {
+			"size": 1,
+			"name": "['In vitro neuronal and glial differentiation from embryonic or adult neural precursor cells are differently affected by chronic or acute activation of microglia']"
+		}, {
+			"size": 1,
+			"name": "['Correlation of HER2 status between primary tumors and corresponding circulating tumor cells in advanced breast cancer patients']"
+		}, {
+			"size": 1,
+			"name": "['Compressibility effects in weakly turbulent hypersonic flow fields']"
+		}, {
+			"size": 1,
+			"name": "['Basic issues in electric propulsion testing and the need for international standards']"
+		}],
+		"name": "['Biagioni L']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Transport and Chemical Evolution over the Pacific (TRACE\u2010P) aircraft mission: Design, execution, and first results']"
+		}, {
+			"size": 1,
+			"name": "['Point Defects in Solids: General and ionic crystals']"
+		}, {
+			"size": 1,
+			"name": "['Asian outflow and trans\u2010Pacific transport of carbon monoxide and ozone pollution: An integrated satellite, aircraft, and model perspective']"
+		}, {
+			"size": 1,
+			"name": "['Radiolysis of alkali halides']"
+		}, {
+			"size": 1,
+			"name": "['CD8+ T-cell responses to different HIV proteins have discordant associations with viral load']"
+		}, {
+			"size": 1,
+			"name": "['HOx chemistry during INTEX\u2010A 2004: Observation, model calculation, and comparison with previous studies']"
+		}, {
+			"size": 1,
+			"name": "['Cardiovascular Preparticipation Screening of Competitive Athletes A Statement for Health Professionals From the Sudden Death Committee (Clinical Cardiology) and  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Rapid transcriptome characterization for a nonmodel organism using 454 pyrosequencing']"
+		}, {
+			"size": 1,
+			"name": "['Fitness cost of escape mutations in p24 Gag in association with control of human immunodeficiency virus type 1']"
+		}, {
+			"size": 1,
+			"name": "['Adaptation of HIV-1 to human leukocyte antigen class I']"
+		}, {
+			"size": 1,
+			"name": "['Direct measurements of the convective recycling of the upper troposphere']"
+		}, {
+			"size": 1,
+			"name": "['Identification and analysis of functional elements in 1% of the human genome by the ENCODE pilot project']"
+		}, {
+			"size": 1,
+			"name": "['Review of particle physics']"
+		}, {
+			"size": 1,
+			"name": "['Guidelines for clinical use of cardiac radionuclide imaging report of the American College of Cardiology/American Heart Association Task Force on  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Application of OMI observations to a space-based indicator of NO x and VOC controls on surface ozone formation']"
+		}, {
+			"size": 1,
+			"name": "['Compensatory mutation partially restores fitness and delays reversion of escape mutation within the immunodominant HLA-B* 5703-restricted Gag epitope in chronic  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['The Arctic Research of the Composition of the Troposphere from Aircraft and Satellites (ARCTAS) mission: design, execution, and first results']"
+		}, {
+			"size": 1,
+			"name": "['Effect of impurities on the annealing behavior of irradiated silicon']"
+		}, {
+			"size": 1,
+			"name": "['Parallel developmental trajectories of sensation seeking and regular substance use in adolescents.']"
+		}, {
+			"size": 1,
+			"name": "['Rosacea: II. therapy']"
+		}],
+		"name": "['James H Crawford']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Curcumin suppresses the paclitaxel-induced nuclear factor-\u03baB pathway in breast cancer cells and inhibits lung metastasis of human breast cancer in nude  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Long\u2010term follow\u2010up results of hyperfractionated cyclophosphamide, vincristine, doxorubicin, and dexamethasone (Hyper\u2010CVAD), a dose\u2010intensive regimen,  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Resection or transplantation for hepatocellular carcinoma in cirrhotic patients: outcomes based on indicated treatment strategy']"
+		}, {
+			"size": 1,
+			"name": "['The human MDM-2 oncogene is overexpressed in leukemias']"
+		}, {
+			"size": 1,
+			"name": "['Measurement and prediction of sediment production from unpaved roads, St John, US Virgin Islands']"
+		}, {
+			"size": 1,
+			"name": "['High flow priapism associated with sickle cell disease']"
+		}, {
+			"size": 1,
+			"name": "['Role of T cells, TNF\u03b1 and IFN\u03b3 in recall of immunity to oral challenge with virulent salmonellae in mice vaccinated with live attenuated aro\u2212 salmonella vaccines']"
+		}, {
+			"size": 1,
+			"name": "['Mutations in CBL occur frequently in juvenile myelomonocytic leukemia']"
+		}, {
+			"size": 1,
+			"name": "['MicroRNA fingerprints identify miR-150 as a plasma prognostic marker in patients with sepsis']"
+		}, {
+			"size": 1,
+			"name": "['Field studies and cost-effectiveness analysis of vaccination with Gavac\u2122 against the cattle tick Boophilus microplus']"
+		}, {
+			"size": 1,
+			"name": "['Survival advantage with decitabine versus intensive chemotherapy in patients with higher risk myelodysplastic syndrome']"
+		}, {
+			"size": 1,
+			"name": "['Changing strategies in diagnosis and management of hilar cholangiocarcinoma']"
+		}, {
+			"size": 1,
+			"name": "['Runoff and suspended sediment yields from an unpaved road segment, St John, US Virgin Islands']"
+		}, {
+			"size": 1,
+			"name": "['Measurement and prediction of natural and anthropogenic sediment sources, St. John, US Virgin Islands']"
+		}, {
+			"size": 1,
+			"name": "['Vaccination against ticks (Boophilus spp.): the experience with the Bm86-based vaccine Gavac\u2122']"
+		}, {
+			"size": 1,
+			"name": "['Abnormal expression of MDM-2 in breast carcinomas']"
+		}, {
+			"size": 1,
+			"name": "['Surgical resection of colorectal liver metastases in patients with expanded indications: a single-center experience with 501 patients']"
+		}, {
+			"size": 1,
+			"name": "['Respondent-driven sampling of injection drug users in two US\u2013Mexico border cities: recruitment dynamics and impact on estimates of HIV and syphilis prevalence']"
+		}, {
+			"size": 1,
+			"name": "['The mutational landscape of head and neck squamous cell carcinoma']"
+		}, {
+			"size": 1,
+			"name": "['Aberrant CpG island methylation in acute myeloid leukemia is accentuated at relapse']"
+		}],
+		"name": "['Carlos E Ramos']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Failure to help when in a hurry: Callousness or conflict?']"
+		}, {
+			"size": 1,
+			"name": "['Responses of estuarine benthic invertebrates to sediment burial: the importance of mobility and adaptation']"
+		}, {
+			"size": 1,
+			"name": "['The seventh data release of the Sloan Digital Sky Survey']"
+		}, {
+			"size": 1,
+			"name": "['The sixth data release of the sloan digital sky survey']"
+		}, {
+			"size": 1,
+			"name": "['Effect of pacing chamber and atrioventricular delay on acute systolic function of paced patients with congestive heart failure']"
+		}, {
+			"size": 1,
+			"name": "['HIRES: the high-resolution echelle spectrometer on the Keck 10-m Telescope']"
+		}, {
+			"size": 1,
+			"name": "['The fourth data release of the sloan digital sky survey']"
+		}, {
+			"size": 1,
+			"name": "['The second data release of the sloan digital sky survey']"
+		}, {
+			"size": 1,
+			"name": "['The first data release of the sloan digital sky survey']"
+		}, {
+			"size": 1,
+			"name": "['The eighth data release of the Sloan Digital Sky Survey: first data from SDSS-III']"
+		}, {
+			"size": 1,
+			"name": "['Dorsal anterior cingulate cortex: a role in reward-based decision making']"
+		}, {
+			"size": 1,
+			"name": "['SDSS-III: Massive spectroscopic surveys of the distant universe, the Milky Way, and extra-solar planetary systems']"
+		}, {
+			"size": 1,
+			"name": "['The third data release of the Sloan Digital Sky Survey']"
+		}, {
+			"size": 1,
+			"name": "['The ninth data release of the Sloan Digital Sky Survey: first spectroscopic data from the SDSS-III Baryon Oscillation Spectroscopic Survey']"
+		}, {
+			"size": 1,
+			"name": "['The knockout mouse project']"
+		}, {
+			"size": 1,
+			"name": "['The Tenth Data Release of the Sloan Digital Sky Survey: First Spectroscopic Data from the SDSS-III Apache Point Observatory Galactic Evolution Experiment']"
+		}, {
+			"size": 1,
+			"name": "['Teaching medical students about continuity of patient care']"
+		}, {
+			"size": 1,
+			"name": "['Sex-related differences in IBS patients: central processing of visceral stimuli']"
+		}, {
+			"size": 1,
+			"name": "['System for presenting and managing enterprise architectures']"
+		}, {
+			"size": 1,
+			"name": "[\"The conservation status of the world's reptiles\"]"
+		}],
+		"name": "['Bruce.Vogt']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Occluding device']"
+		}, {
+			"size": 1,
+			"name": "['Production and purification of a protein fused to a binding protein']"
+		}, {
+			"size": 1,
+			"name": "['Medical subject monitoring systems']"
+		}, {
+			"size": 1,
+			"name": "['Blood viscosity instrument']"
+		}, {
+			"size": 1,
+			"name": "['Integrated scale and optical scanner']"
+		}, {
+			"size": 1,
+			"name": "['Biologically-active polymers']"
+		}, {
+			"size": 1,
+			"name": "['Rehabilitation of pipelines and passageways with a flexible liner using an inflatible bladder']"
+		}, {
+			"size": 1,
+			"name": "['Insulated electrocardiographic electrodes']"
+		}, {
+			"size": 1,
+			"name": "['Food-storage, heating and dispensing apparatus for use in a vending machine']"
+		}, {
+			"size": 1,
+			"name": "['Vapor phase growth of groups iii-v compounds by hydrogen chloride transport of the elements']"
+		}, {
+			"size": 1,
+			"name": "['Thermostatically controlled non-tracking type solar energy concentrator']"
+		}, {
+			"size": 1,
+			"name": "['Golf ball retriever']"
+		}, {
+			"size": 1,
+			"name": "['System and method for diffusing gas bubbles into a body of water']"
+		}, {
+			"size": 1,
+			"name": "['Multitarget sequential sputtering apparatus']"
+		}, {
+			"size": 1,
+			"name": "['Method for the production of hollow bodies, especially large-diameter ducts from thermoplastic synthetic resin']"
+		}, {
+			"size": 1,
+			"name": "['Simultaneous acquisition of tracking data from two stations']"
+		}, {
+			"size": 1,
+			"name": "['Hose coupling']"
+		}, {
+			"size": 1,
+			"name": "['Method of producing a dispersion-strengthened aluminum alloy article']"
+		}, {
+			"size": 1,
+			"name": "['Photographic matt layers or surfaces']"
+		}, {
+			"size": 1,
+			"name": "['Multiple rotor mowers']"
+		}],
+		"name": "['Administrator']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['System and method for rendering documents in a user-familiar format']"
+		}, {
+			"size": 1,
+			"name": "['System and method for integrating web-originated orders with backend business systems']"
+		}, {
+			"size": 1,
+			"name": "['The effects of soil tillage on beneficial invertebrates within the vineyard']"
+		}, {
+			"size": 1,
+			"name": "['Molecular identification of Chironomus spp.(Diptera) for biomonitoring of aquatic ecosystems']"
+		}, {
+			"size": 1,
+			"name": "['Data management system and method for integrating non-homogenous systems']"
+		}, {
+			"size": 1,
+			"name": "['The FASTER trial: Focused assessment by sonography in trauma during emergency retrieval: A feasibility study']"
+		}, {
+			"size": 1,
+			"name": "['Chowilla resource management plan: Final report']"
+		}, {
+			"size": 1,
+			"name": "['Detritivores as indicators of landscape stress and soil degradation']"
+		}, {
+			"size": 1,
+			"name": "['Effects of native grass cover crops on beneficial and pest invertebrates in Australian vineyards']"
+		}, {
+			"size": 1,
+			"name": "['Pressures within air\u2010filled tracheal cuffs at altitude\u2013an in vivo study']"
+		}, {
+			"size": 1,
+			"name": "['Effect of woody vegetation at the landscape scale on the abundance of natural enemies in Australian vineyards']"
+		}, {
+			"size": 1,
+			"name": "['Beneficial organisms as bioindicators for environmental sustainability in the grape industry in Australia']"
+		}, {
+			"size": 1,
+			"name": "['Use of point\u2010of\u2010care ultrasound by a critical care retrieval team']"
+		}, {
+			"size": 1,
+			"name": "['The use of point\u2010of\u2010care ultrasound by a critical care retrieval team to diagnose acute abdominal aortic aneurysm in the field']"
+		}, {
+			"size": 1,
+			"name": "['An overview of lead poisoning in Australian waterfowl and implications for management']"
+		}, {
+			"size": 1,
+			"name": "['Effects of sediment quality on macroinvertebrates in the Sunraysia region of the Murray\u2013Darling Rivers, Australia']"
+		}, {
+			"size": 1,
+			"name": "['Micropropagation of Salvadora oleoides\u2014an oil yielding tree of arid forests']"
+		}, {
+			"size": 1,
+			"name": "['Patron profile of a major casino operating in a metropolitan environment']"
+		}, {
+			"size": 1,
+			"name": "['An unexpected ending: brain death following acute severe asthma']"
+		}, {
+			"size": 1,
+			"name": "['The value of physiotherapy in obstetrics.']"
+		}],
+		"name": "['sharley']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Circulation on the north central Chukchi Sea shelf']"
+		}, {
+			"size": 1,
+			"name": "['The Siberian Coastal Current: A wind\u2010and buoyancy\u2010forced Arctic coastal current']"
+		}, {
+			"size": 1,
+			"name": "['Freshwater variability and predictability in the Alaska Coastal Current']"
+		}, {
+			"size": 1,
+			"name": "['Some controls on flow and salinity in Bering Strait']"
+		}, {
+			"size": 1,
+			"name": "['On ocean and sea ice modes of variability in the Bering Sea']"
+		}, {
+			"size": 1,
+			"name": "['Hydrographic variability over the northeastern Chukchi Sea shelf in summer-fall 2008\u20132010']"
+		}, {
+			"size": 1,
+			"name": "['Southeast Alaska: oceanographic habitats and linkages']"
+		}, {
+			"size": 1,
+			"name": "['Size\u2010fractionated iron distribution on the northern Gulf of Alaska']"
+		}, {
+			"size": 1,
+			"name": "['Long-term trends of upwelling and impacts on primary productivity in the Alaskan Beaufort Sea']"
+		}, {
+			"size": 1,
+			"name": "['Metastable nanostructured metallized fluoropolymer composites for energetics']"
+		}, {
+			"size": 1,
+			"name": "['Tidal currents in the St. Lawrence Island region']"
+		}, {
+			"size": 1,
+			"name": "['On the nature of winter cooling and the recent temperature shift on the northern Gulf of Alaska shelf']"
+		}, {
+			"size": 1,
+			"name": "['Coupled wind-forced controls of the Bering\u2013Chukchi shelf circulation and the Bering Strait throughflow: Ekman transport, continental shelf waves, and  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Circulation and water property variations in the nearshore Alaskan Beaufort Sea']"
+		}, {
+			"size": 1,
+			"name": "['Using Q method to reveal social perspectives in environmental research']"
+		}, {
+			"size": 1,
+			"name": "['Circulation and water property variations in the nearshore Alaskan Beaufort sea (1999\u20132007)']"
+		}, {
+			"size": 1,
+			"name": "['Ecosystem characteristics and processes facilitating persistent macrobenthic biomass hotspots and associated benthivory in the Pacific Arctic']"
+		}, {
+			"size": 1,
+			"name": "['A decade of environmental change in the Pacific Arctic region']"
+		}, {
+			"size": 1,
+			"name": "['Estimates of Oil Spill Dispersion Extent in the nearshore Alaskan Beaufort Sea Based on in-Situ Oceanographic Measurements']"
+		}, {
+			"size": 1,
+			"name": "['Guidance on the use of Q method for evaluation of public involvement programs at contaminated sites']"
+		}],
+		"name": "['Seth  Danielson']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['MLL targets SET domain methyltransferase activity to Hox gene promoters']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 facilitating transcriptional activation by nuclear hormone receptor']"
+		}, {
+			"size": 1,
+			"name": "['Histone methyltransferases direct different degrees of methylation to define distinct chromatin domains']"
+		}, {
+			"size": 1,
+			"name": "['Histone H3 lysine 4 methylation is mediated by Set1 and required for cell growth and rDNA silencing in Saccharomyces cerevisiae']"
+		}, {
+			"size": 1,
+			"name": "['Gene silencing: trans-histone regulatory pathway in chromatin']"
+		}, {
+			"size": 1,
+			"name": "['Set2 is a nucleosomal histone H3-selective methyltransferase that mediates transcriptional repression']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 occurs in vivo and is mediated by the nuclear receptor coactivator PRMT1']"
+		}, {
+			"size": 1,
+			"name": "['Specificity of the HP1 chromo domain for the methylated N\u2010terminus of histone H3']"
+		}, {
+			"size": 1,
+			"name": "['Acetylation and chromosomal functions']"
+		}, {
+			"size": 1,
+			"name": "['SH3-mediated Hck tyrosine kinase activation and fibroblast transformation by the Nef protein of HIV-1']"
+		}, {
+			"size": 1,
+			"name": "['Evidence that Set1, a factor required for methylation of histone H3, regulates rDNA silencing in S. cerevisiae by a Sir2-independent mechanism']"
+		}, {
+			"size": 1,
+			"name": "['Proteome-wide analysis in Saccharomyces cerevisiae identifies several PHD fingers as novel direct and selective binding modules of histone H3 methylated at either  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Control of myeloid differentiation and survival by Stats']"
+		}, {
+			"size": 1,
+			"name": "['Interplay of chromatin modifiers on a short basic patch of histone H4 tail defines the boundary of telomeric heterochromatin']"
+		}, {
+			"size": 1,
+			"name": "['HISTONE MONOUBIQUITINATION1 interacts with a subunit of the mediator complex and regulates defense against necrotrophic fungal pathogens in Arabidopsis']"
+		}, {
+			"size": 1,
+			"name": "['A charge-based interaction between histone H4 and Dot1 is required for H3K79 methylation and telomere silencing: identification of a new trans-histone pathway']"
+		}, {
+			"size": 1,
+			"name": "['HIV-1 Nef promotes survival of myeloid cells by a Stat3-dependent pathway']"
+		}, {
+			"size": 1,
+			"name": "['One-pot shotgun quantitative mass spectrometry characterization of histones']"
+		}, {
+			"size": 1,
+			"name": "['MES-4: an autosome-associated histone methyltransferase that participates in silencing the X chromosomes in the C. elegans germ line']"
+		}, {
+			"size": 1,
+			"name": "['Global loss of Set1-mediated H3 Lys4 trimethylation is associated with silencing defects in Saccharomyces cerevisiae']"
+		}, {
+			"size": 1,
+			"name": "['MLL targets SET domain methyltransferase activity to Hox gene promoters']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 facilitating transcriptional activation by nuclear hormone receptor']"
+		}, {
+			"size": 1,
+			"name": "['Histone methyltransferases direct different degrees of methylation to define distinct chromatin domains']"
+		}, {
+			"size": 1,
+			"name": "['Histone H3 lysine 4 methylation is mediated by Set1 and required for cell growth and rDNA silencing in Saccharomyces cerevisiae']"
+		}, {
+			"size": 1,
+			"name": "['Gene silencing: trans-histone regulatory pathway in chromatin']"
+		}, {
+			"size": 1,
+			"name": "['Set2 is a nucleosomal histone H3-selective methyltransferase that mediates transcriptional repression']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 occurs in vivo and is mediated by the nuclear receptor coactivator PRMT1']"
+		}, {
+			"size": 1,
+			"name": "['Specificity of the HP1 chromo domain for the methylated N\u2010terminus of histone H3']"
+		}, {
+			"size": 1,
+			"name": "['Acetylation and chromosomal functions']"
+		}, {
+			"size": 1,
+			"name": "['SH3-mediated Hck tyrosine kinase activation and fibroblast transformation by the Nef protein of HIV-1']"
+		}, {
+			"size": 1,
+			"name": "['Evidence that Set1, a factor required for methylation of histone H3, regulates rDNA silencing in S. cerevisiae by a Sir2-independent mechanism']"
+		}, {
+			"size": 1,
+			"name": "['Proteome-wide analysis in Saccharomyces cerevisiae identifies several PHD fingers as novel direct and selective binding modules of histone H3 methylated at either  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Control of myeloid differentiation and survival by Stats']"
+		}, {
+			"size": 1,
+			"name": "['Interplay of chromatin modifiers on a short basic patch of histone H4 tail defines the boundary of telomeric heterochromatin']"
+		}, {
+			"size": 1,
+			"name": "['HISTONE MONOUBIQUITINATION1 interacts with a subunit of the mediator complex and regulates defense against necrotrophic fungal pathogens in Arabidopsis']"
+		}, {
+			"size": 1,
+			"name": "['A charge-based interaction between histone H4 and Dot1 is required for H3K79 methylation and telomere silencing: identification of a new trans-histone pathway']"
+		}, {
+			"size": 1,
+			"name": "['HIV-1 Nef promotes survival of myeloid cells by a Stat3-dependent pathway']"
+		}, {
+			"size": 1,
+			"name": "['One-pot shotgun quantitative mass spectrometry characterization of histones']"
+		}, {
+			"size": 1,
+			"name": "['MES-4: an autosome-associated histone methyltransferase that participates in silencing the X chromosomes in the C. elegans germ line']"
+		}, {
+			"size": 1,
+			"name": "['Global loss of Set1-mediated H3 Lys4 trimethylation is associated with silencing defects in Saccharomyces cerevisiae']"
+		}, {
+			"size": 1,
+			"name": "['MLL targets SET domain methyltransferase activity to Hox gene promoters']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 facilitating transcriptional activation by nuclear hormone receptor']"
+		}, {
+			"size": 1,
+			"name": "['Histone methyltransferases direct different degrees of methylation to define distinct chromatin domains']"
+		}, {
+			"size": 1,
+			"name": "['Histone H3 lysine 4 methylation is mediated by Set1 and required for cell growth and rDNA silencing in Saccharomyces cerevisiae']"
+		}, {
+			"size": 1,
+			"name": "['Gene silencing: trans-histone regulatory pathway in chromatin']"
+		}, {
+			"size": 1,
+			"name": "['Set2 is a nucleosomal histone H3-selective methyltransferase that mediates transcriptional repression']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 occurs in vivo and is mediated by the nuclear receptor coactivator PRMT1']"
+		}, {
+			"size": 1,
+			"name": "['Specificity of the HP1 chromo domain for the methylated N\u2010terminus of histone H3']"
+		}, {
+			"size": 1,
+			"name": "['Acetylation and chromosomal functions']"
+		}, {
+			"size": 1,
+			"name": "['SH3-mediated Hck tyrosine kinase activation and fibroblast transformation by the Nef protein of HIV-1']"
+		}, {
+			"size": 1,
+			"name": "['Evidence that Set1, a factor required for methylation of histone H3, regulates rDNA silencing in S. cerevisiae by a Sir2-independent mechanism']"
+		}, {
+			"size": 1,
+			"name": "['Proteome-wide analysis in Saccharomyces cerevisiae identifies several PHD fingers as novel direct and selective binding modules of histone H3 methylated at either  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Control of myeloid differentiation and survival by Stats']"
+		}, {
+			"size": 1,
+			"name": "['Interplay of chromatin modifiers on a short basic patch of histone H4 tail defines the boundary of telomeric heterochromatin']"
+		}, {
+			"size": 1,
+			"name": "['HISTONE MONOUBIQUITINATION1 interacts with a subunit of the mediator complex and regulates defense against necrotrophic fungal pathogens in Arabidopsis']"
+		}, {
+			"size": 1,
+			"name": "['A charge-based interaction between histone H4 and Dot1 is required for H3K79 methylation and telomere silencing: identification of a new trans-histone pathway']"
+		}, {
+			"size": 1,
+			"name": "['HIV-1 Nef promotes survival of myeloid cells by a Stat3-dependent pathway']"
+		}, {
+			"size": 1,
+			"name": "['One-pot shotgun quantitative mass spectrometry characterization of histones']"
+		}, {
+			"size": 1,
+			"name": "['MES-4: an autosome-associated histone methyltransferase that participates in silencing the X chromosomes in the C. elegans germ line']"
+		}, {
+			"size": 1,
+			"name": "['Global loss of Set1-mediated H3 Lys4 trimethylation is associated with silencing defects in Saccharomyces cerevisiae']"
+		}, {
+			"size": 1,
+			"name": "['MLL targets SET domain methyltransferase activity to Hox gene promoters']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 facilitating transcriptional activation by nuclear hormone receptor']"
+		}, {
+			"size": 1,
+			"name": "['Histone methyltransferases direct different degrees of methylation to define distinct chromatin domains']"
+		}, {
+			"size": 1,
+			"name": "['Histone H3 lysine 4 methylation is mediated by Set1 and required for cell growth and rDNA silencing in Saccharomyces cerevisiae']"
+		}, {
+			"size": 1,
+			"name": "['Gene silencing: trans-histone regulatory pathway in chromatin']"
+		}, {
+			"size": 1,
+			"name": "['Set2 is a nucleosomal histone H3-selective methyltransferase that mediates transcriptional repression']"
+		}, {
+			"size": 1,
+			"name": "['Methylation of histone H4 at arginine 3 occurs in vivo and is mediated by the nuclear receptor coactivator PRMT1']"
+		}, {
+			"size": 1,
+			"name": "['Specificity of the HP1 chromo domain for the methylated N\u2010terminus of histone H3']"
+		}, {
+			"size": 1,
+			"name": "['Acetylation and chromosomal functions']"
+		}, {
+			"size": 1,
+			"name": "['SH3-mediated Hck tyrosine kinase activation and fibroblast transformation by the Nef protein of HIV-1']"
+		}, {
+			"size": 1,
+			"name": "['Evidence that Set1, a factor required for methylation of histone H3, regulates rDNA silencing in S. cerevisiae by a Sir2-independent mechanism']"
+		}, {
+			"size": 1,
+			"name": "['Proteome-wide analysis in Saccharomyces cerevisiae identifies several PHD fingers as novel direct and selective binding modules of histone H3 methylated at either  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Control of myeloid differentiation and survival by Stats']"
+		}, {
+			"size": 1,
+			"name": "['Interplay of chromatin modifiers on a short basic patch of histone H4 tail defines the boundary of telomeric heterochromatin']"
+		}, {
+			"size": 1,
+			"name": "['HISTONE MONOUBIQUITINATION1 interacts with a subunit of the mediator complex and regulates defense against necrotrophic fungal pathogens in Arabidopsis']"
+		}, {
+			"size": 1,
+			"name": "['A charge-based interaction between histone H4 and Dot1 is required for H3K79 methylation and telomere silencing: identification of a new trans-histone pathway']"
+		}, {
+			"size": 1,
+			"name": "['HIV-1 Nef promotes survival of myeloid cells by a Stat3-dependent pathway']"
+		}, {
+			"size": 1,
+			"name": "['One-pot shotgun quantitative mass spectrometry characterization of histones']"
+		}, {
+			"size": 1,
+			"name": "['MES-4: an autosome-associated histone methyltransferase that participates in silencing the X chromosomes in the C. elegans germ line']"
+		}, {
+			"size": 1,
+			"name": "['Global loss of Set1-mediated H3 Lys4 trimethylation is associated with silencing defects in Saccharomyces cerevisiae']"
+		}],
+		"name": "['Scott Briggs']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Auditorium acoustics and architectural design']"
+		}, {
+			"size": 1,
+			"name": "['Spatial impression due to early lateral reflections in concert halls: the derivation of a physical measure']"
+		}, {
+			"size": 1,
+			"name": "['The subjective effects of first reflections in concert halls\u2014the need for lateral reflections']"
+		}, {
+			"size": 1,
+			"name": "['A systematic review of the comparative safety of colloids']"
+		}, {
+			"size": 1,
+			"name": "['Subjective study of British symphony concert halls']"
+		}, {
+			"size": 1,
+			"name": "['The effect of bond rating changes and new ratings on UK stock returns']"
+		}, {
+			"size": 1,
+			"name": "['Motor vehicle occupant sensing systems']"
+		}, {
+			"size": 1,
+			"name": "['Levels of expression of P-selectin, E-selectin, and intercellular adhesion molecule-1 in coronary atherectomy specimens from patients with stable and unstable angina \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Hypertrophic cardiomyopathy']"
+		}, {
+			"size": 1,
+			"name": "['Integral capacitive sensor array']"
+		}, {
+			"size": 1,
+			"name": "['Portable monitor for solar radiation that accumulates irradiance histograms for 32 leaf-mounted sensors']"
+		}, {
+			"size": 1,
+			"name": "['Intimal hyperplasia after balloon injury is attenuated by blocking selectins']"
+		}, {
+			"size": 1,
+			"name": "['Vehicle occupant sensing']"
+		}, {
+			"size": 1,
+			"name": "['Turbine frame stiffening rails']"
+		}, {
+			"size": 1,
+			"name": "['The effect of early reflections on subjective acoustical quality in concert halls']"
+		}, {
+			"size": 1,
+			"name": "['Renal carcinoma with supradiaphragmatic tumor thrombus: avoiding sternotomy and cardiopulmonary bypass']"
+		}, {
+			"size": 1,
+			"name": "['Reducing cracking adjacent shell flange connecting bolts']"
+		}, {
+			"size": 1,
+			"name": "['Interpretation of early decay times in concert auditoria']"
+		}, {
+			"size": 1,
+			"name": "['The Gulbenkian Great Hall, Lisbon, II: an acoustic study of a concert hall with variable stage']"
+		}, {
+			"size": 1,
+			"name": "['Evaluation of stage acoustics in Seoul Arts Center Concert Hall by measuring stage support']"
+		}],
+		"name": "['Michael Barron']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Western snowy plover (Charadrius alexandrinus nivosus) Pacific coast population draft recovery plan']"
+		}, {
+			"size": 1,
+			"name": "['Endangered Species Act Status of West Coast Salmon and Steelhead']"
+		}, {
+			"size": 1,
+			"name": "['Making Endangered Species Act determinations of effect for individual or grouped actions at the watershed scale']"
+		}, {
+			"size": 1,
+			"name": "['Office of Protected Resources']"
+		}, {
+			"size": 1,
+			"name": "['Preliminary conclusions regarding the updated status of listed ESUs of West Coast salmon and steelhead. 142 pages. February. NOAA Fisheries, 525 NE  \u2026']"
+		}, {
+			"size": 1,
+			"name": "[\"Assessment of NOAA Fisheries' critical habitat analytical review teams for 12 evolutionarily significant units of West Coast salmon and steelhead\"]"
+		}, {
+			"size": 1,
+			"name": "['Annual Commercial Landing Statistics']"
+		}, {
+			"size": 1,
+			"name": "['Factors for decline: A supplement to the notice of determination for West Coast Steelhead under the Endangered Species Act']"
+		}, {
+			"size": 1,
+			"name": "['The Habitat Approach']"
+		}, {
+			"size": 1,
+			"name": "['Biological Opinion--Reinitiation of Consultation on Operation of the Federal Columbia River Power System, Including the Juvenile Fish Transportation  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Coastal salmon conservation: working guidance for comprehensive salmon restoration initiatives on the Pacific Coast']"
+		}, {
+			"size": 1,
+			"name": "['Technical assistance for Hawaii pelagic longline vessels to change deck design and fishing practices to side set']"
+		}, {
+			"size": 1,
+			"name": "['Biological Opinion for the San Francisco-Oakland Bay Bridge East Span Seismic Safety Project']"
+		}, {
+			"size": 1,
+			"name": "['Biological opinion']"
+		}, {
+			"size": 1,
+			"name": "['Protected Species Division (PRD) 2010. Harbour Porpoise Take Reduction Plan Monitoring Strategy, Monitoring the Effectiveness and Regulatory  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Lobster, Homarus americanus, trap design and ghost fishing']"
+		}, {
+			"size": 1,
+			"name": "['Anadromous Salmonid Passage Facility Design']"
+		}, {
+			"size": 1,
+			"name": "['Guidelines for salmonid passage at stream crossings']"
+		}, {
+			"size": 1,
+			"name": "['Endangered and threatened wildlife and plants; Designation of critical habitat for the Pacific coast population of the western snowy plover; final rule']"
+		}, {
+			"size": 1,
+			"name": "['Guidelines for electrofishing waters containing salmonids listed under the Endangered Species Act']"
+		}, {
+			"size": 1,
+			"name": "['Western snowy plover (Charadrius alexandrinus nivosus) Pacific coast population draft recovery plan']"
+		}, {
+			"size": 1,
+			"name": "['Endangered Species Act Status of West Coast Salmon and Steelhead']"
+		}, {
+			"size": 1,
+			"name": "['Making Endangered Species Act determinations of effect for individual or grouped actions at the watershed scale']"
+		}, {
+			"size": 1,
+			"name": "['Office of Protected Resources']"
+		}, {
+			"size": 1,
+			"name": "['Preliminary conclusions regarding the updated status of listed ESUs of West Coast salmon and steelhead. 142 pages. February. NOAA Fisheries, 525 NE  \u2026']"
+		}, {
+			"size": 1,
+			"name": "[\"Assessment of NOAA Fisheries' critical habitat analytical review teams for 12 evolutionarily significant units of West Coast salmon and steelhead\"]"
+		}, {
+			"size": 1,
+			"name": "['Annual Commercial Landing Statistics']"
+		}, {
+			"size": 1,
+			"name": "['Factors for decline: A supplement to the notice of determination for West Coast Steelhead under the Endangered Species Act']"
+		}, {
+			"size": 1,
+			"name": "['The Habitat Approach']"
+		}, {
+			"size": 1,
+			"name": "['Biological Opinion--Reinitiation of Consultation on Operation of the Federal Columbia River Power System, Including the Juvenile Fish Transportation  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Coastal salmon conservation: working guidance for comprehensive salmon restoration initiatives on the Pacific Coast']"
+		}, {
+			"size": 1,
+			"name": "['Technical assistance for Hawaii pelagic longline vessels to change deck design and fishing practices to side set']"
+		}, {
+			"size": 1,
+			"name": "['Biological Opinion for the San Francisco-Oakland Bay Bridge East Span Seismic Safety Project']"
+		}, {
+			"size": 1,
+			"name": "['Biological opinion']"
+		}, {
+			"size": 1,
+			"name": "['Protected Species Division (PRD) 2010. Harbour Porpoise Take Reduction Plan Monitoring Strategy, Monitoring the Effectiveness and Regulatory  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Lobster, Homarus americanus, trap design and ghost fishing']"
+		}, {
+			"size": 1,
+			"name": "['Anadromous Salmonid Passage Facility Design']"
+		}, {
+			"size": 1,
+			"name": "['Guidelines for salmonid passage at stream crossings']"
+		}, {
+			"size": 1,
+			"name": "['Endangered and threatened wildlife and plants; Designation of critical habitat for the Pacific coast population of the western snowy plover; final rule']"
+		}, {
+			"size": 1,
+			"name": "['Guidelines for electrofishing waters containing salmonids listed under the Endangered Species Act']"
+		}],
+		"name": "['NOAA Fisheries']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Chemokines and diabetic wound healing']"
+		}, {
+			"size": 1,
+			"name": "['Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC']"
+		}, {
+			"size": 1,
+			"name": "['The ATLAS experiment at the CERN large hadron collider']"
+		}, {
+			"size": 1,
+			"name": "['Performance of missing transverse momentum reconstruction in proton-proton collisions at\\\\ sqrt s= 7~\\\\ mbox TeV with ATLAS']"
+		}, {
+			"size": 1,
+			"name": "['Electron performance measurements with the ATLAS detector using the 2010 LHC proton-proton collision data']"
+		}, {
+			"size": 1,
+			"name": "['Luminosity determination in pp collisions at\\\\ sqrt s= 7 TeV using the ATLAS detector at the LHC']"
+		}, {
+			"size": 1,
+			"name": "['Jet energy measurement with the ATLAS detector in proton-proton collisions at\\\\ sqrt {\\\\ mathrm {s= 7\\\\\\\\ mathrm TeV']"
+		}, {
+			"size": 1,
+			"name": "['Improved luminosity determination in pp collisions at\\\\ sqrt s= 7\\\\\\\\ mathrm TeV using the ATLAS detector at the LHC']"
+		}, {
+			"size": 1,
+			"name": "['Observation of a centrality-dependent Dijet asymmetry in lead-lead collisions at s NN= 2.76 TeV with the ATLAS detector at the LHC']"
+		}, {
+			"size": 1,
+			"name": "['Detection of thermal emission from an extrasolar planet']"
+		}, {
+			"size": 1,
+			"name": "['Measurements of inclusive W and Z cross sections in pp collisions at\\\\ sqrt s= 7 TeV']"
+		}, {
+			"size": 1,
+			"name": "['Search for squarks and gluinos using final states with jets and missing transverse momentum with the ATLAS detector in proton\u2013proton collisions']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of the top quark-pair production cross section with ATLAS in pp collisions at\\\\ sqrt s= 7 TeV']"
+		}, {
+			"size": 1,
+			"name": "['A note on the application of the \u201cBoltzmann simplex\u201d-simulated annealing algorithm to global optimizations of argon and water clusters']"
+		}, {
+			"size": 1,
+			"name": "['Combined search for the Standard Model Higgs boson using up to 4.9 fb\u2212 1 of pp collision data at with the ATLAS detector at the LHC']"
+		}, {
+			"size": 1,
+			"name": "['Observation and studies of jet quenching in PbPb collisions at s NN= 2.76 TeV']"
+		}, {
+			"size": 1,
+			"name": "['TrES-1: The transiting planet of a bright K0 V star']"
+		}, {
+			"size": 1,
+			"name": "['Search for squarks and gluinos with the ATLAS detector in final states with jets and missing transverse momentum using s= 8 TeV proton-proton collision data']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of the inclusive W\u00b1and Z/\u03b3* cross sections in the e and \u03bc decay channels in pp collisions at s= 7 TeV with the ATLAS detector']"
+		}, {
+			"size": 1,
+			"name": "['High-throughput engineering of the mouse genome coupled with high-resolution expression analysis']"
+		}],
+		"name": "['Francis Torres']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Structure\u2013function relationships of glutamine synthetases']"
+		}, {
+			"size": 1,
+			"name": "['Responses of the lower limb to load carrying in walking man']"
+		}, {
+			"size": 1,
+			"name": "['Multicopy crystallographic refinement of a relaxed glutamine synthetase from Mycobacterium tuberculosis highlights flexible loops in the enzymatic mechanism and its  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Preparation of Mullite Cordierite Composite Powders by the Sol\u2010Gel Method: Its Characteristics and Sintering']"
+		}, {
+			"size": 1,
+			"name": "['12. Amendment Procedures and Constitutional Stability']"
+		}, {
+			"size": 1,
+			"name": "['Pouch']"
+		}, {
+			"size": 1,
+			"name": "['Pouch']"
+		}, {
+			"size": 1,
+			"name": "['Highly constrained multiple-copy refinement of protein crystal structures']"
+		}, {
+			"size": 1,
+			"name": "['Mullite whiskers from precursor gel powders']"
+		}, {
+			"size": 1,
+			"name": "['Pouch']"
+		}, {
+			"size": 1,
+			"name": "['Pouch']"
+		}, {
+			"size": 1,
+			"name": "['Relationship between torque and EMG activity of a knee extensor muscle during isokinetic concentric and eccentric actions']"
+		}, {
+			"size": 1,
+			"name": "['Pouch']"
+		}, {
+			"size": 1,
+			"name": "['Dialysis bag incubation as a non-radiolabeling technique to estimate bacterioplankton production in situ']"
+		}, {
+			"size": 1,
+			"name": "['Pattern of reflex responses in lower limb muscles to a resistance in walking man']"
+		}, {
+			"size": 1,
+			"name": "['Preliminary crystallographic studies on glutamine synthetase from Mycobacterium tuberculosis']"
+		}, {
+			"size": 1,
+			"name": "['Properties of Zirconia Toughened Mullite Synthesised by Sol-Gel Method']"
+		}, {
+			"size": 1,
+			"name": "['Raindrop geomagic']"
+		}, {
+			"size": 1,
+			"name": "['Sintering of ZrO sub 2-toughened mullite ceramics and its microstructure']"
+		}, {
+			"size": 1,
+			"name": "['Tiepolo, e la sua famiglia: note e documenti inediti']"
+		}],
+		"name": "['gmu']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['The subsystems approach to genome annotation and its use in the project to annotate 1000 genomes']"
+		}, {
+			"size": 1,
+			"name": "[\"Jarosite and hematite at Meridiani Planum from Opportunity's M\u00f6ssbauer spectrometer\"]"
+		}, {
+			"size": 1,
+			"name": "['A sequential algorithm for testing climate regime shifts']"
+		}, {
+			"size": 1,
+			"name": "['Mechanism of the Ligand\u2010Free CuI\u2010Catalyzed Azide\u2013Alkyne Cycloaddition Reaction']"
+		}, {
+			"size": 1,
+			"name": "['Towards environmental systems biology of Shewanella']"
+		}, {
+			"size": 1,
+			"name": "['Trophic cascades triggered by overfishing reveal possible mechanisms of ecosystem regime shifts']"
+		}, {
+			"size": 1,
+			"name": "['Comparison of quantification methods to measure fire\u2010derived (black/elemental) carbon in soils and sediments using reference materials from soil, water,  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Riboswitches: the oldest mechanism for the regulation of gene expression?']"
+		}, {
+			"size": 1,
+			"name": "['Comparative genomics of the vitamin B12 metabolism and regulation in prokaryotes']"
+		}, {
+			"size": 1,
+			"name": "['Comparative genomics of thiamin biosynthesis in procaryotes New genes and regulatory mechanisms']"
+		}, {
+			"size": 1,
+			"name": "['Ligand-accelerated Cu-catalyzed azide-alkyne cycloaddition: a mechanistic report']"
+		}, {
+			"size": 1,
+			"name": "['Benzimidazole and related ligands for Cu-catalyzed azide-alkyne cycloaddition']"
+		}, {
+			"size": 1,
+			"name": "['Quantitative phosphoproteomic analysis of T cell receptor signaling reveals system-wide modulation of protein-protein interactions']"
+		}, {
+			"size": 1,
+			"name": "['Microtubule release from the centrosome']"
+		}, {
+			"size": 1,
+			"name": "[\"M\u00f6ssbauer mineralogy of rock, soil, and dust at Gusev crater, Mars: Spirit's journey through weakly altered olivine basalt on the plains and pervasively altered  \u2026\"]"
+		}, {
+			"size": 1,
+			"name": "['Overview of the spirit Mars exploration rover mission to Gusev Crater: Landing site to Backstay Rock in the Columbia Hills']"
+		}, {
+			"size": 1,
+			"name": "['An integrated view of the chemistry and mineralogy of Martian soils']"
+		}, {
+			"size": 1,
+			"name": "['Mineralogy at Gusev Crater from the M\u00f6ssbauer spectrometer on the Spirit Rover']"
+		}, {
+			"size": 1,
+			"name": "['Regulation of riboflavin biosynthesis and transport genes in bacteria by transcriptional and translational attenuation']"
+		}, {
+			"size": 1,
+			"name": "['Dissimilatory metabolism of nitrogen oxides in bacteria: comparative reconstruction of transcriptional networks']"
+		}],
+		"name": "['rodionov']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Overview of the Blue Gene/L system architecture']"
+		}, {
+			"size": 1,
+			"name": "['Blue Gene: a vision for protein science using a petaflop supercomputer']"
+		}, {
+			"size": 1,
+			"name": "['The X-ray view of the low-mass stars in the solar neighborhood']"
+		}, {
+			"size": 1,
+			"name": "['Rotational velocities and chromospheric/coronal activity of low-mass stars in the young open clusters IC 2391 and IC 2602']"
+		}, {
+			"size": 1,
+			"name": "['Overview of the IBM Blue Gene/P project']"
+		}, {
+			"size": 1,
+			"name": "['Correlations of coronal x-ray emission with activity, mass, and age of the nearby k and m dwarfs']"
+		}, {
+			"size": 1,
+			"name": "['The coronae of low-mass dwarf stars']"
+		}, {
+			"size": 1,
+			"name": "['Stellar coronae at the end of the main sequence-a rosat survey of the late m dwarfs']"
+		}, {
+			"size": 1,
+			"name": "['The deep computing messaging framework: generalized scalable message passing on the Blue Gene/P supercomputer']"
+		}, {
+			"size": 1,
+			"name": "['Method and apparatus for automated measurement of properties of perishable consumer products']"
+		}, {
+			"size": 1,
+			"name": "['Design and analysis of the BlueGene/L torus interconnection network']"
+		}, {
+			"size": 1,
+			"name": "['An X-ray flare detected on the M8 dwarf VB 10']"
+		}, {
+			"size": 1,
+			"name": "['Using virtual disks for disk system checkpointing']"
+		}, {
+			"size": 1,
+			"name": "['Blue matter: Approaching the limits of concurrency for classical molecular dynamics']"
+		}, {
+			"size": 1,
+			"name": "['Designing a highly-scalable operating system: The Blue Gene/L story']"
+		}, {
+			"size": 1,
+			"name": "['SOLIS: an innovative suite of synoptic instruments']"
+		}, {
+			"size": 1,
+			"name": "['Chromospheric H-alpha and CA II lines in late-type stars']"
+		}, {
+			"size": 1,
+			"name": "['A synoptic of H-alpha line profile in the T Tauri Star SU Aurigae']"
+		}, {
+			"size": 1,
+			"name": "['Massively parallel supercomputer']"
+		}, {
+			"size": 1,
+			"name": "['Method and apparatus for securing communications along ac power lines']"
+		}],
+		"name": "['Mark Giampapa']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['A functional c-myb gene is required for normal murine fetal hepatic hematopoiesis']"
+		}, {
+			"size": 1,
+			"name": "['Maternal inheritance of mammalian mitochondrial DNA']"
+		}, {
+			"size": 1,
+			"name": "['Mutation of an axonemal dynein affects left\u2013right asymmetry in inversus viscerum mice']"
+		}, {
+			"size": 1,
+			"name": "['LIM homeodomain factors Lhx3 and Lhx4 assign subtype identities for motor neurons']"
+		}, {
+			"size": 1,
+			"name": "['Conserved left\u2013right asymmetry of nodal expression and alterations in murine situs inversus']"
+		}, {
+			"size": 1,
+			"name": "['Hoxa 11 structure, extensive antisense transcription, and function in male and female fertility']"
+		}, {
+			"size": 1,
+			"name": "['Multistep control of pituitary organogenesis']"
+		}, {
+			"size": 1,
+			"name": "['Genetic control of dorsal-ventral identity in the telencephalon: opposing roles for Pax6 and Gsh2']"
+		}, {
+			"size": 1,
+			"name": "['Transposition of elements of the 412, copia and 297 dispersed repeated gene families in Drosophila']"
+		}, {
+			"size": 1,
+			"name": "['Homeotic transformations and limb defects in Hox A11 mutant mice.']"
+		}, {
+			"size": 1,
+			"name": "['Gene expression in early ischemic renal injury: clues towards pathogenesis, biomarker discovery, and novel therapeutics']"
+		}, {
+			"size": 1,
+			"name": "['The prognostic significance of tertiary Gleason patterns of higher grade in radical prostatectomy specimens: a proposal to modify the Gleason grading system']"
+		}, {
+			"size": 1,
+			"name": "['The pathological interpretation and significance of prostate needle biopsy findings: implications and current controversies']"
+		}, {
+			"size": 1,
+			"name": "['Primary structure and gene organization of human hepatitis A virus']"
+		}, {
+			"size": 1,
+			"name": "['Targeted deletion of the ATP binding domain of left-right dynein confirms its role in specifying development of left-right asymmetries']"
+		}, {
+			"size": 1,
+			"name": "['Sp4, a member of the Sp1-family of zinc finger transcription factors, is required for normal murine growth, viability, and male fertility']"
+		}, {
+			"size": 1,
+			"name": "['Abnormal uterine stromal and glandular function associated with maternal reproductive defects in Hoxa-11 null mice.']"
+		}, {
+			"size": 1,
+			"name": "['Molecular cloning of AIDS-associated retrovirus']"
+		}, {
+			"size": 1,
+			"name": "['Cyp1a2 (-/-) null mutant mice develop normally but show deficient drug metabolism']"
+		}, {
+			"size": 1,
+			"name": "['Behavioral and regulatory abnormalities in mice deficient in the NPAS1 and NPAS3 transcription factors']"
+		}],
+		"name": "['Steven Potter']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Relationship between corneal thickness and measured intraocular pressure in a general ophthalmology clinic']"
+		}, {
+			"size": 1,
+			"name": "['Automated analysis of Heidelberg retina tomograph optic disc images by glaucoma probability score']"
+		}, {
+			"size": 1,
+			"name": "['Assessment of the diurnal variation in central corneal thickness and intraocular pressure for patients with suspected glaucoma']"
+		}, {
+			"size": 1,
+			"name": "['The correlation between optic nerve head topographic measurements, peripapillary nerve fibre layer thickness, and visual field indices in glaucoma']"
+		}, {
+			"size": 1,
+			"name": "['The effectiveness of the Heidelberg Retina Tomograph and laser diagnostic glaucoma scanning system (GDx) in detecting and monitoring glaucoma']"
+		}, {
+			"size": 1,
+			"name": "['Anterior segment ischaemia following segmental scleral buckling.']"
+		}, {
+			"size": 1,
+			"name": "['Evaluation of the long-term rotational stability of single-piece, acrylic intraocular lenses']"
+		}, {
+			"size": 1,
+			"name": "['General practitioner referrals to an eye hospital: a standard referral form']"
+		}, {
+			"size": 1,
+			"name": "['Ocular manifestations of scleroderma']"
+		}, {
+			"size": 1,
+			"name": "[\"The 'baseball'orbital implant: a prospective study\"]"
+		}, {
+			"size": 1,
+			"name": "['Disposable soft contact lens ulcers: a study of 43 cases seen at Manchester Royal Eye Hospital.']"
+		}, {
+			"size": 1,
+			"name": "[\"Three wall orbital decompression for Graves' ophthalmopathy via a coronal approach\"]"
+		}, {
+			"size": 1,
+			"name": "['Device for internal combustion engines']"
+		}, {
+			"size": 1,
+			"name": "['Penetrating keratoplasty for pseudophakic corneal oedema.']"
+		}, {
+			"size": 1,
+			"name": "['Preoperative ultrasound biomicroscopy to assess ease of haptic removal before penetrating keratoplasty combined with lens exchange']"
+		}, {
+			"size": 1,
+			"name": "['Fuel vaporizer for internalcombustion engines']"
+		}, {
+			"size": 1,
+			"name": "['Multiple myeloma presenting as bilateral orbital masses: CT and MR appearances']"
+		}, {
+			"size": 1,
+			"name": "['Microphthalmos with cyst in monozygous twins']"
+		}, {
+			"size": 1,
+			"name": "['Diplopia following head injury']"
+		}, {
+			"size": 1,
+			"name": "['Bilateral proptosis and corneal crystals in Multiple myeloma']"
+		}],
+		"name": "['kwartz']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Hepatocyte growth factor, its receptor, and their potential value in cancer therapies']"
+		}, {
+			"size": 1,
+			"name": "['Novel role of PKR in inflammasome activation and HMGB1 release']"
+		}, {
+			"size": 1,
+			"name": "['Antagonistic effect of NK4, a novel hepatocyte growth factor variant, on in vitro angiogenesis of human vascular endothelial cells']"
+		}, {
+			"size": 1,
+			"name": "['Hepatocyte growth factor/scatter factor decreases the expression of occludin and transendothelial resistance (TER) and increases paracellular permeability in human  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Search for new physics in the dijet mass distribution using 1 fb\u2212 1 of pp collision data at collected by the ATLAS detector']"
+		}, {
+			"size": 1,
+			"name": "['Growth and angiogenesis of human breast cancer in a nude mouse tumour model is reduced by NK4, a HGF/SF antagonist']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of the W+ W\u2212 Cross Section in s= 7 TeV pp Collisions with ATLAS']"
+		}, {
+			"size": 1,
+			"name": "['Search for pair production of a heavy up-type quark decaying to a W boson and ab quark in the lepton+ jets channel with the ATLAS detector']"
+		}, {
+			"size": 1,
+			"name": "['The HGF/SF antagonist NK4 reverses fibroblast\u2010and HGF\u2010induced prostate tumor growth and angiogenesis in vivo']"
+		}, {
+			"size": 1,
+			"name": "['Search for Production of Resonant States in the Photon-Jet Mass Distribution Using pp Collisions at s= 7 TeV Collected by the ATLAS Detector']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of the isolated diphoton cross section in pp collisions at s= 7 TeV with the ATLAS detector']"
+		}, {
+			"size": 1,
+			"name": "['Measurement of the cross section for the production of a W boson in association with b-jets in pp collisions at with the ATLAS detector']"
+		}, {
+			"size": 1,
+			"name": "['Thrombotic microangiopathy associated with sirolimus level after allogeneic hematopoietic cell transplantation with tacrolimus/sirolimus-based graft-versus- \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reduced intensity allogeneic hematopoietic stem cell transplantation for MDS using tacrolimus/sirolimus-based GVHD prophylaxis']"
+		}, {
+			"size": 1,
+			"name": "['Analysis of the Trajectory of Osteoarthritis Development in a Mouse Model by Serial Near\u2010Infrared Fluorescence Imaging of Matrix Metalloproteinase Activities']"
+		}, {
+			"size": 1,
+			"name": "['Isostatic Residual Gravity Anomaly Map of Onshore Australia, scale 1: 5 000 000']"
+		}, {
+			"size": 1,
+			"name": "['Complete Bouguer anomalies for the Australian National Gravity Database']"
+		}, {
+			"size": 1,
+			"name": "['Determination of the off-shell Higgs Boson Signal Strength in the High-Mass $ ZZ $ and $ WW $ Final States with the ATLAS Detector']"
+		}, {
+			"size": 1,
+			"name": "['Kerama Gap 2009\u20132011 data report']"
+		}, {
+			"size": 1,
+			"name": "['Complete Bouguer Anomalies for the Australian National Gravity Database: Extended Abstracts']"
+		}],
+		"name": "['Tracey Nakamura']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Ontario Child Health Study: II. Six-month prevalence of disorder and rates of service utilization']"
+		}, {
+			"size": 1,
+			"name": "['LIGO: the laser interferometer gravitational-wave observatory']"
+		}, {
+			"size": 1,
+			"name": "['Guidelines for the use and interpretation of assays for monitoring autophagy']"
+		}, {
+			"size": 1,
+			"name": "['Predictions for the rates of compact binary coalescences observable by ground-based gravitational-wave detectors']"
+		}, {
+			"size": 1,
+			"name": "[\"The impact of conservation on the status of the world's vertebrates\"]"
+		}, {
+			"size": 1,
+			"name": "['Ontario child health study: I. Methodology']"
+		}, {
+			"size": 1,
+			"name": "['The amphibian tree of life']"
+		}, {
+			"size": 1,
+			"name": "['An anatomically comprehensive atlas of the adult human brain transcriptome']"
+		}, {
+			"size": 1,
+			"name": "['Association analyses of 249,796 individuals reveal 18 new loci associated with body mass index']"
+		}, {
+			"size": 1,
+			"name": "['Effects of fexofenadine, diphenhydramine, and alcohol on driving performance: a randomized, placebo-controlled trial in the Iowa driving simulator']"
+		}, {
+			"size": 1,
+			"name": "['Hundreds of variants clustered in genomic loci and biological pathways affect human height']"
+		}, {
+			"size": 1,
+			"name": "['Genomic responses in mouse models poorly mimic human inflammatory diseases']"
+		}, {
+			"size": 1,
+			"name": "['The Collaborative Cross, a community resource for the genetic analysis of complex traits']"
+		}, {
+			"size": 1,
+			"name": "['Searches for gravitational waves from known pulsars with science run 5 LIGO data']"
+		}, {
+			"size": 1,
+			"name": "[\"Search for gravitational waves from low mass compact binary coalescence in 186 days of LIGO's fifth science run\"]"
+		}, {
+			"size": 1,
+			"name": "['Search for gravitational-wave bursts in the first year of the fifth LIGO science run']"
+		}, {
+			"size": 1,
+			"name": "['Calibration of the LIGO gravitational wave detectors in the fifth science run']"
+		}, {
+			"size": 1,
+			"name": "['Insights from the complete genome sequence of Mycobacterium marinum on the evolution of Mycobacterium tuberculosis']"
+		}, {
+			"size": 1,
+			"name": "['The IceCube data acquisition system: Signal capture, digitization, and timestamping']"
+		}, {
+			"size": 1,
+			"name": "['Identification of Mycobacterium ulcerans in the environment from regions in Southeast Australia in which it is endemic with sequence capture-PCR']"
+		}],
+		"name": "['Dr. John A Grant']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Statistical Abstract of the United States 1997: The National Data Book']"
+		}, {
+			"size": 1,
+			"name": "['Statistical Abstract of the United States']"
+		}, {
+			"size": 1,
+			"name": "['The emerging digital economy']"
+		}, {
+			"size": 1,
+			"name": "['Falling Through the Net II: New Data on the Digital Divide']"
+		}, {
+			"size": 1,
+			"name": "['National Oceanic and Atmospheric Administration.']"
+		}, {
+			"size": 1,
+			"name": "['Foreign trade statistics']"
+		}, {
+			"size": 1,
+			"name": "['Ice Glossary']"
+		}, {
+			"size": 1,
+			"name": "['A Nation Online: Entering the Broadband Age']"
+		}, {
+			"size": 1,
+			"name": "['Taking of marine mammals incidental to commercial fishing operations; harbor porpoise take reduction plan regulations. Department of Commerce;  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Bureau of the Census']"
+		}, {
+			"size": 1,
+			"name": "['Manual of Classification']"
+		}, {
+			"size": 1,
+			"name": "['Current industrial reports: manufacturing technology 1988']"
+		}, {
+			"size": 1,
+			"name": "['American FactFinder']"
+		}, {
+			"size": 1,
+			"name": "['Federal Meteorological Handbook# 1']"
+		}, {
+			"size": 1,
+			"name": "['National Climatic Data Center.']"
+		}, {
+			"size": 1,
+			"name": "['Endangered and threatened wildlife and plants: definition of \u201cHarm.\u201d']"
+		}, {
+			"size": 1,
+			"name": "['Malcolm Baldrige National Quality Award Criteria']"
+		}, {
+			"size": 1,
+			"name": "['Tide Tables, East Coast of North and South America.']"
+		}, {
+			"size": 1,
+			"name": "['NOAA Satellite and Information Service.']"
+		}, {
+			"size": 1,
+			"name": "['Climatological Data National Summary.']"
+		}],
+		"name": "['U.S. Department of Commerce']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Language handbook on mother tongues in Census']"
+		}, {
+			"size": 1,
+			"name": "['Census of India 1971']"
+		}, {
+			"size": 1,
+			"name": "['India Administrative Atlas, 1872-2001: A Historical Perspective of Evolution of Districts and States in India']"
+		}, {
+			"size": 1,
+			"name": "['Provisional Population Totals']"
+		}, {
+			"size": 1,
+			"name": "[\"Compendium of India's fertility and mortality indictors, 1971-1997: based on the sample registration system (SRS)\"]"
+		}, {
+			"size": 1,
+			"name": "['The Living Music of Rajasthan']"
+		}, {
+			"size": 1,
+			"name": "['Wood Carving of Gujarat']"
+		}, {
+			"size": 1,
+			"name": "['Geographic Distribution of Internal Migration in India']"
+		}, {
+			"size": 1,
+			"name": "['Provisional Population Totals: Rural-urban Distribution: Paper 2 of 1991']"
+		}, {
+			"size": 1,
+			"name": "['Survey of Konkani in Kerala']"
+		}, {
+			"size": 1,
+			"name": "['Waromung, an Ao Naga Village']"
+		}, {
+			"size": 1,
+			"name": "['Provisional population totals']"
+		}, {
+			"size": 1,
+			"name": "['Census of India, 1961']"
+		}, {
+			"size": 1,
+			"name": "['The United States Government Manual']"
+		}, {
+			"size": 1,
+			"name": "['Social Mobility Movements Among Scheduled Castes and Scheduled Tribes of India']"
+		}, {
+			"size": 1,
+			"name": "['The Laws Governing Craftsmen and Their Crafts from Ancient Days Till To-day in India']"
+		}, {
+			"size": 1,
+			"name": "['Vital Statistics of India']"
+		}, {
+			"size": 1,
+			"name": "['Himachal Pradesh: Rural Craft Survey']"
+		}, {
+			"size": 1,
+			"name": "['Primary Census Abstract, General Population']"
+		}, {
+			"size": 1,
+			"name": "['Census Atlas: National Volume: Series 1']"
+		}],
+		"name": "['Office of the Registrar']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['A second generation human haplotype map of over 3.1 million SNPs']"
+		}, {
+			"size": 1,
+			"name": "['Genome sequence of the Brown Norway rat yields insights into mammalian evolution']"
+		}, {
+			"size": 1,
+			"name": "['Association analyses of 249,796 individuals reveal 18 new loci associated with body mass index']"
+		}, {
+			"size": 1,
+			"name": "['Clinical practice guidelines by the Infectious Diseases Society of America for the treatment of methicillin-resistant Staphylococcus aureus infections in adults and  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reconstructing the early evolution of Fungi using a six-gene phylogeny']"
+		}, {
+			"size": 1,
+			"name": "['Hundreds of variants clustered in genomic loci and biological pathways affect human height']"
+		}, {
+			"size": 1,
+			"name": "['Genome-wide detection and characterization of positive selection in human populations']"
+		}, {
+			"size": 1,
+			"name": "['1423 pancreaticoduodenectomies for pancreatic cancer: a single-institution experience']"
+		}, {
+			"size": 1,
+			"name": "[\"Common variants at MS4A4/MS4A6E, CD2AP, CD33 and EPHA1 are associated with late-onset Alzheimer's disease\"]"
+		}, {
+			"size": 1,
+			"name": "['Sulfated proteoglycans in astroglial barriers inhibit neurite outgrowth in vitro']"
+		}, {
+			"size": 1,
+			"name": "['Pump handbook']"
+		}, {
+			"size": 1,
+			"name": "['Assembling the fungal tree of life: progress, classification, and evolution of subcellular traits']"
+		}, {
+			"size": 1,
+			"name": "['Randomized trial of intensive cyclophosphamide, epirubicin, and fluorouracil chemotherapy compared with cyclophosphamide, methotrexate, and fluorouracil in  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['The sequence of the human genome']"
+		}, {
+			"size": 1,
+			"name": "['Treatment of invasive aspergillosis with posaconazole in patients who are refractory to or intolerant of conventional therapy: an externally controlled trial']"
+		}, {
+			"size": 1,
+			"name": "['WISP genes are members of the connective tissue growth factor family that are up-regulated in wnt-1-transformed cells and aberrantly expressed in human  \u2026']"
+		}, {
+			"size": 1,
+			"name": "['Reductive elimination of chlorinated ethylenes by zero-valent metals']"
+		}, {
+			"size": 1,
+			"name": "['Meta-analysis identifies 13 new loci associated with waist-hip ratio and reveals sexual dimorphism in the genetic basis of fat distribution']"
+		}, {
+			"size": 1,
+			"name": "['The genome of a songbird']"
+		}, {
+			"size": 1,
+			"name": "['Practice parameter for the diagnosis and management of primary immunodeficiency']"
+		}],
+		"name": "['David A. Arnold']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Measurement of condensed water content in liquid and ice clouds using an airborne counterflow virtual impactor']"
+		}, {
+			"size": 1,
+			"name": "['Trace gas transport in the vicinity of frontal convective clouds']"
+		}, {
+			"size": 1,
+			"name": "['Project AGUILA: in situ measurements of Mexico City air pollution by a research aircraft']"
+		}, {
+			"size": 1,
+			"name": "['Trace gas and aerosol measurements using aircraft data from the North Atlantic Regional Experiment (NARE 1993)']"
+		}, {
+			"size": 1,
+			"name": "['An evaluation of the community aerosol inlet for the NCAR C-130 research aircraft']"
+		}, {
+			"size": 1,
+			"name": "['Sweeteners: Functionality in cookies and crackers']"
+		}, {
+			"size": 1,
+			"name": "['An airborne test of three sulfur dioxide measurement techniques']"
+		}, {
+			"size": 1,
+			"name": "['STUDENT TRAINING IN FACILITIES IN ATMOSPHERIC SCIENCE-A TEACHING EXPERIMENT']"
+		}, {
+			"size": 1,
+			"name": "['An evaluation of the uses and limitations of a lyman-alpha hygrometer as an operational airborne humidity sensor']"
+		}, {
+			"size": 1,
+			"name": "['On the impact of snow cover on daytime pollution dispersion']"
+		}, {
+			"size": 1,
+			"name": "['Design and sampling characteristics of a new airborne aerosol inlet for aerosol measurements in clouds']"
+		}, {
+			"size": 1,
+			"name": "['Characterizations of Cloud Droplet Shatter Artifacts in Two Airborne Aerosol Inlets']"
+		}, {
+			"size": 1,
+			"name": "['Sweeteners. AIB Research Dept']"
+		}, {
+			"size": 1,
+			"name": "['Airborne intercomparison of three hygrometers']"
+		}, {
+			"size": 1,
+			"name": "['Trace gas transport in the vicinity of frontal convective clouds, d']"
+		}, {
+			"size": 1,
+			"name": "['Statusreminder report on C-130 air-motion measurements. Test of DYCOMS-II new datasets']"
+		}, {
+			"size": 1,
+			"name": "['Comparison of LWC measurements on the NCAR C-130 in AIRS-2']"
+		}, {
+			"size": 1,
+			"name": "['M. Wetzel, and S. Rutledge, 1993: Field training in radar meteorology']"
+		}, {
+			"size": 1,
+			"name": "['Sweeteners']"
+		}, {
+			"size": 1,
+			"name": "['The effects of splash artifacts on aerosol measurements in clouds']"
+		}],
+		"name": "['schanot']"
+	}, {
+		"children": [{
+			"size": 1,
+			"name": "['Dissolution of cellose with ionic liquids']"
+		}, {
+			"size": 1,
+			"name": "['Metamorphic phase equilibria and pressure-temperature-time paths']"
+		}, {
+			"size": 1,
+			"name": "['Global biodiversity: indicators of recent declines']"
+		}, {
+			"size": 1,
+			"name": "['Manual of the grasses of the United States']"
+		}, {
+			"size": 1,
+			"name": "['Experimental calibration of the partitioning of Fe and Mg between biotite and garnet']"
+		}, {
+			"size": 1,
+			"name": "['Decoding the DNA of the Toyota production system']"
+		}, {
+			"size": 1,
+			"name": "['Substitutional doping of amorphous silicon']"
+		}, {
+			"size": 1,
+			"name": "['The genetic landscape of a cell']"
+		}, {
+			"size": 1,
+			"name": "['Herpes simplex virus-1 entry into cells mediated by a novel member of the TNF/NGF receptor family']"
+		}, {
+			"size": 1,
+			"name": "['Initial interaction of herpes simplex virus with cells is binding to heparan sulfate.']"
+		}, {
+			"size": 1,
+			"name": "['Infections with herpes simplex viruses']"
+		}, {
+			"size": 1,
+			"name": "['Electronic properties of substitutionally doped amorphous Si and Ge']"
+		}, {
+			"size": 1,
+			"name": "['Entry of alphaherpesviruses mediated by poliovirus receptor-related protein 1 and poliovirus receptor']"
+		}, {
+			"size": 1,
+			"name": "['A novel role for 3-O-sulfated heparan sulfate in herpes simplex virus 1 entry']"
+		}, {
+			"size": 1,
+			"name": "['Diamond\u2014ceramic coating of the future']"
+		}, {
+			"size": 1,
+			"name": "['LIGHT, a new member of the TNF superfamily, and lymphotoxin \u03b1 are ligands for herpesvirus entry mediator']"
+		}, {
+			"size": 1,
+			"name": "[\"Putting the 'landscape'in landscape genetics\"]"
+		}, {
+			"size": 1,
+			"name": "['Black Chicago: The making of a Negro ghetto, 1890-1920']"
+		}, {
+			"size": 1,
+			"name": "['On repeated moral hazard with discounting']"
+		}, {
+			"size": 1,
+			"name": "['Eutrophication in Peel Inlet\u2014II. Identification of critical uncertainties via generalized sensitivity analysis']"
+		}],
+		"name": "['SPEAR']"
+	}]
+}

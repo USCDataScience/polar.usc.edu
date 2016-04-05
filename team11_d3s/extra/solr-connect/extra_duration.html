@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+	font-size: 14px;
+}
+</style>
+<title>File duration</title>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+var bfdc = function(data){
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = "#001075";
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+ .style("font-size","14px");
+
+    // add the tooltip area to the webpage
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+    
+
+  data.forEach(function(d) {
+    d.time = +d.time;
+    d.count = +d.count;
+  });
+
+  x.domain(d3.extent(data, function(d) { return d.count; })).nice();
+  y.domain(d3.extent(data, function(d) { return d.time; })).nice();
+  
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+    .append("text")
+      .attr("class", "label")
+      .attr("x", width)
+      .attr("y", -6)
+      .style("text-anchor", "end")
+      .text("File number")
+  .style("font-size","14px");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Media Duration in seconds")
+  		.style("font-size","14px");
+
+  svg.selectAll(".dot")
+      .data(data)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 3.5)
+      .attr("cx", function(d) { return x(d.count); })
+      .attr("cy", function(d) { return y(d.time); })
+      .style("fill", function(d){
+          return color;
+  })
+      .on("mouseover", function(d) {
+          tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+          tooltip.html(" (" + d.count
+	        + ", " +  d.time + ")")
+               .style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+      })
+      .on("mouseout", function(d) {
+          tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+      });;
+}
+    
+    window.onload = function() {
+      (function () {
+    var json = null;
+    $.ajax({
+      'async': false,
+      'global': false,
+      'url': 'http://localhost:8983/solr/polar_extra/select',
+      'data': {'wt':'json', 'q':'time:*', 'rows': 100},
+      'success': function(data) { 
+          bfdc(data.response.docs);
+      },
+      'dataType': 'jsonp',
+      'jsonp': 'json.wrf'
+      });
+    })();
+    }
+</script>

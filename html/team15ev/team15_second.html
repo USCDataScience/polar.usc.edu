@@ -16,8 +16,23 @@
         font-weight: bold;
     }
 </style>
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
     </head>
     <body>
+    <div id="header" style="margin-bottom:4%"> </div>
+
+        <div class="container">
+
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                <div class="navbar-header">
@@ -34,6 +49,7 @@
             </div>
         </nav>
         <div class="legend" style ="font-size:1.2em;">Word Cloud of number of usage of SWEET words in Dataset</div>
+        </div>
 <!--        Bootstrap and jQuery inclusion-->
     <script src="../../js/jquery-2.2.2.min.js"></script>
     <script src="../../js/d3.v3.min.js" charset="utf-8"></script>

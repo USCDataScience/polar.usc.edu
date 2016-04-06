@@ -36,7 +36,7 @@ var svg = d3.select("#d3").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("scoreStat.json", function(error, data) {
+d3.json("../../data/team27ev/scoreStat.json", function(error, data) {
   if (error) throw error;
 
 

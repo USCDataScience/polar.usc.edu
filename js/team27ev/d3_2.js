@@ -1,12 +1,13 @@
- function d35_on_click(){
+ function d32_on_click(){
 
   document.getElementById('d3').innerHTML = "";
 
-  document.getElementById('description').innerHTML = "Distribution of different measurement units";
+  document.getElementById('description').innerHTML = "Numbers of the related publications in each year return by Google Scholar API";
+
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
   width = 960 - margin.left - margin.right,
-  height = 400 - margin.top - margin.bottom;
+  height = 200 - margin.top - margin.bottom;
 
   var formatPercent = d3.format(".0%");
 
@@ -31,7 +32,7 @@
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.json("process_data.json", function(error, data) {
+  d3.json("../../data/team27ev/year_paper.json", function(error, data) {
 
     data.forEach(function(d) {
       d.value = +d.value;
@@ -55,10 +56,10 @@
     .style("text-anchor", "end")
     .text("Number");
 
-    svg.selectAll(".bar_pro")
+    svg.selectAll(".bar_sort")
     .data(data)
     .enter().append("rect")
-    .attr("class", "bar_pro")
+    .attr("class", "bar_sort")
     .attr("x", function(d) { return x(d.label); })
     .attr("width", x.rangeBand())
     .attr("y", function(d) { return y(d.value) ; })
@@ -80,13 +81,13 @@
     .map(function(d) { return d.label; }))
     .copy();
 
-    svg.selectAll(".bar_pro")
+    svg.selectAll(".bar_sort")
     .sort(function(a, b) { return x0(a.label) - x0(b.label); });
 
     var transition = svg.transition().duration(750),
     delay = function(d, i) { return i * 50; };
 
-    transition.selectAll(".bar_pro")
+    transition.selectAll(".bar_sort")
     .delay(delay)
     .attr("x", function(d) { return x0(d.label); });
 

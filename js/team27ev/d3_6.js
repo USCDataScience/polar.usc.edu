@@ -1,12 +1,11 @@
- function d32_on_click(){
+ function d36_on_click(){
 
   document.getElementById('d3').innerHTML = "";
 
-  document.getElementById('description').innerHTML = "Numbers of the related publications in each year return by Google Scholar API";
-
+  document.getElementById('description').innerHTML = "Ratio of the content of the files after running content extraction and the origin files of different MIME types";
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
-  width = 960 - margin.left - margin.right,
+  width = 400 - margin.left - margin.right,
   height = 200 - margin.top - margin.bottom;
 
   var formatPercent = d3.format(".0%");
@@ -23,8 +22,8 @@
 
   var yAxis = d3.svg.axis()
   .scale(y)
-  .orient("left");
-  // .tickFormat(formatPercent);
+  .orient("left")
+  .tickFormat(formatPercent);
 
   var svg = d3.select("#d3").append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -32,7 +31,7 @@
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.json("year_paper.json", function(error, data) {
+  d3.json("../../data/team27ev/ratio_result.json", function(error, data) {
 
     data.forEach(function(d) {
       d.value = +d.value;
@@ -56,10 +55,10 @@
     .style("text-anchor", "end")
     .text("Number");
 
-    svg.selectAll(".bar_sort")
+    svg.selectAll(".bar_mea")
     .data(data)
     .enter().append("rect")
-    .attr("class", "bar_sort")
+    .attr("class", "bar_mea")
     .attr("x", function(d) { return x(d.label); })
     .attr("width", x.rangeBand())
     .attr("y", function(d) { return y(d.value) ; })
@@ -81,13 +80,13 @@
     .map(function(d) { return d.label; }))
     .copy();
 
-    svg.selectAll(".bar_sort")
+    svg.selectAll(".bar_mea")
     .sort(function(a, b) { return x0(a.label) - x0(b.label); });
 
     var transition = svg.transition().duration(750),
     delay = function(d, i) { return i * 50; };
 
-    transition.selectAll(".bar_sort")
+    transition.selectAll(".bar_mea")
     .delay(delay)
     .attr("x", function(d) { return x0(d.label); });
 

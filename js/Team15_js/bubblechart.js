@@ -12,7 +12,7 @@ var svg = d3.select("body").append("svg")
     .attr("height", diameter)
     .attr("class", "bubble");
 
-d3.json("../data/Team15_data/bubble.json", function(error, root) {
+d3.json("../../data/Team15_data/bubble.json", function(error, root) {
   if (error) throw error;
 
   var node = svg.selectAll(".node")

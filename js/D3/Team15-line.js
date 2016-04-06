@@ -35,7 +35,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("../data/team15-line-data.tsv", function(error, data) {
+d3.tsv("../../data/team15-line-data.tsv", function(error, data) {
   data.forEach(function(d) {
     d.year = d.year;
     d["GlobalWarming"]= +d["GlobalWarming"];

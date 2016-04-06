@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Line Chart</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+
+<style>
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="header"> </div>
+
+
+    <br/><br/><br/><br/><br/><br/>
+<div class="container">
+
+<div style="float:left;font: 20px sans-serif;">
+<h3>File types chosen:</h3>
+<ol>
+<li><a href="D3_BFA_Signature.html?type=application_octet-stream">application/octet-stream</a></li>
+<li><a href="D3_BFA_Signature.html?type=application_zip">application/zip</a></li>
+<li><a href="D3_BFA_Signature.html?type=application_x-executable">application/x-executable</a></li>
+<li><a href="D3_BFA_Signature.html?type=application_pdf">application/pdf</a></li>
+<li><a href="D3_BFA_Signature.html?type=application_xhtml+xml">application/xhtml+xml</a></li>
+<li><a href="D3_BFA_Signature.html?type=application_x-sh">application/x-sh</a></li>
+<li><a href="D3_BFA_Signature.html?type=application_xml">application/xml</a></li>
+<li><a href="D3_BFA_Signature.html?type=image_jpeg">image/jpeg</a></li>
+<li><a href="D3_BFA_Signature.html?type=image_png">image/png</a></li>
+<li><a href="D3_BFA_Signature.html?type=audio_mpeg">audio/mpeg</a></li>
+<li><a href="D3_BFA_Signature.html?type=video_quicktime">video/quicktime</a></li>
+<li><a href="D3_BFA_Signature.html?type=text_html">text/html</a></li>
+<li><a href="D3_BFA_Signature.html?type=text_plain">text/plain</a></li>
+<li><a href="D3_BFA_Signature.html?type=text_x-matlab">text/x-matlab</a></li>
+<li><a href="D3_BFA_Signature.html?type=message_rfc822">message/rfc822</a></li>
+<br><br><a href="D3_BFA_Signature.html">CLEAR</a>
+</ol>
+</div>
+<div id="lineGraph" style="float: right;">
+	<h2 id="name"></h2>
+</div>
+<script type="text/javascript" src="d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+
+var urlpath=document.URL;
+var indexOfEquals=urlpath.indexOf("=");
+var fileName="";
+if (indexOfEquals==-1)
+{
+	fileName="";
+	document.getElementById("name").innerHTML="Please select a file type from the list";
+}
+else
+{
+	fileName="../../data/team22-spring-2016-data/mime-analysis/json_outputs/bfa_signature_"+urlpath.substring(indexOfEquals+1)+".json";  
+	document.getElementById("name").innerHTML="Line chart for the BFA signature of: "+urlpath.substring(indexOfEquals+1);
+}
+$.getJSON(fileName, function(json) {
+      var data=[];
+      var v=0;
+
+       $.each(json, function(i,field){
+        v=parseFloat(field);
+
+        //COMPANDING
+        v=Math.log(1+(255*v))/Math.log(256);
+
+        data.push({date: i, close: v});
+        //console.log(i+" "+v);
+        
+        });
+
+
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 1200 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.close); });
+
+var svg = d3.select("#lineGraph").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+  //uncomment to get y-axis labels only for y-data available
+  //y.domain(d3.extent(data, function(d) { return d.close; }));
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+    .append("text")
+      .attr("dy", "3em")
+      .attr("dx","50em")
+      .text("Byte Values");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Normalized Frequency");
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+});
+
+</script>
+</div>
+</body>

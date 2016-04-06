@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery-1.12.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/d3.min.js"></script>
+    <style>
+        .nav-tabs>li.active>a,
+        .nav-tabs>li.active>a:focus,
+        .nav-tabs>li.active>a:hover {
+            background-color: grey;
+            color: white;
+        }
+        
+        .nav-tabs>li>a {
+            color: black;
+        }
+        
+        .nob {
+            border: 0px;
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tab-content {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="header" style="margin-bottom:4%"> </div>
+    <div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="solrController">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a data-toggle="tab" href="#word_cloud">Word Cloud</a></li>
+                    <li><a data-toggle="tab" href="#us_state_map">US State Map</a></li>
+                    <li><a data-toggle="tab" href="#collapsible_indented_tree">Collapsible Indented Tree</a></li>
+                    <li><a data-toggle="tab" href="#dashboard">Dashboard</a></li>
+                    <li><a data-toggle="tab" href="#bubble_chart">Bubble Chart</a></li>
+                    <li><a data-toggle="tab" href="#bar_chart">Bar Chart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+
+        <div class="tab-content">
+            <div id="word_cloud" class="tab-pane fade">
+                <iframe src="word_cloud.html" class="nob"></iframe>
+            </div>
+            <div id="us_state_map" class="tab-pane fade">
+                <iframe src="us_state_map.html" class="nob"></iframe>
+            </div>
+            <div id="collapsible_indented_tree" class="tab-pane fade">
+                <iframe src="collapsible_indented_tree.html" class="nob"> </iframe>
+            </div>
+            <div id="dashboard" class="tab-pane fade">
+                <iframe src="dashboard.html" class="nob"> </iframe>
+            </div>
+            <div id="bubble_chart" class="tab-pane fade">
+                <iframe src="bubble_chart.html" class="nob"> </iframe>
+            </div>
+            <div id="bar_chart" class="tab-pane fade">
+                <iframe src="bar_chart.html" class="nob"> </iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

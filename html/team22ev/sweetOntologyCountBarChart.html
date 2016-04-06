@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bar Chart</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+.bar--positive {
+  fill: steelblue;
+}
+
+.bar--negative {
+  fill: darkorange;
+}
+
+.axis text {
+  font: 9px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/><br/>
+    <div class="container">
+<h2>Horizontal Bar Chart showing frequency of occurrence of different SWEET terminology concepts in the data</h2>
+<br/>
+<h3>SOLR QUERY: http://localhost:8983/solr/HW2/select?q=metadata.sweet_concept%3A*&rows=0&wt=json&indent=true&facet=true&facet.field=metadata.sweet_concept&facet.limit=100</h3>
+<script>
+
+
+var fileName="../../data/team22-spring-2016-data/enrichment-analysis/json/sweet_concept_count.json";  
+
+
+  // document.getElementById("name").innerHTML=fileName;
+$.getJSON(fileName, function(json) {
+
+      var data=[];
+      var prev="";
+      var current=0;
+     
+       $.each(json["facet_counts"]["facet_fields"]["metadata.sweet_concept"], function(i,field){
+        
+        if(i%2==0)
+        {
+          var tempPrev=String(field);
+          var hashIndex=tempPrev.lastIndexOf('#');
+          prev=tempPrev.substr(hashIndex+1);
+        }
+        else
+        {
+          current=parseInt(field);
+          data.push({name: prev, value: current});
+          console.log(prev+": "+current);
+        } 
+        
+        });
+
+
+
+var margin = {top: 20, right: 30, bottom: 40, left: 200},
+    width = 1000 - margin.left - margin.right,
+    height = 1300 - margin.top - margin.bottom;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.ordinal()
+    .rangeRoundBands([0, height], 0.1);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickSize(0)
+    .tickPadding(6);
+
+var svg = d3.select(".container").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+x.domain(d3.extent(data, function(d) { return d.value; })).nice();
+  y.domain(data.map(function(d) { return d.name; }));
+
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", function(d) { return "bar bar--" + (d.value < 0 ? "negative" : "positive"); })
+      .attr("x", function(d) { return x(Math.min(0, d.value)); })
+      .attr("y", function(d) { return y(d.name); })
+      .attr("width", function(d) { return Math.abs(x(d.value) - x(0)); })
+      .attr("height", y.rangeBand());
+
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + x(0) + ",0)")
+      .call(yAxis);
+
+});
+function type(d) {
+  d.value = +d.value;
+  return d;
+}
+
+</script>
+</div>
+</body>
+

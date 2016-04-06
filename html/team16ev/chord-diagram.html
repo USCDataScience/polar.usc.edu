@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+
+        #circle circle {
+            fill: none;
+            pointer-events: all;
+        }
+
+        .group path {
+            fill-opacity: .5;
+        }
+
+        path.chord {
+            stroke: #000;
+            stroke-width: .25px;
+        }
+
+        #circle:hover path.fade {
+            display: none;
+        }
+
+         .footer {
+             bottom: 0;
+             width: 100%;
+             text-align: center;
+             background-color: #f5f5f5;
+         }
+
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
+</head>
+<body>
+<div id="header" style="margin-bottom:4%"> </div>
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Polar Data Visualizations</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Bar Chart</a></li>
+                    <li><a href="wordcloud.html">Word Cloud</a></li>
+                    <li><a href="bubble-chart.html">Bubble Chart</a></li>
+                    <li><a href="line-chart.html">Line Chart</a></li>
+                    <li><a href="dendogram.html">Dendrogram</a></li>
+                    <li class="active"><a href="chord-diagram.html">Chord Diagram</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- start row -->
+    <div class="row">
+
+        <!--div class="col-xs-12">
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="rows" placeholder="Enter number of rows" />
+                <i><small>Note: default number of rows used is 100</small></i>
+            </div>
+            <div class="col-sm-1">
+                <input id = "btnSubmit" type="submit" value="Submit" class="btn btn-primary"/>
+            </div>
+        </div-->
+        <div class="col-xs-12">
+            <div id="chordDiagramContainer"></div>
+        </div>
+
+    </div>
+    <!-- end row-->
+
+    <footer class="footer">
+        <div class="container">
+            <p style="padding-top:5px;" class="text-muted">Developed by: TEAM 16 - Aravind Ram, Girish Rao &amp; Sandeep Kulkarni</p>
+        </div>
+    </footer>
+
+</div>
+
+<script src="//d3js.org/queue.v1.min.js"></script>
+<script>
+    /*$(document).ready(function() {
+        drawD3();
+        $("#btnSubmit").click(function(){
+            drawD3();
+        });
+    });*/
+
+    //function drawD3() {
+        /*var rows = $("#rows").val();
+        var restUrl = "http://localhost:8080/d3polardata/api/api/service/getChordDiagram";
+        if (rows) {
+            restUrl = restUrl + "?rows=" + rows;
+        } else {
+            restUrl = restUrl + "?rows=100";   //default 100  rows
+        }
+        $('#chordDiagramContainer').empty();
+        console.log(restUrl);*/
+
+    var restUrl = "../../data/team16data/hw2json/chordDiagramData.json";
+
+        var width = 720,
+                height = 720,
+                outerRadius = Math.min(width, height) / 2 - 10,
+                innerRadius = outerRadius - 24;
+
+        var formatPercent = d3.format(".1%");
+
+        var arc = d3.svg.arc()
+                .innerRadius(innerRadius)
+                .outerRadius(outerRadius);
+
+        var layout = d3.layout.chord()
+                .padding(.04)
+                .sortSubgroups(d3.descending)
+                .sortChords(d3.ascending);
+
+        var path = d3.svg.chord()
+                .radius(innerRadius);
+
+        var svg = d3.select("#chordDiagramContainer").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("id", "circle")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+        svg.append("circle")
+                .attr("r", outerRadius);
+
+        queue().defer(d3.csv, "cities.csv")
+                .defer(d3.json, restUrl)
+                .await(ready);
+
+        function ready(error, cities, matrix) {
+            if (error) throw error;
+
+            // Compute the chord layout.
+            layout.matrix(matrix);
+
+            // Add a group per neighborhood.
+            var group = svg.selectAll(".group")
+                    .data(layout.groups)
+                    .enter().append("g")
+                    .attr("class", "group")
+                    .on("mouseover", mouseover);
+
+            // Add a mouseover title.
+            group.append("title").text(function (d, i) {
+                return cities[i].name + ": " + formatPercent(d.value) + " of origins";
+            });
+
+            // Add the group arc.
+            var groupPath = group.append("path")
+                    .attr("id", function (d, i) {
+                        return "group" + i;
+                    })
+                    .attr("d", arc)
+                    .style("fill", function (d, i) {
+                        return cities[i].color;
+                    });
+
+            // Add a text label.
+            var groupText = group.append("text")
+                    .attr("x", 6)
+                    .attr("dy", 15);
+
+            groupText.append("textPath")
+                    .attr("xlink:href", function (d, i) {
+                        return "#group" + i;
+                    })
+                    .text(function (d, i) {
+                        return cities[i].name;
+                    });
+
+            // Remove the labels that don't fit. :(
+            groupText.filter(function (d, i) {
+                return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength();
+            })
+                    .remove();
+
+            // Add the chords.
+            var chord = svg.selectAll(".chord")
+                    .data(layout.chords)
+                    .enter().append("path")
+                    .attr("class", "chord")
+                    .style("fill", function (d) {
+                        return cities[d.source.index].color;
+                    })
+                    .attr("d", path);
+
+            // Add an elaborate mouseover title for each chord.
+            chord.append("title").text(function (d) {
+                return cities[d.source.index].name
+                        + " → " + cities[d.target.index].name
+                        + ": " + formatPercent(d.source.value)
+                        + "\n" + cities[d.target.index].name
+                        + " → " + cities[d.source.index].name
+                        + ": " + formatPercent(d.target.value);
+            });
+
+            function mouseover(d, i) {
+                chord.classed("fade", function (p) {
+                    return p.source.index != i
+                            && p.target.index != i;
+                });
+            }
+        }
+    //}
+
+</script>
+
+</body>
+</html>

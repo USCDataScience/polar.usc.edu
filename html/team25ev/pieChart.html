@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pie Chart Test</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<style>
+
+    body {
+        font: 10px sans-serif;
+    }
+
+    .arc path {
+        stroke: #fff;
+    }
+</style>
+
+<body>
+
+<label><input type="radio" name="dataset" value="0" checked> 1</label>
+<label><input type="radio" name="dataset" value="1"> 2</label>
+<script>
+    var width = 960,
+            height = 500,
+            radius = Math.min(width, height) / 2;
+
+    var color = d3.scale.ordinal()
+            .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+    var arc = d3.svg.arc()
+            .outerRadius(radius - 10)
+            .innerRadius(0);
+
+    var pie = d3.layout.pie()
+            .sort(null)
+            .value(function (d) { return d.ratio;});
+
+    var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var nodeSelected = 0;
+
+    d3.json("APCategories.json", function (error, data) {
+        //initialise data
+        floorRatio = data.data[0].ap[0].floorratio;
+        changePieChart();
+
+        //showing initial pie chart code ends here
+
+        function changePieChart() {
+            if(!this.value) {
+                this.value = 0;
+            }
+
+            nodeSelected = this.value;
+            newFloorRatio = data.data[nodeSelected].ap[0].floorratio;
+
+            console.log(newFloorRatio);
+            d3.selectAll(".arc").remove();
+            var g = svg.selectAll(".arc")
+                    .data(pie(newFloorRatio))
+
+                    .enter().append("g")
+
+                    .attr("class", "arc");
+
+            g.append("path")
+
+                    .attr("d", arc)
+
+                    .style("fill", function (d) {
+                        return color(d.data.floor);
+                    })
+                    .each(function(d) {this._current = d;});
+
+            g.append("text")
+                    .attr("transform", function (d) {
+                        return "translate(" + arc.centroid(d) + ")";
+                    })
+                    .attr("dy", ".35em")
+                    .style("text-anchor", "middle")
+                    .text(function (d) {
+                        return d.data.floor;
+                    });
+
+            //  g = g.data(pie(newFloorRatio));
+            // g.transition().duration(750).attrTween("d", arcTween);
+
+        }
+        function radioSelectedChange() {
+
+            nodeSelected = this.value;
+            changePieChart();
+
+        }
+        d3.selectAll("input")
+                .on("change", changePieChart);
+
+
+
+
+    });
+</script>
+</body>
+</html>

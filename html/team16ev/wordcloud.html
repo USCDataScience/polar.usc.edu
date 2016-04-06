@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        .footer {
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="../../js/team16/d3.layout.cloud.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    
+    <link href="../../css/header.css" rel="stylesheet">
+
+    
+</head>
+<body>
+<div id="header" style="margin-bottom:4%"> </div>
+
+
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Polar Data Visualizations</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Bar Chart</a></li>
+                    <li class="active"><a href="wordcloud.html">Word Cloud</a></li>
+                    <li><a href="bubble-chart.html">Bubble Chart</a></li>
+                    <li><a href="line-chart.html">Line Chart</a></li>
+                    <li><a href="dendogram.html">Dendrogram</a></li>
+                    <li><a href="chord-diagram.html">Chord Diagram</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- start row -->
+    <div class="row">
+
+        <!--div class="col-xs-12">
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="rows" placeholder="Enter number of rows" />
+                <i><small>Note: default number of rows used is 100</small></i>
+            </div>
+            <div class="col-sm-1">
+                <input id = "btnSubmit" type="submit" value="Submit" class="btn btn-primary"/>
+            </div>
+
+        </div-->
+        <div class="col-xs-12">
+            <div id="wordcloud"></div>
+        </div>
+
+    </div>
+    <!-- end row-->
+
+    <footer class="footer">
+        <div class="container">
+            <p style="padding-top:5px;" class="text-muted">Developed by: TEAM 16 - Aravind Ram, Girish Rao &amp; Sandeep Kulkarni</p>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+
+
+    //function drawD3(data) {
+    var frequency_list = [{"text":"atmosphere","freq":122},{"text":"date","freq":93},{"text":"jurisdiction","freq":20},{"text":"heliosphere","freq":11},{"text":"commerce","freq":23},{"text":"space","freq":125},{"text":"research","freq":131},{"text":"atmospheric","freq":114},{"text":"geosphere","freq":12},{"text":"land","freq":92},{"text":"physical","freq":88},{"text":"ecological","freq":53},{"text":"living","freq":43},{"text":"environmental","freq":101},{"text":"decision","freq":68},{"text":"cryosphere","freq":42},{"text":"hydrosphere","freq":39},{"text":"ocean","freq":109},{"text":"material","freq":71},{"text":"chemical","freq":66},{"text":"science","freq":192},{"text":"earth","freq":112},{"text":"biological","freq":68},{"text":"time","freq":137},{"text":"math","freq":22},{"text":"mathematical","freq":37}];
+
+        var fill = d3.scale.category20();
+
+        d3.layout.cloud().size([850, 450])
+                .words(frequency_list)
+                .rotate(function () {
+                    return ~~(Math.random() * 2) * 90;
+                })
+                .font("Impact")
+                .fontSize(function (d) {
+                    return d.freq;
+                })
+                .on("end", draw)
+                .start();
+
+        function draw(words) {
+            d3.select("#wordcloud").append("svg")
+                    .attr("width", 960)
+                    .attr("height", 600)
+                    .append("g")
+                    .attr("transform", "translate(480,250)")
+                    .selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-size", function (d) {
+                        return d.freq + "px";
+                    })
+                    .style("font-family", "Impact")
+                    .style("fill", function (d, i) {
+                        return fill(i);
+                    })
+                    .attr("text-anchor", "middle")
+                    .attr("transform", function (d) {
+                        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .text(function (d) {
+                        return d.text;
+                    });
+        }
+   // }
+
+
+   // $(document).ready(function() {
+
+     //   drawD3(data);
+        //var url = "http://localhost:8080/d3polardata/api/api/service/getWordCloud";
+        //makeCall(url);
+
+        /*$("#btnSubmit").click(function(){
+            var rows = $("#rows").val();
+            var restUrl = "http://localhost:8080/d3polardata/api/api/service/getWordCloud";
+            if(rows){
+                restUrl = restUrl + "?rows="+rows;
+            }else{
+                restUrl = restUrl + "?rows=100";   //default 100  rows
+            }
+            $('#wordcloud').empty();
+            console.log(restUrl);
+
+            makeCall(restUrl);
+        });*/
+
+        /*function makeCall(restUrl) {
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: restUrl,
+                dataType: 'json',
+                async: true,
+                success: function (data) {
+                    console.log(JSON.stringify(data));
+                    drawD3(data);
+                },
+                error: function (result) {
+                }
+            });
+        }*/
+
+
+  //  });
+</script>
+
+</body>
+</html>

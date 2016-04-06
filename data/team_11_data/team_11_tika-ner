@@ -1,0 +1,11 @@
+#!/bin/bash
+export NER_RES=$HOME/tools/tika/config
+export TIKA_APP=$HOME/tools/tika/tika-app-1.12.jar
+
+N=25000;
+for file in /Users/minhpham/data-classified/application-xhtml+xml/*
+do
+[ $((N--)) = 0 ] && break
+echo $file
+java -classpath $NER_RES:$TIKA_APP org.apache.tika.cli.TikaCLI --config=config/tika-config.xml -m $file >> result.txt
+done

@@ -48,6 +48,8 @@ body {
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 <script src="tooltip/themes/2/tooltip.js"></script>
 <link href="tooltip/themes/2/tooltip.css" rel="stylesheet" type="text/css" />
+  <script src="../js/jquery.csv"></script>
+
 <script>
 var width = 960,
     height = 500;
@@ -58,8 +60,36 @@ var projection = d3.geo.mercator()
     .rotate([-180,0]);
 
 setTimeout(function() {
-    
+   /*
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true",
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+});
+*/
 
+
+
+//var url= "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true";
+var req = createRequest(); // defined above
+// Create the callback:
+
+req.onreadystatechange = function() {
+  if (req.readyState != 4) return; // Not there yet
+  if (req.status != 200) {
+    // Handle request failure here...
+    return;
+  }
+  // Request successful, read the response
+  //var resp = req.responseText;
+  //window.alert(resp); 
+ // processData(resp); 
+}
+req.open("GET", "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true", true);
+req.send();
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -95,7 +125,6 @@ d3.csv("../data/team37data/citiesRed.csv", function(error, data) {
        .attr("r", 10)
        .style("fill", "red");
 });
-
 
 // load and display the cities
 d3.csv("../data/team37data/citiesGreen.csv", function(error, data) {
@@ -143,9 +172,9 @@ d3.csv("../data/team37data/citiesYellow.csv", function(error, data) {
        .style("fill", "yellow");
 });
 
-
+var data = [20,-103]; 
 // load and display the cities
-d3.csv("../data/team37data/citiesBlue.csv", function(error, data) {
+d3.csv("../data/team37data/test.csv", function(error, data) {
     g.selectAll("circle")
        .data(data)
        .enter()
@@ -195,7 +224,42 @@ function loadDonutQuery(){
   var url = "team37a1.html";
  window.open(url, '_blank');
   }
+function processData(allText) {
+    var allTextLines = allText.split(/\r\n|\n/);
+    var headers = allTextLines[0].split(',');
+    var lines = [];
 
+    for (var i=1; i<allTextLines.length; i++) {
+        var data = allTextLines[i].split(',');
+        if (data.length == headers.length) {
+
+            var tarr = [];
+            for (var j=0; j<headers.length; j++) {
+                tarr.push(headers[j]+":"+data[j]);
+            }
+            lines.push(tarr);
+        }
+    }
+    alert(lines);
+}
+function createRequest() {
+  var result = null;
+  if (window.XMLHttpRequest) {
+    // FireFox, Safari, etc.
+    result = new XMLHttpRequest();
+    if (typeof xmlhttp.overrideMimeType != 'undefined') {
+      result.overrideMimeType('text/xml'); // Or anything else
+    }
+  }
+  else if (window.ActiveXObject) {
+    // MSIE
+    result = new ActiveXObject("Microsoft.XMLHTTP");
+  } 
+  else {
+    // No known mechanism -- consider aborting the application
+  }
+  return result;
+}
 </script>
 </body>
 </html>

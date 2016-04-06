@@ -1,0 +1,705 @@
+[{
+	"freq": {
+		"cmw": 1
+	},
+	"State": "1935"
+}, {
+	"freq": {
+		"kwartz": 1
+	},
+	"State": "1954"
+}, {
+	"freq": {
+		"Terry Johnson": 1
+	},
+	"State": "1956"
+}, {
+	"freq": {
+		"Laurie Brown": 1
+	},
+	"State": "1957"
+}, {
+	"freq": {
+		"University of California": 1,
+		"Laurie Brown": 1,
+		"Office of the Registrar": 1
+	},
+	"State": "1958"
+}, {
+	"freq": {
+		"Terry Johnson": 1
+	},
+	"State": "1961"
+}, {
+	"freq": {
+		"Laurie Brown": 1
+	},
+	"State": "1962"
+}, {
+	"freq": {
+		"kwartz": 1,
+		"Laurie Brown": 1,
+		"Office of the Registrar": 1
+	},
+	"State": "1964"
+}, {
+	"freq": {
+		"Terry Johnson": 1,
+		"Office of the Registrar": 2
+	},
+	"State": "1965"
+}, {
+	"freq": {
+		"Office of the Registrar": 1
+	},
+	"State": "1966"
+}, {
+	"freq": {
+		"James H Crawford": 1,
+		"SPEAR": 1
+	},
+	"State": "1967"
+}, {
+	"freq": {
+		"James H Crawford": 1,
+		"Office of the Registrar": 1,
+		"makowski": 7
+	},
+	"State": "1968"
+}, {
+	"freq": {
+		"R. D. Allen": 1
+	},
+	"State": "1969"
+}, {
+	"freq": {
+		"sharley": 1,
+		"Office of the Registrar": 1
+	},
+	"State": "1970"
+}, {
+	"freq": {
+		"U.S. Department of Commerce": 1,
+		"SPEAR": 1,
+		"Michael Barron": 1
+	},
+	"State": "1971"
+}, {
+	"freq": {
+		"R. D. Allen": 1,
+		"U.S. Department of Commerce": 1,
+		"Office of the Registrar": 1
+	},
+	"State": "1972"
+}, {
+	"freq": {
+		"Steven Potter": 1,
+		"Michael Barron": 1
+	},
+	"State": "1974"
+}, {
+	"freq": {
+		"makowski": 7,
+		"Administrator": 8,
+		"SPEAR": 1,
+		"U.S. Department of Commerce": 2
+	},
+	"State": "1975"
+}, {
+	"freq": {
+		"SPEAR": 1,
+		"Office of the Registrar": 1
+	},
+	"State": "1976"
+}, {
+	"freq": {
+		"makowski": 14,
+		"U.S. Department of Commerce": 1,
+		"Office of the Registrar": 1,
+		"Biagioni L": 1
+	},
+	"State": "1977"
+}, {
+	"freq": {
+		"Bruce.Vogt": 1,
+		"Laurie Brown": 1,
+		"NOAA Fisheries": 2,
+		"SPEAR": 1,
+		"Michael Barron": 1
+	},
+	"State": "1978"
+}, {
+	"freq": {
+		"makowski": 7,
+		"Administrator": 1,
+		"Terry Johnson": 1,
+		"Steven Potter": 1
+	},
+	"State": "1979"
+}, {
+	"freq": {
+		"Administrator": 1,
+		"Terry Johnson": 1,
+		"SPEAR": 1
+	},
+	"State": "1980"
+}, {
+	"freq": {
+		"Carey Noll": 3,
+		"R. D. Allen": 1,
+		"schanot": 3,
+		"Office of the Registrar": 2,
+		"Michael Barron": 1
+	},
+	"State": "1981"
+}, {
+	"freq": {
+		"Dan Simmons": 1,
+		"University of California": 1,
+		"Carey Noll": 3,
+		"R. D. Allen": 2,
+		"Administrator": 1,
+		"Terry Johnson": 1,
+		"U.S. Department of Commerce": 1
+	},
+	"State": "1982"
+}, {
+	"freq": {
+		"University of California": 1,
+		"cmw": 1,
+		"Laurie Brown": 1
+	},
+	"State": "1983"
+}, {
+	"freq": {
+		"Terry Johnson": 1,
+		"Administrator": 1,
+		"Steven Potter": 1,
+		"Biagioni L": 1,
+		"Ajah": 1
+	},
+	"State": "1984"
+}, {
+	"freq": {
+		"Dan Simmons": 1,
+		"Michael Barron": 1,
+		"University of California": 1,
+		"gmu": 1,
+		"R. D. Allen": 1,
+		"Administrator": 1,
+		"Steven Potter": 1
+	},
+	"State": "1985"
+}, {
+	"freq": {
+		"gmu": 1,
+		"David A. Arnold": 1,
+		"University of California": 1,
+		"Laurie Brown": 1,
+		"SPEAR": 1,
+		"U.S. Department of Commerce": 1
+	},
+	"State": "1986"
+}, {
+	"freq": {
+		"schanot": 2,
+		"Carey Noll": 3,
+		"University of California": 2,
+		"Administrator": 1,
+		"Terry Johnson": 1,
+		"SPEAR": 1,
+		"Office of the Registrar": 1,
+		"Dr. John A Grant": 2
+	},
+	"State": "1987"
+}, {
+	"freq": {
+		"schanot": 2,
+		"Biagioni L": 1,
+		"Carey Noll": 3,
+		"Administrator": 1,
+		"Terry Johnson": 2,
+		"Office of the Registrar": 1,
+		"Michael Barron": 1
+	},
+	"State": "1988"
+}, {
+	"freq": {
+		"Timothy Bagley": 1,
+		"Carey Noll": 3,
+		"University of California": 1,
+		"gmu": 1,
+		"U.S. Department of Commerce": 1,
+		"SPEAR": 2
+	},
+	"State": "1989"
+}, {
+	"freq": {
+		"kwartz": 3,
+		"cmw": 1,
+		"schanot": 2,
+		"gmu": 2,
+		"David A. Arnold": 1,
+		"Terry Johnson": 1,
+		"Mark Giampapa": 1,
+		"Laurie Brown": 1
+	},
+	"State": "1990"
+}, {
+	"freq": {
+		"kwartz": 1,
+		"schanot": 1,
+		"Timothy Bagley": 1,
+		"gmu": 1,
+		"R. D. Allen": 2,
+		"Administrator": 1,
+		"Laurie Brown": 1,
+		"Office of the Registrar": 2,
+		"Steven Potter": 1
+	},
+	"State": "1991"
+}, {
+	"freq": {
+		"schanot": 1,
+		"University of California": 1,
+		"cmw": 1,
+		"Carlos E Ramos": 1,
+		"sharley": 1
+	},
+	"State": "1992"
+}, {
+	"freq": {
+		"kwartz": 2,
+		"Ignatius G. Rigor": 1,
+		"Carlos E Ramos": 1,
+		"University of California": 2,
+		"gmu": 1,
+		"R. D. Allen": 2,
+		"Terry Johnson": 1,
+		"Mark Giampapa": 2,
+		"U.S. Department of Commerce": 1,
+		"Steven Potter": 1
+	},
+	"State": "1993"
+}, {
+	"freq": {
+		"University of California": 2,
+		"Timothy Bagley": 2,
+		"cmw": 1,
+		"kwartz": 2,
+		"R. D. Allen": 1,
+		"Ajah": 1,
+		"Carey Noll": 3,
+		"Bruce.Vogt": 1,
+		"Dan Simmons": 1,
+		"Terry Johnson": 1,
+		"Office of the Registrar": 1
+	},
+	"State": "1994"
+}, {
+	"freq": {
+		"James H Crawford": 1,
+		"gmu": 1,
+		"University of California": 3,
+		"sharley": 1,
+		"Terry Johnson": 3,
+		"kwartz": 2,
+		"Ignatius G. Rigor": 2,
+		"Carlos E Ramos": 1,
+		"Timothy Bagley": 2,
+		"makowski": 7,
+		"R. D. Allen": 1,
+		"Michael Barron": 1,
+		"Mark Giampapa": 2,
+		"SPEAR": 1,
+		"Steven Potter": 1
+	},
+	"State": "1995"
+}, {
+	"freq": {
+		"James H Crawford": 2,
+		"schanot": 1,
+		"NOAA Fisheries": 6,
+		"David A. Arnold": 1,
+		"University of California": 1,
+		"cmw": 1,
+		"Carlos E Ramos": 1,
+		"Michael Barron": 1,
+		"makowski": 14,
+		"Dan Simmons": 1,
+		"Mark Giampapa": 1,
+		"SPEAR": 1,
+		"Steven Potter": 3
+	},
+	"State": "1996"
+}, {
+	"freq": {
+		"rodionov": 1,
+		"Administrator": 1,
+		"Scott Briggs": 4,
+		"kwartz": 1,
+		"gmu": 1,
+		"sharley": 1,
+		"Ignatius G. Rigor": 1,
+		"U.S. Department of Commerce": 1,
+		"schanot": 1,
+		"Francis Torres": 1,
+		"Michael Barron": 3,
+		"Ajah": 7,
+		"R. D. Allen": 2,
+		"cmw": 3,
+		"Dan Simmons": 1,
+		"Mark Giampapa": 2,
+		"Steven Potter": 3
+	},
+	"State": "1997"
+}, {
+	"freq": {
+		"Jessica Hayes": 1,
+		"David A. Arnold": 2,
+		"Terry Johnson": 1,
+		"Timothy Bagley": 1,
+		"Steven Potter": 1,
+		"U.S. Department of Commerce": 3,
+		"Carey Noll": 3,
+		"Ignatius G. Rigor": 1,
+		"Jennifer Geary": 3,
+		"Carlos E Ramos": 1,
+		"cmw": 1,
+		"Ajah": 2,
+		"makowski": 7,
+		"Administrator": 1,
+		"SPEAR": 2,
+		"University of California": 1,
+		"Michael Barron": 2
+	},
+	"State": "1998"
+}, {
+	"freq": {
+		"NOAA Fisheries": 4,
+		"Biagioni L": 1,
+		"Carey Noll": 6,
+		"gmu": 1,
+		"Timothy Bagley": 1,
+		"U.S. Department of Commerce": 1,
+		"Office of the Registrar": 1,
+		"kwartz": 1,
+		"Ignatius G. Rigor": 2,
+		"Carlos E Ramos": 1,
+		"Bruce.Vogt": 1,
+		"Seth  Danielson": 1,
+		"makowski": 14,
+		"SPEAR": 2,
+		"Tracey Nakamura": 2,
+		"Steven Potter": 1
+	},
+	"State": "1999"
+}, {
+	"freq": {
+		"Scott Briggs": 8,
+		"NOAA Fisheries": 6,
+		"Biagioni L": 1,
+		"kwartz": 1,
+		"gmu": 1,
+		"Timothy Bagley": 1,
+		"Ignatius G. Rigor": 1,
+		"Carlos E Ramos": 2,
+		"Dr. John A Grant": 2,
+		"R. D. Allen": 1,
+		"makowski": 7,
+		"Bruce.Vogt": 1,
+		"Administrator": 1,
+		"Mark Giampapa": 1,
+		"Steven Potter": 2
+	},
+	"State": "2000"
+}, {
+	"freq": {
+		"schanot": 1,
+		"Jessica Hayes": 1,
+		"Scott Briggs": 20,
+		"NOAA Fisheries": 6,
+		"Biagioni L": 1,
+		"David A. Arnold": 1,
+		"Terry Johnson": 1,
+		"sharley": 3,
+		"Steven Potter": 1,
+		"Carey Noll": 3,
+		"Jennifer Geary": 3,
+		"Timothy Bagley": 1,
+		"makowski": 14,
+		"R. D. Allen": 1,
+		"Administrator": 1,
+		"Mark Giampapa": 2,
+		"Michael Barron": 1
+	},
+	"State": "2001"
+}, {
+	"freq": {
+		"rodionov": 2,
+		"Scott Briggs": 16,
+		"Biagioni L": 2,
+		"gmu": 2,
+		"Terry Johnson": 2,
+		"cmw": 1,
+		"R. D. Allen": 1,
+		"Ignatius G. Rigor": 2,
+		"Timothy Bagley": 2,
+		"Bruce.Vogt": 2,
+		"Laurie Brown": 3,
+		"SPEAR": 1,
+		"Michael Barron": 1
+	},
+	"State": "2002"
+}, {
+	"freq": {
+		"rodionov": 1,
+		"James H Crawford": 3,
+		"Scott Briggs": 4,
+		"NOAA Fisheries": 2,
+		"Biagioni L": 3,
+		"kwartz": 1,
+		"Timothy Bagley": 1,
+		"U.S. Department of Commerce": 1,
+		"Francis Torres": 1,
+		"Jennifer Geary": 3,
+		"cmw": 1,
+		"Ajah": 1,
+		"Bruce.Vogt": 2,
+		"Dan Simmons": 3,
+		"Mark Giampapa": 2,
+		"Tracey Nakamura": 2,
+		"Steven Potter": 1
+	},
+	"State": "2003"
+}, {
+	"freq": {
+		"Biagioni L": 1,
+		"David A. Arnold": 2,
+		"U.S. Department of Commerce": 1,
+		"Ignatius G. Rigor": 1,
+		"Carlos E Ramos": 1,
+		"Bruce.Vogt": 2,
+		"R. D. Allen": 1,
+		"Mark Giampapa": 1,
+		"Steven Potter": 1,
+		"rodionov": 4,
+		"James H Crawford": 1,
+		"NOAA Fisheries": 2,
+		"Carey Noll": 3,
+		"sharley": 2,
+		"Francis Torres": 1,
+		"Office of the Registrar": 1,
+		"Jennifer Geary": 9,
+		"Michael Barron": 1,
+		"Timothy Bagley": 1,
+		"makowski": 14,
+		"Laurie Brown": 1,
+		"Dr. John A Grant": 1
+	},
+	"State": "2004"
+}, {
+	"freq": {
+		"rodionov": 4,
+		"Jessica Hayes": 3,
+		"Scott Briggs": 4,
+		"NOAA Fisheries": 4,
+		"Biagioni L": 1,
+		"David A. Arnold": 1,
+		"Laurie Brown": 4,
+		"cmw": 2,
+		"Seth  Danielson": 4,
+		"Carey Noll": 6,
+		"Francis Torres": 1,
+		"Jennifer Geary": 3,
+		"Carlos E Ramos": 2,
+		"kwartz": 1,
+		"R. D. Allen": 1,
+		"makowski": 7,
+		"Bruce.Vogt": 1,
+		"Dan Simmons": 1,
+		"Mark Giampapa": 1,
+		"Tracey Nakamura": 1,
+		"Michael Barron": 1
+	},
+	"State": "2005"
+}, {
+	"freq": {
+		"rodionov": 2,
+		"schanot": 1,
+		"James H Crawford": 1,
+		"Scott Briggs": 4,
+		"NOAA Fisheries": 4,
+		"Biagioni L": 2,
+		"David A. Arnold": 2,
+		"Laurie Brown": 1,
+		"gmu": 1,
+		"Carey Noll": 3,
+		"Carlos E Ramos": 1,
+		"kwartz": 1,
+		"Seth  Danielson": 1,
+		"Bruce.Vogt": 2,
+		"Dr. John A Grant": 1,
+		"Mark Giampapa": 2,
+		"Michael Barron": 1
+	},
+	"State": "2006"
+}, {
+	"freq": {
+		"rodionov": 4,
+		"James H Crawford": 4,
+		"Scott Briggs": 12,
+		"Biagioni L": 1,
+		"David A. Arnold": 3,
+		"sharley": 4,
+		"Timothy Bagley": 2,
+		"Ignatius G. Rigor": 1,
+		"U.S. Department of Commerce": 2,
+		"schanot": 1,
+		"Francis Torres": 1,
+		"Jennifer Geary": 3,
+		"Carlos E Ramos": 4,
+		"cmw": 1,
+		"Ajah": 1,
+		"makowski": 7,
+		"Seth  Danielson": 2,
+		"Dan Simmons": 1,
+		"SPEAR": 1,
+		"Jessica Hayes": 3
+	},
+	"State": "2007"
+}, {
+	"freq": {
+		"rodionov": 1,
+		"James H Crawford": 2,
+		"NOAA Fisheries": 2,
+		"Biagioni L": 2,
+		"Carey Noll": 3,
+		"Mark Giampapa": 2,
+		"sharley": 4,
+		"Ignatius G. Rigor": 1,
+		"gmu": 3,
+		"Francis Torres": 1,
+		"Jennifer Geary": 9,
+		"Carlos E Ramos": 1,
+		"cmw": 1,
+		"Ajah": 3,
+		"Bruce.Vogt": 1,
+		"Dr. John A Grant": 1,
+		"Laurie Brown": 1,
+		"Jessica Hayes": 2
+	},
+	"State": "2008"
+}, {
+	"freq": {
+		"rodionov": 1,
+		"James H Crawford": 1,
+		"Scott Briggs": 8,
+		"Biagioni L": 2,
+		"kwartz": 1,
+		"gmu": 1,
+		"Seth  Danielson": 4,
+		"schanot": 1,
+		"cmw": 2,
+		"Jessica Hayes": 1,
+		"Carlos E Ramos": 2,
+		"Dr. John A Grant": 4,
+		"Ajah": 1,
+		"makowski": 14,
+		"Bruce.Vogt": 1,
+		"Dan Simmons": 3,
+		"Mark Giampapa": 1,
+		"Michael Barron": 1
+	},
+	"State": "2009"
+}, {
+	"freq": {
+		"James H Crawford": 2,
+		"David A. Arnold": 4,
+		"gmu": 1,
+		"sharley": 2,
+		"U.S. Department of Commerce": 2,
+		"Jessica Hayes": 5,
+		"Tracey Nakamura": 2,
+		"Carey Noll": 6,
+		"Francis Torres": 1,
+		"Jennifer Geary": 6,
+		"kwartz": 1,
+		"Dr. John A Grant": 6,
+		"Ajah": 2,
+		"R. D. Allen": 1,
+		"Dan Simmons": 3,
+		"SPEAR": 2,
+		"Seth  Danielson": 1,
+		"Michael Barron": 1
+	},
+	"State": "2010"
+}, {
+	"freq": {
+		"Jessica Hayes": 1,
+		"David A. Arnold": 2,
+		"Office of the Registrar": 1,
+		"Carey Noll": 3,
+		"Francis Torres": 4,
+		"Jennifer Geary": 6,
+		"Carlos E Ramos": 1,
+		"Ajah": 1,
+		"Bruce.Vogt": 2,
+		"Seth  Danielson": 1,
+		"Dan Simmons": 1,
+		"Tracey Nakamura": 2
+	},
+	"State": "2011"
+}, {
+	"freq": {
+		"Ignatius G. Rigor": 1,
+		"University of California": 1,
+		"sharley": 1,
+		"cmw": 2,
+		"Francis Torres": 6,
+		"Jennifer Geary": 9,
+		"Timothy Bagley": 2,
+		"Bruce.Vogt": 1,
+		"Dan Simmons": 1,
+		"Laurie Brown": 1,
+		"Tracey Nakamura": 8,
+		"Dr. John A Grant": 2
+	},
+	"State": "2012"
+}, {
+	"freq": {
+		"James H Crawford": 1,
+		"schanot": 2,
+		"Carey Noll": 3,
+		"University of California": 1,
+		"Ignatius G. Rigor": 3,
+		"Francis Torres": 2,
+		"Jennifer Geary": 6,
+		"Dr. John A Grant": 1,
+		"Timothy Bagley": 2,
+		"Bruce.Vogt": 1,
+		"Seth  Danielson": 3,
+		"Dan Simmons": 1,
+		"Tracey Nakamura": 1,
+		"Jessica Hayes": 2
+	},
+	"State": "2013"
+}, {
+	"freq": {
+		"Francis Torres": 1,
+		"Jessica Hayes": 1,
+		"Seth  Danielson": 1,
+		"Bruce.Vogt": 1,
+		"Dan Simmons": 1,
+		"Ignatius G. Rigor": 1
+	},
+	"State": "2014"
+}, {
+	"freq": {
+		"Carey Noll": 3,
+		"Seth  Danielson": 2,
+		"Ignatius G. Rigor": 2,
+		"Tracey Nakamura": 2
+	},
+	"State": "2015"
+}]

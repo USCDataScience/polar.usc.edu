@@ -7,7 +7,10 @@ Right now, though the data has been collected, it has not been synthesized into 
 
 Polar Deep Search Engine for CSCI401 Capstone
 
-#####Set up
+##### Related Repos
+- [solr-enrich](https://github.com/lorsposto/solr-enrich) - python scripts for extracting metadata from text content of solr documents
+
+####Set up
 
 ######Maven
 

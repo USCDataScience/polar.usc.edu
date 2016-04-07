@@ -429,7 +429,7 @@ var frequency_list; // global
 
 </body>
 <script>
-    d3.json("freqList.json", function(error, json) {
+    d3.json("..\..\data\team10\freqList.json", function(error, json) {
   if (error) return console.warn(error);
   frequency_list = json;
   visualize();

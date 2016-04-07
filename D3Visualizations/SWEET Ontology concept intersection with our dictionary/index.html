@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Word Cloud Generator</title>
+<style>
+body {
+  position: relative;
+  font-family: "Helvetica Neue", sans-serif;
+  width: 960px;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 20px;
+}
+#presets a { border-left: solid #666 1px; padding: 0 10px; }
+#presets a.first { border-left: none; }
+#keyword { width: 300px; }
+#fetcher { width: 500px; }
+#keyword, #go { font-size: 1.5em; }
+#text { width: 100%; height: 100px; }
+p.copy { font-size: small; }
+#form { font-size: small; position: relative; }
+hr { border: none; border-bottom: solid #ccc 1px; }
+a.active { text-decoration: none; color: #000; font-weight: bold; cursor: text; }
+#angles line, #angles path, #angles circle { stroke: #666; }
+#angles text { fill: #333; }
+#angles path.drag { fill: #666; cursor: move; }
+#angles { text-align: center; margin: 0 auto; width: 350px; }
+#angles input, #max { width: 42px; }
+</style>
+
+<div id="vis"></div>
+
+<form id="form">
+
+<p style="position: absolute; right: 0; top: 0" id="status"></p>
+
+<div style="text-align: center">
+  <div id="presets"></div>
+  <div id="custom-area">
+    <p><label for="text"></label>
+    <p><textarea id="text">
+CO2 InorganicCompound
+clo InorganicCompound
+clo2 InorganicCompound
+silicate InorganicCompound
+silica InorganicCompound
+peroxide InorganicCompound
+clathrate InorganicCompound
+dioxide InorganicCompound
+clox InorganicCompound
+clono2 InorganicCompound
+cl2o2 InorganicCompound
+rust InorganicCompound
+hematite InorganicCompound
+biomass EnergyStorage
+fuel EnergyStorage
+ethanol boifuel
+celsius Unit
+centigrade Unit
+centigrades Unit
+byte Unit
+bytes Unit
+millimeters Unit
+millimeter Unit
+decimeters Unit
+milliliters Unit
+centiliters Unit
+centiliter Unit
+litres Unit
+litre Unit
+liters Unit
+liters Unit
+deciliters Unit
+deciliter Unit
+milliliter Unit
+decimeter Unit 
+kilometer Unit
+kilometers Unit
+hour Unit
+hours Unit
+north Unit
+acre Unit
+acres Unit
+south Unit
+east Unit
+west Unit
+celcius Unit
+fahrenheit Unit
+centimeters Unit
+centimeter Unit
+inches Unit
+yard Unit
+gallon Unit
+gallons Unit
+gal Unit
+calorie Unit
+calories Unit
+barrel Unit
+barrels Unit
+oUnitce Unit
+year Unit
+years Unit
+oUnitces Unit
+rankine Unit
+rankines Unit
+delisle Unit
+delisles Unit
+poUnitd Unit
+poUnitds Unit
+ton Unit
+angstrom Unit
+angstroms Unit
+tons Unit
+joule Unit
+joules Unit
+yards Unit
+inch Unit
+foot Unit
+feet Unit
+meters Unit
+cubic Unit
+meter Unit
+m Unit
+kilogram Unit
+gram Unit
+grams Unit
+g Unit
+in Unit
+cm Unit
+mm Unit
+kilograms Unit
+kg Unit
+second Unit
+s Unit
+ampere Unit
+amperes Unit
+A Unit
+kelvin Unit
+K Unit
+mole Unit
+mol Unit
+candela Unit
+cd Unit
+square Unit
+meter Unit
+meters Unit
+m2 Unit
+cubic Unit
+m3 Unit
+per Unit
+second Unit
+seconds Unit
+s Unit
+radian Unit
+radians Unit
+R Unit
+steradian Unit
+hertz Unit
+hz Unit
+newton Unit
+newtons Unit
+N Unit
+J Unit
+pascal Unit
+pascals Unit
+P Unit
+m3 Unit
+cm2 Unit
+cm3 Unit
+joule Unit
+watt Unit
+coulomb Unit
+volt Unit
+volts Unit
+farad Unit
+farads Unit
+temperature Unit
+m/s Unit
+ohm Unit
+ohms Unit
+siemens Unit
+weber Unit
+tesla Unit
+henry Unit
+h Unit
+degree Unit
+degrees Unit
+lumen Unit
+Celsius Unit
+lux Unit
+becquerel Unit
+miles Unit
+mile Unit
+mi Unit
+minute Unit
+minutes Unit
+gray Unit
+sievert Unit
+katal Unit
+atmos Unit
+atmosphere Unit
+amu Unit
+atomic Unit
+mass Unit
+Unitit Unit
+au Unit
+bit Unit
+bits Unit
+per Unit
+billion Unit
+billions Unit
+b/s Unit
+bps Unit
+body Unit
+index Unit
+bms Unit
+carat Unit
+carats Unit
+coulomb Unit
+cycle Unit
+cycles Unit
+cps Unit
+c/s Unit
+crore Unit
+crores Unit
+ft Unit
+cu Unit
+ft3 Unit
+cf Unit
+ci Unit
+in3 Unit
+in Unit
+yd3 Unit
+decibel Unit
+db Unit
+decigram Unit
+decigrams Unit
+dg Unit
+percentile Unit
+deg Unit
+dekagram Unit
+dekagrams Unit
+decagram Unit
+decagrams Unit
+dekaliter Unit
+dekaliters Unit
+decaliter Unit
+decaliters Unit
+dekameter Unit
+dekameters Unit
+decameter Unit
+decameters Unit
+dollar Unit
+usd Unit
+$ Unit
+yd Unit
+dyne Unit
+dynes Unit
+sq Unit
+gigahertz Unit
+ghz Unit
+gigagram Unit
+gigagrams Unit
+gg Unit
+gigaliter Unit
+gigaliters Unit
+gl Unit
+gigameter Unit
+gigameters Unit
+gm Unit
+gigapascal Unit
+gigapascals Unit
+gpa Unit
+gw Unit
+gigawatt Unit
+gigawatts Unit
+gilbert Unit
+gi Unit
+gpu Unit
+heat Unit
+hi Unit
+hx Unit
+hectare Unit
+ha Unit
+horsepower Unit
+hp Unit
+hr Unit
+hour Unit
+hours Unit
+karat Unit
+karats Unit
+kt Unit
+k Unit
+kayser Unit
+kwh Unit
+kbp Unit
+kiloampere Unit
+kiloamperes Unit
+ka Unit
+kilobar Unit
+kilobars Unit
+kb Unit
+kbar Unit
+kbps Unit
+kilo Unit
+kb/s Unit
+kilos Unit
+kilobyte Unit
+kilobytes Unit
+kmph Unit
+km/h Unit
+kilovolt Unit
+kv Unit
+kilowatt Unit
+kw Unit
+kwh Unit
+lakh Unit
+lac Unit
+lambert Unit
+lamberts Unit
+light Unit
+year Unit
+years Unit
+man Unit
+megabyte Unit
+megabytes Unit
+mb Unit
+megahertz Unit
+mhz Unit
+megagram Unit
+megagrams Unit
+mg Unit
+ly Unit
+megampere Unit
+megamperes Unit
+ma Unit
+megapixel Unit
+megapixels Unit
+mp Unit
+microampere Unit
+microamperes Unit
+micrometer Unit
+micrometers Unit
+mph Unit
+mi/h Unit
+milliampere Unit
+milliamperes Unit
+millisecond Unit
+milliseconds Unit
+milligram Unit
+milligrams Unit
+mg Unit
+millimeter Unit
+millimeters Unit
+mm Unit
+millivolt Unit
+millivolts Unit
+milliwatt Unit
+milliwatts Unit
+nanosecond Unit
+nanoseconds Unit
+ns Unit
+nanoacre Unit
+nanoacres Unit
+nanogram Unit
+nanograms Unit
+ng Unit
+nanoliter Unit
+nanoliters Unit
+nl Unit
+nanometer Unit
+nanometers Unit
+nibble Unit
+nibbles Unit
+nybble Unit
+nybbles Unit
+o'clock Unit
+oz/gal Unit
+oz/ft2 Unit
+oz Unit
+pascal Unit
+pascals Unit
+pa Unit
+penny Unit
+annum Unit
+pa Unit
+percent Unit
+% Unit
+pc Unit
+pct Unit
+picosecond Unit
+picoseconds Unit
+qaud Unit
+quart Unit
+quarts Unit
+qt Unit
+quintal Unit
+quintals Unit
+q Unit
+rad/s Unit
+rad Unit
+rpm Unit
+revolution Unit
+rhm Unit
+sec Unit
+sq Unit
+tablespoon Unit
+tablespoons Unit
+tbsp Unit
+tblsp Unit
+tsp Unit
+teaspoon Unit
+teaspoons Unit
+tesla Unit
+t Unit
+ton Unit
+tn Unit
+v Unit
+w Unit
+wavelength Unit
+higher numEntity
+max numEntity
+min numEntity
+< numEntity
+> numEntity
+between numEntity
+interval  numEntity
+less numEntity
+more  numEntity
+north SpatialEntity
+below SpatialEntity
+coUnittry SpatialEntity
+earthquake Phenomena
+flood Phenomena
+hurricane Phenomena
+fish MarineAnimal
+jellyfish MarineAnimal
+fUnitgi Animal
+ameaba Animal
+animal LivingEntity
+tiger Animal
+lion Animal
+bird Animal
+horse Animal
+lizard Reptile
+crocodile Reptile
+giraffe Animal
+human Animal
+livestock Animal
+poultry Animal
+microzooplankton Zooplankton
+mesozooplankton Zooplankton
+zooplankton Animal
+work HumanActivity
+colonization HumanActivity
+troposphere Atmosphere
+stratosphere Atmosphere
+mesosphere Atmosphere
+thermosphere Atmosphere
+exosphere Atmosphere
+thermocline WaterBodyLayer
+pycnocline WaterBodyLayer
+sin TrignometricFUnitction
+cos TrignometricFUnitction
+cosine TrignometricFUnitction
+tan TrignometricFUnitction
+bspline CubicSpline
+sin TrignometricFUnitction
+china Location
+india Location
+japan Location
+usa Location
+boston Location
+coUnitty Location
+detroit Location
+dUnitcan Location
+singapore Location
+town Location
+batlic Location
+berkeley Location
+michigan Location
+australia Continent
+asia Continent
+europe Continent
+america Continent
+africa Continent
+antartica Continent
+deigo Location
+york Location
+california Location
+texas Location
+columbia Location
+illinois Location
+brazil Location
+germany Location
+colorado Location
+fransisco Location
+philippines Location
+denver Location
+borough Location
+alaska Location
+kenya Location
+japan Location
+korea Location
+virginia Location
+toronto Location
+thailand Location
+rome Location
+canada Location
+herzegovina Location
+bosnia Location
+sydney Location
+syracuse Location
+mexico Location
+georgia Location
+seattle Location
+angeles Location
+lagos Location
+kansas Location
+london Location
+florida Location
+taiwan Location
+oakland Location
+pakistan Location
+ireland Location
+britain Location
+jersey Location
+quebec Location
+norway Location
+nevada Location
+indonesia Location
+amsterdam Location
+carolina Location
+barbara Location
+afghanistan Location
+iraq Location
+nile River
+washington Location
+macau Location
+vietnam Location
+zealand Location
+trinidad Location
+dublin Location
+chile Location
+sacramento Location
+paris Location
+france Location
+pedrera Location
+pennsylvania Location
+montgomery Location
+montreal Location
+hawaii Location
+egypt Location
+argentina Location
+arizona Location
+andreas Location
+orange Location
+wayne Location
+horticulture Agriculture
+PlantProduction Agriculture
+cultivation Agriculture
+Irrigation Agriculture
+aquaculture Agriculture
+industrialization HumanActivity
+production HumanActivity
+navigation HumanActivity
+urbanization HumanActivity
+development HumanActivity
+management HumanActivity
+Research HumanActivity
+wyoming Location
+publication Research
+project Research
+physics Science
+chemistry Science
+mineralogy Science
+planetaryScience Science
+thermodynamics Physics
+mechanics Physics
+dynamics Physics
+rheology Physics
+analysis Research
+experiment Investigation
+proof Validation
+assessment Investigation
+evidence Assessment
+obvervation Investigation
+author Profession
+annoual Location
+mississippi Location
+southeast SpatialEntity
+northeast SpatialEntity
+southwest SpatialEntity
+northwest SpatialEntity
+western SpatialEntity
+southern SpatialEntity
+northern SpatialEntity
+central SpatialEntity
+river WaterBody
+car Vehicle
+rover Vehicle
+truck Vehicle
+train Vehicle
+ship Vehicle
+equator TropicalClimateZone
+pacific Ocean
+atlantic Ocean
+indian Ocean
+arctic Ocean
+carribbean Ocean
+island LandForm
+unit Measurement
+winter Season
+summer Season
+fall Season
+spring Season
+autumn Season
+normalized DataState
+validated DataState
+trained DataState
+verified DataState
+subsetted DataState
+mapped DataState
+scaled DataState
+regridded DataState 
+reformatted DataState
+reconstructed DataState
+reanalysed DataState
+processed DataState
+plotted DataState
+parameterized DataState
+mined DataState
+liquid StateOfMatter
+fluid StateOfMatter
+frozen StateOfMatter
+vapor StateOfMatter
+gaseous StateOfMatter
+condensed StateOfMatter
+solid StateOfMatter
+gentle SpeedState
+calm SpeedState
+gale SpeedState
+slow SpeedState
+quiescent SpeedState
+fast SpeedState
+rapid SpeedState
+great Impact
+weak Impact
+violent Impact
+significant Impact
+moderate Impact
+extreme Impact
+extensive Impact
+strong Impact
+light Impact
+rough Impact
+minor Impact
+massive Impact
+heavy Impact
+minimal Impact
+hazard Impact
+gentle Impact
+disasterous Impact
+disaster Impact
+catastrophic Impact
+considerable Impact
+devastating Impact
+incredible Impact
+forecasted Trust
+examined Trust
+imprecise Trust
+precise Trust
+certain Trust
+certainty Trust
+assessed Trust
+assert Trust
+proven Trust
+analysed Trust
+analyse Trust
+predictive Trust
+predict Trust
+published Trust
+publish Trust
+researched Trust
+observed Trust
+observe Trust
+cool TemperatureRange
+hot TemperatureRange
+warm TemperatureRange
+lukewarm TemperatureRange
+cold TemperatureRange
+tepid TemperatureRange
+old Age
+new Age
+young Age
+antique Age
+ancient Age
+antiquated Age
+incipient Age
+lifetime Age
+past Age
+present Age
+future Age
+mature Age
+recent Age
+immature Age
+prehistoric Age
+primordial Age
+decadal Frequency
+annual Frequency
+yearly Frequency
+monthly Frequency
+biweekly Frequency
+weekly Frequency
+seasonal Frequency
+biannual Frequency
+daily Frequency
+hourly Frequency
+stationary Frequency
+diurnal Frequency
+cyclic Frequency
+interrupted Frequency
+periodic Frequency
+steady Frequency
+spasmodic Frequency
+rare Frequency
+uninterrupted Frequency
+frequent Frequency
+usual Frequency
+episodic Frequency
+erratic Frequency
+infrequent Frequency
+unusual Frequency
+consistent Frequency    </textarea>
+    
+  </div>
+</div>
+
+
+<div style="float: right; text-align: right">
+  <p id="radio1"><label for="max"></label> <input type="number" value="300" min="1" id="max">
+  <p id="radio2"><label for="per-line"><input type="checkbox" id="per-line"></label>
+  <!--<p><label for="colours"></label> <a href="#" id="random-palette">get random palette</a>-->
+  <p id="radio3"><label></label>
+    <button id="download-svg"></button><!-- |
+    <a id="download-png" href="#"></a>-->
+</div>
+
+<div id="bottomthings" style="float: left">
+  <p><label></label>
+    <label for="archimedean"><input type="radio" name="spiral" id="archimedean" value="archimedean" checked="checked"></label>
+    <label for="rectangular"><input type="radio" name="spiral" id="rectangular" value="rectangular"></label>
+  <p><label for="scale"></label>
+    <label for="scale-log"><input type="radio" name="scale" id="scale-log" value="log" checked="checked"></label>
+    <label for="scale-sqrt"><input type="radio" name="scale" id="scale-sqrt" value="sqrt"></label>
+    <label for="scale-linear"><input type="radio" name="scale" id="scale-linear" value="linear"></label>
+  <p><label for="font"></label> <input type="text" id="font" value="Impact">
+</div>
+
+<div id="angles">
+  <p><input type="number" id="angle-count" value="5" min="1"> <label for="angle-count">orientations</label>
+    <label for="angle-from">from</label> <input type="number" id="angle-from" value="-60" min="-90" max="90"> 
+    <label for="angle-to">to</label> <input type="number" id="angle-to" value="60" min="-90" max="90"> 
+</div>
+</form>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px;margin-left:116px" data-ad-client="ca-pub-2911491153890039" data-ad-slot="2029654015"></ins>
+
+<script src="d3.min.js"></script>
+<script src="cloud.min.js"></script>
+<script src="jquery-1.12.2.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+
+$(document).ready(function(){
+  $('#bottomthings').hide();
+  $('#angles').hide();
+  $('#radio1').hide();
+  $('#radio2').hide();
+  $('#radio3').hide();
+  $('#text').hide();
+});
+
+window.google_analytics_uacct = "UA-54563-3";
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-54563-3']);
+_gaq.push(['_trackPageview']);
+setTimeout(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+}, 1);
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

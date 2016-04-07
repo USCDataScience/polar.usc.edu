@@ -75,9 +75,9 @@ $(document).ready(function() {
 
 
 //var url= "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true";
-var req = createRequest(); // defined above
+//var req = createRequest(); // defined above
 // Create the callback:
-
+/*
 req.onreadystatechange = function() {
   if (req.readyState != 4) return; // Not there yet
   if (req.status != 200) {
@@ -88,9 +88,9 @@ req.onreadystatechange = function() {
   //var resp = req.responseText;
   //window.alert(resp); 
  // processData(resp); 
-}
-req.open("GET", "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true", true);
-req.send();
+}*/
+//req.open("GET", "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true", true);
+//req.send();
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -173,10 +173,10 @@ d3.csv("../../data/team37data/citiesYellow.csv", function(error, data) {
        .style("fill", "yellow");
 });
 
-var data = [20,-103]; 
+//var data = [20,-103]; 
 // load and display the cities
-d3.csv("../data/team37data/test.csv", function(error, data) {
-//d3.csv("../../data/team37data/citiesBlue.csv", function(error, data) {
+//d3.csv("../data/team37data/test.csv", function(error, data) {
+d3.csv("../../data/team37data/citiesBlue.csv", function(error, data) {
     g.selectAll("circle")
        .data(data)
        .enter()

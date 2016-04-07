@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>FacetView</title>
+    <title>FacetView - USC Data Science - Polar Database</title>
 
     <!-- callouts -->
     <link rel="stylesheet" href="callouts.css">
@@ -20,11 +20,25 @@
     <link rel="stylesheet" href="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.css">
     <script type="text/javascript" src="vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.min.js"></script>
 
+    <script type="text/javascript" src="vendor/jquery/1.7.1/jquery.js"></script>
+
     <script type="text/javascript" src="dist.jquery.facetview.js"></script>
 
     <link rel="stylesheet" href="css/facetview.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+    $(function(){
+      $("#header").load("../static/html/header.html");
+    });
+    </script>
+
+    <script>
+    $(function(){
+      $("#secondary-header").load("../static/html/header-secondary.html");
+    });
+    </script>
 
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
@@ -101,28 +115,6 @@
                         size: 10,
                         mincount: 1
                     }
-                    /*,
-                    {
-                        'field': 'stream_size',
-                        'display': 'File Size',
-                        "type": "range",
-                        "range": [{
-                            "to": 10240,
-                            "display": "< 10KB"
-                        }, {
-                            "from": 10241,
-                            "to": 1048576,
-                            "display": "10KB - 1MB"
-                        }, {
-                            "from": 1048577,
-                            "to": 5242880,
-                            "display": "1MB - 5MB"
-                        }, {
-                            "from": 5242881,
-                            "display": "> 5MB"
-                        }],
-                        "open": true
-                    },*/
                 ],
                 paging: {
                     from: 0,
@@ -137,20 +129,30 @@
     <div class="navbar navbar-static-top">
         <div class="navbar-inner">
             <div class="container-fluid usc-header">
-				<a class="navbar-brand" href="/" style="color:white">Home</a>
-                <ul class="nav">
-                    <li><a href="">FacetView</a>
-                        <!--<li><a href="/">Home</a>-->
-                    </li>
-					<li><a href="/Polar/banana/#/dashboard">Banana Dashboard</a>
-                    <!--<li><a href="/banana/">Banana Dashboard</a>-->
-                    </li>
-                </ul>
-				<a href="http://usc.edu" class="pull-right">
-					<img src="usc-primary-logotype.svg" width="176px" height="38px">
-				</a>
+
+				        <a class="navbar-brand" href="/" style="color:white">Home</a>
+                    <ul class="nav">
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#about" style="color:#ffffff">About</a></li>
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#features" style="color:#ffffff">Insights</a></li>
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#search" style="color:#ffffff">Search</a></li>
+                        <li><a class="page-scroll" href="http://polar.usc.edu/#learn-more"style="color:#ffffff">Partners</a></li>
+                    </ul>
+
+        				<a href="http://usc.edu" class="pull-right">
+        					<img src="usc-primary-logotype.svg" width="176px" height="38px">
+        				</a>
+
             </div>
         </div>
+    </div>
+
+    <div id="nav-secondary">
+      <nav class="navbar">
+        <ul class="nav navbar-nav nav-ul-secondary">
+          <li><a class="navlink" href="http://polar.usc.edu/Polar/banana/#/dashboard">Banana</a></li>
+          <li><a class="navlink" href="http://polar.usc.edu/Polar/facetview/">FacetView</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div class="container" style="width:80%">

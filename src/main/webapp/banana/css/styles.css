@@ -1,7 +1,7 @@
 /**********************************************
 2	  *   Generic Mods to Bootstrap
 3	  *********************************************/
-4	
+4
 
 html, body {
   background-color: #eee;
@@ -9,32 +9,39 @@ html, body {
 
 .usc-header {
 	padding-top: 7px;
-	padding-bottom: 7px;
 	background-color: #990000;
 }
 
-.home-link {
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-float: left;
-padding: 15px 15px;
-font-size: 18px;
-line-height: 20px;
-background-color: transparent;
-
+.nav-ul-secondary {
+  padding-left: 84px;
 }
 
-.usc-header  .nav > a:hover, a:focus {
-	text-decoration: none;
+.navbar-brand {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 62px;
 }
 
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: transparent;
+}
 
-.navbar .usc-header .nav > li > a {
+.navbar .nav>li>a {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-weight: normal;
+	  font-weight: normal;
 }
 
-.navbar .usc-header  .nav > li > a:focus, .navbar .usc-header .nav > li > a:hover {
-    background-color: transparent;
+#nav-secondary {
+  margin-top: -20px;
+  max-height: 50px;
+  height: 50px;
+  background-color: #000;
+}
+
+.usc-header > a:hover, a:focus {
 	text-decoration: none;
 }

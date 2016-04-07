@@ -32,12 +32,17 @@ body {
   text-align: center;
 }
 
+.nav-ul-secondary {
+  padding-left: 84px;
+}
+
 .navbar-brand {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   float: left;
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px;
+    margin-left: 62px;
 }
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
@@ -47,7 +52,14 @@ body {
 .navbar .nav>li>a {
     padding-top: 15px;
     padding-bottom: 15px;
-	font-weight: normal;
+	  font-weight: normal;
+}
+
+#nav-secondary {
+  margin-top: -20px;
+  max-height: 50px;
+  height: 50px;
+  background-color: #000;
 }
 
 .usc-header > a:hover, a:focus {
@@ -62,13 +74,7 @@ body {
   border-color: #e7e7e7;
 }
 
-/* specific additions for the example index page */
-.nav-logo img {
-  margin-top: 4px;
-}
-
 h4 {
   line-height: 28px;
   margin-bottom: 10px;
 }
-

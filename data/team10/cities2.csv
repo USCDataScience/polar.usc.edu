@@ -1,0 +1,969 @@
+code,city,country,lat,lon
+XXX,Germany,UnitedStates,52.3471,24.3085
+XXX,The Lakes,UnitedStates,-18.26667,142.03334
+XXX,Annoual,UnitedStates,35.12985,-3.58562
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Upper Pearls,UnitedStates,12.15,-61.61667
+XXX,Ontario International Airport,UnitedStates,34.05584,-117.602
+XXX,Silicon Valley,UnitedStates,44.82344,20.45813
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Sacramento,UnitedStates,-19.93333,-47.48333
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Im,UnitedStates,61.38333,64.25
+XXX,Spring,UnitedStates,-35.50354,149.04897
+XXX,Virginia,UnitedStates,14,-88.38333
+XXX,Foster,UnitedStates,5.10133,-54.37742
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Iceland,UnitedStates,-21.76667,114.53333
+XXX,New Ch,UnitedStates,22.27859,92.1991
+XXX,Maryland,UnitedStates,-31.51377,116.0567
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Rocky Mountains,UnitedStates,43.35826,-110.91743
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Pine Drive,UnitedStates,-33.80812,138.80003
+XXX,Iceland,UnitedStates,38.98147,1.30088
+XXX,Las Cruces,UnitedStates,25.21434,-106.83304
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Oak Ridge,UnitedStates,-34.28695,138.92969
+XXX,River,UnitedStates,-37.7677,140.80875
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Hollywood,UnitedStates,-30.57387,148.57497
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Use,UnitedStates,6.36221,5.58273
+XXX,Asia,UnitedStates,16.95003,-91.31636
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Northern Region,UnitedStates,-11,34
+XXX,Clyde River,UnitedStates,-35.71667,150.2
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Los Angeles,UnitedStates,9.0125,125.60806
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Rhode Island,UnitedStates,41.75038,-71.49978
+XXX,Green,UnitedStates,55.99752,8.99691
+XXX,Grand Rapids,UnitedStates,41.412,-83.86439
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Buy,UnitedStates,42.32639,41.62278
+XXX,Baltimore,UnitedStates,-34.91454,147.58598
+XXX,Java,UnitedStates,-21.95,-48.38333
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Stanford,UnitedStates,52.51667,0.73333
+XXX,Sun,UnitedStates,38.6714,38.98866
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Montana,UnitedStates,-41.5955,146.58714
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Rodds Peninsula,UnitedStates,-24.01667,151.66667
+XXX,Rocky Mountain,UnitedStates,-20.81667,148.65
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Dont,UnitedStates,46.35478,12.14368
+XXX,Pine Drive,UnitedStates,-33.80812,138.80003
+XXX,Risk,UnitedStates,40.67087,-88.40533
+XXX,Luke,UnitedStates,42.89611,20.22194
+XXX,Travelodge Urbana Champaign,UnitedStates,40.11636,-88.21146
+XXX,Summit,UnitedStates,13.9163,121.9959
+XXX,Santa Cruz,UnitedStates,16.06234,-90.5413
+XXX,The Hague,UnitedStates,-32.20197,134.1327
+XXX,Santa Cruz,UnitedStates,16.06234,-90.5413
+XXX,Iceland,UnitedStates,43.72062,10.39558
+XXX,Cuba,UnitedStates,5.34781,-74.92447
+XXX,China,UnitedStates,17.45207,-96.84203
+XXX,Utah Lake,UnitedStates,-30.2318,144.6179
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,The Anchorage,UnitedStates,-43.39,147.1
+XXX,Obama,UnitedStates,35.5,135.75
+XXX,Idaho,UnitedStates,-30.23363,151.33347
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Alaska,UnitedStates,16.4,107.73333
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Yosemite,UnitedStates,40.07356,116.52565
+XXX,Oregon,UnitedStates,-30.13253,150.5523
+XXX,Blue River,UnitedStates,6.63691,-58.71334
+XXX,Syracuse,UnitedStates,43.04812,-76.14742
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,France Bay,UnitedStates,-33.8485,151.1179
+XXX,France Bay,UnitedStates,-33.8485,151.1179
+XXX,Huntsville,UnitedStates,34.73037,-86.5861
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Phoenix,UnitedStates,-34.96862,139.18517
+XXX,Wyoming,UnitedStates,-26.75,148.41667
+XXX,New Zealand,UnitedStates,-42,174
+XXX,Turkey,UnitedStates,-24.09994,151.65575
+XXX,Buenos Aires,UnitedStates,16.47211,-90.50543
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Dwarf Creek,UnitedStates,6.12979,-57.4423
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Juneau County,UnitedStates,43.92444,-90.11402
+XXX,Texas,UnitedStates,18.05333,-91.92139
+XXX,Luke,UnitedStates,42.89611,20.22194
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Alabama,UnitedStates,-34.52908,146.62035
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Washington,UnitedStates,-34.93703,147.24106
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Africa,UnitedStates,5.40283,-74.86718
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Northern Region,UnitedStates,-11,34
+XXX,Argentina,UnitedStates,-16.73333,-40.33333
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Soldiers Field,UnitedStates,42.37093,-71.12866
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Riverside,UnitedStates,-27.83319,114.737
+XXX,Foster,UnitedStates,5.10133,-54.37742
+XXX,Wyoming,UnitedStates,-26.75,148.41667
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Boulder,UnitedStates,46.23659,-112.12083
+XXX,Ottawa,UnitedStates,45.41858,-75.69717
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Terminal M,UnitedStates,-22.90118,-43.27523
+XXX,Santa Fe,UnitedStates,21.26278,-77.88889
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Boranup Community,UnitedStates,-34.10243,115.0687
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Oglala,UnitedStates,43.18859,-102.73962
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Venezuela,UnitedStates,-20.83333,-40.9
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Orbit,UnitedStates,14.3311,120.93036
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Port Kennedy Scientific Park,UnitedStates,-32.36306,115.7097
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,The Left Eye,UnitedStates,-37.91431,146.34708
+XXX,Spring,UnitedStates,-35.50354,149.04897
+XXX,Yellowstone,UnitedStates,53.73344,-114.38539
+XXX,Annoual,UnitedStates,35.12985,-3.58562
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Palm,UnitedStates,-37.73414,142.27168
+XXX,Athens Township,UnitedStates,48.41634,-103.60255
+XXX,Oklahoma,UnitedStates,-33.67742,115.1899
+XXX,Copenhagen,UnitedStates,-21.30004,119.8152
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Alaska,UnitedStates,33.66754,-111.86542
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Washington,UnitedStates,-34.93703,147.24106
+XXX,Blueberry Hill,UnitedStates,-26.59152,151.65273
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Georgia,UnitedStates,32.75042,-83.50018
+XXX,Lucks All,UnitedStates,-37.4557,146.08542
+XXX,Call,UnitedStates,41.18272,-111.99744
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,New Century,UnitedStates,29.30455,121.43918
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Google Lake,UnitedStates,46.61809,-94.01799
+XXX,Greater New Orleans Church,UnitedStates,29.97321,-90.10179
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Oklahoma,UnitedStates,-33.67742,115.1899
+XXX,Germany,UnitedStates,52.3471,24.3085
+XXX,Paris,UnitedStates,48.86,2.34444
+XXX,Paris,UnitedStates,48.86,2.34444
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Iceland,UnitedStates,51.50005,-103.91775
+XXX,London,UnitedStates,60.02058,10.00489
+XXX,Baltimore,UnitedStates,-34.91454,147.58598
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Rome,UnitedStates,-3.6326,133.6839
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Como,UnitedStates,-33.99941,151.06389
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,Ohio,UnitedStates,-35.93196,149.39023
+XXX,Port Kennedy Scientific Park,UnitedStates,-32.36306,115.7097
+XXX,Los,UnitedStates,-2.11848,130.31586
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Ridge,UnitedStates,51.68911,-0.24445
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Columbia,UnitedStates,22.1,-80.58333
+XXX,Oregon,UnitedStates,-30.13253,150.5523
+XXX,Santa Cruz,UnitedStates,16.06234,-90.5413
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,New York,UnitedStates,53.07897,-0.14008
+XXX,Buffalo,UnitedStates,-38.65,146.03333
+XXX,Sunset,UnitedStates,-31.56849,116.1129
+XXX,Mexico City,UnitedStates,19.42847,-99.12766
+XXX,Nova Scotia,UnitedStates,-35.16361,149.06322
+XXX,Edwards,UnitedStates,-36.08801,142.92319
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Carolina,UnitedStates,-20.53333,-40.83333
+XXX,Main,UnitedStates,-31.86667,27.95
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Silicon Mine,UnitedStates,36.95967,-116.64645
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Iceland,UnitedStates,35.21592,-92.79628
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Japan,UnitedStates,42.69139,19.71167
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Summit,UnitedStates,13.9163,121.9959
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Washington,UnitedStates,-34.93703,147.24106
+XXX,Houston,UnitedStates,20.09201,-87.47469
+XXX,Mason,Masson,UnitedStates,18.4,-73.15
+XXX,Hietala,UnitedStates,64.67785,29.4903
+XXX,Richmond,UnitedStates,7.27398,-58.49538
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Ohio,UnitedStates,-35.93196,149.39023
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,To Da,UnitedStates,16.4,107.73333
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Jinn College for Women,UnitedStates,34.00941,71.48394
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Spring,UnitedStates,-35.50354,149.04897
+XXX,Washington,UnitedStates,-34.93703,147.24106
+XXX,Philadelphia,UnitedStates,38.35464,28.51555
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,New Ch,UnitedStates,22.27859,92.1991
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Ocean Dam,UnitedStates,-21.56773,137.25552
+XXX,Los Angeles,UnitedStates,9.0125,125.60806
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Great Whernside,UnitedStates,54.16667,-2
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Ottawa,UnitedStates,45.41858,-75.69717
+XXX,Virginia,UnitedStates,14,-88.38333
+XXX,Cuba,UnitedStates,5.34781,-74.92447
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,K Field,UnitedStates,21.29279,-157.8119
+XXX,Wisconsin,UnitedStates,-34.33156,137.87949
+XXX,Kansas,UnitedStates,38.50029,-98.50063
+XXX,Sacramento,UnitedStates,-19.93333,-47.48333
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Fort Pierce,UnitedStates,27.44671,-80.32561
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Century,UnitedStates,36.78954,118.06981
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Indiana,UnitedStates,-29.9269,151.28688
+XXX,Spring,UnitedStates,-35.50354,149.04897
+XXX,Argentina,UnitedStates,-16.73333,-40.33333
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Syria,UnitedStates,35.27348,33.75529
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Southern Dam,UnitedStates,-31.05342,122.2964
+XXX,America,UnitedStates,44.72274,7.8659
+XXX,China,UnitedStates,17.45207,-96.84203
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Mount Shakespeare,UnitedStates,-42.43,146.39
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,India,UnitedStates,58.57514,5.75946
+XXX,Embassy of Pakistan,UnitedStates,15.33405,44.20028
+XXX,Glen Model,UnitedStates,-29.00373,150.47472
+XXX,Mountain View,UnitedStates,-20.76667,144.33333
+XXX,Port Kennedy Scientific Park,UnitedStates,-32.36306,115.7097
+XXX,Como,UnitedStates,-33.99941,151.06389
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Indochina,UnitedStates,16,107
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Houston,UnitedStates,20.09201,-87.47469
+XXX,Hollywood,UnitedStates,-30.57387,148.57497
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Montana,UnitedStates,-41.5955,146.58714
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Hollywood,UnitedStates,-30.57387,148.57497
+XXX,Parque Columbia,UnitedStates,-22.81359,-43.3408
+XXX,B n,UnitedStates,59.35628,10.28443
+XXX,Diego'S,UnitedStates,41.07496,1.04819
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Twitter Creek,UnitedStates,59.71833,-151.64194
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,America,UnitedStates,44.72274,7.8659
+XXX,Tel Aviv University,UnitedStates,32.1134,34.80353
+XXX,Pitas Neck,UnitedStates,14.41667,120.5
+XXX,Journalism Building,UnitedStates,46.85881,-113.98483
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Buffalo,UnitedStates,-38.65,146.03333
+XXX,Tucson,UnitedStates,-22.6774,143.34302
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,America,UnitedStates,44.72274,7.8659
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Las,UnitedStates,49.73896,19.42869
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Mexico,UnitedStates,15.0646,120.7198
+XXX,Vancouver,UnitedStates,-48.03333,166.5
+XXX,Eagle River,UnitedStates,45.91718,-89.2443
+XXX,Florence,UnitedStates,-12.86181,45.19464
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,China,UnitedStates,17.45207,-96.84203
+XXX,Toronto,UnitedStates,-33,151.6
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Northern Region,UnitedStates,-11,34
+XXX,Nam Hi,UnitedStates,19.5,104.48333
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Table Mesa,UnitedStates,37.45557,-103.05048
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Northern Mariana Islands,UnitedStates,15.214,145.7565
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Labor,UnitedStates,-8.91599,-78.51681
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Kosovo,UnitedStates,42.80139,20.71778
+XXX,Magnetic Hills,UnitedStates,-41.51,146.63
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Cambridge,UnitedStates,51.73333,-2.36667
+XXX,China,UnitedStates,17.45207,-96.84203
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,Mount Shakespeare,UnitedStates,-42.43,146.39
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,Oregon,UnitedStates,-30.13253,150.5523
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Gulf of Mexico,UnitedStates,25,-90
+XXX,New Jersey,UnitedStates,40.16706,-74.49987
+XXX,Walker Creek,UnitedStates,-51.96543,-58.76357
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Paris,UnitedStates,48.86,2.34444
+XXX,Detroit,UnitedStates,44.73401,-122.1498
+XXX,Mission District,UnitedStates,37.75993,-122.41914
+XXX,Paris,UnitedStates,48.86,2.34444
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,New Mexico,UnitedStates,-30.30759,120.9584
+XXX,River Irvine,UnitedStates,55.6,-4.7
+XXX,Mission District,UnitedStates,37.75993,-122.41914
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Port Kennedy Scientific Park,UnitedStates,-32.36306,115.7097
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Moscow Top,UnitedStates,-31.1152,152.1346
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Triangle,UnitedStates,-30.45538,137.15413
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Yellowstone,UnitedStates,53.73344,-114.38539
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Fifth Street,UnitedStates,14.34339,121.06389
+XXX,Riverside,UnitedStates,-27.83319,114.737
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,North A,UnitedStates,-5.875,39.32
+XXX,Hampton University,UnitedStates,37.02297,-76.33336
+XXX,North Carolina,UnitedStates,35.50069,-80.00032
+XXX,Grand Rapids,UnitedStates,41.412,-83.86439
+XXX,Rochester,UnitedStates,-36.36153,144.69847
+XXX,Fort,UnitedStates,-22.4395,119.0189
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Vienna Township,UnitedStates,42.16675,-92.82587
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Mayes County,UnitedStates,36.30188,-95.23085
+XXX,Paris,UnitedStates,48.86,2.34444
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Spring,UnitedStates,-35.50354,149.04897
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Mississippi Hill,UnitedStates,-33.99108,122.25971
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Palm Desert,UnitedStates,33.72255,-116.37697
+XXX,Salon,UnitedStates,48.64068,4.00419
+XXX,Los Angeles,UnitedStates,9.0125,125.60806
+XXX,Spring,UnitedStates,-35.50354,149.04897
+XXX,Vancouver,UnitedStates,-48.03333,166.5
+XXX,Memphis,UnitedStates,47.40032,8.61423
+XXX,New Haven,UnitedStates,-31.25518,150.56017
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,China,UnitedStates,17.45207,-96.84203
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Chicago,UnitedStates,22.33944,-104.15972
+XXX,Embassy of Pakistan,UnitedStates,15.33405,44.20028
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Dickens,UnitedStates,45.58342,-77.88281
+XXX,Los,UnitedStates,-2.11848,130.31586
+XXX,Cleveland,UnitedStates,-41.8,147.4
+XXX,Yellowstone,UnitedStates,53.73344,-114.38539
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,La W,UnitedStates,18.54115,-99.71352
+XXX,New York,UnitedStates,53.07897,-0.14008
+XXX,Age,UnitedStates,22.8592,99.7731
+XXX,Delaware,UnitedStates,-30.59928,150.49207
+XXX,New York,UnitedStates,53.07897,-0.14008
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Copenhagen,UnitedStates,-21.30004,119.8152
+XXX,Vancouver,UnitedStates,-48.03333,166.5
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Badminton Block,UnitedStates,-20.04493,28.29519
+XXX,Ocean Front,UnitedStates,-23.01056,-43.32284
+XXX,Quinton,UnitedStates,52.11667,-1.73333
+XXX,Western,UnitedStates,30.96092,-110.40207
+XXX,Kamoa Mountains,UnitedStates,1.66667,-59
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Fort Collins,UnitedStates,40.58526,-105.08442
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Yellowstone,UnitedStates,53.73344,-114.38539
+XXX,Boulder,UnitedStates,46.23659,-112.12083
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Anand,UnitedStates,22.4,72.75
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,San Jose,UnitedStates,2.90066,-74.99889
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Bone,UnitedStates,-5.1314,122.4642
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Gore Channel,UnitedStates,-14.85,129.56667
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Greece,UnitedStates,14.32591,120.97769
+XXX,South Valley,UnitedStates,-29.2848,151.2699
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,River Irvine,UnitedStates,55.6,-4.7
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Port Kennedy Scientific Park,UnitedStates,-32.36306,115.7097
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Palo Alto,UnitedStates,25.80098,-99.87014
+XXX,Det h,UnitedStates,60.80255,6.0145
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,China,UnitedStates,17.45207,-96.84203
+XXX,Victoria,UnitedStates,22.2875,114.14417
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Iceland,UnitedStates,47.16389,-80.86
+XXX,The Rock,UnitedStates,-35.26802,147.11417
+XXX,Silicon Valley,UnitedStates,44.82344,20.45813
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Peter Bay,UnitedStates,52.09335,-128.27594
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,New York,UnitedStates,53.07897,-0.14008
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Houston,UnitedStates,20.09201,-87.47469
+XXX,Southern Ocean Villas,UnitedStates,-38.62009,143.00053
+XXX,Busuju County,UnitedStates,0.3,32.03333
+XXX,Rod am Berg,UnitedStates,50.30014,8.48917
+XXX,Brave,UnitedStates,39.7248,-80.26007
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Le,UnitedStates,-0.86667,34.48333
+XXX,Como,UnitedStates,-33.99941,151.06389
+XXX,Dartmouth,UnitedStates,7.36485,-58.49946
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Michigan,UnitedStates,48.025,-98.11705
+XXX,Santa,UnitedStates,-7.0876,109.2075
+XXX,Delhi Park,UnitedStates,-33.7985,151.1346
+XXX,Little Nore,UnitedStates,51.45,0.75
+XXX,Florida,UnitedStates,15.03333,-88.83333
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Atlantic,UnitedStates,-37.42194,140.66519
+XXX,Grant,UnitedStates,46.21056,13.87972
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,The Basin,UnitedStates,-33.7318,151.3012
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Hidden Dam,UnitedStates,-21.41049,137.17612
+XXX,Var,UnitedStates,40.02368,45.33331
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Cane Break,UnitedStates,-34.26381,115.4207
+XXX,Server Branch,UnitedStates,30.81408,-97.27583
+XXX,Monterey Bay,UnitedStates,36.79996,-121.90107
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,New York,UnitedStates,53.07897,-0.14008
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Dartmouth,UnitedStates,7.36485,-58.49946
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Hollywood,UnitedStates,-30.57387,148.57497
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Santiago,UnitedStates,1.81672,-76.77717
+XXX,Visalia,UnitedStates,36.33023,-119.29206
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Boulder,UnitedStates,46.23659,-112.12083
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Den,UnitedStates,14.0579,-12.34143
+XXX,Yaore Mountain,UnitedStates,1.7,-58.96667
+XXX,Madrid,UnitedStates,4.75564,-74.27708
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,No,UnitedStates,46.18466,14.59525
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Fairchild,UnitedStates,47.63405,-117.66855
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Walton East,UnitedStates,51.875,-4.8775
+XXX,Post,UnitedStates,-16.63268,29.09059
+XXX,Sea,UnitedStates,1.4287,124.7992
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Add,UnitedStates,37.91037,-82.5521
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,W, Hochschule,UnitedStates,47.21843,8.67753
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Tokyo,UnitedStates,4.84625,118.06746
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Fair Sydney,UnitedStates,-33.8753,151.2
+XXX,Content,UnitedStates,6.58911,-58.23736
+XXX,Argentina,UnitedStates,-16.73333,-40.33333
+XXX,Hampton,UnitedStates,51.41334,-0.36701
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,Montana,UnitedStates,-41.5955,146.58714
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Atlantic,UnitedStates,-37.42194,140.66519
+XXX,Badminton Block,UnitedStates,-20.04493,28.29519
+XXX,America,UnitedStates,44.72274,7.8659
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Bay,UnitedStates,47.289,5.71856
+XXX,Yukon,UnitedStates,62.99962,-135.00404
+XXX,Mexico,UnitedStates,15.0646,120.7198
+XXX,Toronto,UnitedStates,-33,151.6
+XXX,Riverside,UnitedStates,-27.83319,114.737
+XXX,Como,UnitedStates,-33.99941,151.06389
+XXX,Santa Cruz,UnitedStates,16.06234,-90.5413
+XXX,Embassy of Pakistan,UnitedStates,15.33405,44.20028
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,C Jensen,UnitedStates,-26.8065,-49.0897
+XXX,Koyukuk,UnitedStates,64.88028,-157.70084
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Blue Ridge,UnitedStates,-35.14614,148.9997
+XXX,Channel,UnitedStates,-34.21331,148.76328
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Luke,UnitedStates,42.89611,20.22194
+XXX,Brazil,UnitedStates,1.63414,-75.5719
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Delaware,UnitedStates,-30.59928,150.49207
+XXX,Polo,UnitedStates,18.07873,-71.28723
+XXX,Redwood Grove,UnitedStates,37.15745,-122.13413
+XXX,Pine Drive,UnitedStates,-33.80812,138.80003
+XXX,Ocean Hill,UnitedStates,-29.83683,115.33327
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,El Ni,UnitedStates,24.61053,-107.47478
+XXX,U.S. Bend,UnitedStates,61.44114,-135.15945
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Hollywood,UnitedStates,-30.57387,148.57497
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,West,UnitedStates,17.6,120.66667
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Meeting,UnitedStates,45.88283,8.53695
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Rocky Mountain National Park,UnitedStates,40.34281,-105.68364
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,New Zealand,UnitedStates,-42,174
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,North Carolina,UnitedStates,35.50069,-80.00032
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Montana,UnitedStates,-41.5955,146.58714
+XXX,Volt,UnitedStates,48.38836,-105.71889
+XXX,Magic,UnitedStates,39.14151,23.4347
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,New York,UnitedStates,53.07897,-0.14008
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Planet Creek,UnitedStates,-24.32746,148.62537
+XXX,Annoual,UnitedStates,35.12985,-3.58562
+XXX,Annual Fair (Shrawan),UnitedStates,29.69288,82.18218
+XXX,Boulder,UnitedStates,46.23659,-112.12083
+XXX,Vietnam,UnitedStates,30.33568,-111.57579
+XXX,Sandy,UnitedStates,52.12927,-0.28925
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Santa Cruz,UnitedStates,16.06234,-90.5413
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Lakeside Drive,UnitedStates,-37.85431,145.1643
+XXX,New Jersey,UnitedStates,40.16706,-74.49987
+XXX,Delhi Park,UnitedStates,-33.7985,151.1346
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,New York,UnitedStates,53.07897,-0.14008
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Como,UnitedStates,-33.99941,151.06389
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,The Lake,UnitedStates,-17.8,142.15
+XXX,Minneapolis,UnitedStates,36.09929,-81.98706
+XXX,Copenhagen,UnitedStates,-21.30004,119.8152
+XXX,Vancouver,UnitedStates,-48.03333,166.5
+XXX,Lucky Hills,UnitedStates,1.32556,103.95278
+XXX,Korea,UnitedStates,-30.77313,149.7976
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Guam,UnitedStates,16.7042,121.9029
+XXX,Haute Place,UnitedStates,19.5,-72.36667
+XXX,Hampton,UnitedStates,51.41334,-0.36701
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Share,UnitedStates,32.23,97.25378
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Dos,UnitedStates,14.2757,121.12143
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,June,UnitedStates,7.36478,8.62445
+XXX,De,UnitedStates,7.51362,-8.22161
+XXX,Cape Disappointment,UnitedStates,-54.87556,-36.12167
+XXX,Seattle,UnitedStates,47.60621,-122.33207
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,U-og,UnitedStates,9.9833,124.0595
+XXX,Kale District,UnitedStates,23.05571,94.41054
+XXX,Morningside Heights,UnitedStates,43.82512,-79.21443
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Mars,UnitedStates,46.1545,4.2468
+XXX,Alabama,UnitedStates,-34.52908,146.62035
+XXX,Bay Area,SF Bay Area,UnitedStates,37.77239,-122.42349
+XXX,Everglades,UnitedStates,-38.24042,141.50726
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Columbia,UnitedStates,22.1,-80.58333
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Santa Cruz,UnitedStates,16.06234,-90.5413
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Oslo,UnitedStates,59.91183,10.73367
+XXX,Dickens,UnitedStates,45.58342,-77.88281
+XXX,Cane Break,UnitedStates,-34.26381,115.4207
+XXX,Utah,UnitedStates,-4.63645,145.01822
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Complete,UnitedStates,32.37875,-88.72921
+XXX,Grand Drive,UnitedStates,18.65,-71.86667
+XXX,Greece,UnitedStates,14.32591,120.97769
+XXX,Nebraska,UnitedStates,-32.09979,149.27068
+XXX,Embassy of Pakistan,UnitedStates,15.33405,44.20028
+XXX,Santa-Coffee,UnitedStates,5.80341,10.21916
+XXX,Mars,UnitedStates,46.1545,4.2468
+XXX,Plum Island,UnitedStates,44.71493,-76.2301
+XXX,Sandy,UnitedStates,52.12927,-0.28925
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Los,UnitedStates,-2.11848,130.31586
+XXX,Maryland,UnitedStates,-31.51377,116.0567
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Mie,UnitedStates,32.96667,131.58333
+XXX,Hampton,UnitedStates,51.41334,-0.36701
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,New Jersey,UnitedStates,40.16706,-74.49987
+XXX,Chiles,UnitedStates,10.40596,-84.33706
+XXX,Calgary,UnitedStates,-29.69258,148.38005
+XXX,Dwarf Creek,UnitedStates,6.12979,-57.4423
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Boulder,UnitedStates,46.23659,-112.12083
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Nam Hi,UnitedStates,19.5,104.48333
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Anchorage,UnitedStates,-35.43656,138.68195
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Wyoming,UnitedStates,-26.75,148.41667
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Salt,UnitedStates,41.97489,2.79281
+XXX,Yellowstone,UnitedStates,53.73344,-114.38539
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,New Guinea,UnitedStates,9.31667,-82.16667
+XXX,Content,UnitedStates,6.58911,-58.23736
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Bronx,UnitedStates,40.82732,-73.92357
+XXX,Florida,UnitedStates,15.03333,-88.83333
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,El Africa,UnitedStates,24.32972,-107.00836
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Sandy,UnitedStates,52.12927,-0.28925
+XXX,El Nio,UnitedStates,25.62455,-108.40029
+XXX,Manhattan,UnitedStates,40.78343,-73.96625
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,El Nio,UnitedStates,25.62455,-108.40029
+XXX,Israel,UnitedStates,61.84531,21.34158
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Boulder,UnitedStates,46.23659,-112.12083
+XXX,Virgin Islands,UnitedStates,18.32275,-64.80814
+XXX,Madhu Road,UnitedStates,8.772,80.1497
+XXX,The Lakes,UnitedStates,-18.26667,142.03334
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Grand Drive,UnitedStates,18.65,-71.86667
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Riverside,UnitedStates,-27.83319,114.737
+XXX,Lebanon,UnitedStates,41.63621,-72.21258
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Europe,UnitedStates,48.69096,9.14062
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Palm Desert,UnitedStates,33.72255,-116.37697
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Watch Bay,UnitedStates,-40.48658,144.73251
+XXX,Wyoming,UnitedStates,-26.75,148.41667
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,New Mexico,UnitedStates,-30.30759,120.9584
+XXX,Ok,UnitedStates,-28.06679,150.28838
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Como,UnitedStates,-33.99941,151.06389
+XXX,New Mexico,UnitedStates,-30.30759,120.9584
+XXX,Ariel,UnitedStates,-36.5309,-59.92025
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Gulf of Mexico,UnitedStates,25,-90
+XXX,Triangle,UnitedStates,-30.45538,137.15413
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,United States,UnitedStates,39.76,-98.5
+XXX,Mars,UnitedStates,46.1545,4.2468
+XXX,Polo,UnitedStates,18.07873,-71.28723
+XXX,Love,UnitedStates,-11.12309,14.67855
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Eastern,UnitedStates,19.31667,-81.13333
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Jakarta,UnitedStates,-6.21462,106.84513
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Bay Area,SF Bay Area,UnitedStates,37.77239,-122.42349
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,America,UnitedStates,44.72274,7.8659
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Boulder County,UnitedStates,40.09246,-105.3577
+XXX,Science Road,UnitedStates,-33.88571,151.18562
+XXX,El Salvador,UnitedStates,15.2,-88.15
+XXX,Nibi I,UnitedStates,5.64196,-6.6387
+XXX,Spring,UnitedStates,-35.50354,149.04897
+XXX,Grand Rapids,UnitedStates,41.412,-83.86439
+XXX,Ottawa,UnitedStates,45.41858,-75.69717
+XXX,Pharmacy Hill,UnitedStates,42.98071,-117.06153
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,North Carolina,UnitedStates,35.50069,-80.00032
+XXX,Scottsdale,UnitedStates,-41.1578,147.51727
+XXX,Lake Muir,UnitedStates,-34.51074,116.6746
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Bonanza,UnitedStates,-29.52733,148.14104
+XXX,India,UnitedStates,58.57514,5.75946
+XXX,Bay Area,SF Bay Area,UnitedStates,37.77239,-122.42349
+XXX,Fort Campbell,UnitedStates,36.59341,-87.61394
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Rome,UnitedStates,-3.6326,133.6839
+XXX,Ok,UnitedStates,-28.06679,150.28838
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Salt Lake,UnitedStates,-30.0818,142.1346
+XXX,Arizona,UnitedStates,15.63333,-87.31667
+XXX,Vancouver,UnitedStates,-48.03333,166.5
+XXX,Mount Redoubt,UnitedStates,48.95818,-121.3018
+XXX,Alameda County,UnitedStates,37.65055,-121.91789
+XXX,Switzerland,UnitedStates,-37.1525,145.41962
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Summit,UnitedStates,13.9163,121.9959
+XXX,Borg,UnitedStates,59.4868,11.39739
+XXX,Anglo Square,UnitedStates,-33.9652,151.1179
+XXX,Antarctic Point,UnitedStates,-54.06667,-36.96667
+XXX,Mississippi Hill,UnitedStates,-33.99108,122.25971
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Alabama,UnitedStates,-34.52908,146.62035
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Washington Heights,UnitedStates,41.70642,-87.65616
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Sun,UnitedStates,38.6714,38.98866
+XXX,Foster,UnitedStates,5.10133,-54.37742
+XXX,Sea,UnitedStates,1.4287,124.7992
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Columbia,UnitedStates,22.1,-80.58333
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Boulder,UnitedStates,46.23659,-112.12083
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Columbia,UnitedStates,22.1,-80.58333
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Texas,UnitedStates,18.05333,-91.92139
+XXX,America,UnitedStates,44.72274,7.8659
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Boulder Creek,UnitedStates,17.7475,122.14375
+XXX,Kotzebue Sound,UnitedStates,66.75,-163
+XXX,Iceland,UnitedStates,40.70431,-73.45655
+XXX,To Da,UnitedStates,16.4,107.73333
+XXX,Arabian Desert,UnitedStates,28,32
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,Dublin,UnitedStates,7.45357,-58.60945
+XXX,Oregon,UnitedStates,-30.13253,150.5523
+XXX,Santa Barbara,UnitedStates,46.1,10.46667
+XXX,Ocean Dam,UnitedStates,-21.56773,137.25552
+XXX,Mount Shakespeare,UnitedStates,-42.43,146.39
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,South Carolina,UnitedStates,34.00043,-81.00009
+XXX,San Francisco,UnitedStates,2.92089,-76.28996
+XXX,La,UnitedStates,61.37993,7.2986
+XXX,Canada,UnitedStates,17.19843,-92.62922
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Salt River,UnitedStates,18.41153,-77.06848
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,New Mexico,UnitedStates,-30.30759,120.9584
+XXX,Hillocks Drive,UnitedStates,-35.23191,137.12495
+XXX,London,UnitedStates,60.02058,10.00489
+XXX,El As,UnitedStates,25.24949,-103.43491
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Earth,UnitedStates,34.23314,-102.41075
+XXX,Mason,UnitedStates,45.616,11.91251
+XXX,Mars,UnitedStates,46.1545,4.2468
+XXX,Norway,UnitedStates,8.39232,-11.05826
+XXX,Antarctic Bay,UnitedStates,-54.10528,-37.00278
+XXX,Southern Ocean,UnitedStates,-60,90
+XXX,La Jolla,UnitedStates,23.03293,-109.71715
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Australia,UnitedStates,16.41257,-93.30877
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Oklahoma,UnitedStates,-33.67742,115.1899
+XXX,Vancouver,UnitedStates,-48.03333,166.5
+XXX,Alaska,Alaska Siding,UnitedStates,-17.36667,30.08333
+XXX,California,UnitedStates,-29.8804,-51.3193
+XXX,Mission,UnitedStates,46.19242,7.59283
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,North Carolina,UnitedStates,35.50069,-80.00032
+XXX,Mount Shakespeare,UnitedStates,-42.43,146.39
+XXX,Pine Island,UnitedStates,-20.51667,149.08333
+XXX,London,UnitedStates,60.02058,10.00489
+XXX,San Diego,UnitedStates,25.17661,-103.6239
+XXX,Taiwan,UnitedStates,32.32812,118.76384
+XXX,Arctic,UnitedStates,42.18564,-75.41434
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Indonesia,UnitedStates,0.41366,101.85802
+XXX,Thule Air Base,UnitedStates,76.53111,-68.70167
+XXX,Pine Mountain,UnitedStates,-27.55,152.7
+XXX,Colorado,UnitedStates,19.03995,-100.00239
+XXX,Akron,UnitedStates,41.03838,-86.02805
+XXX,Alaska,UnitedStates,-34.85396,118.05171
+XXX,Berkeley,UnitedStates,51.69111,-2.45917
+XXX,Ca,UnitedStates,-7.0877,109.2894
+XXX,Hotel City SM,UnitedStates,50.02,19.925
+XXX,Texas,UnitedStates,18.05333,-91.92139

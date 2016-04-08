@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+  margin: 0px;
+  background-color:rgba(0,0,0,0.3);
+}
+#headerDiv{
+        height: 100px;
+        width: 100%;
+        margin: 0px;
+        padding-top: 10px;
+        background-color:rgba(0,0,0,0.7);
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 2px solid white;
+    }
+    #Labels{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid grey;
+    }
+    #tableId{
+        font: 8px;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+    }
+    td{
+        padding: 2px;
+        height: 20px;
+    }
+    #venn{
+        padding-top: 20px;
+    }
+</style>
+<body>
+<div id="headerDiv"><p><span> Venn Diagram Visualization</span></p></div>
+        <div id="Labels" style="font: 5px;">
+            <table id="tableId">
+                <tr>
+                    <td>D : ENTITIES FOUND IN DOCUMENT</td>
+                    <td>WT : WEIGHT</td>
+                    <td>HT : HEIGHT</td>
+                    <td>SP : SPEED</td>
+                    <td>DU : DERIVED_UNITS</td>
+                    <td>NS : NONLIVING_SUBSTANCES</td>
+                </tr>
+                <tr>
+                    <td>TP : TEMPERATURE</td>
+                    <td>TM : TIME</td>
+                    <td>ER : EARTH_REALM</td>
+                    <td>LS : LIVING_SUBSTANCES</td>
+                    <td>PP : PHYSICAL_PROCESSES</td>
+                    <td>PH : PHYSICAL_PROPERTIES</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-10 col-lg-offset-2" id="venn"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+        <script src="venn.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+                        
+            var sets = [ {sets: ['D'], size: 237}, 
+                         {sets: ['TP'], size: 15},
+                         {sets: ['WT'], size: 10}, 
+                         {sets: ['HT'], size: 12},
+                         {sets: ['TM'], size: 8}, 
+                         {sets: ['DU'], size: 25},
+                         {sets: ['SP'], size: 15},
+                         {sets: ['ER'], size: 20},
+                         {sets: ['NS'], size: 25},
+                         {sets: ['PP'], size: 21},
+                         {sets: ['PH'], size: 23},
+                         {sets: ['LS'], size: 16},
+                         {sets: ['D','TP'], size: 5},
+                         {sets: ['D','WT'], size: 2},
+                         {sets: ['D','HT'], size: 3},
+                         {sets: ['D','TM'], size: 2},
+                         {sets: ['D','DU'], size: 5},
+                         {sets: ['D','SP'], size: 0},
+                         {sets: ['D','ER'], size: 2},
+                         {sets: ['D','NS'], size: 6},
+                         {sets: ['D','PP'], size: 8},
+                         {sets: ['D','PH'], size: 4},
+                         {sets: ['D','LS'], size: 0}
+                       ];
+
+            var chart = venn.VennDiagram()
+            d3.select("#venn").datum(sets).call(chart);
+        </script>
+    </body>
+</html>

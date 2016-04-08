@@ -1,0 +1,120 @@
+{  
+   "name":"cWJaDeWm.pdf",
+   "children":[  
+      {  
+         "name":"MEASUREMENT",
+         "children":[  
+            {  
+               "name":"WEIGHT",
+               "children":[  
+                  {  
+                     "name":"1,250 kilograms"
+                  },
+                  {  
+                     "name":"80 tons"
+                  },
+                  {  
+                     "name":"35,000 tons"
+                  },
+                  {  
+                     "name":"42,000 tons"
+                  },
+                  {  
+                     "name":"600,000 tons"
+                  }
+               ]
+            },
+            {  
+               "name":"HEIGHT",
+               "children":[  
+                  {  
+                     "name":"80 kilometers"
+                  }
+               ]
+            },
+            {  
+               "name":"DERIVED_UNITS",
+               "children":[  
+                  {  
+                     "name":"5 Months"
+                  }
+               ]
+            }
+         ]
+      },
+      {  
+         "name":"SWEET",
+         "children":[  
+            {  
+               "name":"NONLIVING_SUBSTANCES",
+               "children":[  
+                  {  
+                     "name":"sand"
+                  },
+                  {  
+                     "name":"ore"
+                  },
+                  {  
+                     "name":"metal"
+                  },
+                  {  
+                     "name":"iron"
+                  },
+                  {  
+                     "name":"ice"
+                  },
+                  {  
+                     "name":"stone"
+                  }
+               ]
+            },
+            {  
+               "name":"PHYSICAL_PROPERTIES",
+               "children":[  
+                  {  
+                     "name":"ratio"
+                  }
+               ]
+            },
+            {  
+               "name":"LIVING_SUBSTANCES",
+               "children":[  
+                  {  
+                     "name":"plant"
+                  },
+                  {  
+                     "name":"plants"
+                  }
+               ]
+            },
+            {  
+               "name":"EARTH_REALM",
+               "children":[  
+                  {  
+                     "name":"river"
+                  },
+                  {  
+                     "name":"pacific"
+                  }
+               ]
+            }
+         ]
+      },
+      {  
+         "name":"GEOTOPIC",
+         "children":[  
+            {  
+               "name":"Republic of the Philippines",
+               "children":[  
+                  {  
+                     "name":"LATITUDE: 13.0"
+                  },
+                  {  
+                     "name":"LONGITUDE: 122.0"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

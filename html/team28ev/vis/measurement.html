@@ -1,0 +1,84 @@
+<div>
+    <h1 class="page-header">Measurement</h1>
+    <div class="vis-container">
+    </div>
+</div>
+<style>
+.arc text {
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: #fff;
+}
+</style>
+<script>
+(function() {
+    var container = $('.vis-container');
+    var allData;
+
+    d3.json('data/measurement.json', function(obj) {
+        if (!container.parents('body').length) { return; }
+
+        allData = _.map(obj.data, function (val, key) {
+            return { unit: key, count: val };
+        });
+        drawVis();
+    });
+
+    function drawVis() {
+        createVisualization(allData);
+    }
+
+    var width = 600,
+        height = 600,
+        radius = Math.min(width, height) / 2;
+
+    var color = d3.scale.category20();
+
+    var arc = d3.svg.arc()
+        .outerRadius(radius - 10)
+        .innerRadius(0);
+
+    var labelArc = d3.svg.arc()
+        .outerRadius(radius - 40)
+        .innerRadius(radius - 40);
+
+    var pie = d3.layout.pie()
+        .sort(null)
+        .value(function(d) {
+            return d.count;
+        });
+
+    var svg = d3.select(".vis-container").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    function createVisualization(data) {
+        var g = svg.selectAll(".arc")
+            .data(pie(data))
+            .enter().append("g")
+            .attr("class", "arc");
+
+        g.append("path")
+            .attr("d", arc)
+            .style("fill", function(d) {
+                return color(d.data.unit);
+            });
+
+        g.append("text")
+            .attr("transform", function(d) {
+                return "translate(" + labelArc.centroid(d) + ")";
+            })
+            .attr("dy", ".35em")
+            .text(function(d) {
+                return d.data.unit;
+            });
+    }
+}());
+
+//# sourceURL=vis/measurement.js
+</script>

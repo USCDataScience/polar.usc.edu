@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+
+		<!--<link rel="stylesheet" href="../css/bootstrap.min.css">-->
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+    </script>
+</head>
+<body>
+
+<div class="container">
+   <div id="header"> </div>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a style="color:#fff" href="team16-bfa.html">BFA</a></li>
+                    <li><a style="color:#fff" href="team16-bfc.html">BFC</a></li>
+                    <li><a style="color:#fff" href="team16-fht.html">FHT</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Sidebar to change the line chart and add or remove lines cart visualizations in d3 -->
+    <div class="row">
+        <div class="col-xs-11">
+            <div id="chartContainer"></div>
+        </div>
+        <div class="col-xs-1">
+            <form role="form" id="mimetype-form">
+                <strong>Select Mimetype</strong>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="xml" checked>XML
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="mpeg">MPEG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="x-wav">X-WAV
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="gzip">GZIP
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="gif">GIF
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="jpeg">JPEG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="png">PNG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="svg+xml">SVG+XML
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="tiff">TIFF
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="pdf">PDF
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="html">HTML
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="mp4">MP4
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="quicktime">QUICK TIME
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="zip">ZIP
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="checkbox" value="octetstream">OCTET-STREAM
+                    </label>
+                </div>
+            </form>
+        </div>
+
+    </div><!-- /row -->
+
+</div> <!-- /container -->
+
+<script type="text/javascript">
+    var allVals = ["xml"];
+    /**
+     * Populate array with all the checkbox values selected
+     */
+    function populateCheckedValues() {
+        allVals = [];
+        $('#mimetype-form :checked').each(function() {
+            allVals.push($(this).val());
+        });
+    }
+
+    $( document ).ready(function() {
+        updateData(allVals);
+        $(".checkbox").change(function() {
+            populateCheckedValues();
+            updateData();
+        });
+    });
+
+    /**
+     * Update the Line Chart visualization and filter the values as per the checkboxes selected
+     */
+    function updateData() {
+        $('#chartContainer').empty();
+        var svg = dimple.newSvg("#chartContainer", 1030, 600);
+        d3.json("../../data/team16data/bfa/team16-bfa.json", function (data) {
+            data = dimple.filterData(data, "mimetype", allVals);
+
+            var myChart = new dimple.chart(svg, data);
+            myChart.setBounds(60, 30, 960, 500);
+
+            var x = myChart.addCategoryAxis("x", "index");
+            x.addOrderRule("index");
+
+            myChart.addMeasureAxis("y", "frequency");
+            myChart.addSeries("mimetype", dimple.plot.line);
+
+            myChart.addLegend(5, 10, 1030, 20, "right");
+            myChart.draw();
+            cleanAxis(x, 5);
+        });
+
+        // Pass in an axis object and an interval to control the ticks
+        var cleanAxis = function (axis, oneInEvery) {
+            // This should have been called after draw, otherwise do nothing
+            if (axis.shapes.length > 0) {
+                // Leave the first label
+                var del = 0;
+                // If there is an interval set
+                if (oneInEvery > 1) {
+                    // Operate on all the axis text
+                    axis.shapes.selectAll("text").each(function (d) {
+                        // Remove all but the nth label
+                        if (del % oneInEvery !== 0) {
+                            this.remove();
+                            // Find the corresponding tick line and remove
+                            axis.shapes.selectAll("line").each(function (d2) {
+                                if (d === d2) {
+                                    this.remove();
+                                }
+                            });
+                        }
+                        del += 1;
+                    });
+                }
+            }
+        };
+    }
+
+</script>
+
+</body>
+</html>

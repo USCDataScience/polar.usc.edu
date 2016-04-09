@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!-- Bootstrap Core CSS -->
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Scrolling Nav CSS -->
+<link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../../css/styles.css" rel="stylesheet">
+<style>
+
+body {
+  background: #000;
+  padding-top: 10%;
+}
+
+.stroke {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.fill {
+  fill: #000;
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5
+}
+
+.land {
+  fill: #e6e6e6;
+}
+
+.boundary {
+  fill: none;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+</style>
+<script src="../../js/jquery.js"></script>
+<script>
+$(function(){
+  $("#header").load("../headerdouble.html");
+});
+
+</script>
+
+<body>
+<!-- Navigation -->
+    <!-- Navigation -->
+    <div id="header"> </div>
+
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script>
+
+var width = window.innerWidth,
+    height = window.innerHeight;
+
+var projection = d3.geo.airy()
+    .rotate([50, -40])
+    .scale(400)
+    .translate([width / 2.5, height/2])
+    .precision(.1)
+    .clipAngle(90)
+    .radius(90);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var graticule = d3.geo.graticule();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var tip = d3.tip()
+      .attr('class', 'd3-tip')
+      .offset([-10, 0])
+      .html(function(d) {
+        return d.state+"<br/><span>"+d.key+": "+d.count+"</span>";
+      });
+      
+var x = d3.scale.ordinal()
+            .rangeBands([0, 10]);
+svg.call(tip);
+
+svg.append("defs").append("path")
+    .datum({type: "Sphere"})
+    .attr("id", "sphere")
+    .attr("d", path);
+
+svg.append("use")
+    .attr("class", "stroke")
+    .attr("xlink:href", "#sphere");
+
+svg.append("use")
+    .attr("class", "fill")
+    .attr("xlink:href", "#sphere");
+
+svg.append("path")
+    .datum(graticule)
+    .attr("class", "graticule")
+    .attr("d", path);
+
+d3.json("../../data/json/team3-world.json", function(error, world) {
+  svg.insert("path", ".graticule")
+      .datum(topojson.feature(world, world.objects.land))
+      .attr("class", "land")
+      .attr("d", path);
+
+  svg.insert("path", ".graticule")
+      .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
+      .attr("class", "boundary")
+      .attr("d", path);
+      
+  d3.json("../../data/team3-query.txt", function(error, jsondata) {
+    
+    x.domain(['Iron','Oil','Others']);
+    
+    var c = 0;
+    var timerId = setInterval(function(){
+      if(c >= jsondata.length)
+        clearInterval(timerId)
+      else{
+        var keys = Object.keys(jsondata[c])
+              var g = svg.append("g");
+              g.selectAll("rect") 
+                .data(jsondata[c][keys[0]])
+                .enter()
+                .append("rect") 
+                .attr("x", function(d, i) {
+                    return projection([d.lon, d.lat])[0] + x(d.key);
+              })
+              .attr("width", 3)
+                .attr("y", function(d) {
+                    return projection([d.lon, d.lat])[1];
+                })
+                .attr("height",0)
+                .style("fill", function(d){
+                  if(d.key=='Iron')
+                    return 'red';
+                  if(d.key == 'Oil')
+                    return 'blue';
+                  return 'green';
+                })
+                .on('mouseover',tip.show)
+                .on('mouseout',tip.hide)
+                .transition()
+                .duration(1000)
+                .attr("y", function(d) {
+                    return projection([d.lon, d.lat])[1]-d.count*2;
+                })
+                .attr("height", function(d){
+                  return d.count*2;
+                });
+      }
+      c++;
+    },2000);                  
+    });
+});
+
+d3.select(self.frameElement).style("height", height + "px");
+
+
+</script>

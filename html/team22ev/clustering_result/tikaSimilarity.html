@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clustering Visualization</title>
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/><br/>
+    <div class="container">
+
+<div style="float:left;font: 20px sans-serif;">
+
+<h3>Sample Dataset</h3>
+<table border="1px" align="center">
+	<thead>
+		<th>Metadata</th>
+		<th>Cluster</th>
+		<th>Circle Packing</th>
+		<th>Composite</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Measurement</td>
+			<td><a href="./html/cluster-d3.html?type=measurement" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=measurement" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=measurement" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Grobid</td>
+			<td><a href="./html/cluster-d3.html?type=grobid" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=grobid" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=grobid" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Geo</td>
+			<td><a href="./html/cluster-d3.html?type=geo" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=geo" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=geo" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>SWEET</td>
+			<td><a href="./html/cluster-d3.html?type=sweet" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=sweet" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=sweet" target="_blank">o</a></td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+

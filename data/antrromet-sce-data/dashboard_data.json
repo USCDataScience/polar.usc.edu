@@ -1,0 +1,92 @@
+[
+  {
+    "Range": "0-100",
+    "freq": {
+      "audio/mpeg": 5,
+      "video/quicktime": 57,
+      "video/mp4": 234,
+      "application/mp4": 97
+    }
+  },
+  {
+    "Range": "100-200",
+    "freq": {
+      "audio/mpeg": 0,
+      "video/quicktime": 2,
+      "video/mp4": 73,
+      "application/mp4": 80
+    }
+  },
+  {
+    "Range": "200-300",
+    "freq": {
+      "audio/mpeg": 0,
+      "video/quicktime": 0,
+      "video/mp4": 3,
+      "application/mp4": 13
+    }
+  },
+  {
+    "Range": "300-400",
+    "freq": {
+      "audio/mpeg": 0,
+      "video/quicktime": 2,
+      "video/mp4": 1,
+      "application/mp4": 9
+    }
+  },
+  {
+    "Range": "400-500",
+    "freq": {
+      "audio/mpeg": 0,
+      "video/quicktime": 0,
+      "video/mp4": 1,
+      "application/mp4": 4
+    }
+  },
+  {
+    "Range": "500-600",
+    "freq": {
+      "audio/mpeg": 0,
+      "video/quicktime": 0,
+      "video/mp4": 0,
+      "application/mp4": 4
+    }
+  },
+  {
+    "Range": "600-700",
+    "freq": {
+      "audio/mpeg": 0,
+      "video/quicktime": 0,
+      "video/mp4": 0,
+      "application/mp4": 1
+    }
+  },
+  {
+    "Range": "700-800",
+    "freq": {
+      "audio/mpeg": 1,
+      "video/quicktime": 0,
+      "video/mp4": 0,
+      "application/mp4": 4
+    }
+  },
+  {
+    "Range": "800-900",
+    "freq": {
+      "audio/mpeg": 0,
+      "video/quicktime": 2,
+      "video/mp4": 0,
+      "application/mp4": 0
+    }
+  },
+  {
+    "Range": ">1000",
+    "freq": {
+      "audio/mpeg": 485,
+      "video/quicktime": 1,
+      "video/mp4": 20,
+      "application/mp4": 8
+    }
+  }
+]

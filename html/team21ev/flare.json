@@ -1,0 +1,5 @@
+{
+ "name": "flare",
+ "children": [{"name":"ClimateClassification","size":99},{"name": "Representation", "size":37},{"name":"CategoricalProperty","size":20},{"name": "Glacial Plain", "size":21},{"name":"Steam","size":34},{"name": "CoastalLandform", "size":40},{"name":"Temperature","size":29},{"name": "HeavyRainfall", "size":40},{"name":"EnergyFrom","size":35},{"name": "Research", "size":83},{"name":"Human Activity","size":87},{"name": "Industry", "size":10},{"name":"PhysicalQuantity","size":16},{"name": "GeologicTimeUnit", "size":72},{"name":"Dimension","size":70},{"name": "ProperInterval", "size":35},{"name": "Time", "size":56}]
+     }
+     

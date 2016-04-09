@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Clustering Visualization</title>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+</style>
+<script>
+        $(function(){
+          $("#header").load("headerdouble.html");
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="header"> </div>
+<div class="container" style="font: 20px sans-serif;">
+<h3>Smaller Dataset</h3>
+<table border="1px" align="center">
+	<thead>
+		<th>Distance</th>
+		<th>Cluster</th>
+		<th>Circle Packing</th>
+		<th>Composite</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Jaccard</td>
+			<td><a href="./html/cluster-d3.html?type=similarity-jaccard-100" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=similarity-jaccard-100" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=similarity-jaccard-100" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Euclidean</td>
+			<td><a href="./html/cluster-d3.html?type=kmean-euclidian-100" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=kmean-euclidian-100" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=kmean-euclidian-100" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Cosine</td>
+			<td><a href="./html/cluster-d3.html?type=kmean-cosine-100" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=kmean-cosine-100" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=kmean-cosine-100" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Edit distance</td>
+			<td><a href="./html/cluster-d3.html?type=kmean-edit-100" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=kmean-edit-100" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=kmean-edit-100" target="_blank">o</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Larger Dataset</h3>
+<table border="1px" align="center">
+	<thead>
+		<th>Distance</th>
+		<th>Cluster</th>
+		<th>Circle Packing</th>
+		<th>Composite</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Jaccard</td>
+			<td><a href="./html/cluster-d3.html?type=similarity-jaccard-500" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=similarity-jaccard-500" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=similarity-jaccard-500" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Euclidean</td>
+			<td><a href="./html/cluster-d3.html?type=kmean-euclidian-500" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=kmean-euclidian-500" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=kmean-euclidian-500" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Cosine</td>
+			<td><a href="./html/cluster-d3.html?type=kmean-cosine-500" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=kmean-cosine-500" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=kmean-cosine-500" target="_blank">o</a></td>
+		</tr>
+		<tr>
+			<td>Edit distance</td>
+			<td><a href="./html/cluster-d3.html?type=kmean-edit-500" target="_blank">o</a></td>
+			<td><a href="./html/circlepacking.html?type=kmean-edit-500" target="_blank">o</a></td>
+			<td><a href="./html/compositeViz.html?type=kmean-edit-500" target="_blank">o</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</body>

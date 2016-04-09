@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Line Chart</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+
+<style>
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line1 {
+  fill: none;
+  stroke: #ff7f0e;
+  stroke-width: 2px;
+}
+
+.line2 {
+  fill: none;
+  stroke: #1f77b4;
+  stroke-width: 2px;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="header" > </div>
+
+<div class="container">
+
+    <br/><br/><br/><br/><br/><br/>
+<h2 id="name">Byte frequency correlation between a given file's byte distribution (orange line) and the <em>BFA signature (blue line) of it's file type</em> </h2>
+<p id="ff"></p>
+<script type="text/javascript" src="d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+
+
+var fileName="../../data/team22-spring-2016-data/mime-analysis/bfc_correlation/bfc_corelation_values_output.json";  
+
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 1200 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+
+
+
+
+  //document.getElementById("name").innerHTML+=fileName;
+$.getJSON(fileName, function(json) {
+      var data=[];
+      var v=0;
+
+       $.each(json, function(i,field){
+        v1=parseFloat(field[0]);
+        v2=parseFloat(field[1]); //signature
+
+        data.push({date: parseInt(i), close1: v1, close2:v2});
+        //console.log(i+" "+v);
+        
+        });
+
+
+var line1 = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.close1); });
+
+//signature line
+var line2 = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.close2); });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+  //uncomment to get y-axis labels only for y-data available
+  //y.domain(d3.extent(data, function(d) { return d.close; }));
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Normalized Frequency");
+
+
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line1")
+      .attr("d", line1);
+
+
+      //signature line blue in color
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line2")
+      .attr("d", line2);
+});
+
+</script>
+</div>
+</body>

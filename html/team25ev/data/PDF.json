@@ -1,0 +1,23 @@
+[
+	{
+		"Score": "Worse",
+		"Count": 20
+	},
+	{
+		"Score": "Bad",
+		"Count": 200
+	},
+	{
+		"Score": "Normal",
+		"Count": 500
+	},
+	{
+		"Score": "Good",
+		"Count": 100
+	},
+	{
+		"Score": "Excellent",
+		"Count": 5
+	}
+
+]

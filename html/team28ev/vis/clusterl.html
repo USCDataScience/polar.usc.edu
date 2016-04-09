@@ -1,0 +1,60 @@
+<div>
+    <div class="page-header row">
+        <h3>Clusters:Measurement</h3>
+        <p>This visualisation contains graphs on clustering based on Location Data.</p>
+        <div class="col-md-8 col-xs-8 form-inline pull-right">
+            <select class="target">
+              <option>cluster</option>
+              <option>levelCluster</option>
+            </select>
+        </div>
+    </div>
+    <div class="vis-container">
+        <div id="chart">
+        </div>
+    </div>
+</div>
+<style>
+
+.page-header h3 {
+    margin-top: 0;
+    display: inline-block;
+}
+
+#chart {
+    position: relative;
+}
+
+#chart path {
+    stroke: #fff;
+}
+</style>
+<script>
+(function() {
+    var selection = "cluster";
+    dataPath = "location";
+
+    $( ".target" ).change(function() {
+      selection = $(this).val();
+      console.log('here');
+      $('svg').empty();
+      selectVis();
+    });
+
+
+    function selectVis() {
+        $.ajax({
+            url: 'vis/clusters/' + selection + '.html',
+            type: 'GET',
+            dataType: 'html',
+        }).done(function(responseText) {
+            $('#chart').html(responseText);
+        }).always(function () {
+
+        });
+    }
+
+    selectVis();
+    
+})();
+</script>

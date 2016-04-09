@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/team6ev/publications_by_location.css"/>
     <style type="text/css">
 
 #states path {
@@ -37,10 +37,9 @@ body{
     
      <p id="title"> Publications of TREC Polar DataSet by Location in the US</p> 
    
-    <script type="text/javascript" src="d3/d3.js"></script>
-    <script type="text/javascript" src="d3/d3.csv.js"></script>
-    <script type="text/javascript" src="d3/d3.geo.js"></script>
-    <script type="text/javascript" src="d3/d3.geom.js"></script>
+    <script type="text/javascript" src="../../js/d3.min.js"></script>
+    <script type="text/javascript" src="../../js/d3.geom.js"></script>
+    <script type="text/javascript" src="../../js/d3.geo.js"></script>
     <script type="text/javascript">
 
 var w = 2080,
@@ -65,14 +64,14 @@ var states = svg.append("svg:g")
 var cells = svg.append("svg:g")
     .attr("id", "cells");
 
-d3.json("us-states.json", function(collection) {
+d3.json("../../data/team6ev/publications_by_location.json", function(collection) {
   states.selectAll("path")
       .data(collection.features)
     .enter().append("svg:path")
       .attr("d", path);
 });
 
-d3.csv("publication.csv", function(airports) {
+d3.csv("../../data/team6ev/publication.csv", function(airports) {
   var positions = [];
 
   airports.forEach(function(airport) {

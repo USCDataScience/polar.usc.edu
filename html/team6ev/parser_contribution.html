@@ -34,7 +34,7 @@ body{
    <div id="text">
     <p>Percent Contribution of every Parser in Metadata</p>
    </div>
-<script src="d3.min.js"></script>
+<script src="../../js/d3.min.js"></script>
 <script>
 
 var width = 960,
@@ -58,7 +58,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-d3.csv("data.csv", type, function(error, data) {
+d3.csv("../../data/team6ev/parser_contribution.csv", type, function(error, data) {
   if (error) throw error;
 
   var g = svg.selectAll(".arc")

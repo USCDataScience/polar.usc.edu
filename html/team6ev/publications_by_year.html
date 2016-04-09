@@ -47,7 +47,7 @@ body{
   <div id="menu" >
     <p><font size=7 family=verdana>&nbsp;&nbsp; &nbsp; &nbsp; Percentage Distribution of Publications by Year</font></p>
   </div>
-<script src="d3.min.js"></script>
+<script src="../../js/d3.min.js"></script>
 <script>
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -75,7 +75,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("data.tsv", type, function(error, data) {
+d3.tsv("../../data/team6ev/publications_by_year.tsv", type, function(error, data) {
   if (error) throw error;
 
   x.domain(data.map(function(d) { return d.yearrange; }));

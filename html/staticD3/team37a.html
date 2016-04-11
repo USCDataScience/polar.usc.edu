@@ -49,8 +49,6 @@ body {
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 <script src="tooltip/themes/2/tooltip.js"></script>
 <link href="tooltip/themes/2/tooltip.css" rel="stylesheet" type="text/css" />
-  <script src="../js/jquery.csv"></script>
-
 <script>
 var width = 960,
     height = 500;
@@ -61,36 +59,8 @@ var projection = d3.geo.mercator()
     .rotate([-180,0]);
 
 setTimeout(function() {
-   /*
-$(document).ready(function() {
-    $.ajax({
-        type: "GET",
-        url: "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true",
-        dataType: "text",
-        success: function(data) {processData(data);}
-     });
-});
-*/
+    
 
-
-
-//var url= "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true";
-//var req = createRequest(); // defined above
-// Create the callback:
-/*
-req.onreadystatechange = function() {
-  if (req.readyState != 4) return; // Not there yet
-  if (req.status != 200) {
-    // Handle request failure here...
-    return;
-  }
-  // Request successful, read the response
-  //var resp = req.responseText;
-  //window.alert(resp); 
- // processData(resp); 
-}*/
-//req.open("GET", "http://polar.usc.edu/solr/geo/select?q=*ice*&fl=location_coordinates&wt=csv&indent=true", true);
-//req.send();
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -105,38 +75,9 @@ var g = svg.append("g");
 d3.json("../../data/team37data/world-110m2.json", function(error, topology) {
 
 // load and display the cities
-//declining
-d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+declining%0A&fl=location_coordinates&wt=csv&indent=true", function(error, data) {
-
-    var array = {}; 
-    var data2 = []; 
-    data.forEach(function(i,array)
-    {
-      var string = i.location_coordinates;
-      var array = string.split(/\\,|\,/);
-      //alert(array.length); 
-      for(i=0; i<array.length-1; i+=2)
-      {
-        //alert(message); 
-        if(array[i]=="") continue; 
-        var long = parseFloat(array[i]);
-        var lat = parseFloat(array[i+1]);
-        var message = "Coordinates: " + array[i] +"," +array[i+1];
-        var temp = new Object();
-        temp["lon"] = lat;
-        temp["lat"] = long;
-        temp["city"] = message; 
-        data2.push(temp); 
-        //addpoint(array[i+1], array[i], message,"red" );
-      }
-    });
-    /*
-    for(var i=0; i<data2.length; i++)
-    {
-      //alert(data2[i].lon +" "+data2[i].lat); 
-    }*/
+d3.csv("../../data/team37data/citiesRed.csv", function(error, data) {
     g.selectAll("circle")
-       .data(data2)
+       .data(data)
        .enter()
        .append("a")
                   .attr("xlink:href", function(d) {
@@ -155,6 +96,7 @@ d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+declining%0A&fl=lo
        .attr("r", 10)
        .style("fill", "red");
 });
+
 
 // load and display the cities
 d3.csv("../../data/team37data/citiesGreen.csv", function(error, data) {
@@ -178,150 +120,35 @@ d3.csv("../../data/team37data/citiesGreen.csv", function(error, data) {
        .attr("r", 10)
        .style("fill", "green");
 });
-$.ajax(
-{
-  url: "http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+stable%0A&fl=location_coordinates&wt=csv&indent=true", 
-  //dataType: 'jsonp',
-  success: function(result)
-  {
-    d3.csv(result, function(error, data) {
-      alert(result); 
-    var array = {}; 
-  var data4 = []; 
-  data.forEach(function(i,array)
-  {
-    var string = i.location_coordinates;
-    var array = string.split(/\\,|\,/);
-    //alert(array.length); 
-    for(i=0; i<array.length-1; i+=2)
-    {
-      //alert(message); 
-      if(array[i]=="") continue; 
-      var long = parseFloat(array[i]);
-      var lat = parseFloat(array[i+1]);
-      var message = "Coordinates Yellow: " + array[i] +"," +array[i+1];
-      var temp = new Object();
-      temp["lon"] = lat;
-      temp["lat"] = long;
-      temp["city"] = message; 
-      data4.push(temp); 
-      //addpoint(array[i], array[i-1], message );
-    }
-  });
-  /*
-  for(var i=0; i<data4.length; i++)
-  {
-    alert(data4[i].lon +" "+data4[i].lat); 
-  }
-*/
-  g.selectAll("circle")
-     .data(data4)
-     .enter()
-     .append("a")
-                .attr("xlink:href", function(d) {
-                    return "https://www.google.com/search?q="+d.city;}
-                )
-     .on("mouseover", function(d) {
-      tooltip.pop(this, d.city + "<br>" + "45 %")
-     })           
-     .append("circle")
-     .attr("cx", function(d) {
-             return projection([d.lon, d.lat])[0];
-     })
-     .attr("cy", function(d) {
-             return projection([d.lon, d.lat])[1];
-     })
-     .attr("r", 10)
-     .style("fill", "yellow");
-});
-    
 
-  }
-  ,error:function()
-  {
-    alert("Error"); 
-  }
-}
-);
 // load and display the cities
-d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+stable%0A&fl=location_coordinates&wt=csv&indent=true", function(error, data) {
-    var array = {}; 
-  var data4 = []; 
-  data.forEach(function(i,array)
-  {
-    var string = i.location_coordinates;
-    var array = string.split(/\\,|\,/);
-    //alert(array.length); 
-    for(i=0; i<array.length-1; i+=2)
-    {
-      //alert(message); 
-      if(array[i]=="") continue; 
-      var long = parseFloat(array[i]);
-      var lat = parseFloat(array[i+1]);
-      var message = "Coordinates Yellow: " + array[i] +"," +array[i+1];
-      var temp = new Object();
-      temp["lon"] = lat;
-      temp["lat"] = long;
-      temp["city"] = message; 
-      data4.push(temp); 
-      //addpoint(array[i], array[i-1], message );
-    }
-  });
-  /*
-  for(var i=0; i<data4.length; i++)
-  {
-    alert(data4[i].lon +" "+data4[i].lat); 
-  }
-*/
-  g.selectAll("circle")
-     .data(data4)
-     .enter()
-     .append("a")
-                .attr("xlink:href", function(d) {
-                    return "https://www.google.com/search?q="+d.city;}
-                )
-     .on("mouseover", function(d) {
-      tooltip.pop(this, d.city + "<br>" + "45 %")
-     })           
-     .append("circle")
-     .attr("cx", function(d) {
-             return projection([d.lon, d.lat])[0];
-     })
-     .attr("cy", function(d) {
-             return projection([d.lon, d.lat])[1];
-     })
-     .attr("r", 10)
-     .style("fill", "yellow");
-});
-
-//var data = [20,-103]; 
-// load and display the cities
-//d3.csv("../data/team37data/test.csv", function(error, data) {
-d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+increasing%0A&fl=location_coordinates&wt=csv&indent=true", function(error, data) {
-  var array = {}; 
-  var data3 = []; 
-  data.forEach(function(i,array)
-  {
-    var string = i.location_coordinates;
-    var array = string.split(/\\,|\,/);
-    //alert(array.length); 
-    for(i=0; i<array.length-1; i+=2)
-    {
-      //alert(message); 
-      if(array[i]=="") continue; 
-      var long = parseFloat(array[i]);
-      var lat = parseFloat(array[i+1]);
-      var message = "Coordinates: " + array[i] +"," +array[i+1];
-      var temp = new Object();
-      temp["lon"] = lat;
-      temp["lat"] = long;
-      temp["city"] = message; 
-      data3.push(temp); 
-      //addpoint(array[i], array[i-1], message );
-    }
-  });
+d3.csv("../../data/team37data/citiesYellow.csv", function(error, data) {
     g.selectAll("circle")
-       .data(data3)
+       .data(data)
+       .enter()
+       .append("a")
+                  .attr("xlink:href", function(d) {
+                      return "https://www.google.com/search?q="+d.city;}
+                  )
+       .on("mouseover", function(d) {
+        tooltip.pop(this, d.city + "<br>" + "45 %")
+       })           
+       .append("circle")
+       .attr("cx", function(d) {
+               return projection([d.lon, d.lat])[0];
+       })
+       .attr("cy", function(d) {
+               return projection([d.lon, d.lat])[1];
+       })
+       .attr("r", 10)
+       .style("fill", "yellow");
+});
+
+
+// load and display the cities
+d3.csv("../../data/team37data/citiesBlue.csv", function(error, data) {
+    g.selectAll("circle")
+       .data(data)
        .enter()
        .append("a")
                   .attr("xlink:href", function(d) {
@@ -369,74 +196,7 @@ function loadDonutQuery(){
   var url = "team37a1.html";
  window.open(url, '_blank');
   }
-function processData(allText) {
-    var allTextLines = allText.split(/\r\n|\n/);
-    var headers = allTextLines[0].split(',');
-    var lines = [];
 
-    for (var i=1; i<allTextLines.length; i++) {
-        var data = allTextLines[i].split(',');
-        if (data.length == headers.length) {
-
-            var tarr = [];
-            for (var j=0; j<headers.length; j++) {
-                tarr.push(headers[j]+":"+data[j]);
-            }
-            lines.push(tarr);
-        }
-    }
-    alert(lines);
-}
-/*
-  function addpoint(lat,lon,text,color) {
-
-    var gpoint = g.append("g").attr("class", "circle");
-    var x = lon;
-    var y = lat; 
-
-    gpoint.append("svg:circle")
-          .attr("cx", x)
-          .attr("cy", y)
-          .attr("class","point")
-          .attr("r", 10).style("fill",color);
-    //tooltips
-    gpoint
-      .on("mousemove", function(d,i) {
-
-        var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
-
-        tooltip.classed("hidden", false).html(text)
-               .style("top", (d3.event.pageY + 16) + "px")
-        .style("left", (d3.event.pageX + 16) + "px")
-               
-
-        })
-        .on("mouseout",  function(d,i) {
-          tooltip.classed("hidden", true);
-        }); 
-
-
-
-  }*/
-
-function createRequest() {
-  var result = null;
-  if (window.XMLHttpRequest) {
-    // FireFox, Safari, etc.
-    result = new XMLHttpRequest();
-    if (typeof xmlhttp.overrideMimeType != 'undefined') {
-      result.overrideMimeType('text/xml'); // Or anything else
-    }
-  }
-  else if (window.ActiveXObject) {
-    // MSIE
-    result = new ActiveXObject("Microsoft.XMLHTTP");
-  } 
-  else {
-    // No known mechanism -- consider aborting the application
-  }
-  return result;
-}
 </script>
 </div>
 </body>

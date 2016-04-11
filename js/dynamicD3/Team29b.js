@@ -90,14 +90,41 @@ function drawMap(dataFile,anchorText) {
 */
 
     //EXAMPLE: adding some capitals from external CSV file
+    //alert(dataFile); 
+    /*
     d3.csv(dataFile, function(err, capitals) {
-
       capitals.forEach(function(i){
-        addpoint(i.CapitalLongitude, i.CapitalLatitude, i.CapitalName );
+        alert(i.CapitalName);
+        //addpoint(i.CapitalLongitude, i.CapitalLatitude, i.CapitalName );
       });
 
     });
+  */
+    d3.csv(dataFile, function(err,data) 
+    {
+      
+      var array = {}; 
+      
+      data.forEach(function(i,array)
+      {
+        var string = i.location_coordinates;
+        var array = string.split(/\\,|\,/);
+        //alert(array.length); 
+        for(i=1; i<array.length; i+=2)
+        {
+          //alert(message); 
+          if(array[i]=="") continue; 
+          var long = parseFloat(array[i-1]);
+          var lat = parseFloat(array[i]);
+          var message = "Coordinates: " + array[i-1] +"," +array[i];
 
+          addpoint(array[i], array[i-1], message );
+        }
+      });
+      
+      //alert(data["location_coordinates"]); 
+      //console.log(data[0]);
+    });
   }
 
 

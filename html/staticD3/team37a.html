@@ -178,7 +178,71 @@ d3.csv("../../data/team37data/citiesGreen.csv", function(error, data) {
        .attr("r", 10)
        .style("fill", "green");
 });
+$.ajax(
+{
+  url: "http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+stable%0A&fl=location_coordinates&wt=csv&indent=true", 
+  //dataType: 'jsonp',
+  success: function(result)
+  {
+    d3.csv(result, function(error, data) {
+      alert(result); 
+    var array = {}; 
+  var data4 = []; 
+  data.forEach(function(i,array)
+  {
+    var string = i.location_coordinates;
+    var array = string.split(/\\,|\,/);
+    //alert(array.length); 
+    for(i=0; i<array.length-1; i+=2)
+    {
+      //alert(message); 
+      if(array[i]=="") continue; 
+      var long = parseFloat(array[i]);
+      var lat = parseFloat(array[i+1]);
+      var message = "Coordinates Yellow: " + array[i] +"," +array[i+1];
+      var temp = new Object();
+      temp["lon"] = lat;
+      temp["lat"] = long;
+      temp["city"] = message; 
+      data4.push(temp); 
+      //addpoint(array[i], array[i-1], message );
+    }
+  });
+  /*
+  for(var i=0; i<data4.length; i++)
+  {
+    alert(data4[i].lon +" "+data4[i].lat); 
+  }
+*/
+  g.selectAll("circle")
+     .data(data4)
+     .enter()
+     .append("a")
+                .attr("xlink:href", function(d) {
+                    return "https://www.google.com/search?q="+d.city;}
+                )
+     .on("mouseover", function(d) {
+      tooltip.pop(this, d.city + "<br>" + "45 %")
+     })           
+     .append("circle")
+     .attr("cx", function(d) {
+             return projection([d.lon, d.lat])[0];
+     })
+     .attr("cy", function(d) {
+             return projection([d.lon, d.lat])[1];
+     })
+     .attr("r", 10)
+     .style("fill", "yellow");
+});
+    
 
+  }
+  ,error:function()
+  {
+    alert("Error"); 
+  }
+}
+);
 // load and display the cities
 d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+stable%0A&fl=location_coordinates&wt=csv&indent=true", function(error, data) {
     var array = {}; 
@@ -194,7 +258,7 @@ d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+stable%0A&fl=locat
       if(array[i]=="") continue; 
       var long = parseFloat(array[i]);
       var lat = parseFloat(array[i+1]);
-      var message = "Coordinates: " + array[i] +"," +array[i+1];
+      var message = "Coordinates Yellow: " + array[i] +"," +array[i+1];
       var temp = new Object();
       temp["lon"] = lat;
       temp["lat"] = long;
@@ -203,25 +267,31 @@ d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+stable%0A&fl=locat
       //addpoint(array[i], array[i-1], message );
     }
   });
-    g.selectAll("circle")
-       .data(data4)
-       .enter()
-       .append("a")
-                  .attr("xlink:href", function(d) {
-                      return "https://www.google.com/search?q="+d.city;}
-                  )
-       .on("mouseover", function(d) {
-        tooltip.pop(this, d.city + "<br>" + "45 %")
-       })           
-       .append("circle")
-       .attr("cx", function(d) {
-               return projection([d.lon, d.lat])[0];
-       })
-       .attr("cy", function(d) {
-               return projection([d.lon, d.lat])[1];
-       })
-       .attr("r", 10)
-       .style("fill", "yellow");
+  /*
+  for(var i=0; i<data4.length; i++)
+  {
+    alert(data4[i].lon +" "+data4[i].lat); 
+  }
+*/
+  g.selectAll("circle")
+     .data(data4)
+     .enter()
+     .append("a")
+                .attr("xlink:href", function(d) {
+                    return "https://www.google.com/search?q="+d.city;}
+                )
+     .on("mouseover", function(d) {
+      tooltip.pop(this, d.city + "<br>" + "45 %")
+     })           
+     .append("circle")
+     .attr("cx", function(d) {
+             return projection([d.lon, d.lat])[0];
+     })
+     .attr("cy", function(d) {
+             return projection([d.lon, d.lat])[1];
+     })
+     .attr("r", 10)
+     .style("fill", "yellow");
 });
 
 //var data = [20,-103]; 

@@ -105,9 +105,38 @@ var g = svg.append("g");
 d3.json("../../data/team37data/world-110m2.json", function(error, topology) {
 
 // load and display the cities
-d3.csv("../../data/team37data/citiesRed.csv", function(error, data) {
+//declining
+d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+declining%0A&fl=location_coordinates&wt=csv&indent=true", function(error, data) {
+
+    var array = {}; 
+    var data2 = []; 
+    data.forEach(function(i,array)
+    {
+      var string = i.location_coordinates;
+      var array = string.split(/\\,|\,/);
+      //alert(array.length); 
+      for(i=0; i<array.length-1; i+=2)
+      {
+        //alert(message); 
+        if(array[i]=="") continue; 
+        var long = parseFloat(array[i]);
+        var lat = parseFloat(array[i+1]);
+        var message = "Coordinates: " + array[i] +"," +array[i+1];
+        var temp = new Object();
+        temp["lon"] = lat;
+        temp["lat"] = long;
+        temp["city"] = message; 
+        data2.push(temp); 
+        //addpoint(array[i+1], array[i], message,"red" );
+      }
+    });
+    /*
+    for(var i=0; i<data2.length; i++)
+    {
+      //alert(data2[i].lon +" "+data2[i].lat); 
+    }*/
     g.selectAll("circle")
-       .data(data)
+       .data(data2)
        .enter()
        .append("a")
                   .attr("xlink:href", function(d) {
@@ -151,9 +180,31 @@ d3.csv("../../data/team37data/citiesGreen.csv", function(error, data) {
 });
 
 // load and display the cities
-d3.csv("../../data/team37data/citiesYellow.csv", function(error, data) {
+d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+stable%0A&fl=location_coordinates&wt=csv&indent=true", function(error, data) {
+    var array = {}; 
+  var data4 = []; 
+  data.forEach(function(i,array)
+  {
+    var string = i.location_coordinates;
+    var array = string.split(/\\,|\,/);
+    //alert(array.length); 
+    for(i=0; i<array.length-1; i+=2)
+    {
+      //alert(message); 
+      if(array[i]=="") continue; 
+      var long = parseFloat(array[i]);
+      var lat = parseFloat(array[i+1]);
+      var message = "Coordinates: " + array[i] +"," +array[i+1];
+      var temp = new Object();
+      temp["lon"] = lat;
+      temp["lat"] = long;
+      temp["city"] = message; 
+      data4.push(temp); 
+      //addpoint(array[i], array[i-1], message );
+    }
+  });
     g.selectAll("circle")
-       .data(data)
+       .data(data4)
        .enter()
        .append("a")
                   .attr("xlink:href", function(d) {
@@ -176,9 +227,31 @@ d3.csv("../../data/team37data/citiesYellow.csv", function(error, data) {
 //var data = [20,-103]; 
 // load and display the cities
 //d3.csv("../data/team37data/test.csv", function(error, data) {
-d3.csv("../../data/team37data/citiesBlue.csv", function(error, data) {
+d3.csv("http://polar.usc.edu/solr/geo/select?q=polar+bear+AND+increasing%0A&fl=location_coordinates&wt=csv&indent=true", function(error, data) {
+  var array = {}; 
+  var data3 = []; 
+  data.forEach(function(i,array)
+  {
+    var string = i.location_coordinates;
+    var array = string.split(/\\,|\,/);
+    //alert(array.length); 
+    for(i=0; i<array.length-1; i+=2)
+    {
+      //alert(message); 
+      if(array[i]=="") continue; 
+      var long = parseFloat(array[i]);
+      var lat = parseFloat(array[i+1]);
+      var message = "Coordinates: " + array[i] +"," +array[i+1];
+      var temp = new Object();
+      temp["lon"] = lat;
+      temp["lat"] = long;
+      temp["city"] = message; 
+      data3.push(temp); 
+      //addpoint(array[i], array[i-1], message );
+    }
+  });
     g.selectAll("circle")
-       .data(data)
+       .data(data3)
        .enter()
        .append("a")
                   .attr("xlink:href", function(d) {
@@ -244,6 +317,38 @@ function processData(allText) {
     }
     alert(lines);
 }
+/*
+  function addpoint(lat,lon,text,color) {
+
+    var gpoint = g.append("g").attr("class", "circle");
+    var x = lon;
+    var y = lat; 
+
+    gpoint.append("svg:circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("class","point")
+          .attr("r", 10).style("fill",color);
+    //tooltips
+    gpoint
+      .on("mousemove", function(d,i) {
+
+        var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
+
+        tooltip.classed("hidden", false).html(text)
+               .style("top", (d3.event.pageY + 16) + "px")
+        .style("left", (d3.event.pageX + 16) + "px")
+               
+
+        })
+        .on("mouseout",  function(d,i) {
+          tooltip.classed("hidden", true);
+        }); 
+
+
+
+  }*/
+
 function createRequest() {
   var result = null;
   if (window.XMLHttpRequest) {

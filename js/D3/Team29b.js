@@ -90,7 +90,7 @@ function drawMap(dataFile,anchorText) {
 */
 
     //EXAMPLE: adding some capitals from external CSV file
-    alert(dataFile); 
+    //alert(dataFile); 
     /*
     d3.csv(dataFile, function(err, capitals) {
       capitals.forEach(function(i){
@@ -100,10 +100,30 @@ function drawMap(dataFile,anchorText) {
 
     });
   */
-    d3.csv(dataFile, function(data) 
+    d3.csv(dataFile, function(err,data) 
     {
-      alert(data); 
-      console.log(data[0]);
+      
+      var array = {}; 
+      
+      data.forEach(function(i,array)
+      {
+        var string = i.location_coordinates;
+        var array = string.split(/\\,|\,/);
+        //alert(array.length); 
+        for(i=1; i<array.length; i+=2)
+        {
+          //alert(message); 
+          if(array[i]=="") continue; 
+          var long = parseFloat(array[i-1]);
+          var lat = parseFloat(array[i]);
+          var message = "Coordinates: " + array[i-1] +"," +array[i];
+
+          addpoint(array[i], array[i-1], message );
+        }
+      });
+      
+      //alert(data["location_coordinates"]); 
+      //console.log(data[0]);
     });
   }
 

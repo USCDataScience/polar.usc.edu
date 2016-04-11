@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
 <title>Word Cloud Generator</title>
 <style>
 body {
@@ -27,7 +28,30 @@ a.active { text-decoration: none; color: #000; font-weight: bold; cursor: text; 
 #angles { text-align: center; margin: 0 auto; width: 350px; }
 #angles input, #max { width: 42px; }
 </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("../headerdouble.html");
+        });
+    </script>
+</head>
 <div id="vis"></div>
 
 <form id="form">
@@ -735,6 +759,7 @@ consistent Frequency    </textarea>
     
   </div>
 </div>
+<div id="header" style="margin-bottom:5%"> </div>
 
 
 <div style="float: right; text-align: right">

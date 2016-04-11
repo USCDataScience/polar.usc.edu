@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Heat Map for BFC Cross Correlation</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+
+<style>
+
+
+
+</style>
+
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header"> </div>
+<div class="container">
+
+    <br/><br/><br/><br/><br/><br/>
+<div style="font: 20px sans-serif;">
+<h3>File types chosen:</h3>
+<ol>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=application_octet-stream">application/octet-stream</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=application_zip">application/zip</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=application_x-executable">application/x-executable</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=application_pdf">application/pdf</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=application_xhtml+xml">application/xhtml+xml</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=application_x-sh">application/x-sh</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=application_xml">application/xml</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=image_jpeg">image/jpeg</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=image_png">image/png</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=audio_mpeg">audio/mpeg</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=video_quicktime">video/quicktime</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=text_html">text/html</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=text_plain">text/plain</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=text_x-matlab">text/x-matlab</a></li>
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html?type=message_rfc822">message/rfc822</a></li>
+<br><br><a href="D3_Cross_Correlation_Signature_HeatMap.html">CLEAR</a>
+</ol>
+</div>
+<h2 id="name"></h2>
+<p>Hover on the chart to see details</p><br/>
+<div style="position: fixed;"><p id="ff"></p></div><br><br><br><br><br><br>
+<script>
+//var fileName="fht_output/fht_signature_video_quicktime.json";  
+
+
+//application_x-sh, image_png has unique header of 16 bytes
+//message_rfc822 6 bytes unique
+
+var urlpath=document.URL;
+var indexOfEquals=urlpath.indexOf("=");
+var fileName="";
+if (indexOfEquals==-1)
+{
+  fileName="";
+  document.getElementById("name").innerHTML="Please select a file type from the list";
+}
+else
+{
+  fileName="../../data/team22-spring-2016-data/mime-analysis/bfc_cross_corelation/bfc_cross_"+urlpath.substring(indexOfEquals+1)+".json";  
+  document.getElementById("name").innerHTML="BFC Cross Correlation Matrix Heat Map for file type: "+urlpath.substring(indexOfEquals+1);
+}
+
+
+$.getJSON(fileName, function(json) {
+      var bo=d3.select("body");
+
+      var colors = ["#ffffff","#eef0f3","#e5ebf0","#d5dce4","#96a9bc","#899eb3","#6c86a1","#426486","#2d5379","#244260","#1b3148"];
+          
+       
+      var j=0;
+
+       $.each(json, function(i,field){
+          i=parseInt(i)+1;
+      var row=bo.append("div")
+      .attr("style","float:left;height:9px;width:1815px;")
+      .text(i)
+      .append("div")
+      .attr("style","float:right;");
+
+      row.selectAll()
+        .data(field)
+        .enter()
+        .append("svg")
+        .attr("width","7")
+        .attr("height","7")
+        .append("rect")
+        .attr("width","7")
+        .attr("height","7")
+        .attr("style",function(h,d) { 
+              if(parseFloat(field[d])==-1)
+                return "fill:rgb(249,249,177);stroke-width:0;stroke:rgb(200,255,0);";
+              else if(Math.floor(parseFloat(field[d])*1000)>9)
+                return "fill:"+colors[10]+" ; stroke-width:0;"; 
+              else
+                return "fill:"+colors[Math.floor(parseFloat(field[d])*1000)]+" ; stroke-width:1;stroke:rgb(230,230,230)"; 
+          })
+        .on("mouseover",function(h,d){document.getElementById("ff").innerHTML="Byte Number in Row: "+i+"<br>Byte Number in Column: "+d+"<br>BFC Cross Correlation matrix value: "+parseFloat(field[d]);})
+        .on("mouseout", function(){document.getElementById("ff").innerHTML=""});
+
+        // row.selectAll()
+        // .data(field)
+        // .enter()
+        // .append("svg")
+        // .attr("width","7")
+        // .attr("height","7")
+        // .append("rect")
+        // .attr("width","7")
+        // .attr("height","7")
+        // .attr("style",function(h,d) { 
+        //   if(parseFloat(field[d])==-1)
+        //     return "fill:rgb(249,249,177);stroke-width:0;stroke:rgb(200,255,0)";
+        //   else if(parseFloat(field[d])==0)
+        //     return "fill:rgb(255,255,255);stroke-width:1;stroke:rgb(230,230,230)";
+        //   else if(parseFloat(field[d])>=0.8)
+        //     return "fill:rgb(0,0,102);stroke-width:1;stroke:rgb(0,0,102)";
+        //   else
+        //     return "fill:rgb("+(Math.floor((1-parseFloat(field[d]))*255))+","+(150+Math.floor((1-parseFloat(field[d]))*105))+",255);stroke-width:1;stroke:rgb(230,230,230)"; 
+        //   })
+        // .on("mouseover",function(h,d){document.getElementById("ff").innerHTML="Byte Number in Row: "+i+"<br>Byte Number in Column: "+d+"<br>BFC Cross Correlation matrix value: "+parseFloat(field[d]);})
+        // .on("mouseout", function(){document.getElementById("ff").innerHTML=""});
+     
+        });
+
+});
+
+</script>
+</div>
+</body>

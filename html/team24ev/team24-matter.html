@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sweet Ontology Mappings</title>
+    <link rel="stylesheet" href="../../css/team24/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      path {
+        stroke: white;
+        stroke-width: 0.5px;
+        font-size: 10px;
+      }
+    </style>
+    <link href="../../css/header.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+    <script src="../../js/jquery.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container row bfd" style="margin-top:60px; margin-left: 40px;">
+    <div class="container col-md-12">
+      <a href="./team24-location.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Locations in TREC Dataset</a>
+      <a href="./team24-mesaurements.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Measurements in TREC Dataset</a>
+      <a href="./team24-ontologies.html" role="button" class="btn btn-primary disabled col-md-3" style="margin:10px;">Sweet Ontology Mappings in TREC</a>
+      <a href="./team24-histogram.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Metadata Quality Score in TREC</a>
+     <a href="./team24-solr.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Solr Schema </a>
+  <a href="./team24-ffmpeg.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">FFMPEG Extractions </a>
+    </div>
+    <p>  Sub concepts of <b>Human Activity</b> found in TREC</p>
+    <div id="main">
+      <div id="sequence"></div>
+       <div id="chart" class="container col-md-8">
+        <div id="explanation" style="visibility: hidden;">
+          <span id="percentage"></span><br/>
+        </div>
+      </div>
+    <div id="analysis" class="container col-md-4">
+    <p> Analysis</p>
+      <li><a href="./team24-human.html">Concept - Human</a></li>
+      <li><a href="./team24-phenomena.html">Concept - Phenomena</a></li>
+      <li><a href="./team24-realm.html">Concept - Realm</a></li>
+      <li><a href="./team24-representation.html">Concept - Representation</a></li>
+      <li><a href="./team24-matter.html">Concept - Matter</a></li>
+      <li><a href="./team24-process.html">Concept - Process</a></li>
+      <li><a href="./team24-states.html">Concept - States</a></li>
+      <li><a href="./team24-property.html">Concept - Property</a></li>
+      <li><a href="./team24-ontologies.html">Main Concept Mapping</a></li>
+    </div>
+  </div>
+  <script type="text/javascript" src="../../js/team24ev/sequence-matter.js"></script>
+  </body>
+</html>

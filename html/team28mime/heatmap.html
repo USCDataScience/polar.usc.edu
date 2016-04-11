@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>TREC Explorer</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/team28/d3.tip.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.1/css/bootstrap-slider.min.css">
+
+    <style>
+        .sidePanel {
+            height: 600px;
+            background: #e7e7e7;
+            overflow: scroll;
+            margin-right:0px;
+
+        }
+
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom:0px;
+            border: 1px solid transparent;
+        }
+
+        .headLine {
+            text-align: center;
+            background: #990000;
+            color: #ffffff;
+            margin: auto;
+            vertical-align: middle;
+        }
+
+        .xLargeButton {
+            width:470px;
+        }
+
+        .panelButtons {
+            margin:0px;
+            padding:0px;
+        }
+
+        .main-container { margin-top: 10px; }
+        .row { margin-bottom: 10px; }
+
+        body { background-color: #eee; }
+        .axis path,.axis line {fill: none;stroke:black;shape-rendering: crispEdges;}
+        .axis text { font-size: 8pt; }
+    </style>
+    <script src="../../js/team28/jquery.min.js"></script>
+    <script src="../../js/team28/d3.v3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.1/bootstrap-slider.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html"); 
+    });
+
+    </script>
+  </head>
+  <body>
+  <div id="header" style="margin-bottom:5%"> </div>
+  <div class="container">
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+        <div id="navbar2" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a style="color:#fff" href="index.html">Main</a></li>
+            <li><a style="color:#fff" href="bfa.html">BFA</a></li>
+            <li ><a style="color:#fff" href="bfc.html">BF Correlation</a></li>
+            <li><a style="color:#fff" href="bfcc.html">BF Cross Correlation</a></li>
+            <li><a style="color:#fff" href="fht.html">FHT</a></li>
+            <li class="active"><a href="#">Mime Diversity</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container-fluid main-container">
+      <h2>Heatmap for Unknown Files</h2>
+      <div class="row">
+        <div id="chart-container" class="col-md-12"></div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+
+        // configuration
+        var boxSize = 2;
+        var gap = 0;
+        var red = 'red';
+        var green = 'green';
+        var blue = 'blue';
+        var counter = 351;
+        var data = null;
+        var labelData = null;
+        var array = [];
+
+        function loadData() {
+            d3.json("../../data/team28data/heatmap/heatmap.json", function(error, json) {
+
+                data = json;
+               loadLabels();
+            });
+        }
+
+        function loadLabels() {
+            d3.json("../../data/team28data/heatmap/heatmapLabel.json", function (error, json) {
+                labelData = json;
+                for(var i = 0; i< counter;i++) {
+                    array.push(data[labelData[i+1]]);
+                }
+                console.log(array);
+                drawGraph();
+            });
+        }
+
+        var byteSize = counter;
+        var cellSize = boxSize + gap;
+        var graphSize = byteSize * cellSize;
+
+        var svg = d3.select('#chart-container')
+          .append('svg')
+            .attr('width', graphSize + 200)
+            .attr('height', graphSize + 200)
+          .append('g')
+            .attr('class', 'container')
+            .attr('transform', 'translate(50, 40)');
+
+        // border
+        svg
+          .append('rect')
+          .attr('class', 'border')
+          .attr('width', graphSize)
+          .attr('height', graphSize)
+          .attr('fill', 'none')
+          .attr('stroke', 'black');
+
+        // tooltip
+        var tip = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-7,  0])
+          .html(function(d) {
+              console.log(d);
+              return labelData[d.i].substring(0,5)+"..."+":"+labelData[d.j].substring(0,5)+"..."+" ("+d.v+")";
+          });
+
+        svg.call(tip);
+
+        // axes
+        var scale = d3.scale.linear()
+          .domain([0, counter])
+          .range([0, graphSize]);
+
+        var tickValues = d3.range(0, counter, 3);
+
+        svg.append('g')
+          .attr('class', 'x axis')
+          .call(d3.svg.axis().scale(scale).orient('top').tickValues(tickValues));
+
+          svg.append('text')
+          .attr('class', 'x axis-title')
+          .attr('transform', 'translate(' + (graphSize / 2) + ',-30)')
+          .attr('text-anchor', 'middle')
+          .text('Byte Value');
+
+        svg.append('g')
+          .attr('class', 'y axis')
+          .call(d3.svg.axis().scale(scale).orient('left').tickValues(tickValues));
+
+        svg.append('text')
+          .attr('class', 'y axis-title')
+          .attr('text-anchor', 'middle')
+          .attr('transform', 'translate(-35,' + (graphSize / 2) + '), rotate(-90)')
+          .text('Byte Value');
+
+        d3.selectAll('g.x.axis g.tick line')
+          .attr('y2', function (d) { return (d % 30 == 0) ? -6 : -3; });
+
+        d3.selectAll('g.y.axis g.tick line')
+          .attr('x2', function (d) { return (d % 30 == 0) ? -6 : -3; });
+
+        d3.selectAll('g.axis g.tick text')
+          .filter(function (d) { return (d % 30 != 0); })
+          .remove();
+
+        // color scale bar
+
+        var yColorScaleContainer = svg.append('g')
+          .attr('class', 'y colorscale-container')
+          .attr('transform', 'translate(' + (graphSize + 10)+ ',0)');
+
+        yColorScaleContainer
+          .append('rect')
+          .attr('class', 'colorscale-border')
+          .attr('width', 20)
+          .attr('height', graphSize)
+          .attr('fill', 'none')
+          .attr('stroke', 'black');
+
+        yColorScaleContainer.append('text')
+          .attr('class', 'y axis-title')
+          .attr('text-anchor', 'middle')
+          .attr('transform', 'translate(55,' + (graphSize / 2) + '), rotate(90)')
+          .text('Correlation Strength');
+
+        var yColorScale = d3.scale.linear()
+          .domain([1, 0])
+          .range([0, graphSize]);
+
+        yColorScaleContainer.append('g')
+          .attr('class', 'x axis')
+          .attr('transform', 'translate(20, 0)')
+          .call(d3.svg.axis().scale(yColorScale).orient('right'));
+
+        var yColorScaleBar = yColorScaleContainer.append('g')
+          .attr('class', 'y colorscale')
+          .selectAll('rect')
+          .data(d3.range(0, counter).map(d3.scale.linear().domain([0,counter-1]).range([1, 0])));
+
+        yColorScaleBar.enter()
+          .append('rect')
+          .attr('y', function (d, i) { return i * cellSize; })
+          .attr('width', 20)
+          .attr('height', cellSize)
+          .attr('fill', 'none');
+        // resize svg
+        var container = d3.select('#chart-container svg');
+        var bbox = container.node().getBBox();
+        container.attr('width', bbox.x + bbox.width + 'px');
+        container.attr('height', bbox.y + bbox.height + 'px');
+
+        function drawGraph() {
+
+
+          function getColorScale() {
+            var exp = 1;
+            return d3.scale.pow().exponent(exp);
+          }
+
+          var greenScale = getColorScale()
+            .domain([0, 1])
+            .interpolate(d3.interpolateRgb)
+            .range(['white', red]);
+
+          var redScale = getColorScale()
+            .domain([-1, 0])
+            .interpolate(d3.interpolateRgb)
+            .range([red, 'white']);
+
+          var blueScale = getColorScale()
+            .domain([0, 1])
+            .interpolate(d3.interpolateRgb)
+            .range(['white', blue]);
+
+          yColorScaleBar
+            .attr('fill', function (d, i) {
+              return greenScale(d);
+            })
+
+
+
+          // values
+          var rows = svg.selectAll('g.row')
+            .data(array);
+
+          rows.enter()
+            .append('g')
+            .attr('class', 'row')
+            .attr('transform', function (d, i) { return 'translate(0,' + (i * cellSize) + ')'; });
+
+          var boxes = rows.selectAll('rect')
+            .data(function (d, i) { return d.map(function (v) { return { v: v, i: i, j: array[i].indexOf(v) }; }); });
+
+          boxes.enter()
+            .append('rect')
+            .attr('width', boxSize)
+            .attr('height', boxSize)
+            .attr('x', function (d, i) { return i * cellSize; })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide);
+
+          boxes
+          .attr('fill', function(d, j) {
+            if (d.i == j) { return 'black'; }
+            var colorScale = greenScale
+            return colorScale(d.v);
+          });
+        }
+
+        loadData();
+      }());
+    </script>
+  </body>
+  </div>
+</html>

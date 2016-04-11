@@ -25,25 +25,24 @@
       $("#header").load("header.html");
     });
     </script>
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!-- Navigation -->
     <div id="header"> </div>
+    <div id="secondary-header"> </div>
 
-    <div class="container">
-    <ul class="nav nav-pills" id="tabs" style="margin-top:7%">
-        <li role="presentation" class="active"><a href="#regular-viz">Static Visualizations</a></li>
-        <li role="presentation"><a href="#dynamic-viz">Dynamic Visualizations</a></li>
-        <li role="presentation"><a href="#mime-viz">MIME Analyses</a></li>
+    <div class="container" style="margin-bottom: 2%">
+    <ul class="nav nav-tabs" id="tabs" style="margin-top:7%">
+        <li class="active"><a href="#regular-viz" data-toggle="tab">Static Visualizations</a></li>
+        <!--li><a href="#dynamic-viz" data-toggle="tab">Dynamic Visualizations</a></li-->
+        <li><a href="#mime-viz" data-toggle="tab">MIME Analyses</a></li>
+        <li><a href="#sce-viz" data-toggle="tab">Enrichment Visualizations</a></li>
     </ul>
-    <hr class="featurette-divider" style="margin-bottom: 2%">
     </div>
 
     <div class="tab-content">
-
         <div role="tabpanel" class="tab-pane fade in active" id="regular-viz">
             <!-- Note: each image is 242x200  -->
             <div class="container">
@@ -55,7 +54,7 @@
                             <div class="caption">
                                 <h3>Atmosphere Composition</h3>
                                 <p>A pie chart and scatter graph illustrating atmospheric composition for the past two decades.</p>
-                                <p><a href="team29a.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team29a.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -67,7 +66,7 @@
                                 <h3>Bubble Map</h3>
                                 <p>Map showing concentration of relevant documents by region</p>
 
-                                <p><a href="team27a.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team27a.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -78,7 +77,7 @@
                             <div class="caption">
                                 <h3>Bubble Graph</h3>
                                 <p>Simple bubble graph showing the popularity of key terms</p>
-                                <p><a href="team34a.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team34a.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -92,7 +91,7 @@
                             <div class="caption">
                                 <h3>Circle Distribution</h3>
                                 <p>Cluster map showing document concentration by region</p>
-                                <p><a href="team37b.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team37b.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -103,7 +102,7 @@
                             <div class="caption">
                                 <h3>Circulation Graphs</h3>
                                 <p>Line graph with slider that plots warming, carbon dioxide, and ocean circulation data.</p>
-                                <p><a href="team29c.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team29c.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -114,7 +113,7 @@
                             <div class="caption">
                                 <h3>Climate Change</h3>
                                 <p>Frequency chart of mentions of climate change and global warming</p>
-                                <p><a href="team15a.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team15a.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +128,7 @@
                             <div class="caption">
                                 <h3>Glacier Data</h3>
                                 <p>Map scatter graph that plots data points corresponding to their location.</p>
-                                <p><a href="team29b.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team29b.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -140,7 +139,7 @@
                             <div class="caption">
                                 <h3>Globe Map</h3>
                                 <p>A map depicting discussion trends for natural resoucrces in the Artic region</p>
-                                <p><a href="team3a.html" class="btn btn-primary" role="button" >View</a></p>
+                                <p><a href="staticD3/team3a.html" class="btn btn-primary" role="button" >View</a></p>
 
                             </div>
                         </div>
@@ -152,7 +151,7 @@
                             <div class="caption">
                                 <h3>Google Maps</h3>
                                 <p>Shows time based trends of discussions of natural resources of the artic region</p>
-                                <p><a href="team28a.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team28a.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -167,7 +166,7 @@
                             <div class="caption">
                                 <h3>Pie Charts</h3>
                                 <p>Pie char Showing polar bear population trends for years 2005 and 2009</p>
-                                <p><a href="team37a1.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team37a1.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -178,7 +177,7 @@
                             <div class="caption">
                                 <h3>Polar Bear Distribution</h3>
                                 <p>Map showing polar bear population density by region</p>
-                                <p><a href="team37a.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team37a.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -189,7 +188,7 @@
                             <div class="caption">
                                 <h3>Trends In Sea Level Change</h3>
                                 <p>Bar chart of sea ice extent in the Antartic and Artic regions</p>
-                                <p><a href="team22a.html" class="btn btn-primary" role="button">View</a></p>
+                                <p><a href="staticD3/team22a.html" class="btn btn-primary" role="button">View</a></p>
                             </div>
                         </div>
                     </div>
@@ -198,6 +197,8 @@
             </div>
         </div>
         
+        
+        <!--Dynamic Viz - not currently used
         <div role="tabpanel" class="tab-pane fade" id="dynamic-viz">
             <div class="container">
                 <div class="row">
@@ -234,58 +235,56 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
 
 
         <div role="tabpanel" class="tab-pane fade" id="mime-viz">
 
             <div class="container">
                 <div class="row">
-
+                
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                            <img src="../images/team28.png">
+                            <img src="../images/mime-analysis.png">
                             <div class="caption">
                                 <h3>Mimetype Analysis</h3>
-                                <p>These visualisations contribute to explaning the MIME Diversity in Polar Dataset.</p>
-                                <p><a href="./team28/index.html" class="btn btn-primary" role="button">View</a>
+                                <p>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset. (Team 12)</p>
+                                <p><a href="team12mime/mime.html" class="btn btn-primary" role="button">View</a>
                             </div>
                         </div>
                     </div>
-
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team16mime.png">
+                            <div class="caption">
+                                <h3>Mimetype Analysis</h3>
+                                <p>Polar Data MIME Content Detection Algorithms Results (Team 16).</p>
+                                <p><a href="team16mime/team16-bfa.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
                             <img src="../images/pie.png">
                             <div class="caption">
                                 <h3>Mimetype Analysis</h3>
-                                <p>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset (team 22).</p>
-                                <p><a href="team22-spring2016-mime-analysis/index.html" class="btn btn-primary" role="button">View</a>
+                                <p>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset (Team 22).</p>
+                                <p><a href="team22mime/index.html" class="btn btn-primary" role="button">View</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <img src="../images/mime-analysis.png">
-                            <div class="caption">
-                                <h3>Mimetype Analysis</h3>
-                                <p>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset.</p>
-                                <p><a href="mime-analysis/mime.html" class="btn btn-primary" role="button">View</a>
-                            </div>
-                        </div>
-                    </div>
-
                   </div>
 
                   <div class="row">
-
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                            <img src="../images/mime-analysis.png">
+                            <img src="../images/team28.png">
                             <div class="caption">
                                 <h3>Mimetype Analysis</h3>
-                                <p>Polar Data MIME detection (team 16).</p>
-                                <p><a href="team16-bfa.html" class="btn btn-primary" role="button">View</a>
+                                <p>These visualisations contribute to explaning the MIME Diversity in Polar Dataset (Team 28).</p>
+                                <p><a href="./team28mime/index.html" class="btn btn-primary" role="button">View</a>
                             </div>
                         </div>
                     </div>
@@ -293,7 +292,127 @@
                 </div>
             </div>
         </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="sce-viz">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/sce-antrromet.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (@antrromet)</p>
+                                <p><a href="antrrometev/sce.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team5ev.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 5)</p>
+                                <p><a href="team5ev/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team16sce.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 16)</p>
+                                <p><a href="team16ev/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/zoomableCirclePacking.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 22)</p>
+                                <p><a href="team22ev/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team25ev.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 25)</p>
+                                <p><a href="team25ev/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team27ev.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 27)</p>
+                                <p><a href="team27ev/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team15ev.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 15)</p>
+                                <p><a href="team15ev/team15_index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team24-enrichment.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 24)</p>
+                                <p><a href="team24ev/team24-location.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team6ev.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 6)</p>
+                                <p><a href="team6ev/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="../images/team28ev.png">
+                            <div class="caption">
+                                <h3>Enrichment Visualizations</h3>
+                                <p>Scientific content enrichment of the TREC Polar Dynamic Domain Dataset (Team 28)</p>
+                                <p><a href="team28ev/index.html" class="btn btn-primary" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
+
 
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
@@ -304,13 +423,27 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="../js/jquery.easing.min.js"></script>
     <script src="../js/scrolling-nav.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                localStorage.setItem('lastTab', $(this).attr('href'));
+            });
+            var lastTab = localStorage.getItem('lastTab');
+            if (lastTab) {
+                $('[href="' + lastTab + '"]').tab('show');
+            }
+        })
+    </script>
 
     <script type="text/javascript">
         $('#tabs a').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
+            e.preventDefault();
+            $(this).tab('show');
         })
     </script>
+    
+
 
 </body>
 

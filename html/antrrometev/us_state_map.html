@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    
+    body {
+        font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;
+    }
+    
+    .state {
+        fill: none;
+        stroke: #a9a9a9;
+        stroke-width: 1;
+    }
+    
+    .state:hover {
+        fill-opacity: 0.5;
+    }
+    
+    #tooltip {
+        position: absolute;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 1px;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+    
+    #tooltip h4 {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    #tooltip {
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-size: 12px;
+        width: auto;
+        padding: 4px;
+        color: white;
+        opacity: 0;
+    }
+    
+    #tooltip table {
+        table-layout: fixed;
+    }
+    
+    #tooltip tr td {
+        padding: 5;
+        margin: 0;
+        color: white;
+    }
+    
+    #tooltip tr td:nth-child(1) {
+        width: 50px;
+    }
+    
+    #tooltip tr td:nth-child(2) {
+        text-align: center;
+        color: white;
+    }
+    
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 0px 100px 10px 100px;
+        padding: 8px;
+        display: inline-block;
+    }
+
+</style>
+
+<body>
+    <div id="wrapper" style="text-align: center;">
+        <div class="legend">
+            <p>This visualization indicates the spread of various files and their mime types within each US State.</p>
+            <p>Black areas indicates there are no files, whereas the maroon area indicates a lot of files.</p>
+        </div>
+    </div>
+    <div id="tooltip"></div>
+    <!-- div to hold tooltip. -->
+    <svg width="960" height="600" id="statesvg"></svg>
+    <!-- svg to hold the map. -->
+    <script src="../../js/uStates.js"></script>
+    <!-- creates uStates. -->
+    <script src="../../js/d3.min.js"></script>
+    <script src="../../js/jquery-1.12.1.min.js"></script>
+    <script>
+        function tooltipHtml(n, d) { /* function to create html content string in tooltip div. */
+            var tooltipData = "<h4>" + n + "</h4><table>";
+            var plainCount = d['text/plain'];
+            if (plainCount == undefined) {
+                plainCount = 0;
+            }
+            var htmlCount = d['text/html'];
+            if (htmlCount == undefined) {
+                htmlCount = 0;
+            }
+            tooltipData += "<tr><td> text/plain </td><td>" + plainCount + "</td></tr>";
+            tooltipData += "<tr><td> text/html </td><td>" + htmlCount + "</td></tr>";
+            tooltipData += "</table";
+            return tooltipData;
+        }
+
+        var data = {};
+        var maxCount = 0;
+        d3.json("../../data/antrromet-sce-data/us_state_map_data.json", function(error, mapJson) {
+            if (error) throw error;
+            $.each(mapJson, function(i, stateObject) {
+                var countPerState = 0;
+                $.each(stateObject, function(i, count) {
+                    countPerState += count;
+                });
+                if (countPerState > maxCount) {
+                    maxCount = countPerState;
+                }
+            });
+
+            $.each(mapJson, function(i, stateObject) {
+                var countPerState = 0;
+                $.each(stateObject, function(i, count) {
+                    countPerState += count;
+                });
+                stateObject["color"] = d3.interpolate("#ffffcc", "#800026")(countPerState / maxCount);
+                mapJson[i] = stateObject;
+            });
+
+            /* draw states on id #statesvg */
+            ["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
+                "ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH",
+                "MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT",
+                "CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN",
+                "WI", "MO", "AR", "OK", "KS", "LS", "VA"
+            ]
+            .forEach(function(d) {
+                if (mapJson.hasOwnProperty(d)) {
+                    data[d] = mapJson[d];
+                } else {
+                    data[d] = {
+                        "Content-Type": "NA",
+                        "color": "#000000"
+                    };
+                }
+            });
+            uStates.draw("#statesvg", data, tooltipHtml);
+        });
+
+    </script>
+
+</body>

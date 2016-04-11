@@ -1,0 +1,87 @@
+<div>
+    <div class="page-header row">
+        <h3>Sweets Concepts</h3>
+        <div class="col-md-8 col-xs-8 form-inline pull-right">
+            <input type="text" id="filterInput" class="form-control" />
+            <button type="button" id="filterBtn" class="form-control">Filter</button>
+        </div>
+    </div>
+    <div class="vis-container">
+        <div id="sequence"></div>
+        <div id="chart">
+        </div>
+    </div>
+</div>
+<style>
+
+.page-header h3 {
+    margin-top: 0;
+    display: inline-block;
+}
+
+.page-header #filterInput {
+    width: calc(100% - 65px);
+    display: inline-block;
+}
+
+.page-header #filterBtn {
+    display: inline-block;
+    width: auto;
+}
+
+#sequence {
+    height: 50px;
+}
+
+#sequence text {
+    font-weight: normal;
+    fill: #fff;
+    font-size: 8pt;
+}
+
+#chart {
+    position: relative;
+}
+
+#chart path {
+    stroke: #fff;
+}
+
+#explanation {
+    position: absolute;
+    top: 250px;
+    left: 238px;
+    width: 140px;
+    text-align: center;
+    color: #666;
+    z-index: -1;
+}
+
+#percentage {
+    font-size: 2.5em;
+}
+</style>
+
+<script>
+(function() {
+
+    var allData;
+    var sweetConcepts;
+    var width = 600;
+    var height = 600;
+
+    d3.json('data/sweets.json', function(obj) {
+
+        sweetConcepts = obj.data;
+        allData = sweetConcepts;
+        drawVis();
+    });
+
+    function drawVis() {
+        var myFlower = new CodeFlower("#chart", width, height);
+        myFlower.update(allData);
+    }
+    
+}());
+//# sourceURL=vis/taxonomy.js
+</script>

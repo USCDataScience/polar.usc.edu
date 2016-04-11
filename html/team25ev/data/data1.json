@@ -1,0 +1,22 @@
+{"data":[
+  {"ap": [
+    {"floorratio": [
+      {"floor":"Basement", "ratio": 0.20},
+      {"floor":"Ground", "ratio": 0.10},
+      {"floor":"First Floor", "ratio": 0.15},
+      {"floor":"Second Floor", "ratio": 0.20},
+      {"floor":"Fifth Floor", "ratio": 0.25}
+
+    ]}
+  ]},
+  {"ap": [
+    {"floorratio": [
+      {"floor":"Basement", "ratio": 0.10},
+      {"floor":"Ground", "ratio": 0.30},
+      {"floor":"First Floor", "ratio": 0.10},
+      {"floor":"Second Floor", "ratio": 0.15},
+      {"floor":"Third Floor", "ratio": 0.35},
+      {"floor":"Fourth Floor", "ratio": 0.10}
+    ]}
+  ]}
+]}

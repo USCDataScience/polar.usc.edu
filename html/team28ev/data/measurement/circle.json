@@ -1,0 +1,2757 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "concepts",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 1
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 11
+                },
+                {
+                    "name": "DURATION",
+                    "size": 11
+                },
+                {
+                    "name": "DATE",
+                    "size": 11
+                },
+                {
+                    "name": "resourceName",
+                    "size": 11
+                },
+                {
+                    "name": "id",
+                    "size": 11
+                },
+                {
+                    "name": "SET",
+                    "size": 10
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 11
+                },
+                {
+                    "name": "entities",
+                    "size": 11
+                },
+                {
+                    "name": "score",
+                    "size": 11
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 11
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "_version_",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 11
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 11
+                },
+                {
+                    "name": "TIME",
+                    "size": 9
+                },
+                {
+                    "name": "MISC",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 9
+                },
+                {
+                    "name": "MONEY",
+                    "size": 10
+                },
+                {
+                    "name": "PERSON",
+                    "size": 11
+                },
+                {
+                    "name": "keywords",
+                    "size": 11
+                },
+                {
+                    "name": "concepts",
+                    "size": 11
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 11
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 11
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 6
+                }
+            ],
+            "name": "cluster2"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 21
+                },
+                {
+                    "name": "DURATION",
+                    "size": 21
+                },
+                {
+                    "name": "DATE",
+                    "size": 21
+                },
+                {
+                    "name": "resourceName",
+                    "size": 21
+                },
+                {
+                    "name": "id",
+                    "size": 21
+                },
+                {
+                    "name": "SET",
+                    "size": 14
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 21
+                },
+                {
+                    "name": "entities",
+                    "size": 21
+                },
+                {
+                    "name": "score",
+                    "size": 21
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 21
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 21
+                },
+                {
+                    "name": "_version_",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 21
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 21
+                },
+                {
+                    "name": "MISC",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 21
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 18
+                },
+                {
+                    "name": "MONEY",
+                    "size": 15
+                },
+                {
+                    "name": "PERSON",
+                    "size": 21
+                },
+                {
+                    "name": "keywords",
+                    "size": 21
+                },
+                {
+                    "name": "concepts",
+                    "size": 21
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 21
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 21
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 7
+                },
+                {
+                    "name": "TIME",
+                    "size": 9
+                }
+            ],
+            "name": "cluster3"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 11
+                },
+                {
+                    "name": "DURATION",
+                    "size": 10
+                },
+                {
+                    "name": "DATE",
+                    "size": 11
+                },
+                {
+                    "name": "resourceName",
+                    "size": 11
+                },
+                {
+                    "name": "id",
+                    "size": 11
+                },
+                {
+                    "name": "SET",
+                    "size": 4
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 10
+                },
+                {
+                    "name": "entities",
+                    "size": 11
+                },
+                {
+                    "name": "score",
+                    "size": 11
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 11
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "_version_",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 11
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 11
+                },
+                {
+                    "name": "MISC",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 7
+                },
+                {
+                    "name": "PERSON",
+                    "size": 11
+                },
+                {
+                    "name": "keywords",
+                    "size": 11
+                },
+                {
+                    "name": "concepts",
+                    "size": 11
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 10
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 11
+                },
+                {
+                    "name": "TIME",
+                    "size": 7
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 3
+                },
+                {
+                    "name": "MONEY",
+                    "size": 4
+                }
+            ],
+            "name": "cluster4"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 9
+                },
+                {
+                    "name": "keywords",
+                    "size": 9
+                },
+                {
+                    "name": "DATE",
+                    "size": 11
+                },
+                {
+                    "name": "resourceName",
+                    "size": 11
+                },
+                {
+                    "name": "id",
+                    "size": 11
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 10
+                },
+                {
+                    "name": "entities",
+                    "size": 9
+                },
+                {
+                    "name": "DURATION",
+                    "size": 9
+                },
+                {
+                    "name": "score",
+                    "size": 11
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 11
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "_version_",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 11
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 11
+                },
+                {
+                    "name": "MISC",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 10
+                },
+                {
+                    "name": "PERSON",
+                    "size": 11
+                },
+                {
+                    "name": "concepts",
+                    "size": 9
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 10
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 11
+                },
+                {
+                    "name": "SET",
+                    "size": 5
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 3
+                },
+                {
+                    "name": "MONEY",
+                    "size": 2
+                },
+                {
+                    "name": "TIME",
+                    "size": 3
+                }
+            ],
+            "name": "cluster5"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 6
+                },
+                {
+                    "name": "keywords",
+                    "size": 6
+                },
+                {
+                    "name": "DATE",
+                    "size": 24
+                },
+                {
+                    "name": "resourceName",
+                    "size": 24
+                },
+                {
+                    "name": "id",
+                    "size": 24
+                },
+                {
+                    "name": "SET",
+                    "size": 19
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 23
+                },
+                {
+                    "name": "entities",
+                    "size": 6
+                },
+                {
+                    "name": "DURATION",
+                    "size": 23
+                },
+                {
+                    "name": "score",
+                    "size": 24
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 24
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 24
+                },
+                {
+                    "name": "_version_",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 24
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 24
+                },
+                {
+                    "name": "PERSON",
+                    "size": 20
+                },
+                {
+                    "name": "concepts",
+                    "size": 6
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 23
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 24
+                },
+                {
+                    "name": "MISC",
+                    "size": 23
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 15
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 20
+                },
+                {
+                    "name": "MONEY",
+                    "size": 12
+                },
+                {
+                    "name": "TIME",
+                    "size": 14
+                }
+            ],
+            "name": "cluster6"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 31
+                },
+                {
+                    "name": "DURATION",
+                    "size": 30
+                },
+                {
+                    "name": "resourceName",
+                    "size": 31
+                },
+                {
+                    "name": "id",
+                    "size": 31
+                },
+                {
+                    "name": "SET",
+                    "size": 17
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 30
+                },
+                {
+                    "name": "score",
+                    "size": 31
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 31
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 29
+                },
+                {
+                    "name": "_version_",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 31
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 31
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 15
+                },
+                {
+                    "name": "MISC",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 29
+                },
+                {
+                    "name": "MONEY",
+                    "size": 18
+                },
+                {
+                    "name": "PERSON",
+                    "size": 30
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 30
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 31
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 29
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 21
+                },
+                {
+                    "name": "TIME",
+                    "size": 14
+                },
+                {
+                    "name": "keywords",
+                    "size": 5
+                },
+                {
+                    "name": "entities",
+                    "size": 5
+                },
+                {
+                    "name": "concepts",
+                    "size": 5
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 3
+                }
+            ],
+            "name": "cluster7"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 39
+                },
+                {
+                    "name": "DURATION",
+                    "size": 34
+                },
+                {
+                    "name": "resourceName",
+                    "size": 39
+                },
+                {
+                    "name": "id",
+                    "size": 39
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 37
+                },
+                {
+                    "name": "score",
+                    "size": 39
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 39
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 39
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 34
+                },
+                {
+                    "name": "_version_",
+                    "size": 39
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 39
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 38
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 39
+                },
+                {
+                    "name": "MISC",
+                    "size": 38
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 39
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 38
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 34
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 27
+                },
+                {
+                    "name": "PERSON",
+                    "size": 36
+                },
+                {
+                    "name": "TIME",
+                    "size": 20
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 37
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 39
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 38
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 34
+                },
+                {
+                    "name": "SET",
+                    "size": 13
+                },
+                {
+                    "name": "MONEY",
+                    "size": 16
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 6
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 6
+                },
+                {
+                    "name": "entities",
+                    "size": 7
+                },
+                {
+                    "name": "keywords",
+                    "size": 7
+                },
+                {
+                    "name": "concepts",
+                    "size": 7
+                }
+            ],
+            "name": "cluster8"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 27
+                },
+                {
+                    "name": "DURATION",
+                    "size": 25
+                },
+                {
+                    "name": "resourceName",
+                    "size": 27
+                },
+                {
+                    "name": "id",
+                    "size": 27
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 22
+                },
+                {
+                    "name": "score",
+                    "size": 27
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 18
+                },
+                {
+                    "name": "_version_",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 24
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 27
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 10
+                },
+                {
+                    "name": "MISC",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 18
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 18
+                },
+                {
+                    "name": "PERSON",
+                    "size": 27
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 22
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 24
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 18
+                },
+                {
+                    "name": "SET",
+                    "size": 12
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 26
+                },
+                {
+                    "name": "TIME",
+                    "size": 10
+                },
+                {
+                    "name": "MONEY",
+                    "size": 10
+                },
+                {
+                    "name": "entities",
+                    "size": 5
+                },
+                {
+                    "name": "keywords",
+                    "size": 5
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 4
+                },
+                {
+                    "name": "concepts",
+                    "size": 4
+                }
+            ],
+            "name": "cluster9"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 24
+                },
+                {
+                    "name": "resourceName",
+                    "size": 25
+                },
+                {
+                    "name": "id",
+                    "size": 25
+                },
+                {
+                    "name": "SET",
+                    "size": 10
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 19
+                },
+                {
+                    "name": "score",
+                    "size": 25
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 25
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 15
+                },
+                {
+                    "name": "_version_",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 23
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 19
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 23
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 15
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 11
+                },
+                {
+                    "name": "PERSON",
+                    "size": 22
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 19
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 15
+                },
+                {
+                    "name": "DURATION",
+                    "size": 18
+                },
+                {
+                    "name": "MISC",
+                    "size": 23
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 7
+                },
+                {
+                    "name": "entities",
+                    "size": 7
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 6
+                },
+                {
+                    "name": "keywords",
+                    "size": 7
+                },
+                {
+                    "name": "concepts",
+                    "size": 7
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 13
+                },
+                {
+                    "name": "TIME",
+                    "size": 8
+                }
+            ],
+            "name": "cluster10"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 34
+                },
+                {
+                    "name": "SET",
+                    "size": 9
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 6
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 32
+                },
+                {
+                    "name": "MISC",
+                    "size": 30
+                },
+                {
+                    "name": "MONEY",
+                    "size": 14
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 27
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 26
+                },
+                {
+                    "name": "DURATION",
+                    "size": 26
+                },
+                {
+                    "name": "score",
+                    "size": 34
+                },
+                {
+                    "name": "resourceName",
+                    "size": 34
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 34
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 34
+                },
+                {
+                    "name": "DATE",
+                    "size": 34
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 34
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 26
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 27
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 34
+                },
+                {
+                    "name": "id",
+                    "size": 34
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 32
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 14
+                },
+                {
+                    "name": "TIME",
+                    "size": 15
+                },
+                {
+                    "name": "PERSON",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 12
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 12
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 12
+                },
+                {
+                    "name": "concepts",
+                    "size": 9
+                },
+                {
+                    "name": "entities",
+                    "size": 9
+                },
+                {
+                    "name": "keywords",
+                    "size": 9
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 7
+                }
+            ],
+            "name": "cluster11"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 15
+                },
+                {
+                    "name": "_version_",
+                    "size": 18
+                },
+                {
+                    "name": "DATE",
+                    "size": 18
+                },
+                {
+                    "name": "SET",
+                    "size": 8
+                },
+                {
+                    "name": "MISC",
+                    "size": 15
+                },
+                {
+                    "name": "entities",
+                    "size": 4
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 4
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 18
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 5
+                },
+                {
+                    "name": "MONEY",
+                    "size": 14
+                },
+                {
+                    "name": "PERSON",
+                    "size": 17
+                },
+                {
+                    "name": "score",
+                    "size": 18
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 18
+                },
+                {
+                    "name": "keywords",
+                    "size": 4
+                },
+                {
+                    "name": "concepts",
+                    "size": 4
+                },
+                {
+                    "name": "DURATION",
+                    "size": 13
+                },
+                {
+                    "name": "resourceName",
+                    "size": 18
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 18
+                },
+                {
+                    "name": "id",
+                    "size": 18
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 18
+                },
+                {
+                    "name": "TIME",
+                    "size": 8
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 16
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 14
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 14
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 16
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 8
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 8
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 8
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 1
+                }
+            ],
+            "name": "cluster12"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 16
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 15
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 15
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 6
+                },
+                {
+                    "name": "MONEY",
+                    "size": 6
+                },
+                {
+                    "name": "DURATION",
+                    "size": 14
+                },
+                {
+                    "name": "score",
+                    "size": 16
+                },
+                {
+                    "name": "PERSON",
+                    "size": 14
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 15
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 16
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 10
+                },
+                {
+                    "name": "resourceName",
+                    "size": 16
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 10
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 16
+                },
+                {
+                    "name": "id",
+                    "size": 16
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 16
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 11
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 6
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 13
+                },
+                {
+                    "name": "entities",
+                    "size": 6
+                },
+                {
+                    "name": "keywords",
+                    "size": 6
+                },
+                {
+                    "name": "concepts",
+                    "size": 6
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 13
+                },
+                {
+                    "name": "SET",
+                    "size": 5
+                },
+                {
+                    "name": "TIME",
+                    "size": 6
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 4
+                }
+            ],
+            "name": "cluster13"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 13
+                },
+                {
+                    "name": "_version_",
+                    "size": 20
+                },
+                {
+                    "name": "DATE",
+                    "size": 19
+                },
+                {
+                    "name": "SET",
+                    "size": 7
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 9
+                },
+                {
+                    "name": "MISC",
+                    "size": 18
+                },
+                {
+                    "name": "MONEY",
+                    "size": 11
+                },
+                {
+                    "name": "PERSON",
+                    "size": 20
+                },
+                {
+                    "name": "score",
+                    "size": 20
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 19
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 20
+                },
+                {
+                    "name": "DURATION",
+                    "size": 14
+                },
+                {
+                    "name": "resourceName",
+                    "size": 20
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 14
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 20
+                },
+                {
+                    "name": "id",
+                    "size": 20
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 20
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 14
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 15
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 15
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "TIME",
+                    "size": 10
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 2
+                },
+                {
+                    "name": "entities",
+                    "size": 3
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 3
+                },
+                {
+                    "name": "concepts",
+                    "size": 3
+                },
+                {
+                    "name": "keywords",
+                    "size": 3
+                }
+            ],
+            "name": "cluster14"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 10
+                },
+                {
+                    "name": "_version_",
+                    "size": 19
+                },
+                {
+                    "name": "DATE",
+                    "size": 19
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 8
+                },
+                {
+                    "name": "MISC",
+                    "size": 18
+                },
+                {
+                    "name": "MONEY",
+                    "size": 13
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 14
+                },
+                {
+                    "name": "PERSON",
+                    "size": 18
+                },
+                {
+                    "name": "score",
+                    "size": 19
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 16
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 19
+                },
+                {
+                    "name": "DURATION",
+                    "size": 14
+                },
+                {
+                    "name": "resourceName",
+                    "size": 19
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 14
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 19
+                },
+                {
+                    "name": "id",
+                    "size": 19
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 19
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 3
+                },
+                {
+                    "name": "entities",
+                    "size": 3
+                },
+                {
+                    "name": "concepts",
+                    "size": 3
+                },
+                {
+                    "name": "keywords",
+                    "size": 3
+                },
+                {
+                    "name": "SET",
+                    "size": 6
+                },
+                {
+                    "name": "TIME",
+                    "size": 10
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 8
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 8
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                }
+            ],
+            "name": "cluster15"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 23
+                },
+                {
+                    "name": "_version_",
+                    "size": 35
+                },
+                {
+                    "name": "SET",
+                    "size": 19
+                },
+                {
+                    "name": "MISC",
+                    "size": 31
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 11
+                },
+                {
+                    "name": "PERSON",
+                    "size": 33
+                },
+                {
+                    "name": "DURATION",
+                    "size": 28
+                },
+                {
+                    "name": "score",
+                    "size": 35
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 32
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 35
+                },
+                {
+                    "name": "DATE",
+                    "size": 34
+                },
+                {
+                    "name": "resourceName",
+                    "size": 35
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 11
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 35
+                },
+                {
+                    "name": "id",
+                    "size": 35
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 35
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 16
+                },
+                {
+                    "name": "TIME",
+                    "size": 20
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 4
+                },
+                {
+                    "name": "entities",
+                    "size": 6
+                },
+                {
+                    "name": "MONEY",
+                    "size": 9
+                },
+                {
+                    "name": "keywords",
+                    "size": 6
+                },
+                {
+                    "name": "concepts",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 2
+                }
+            ],
+            "name": "cluster16"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 33
+                },
+                {
+                    "name": "DATE",
+                    "size": 32
+                },
+                {
+                    "name": "SET",
+                    "size": 14
+                },
+                {
+                    "name": "MISC",
+                    "size": 28
+                },
+                {
+                    "name": "TIME",
+                    "size": 18
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 12
+                },
+                {
+                    "name": "PERSON",
+                    "size": 30
+                },
+                {
+                    "name": "score",
+                    "size": 33
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 27
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 33
+                },
+                {
+                    "name": "DURATION",
+                    "size": 25
+                },
+                {
+                    "name": "resourceName",
+                    "size": 33
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 33
+                },
+                {
+                    "name": "id",
+                    "size": 33
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 28
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 20
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 7
+                },
+                {
+                    "name": "entities",
+                    "size": 8
+                },
+                {
+                    "name": "concepts",
+                    "size": 7
+                },
+                {
+                    "name": "keywords",
+                    "size": 8
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 5
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 5
+                },
+                {
+                    "name": "MONEY",
+                    "size": 9
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 7
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 7
+                }
+            ],
+            "name": "cluster17"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 26
+                },
+                {
+                    "name": "SET",
+                    "size": 7
+                },
+                {
+                    "name": "TIME",
+                    "size": 18
+                },
+                {
+                    "name": "MISC",
+                    "size": 20
+                },
+                {
+                    "name": "PERSON",
+                    "size": 24
+                },
+                {
+                    "name": "DURATION",
+                    "size": 23
+                },
+                {
+                    "name": "score",
+                    "size": 26
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 25
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 26
+                },
+                {
+                    "name": "DATE",
+                    "size": 26
+                },
+                {
+                    "name": "resourceName",
+                    "size": 26
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 26
+                },
+                {
+                    "name": "id",
+                    "size": 26
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 26
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 15
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 5
+                },
+                {
+                    "name": "MONEY",
+                    "size": 3
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 5
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 5
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                }
+            ],
+            "name": "cluster18"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 35
+                },
+                {
+                    "name": "TIME",
+                    "size": 24
+                },
+                {
+                    "name": "MISC",
+                    "size": 30
+                },
+                {
+                    "name": "PERSON",
+                    "size": 23
+                },
+                {
+                    "name": "DURATION",
+                    "size": 21
+                },
+                {
+                    "name": "score",
+                    "size": 35
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 31
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 35
+                },
+                {
+                    "name": "DATE",
+                    "size": 35
+                },
+                {
+                    "name": "resourceName",
+                    "size": 35
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 35
+                },
+                {
+                    "name": "id",
+                    "size": 35
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 35
+                },
+                {
+                    "name": "SET",
+                    "size": 3
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 5
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 5
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 2
+                },
+                {
+                    "name": "entities",
+                    "size": 2
+                },
+                {
+                    "name": "concepts",
+                    "size": 2
+                },
+                {
+                    "name": "keywords",
+                    "size": 2
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 5
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 14
+                },
+                {
+                    "name": "MONEY",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                }
+            ],
+            "name": "cluster19"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 3
+                },
+                {
+                    "name": "_version_",
+                    "size": 14
+                },
+                {
+                    "name": "MISC",
+                    "size": 10
+                },
+                {
+                    "name": "PERSON",
+                    "size": 9
+                },
+                {
+                    "name": "score",
+                    "size": 14
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 11
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 14
+                },
+                {
+                    "name": "DATE",
+                    "size": 13
+                },
+                {
+                    "name": "resourceName",
+                    "size": 14
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 14
+                },
+                {
+                    "name": "id",
+                    "size": 14
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 13
+                },
+                {
+                    "name": "TIME",
+                    "size": 6
+                },
+                {
+                    "name": "DURATION",
+                    "size": 7
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 2
+                },
+                {
+                    "name": "SET",
+                    "size": 3
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 1
+                },
+                {
+                    "name": "concepts",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 1
+                }
+            ],
+            "name": "cluster20"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 8
+                },
+                {
+                    "name": "TIME",
+                    "size": 3
+                },
+                {
+                    "name": "DURATION",
+                    "size": 6
+                },
+                {
+                    "name": "score",
+                    "size": 8
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 5
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 8
+                },
+                {
+                    "name": "DATE",
+                    "size": 8
+                },
+                {
+                    "name": "resourceName",
+                    "size": 8
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 8
+                },
+                {
+                    "name": "id",
+                    "size": 8
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 8
+                },
+                {
+                    "name": "MISC",
+                    "size": 5
+                },
+                {
+                    "name": "PERSON",
+                    "size": 4
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                }
+            ],
+            "name": "cluster21"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 4
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 4
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 3
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 4
+                },
+                {
+                    "name": "DATE",
+                    "size": 4
+                },
+                {
+                    "name": "resourceName",
+                    "size": 4
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 4
+                },
+                {
+                    "name": "id",
+                    "size": 4
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 3
+                },
+                {
+                    "name": "DURATION",
+                    "size": 2
+                },
+                {
+                    "name": "MONEY",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                }
+            ],
+            "name": "cluster22"
+        },
+        {
+            "children": [
+                {
+                    "name": "MEASUREMENT",
+                    "size": 2
+                },
+                {
+                    "name": "score",
+                    "size": 2
+                },
+                {
+                    "name": "_version_",
+                    "size": 2
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 2
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 2
+                },
+                {
+                    "name": "id",
+                    "size": 2
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                }
+            ],
+            "name": "cluster23"
+        }
+    ],
+    "name": "clusters"
+}

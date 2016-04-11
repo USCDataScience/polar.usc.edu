@@ -19,16 +19,15 @@ html {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-default {
         background-color: #990000;
     }
 
     .top-nav-collapse {
         padding: 0;
     }
-}
-
-.navbar{
-    background-color: #990000;
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -45,7 +44,6 @@ of those sections to manage the look and feel of the site. */
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
     min-height: 1000px;
 }
 
@@ -88,4 +86,3 @@ of those sections to manage the look and feel of the site. */
     background: #fffffa;
     min-height: 800px;
 }
-

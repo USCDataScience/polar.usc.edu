@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Locations in TREC Polar Dataset</title>
+    <link rel="stylesheet" href="../../css/team24/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      path {
+        stroke: white;
+        stroke-width: 0.5px;
+        font-size: 10px;
+      }
+    </style>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+    <script src="../../js/jquery.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container row bfd" style="margin-top:60px; margin-left: 40px;">
+   <div class="container col-md-12">
+      <a href="./team24-location.html" role="button" class="btn btn-primary disabled col-md-3" style="margin:10px;">Locations in TREC Dataset</a>
+      <a href="./team24-mesaurements.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Measurements in TREC Dataset</a>
+      <a href="./team24-ontologies.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Sweet Ontology Mappings in TREC</a>
+      <a href="./team24-histogram.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Metadata Quality Score in TREC</a>
+     <a href="./team24-solr.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Solr Schema </a>
+  <a href="./team24-ffmpeg.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">FFMPEG Extractions </a>
+    </div>
+     <div>
+    <a href="http://localhost:8984/solr/Location/select?q=*%3A*&wt=json&indent=true">Solr Query Link for Seeing all Locations</a>
+    </div>
+    <p> Locations in TREC Polar Dataset</p>
+    <div class="container" id="chart">
+      
+    </div>
+  </div>
+    <script type="text/javascript">
+      var width = 900;
+      var height = 600;
+      function colors_google(n) {
+          var colors_g = ["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6", "#dd4477", "#66aa00", "#b82e2e", "#316395", "#994499", "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707", "#651067", "#329262", "#5574a6", "#3b3eac"];
+          return colors_g[n % colors_g.length];
+          //return "#109618";
+      }
+      var places = [];
+      d3.json("../../data/team24ev/locations/geolocation.json",function(data){
+        i = 0;
+        for(var key in data["response"]["docs"]){
+          //console.log(data["response"]["docs"][key])
+          places.push(data["response"]["docs"][key]); 
+        }
+        //console.log(places);
+        show_graph(places);
+      });
+
+      
+      function show_graph(places){
+        var projection = d3.geo.mercator();
+      
+        var svg = d3.select("#chart").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        var path = d3.geo.path()
+            .projection(projection);
+        var g = svg.append("g");
+        
+        var tooltip = d3.select('#chart').append('div')
+        .style('position','absolute')
+        .style('padding','0 5px')
+        .style('fill','#316395')
+        .style('font-size','10px')
+        .style('height', '40px')
+        .style('background','white')
+        .style('opacity',0)
+
+        d3.json("world-110m2.json", function(error, topology) {
+            g.selectAll("path")
+              .data(topojson.object(topology, topology.objects.countries)
+                  .geometries)
+            .enter()
+              .append("path")
+              .attr("d", path)
+              .attr("fill",function(d,i){
+                return colors_google(i*2);
+              })
+              .append('text',function(d){
+                return d.name;
+              });
+        });
+        svg.selectAll(".pin")
+            .data(places)
+            .enter().append("circle", ".pin")
+            .attr("r", 2)
+            .attr("transform", function(d) {
+              return "translate(" + projection([
+                d.latitude,
+                d.longitude
+              ]) + ")";
+            })
+            .on('mouseover',function(d){
+              tooltip.transition()
+                .style('opacity',0.9)
+              tooltip.html("File :"+d.filename+"<br/> Location: "+d.location)
+                .style('left',d3.event.pageX +'px')
+                .style('top',d3.event.pageY+'px')
+                .attr("font-size","5px")
+              d3.select(this)
+                .style('opacity',0.5)
+                .attr('fill',"#3b3eac")
+            })
+            .on('mouseout',function(d){
+              d3.select(this)
+                .style('opacity',1)
+                .attr('fill',"#000000")
+            });
+        }
+    </script>
+  </body>
+</html>

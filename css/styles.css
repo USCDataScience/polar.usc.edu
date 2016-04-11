@@ -8,29 +8,50 @@
 
 /* Navbar */
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
     color: #fff;
     background-color: #FFCC00;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+      background-color: #FFCC00;
 }
 
 body {
     overflow-y: scroll;
 }
 
-.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-    background-color: #FFCC00;
+.nav-ul-second > li > a {
+  padding-top: 12px;
+  padding-bottom:2px !important;
 }
+
+.nav-ul-second {
+  margin-left: 134px;
+}
+
 /* Buttons */
 .btn-primary {
     background-color: #ffcc00;
     border: none;
 }
 
+#nav-secondary {
+  margin-top: 50px;
+  max-height: 50px;
+  height: 64px;
+  background-color: #000;
+}
+
 .btn-primary:hover {
     background-color: #ffdb4d;
 }
+
+.navbar-collapse { background:#990000;  }
 
 .btn-default {
     color: #fff;
@@ -50,6 +71,8 @@ body {
     background-color: transparent;
     border-color: #fff;
 }
+
+
 
 /* Other classes */
 
@@ -86,6 +109,15 @@ body {
 #regular-viz .thumbnail img{
     height: 200px;
     width: 400px;
+}
+
+#sce-viz .thumbnail img{
+    height: 200px;
+    width: 400px;
+}
+
+#sce-viz .thumbnail{
+    height: 30%;
 }
 
 #d3-other .thumbnail img{

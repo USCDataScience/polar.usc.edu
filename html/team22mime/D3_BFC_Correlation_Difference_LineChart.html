@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Line Chart</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+ 
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/team22-spring-2016-js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+.glineMax {
+  fill: none;
+  stroke: orange;
+  stroke-width: 1px;
+}
+
+.glineU {
+  fill: none;
+  stroke: red;
+  stroke-width: 1px;
+}
+
+.glineL {
+  fill: none;
+  stroke: green;
+  stroke-width: 1px;
+}
+
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="header"> </div>
+
+    <br/><br/><br/><br/><br/><br/>
+    <div class="container">
+
+<h1 id="name">Line chart showing areas of <u>high correlation</u> <em>(x-axis and green line)</em> and <u>low correlation</u> <em>(yellow and red lines)</em>. </h1>
+<p id="ll"></p>
+<script type="text/javascript" src="d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+
+
+//var fileName="applicationzip_signature.json";  
+var fileName="../../data/team22-spring-2016-data/mime-analysis/bfc_correlation/bfc_corelation_difference_output.json";
+
+
+$.getJSON(fileName, function(json) {
+      var data=[];
+      var v=0;
+      var maxValue=0,l1=0,l2=0;
+
+        $.each(json, function(i,field){
+        v=parseFloat(field);
+        if(v>maxValue)
+          maxValue=v;
+        });
+
+        l1=0.8*maxValue;
+        l2=0.2*maxValue;
+
+
+
+       $.each(json, function(i,field){
+        v=parseFloat(field);
+
+        //COMPANDING
+        //v=Math.log(1+(255*v))/Math.log(256);
+        if(v>maxValue)
+          maxValue=v;
+
+        data.push({date: i, close: v, m:maxValue, l1:l1, l2:l2});
+        //console.log(i+" "+v);
+        
+        });
+
+
+
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 1000 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var line = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.close); });
+
+var maxline = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.m); });
+
+var upline = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.l1); });
+
+var lline = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.l2); });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+  //uncomment to get y-axis labels only for y-data available
+  y.domain(d3.extent(data, function(d) { return d.close; }));
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "glineMax")
+      .attr("d", maxline);
+  svg.append("path")
+      .datum(data)
+      .attr("class", "glineU")
+      .attr("d", upline);
+
+  svg.append("path")
+      .datum(data)
+      .attr("class", "glineL")
+      .attr("d", lline);
+});
+
+</script>
+</div>
+</body>

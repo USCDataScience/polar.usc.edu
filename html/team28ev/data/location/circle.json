@@ -1,0 +1,3573 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_30",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_31",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_25",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_24",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_27",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_26",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_21",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_23",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_22",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_29",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_28",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 2
+                },
+                {
+                    "name": "resourceName",
+                    "size": 2
+                },
+                {
+                    "name": "id",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 2
+                },
+                {
+                    "name": "score",
+                    "size": 2
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 2
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 2
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 2
+                },
+                {
+                    "name": "TEI",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 2
+                },
+                {
+                    "name": "_version_",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 2
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 2
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                }
+            ],
+            "name": "cluster2"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 3
+                },
+                {
+                    "name": "DURATION",
+                    "size": 3
+                },
+                {
+                    "name": "DATE",
+                    "size": 3
+                },
+                {
+                    "name": "resourceName",
+                    "size": 3
+                },
+                {
+                    "name": "id",
+                    "size": 3
+                },
+                {
+                    "name": "SET",
+                    "size": 3
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 3
+                },
+                {
+                    "name": "entities",
+                    "size": 3
+                },
+                {
+                    "name": "score",
+                    "size": 3
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 3
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 3
+                },
+                {
+                    "name": "_version_",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 3
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 3
+                },
+                {
+                    "name": "MISC",
+                    "size": 3
+                },
+                {
+                    "name": "TIME",
+                    "size": 3
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 3
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 3
+                },
+                {
+                    "name": "MONEY",
+                    "size": 3
+                },
+                {
+                    "name": "PERSON",
+                    "size": 3
+                },
+                {
+                    "name": "keywords",
+                    "size": 3
+                },
+                {
+                    "name": "concepts",
+                    "size": 3
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 3
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 3
+                }
+            ],
+            "name": "cluster3"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 19
+                },
+                {
+                    "name": "DURATION",
+                    "size": 19
+                },
+                {
+                    "name": "DATE",
+                    "size": 19
+                },
+                {
+                    "name": "resourceName",
+                    "size": 19
+                },
+                {
+                    "name": "id",
+                    "size": 19
+                },
+                {
+                    "name": "SET",
+                    "size": 18
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 19
+                },
+                {
+                    "name": "entities",
+                    "size": 19
+                },
+                {
+                    "name": "score",
+                    "size": 19
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 19
+                },
+                {
+                    "name": "_version_",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 19
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 19
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 11
+                },
+                {
+                    "name": "TIME",
+                    "size": 17
+                },
+                {
+                    "name": "MISC",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 19
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 17
+                },
+                {
+                    "name": "MONEY",
+                    "size": 17
+                },
+                {
+                    "name": "PERSON",
+                    "size": 19
+                },
+                {
+                    "name": "keywords",
+                    "size": 19
+                },
+                {
+                    "name": "concepts",
+                    "size": 19
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 19
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 19
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 15
+                }
+            ],
+            "name": "cluster4"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 53
+                },
+                {
+                    "name": "keywords",
+                    "size": 53
+                },
+                {
+                    "name": "DURATION",
+                    "size": 53
+                },
+                {
+                    "name": "resourceName",
+                    "size": 53
+                },
+                {
+                    "name": "id",
+                    "size": 53
+                },
+                {
+                    "name": "SET",
+                    "size": 45
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 53
+                },
+                {
+                    "name": "entities",
+                    "size": 53
+                },
+                {
+                    "name": "score",
+                    "size": 53
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 53
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 53
+                },
+                {
+                    "name": "_version_",
+                    "size": 53
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 53
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 53
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 53
+                },
+                {
+                    "name": "MISC",
+                    "size": 52
+                },
+                {
+                    "name": "TIME",
+                    "size": 36
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 19
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 53
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 53
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 53
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 50
+                },
+                {
+                    "name": "DATE",
+                    "size": 53
+                },
+                {
+                    "name": "PERSON",
+                    "size": 51
+                },
+                {
+                    "name": "concepts",
+                    "size": 53
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 53
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 53
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 53
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 53
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 27
+                },
+                {
+                    "name": "MONEY",
+                    "size": 38
+                }
+            ],
+            "name": "cluster5"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 60
+                },
+                {
+                    "name": "DURATION",
+                    "size": 58
+                },
+                {
+                    "name": "DATE",
+                    "size": 60
+                },
+                {
+                    "name": "resourceName",
+                    "size": 60
+                },
+                {
+                    "name": "id",
+                    "size": 60
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 60
+                },
+                {
+                    "name": "entities",
+                    "size": 60
+                },
+                {
+                    "name": "score",
+                    "size": 60
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 60
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 60
+                },
+                {
+                    "name": "_version_",
+                    "size": 60
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 60
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 60
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 60
+                },
+                {
+                    "name": "MISC",
+                    "size": 60
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 21
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 60
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 60
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 60
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 48
+                },
+                {
+                    "name": "MONEY",
+                    "size": 28
+                },
+                {
+                    "name": "PERSON",
+                    "size": 60
+                },
+                {
+                    "name": "keywords",
+                    "size": 60
+                },
+                {
+                    "name": "concepts",
+                    "size": 60
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 60
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 60
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 60
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 60
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 10
+                },
+                {
+                    "name": "SET",
+                    "size": 40
+                },
+                {
+                    "name": "TIME",
+                    "size": 35
+                }
+            ],
+            "name": "cluster6"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 82
+                },
+                {
+                    "name": "DURATION",
+                    "size": 76
+                },
+                {
+                    "name": "DATE",
+                    "size": 84
+                },
+                {
+                    "name": "resourceName",
+                    "size": 84
+                },
+                {
+                    "name": "id",
+                    "size": 84
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 84
+                },
+                {
+                    "name": "entities",
+                    "size": 81
+                },
+                {
+                    "name": "score",
+                    "size": 84
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 84
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 15
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 84
+                },
+                {
+                    "name": "_version_",
+                    "size": 84
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 84
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 84
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 84
+                },
+                {
+                    "name": "MISC",
+                    "size": 81
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 84
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 84
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 84
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 62
+                },
+                {
+                    "name": "PERSON",
+                    "size": 82
+                },
+                {
+                    "name": "keywords",
+                    "size": 82
+                },
+                {
+                    "name": "concepts",
+                    "size": 82
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 84
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 84
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 84
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 84
+                },
+                {
+                    "name": "SET",
+                    "size": 38
+                },
+                {
+                    "name": "MONEY",
+                    "size": 30
+                },
+                {
+                    "name": "TIME",
+                    "size": 35
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 10
+                }
+            ],
+            "name": "cluster7"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 109
+                },
+                {
+                    "name": "DURATION",
+                    "size": 94
+                },
+                {
+                    "name": "resourceName",
+                    "size": 109
+                },
+                {
+                    "name": "id",
+                    "size": 109
+                },
+                {
+                    "name": "SET",
+                    "size": 55
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 109
+                },
+                {
+                    "name": "score",
+                    "size": 109
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 109
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 27
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 104
+                },
+                {
+                    "name": "_version_",
+                    "size": 109
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 109
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 109
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 109
+                },
+                {
+                    "name": "MISC",
+                    "size": 106
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 109
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 109
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 104
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 67
+                },
+                {
+                    "name": "MONEY",
+                    "size": 43
+                },
+                {
+                    "name": "PERSON",
+                    "size": 98
+                },
+                {
+                    "name": "TIME",
+                    "size": 56
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 109
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 109
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 109
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 104
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 78
+                },
+                {
+                    "name": "keywords",
+                    "size": 78
+                },
+                {
+                    "name": "entities",
+                    "size": 78
+                },
+                {
+                    "name": "concepts",
+                    "size": 77
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 30
+                }
+            ],
+            "name": "cluster8"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 165
+                },
+                {
+                    "name": "DURATION",
+                    "size": 142
+                },
+                {
+                    "name": "resourceName",
+                    "size": 166
+                },
+                {
+                    "name": "id",
+                    "size": 166
+                },
+                {
+                    "name": "SET",
+                    "size": 81
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 166
+                },
+                {
+                    "name": "score",
+                    "size": 166
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 165
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 149
+                },
+                {
+                    "name": "_version_",
+                    "size": 166
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 166
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 166
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 165
+                },
+                {
+                    "name": "MISC",
+                    "size": 159
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 62
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 166
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 166
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 149
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 120
+                },
+                {
+                    "name": "MONEY",
+                    "size": 82
+                },
+                {
+                    "name": "PERSON",
+                    "size": 156
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 166
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 166
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 166
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 149
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 76
+                },
+                {
+                    "name": "entities",
+                    "size": 78
+                },
+                {
+                    "name": "concepts",
+                    "size": 78
+                },
+                {
+                    "name": "keywords",
+                    "size": 78
+                },
+                {
+                    "name": "TIME",
+                    "size": 69
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 34
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                }
+            ],
+            "name": "cluster9"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 246
+                },
+                {
+                    "name": "DURATION",
+                    "size": 213
+                },
+                {
+                    "name": "resourceName",
+                    "size": 248
+                },
+                {
+                    "name": "id",
+                    "size": 248
+                },
+                {
+                    "name": "SET",
+                    "size": 126
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 248
+                },
+                {
+                    "name": "score",
+                    "size": 248
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 246
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 214
+                },
+                {
+                    "name": "_version_",
+                    "size": 248
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 248
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 246
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 247
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 52
+                },
+                {
+                    "name": "MISC",
+                    "size": 228
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 248
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 246
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 214
+                },
+                {
+                    "name": "MONEY",
+                    "size": 115
+                },
+                {
+                    "name": "PERSON",
+                    "size": 226
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 248
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 248
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 246
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 214
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 73
+                },
+                {
+                    "name": "keywords",
+                    "size": 76
+                },
+                {
+                    "name": "entities",
+                    "size": 76
+                },
+                {
+                    "name": "concepts",
+                    "size": 74
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 40
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 165
+                },
+                {
+                    "name": "TIME",
+                    "size": 137
+                }
+            ],
+            "name": "cluster10"
+        },
+        {
+            "children": [
+                {
+                    "name": "DATE",
+                    "size": 271
+                },
+                {
+                    "name": "DURATION",
+                    "size": 226
+                },
+                {
+                    "name": "resourceName",
+                    "size": 271
+                },
+                {
+                    "name": "id",
+                    "size": 271
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 271
+                },
+                {
+                    "name": "score",
+                    "size": 271
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 29
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 204
+                },
+                {
+                    "name": "_version_",
+                    "size": 271
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 271
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 261
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 270
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 49
+                },
+                {
+                    "name": "MISC",
+                    "size": 257
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 271
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 261
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 204
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 163
+                },
+                {
+                    "name": "PERSON",
+                    "size": 243
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 271
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 271
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 261
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 204
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 270
+                },
+                {
+                    "name": "TIME",
+                    "size": 131
+                },
+                {
+                    "name": "MONEY",
+                    "size": 100
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 70
+                },
+                {
+                    "name": "keywords",
+                    "size": 71
+                },
+                {
+                    "name": "entities",
+                    "size": 71
+                },
+                {
+                    "name": "concepts",
+                    "size": 71
+                },
+                {
+                    "name": "SET",
+                    "size": 106
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                }
+            ],
+            "name": "cluster11"
+        },
+        {
+            "children": [
+                {
+                    "name": "taxonomy",
+                    "size": 69
+                },
+                {
+                    "name": "DATE",
+                    "size": 258
+                },
+                {
+                    "name": "keywords",
+                    "size": 70
+                },
+                {
+                    "name": "resourceName",
+                    "size": 265
+                },
+                {
+                    "name": "id",
+                    "size": 265
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 265
+                },
+                {
+                    "name": "entities",
+                    "size": 69
+                },
+                {
+                    "name": "score",
+                    "size": 265
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 262
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 262
+                },
+                {
+                    "name": "_version_",
+                    "size": 265
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 262
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 237
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 265
+                },
+                {
+                    "name": "MISC",
+                    "size": 244
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 237
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 128
+                },
+                {
+                    "name": "PERSON",
+                    "size": 234
+                },
+                {
+                    "name": "concepts",
+                    "size": 69
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 265
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 265
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 237
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 187
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 187
+                },
+                {
+                    "name": "TIME",
+                    "size": 107
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 187
+                },
+                {
+                    "name": "SET",
+                    "size": 78
+                },
+                {
+                    "name": "DURATION",
+                    "size": 191
+                },
+                {
+                    "name": "MONEY",
+                    "size": 69
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 42
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 23
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                }
+            ],
+            "name": "cluster12"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 294
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 144
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 144
+                },
+                {
+                    "name": "MISC",
+                    "size": 259
+                },
+                {
+                    "name": "TIME",
+                    "size": 104
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 32
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 292
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 294
+                },
+                {
+                    "name": "PERSON",
+                    "size": 238
+                },
+                {
+                    "name": "score",
+                    "size": 294
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 144
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 289
+                },
+                {
+                    "name": "resourceName",
+                    "size": 294
+                },
+                {
+                    "name": "DURATION",
+                    "size": 186
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 238
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 294
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 238
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 294
+                },
+                {
+                    "name": "id",
+                    "size": 294
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 238
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 292
+                },
+                {
+                    "name": "DATE",
+                    "size": 279
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 286
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 98
+                },
+                {
+                    "name": "entities",
+                    "size": 102
+                },
+                {
+                    "name": "concepts",
+                    "size": 100
+                },
+                {
+                    "name": "keywords",
+                    "size": 102
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 121
+                },
+                {
+                    "name": "SET",
+                    "size": 77
+                },
+                {
+                    "name": "MONEY",
+                    "size": 75
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 34
+                },
+                {
+                    "name": "Author",
+                    "size": 4
+                }
+            ],
+            "name": "cluster13"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 265
+                },
+                {
+                    "name": "MONEY",
+                    "size": 70
+                },
+                {
+                    "name": "TIME",
+                    "size": 80
+                },
+                {
+                    "name": "MISC",
+                    "size": 242
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 253
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 265
+                },
+                {
+                    "name": "PERSON",
+                    "size": 222
+                },
+                {
+                    "name": "DURATION",
+                    "size": 153
+                },
+                {
+                    "name": "score",
+                    "size": 265
+                },
+                {
+                    "name": "resourceName",
+                    "size": 265
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 253
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 191
+                },
+                {
+                    "name": "DATE",
+                    "size": 254
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 261
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 265
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 191
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 265
+                },
+                {
+                    "name": "id",
+                    "size": 265
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 191
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 253
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 86
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 23
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 86
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 86
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 116
+                },
+                {
+                    "name": "SET",
+                    "size": 77
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 21
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 82
+                },
+                {
+                    "name": "entities",
+                    "size": 85
+                },
+                {
+                    "name": "concepts",
+                    "size": 84
+                },
+                {
+                    "name": "keywords",
+                    "size": 85
+                }
+            ],
+            "name": "cluster14"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 153
+                },
+                {
+                    "name": "_version_",
+                    "size": 380
+                },
+                {
+                    "name": "DATE",
+                    "size": 339
+                },
+                {
+                    "name": "SET",
+                    "size": 103
+                },
+                {
+                    "name": "MONEY",
+                    "size": 98
+                },
+                {
+                    "name": "MISC",
+                    "size": 345
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 380
+                },
+                {
+                    "name": "PERSON",
+                    "size": 295
+                },
+                {
+                    "name": "score",
+                    "size": 380
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 363
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 321
+                },
+                {
+                    "name": "TIME",
+                    "size": 117
+                },
+                {
+                    "name": "DURATION",
+                    "size": 250
+                },
+                {
+                    "name": "resourceName",
+                    "size": 380
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 321
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 380
+                },
+                {
+                    "name": "id",
+                    "size": 380
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 377
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 380
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 181
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 39
+                },
+                {
+                    "name": "entities",
+                    "size": 184
+                },
+                {
+                    "name": "concepts",
+                    "size": 183
+                },
+                {
+                    "name": "keywords",
+                    "size": 184
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 194
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 194
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 194
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 36
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 36
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 36
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 17
+                }
+            ],
+            "name": "cluster15"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 143
+                },
+                {
+                    "name": "_version_",
+                    "size": 383
+                },
+                {
+                    "name": "MONEY",
+                    "size": 96
+                },
+                {
+                    "name": "MISC",
+                    "size": 341
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 383
+                },
+                {
+                    "name": "PERSON",
+                    "size": 283
+                },
+                {
+                    "name": "DURATION",
+                    "size": 231
+                },
+                {
+                    "name": "score",
+                    "size": 383
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 350
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 318
+                },
+                {
+                    "name": "TIME",
+                    "size": 123
+                },
+                {
+                    "name": "DATE",
+                    "size": 344
+                },
+                {
+                    "name": "resourceName",
+                    "size": 383
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 318
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 383
+                },
+                {
+                    "name": "id",
+                    "size": 383
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 373
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 383
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 134
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 25
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 134
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 134
+                },
+                {
+                    "name": "SET",
+                    "size": 85
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 166
+                },
+                {
+                    "name": "entities",
+                    "size": 167
+                },
+                {
+                    "name": "concepts",
+                    "size": 160
+                },
+                {
+                    "name": "keywords",
+                    "size": 169
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 41
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 22
+                },
+                {
+                    "name": "Author",
+                    "size": 2
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "URL",
+                    "size": 1
+                }
+            ],
+            "name": "cluster16"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 432
+                },
+                {
+                    "name": "SET",
+                    "size": 105
+                },
+                {
+                    "name": "MISC",
+                    "size": 355
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 432
+                },
+                {
+                    "name": "PERSON",
+                    "size": 321
+                },
+                {
+                    "name": "DURATION",
+                    "size": 252
+                },
+                {
+                    "name": "score",
+                    "size": 432
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 363
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 312
+                },
+                {
+                    "name": "TIME",
+                    "size": 143
+                },
+                {
+                    "name": "DATE",
+                    "size": 397
+                },
+                {
+                    "name": "resourceName",
+                    "size": 432
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 312
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 432
+                },
+                {
+                    "name": "id",
+                    "size": 432
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 416
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 432
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 143
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 185
+                },
+                {
+                    "name": "entities",
+                    "size": 187
+                },
+                {
+                    "name": "concepts",
+                    "size": 183
+                },
+                {
+                    "name": "keywords",
+                    "size": 189
+                },
+                {
+                    "name": "MONEY",
+                    "size": 111
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 54
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 17
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 77
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 77
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 77
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 11
+                },
+                {
+                    "name": "meta:author",
+                    "size": 3
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 4
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                },
+                {
+                    "name": "scholar_related_articles",
+                    "size": 1
+                }
+            ],
+            "name": "cluster17"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 446
+                },
+                {
+                    "name": "MISC",
+                    "size": 358
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 446
+                },
+                {
+                    "name": "PERSON",
+                    "size": 310
+                },
+                {
+                    "name": "DURATION",
+                    "size": 264
+                },
+                {
+                    "name": "score",
+                    "size": 446
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 389
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 269
+                },
+                {
+                    "name": "TIME",
+                    "size": 153
+                },
+                {
+                    "name": "DATE",
+                    "size": 410
+                },
+                {
+                    "name": "resourceName",
+                    "size": 446
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 269
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 446
+                },
+                {
+                    "name": "id",
+                    "size": 446
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 431
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 446
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 155
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 144
+                },
+                {
+                    "name": "entities",
+                    "size": 161
+                },
+                {
+                    "name": "keywords",
+                    "size": 161
+                },
+                {
+                    "name": "concepts",
+                    "size": 146
+                },
+                {
+                    "name": "SET",
+                    "size": 102
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 41
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 43
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 43
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 43
+                },
+                {
+                    "name": "MONEY",
+                    "size": 95
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 14
+                },
+                {
+                    "name": "Author",
+                    "size": 3
+                },
+                {
+                    "name": "scholar_related_articles",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 2
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                }
+            ],
+            "name": "cluster18"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 452
+                },
+                {
+                    "name": "MISC",
+                    "size": 356
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 452
+                },
+                {
+                    "name": "PERSON",
+                    "size": 298
+                },
+                {
+                    "name": "DURATION",
+                    "size": 287
+                },
+                {
+                    "name": "score",
+                    "size": 452
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 452
+                },
+                {
+                    "name": "TIME",
+                    "size": 143
+                },
+                {
+                    "name": "DATE",
+                    "size": 405
+                },
+                {
+                    "name": "resourceName",
+                    "size": 452
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 225
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 452
+                },
+                {
+                    "name": "id",
+                    "size": 452
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 443
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 225
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 375
+                },
+                {
+                    "name": "SET",
+                    "size": 75
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 30
+                },
+                {
+                    "name": "MONEY",
+                    "size": 51
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 124
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 16
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 16
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 16
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 114
+                },
+                {
+                    "name": "entities",
+                    "size": 129
+                },
+                {
+                    "name": "keywords",
+                    "size": 129
+                },
+                {
+                    "name": "concepts",
+                    "size": 121
+                },
+                {
+                    "name": "meta:author",
+                    "size": 5
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 4
+                },
+                {
+                    "name": "Author",
+                    "size": 6
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 3
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 3
+                }
+            ],
+            "name": "cluster19"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 86
+                },
+                {
+                    "name": "_version_",
+                    "size": 395
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 182
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 395
+                },
+                {
+                    "name": "DURATION",
+                    "size": 164
+                },
+                {
+                    "name": "score",
+                    "size": 395
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 325
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 373
+                },
+                {
+                    "name": "DATE",
+                    "size": 345
+                },
+                {
+                    "name": "resourceName",
+                    "size": 395
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 395
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 395
+                },
+                {
+                    "name": "id",
+                    "size": 395
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 182
+                },
+                {
+                    "name": "MISC",
+                    "size": 282
+                },
+                {
+                    "name": "PERSON",
+                    "size": 245
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 77
+                },
+                {
+                    "name": "entities",
+                    "size": 87
+                },
+                {
+                    "name": "concepts",
+                    "size": 79
+                },
+                {
+                    "name": "keywords",
+                    "size": 88
+                },
+                {
+                    "name": "TIME",
+                    "size": 94
+                },
+                {
+                    "name": "MONEY",
+                    "size": 55
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 4
+                },
+                {
+                    "name": "SET",
+                    "size": 50
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 22
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 7
+                },
+                {
+                    "name": "meta:author",
+                    "size": 3
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 3
+                },
+                {
+                    "name": "Author",
+                    "size": 3
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                }
+            ],
+            "name": "cluster20"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 345
+                },
+                {
+                    "name": "MISC",
+                    "size": 240
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 345
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 113
+                },
+                {
+                    "name": "score",
+                    "size": 345
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 273
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 320
+                },
+                {
+                    "name": "DURATION",
+                    "size": 131
+                },
+                {
+                    "name": "resourceName",
+                    "size": 345
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 113
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 345
+                },
+                {
+                    "name": "id",
+                    "size": 345
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 345
+                },
+                {
+                    "name": "SET",
+                    "size": 43
+                },
+                {
+                    "name": "DATE",
+                    "size": 285
+                },
+                {
+                    "name": "PERSON",
+                    "size": 204
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 49
+                },
+                {
+                    "name": "TIME",
+                    "size": 60
+                },
+                {
+                    "name": "MONEY",
+                    "size": 43
+                },
+                {
+                    "name": "Author",
+                    "size": 4
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 8
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 40
+                },
+                {
+                    "name": "entities",
+                    "size": 42
+                },
+                {
+                    "name": "concepts",
+                    "size": 41
+                },
+                {
+                    "name": "keywords",
+                    "size": 44
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 5
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "scholar_related_articles",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 3
+                }
+            ],
+            "name": "cluster21"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 279
+                },
+                {
+                    "name": "MISC",
+                    "size": 198
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 279
+                },
+                {
+                    "name": "DATE",
+                    "size": 234
+                },
+                {
+                    "name": "score",
+                    "size": 279
+                },
+                {
+                    "name": "TIME",
+                    "size": 28
+                },
+                {
+                    "name": "DURATION",
+                    "size": 61
+                },
+                {
+                    "name": "resourceName",
+                    "size": 279
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 279
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 279
+                },
+                {
+                    "name": "id",
+                    "size": 279
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 251
+                },
+                {
+                    "name": "PERSON",
+                    "size": 139
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 210
+                },
+                {
+                    "name": "SET",
+                    "size": 39
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 43
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 43
+                },
+                {
+                    "name": "MONEY",
+                    "size": 15
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 39
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 19
+                },
+                {
+                    "name": "concepts",
+                    "size": 20
+                },
+                {
+                    "name": "keywords",
+                    "size": 24
+                },
+                {
+                    "name": "entities",
+                    "size": 22
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 4
+                }
+            ],
+            "name": "cluster22"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 161
+                },
+                {
+                    "name": "MISC",
+                    "size": 90
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 161
+                },
+                {
+                    "name": "score",
+                    "size": 161
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 111
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 137
+                },
+                {
+                    "name": "DATE",
+                    "size": 112
+                },
+                {
+                    "name": "resourceName",
+                    "size": 161
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 161
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 161
+                },
+                {
+                    "name": "id",
+                    "size": 161
+                },
+                {
+                    "name": "PERSON",
+                    "size": 79
+                },
+                {
+                    "name": "SET",
+                    "size": 8
+                },
+                {
+                    "name": "DURATION",
+                    "size": 26
+                },
+                {
+                    "name": "entities",
+                    "size": 6
+                },
+                {
+                    "name": "TIME",
+                    "size": 11
+                },
+                {
+                    "name": "keywords",
+                    "size": 7
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 13
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 13
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 2
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 12
+                },
+                {
+                    "name": "MONEY",
+                    "size": 7
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 4
+                },
+                {
+                    "name": "concepts",
+                    "size": 3
+                },
+                {
+                    "name": "Author",
+                    "size": 3
+                }
+            ],
+            "name": "cluster23"
+        },
+        {
+            "children": [
+                {
+                    "name": "MISC",
+                    "size": 66
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 139
+                },
+                {
+                    "name": "score",
+                    "size": 139
+                },
+                {
+                    "name": "_version_",
+                    "size": 139
+                },
+                {
+                    "name": "DATE",
+                    "size": 72
+                },
+                {
+                    "name": "resourceName",
+                    "size": 139
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 139
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 139
+                },
+                {
+                    "name": "id",
+                    "size": 139
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 78
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 29
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 29
+                },
+                {
+                    "name": "MONEY",
+                    "size": 5
+                },
+                {
+                    "name": "PERSON",
+                    "size": 21
+                },
+                {
+                    "name": "scholar_related_articles",
+                    "size": 27
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 57
+                },
+                {
+                    "name": "TIME",
+                    "size": 9
+                },
+                {
+                    "name": "SET",
+                    "size": 4
+                },
+                {
+                    "name": "DURATION",
+                    "size": 7
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 3
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 3
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 2
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 3
+                }
+            ],
+            "name": "cluster24"
+        },
+        {
+            "children": [
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 60
+                },
+                {
+                    "name": "score",
+                    "size": 60
+                },
+                {
+                    "name": "_version_",
+                    "size": 60
+                },
+                {
+                    "name": "DATE",
+                    "size": 29
+                },
+                {
+                    "name": "resourceName",
+                    "size": 60
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 60
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 60
+                },
+                {
+                    "name": "id",
+                    "size": 60
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 34
+                },
+                {
+                    "name": "MISC",
+                    "size": 13
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 22
+                },
+                {
+                    "name": "PERSON",
+                    "size": 8
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 3
+                },
+                {
+                    "name": "SET",
+                    "size": 2
+                },
+                {
+                    "name": "concepts",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                }
+            ],
+            "name": "cluster25"
+        },
+        {
+            "children": [
+                {
+                    "name": "scholar_related_articles",
+                    "size": 83
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 106
+                },
+                {
+                    "name": "score",
+                    "size": 106
+                },
+                {
+                    "name": "_version_",
+                    "size": 106
+                },
+                {
+                    "name": "resourceName",
+                    "size": 106
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 106
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 106
+                },
+                {
+                    "name": "id",
+                    "size": 106
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 10
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 4
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 2
+                },
+                {
+                    "name": "DATE",
+                    "size": 3
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                }
+            ],
+            "name": "cluster26"
+        },
+        {
+            "children": [
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 17
+                },
+                {
+                    "name": "score",
+                    "size": 17
+                },
+                {
+                    "name": "resourceName",
+                    "size": 17
+                },
+                {
+                    "name": "_version_",
+                    "size": 17
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 17
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 17
+                },
+                {
+                    "name": "id",
+                    "size": 17
+                }
+            ],
+            "name": "cluster27"
+        }
+    ],
+    "name": "clusters"
+}

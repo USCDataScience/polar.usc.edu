@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<style>
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+#content {
+  width: 500px ;
+  float: left;
+}
+
+#menu {
+  width: 450px;
+  float: right;
+}
+</style>
+<body>
+<script src="../../js/jquery.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<link href="../../css/header.css" rel="stylesheet">
+<div id="header"></div>
+<div class="container row bfd" style="margin-top:60px; margin-left: 40px;">
+<div class="container col-md-12">
+  <a href="./team24-location.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Locations in TREC Dataset</a>
+  <a href="./team24-mesaurements.html" role="button" class="btn btn-primary disabled col-md-3" style="margin:10px;">Measurements in TREC Dataset</a>
+  <a href="./team24-ontologies.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Sweet Ontology Mappings in TREC</a>
+  <a href="./team24-histogram.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Metadata Quality Score in TREC</a>
+  <a href="./team24-solr.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Solr Schema </a>
+  <a href="./team24-ffmpeg.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">FFMPEG Extractions </a>
+</div>
+<div  class="container">
+  <div  id="content">
+  </div>
+  <div id="menu">
+    <h4><u>Solr Index links</u></h4>
+    <TABLE  BORDER="3">
+          <TH>Category</TH>
+          <TH>Sub-category</TH>
+          <TR>
+            <TD><a href="http://localhost:8983/solr/measure/select?q=measurements%3A%22distance%22&fl=numFound&wt=json">distance</a></TD>
+            <TD>metre,feet,inch,yard,mile</TD>
+         </TR>
+         <TR>
+            <TD><a href="http://localhost:8983/solr/measure/select?q=measurements%3A%22time%22&fl=numFound&wt=json">time</a></TD>
+            <TD>second,other</TD>
+         </TR>
+         <TR>
+            <TD><a href="http://localhost:8983/solr/measure/select?q=measurements%3A%22energy%22&fl=numFound&wt=json">energy</a></TD>
+            <TD>calorie,joule</TD>
+         </TR>
+          <TR>
+            <TD><a href="http://localhost:8983/solr/measure/select?q=measurements%3A%22weight%22&fl=numFound&wt=json">weight</a></TD>
+            <TD>ounce,pound,ton,gram</TD>
+         </TR>
+          <TR>
+            <TD><a href="http://localhost:8983/solr/measure/select?q=measurements%3A%22volume%22&fl=numFound&wt=json">volume</a></TD>
+            <TD>gallon,pint,quart,cup,litre,spoon,cubic</TD>
+         </TR>
+          <TR>
+            <TD><a href="http://localhost:8983/solr/measure/select?q=measurements%3A%22temperature%22&fl=numFound&wt=json">temperature </a></TD>
+            <TD>kelvin,celsius,fahrenheit</TD>
+         </TR>
+         <TR>
+            <TD><a href="http://localhost:8983/solr/measure/select?q=measurements%3A%22unit%22&fl=numFound&wt=json">unit</a></TD>
+            <TD>unit</TD>
+         </TR>
+    <TABLE>
+  <div>
+</div>
+ <script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin = 20,
+    diameter = 600;
+
+var color = d3.scale.linear()
+    .domain([-1, 5])
+    .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+    .interpolate(d3.interpolateHcl);
+
+var pack = d3.layout.pack()
+    .padding(2)
+    .size([diameter - margin, diameter - margin])
+    .value(function(d) { return d.size; })
+
+var svg = d3.select("#content").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+d3.json("../../data/team24ev/measurments/measurements.json", function(error, root) {
+  if (error) throw error;
+
+  var focus = root,
+      nodes = pack.nodes(root),
+      view;
+
+  var circle = svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("circle")
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+
+  var text = svg.selectAll("text")
+      .data(nodes)
+    .enter().append("text")
+      .attr("class", "label")
+      .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+      .html(function(d){
+        return d.name+","+d.value });
+
+  var node = svg.selectAll("circle,text");
+
+  d3.select("body")
+      .on("click", function() { zoom(root); });
+
+  zoomTo([root.x, root.y, root.r * 2 + margin]);
+
+  function zoom(d) {
+    var focus0 = focus; focus = d;
+
+    var transition = d3.transition()
+        .duration(d3.event.altKey ? 7500 : 750)
+        .tween("zoom", function(d) {
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+          return function(t) { zoomTo(i(t)); };
+        });
+
+    transition.selectAll("text")
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+        .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+        .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+        .each("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+  }
+
+  function zoomTo(v) {
+    var k = diameter / v[2]; view = v;
+    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+    circle.attr("r", function(d) { return d.r * k; });
+  }  
+
+});
+
+d3.select(self.frameElement).style("height", diameter + "px");
+</script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>TREC Explorer</title>
+    <!-- Latest compiled and minified CSS -->
+  <!--  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <style>
+        .sidePanel {
+            background: #e7e7e7;
+            margin-right:0px;
+        }
+
+        .sidePanel #buttons {
+            height: 544px;
+            overflow-y: auto;
+        }
+
+        .headLine {
+            text-align: center;
+            background: #990000;
+            color: #ffffff;
+            margin: auto;
+            vertical-align: middle;
+        }
+
+        .headLine h3 {
+            margin-top: 10px;
+        }
+
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom:0px;
+            border: 1px solid transparent;
+        }
+
+        #buttons {
+            width: 100%;
+        }
+
+        #buttons > div {
+            padding: 0 5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #buttons label {
+            margin-bottom: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-weight: normal;
+            padding-left: 1px;
+            cursor: pointer;
+        }
+
+        #buttons input {
+            margin-right: 5px;
+        }
+
+        path.dimple-series-1 {
+            stroke-dasharray: 2;
+        }
+
+        circle.dimple-series-2,
+        circle.dimple-series-3 {
+            fill: none !important;
+            stroke-width: 2px;
+            r: 7;
+        }
+
+        circle.dimple-series-2 {
+            stroke: darkred !important;
+        }
+        circle.dimple-series-3 {
+            stroke: green !important;
+        }
+
+    </style>
+    <script src="../../js/team28/d3.v3.min.js" charset="utf-8"></script>
+    <script src="../../js/team28/d3pie.min.js"></script>
+    <script src="../../js/team28/jquery.min.js"></script>
+    <script src="../../js/team28/dimple.v2.1.6.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+
+    </script>
+</head>
+
+<body>
+  <div id="header" style="margin-bottom:5%"> </div>
+<div class="container">
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a style="color:#fff" href="index.html">Main</a></li>
+                    <li ><a style="color:#fff" href="bfa.html">BFA</a></li>
+                    <li class="active"><a style="color:#fff" href="#">BF Correlation</a></li>
+                    <li><a style="color:#fff" href="bfcc.html">BF Cross Correlation</a></li>
+                    <li><a style="color:#fff" href="fht.html">FHT</a></li>
+                    <li><a style="color:#fff" href="heatmap.html">Mime Diversity</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="chartContainer" class="col-xs-8">
+
+            </div>
+            <div class="col-xs-4 sidePanel">
+                <div class="row">
+                    <div class="headLine col-xs-12">
+                        <h3>MIME Types</h3>
+                    </div>
+                    <div id="buttons" class="btn-group-vertical">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        var svg = dimple.newSvg("#chartContainer", '100%', 600);
+        var x;
+        var applicationCategories = [];
+        var myChart;
+        var data = null;
+        var output = [];
+        var options = ["application/atom+xml","correlation:application/atom+xml"];
+
+        var files = [
+            "../../data/team28data/bfa/outputBFA1.json",
+            "../../data/team28data/bfa/outputBFA2.json",
+            "../../data/team28data/outputBFA3.json"
+        ];
+
+        var correlationFiles = [
+            "../../data/team28data/bfc/outputBFC1.json",
+            "../../data/team28data/bfc/outputBFC2.json",
+            "../../data/team28data/bfc/outputBFC3.json"
+        ];
+
+        loadFingerPrintData();
+
+
+
+        function loadFingerPrintData() {
+
+            var count = 0;
+
+            files.forEach(function (file) {
+                d3.json(file, done);
+            });
+
+            function done(err, json) {
+                $.each(json, function (d, v) {
+
+                    for (var i = 1; i <= 256; i++) {
+                        output.push({
+                            'Type': d,
+                            'Byte Value': i,
+                            'Frequency': v[i - 1],
+                        });
+                    }
+                    applicationCategories.push(d);
+                });
+                count++;
+
+
+                if (count == files.length) {
+                  console.log(applicationCategories.length);
+                  applicationCategories.sort();
+                  loadCorrelationData();
+                }
+            }
+
+        }
+
+        function loadCorrelationData() {
+            var count = 0;
+
+            correlationFiles.forEach(function (file) {
+                d3.json(file, done);
+            });
+
+            function done(err, json) {
+                $.each(json, function (d, v) {
+                    for (var i = 1; i <= 256; i++) {
+                        output.push({
+                            'CType': "correlation:" + d,
+                            'Byte Value': i,
+                            'Correlation Strength': v[i - 1],
+                        });
+                    }
+                });
+                count++;
+
+                if (count == correlationFiles.length) {
+                  loadCategories();
+                }
+            }
+
+        }
+
+        function loadCategories() {
+            $.each(applicationCategories, function (d, v) {
+                var checkedStr = _.includes(options, v) ? ' checked="checked"' : '';
+                $('#buttons').append('<div><label><input type="radio" name="categoriesRadio" value="' + v + '" onclick="buttonClick(this, this.value)"' + checkedStr + '>' + v + '</label></div>');
+            });
+
+            drawChart();
+
+            window.onresize = function () {
+                myChart.draw(0, true);
+            };
+        }
+
+        function drawChart() {
+            myChart = new dimple.chart(svg);
+            myChart.setMargins(70, 50, 70, 50);
+            x = myChart.addCategoryAxis("x", "Byte Value");
+            x.addOrderRule("Byte Value");
+
+            var y0 = myChart.addMeasureAxis("y", "Frequency");
+            y0.tickFormat = '.3f';
+            y0.overrideMax = 1;
+            myChart.addSeries("Type", dimple.plot.line, [x, y0]);
+
+            var y1 = myChart.addMeasureAxis("y", "Correlation Strength");
+            y1.tickFormat = '.3f';
+            y1.overrideMax = 1;
+            myChart.addSeries("CType", dimple.plot.line, [x, y1]);
+            myChart.addSeries("CType", dimple.plot.bubble, [x, y1]);
+            myChart.addSeries("CType", dimple.plot.bubble, [x, y1]);
+
+            myChart.addLegend(-500, 10, 500, 500, "right");
+            updateChart();
+        }
+
+        function updateChart(delay) {
+            myChart.series[0].data = dimple.filterData(output, "Type", options);
+            var correlationData = dimple.filterData(output, "CType", options);
+            myChart.series[1].data = correlationData;
+            myChart.series[2].data = _.take(_.orderBy(correlationData, 'Correlation Strength', 'asc'), 2);
+            myChart.series[3].data = _.take(_.orderBy(correlationData, 'Correlation Strength', 'desc'), 2);
+
+            myChart.draw(0, true);
+            x.shapes.selectAll('text').filter(function (d, i) { return d % 30 !== 0; }).remove();
+            x.shapes.selectAll('line').filter(function (d, i) { return d % 5 !== 0; }).remove();
+            x.shapes.selectAll('line').filter(function (d, i) { return d % 30 !== 0; }).attr('y2', 3);
+            myChart.draw(delay || 0);
+        }
+
+        function buttonClick(event, value) {
+            console.log("checked");
+            if (event.checked) {
+                options = [];
+                options.push(value);
+                options.push("correlation:"+value);
+            }
+
+            updateChart(1000);
+        }
+
+    </script>
+</body>
+</div>
+
+</html>

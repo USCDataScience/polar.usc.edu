@@ -1,0 +1,212 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Team 22 MIME Diversity Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+tr, td, th{
+    padding:5px;
+}
+</style>
+
+
+</head>
+
+
+<!-- 
+<body style=" font: 20px sans-serif;">
+ -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<div id="header"> </div>
+
+<br/><br/><br/><br/><br/>
+
+<div class="container">
+
+ <h1>MIME Diversity in the Text Retrieval Conference (TREC) Polar Dynamic Domain Dataset</h1>
+<h2>CSCI-599 Spring 2016</h2>
+<h3>Team 22</h3>
+<h4>D3 visualizations:</h4>
+
+<ol>
+
+<li><a href="D3_BFA_Signature.html">BFA Signature Line Charts</a></li>
+
+<li><a href="D3_BFC_Comparison_Multiline.html">BFC Comparison Multiline Chart</a></li>
+
+<li><a href="D3_BFC_Correlation_Difference_LineChart.html">BFC Correlation Difference LineChart</a></li>
+
+<li><a href="D3_Cross_Correlation_Signature_HeatMap.html">Cross Correlation Signature HeatMap</a></li>
+
+<li><a href="D3_FHT_Signature_HeatMap.html">FHT Signature HeatMap</a></li>
+
+<li><a href="completeDataPieChartFromGitHub.html">Pie Chart For the MIME Diversity Available in GitHub</a></li>
+
+<li><a href="completeDataPieChart_downloadedFiles.html" >Pie Chart For the MIME Diversity Downloaded From S3 Bucket</a></li>
+
+<li><a href="completeDataPieChart_usingModifiedMIME.html" >Pie Chart For the MIME Diversity Using Modified MIME Types File</a></li>
+
+<li><a href="tika-similarity/result-data/index.html">Tika Similarity Results</a></li>
+
+</ol>
+
+
+<br/><br/>
+<h4>Key Observations:</h4>
+<p>[Tika v/s Mac OS X] We analyzed the non-empty files in application/octet-stream classification, and checked their MIME classification in Apple Mac OS X 10.11.3 using the command:  <b>file --mime-type -b &lt;file_name&gt;</b></p>
+<p>It turns out that some files in the Polar dataset were classified differently than Apache Tika:</p>
+<table border="2px black">
+<tr>
+    <th>Files detected as application/octet-stream by Tika</th>
+    <th>MIME type detected by Apple Mac OS X 10.11.3</th>
+    <th>If one of our 15 chosen types, the Pearson correlation coefficient for BFA</th>
+</tr>
+<tr>
+    <td>cn/sh/library/dlpwd/E1EA0A0DD0B36651C58A0E3C8E14F30B42638D7D110533E8018DDC06A71F9A87</td>
+    <td>text/plain</td>
+    <td>0.68</td>
+</tr>
+
+<tr>
+    <td>org/w3/www/273EA7C3C3E22540167271B06B9A86EC8F07AF55728E9A8FF33C2FCAB4353CFF</td>
+    <td>text/x-po</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>org/translationproject/FC7CCC7E7DCA55833B393D54CDA1A6AAAB2290ECD5986BF2B1719B601463D12F</td>
+    <td>text/x-po</td>
+    <td></td>
+</tr>
+
+
+<tr>
+    <td>org/translationproject/C0419E6BC6518647A59573AEB6BE07684BC50C08279E5E1E437844C4A321A9C8</td>
+    <td>text/x-po</td>
+    <td></td>
+</tr>
+
+
+<tr>
+    <td>org/translationproject/BD0CAE3F6DC334998AB3B424380C9756A9957892F36338BA6161E7E900D34751</td>
+    <td>text/x-po</td>
+    <td></td>
+</tr>
+<tr>
+    <td>org/translationproject/A4138B5F803E0E4B25A70B5FA1D2C73B1E557DC3C6FD547140252FF3E0934AF9</td>
+    <td>text/x-po</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>net/cnki/wuxizazhi/0229541219032066874F666EAE7D16A7DA6F5965EDB9C2F71B80CCE8845E20EC</td>
+    <td>text/html</td>
+    <td>0.69</td>
+</tr>
+
+<tr>
+    <td>jp/ac/tsukuba/www/7ECEA6E465699A482F9C50BFFD3C2DAA267C1076572D75BB765E2D6AC63BB2AF</td>
+    <td>text/x-c</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>jp/ac/tsukuba/www/43C3D961B7626D9C0930AD61322FFEAD95B7FC65103C9D908288FF1770A1F05B</td>
+    <td>text/x-c</td>
+    <td></td>
+</tr>
+
+
+<tr>
+    <td>gov/noaa/arh/aprfc/62464DACBE1BA9486210FA7B09FB868FABA84084C8977826276336051058D9B0</td>
+    <td>text/plain</td>
+    <td>0.04</td>
+</tr>
+<tr>
+    <td>gov/nasa/jpl/mls/9B81C7A56AC3C6E6836EF97D9A06463EB277FB37E28227E1966F806BB7F34B25</td>
+    <td>text/plain</td>
+    <td>0.81</td>
+</tr>
+
+<tr>
+    <td>gov/nasa/jpl/mls/80BC2238611041B040B057801EA25E43FC517C9D014B6B61E9EA2D5F7F683914</td>
+    <td>text/plain</td>
+    <td>0.68</td>
+</tr>
+
+<tr>
+    <td>gov/nasa/jpl/mls/392A51636B31FAF5CC1F13D19F66DCE65A5881354BD88DD9872A9150111B4C0C</td>
+    <td>text/plain</td>
+    <td>0.68</td>
+</tr>
+
+
+<tr>
+    <td>gov/nasa/jpl/mls/0D38EC54631D967C0371C54108DFE6860A04AB26DD6CD8350DEF094F4051B40C</td>
+    <td>text/plain</td>
+    <td>0.69</td>
+</tr>
+
+<tr>
+    <td>com/accuweather/vwidget/17EB685A4E92D69041CB1BCA6CD77DC14502D7268F26AE2D5553E1A6FD119F7C</td>
+    <td>application/vnd.ms-cab-compressed</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>cn/sh/library/www/04B0FA20E767A6ED01E63132395CA26A8BA5D243928124BB0CB4B6100D07890A</td>
+    <td>text/html</td>
+    <td>0.72</td>
+</tr>
+<tr>
+    <td>cn/sh/library/www/E1BC0070D8B0768AC5FC9E61738EB2441ADBB61C0C10298C49DD35494AC5ED98</td>
+    <td>text/html</td>
+    <td>0.82</td>
+</tr>
+
+<tr>
+    <td>cn/sh/library/www/BE408B3FD9BFD5C5D8F0FB3FCE48CEF7DEB1369D3F05F400309109521ABB3397</td>
+    <td>text/html</td>
+    <td>0.86</td>
+</tr>
+
+<tr>
+    <td>cn/gov/nstl/www/8D8C5E9A1E377E6F3992246F573340D9B424CFB8E9ED38538568EB2A59980ABF</td>
+    <td>text/html</td>
+    <td>0.54</td>
+</tr>
+
+</table>
+</div>
+</body>
+</html>

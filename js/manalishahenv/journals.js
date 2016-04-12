@@ -1,5 +1,4 @@
 function load_piechart(){
-	console.log("in load_piechart!");
 	// var url='http://localhost:8983/solr/collection2/select?q=gs_journals%3A*&rows=180&fl=gs_journals&wt=json&indent=true';
  	// $.getJSON(url);
  	on_data();
@@ -9,10 +8,8 @@ function on_data(){
 	 d3.json("../../data/manalishahenv/journals.json", function(error, data) {
             if (error) throw error;
 
-            // console.log("loaded data"); 
         docs = data.response.docs;
     	var totaldocs = data.response.numFound;
-		console.log(totaldocs);
 		var journals = {};
 
 		for(var i in docs){
@@ -35,16 +32,7 @@ function on_data(){
 			var temp = {"label":z , "value": journals[z]};
 			data["content"].push(temp);
 		}
-		for(x in data["content"])
-		{
-			if(x==10){
-				break;
-			}
-			else{
-				console.log(data["content"][x]["label"] + ": " + data["content"][x]["value"]);
-			}
-		}
-console.log("now");
+	
 top15 = [];
 		data["content"] = data["content"].sort(function (a, b) {
     return b.value - a.value;
@@ -61,8 +49,7 @@ top15 = [];
 			}
 		}
 		data["content"] = top15;
-		console.log(data);
-		 var pie = new d3pie("piechart_body", {
+		 var pie = new d3pie("piechart", {
 				"header": {
 					      "title": {
 							        "text": "Scientific Journals",

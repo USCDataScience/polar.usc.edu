@@ -9,10 +9,11 @@ function load_dendrogram(){
 
 function on_data(){
 
+	console.log("in collapsible tree ");
  	var authors ={};
  	var years = {};
  	var title = {};
-	var margin = {top: 20, right: 0, bottom: 20, left: 0},
+	var margin = {top: 20, right: 10, bottom: 20, left: 50},
 	    width = 960 - margin.right - margin.left,
 	    height = 1600 - margin.top - margin.bottom;
 
@@ -26,26 +27,22 @@ function on_data(){
 	var diagonal = d3.svg.diagonal()
 	    .projection(function(d) { return [d.y, d.x]; });
 
-	var svg = d3.select("#hzBarChart .panel-body").append("svg")
+	var svg = d3.select("#tree").append("svg")
 	    .attr("width", width + margin.right + margin.left)
 	    .attr("height", height + margin.top + margin.bottom)
-	  .append("g")
+	    .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 	 	d3.json('../../data/manalishahenv/polar_index.json', function(error, data) {
 	    if (error) throw index;
 
-	       console.log("loaded data"); 
 	       docs = data.response.docs;
 	    	var totaldocs = data.response.numFound;
-	    	console.log(docs[0].id); 
 	    	for(var i=0; i<docs.length; i++){
 	    		item = docs[i];
-	    		// console.log(item);
 	    		if(item.gs_years != undefined && item.gs_related_titles != undefined && item.gs_authors.length != undefined){
 	    			for(var j=0; j<item.gs_authors.length; j++){
 	    				each_author = item.gs_authors[j].split(",");
 	    				time = item.gs_years[j];
-	    				// console.log("all authors: " + each_author);
 	    				for(var a in each_author){
 	    					if(time != "null" && years[time]){
 	    						years[time].push(each_author[a]);
@@ -54,7 +51,6 @@ function on_data(){
 	    						years[time] = [];
 	    						years[time].push(each_author[a]);
 	    					}
-	    					console.log();
 		    				if(!authors[each_author[a]]) {
 		    					var paper = {};
 		    					paper["name"] = item.gs_related_titles[j];
@@ -75,8 +71,7 @@ function on_data(){
 	    			}
 	    		}
 	    	}
-    	// console.log(authors);
-    	// console.log(years);
+  
 
     	flare_json = {"name":"Papers", "children":[]};
     	for(var year in years){
@@ -95,9 +90,9 @@ function on_data(){
     		flare_json.children.push(child);
     		
     	}
-	    	//console.log(flare_json);
-	    	// trial(flare_json);
-	    	root = flare_json;
+	
+	  root = flare_json;
+	  console.log(root);
 	  root.x0 = height / 2;
 	  root.y0 = 0;
 

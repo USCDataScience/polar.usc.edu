@@ -13,37 +13,37 @@
     
  <style type="text/css">
 
-      #hzBarChart .panel-body .legend {
+      #hzBarChart .legend {
         fill: black;
         font: 14px sans-serif;
         text-anchor: start;
         font-size: 12px;
       }
 
-      #hzBarChart .panel-body text {
+      #hzBarChart text {
         
         font: 10px sans-serif;
         text-anchor: end;
       }
 
-      #hzBarChart .panel-body .label {
+      #hzBarChart .label {
         fill: black;
         font: 14px sans-serif;
         text-anchor: end;
       }
 
-      #hzBarChart .panel-body .bar:hover {
+      #hzBarChart .bar:hover {
         fill: yellow;
       }
 
-      #hzBarChart .panel-body .axis path,
-      #hzBarChart .panel-body .axis line {
+      #hzBarChart .axis path,
+      #hzBarChart .axis line {
         fill: none;
         stroke: #000;
         shape-rendering: crispEdges;
       }
 
-      #hzBarChart .panel-body .legend {
+      #hzBarChart .legend {
         position: fixed;
 
       }
@@ -56,10 +56,8 @@
 
   <body>
       <div class="container">
-        <div id="hzBarChart" class="panel panel-info text-center">
-          <div class="panel-heading"><h3 class="panel-title">Top referenced locations using Geotopic Parser</h3></div>
-          <div class="panel-body"></div>
-        </div>
+       <h3>Top referenced locations using Geotopic Parser</h3></div>
+          <div id="hzBarChart"></div>
       </div><!-- /.container -->
 
     <!-- Bootstrap core JavaScript

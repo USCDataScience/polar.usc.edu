@@ -11,10 +11,8 @@ function on_data(){
             if (error) throw error;
             var types = {};
 
-            // console.log("loaded data"); 
         docs = data.response.docs;
     	var totaldocs = data.response.numFound;
-		// console.log(totaldocs);
 
 			for(var i=0; i<docs.length; i++){
 				var content_type = docs[i]["Content-Type"];
@@ -28,7 +26,6 @@ function on_data(){
 					types[content_type].push(seconds(duration));
 				}
 			}
-			console.log(types);
             freq0 = {};
             for( var z in types){
                 freq0[z] = 0;
@@ -126,7 +123,6 @@ function on_data(){
 			final_json.push(range900);
 			final_json.push(range1000);
             final_json.push(range);
-			// console.log(final_json);
             function seconds(s){
             	var val = s.split(' ');
             	var time = val[0].split(':');
@@ -142,7 +138,7 @@ function on_data(){
             	return total;
             }
 
-            dashboard('#dashboard .panel-body', final_json);
+            dashboard('#dashboard', final_json);
         });
 
 
@@ -162,10 +158,8 @@ function on_data(){
 
             // compute total for each content-type.
             data.forEach(function(d) {
-                // console.log(d.Range);
                 d.total = d.freq['audio/mpeg'] + d.freq['audio/x-aiff'] + d.freq['audio/x-wav'] + d.freq['image/gif'] + d.freq['video/x-flv'];
             });
-            // console.log(data);
             // function to handle histogram.
             function histoGram(fD) {
                 var hG = {},
@@ -236,8 +230,6 @@ function on_data(){
                                 freq: st.freq[s]
                             };
                         });
-                    console.log(st)
-                    console.log(nD)
                         // call update functions of pie-chart and legend.    
                     pC.update(nD);
                     leg.update(nD);

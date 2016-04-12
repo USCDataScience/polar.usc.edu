@@ -1,6 +1,5 @@
 
 function refreshHzBarChart(){
-    console.log("in load_piechart!");
     // var url='http://localhost:8983/solr/collection2/select?q=geotopic_locations%3A*&rows=180&fl=geotopic_locations&wt=json&indent=true';
     // $.getJSON(url);
     on_data();
@@ -9,11 +8,9 @@ function refreshHzBarChart(){
 
 function on_data(){
 
-    console.log("entered refreshHzBarChart");
     d3.json('../../data/manalishahenv/locations.json', function(error, data) {
     if (error) throw error;
 
-       console.log("loaded data"); 
 
        docs = data.response.docs;
         var dict = {};
@@ -22,7 +19,6 @@ function on_data(){
         for(var i=0; i<docs.length; i++){
             item = docs[i];
             location = item.geotopic_location;
-//             console.log(location);
             if(!dict[location]){
                 dict[location] = 1;
             }
@@ -54,15 +50,13 @@ function on_data(){
         data["labels"]=labels;
         data["series"]=[{"name":"docs", "value":series}];
 
-    console.log(data);
-    var chartWidth       = 1000,
+    var chartWidth       = 800,
         barHeight        = 14,
         groupHeight      = barHeight * data.series.length,
         gapBetweenGroups = 10,
         spaceForLabels   = 300,
         spaceForLegend   = 10;
 
-    console.log(data.series.length);
     // Zip the series data together (first values, second values, etc.)
     var zippedData = [];
     for (var i=0; i<data.labels.length; i++) {
@@ -71,7 +65,6 @@ function on_data(){
       }
     }
 
-    // var color = d3.scale.category10();
     var mylabels = [" docs"];
     var colors = ['#f7fbff','#deebf7','#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#08519c','#08306b'];
     var color = d3.scale.linear()
@@ -93,7 +86,7 @@ function on_data(){
         .orient("left");
 
     // Specify the chart area and dimensions
-    var chart = d3.select("#hzBarChart .panel-body").append("svg")
+    var chart = d3.select("#hzBarChart").append("svg")
         .attr("width", spaceForLabels + chartWidth + spaceForLegend)
         .attr("height", chartHeight);
 
@@ -112,10 +105,9 @@ function on_data(){
         .attr("width", x)
         .attr("height", barHeight - 1);
 
-    console.log(barHeight - 1);
     bar.append('rect')
         .attr("x", function(d) {
-        console.log(x(d)); if(x(d) < 80) return x(d) + 5; else if(x(d) < 300) return x(d); else return x(d) - 65; })
+        if(x(d) < 80) return x(d) + 5; else if(x(d) < 300) return x(d); else return x(d) - 65; })
         .attr("y", 1)
         .attr('width', 65)
         .attr('height', barHeight-2)

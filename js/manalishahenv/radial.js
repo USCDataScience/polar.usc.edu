@@ -1,5 +1,4 @@
 function load_radial(){
-	console.log("in radial search");
 	// var url='http://localhost:8983/solr/collection2/select?q=Title%3A*&rows=180&fl=Title%2C+Album&wt=json&indent=true';
  	// $.getJSON(url);
  	on_data();
@@ -15,7 +14,7 @@ var cluster = d3.layout.cluster()
 var diagonal = d3.svg.diagonal.radial()
     .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
 
-var svg = d3.select("#radial .panel-body").append("svg")
+var svg = d3.select("#radial").append("svg")
     .attr("width", radius * 2)
     .attr("height", radius * 2)
   .append("g")
@@ -27,55 +26,48 @@ d3.json("../../data/manalishahenv/radial_flare.json", function(error, root) {
 
 
 
+
 //added by me
-
-console.log(root);
-	    	var albums ={};
- 	var titles = {};
- 	var radial = {name:"mpeg files", children:[]};
-	       console.log("loaded data"); 
-	       docs = root.response.docs;
-	    	var totaldocs = root.response.numFound;
-	    	console.log(docs[0].id); 
-	    	for(var i=0; i<docs.length/3; i++){
-	    		var item = docs[i];
-	    		// console.log(item);
-	    		if(item["Title"]==""){
-	    			continue;
-	    		}
-	    		else if(item["Album"]){
-	    			if(!albums[item["Album"]]){
-	    				var children = [];
-	    				children.push(item["Title"]);
-	    				albums[item["Album"]] = children;
-	    			}
-	    		}
-	    		else{
-	    			if(!titles[item["Title"]]){
-	    				titles[item["Title"]] = 1;
-	    			}
-	    		}
-	    	}
-    	// console.log(albums);
-    	// console.log(years);
-    	for(var t in titles){
-    		var temp = {"name":t, "size":1};
-    		radial["children"].push(temp);
-    	}
-    	for(var a in albums){
-    		var c  = albums[a];
-    		var children = [];
-    		for(i in c){
-    			var temp = {"name":c[i], "size":1};
-    			children.push(temp);
-    		}
-    		var temp = {"name":a, "children":children};
-    		radial["children"].push(temp);
-    	}
+	 var albums ={};
+ 	 var titles = {};
+ 	 var radial = {name:"mpeg files", children:[]};
+   docs = root.response.docs;
+	 var totaldocs = root.response.numFound;
+  	for(var i=0; i<docs.length/3; i++){
+  		var item = docs[i];
+  		if(item["Title"]==""){
+  			continue;
+  		}
+  		else if(item["Album"]){
+  			if(!albums[item["Album"]]){
+  				var children = [];
+  				children.push(item["Title"]);
+  				albums[item["Album"]] = children;
+  			}
+  		}
+  		else{
+  			if(!titles[item["Title"]]){
+  				titles[item["Title"]] = 1;
+  			}
+  		}
+  	}
+  	for(var t in titles){
+  		var temp = {"name":t, "size":1};
+  		radial["children"].push(temp);
+  	}
+  	for(var a in albums){
+  		var c  = albums[a];
+  		var children = [];
+  		for(i in c){
+  			var temp = {"name":c[i], "size":1};
+  			children.push(temp);
+  		}
+  		var temp = {"name":a, "children":children};
+  		radial["children"].push(temp);
+  	}
 
 
-  	    	console.log(radial);
-      root = radial;
+    root = radial;
 
   var nodes = cluster.nodes(root);
 

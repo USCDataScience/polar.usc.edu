@@ -1,0 +1,2539 @@
+{
+"responseHeader": {
+"status": 0,
+"QTime": 1,
+"params": {
+"q": "gs_journals:*",
+"indent": "true",
+"fl": "gs_journals",
+"rows": "180",
+"wt": "json"
+}
+},
+"response": {
+"numFound": 180,
+"start": 0,
+"docs": [
+{
+"gs_journals": [
+"Taylor & Francis",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"Taylor & Francis",
+"journals.ametsoc.org",
+"inderscienceonline.com",
+"Taylor & Francis",
+"my.ilstu.edu",
+"journals.ametsoc.org",
+"ieeexplore.ieee.org",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"science.sciencemag.org",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"gji.oxfordjournals.org",
+"Springer",
+"iopscience.iop.org",
+"Wiley Online Library",
+"adsabs.harvard.edu",
+"Wiley Online Library"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"icbl.hw.ac.uk",
+"dcpapers.dublincore.org",
+"digitalcommons.calpoly.edu",
+"ideals.illinois.edu",
+"Citeseer",
+"null",
+"Taylor & Francis",
+"wip.oclc.org",
+"emeraldinsight.com"
+]
+},
+{
+"gs_journals": [
+"null",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"annualreviews.org",
+"Elsevier"
+]
+},
+{
+"gs_journals": [
+"smartech.gatech.edu",
+"proceedings.spiedigitallibrary.org",
+"clan-utgard.de",
+"smartech.gatech.edu",
+"null",
+"Springer",
+"smartech.gatech.edu",
+"smartech.gatech.edu",
+"smartech.gatech.edu",
+"null"
+]
+},
+{
+"gs_journals": [
+"halshs.archives-ouvertes.fr",
+"cairn.info",
+"Wiley Online Library",
+"cairn.info",
+"cairn.info",
+"cairn.info",
+"books.google.com",
+"classiques.uqac.ca",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"World Scientific",
+"Wiley Online Library",
+"Elsevier",
+"jis.sagepub.com",
+"dl.acm.org",
+"Wiley Online Library",
+"JSTOR",
+"Elsevier",
+"hindawi.com",
+"Elsevier"
+]
+},
+{
+"gs_journals": [
+"kluwerlawonline.com",
+"null",
+"null",
+"vbn.aau.dk",
+"null",
+"books.google.com",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"mnablearninghouse.org",
+"JSTOR",
+"Cambridge Univ Press",
+"HeinOnline",
+"ERIC",
+"nature.com",
+"globalizationandhealth. …",
+"books.google.com",
+"JSTOR",
+"books.google.com"
+]
+},
+{
+"gs_journals": [
+"Springer",
+"Springer",
+"Springer",
+"Springer",
+"pubsonline.informs.org",
+"Wiley Online Library",
+"archive.numdam.org",
+"pubsonline.informs.org",
+"ieeexplore.ieee.org",
+"books.google.com"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"BioOne",
+"Springer",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"researchgate.net",
+"protosh2o.act.be",
+"books.google.com",
+"Springer",
+"mdpi.com",
+"Springer",
+"iisd.org",
+"JSTOR",
+"Springer",
+"Springer"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"science.sciencemag.org",
+"Springer",
+"Wiley Online Library"
+]
+},
+{
+"gs_journals": [
+"osti.gov",
+"ard.bmj.com",
+"osti.gov",
+"Springer",
+"europepmc.org",
+"JSTOR",
+"Taylor & Francis",
+"europepmc.org",
+"emeraldinsight.com",
+"tcp.sagepub.com"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"karger.com",
+"nature.com",
+"Taylor & Francis",
+"Oxford Univ Press",
+"Oxford Univ Press",
+"Elsevier",
+"ieeexplore.ieee.org",
+"restud.oxfordjournals.org",
+"Citeseer"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"adsabs.harvard.edu",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"ntrs.nasa.gov",
+"null",
+"books.google.com",
+"Wiley Online Library",
+"iaea.org",
+"books.google.com",
+"Wiley Online Library",
+"dtic.mil",
+"Wiley Online Library",
+"books.google.com"
+]
+},
+{
+"gs_journals": [
+"smartech.gatech.edu",
+"proceedings.spiedigitallibrary.org",
+"clan-utgard.de",
+"smartech.gatech.edu",
+"null",
+"Springer",
+"smartech.gatech.edu",
+"smartech.gatech.edu",
+"smartech.gatech.edu",
+"null"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"Springer",
+"pubs.cig-acsg.ca",
+"books.google.com",
+"utpjournals.press",
+"Taylor & Francis",
+"Taylor & Francis",
+"Springer",
+"Springer",
+"null"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"cd3wd.com",
+"books.google.com",
+"researchgate.net",
+"null",
+"books.google.com",
+"piar.it",
+"books.google.com",
+"i122server.vu-wien.ac.at",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"nature.com",
+"Springer",
+"osti.gov",
+"ieeexplore.ieee.org",
+"dl.acm.org",
+"ieeexplore.ieee.org",
+"dl.acm.org",
+"arxiv.org",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"sci-dril.net",
+"euussciencetechnology.eu",
+"null",
+"arcus.org",
+"null",
+"eba.aq",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"emeraldinsight.com",
+"journals.plos.org",
+"dl.acm.org",
+"ro.uow.edu.au",
+"ascelibrary.org",
+"journals.ametsoc.org",
+"ieeexplore.ieee.org",
+"eprints.usq.edu.au",
+"Springer",
+"eprints.usq.edu.au"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"Taylor & Francis",
+"cmr.ucpress.edu",
+"emeraldinsight.com",
+"Taylor & Francis",
+"eprints.biblio.unitn.it",
+"Springer",
+"Wiley Online Library",
+"dl.acm.org",
+"science.sciencemag.org"
+]
+},
+{
+"gs_journals": [
+"vliz.be",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"Elsevier",
+"JSTOR",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"ACS Publications",
+"Elsevier"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"books.google.com",
+"researchgate.net",
+"www-odp.tamu.edu",
+"cmr.ucpress.edu",
+"Springer",
+"Springer",
+"arctic.journalhosting.ucalgary.ca",
+"books.google.com",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"NRC Research Press",
+"researchgate.net",
+"Wiley Online Library",
+"Elsevier",
+"Cambridge Univ Press",
+"Elsevier",
+"Taylor & Francis",
+"Elsevier",
+"ACS Publications"
+]
+},
+{
+"gs_journals": [
+"digilib.gmu.edu",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"journals.ametsoc.org",
+"search.proquest.com",
+"journals.ametsoc.org",
+"library.wur.nl",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Taylor & Francis",
+"Taylor & Francis",
+"Taylor & Francis",
+"Taylor & Francis",
+"emeraldinsight.com",
+"inasp.info",
+"Taylor & Francis",
+"emeraldinsight.com",
+"Taylor & Francis"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Taylor & Francis",
+"Taylor & Francis",
+"Taylor & Francis",
+"emeraldinsight.com",
+"inasp.info",
+"Taylor & Francis",
+"emeraldinsight.com",
+"Taylor & Francis",
+"Wiley Online Library"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"csr.utexas.edu",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"ingentaconnect.com",
+"Wiley Online Library",
+"ingentaconnect.com",
+"ingentaconnect.com",
+"nature.com",
+"nature.com",
+"nature.com",
+"Elsevier",
+"Wiley Online Library",
+"ingentaconnect.com"
+]
+},
+{
+"gs_journals": [
+"Springer",
+"Eco Soc America",
+"Elsevier",
+"books.google.com",
+"Elsevier",
+"Elsevier",
+"Eco Soc America",
+"Taylor & Francis",
+"Wiley Online Library",
+"dlc.dlib.indiana.edu"
+]
+},
+{
+"gs_journals": [
+"null",
+"digitalcommons.library.umaine.edu",
+"ir.library.oregonstate.edu",
+"null",
+"ingentaconnect.com",
+"smq.sagepub.com",
+"ingentaconnect.com",
+"oesd.noaa.gov",
+"null",
+"scholarworks.umb.edu"
+]
+},
+{
+"gs_journals": [
+"ieeexplore.ieee.org",
+"Elsevier",
+"journals.ametsoc.org",
+"science.sciencemag.org",
+"ingentaconnect.com",
+"National Acad Sciences",
+"Taylor & Francis",
+"search.proquest.com",
+"science.sciencemag.org",
+"journals.ametsoc.org"
+]
+},
+{
+"gs_journals": [
+"search.proquest.com",
+"nodc.noaa.gov",
+"wmo.int",
+"Springer",
+"academiccommons.columbia.edu",
+"researchgate.net",
+"pandowae.de",
+"null",
+"journals.ametsoc.org",
+"null"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"books.google.com",
+"JSTOR",
+"books.google.com",
+"books.google.com",
+"JSTOR",
+"JSTOR",
+"JSTOR",
+"JSTOR",
+"Taylor & Francis"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"go.galegroup.com",
+"books.google.com",
+"HeinOnline",
+"books.google.com",
+"books.google.com",
+"traffic.org",
+"books.google.com",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"nature.com",
+"bioscience.oxfordjournals.org",
+"Springer",
+"mdpi.com",
+"nodc.noaa.gov",
+"Wiley Online Library",
+"Taylor & Francis",
+"Springer",
+"adsabs.harvard.edu"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"books.google.com",
+"cyberconflict.org",
+"books.google.com",
+"HeinOnline",
+"HeinOnline",
+"null",
+"mobile.wiredspace.wits.ac.za",
+"books.google.com",
+"JSTOR"
+]
+},
+{
+"gs_journals": [
+"null",
+"Wiley Online Library",
+"Elsevier",
+"Wiley Online Library",
+"nora.nerc.ac.uk",
+"Wiley Online Library",
+"Wiley Online Library",
+"Elsevier",
+"ingentaconnect.com",
+"nora.nerc.ac.uk"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"JSTOR",
+"books.google.com",
+"pubs.rsc.org",
+"Am Soc Cell Biol",
+"Wiley Online Library",
+"Am Soc Cell Biol",
+"Wiley Online Library",
+"bioscience.oxfordjournals.org",
+"nagt-jge.org"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"hepgjournals.org",
+"iopscience.iop.org",
+"rsnr.royalsocietypublishing.org",
+"research.policyarchive.org",
+"csma.aas.org",
+"Springer",
+"fisica.uniud.it",
+"iopscience.iop.org",
+"akademiai.com"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Wiley Online Library",
+"gsabulletin.gsapubs.org",
+"Wiley Online Library",
+"geology.gsapubs.org",
+"Wiley Online Library",
+"nature.com",
+"Elsevier",
+"Elsevier",
+"Wiley Online Library"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"ci.nii.ac.jp",
+"ci.nii.ac.jp",
+"Elsevier",
+"HeinOnline",
+"Springer",
+"Springer",
+"Springer",
+"lew-port.com",
+"Springer",
+"null"
+]
+},
+{
+"gs_journals": [
+"ncbi.nlm.nih.gov",
+"books.google.com",
+"Guilford Press",
+"Wiley Online Library",
+"books.google.com",
+"agris.fao.org",
+"Wiley Online Library",
+"eprint.iacr.org",
+"europepmc.org",
+"search.proquest.com"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"books.google.com",
+"hepgjournals.org",
+"books.google.com",
+"books.google.com",
+"Oxford Univ Press",
+"books.google.com",
+"books.google.com",
+"people.kzoo.edu",
+"books.google.com"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Elsevier",
+"National Acad Sciences",
+"Eco Soc America",
+"curis.ku.dk",
+"journals.ametsoc.org",
+"researchgate.net",
+"mdpi.com",
+"Wiley Online Library",
+"fao.org"
+]
+},
+{
+"gs_journals": [
+"HeinOnline",
+"JSTOR",
+"HeinOnline",
+"HeinOnline",
+"HeinOnline",
+"Wiley Online Library",
+"muse.jhu.edu",
+"HeinOnline",
+"HeinOnline",
+"null"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"congress.cimne.com",
+"Elsevier",
+"eprints.nottingham.ac.uk",
+"jlc.jst.go.jp",
+"dial.uclouvain.be",
+"books.google.com",
+"research-repository.st-andrews.ac. …",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"journals.lib.unb.ca",
+"oaarchive.arctic-council.org",
+"ingentaconnect.com",
+"Cambridge Univ Press",
+"researchgate.net",
+"Elsevier",
+"onepetro.org",
+"books.google.com",
+"researchgate.net"
+]
+},
+{
+"gs_journals": [
+"osti.gov",
+"Springer",
+"Wiley Online Library",
+"dl.acm.org",
+"univagora.ro",
+"ncbi.nlm.nih.gov",
+"ieeexplore.ieee.org",
+"Wiley Online Library",
+"books.google.com",
+"JSTOR"
+]
+},
+{
+"gs_journals": [
+"ieeexplore.ieee.org",
+"ieeexplore.ieee.org",
+"null",
+"Oxford Univ Press",
+"Wiley Online Library",
+"ieeexplore.ieee.org",
+"kyb.mpg.de",
+"Am Physiological Soc",
+"journals.plos.org",
+"Citeseer"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Springer",
+"books.google.com",
+"Wiley Online Library",
+"Springer",
+"muse.jhu.edu",
+"ncbi.nlm.nih.gov",
+"arctic.journalhosting.ucalgary.ca",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Eco Soc America",
+"Wiley Online Library",
+"epic.awi.de",
+"Eco Soc America"
+]
+},
+{
+"gs_journals": [
+"Citeseer",
+"Wiley Online Library",
+"science.sciencemag.org",
+"Wiley Online Library",
+"Wiley Online Library",
+"NRC Research Press",
+"karger.com",
+"Wiley Online Library",
+"ASTMH",
+"null"
+]
+},
+{
+"gs_journals": [
+"ocean-sci.net",
+"search.ebscohost.com",
+"atmos-chem-phys.net",
+"eprints.uni-kiel.de",
+"atmos-chem-phys-discuss.net",
+"researchgate.net",
+"ACS Publications",
+"ACS Publications",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Springer",
+"books.google.com",
+"Wiley Online Library",
+"Elsevier",
+"Taylor & Francis",
+"swrcb2.swrcb.ca.gov",
+"Taylor & Francis",
+"Wiley Online Library",
+"Taylor & Francis",
+"Taylor & Francis"
+]
+},
+{
+"gs_journals": [
+"HeinOnline",
+"HeinOnline",
+"HeinOnline",
+"search.informit.com.au",
+"JSTOR",
+"books.google.com",
+"books.google.com",
+"books.google.com",
+"HeinOnline",
+"Taylor & Francis"
+]
+},
+{
+"gs_journals": [
+"jhc.unh.edu",
+"unb.ca",
+"experts.com",
+"books.google.com",
+"scholars.unh.edu",
+"vliz.be",
+"HeinOnline",
+"Springer",
+"null",
+"inspire.redlands.edu"
+]
+},
+{
+"gs_journals": [
+"nature.com",
+"Springer",
+"osti.gov",
+"ieeexplore.ieee.org",
+"dl.acm.org",
+"ieeexplore.ieee.org",
+"dl.acm.org",
+"arxiv.org",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"Elsevier",
+"ieeexplore.ieee.org",
+"Springer",
+"ieeexplore.ieee.org",
+"search.proquest.com",
+"Elsevier",
+"emeraldinsight.com",
+"emeraldinsight.com",
+"dl.acm.org"
+]
+},
+{
+"gs_journals": [
+"JSTOR",
+"search.proquest.com",
+"Springer",
+"Taylor & Francis",
+"books.google.com",
+"researchgate.net",
+"researchgate.net",
+"bhlab.iab.uaf.edu",
+"www-odp.tamu.edu",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"vliz.be",
+"oceandatapractices.net",
+"arcticcouncil.longsight.com",
+"null",
+"onepetro.org",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"ERIC",
+"maei-ppw.ca",
+"ERIC",
+"dhss.alaska.gov",
+"faculty-staff.ou.edu",
+"null",
+"rti.org",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"vliz.be",
+"null",
+"researchgate.net",
+"vliz.be",
+"null",
+"null",
+"null",
+"null",
+"wmo.int",
+"null"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"nature.com",
+"dlc.dlib.indiana.edu",
+"JSTOR",
+"bioscience.oxfordjournals.org",
+"Springer",
+"Elsevier",
+"Springer",
+"JSTOR",
+"null"
+]
+},
+{
+"gs_journals": [
+"JSTOR",
+"books.google.com",
+"null",
+"null",
+"Taylor & Francis",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Cambridge Univ Press",
+"openscholarship.wustl.edu",
+"epic.awi.de",
+"null",
+"books.google.com",
+"helda.helsinki.fi",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"oaarchive.arctic-council.org",
+"null",
+"ocean.dmi.dk",
+"vliz.be",
+"arcus.org",
+"null",
+"wmo.int",
+"wmo.int",
+"arcus.org",
+"oceandatapractices.net"
+]
+},
+{
+"gs_journals": [
+"mrdata.usgs.gov",
+"tin.er.usgs.gov",
+"JSTOR",
+"webdoc.sub.gwdg.de",
+"academiccommons.columbia.edu",
+"mrdata.usgs.gov",
+"Elsevier",
+"Elsevier",
+"sustainableoregon.com",
+"null"
+]
+},
+{
+"gs_journals": [
+"science.sciencemag.org",
+"dlc.dlib.indiana.edu",
+"JSTOR",
+"nature.com",
+"rstb.royalsocietypublishing.org",
+"journals.ametsoc.org",
+"Springer",
+"Springer",
+"atmos-chem-phys.net",
+"atmos-chem-phys-discuss.net"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"rock.geosociety.org",
+"adsabs.harvard.edu",
+"educopia.org",
+"Wiley Online Library",
+"null",
+"peer.asee.org",
+"Wiley Online Library",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"HeinOnline",
+"nber.org",
+"JSTOR",
+"Springer",
+"HeinOnline",
+"books.google.com",
+"JSTOR",
+"JSTOR",
+"ACS Publications",
+"JSTOR"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"belspo.be",
+"epic.awi.de",
+"atmos-chem-phys-discuss.net",
+"digitalcommons.library.umaine.edu",
+"eprints.lib.hokudai.ac.jp",
+"escholarship.org",
+"search.proquest.com",
+"Springer",
+"null"
+]
+},
+{
+"gs_journals": [
+"journals.ametsoc.org",
+"nodc.noaa.gov",
+"null",
+"Citeseer",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"BioOne",
+"Wiley Online Library",
+"muse.jhu.edu",
+"Wiley Online Library",
+"pdfs.semanticscholar.org",
+"pdfs.semanticscholar.org",
+"pdfs.semanticscholar.org",
+"pdfs.semanticscholar.org",
+"null"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"Citeseer",
+"espace.library.curtin.edu.au",
+"staging.eloka-arctic.org",
+"Springer",
+"emeraldinsight.com",
+"s3-us-west-1.amazonaws.com",
+"dlc.dlib.indiana.edu",
+"Taylor & Francis",
+"dlc.dlib.indiana.edu"
+]
+},
+{
+"gs_journals": [
+"journals.lww.com",
+"ncbi.nlm.nih.gov",
+"methodesurrender.org",
+"Mass Medical Soc",
+"ncjrs.gov",
+"National Acad Sciences",
+"europepmc.org",
+"Am Heart Assoc",
+"treesearch.fs.fed.us",
+"Eur Heart Rhythm Assoc"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"nature.com",
+"dlc.dlib.indiana.edu",
+"JSTOR",
+"bioscience.oxfordjournals.org",
+"Springer",
+"Elsevier",
+"Springer",
+"JSTOR",
+"null"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"arc.aiaa.org",
+"ascelibrary.org",
+"ascelibrary.org",
+"books.google.com",
+"Elsevier",
+"books.google.com",
+"books.google.com",
+"Elsevier",
+"ascelibrary.org"
+]
+},
+{
+"gs_journals": [
+"lpi.nsw.gov.au",
+"Elsevier",
+"Elsevier",
+"Wiley Online Library",
+"Wiley Online Library",
+"crcsi.com.au",
+"eprints.usq.edu.au",
+"emeraldinsight.com",
+"Wiley Online Library",
+"Wiley Online Library"
+]
+},
+{
+"gs_journals": [
+"books.google.com",
+"books.google.com",
+"Elsevier",
+"Springer",
+"papers.ssrn.com",
+"Taylor & Francis",
+"Taylor & Francis",
+"Elsevier",
+"books.google.com",
+"null"
+]
+},
+{
+"gs_journals": [
+"geology.gsapubs.org",
+"cabdirect.org",
+"nature.com",
+"books.google.com",
+"phycologia.org",
+"Elsevier",
+"Wiley Online Library",
+"plato.acadiau.ca",
+"cccma.ec.gc.ca",
+"Cambridge Univ Press"
+]
+},
+{
+"gs_journals": [
+"researchgate.net",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Springer",
+"books.google.com",
+"books.google.com",
+"books.google.com",
+"books.google.com",
+"books.google.com",
+"Wiley Online Library",
+"trutzhaase.eu",
+"books.google.com"
+]
+},
+{
+"gs_journals": [
+"ieeexplore.ieee.org",
+"Springer",
+"Elsevier",
+"books.google.com",
+"trid.trb.org",
+"Elsevier",
+"SPM-PMSAPSA",
+"Taylor & Francis",
+"trid.trb.org",
+"dl.acm.org"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"tau.org.ar",
+"books.google.com",
+"JSTOR",
+"mingaonline.uach.cl",
+"upcommons.upc.edu",
+"politicalatinoamericana.sociales.uba …",
+"cepchile.cl",
+"perfilesla.flacso.edu.mx",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"SciELO Chile",
+"scielo.org.co",
+"researchgate.net",
+"istor.cide.edu",
+"dugi-doc.udg.edu",
+"accionag.cl",
+"researchgate.net",
+"search.proquest.com",
+"dialnet.unirioja.es",
+"null"
+]
+},
+{
+"gs_journals": [
+"200.6.99.248",
+"Elsevier",
+"books.google.com",
+"SciELO Espana",
+"SciELO Public Health",
+"dialnet.unirioja.es",
+"eldia.es",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"181.65.172.167",
+"Elsevier",
+"riuc.bc.uc.edu.ve",
+"null",
+"null",
+"dspace.espol.edu.ec",
+"policia-repositorio.metabiblioteca. …",
+"null",
+"uci.ac.cr",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"SciELO Argentina",
+"SciELO Argentina",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Taylor & Francis",
+"Taylor & Francis",
+"Cambridge Univ Press",
+"Cambridge Univ Press",
+"Cambridge Univ Press",
+"researchgate.net",
+"Elsevier",
+"Cambridge Univ Press",
+"eprints.utas.edu.au",
+"Cambridge Univ Press"
+]
+},
+{
+"gs_journals": [
+"repositorio.cepal.org",
+"sedici.unlp.edu.ar",
+"null",
+"null",
+"null",
+"argentina.iom.int",
+"repositorio.uchile.cl",
+"scielo.org.co",
+"scielo.org.co",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"bibliotecadigital.umag.cl",
+"null",
+"repositorio.uchile.cl",
+"revistas.uchile.cl",
+"fundacionhuinay.cl",
+"null",
+"repositoriodigital.corfo.cl",
+"repositorio.uide.edu.ec",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"revistas.ucm.es",
+"eng.videoarde.net",
+"sedici.unlp.edu.ar",
+"scielo.org.co",
+"dialnet.unirioja.es",
+"null",
+"null",
+"campus.fca.uncu.edu.ar",
+"gracielataquini.info"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"Springer",
+"null",
+"HeinOnline",
+"anta.canterbury.ac.nz",
+"books.google.com",
+"ija.cgpublisher.com",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library"
+]
+},
+{
+"gs_journals": [
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com"
+]
+},
+{
+"gs_journals": [
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com",
+"archive.statbroadcast.com"
+]
+},
+{
+"gs_journals": [
+"dialnet.unirioja.es",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"scielo.org.co",
+"researchgate.net",
+"dugi-doc.udg.edu",
+"books.google.com",
+"jefas.esan.edu.pe",
+"fcecon.unr.edu.ar",
+"revistas.unc.edu.ar",
+"revistas.javeriana.edu.co",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"revistas.uexternado.edu.co",
+"bibliodigital.tec.ac.cr",
+"null",
+"null",
+"null",
+"null",
+"null",
+"200.21.98.67",
+"books.google.com",
+"books.google.com"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"ecopuerto.com",
+"archivo.cepal.org",
+"publications.iadb.org",
+"redisa.uji.es",
+"eumed.net",
+"oni.escuelas.edu.ar",
+"fba.org.ar",
+"revistas.javeriana.edu.co",
+"imgbiblio.vaneduc.edu.ar",
+"163.10.34.134"
+]
+},
+{
+"gs_journals": [
+"repositorio.ub.edu.ar",
+"revistas.uexternado.edu.co",
+"books.google.com",
+"null",
+"SciELO Argentina",
+"dialnet.unirioja.es",
+"dspace.ups.edu.ec",
+"dspace.ups.edu.ec",
+"medicina-intensiva.cl",
+"null"
+]
+},
+{
+"gs_journals": [
+"SciELO Argentina",
+"SciELO Argentina",
+"eprints.ucm.es",
+"researchgate.net",
+"researchgate.net",
+"null",
+"oa.upm.es",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"repository.unimilitar.edu.co",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"acrt-abogados.cl",
+"SciELO Chile",
+"scielo.org.co",
+"dialnet.unirioja.es",
+"books.google.com",
+"researchgate.net",
+"ru.iis.sociales.unam.mx",
+"istor.cide.edu",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"sidalc.net",
+"gredossandiego.coop",
+"null",
+"upcommons.upc.edu",
+"null",
+"researchgate.net",
+"repository.ut.edu.co",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"dialnet.unirioja.es",
+"revistas.unlp.edu.ar",
+"sedici.unlp.edu.ar",
+"bibliotecadigital.umag.cl",
+"ezproxybib.pucp.edu.pe",
+"null",
+"tdx.cat",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"diw-berlin.de",
+"Wiley Online Library",
+"hist.library.paho.org",
+"emeraldinsight.com",
+"Elsevier",
+"Springer",
+"CSAE",
+"JSTOR",
+"JSTOR",
+"HeinOnline"
+]
+},
+{
+"gs_journals": [
+"researchgate.net",
+"uantof.cl",
+"researchgate.net",
+"books.google.com",
+"search.proquest.com",
+"books.google.com",
+"cipma.cl",
+"revistas.javeriana.edu.co",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"revistas.unc.edu.ar",
+"portals.iucn.org",
+"books.google.com",
+"researchgate.net",
+"books.google.com",
+"scielo.org.co",
+"books.google.com",
+"books.google.com",
+"SciELO Chile",
+"null"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"Wiley Online Library",
+"journals.ametsoc.org",
+"Wiley Online Library",
+"null"
+]
+},
+{
+"gs_journals": [
+"repository.cmu.edu",
+"Google Patents",
+"thescholedge.org",
+"ir.lib.uwo.ca",
+"papers.ssrn.com",
+"papers.ssrn.com",
+"engagedscholarship.csuohio.edu",
+"HeinOnline",
+"Google Patents",
+"thescholedge.org"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"Wiley Online Library",
+"Wiley Online Library",
+"search.proquest.com",
+"Wiley Online Library",
+"californiaagriculture.ucanr.org",
+"Taylor & Francis",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"192.206.10.36",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Citeseer",
+"papers.ssrn.com",
+"Taylor & Francis",
+"search.proquest.com",
+"Taylor & Francis",
+"cpmss.synergiesprairies.ca",
+"books.google.com",
+"Springer",
+"cac.sagepub.com",
+"2030north.carc.org"
+]
+},
+{
+"gs_journals": [
+"dalspace.library.dal.ca",
+"ssms.socialsciences.uottawa.ca",
+"classiques.uqac.ca",
+"null",
+"ons-sno.ca",
+"books.google.com",
+"ons-sno.ca",
+"investsudbury.ca",
+"books.google.com",
+"exercicescorriges.com"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Wiley Online Library",
+"Wiley Online Library",
+"geo.unizh.ch",
+"bioscience.oxfordjournals.org",
+"arlis.org",
+"search.proquest.com",
+"null",
+"ingentaconnect.com",
+"cenperm.ku.dk",
+"iceandclimate.nbi.ku.dk"
+]
+},
+{
+"gs_journals": [
+"null",
+"scholarworks.umt.edu",
+"null",
+"scholarworks.umt.edu",
+"tahoeguide.com",
+"null",
+"papers.ssrn.com",
+"cowancenter.org",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"Citeseer",
+"Springer",
+"null",
+"null",
+"alaskaanthropology.org",
+"Springer",
+"Springer",
+"search.proquest.com",
+"alaskaanthropology.org"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"Wiley Online Library",
+"Wiley Online Library",
+"journals.ametsoc.org",
+"Elsevier",
+"geology.gsapubs.org",
+"nature.com",
+"Wiley Online Library",
+"Springer",
+"Wiley Online Library"
+]
+},
+{
+"gs_journals": [
+"bioscience.oxfordjournals.org",
+"science.sciencemag.org",
+"BioOne",
+"advances.sciencemag.org",
+"rstb.royalsocietypublishing.org",
+"BioOne",
+"nature.com",
+"books.google.com",
+"NRC Research Press",
+"Springer"
+]
+},
+{
+"gs_journals": [
+"adsabs.harvard.edu",
+"ersilia.org",
+"rec.org.tr",
+"ipcc.ch",
+"wmo.insomnation.com",
+"uncclearn.org",
+"socbotanica.cl",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"NRC Research Press",
+"gsabulletin.gsapubs.org",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"Elsevier",
+"gsabulletin.gsapubs.org",
+"Elsevier"
+]
+},
+{
+"gs_journals": [
+"Elsevier",
+"Wiley Online Library",
+"gsabulletin.gsapubs.org",
+"Elsevier",
+"books.google.com",
+"gsabulletin.gsapubs.org",
+"gsabulletin.gsapubs.org",
+"classic.geology.ucdavis.edu",
+"Springer",
+"null"
+]
+},
+{
+"gs_journals": [
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null",
+"null"
+]
+},
+{
+"gs_journals": [
+"Springer",
+"annualreviews.org",
+"Elsevier",
+"Elsevier",
+"Wiley Online Library",
+"Eco Soc America",
+"Wiley Online Library",
+"Elsevier",
+"Eco Soc America",
+"Eco Soc America"
+]
+}
+]
+}
+}

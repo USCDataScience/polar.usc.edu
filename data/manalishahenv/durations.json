@@ -1,0 +1,1879 @@
+{
+"responseHeader": {
+"status": 0,
+"QTime": 1,
+"params": {
+"q": "Duration:* && Content-Type:image\\/gif",
+"indent": "true",
+"fl": "Duration, Content-Type",
+"rows": "200",
+"wt": "json"
+}
+},
+"response": {
+"numFound": 4185,
+"start": 0,
+"docs": [
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "9.50 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.30 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "2.65 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "12.50 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "33.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.30 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.30 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "13.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "10.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "2.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.80 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.45 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "1.80 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "8.83 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.84 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "1.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "9.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "10.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.60 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.08 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "11.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.30 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.15 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.80 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "6.70 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "3.91 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.80 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.80 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "1.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "20.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "12.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "12.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "18.00 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.07 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.40 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.08 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.40 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.10 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "image/gif",
+"Duration": "0.01 s"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.73 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1:07:22 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.17 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.64 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.28 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:00:32 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "6.70 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.73 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.58 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1.51 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1:20:33 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.96 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.17 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.06 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "7.93 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.72 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.37 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1.79 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.54 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.37 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.98 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.18 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.18 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.18 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "11.79 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.18 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.03 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:08:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:18:06 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:08:27 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1.53 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.45 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.27 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "10.86 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.48 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.06 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.64 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:00:32 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.35 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1.64 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1.91 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.80 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.17 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.86 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.83 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.03 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "21.59 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.78 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:00:41 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.07 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.07 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0.05 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0.06 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0.06 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.07 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.07 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:00 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:20 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0.06 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:00:43 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.64 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.73 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "21.85 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.73 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:23 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:23 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:23 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:23 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:23 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:15:03 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:23 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:23 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.07 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:02:04 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:01:39 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.17 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:06:19 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "0:35:24 (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "21.28 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.91 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.37 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1.79 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.54 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.37 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.96 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.56 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.94 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.17 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.18 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.64 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.03 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.98 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "3.96 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.10 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.18 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "8.18 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.02 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.03 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "1.53 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "4.09 s (approx)"
+},
+{
+"Content-Type": "audio/mpeg",
+"Duration": "2.45 s (approx)"
+},
+{
+"Content-Type": "audio/x-aiff",
+"Duration": "0:03:20"
+},
+{
+"Content-Type": "audio/x-aiff",
+"Duration": "6.41 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.21 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.21 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.23 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.23 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "3.84 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "4.51 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "2.15 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.11 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.96 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.60 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.60 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "4.07 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.96 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "4.64 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.83 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "6.12 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.96 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.96 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "10.63 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "10.57 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "3.63 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "5.40 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "4.51 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "1.47 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "1.44 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "2.03 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "6.47 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.20 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.23 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.21 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "0.22 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "1.49 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "5.69 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.42 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "8.14 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "7.96 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "1.41 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "1.47 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "1.41 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "1.41 s"
+},
+{
+"Content-Type": "audio/x-wav",
+"Duration": "3.84 s"
+},
+{
+"Content-Type": "video/x-flv",
+"Duration": "0:05:37"
+},
+{
+"Content-Type": "video/x-flv",
+"Duration": "0:05:58"
+},
+{
+"Content-Type": "video/x-flv",
+"Duration": "0:04:28"
+},
+{
+"Content-Type": "video/x-flv",
+"Duration": "0:04:17"
+}
+]
+}
+}

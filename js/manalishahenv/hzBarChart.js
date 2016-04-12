@@ -55,7 +55,7 @@ function on_data(){
         data["series"]=[{"name":"docs", "value":series}];
 
     console.log(data);
-    var chartWidth       = 800,
+    var chartWidth       = 1000,
         barHeight        = 14,
         groupHeight      = barHeight * data.series.length,
         gapBetweenGroups = 10,

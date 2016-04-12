@@ -86,9 +86,13 @@ function on_data(){
             .on("end", draw)
             .start();
         function draw(words) {
+            d3.select("#word_cloud")
+            .attr("width", 1100)
+                .attr("height", 1200);
+
             d3.select("#word_cloud .panel-body").append("svg")
                 .attr("width", 1100)
-                .attr("height", 900)
+                .attr("height", 1200)
                 .attr("class", "wordcloud")
                 .append("g")
                 // without the transform, words words would get cutoff to the left and top, they would

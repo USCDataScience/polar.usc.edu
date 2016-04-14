@@ -1,7 +1,7 @@
 ;( function() {
   var data = {
-    lineChart: [
-        {
+    lineChart: [ ],
+       /* {
             "date": "1994-01-01", 
             "label": "Carbon Dioxide", 
             "value": 6
@@ -271,7 +271,7 @@
             "label": "Ozone", 
             "value": 136
         }
-    ], 
+    ], */
     pieChart: [
         {
             "color": "red", 
@@ -297,8 +297,63 @@
   var DURATION = 1500;
   var DELAY = 500;
   
-
-
+  var promises = [];
+  
+  for (year = 1994; year < 2016; year++) {
+	promises.push(getMethaneData(year));
+	promises.push(getCO2Data(year));
+	promises.push(getOzoneData(year));
+  }
+  
+  
+  function getMethaneData(year) {
+	  var dfd = $.Deferred();
+	  var url = "http://polar.usc.edu/solr/temporal/select?q=Methane&fq=extracted_dates%3A%22" + year + "-01-01T00%3A00%3A00Z%22&wt=json&json.wrf=?&indent=true";
+	 $.getJSON(url, function(response) {
+		var temp =
+		{
+			"date": year + "-01-01",
+			"label": "Methane",
+			"value": response['response']['numFound']
+		}
+		data.lineChart.push(temp);
+		dfd.resolve();
+	});
+	return dfd.promise();
+  }
+  
+  
+  function getCO2Data(year) {
+	  var dfd = $.Deferred();
+	  var url = 'http://polar.usc.edu/solr/temporal/select?q=%22Carbon+Dioxide%22&fq=extracted_dates%3A%22' + year + '-01-01T00%3A00%3A00Z%22&wt=json&json.wrf=?&indent=true';
+	  $.getJSON(url, function(response) {
+		var temp =
+		{
+			"date": year + "-01-01",
+			"label": "Carbon Dioxide",
+			"value": response['response']['numFound']
+		}
+		data.lineChart.push(temp);
+		dfd.resolve();
+	});
+	return dfd.promise();
+  }
+  
+  function getOzoneData(year) {
+	  var dfd = $.Deferred();
+	  var url = "http://polar.usc.edu/solr/temporal/select?q=Ozone&fq=extracted_dates%3A%22" + year + "-01-01T00%3A00%3A00Z%22&wt=json&json.wrf=?&indent=true";
+	  $.getJSON(url, function(response) {
+		var temp =
+		{
+			"date": year + "-01-01",
+			"label": "Ozone",
+			"value": response['response']['numFound']
+		}
+		data.lineChart.push(temp);
+		dfd.resolve();
+	});
+	return dfd.promise();
+  }
   
   
   /**
@@ -311,12 +366,16 @@
     // parse helper functions on top
     var parse = d3.time.format( '%Y-%m-%d' ).parse;
     // data manipulation first
+	
+	/*var copy = data.extend();
     data = data.map( function( datum ) {
       datum.date = parse( datum.date );
       
       return datum;
     } );
-    
+	alert(JSON.stringify(data));
+	alert(JSON.stringify(copy));
+    */
     // TODO code duplication check how you can avoid that
     var containerEl = document.getElementById( elementId ),
         width       = containerEl.clientWidth,
@@ -371,7 +430,30 @@
         circleContainer;
 
     // Compute the minimum and maximum date, and the maximum price.
-    x.domain( [ data[ 0 ].date, data[ data.length - 1 ].date ] );
+	var currTime = new Date();
+	var min = currTime.getFullYear() + "-01-01";
+	var max = "1000-01-01";
+	var minDate = Date.parse(min);
+	var maxDate = Date.parse(max);
+	for (i=0; i < data.length; i++) {
+		var date = Date.parse(data[i].date);
+		//alert("date: " + date + "\nmin: " + minDate + "\nmax: " + maxDate);
+		if (date < minDate) {
+			minDate = date;
+			min = data[i].date;
+		}
+		if (date > maxDate) {
+			maxDate = date;
+			max = data[i].date;
+		}
+	}
+	alert(min + "," + max);
+    x.domain( [ parse(min), parse(max)] );
+	data = data.map( function( datum ) {
+      datum.date = parse( datum.date );
+      
+      return datum;
+    } );
     // hacky hacky hacky :(
     y.domain( [ 0, d3.max( data, function( d ) { return d.value; } ) + 10] );
 
@@ -690,10 +772,36 @@
   
   function ಠ_ಠ() {
     drawLineChart(    'lineChart',    data.lineChart );
-	drawPieChart(     'pieChart',     data.pieChart );
   }
   
-  
-  ಠ_ಠ();
+  // yeah, let's kick things off!!!
+   $.when(
+    $.getJSON("http://polar.usc.edu/solr/geo/select?q=ozone&wt=json&json.wrf=?&indent=true", function(response) {
+	   data['pieChart'][2]['numResults'] = response['response']['numFound'];
+	 }),
+	 
+	$.getJSON("http://polar.usc.edu/solr/geo/select?q=CO2&wt=json&json.wrf=?&indent=true", function(response) {
+		data['pieChart'][0]['numResults'] = response['response']['numFound'];
+	}),
+	$.getJSON("http://polar.usc.edu/solr/geo/select?q=methane&wt=json&json.wrf=?&indent=true", function(response) {
+		data['pieChart'][1]['numResults'] = response['response']['numFound'];
+	})
+	).then(function() {
+		var total = 0;
+		
+		for (i = 0; i < 3; i++) {
+			total += data['pieChart'][i]['numResults'];
+		}
+		for (i = 0; i < 3; i++) {
+			data['pieChart'][i]['value'] = data['pieChart'][i]['numResults']/total;
+		}
+		drawPieChart(     'pieChart',     data.pieChart );
+	});
+	
+	$.when.apply($, promises).then(function() {
+		//alert(JSON.stringify(data.lineChart));
+		drawLineChart( 'lineChart', data.lineChart);
+	});
+  //ಠ_ಠ();
   
 })();

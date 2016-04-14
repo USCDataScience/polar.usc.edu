@@ -109,6 +109,11 @@ body {
     width: 400px;
 }
 
+#dynamic-viz .thumbnail img{
+    height: 200px;
+    width: 400px;
+}
+
 #sce-viz .thumbnail img{
     height: 200px;
     width: 400px;

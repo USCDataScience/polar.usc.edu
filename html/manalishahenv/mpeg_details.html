@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <title>Polar-Viz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/manalishahenv/radial.css" rel="stylesheet">
+ <style type="text/css">
+
+      #hzBarChart .panel-body .legend {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: start;
+        font-size: 12px;
+      }
+
+      #hzBarChart .panel-body text {
+        
+        font: 10px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .label {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .bar:hover {
+        fill: yellow;
+      }
+
+      #hzBarChart .panel-body .axis path,
+      #hzBarChart .panel-body .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      #hzBarChart .panel-body .legend {
+        position: fixed;
+
+      }
+      .h1,h1{
+        color: "#DD1C77"
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+      <div class="container">
+        <h3>Titles and Albums of MPEG files</h3>
+          <div id="radial"></div>
+      </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../../js/jquery-2.2.2.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/d3.v3.min.js"></script>
+
+    <!-- Charts -->
+    <script src="../../js/manalishahenv/radial.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log("will call search");
+      search();
+    });
+    function search(){
+      console.log("will call load_radial");
+      load_radial();
+
+    }
+    </script>
+   
+
+  </body>
+</html>
+

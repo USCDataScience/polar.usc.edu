@@ -1,0 +1,133 @@
+{
+  "name": "core",
+  "children": [
+    {
+      "name": "measure",
+      "children": [
+        {
+          "name": "fields",
+          "children": [
+            {
+              "name": "doi"
+            },
+            {
+              "name": "measurements",
+              "children": [
+                {
+                  "name": "unit"
+                },
+                {
+                  "name": "unit_value"
+                },
+                {
+                  "name": "category"
+                },
+                {
+                  "name": "sub_category"
+                }
+              ]
+            },
+            {
+              "name": "short_url" 
+            },
+            {
+                "name": "primaryKey",
+                "children" :[
+                   { "name": "id" }
+                ]
+            }            
+        ]
+     }
+    ]
+    },
+    {
+      "name": "Location",
+      "children": [
+        {
+          "name": "fields",
+          "children": [
+            {
+              "name": "filename" 
+            },
+            {
+              "name": "location" 
+            },
+            {
+              "name": "latitude" 
+            },
+            {
+              "name": "longitude" 
+            }            
+          ]
+        },
+        {
+          "name": "primaryKey",
+          "children": [
+            {
+              "name": "id" 
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ontology",
+      "children": [
+        {
+            "name":"fields",
+            "children":[
+                {
+                  "name": "tags",
+                  "children": [
+                    {
+                      "name": "concept1" 
+                    },
+                    {
+                      "name": "concept2" 
+                    },
+                    {
+                      "name": "concept3" 
+                    },
+                    {
+                      "name": "conceptN" 
+                    }            
+                  ]
+                }
+            ]
+        },
+        {
+          "name": "primaryKey",
+          "children": [
+            {
+              "name": "id" 
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "metadata_score",
+      "children": [
+        {
+            "name":"fields",
+            "children":[
+                {
+                    "name": "filename" 
+                },
+                {
+                  "name": "score"
+                }
+            ]
+        },
+        {
+          "name": "primaryKey",
+          "children": [
+            {
+              "name": "id" 
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

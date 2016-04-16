@@ -1,40 +1,11 @@
-  /*
-  var myMap = {}; 
 
-
-    $.getJSON("http://localhost:8983/solr/collection1/select/?q={!func}sum(mul(sum(tf(content,oil),tf(content,gas)),5),tf(content,Arctic))&wt=json&json.wrf=?&indent=true&rows=1000&facet=true&facet.field=location", function(result){
-    //  alert(result['facet_counts']['facet_fields']['location']);
-       var count = 0;
-      var key;
-      $.each(result['facet_counts']['facet_fields']['location'], function(v,d){
-        if(count%2===0)
-          key = d;
-        else
-        {
-          if(d>200&&key.indexOf("Earth")===-1)
-            if(key.indexOf("earth")===-1)
-          myMap[key] = d;
-        }  
-        count++;
-      });
-  */
 $(document).ready(function () {
   var bubbleChart = new d3.svg.BubbleChart({
     supportResponsive: true,
-    //container: => use @default
     size: 600,
-    //viewBoxSize: => use @default
     innerRadius: 600 / 3.5,
-    //outerRadius: => use @default
     radiusMin: 50,
-    //radiusMax: use @default
-    //intersectDelta: use @default
-    //intersectInc: use @default
-    //circleColor: use @default
-
-/*
-    earth,1509,Earth,734,Arctic,554,United States,356,Arctic Ocean,319,Alaska,301,Republic of Benin,286,Canada,242,Commonwealth of Australia,230,Colorado,152,Tennessee,131,Europe,122,Oak Ridge,121,Russian Federation,112,People’s Republic of China,110,California,108,Federative Republic of Brazil,99,*/
-
+    
     data: {
       items: [
         {text: "Arctic", count: "554"},

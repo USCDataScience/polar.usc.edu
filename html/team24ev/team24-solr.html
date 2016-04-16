@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solr Dendrogram</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../../css/team24/style_solr.css"></link>
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	</head>
+	<script src="../../js/jquery.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
+	<body>
+	<div id="header"></div>
+    <div class="container row bfd" style="margin-top:60px; margin-left: 40px;">
+	<div class="container col-md-12">
+      <a href="./team24-location.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Locations in TREC Dataset</a>
+      <a href="./team24-mesaurements.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Measurements in TREC Dataset</a>
+      <a href="./team24-ontologies.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Sweet Ontology Mappings in TREC</a>
+      <a href="./team24-histogram.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Metadata Quality Score in TREC</a>
+      <a href="./team24-solr.html" role="button" class="btn btn-primary disabled col-md-3" style="margin:10px;">Solr Schema </a>
+      <a href="./team24-ffmpeg.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">FFMPEG Extractions </a>
+	</div>
+		<div id="container">
+			<div id="dendogram">
+			</div>
+			<div id="menu">
+				<h4><u>Solr Index links</u></h4>
+				<ul>
+					<li><a href="http://localhost:8983/solr/Location/select?q=*:*&wt=csv&rows=0&facet">Location</a></li>
+					<li><a href="http://localhost:8983/solr/measure/select?q=*:*&wt=csv&rows=0&facet">measure</a></li>
+					<li><a href="http://localhost:8983/solr/ontology/select?q=*:*&wt=csv&rows=0&facet">ontology</a></li>
+					<li><a href="http://localhost:8983/solr/metadata_score/select?q=*:*&wt=csv&rows=0&facet">metadata_score</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="../../js/team24ev/dendogram.js"></script>
+	</body>
+</html>

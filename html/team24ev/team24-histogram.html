@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sweet Ontology Mappings</title>
+    <link rel="stylesheet" href="../../css/team24/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        path {
+            stroke: white;
+            stroke-width: 0.5px;
+            font-size: 10px;
+        }
+        /*iframe {*/
+            /*width: 100%;*/
+            /*min-height: 500px;*/
+        /*}*/
+
+        .histowrap { width: 700px; height: 550px; overflow: hidden; }
+        #histoframe { width: 900px; height: 550px; border: 1px solid black; }
+        #histoframe {
+            -ms-zoom: 0.75;
+            -moz-transform: scale(0.75);
+            -moz-transform-origin: 0 0;
+            -o-transform: scale(0.75);
+            -o-transform-origin: 0 0;
+            -webkit-transform: scale(0.75);
+            -webkit-transform-origin: 0 0;
+        }
+    </style>
+    <script src="../../js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div class="container row bfd" style="margin-top:60px; margin-left: 40px;">
+    <div class="container col-md-12">
+        <a href="team24-location.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Locations
+            in TREC Dataset</a>
+        <a href="team24-mesaurements.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Measurements
+            in TREC Dataset</a>
+        <a href="team24-ontologies.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Sweet
+            Ontology Mappings in TREC</a>
+        <a href="team24-histogram.html" role="button" class="btn btn-primary  disabled col-md-3"
+           style="margin:10px;">Metadata Quality Score in TREC</a>
+        <a href="team24-solr.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">Solr
+            Schema </a>
+        <a href="team24-ffmpeg.html" role="button" class="btn btn-primary col-md-3" style="margin:10px;">FFMPEG
+            Extractions </a>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4">
+                <p> Links for Metadata Quality Scores Based on MIME Types</p>
+                <li><a href="Histogram/index1.html" class="active" target="histoframe">atom+xml</a></li>
+                <li><a href="Histogram/index2.html" target="histoframe">dif+xml</a></li>
+                <li><a href="Histogram/index3.html" target="histoframe">google-earth</a></li>
+                <li><a href="Histogram/index4.html" target="histoframe">PDF</a></li>
+                <li><a href="Histogram/index5.html" target="histoframe">rdf+xml</a></li>
+                <li><a href="Histogram/index6.html" target="histoframe">rss+xml</a></li>
+                <li><a href="Histogram/index7.html" target="histoframe">x-executable</a></li>
+                <li><a href="Histogram/index8.html" target="histoframe">xhtml"+xml</a></li>
+                <li><a href="Histogram/index9.html" target="histoframe">x-msdownload</a></li>
+                <li><a href="Histogram/index10.html" target="histoframe"> x-sh</a></li>
+                <li><a href="Histogram/index11.html" target="histoframe"> zip</a></li>
+                <li><a href="Histogram/index12.html" target="histoframe"> audio_basic</a></li>
+                <li><a href="Histogram/index13.html" target="histoframe"> audio_mp4</a></li>
+                <li><a href="Histogram/index14.html" target="histoframe"> audio_mpeg</a></li>
+                <li><a href="Histogram/index15.html" target="histoframe"> audio_x-wav</a></li>
+                <li><a href="Histogram/index16.html" target="histoframe"> image_gif</a></li>
+                <li><a href="Histogram/index17.html" target="histoframe"> image_tiff</a></li>
+                <li><a href="Histogram/index18.html" target="histoframe"> vnd.adobe.photoshop</a></li>
+                <li><a href="Histogram/index19.html" target="histoframe"> vnd.microsoft.icon</a></li>
+                <li><a href="Histogram/index20.html" target="histoframe"> message_rfc822</a></li>
+                <li><a href="Histogram/index21.html" target="histoframe"> text_x-vcard</a></li>
+                <li><a href="Histogram/index22.html" target="histoframe"> video_mp4 </a></li>
+                <li><a href="Histogram/index24.html" target="histoframe"> video_x-ms-wmv</a></li>
+                <li><a href="Histogram/index25.html" target="histoframe"> image_jpeg </a></li>
+                <li><a href="Histogram/index26.html" target="histoframe"> text_plain</a></li>
+            </div>
+            <div class="col-md-8 histowrap">
+                <iframe id="histoframe" name="histoframe" src="#"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -447,7 +447,7 @@
 			max = data[i].date;
 		}
 	}
-	alert(min + "," + max);
+	//alert(min + "," + max);
     x.domain( [ parse(min), parse(max)] );
 	data = data.map( function( datum ) {
       datum.date = parse( datum.date );

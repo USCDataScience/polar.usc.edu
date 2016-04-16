@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FacetView</title>
+    <style type="text/css">
+    .btn .caret {
+    margin-top: 7px;
+    margin-left: 0;
+    margin-bottom: 7;}
+    .btn {
+      color: black;
+    }
+    body {
+      padding-top: 5%;
+    }
+  </style>
+
+  </head>
+  <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="../../js/D3/Team29.Bootstrap.js"></script>
+  <link href="../../css/styles.css" rel="stylesheet">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+
+    </script>
+</head>
+
+<body>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script src="../../js/D3/Team29c.timeSeriesChart.js"></script>
+<script src="../../js/D3/Team29c.startEndSlider.js"></script>
+<script src="../../js/D3/Team29c.clickPanel.js"></script>
+<script src="../../js/topojson.v1.min.js"></script>
+<script src="../../js/dynamicD3/Team29c.js"></script>
+
+
+<div class="container"> 
+  <div class="content">
+  <div id="header"> </div>
+  <h3>Select a filter option by clicking the arrow below. Specify time ranges by moving the black bars. </h3>
+  <hr class="featurette-divider">
+
+  <div class="facet-view-simple">            
+    <div id="facetview">              
+      <div class="row-fluid">                
+        <div class="span3">                  
+        <div id="facetview_filters">
+          <h3>Filter by</h3>                     
+          <div class="btn-group"> 
+
+          <a id="dropdownMenu" style="text-align:left; min-width:70%;" class="btn btn-default btn-sm" rel="year_exact">           
+          <i class="glyphicon glyphicon-plus"></i> Select Data</a> 
+
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>                 
+          <ul id="dataChange" class="dropdown-menu">                         
+          <li onclick="drawTimeSeries('http://polar.usc.edu/solr/temporal/select?q=warming-times&rows=100&fl=extracted_dates&wt=csv&indent=true','Warming')"><a class="facetview_sort facetview_count">Warming </a></li>
+          <li onclick="drawTimeSeries('http://polar.usc.edu/solr/temporal/select?q=ocean+circulation%0A&rows=100&fl=extracted_dates&wt=csv&indent=true','Ocean Circulation')"><a class="facetview_sort facetview_term">Ocean Circulation</a></li>
+          <li onclick="drawTimeSeries('http://polar.usc.edu/solr/temporal/select?q=carbon+dioxide&rows=100&fl=extracted_dates&wt=csv&indent=true','Carbon Dioxide')"><a class="facetview_sort facetview_rcount">Carbon Dioxide</a></li>
+          </ul>         
+          </div>             
+        </div>            
+        </div>            
+      </div>
+<div id="chart"></div>
+
+</body></html>

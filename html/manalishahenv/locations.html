@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <title>Polar-Viz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    
+ <style type="text/css">
+
+      #hzBarChart .legend {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: start;
+        font-size: 12px;
+      }
+
+      #hzBarChart text {
+        
+        font: 10px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .label {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .bar:hover {
+        fill: yellow;
+      }
+
+      #hzBarChart .axis path,
+      #hzBarChart .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      #hzBarChart .legend {
+        position: fixed;
+
+      }
+      .h1,h1{
+        color: "#DD1C77"
+      }
+    </style>
+
+  </head>
+
+  <body>
+      <div class="container">
+       <h3>Top referenced locations using Geotopic Parser</h3></div>
+          <div id="hzBarChart"></div>
+      </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../../js/jquery-2.2.2.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/d3.v3.min.js"></script>
+
+    <!-- Charts -->
+    <script src="../../js/manalishahenv/hzBarChart.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log("will call search");
+      search();
+    });
+    function search(){
+      console.log("will call refreshHzBarChart");
+      refreshHzBarChart();
+
+    }
+    </script>
+   
+
+  </body>
+</html>
+

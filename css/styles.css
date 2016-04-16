@@ -72,8 +72,6 @@ body {
     border-color: #fff;
 }
 
-
-
 /* Other classes */
 
 .vertical-center {
@@ -94,7 +92,7 @@ body {
 }
 
 #intro .title {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .thumbnail h3{
@@ -107,6 +105,11 @@ body {
 }
 
 #regular-viz .thumbnail img{
+    height: 200px;
+    width: 400px;
+}
+
+#dynamic-viz .thumbnail img{
     height: 200px;
     width: 400px;
 }

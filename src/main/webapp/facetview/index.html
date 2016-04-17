@@ -43,7 +43,7 @@
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $('.facet-view-simple').facetview({
-                search_url: "http://polar.usc.edu/solr/geo/query?",
+                search_url: "http://polar.usc.edu/solr/searchable2/query?",
                 search_index: "solr",
                 linkify: false,
                 default_operator: "AND",
@@ -93,7 +93,7 @@
                         display: "Date Added",
                     },
                     {
-                        field: "location_name",
+                        field: "location_name_s",
                         order: "term",
                         display: "Location Name",
                         size: 10,
@@ -102,13 +102,6 @@
                     {
                         field: "title",
                         display: "Topic",
-                        order: "count",
-                        size: 10,
-                        mincount: 1
-                    },
-                    {
-                        field: "location_coordinates",
-                        display: "Location Coordinates",
                         order: "count",
                         size: 10,
                         mincount: 1

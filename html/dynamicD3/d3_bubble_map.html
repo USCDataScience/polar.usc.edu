@@ -14,11 +14,22 @@
     <!--<script src="resources/datamaps.js"></script>-->
     <script src="../../js/datamaps.world.min.js"></script>
 
+      <!-- Scrolling Nav CSS -->
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/bootstrap.light.min.css">
     <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+      <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
+      <!-- Custom CSS -->
+      <link href="../../css/styles.css" rel="stylesheet">
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+    </script>
     <style>
         #resultDiv {
             position: relative;
@@ -88,23 +99,9 @@
 </head>
 
 <body style="padding-top: 40px;">
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <span class="brand">D3 Bubble Map</span>
-                <ul class="nav">
-                    <li><a href="d3_gallery.html">D3 Gallery</a>
-                    </li>
-                    <li><a href="http://localhost:8983/solr/banana/src/index.html#/dashboard">Banana Dashboard</a>
-                    </li>
-                    <li><a href="http://localhost:8983/solr/facetview/index.html">FacetView</a>
-                    </li>
-                    <li><a href="googlemap.html">Google Map</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div id="header" style="width:100%;margin:0%;padding:0%"> </div>
+    <br/>
+
 
     <div class="container-fluid text-center">
 
@@ -166,7 +163,8 @@
                     //projection: 'mercator',
                     fills: {
                         defaultFill: '#ddd', //any hex, color name or rgb/rgba value
-                        bubbleColor: 'brown'
+                        bubbleColor: 'Green',
+                        g: "blue"
                     },
                     geographyConfig: {
                         hideAntarctica: false
@@ -175,7 +173,7 @@
                         fillKey: 'bubbleColor',
                         borderWidth: '0.5px',
                         borderColor: 'white',
-                        fillOpacity: 0.5
+                        fillOpacity: .5
                     }
                 }
                 
@@ -220,7 +218,8 @@
 
                     if (validateInput()) {
                         var qs = '?q=' + $('#query').val();
-                        qs +=  "&rows=200&fl=location_name+location_coordinates+title&wt=json&indent=true";
+                        qs += "&rows=" +$('#top_k').val();
+                        qs +=  "&fl=location_name+location_coordinates+title+score&wt=json&indent=true";
                        // qs += '&from=' + $('#fromDate').val() + 'T00:00:00Z';
                        // qs += '&to=' + $('#toDate').val() + 'T00:00:00Z';
 /*
@@ -235,11 +234,12 @@
                     }
                 });
 
+
                 function search(qs) {
-                    var dataJsonUrl = "http://polar.usc.edu/solr/temporal/select" + qs;
+                    var dataJsonUrl = "http://polar.usc.edu/solr/searchable2/select" + qs;
 
                     //console.info(dataJsonUrl);
-                    alert(dataJsonUrl); 
+                    //alert(dataJsonUrl); 
                     $(".resultDiv").empty();
 
                     $('#spinner').show();
@@ -247,13 +247,48 @@
                     d3.json(dataJsonUrl, function (error, data) {
 
                         if (error != null) alert(error);
-                        alert(data.response.docs.length);
+                        //alert(dataJsonUrl);
                         //console.info(data.length);
                         //alert(data[0].title);
                         $('#spinner').hide();
-
+                        var data2 = [];
+                        var once = true; 
+                        for(var i=0; i<data.response.docs.length; i++)
+                        {
+                            var title = data.response.docs[i].title;
+                            var xy = data.response.docs[i].location_coordinates;
+                            var radius = data.response.docs[i].score*25; 
+                            //if(i==0) alert(data.response.docs[i].location_coordinates);
+                            if(xy !== undefined && xy !== null)
+                            {
+                                //alert(xy); 
+                                //var xyarray = xy.split(/\\,|\,/);
+                                for(var j=0; j<xy.length; j+=2)
+                                {
+                                    var string = xy[j];
+                                    var xyarray = string.split(/\\,|\,/);
+                                    var x = xyarray[0];
+                                    var y = xyarray[1]; 
+                                    if( j==0 && once) 
+                                    {
+                                        once = false; 
+                                      //  alert(xyarray);
+                                    } 
+                                    if(x == NaN || y == NaN || x == undefined || y == undefined) continue; 
+                                    if(title = undefined) title = ""; 
+                                    var temp = new Object();
+                                    temp["title"] = title;
+                                    temp["longitude"] = y;
+                                    temp["latitude"] = x;
+                                    temp["radius"] = radius;
+                                    temp["fillKey"] = "g"; 
+                                    data2.push(temp); 
+                                }
+                            }
+                        }
+                        alert(data2[0].title+" "+data2[0].longitude+" "+data2[0].latitude); 
                         //draw bubbles
-                        map.bubbles(data, {
+                        map.bubbles(data2, {
                             popupTemplate: function (geo, data) {
                                 //alert("hello");
                                 console.info(geo); 

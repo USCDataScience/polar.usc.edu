@@ -109,10 +109,10 @@
             "ids": [
               0
             ],
-            "query": "q=*Ice*&wt=json&rows=0&facet=true&facet.field=title&facet.limit=100",
+            "query": "q=*Ice*&wt=json&rows=0&facet=true&facet.field=title_en_searchable&facet.limit=100",
             "custom": ""
           },
-          "field": "title",
+          "field": "title_en_searchable",
           "size": 100,
           "alignment": "horizontal",
           "fontScale": 1,
@@ -139,11 +139,11 @@
             "ids": [
               0
             ],
-            "query": "q=*Ice*&wt=json&rows=0&facet=true&facet.field=title&facet.limit=10&facet.missing=true",
+            "query": "q=*Ice*&wt=json&rows=0&facet=true&facet.field=title_en_searchable&facet.limit=10&facet.missing=true",
             "custom": ""
           },
           "mode": "count",
-          "field": "title",
+          "field": "title_en_searchable",
           "stats_field": "",
           "decimal_points": 0,
           "exclude": [],
@@ -275,7 +275,7 @@
             "id",
             "segment",
             "text",
-            "title",
+            "title_en_searchable",
             "tstamp",
             "url"
           ],
@@ -344,7 +344,7 @@
   },
   "solr": {
     "server": "/solr/",
-    "core_name": "polar",
+    "core_name": "searchable2",
     "core_list": [
       "polar",
       "team1",

@@ -23,7 +23,7 @@
       <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
       <!-- Custom CSS -->
-      <link href="../../css/styles.css" rel="stylesheet">
+      <!--<link href="../../css/styles.css" rel="stylesheet">-->
     <script src="../../js/jquery.js"></script>
     <script>
     $(function(){
@@ -117,26 +117,26 @@
         </div>
         <br>
         <div class="form-inline">
-            <!--div class="form-group" id="fromDateGroup">
-                <label for="fromDate">From</label>
-                <input type="date" class="form-control" id="fromDate" style="width: 148px" placeholder="yyyy-mm-dd" pattern='^(19|20)[0-9]{2}-(0[1-9]|1[012])-(0[1-9]|(1|2)[0-9]|3[01])$'> &nbsp;
-            </div>
-            <div class="form-group" id="toDateGroup">
-                <label for="toDate">To</label>
-                <input type="date" class="form-control" id="toDate" style="width: 148px" placeholder="yyyy-mm-dd"> &nbsp;&nbsp;
-            </div>
-            <div class="form-group">
-                <label>In</label>
-                <select class="form-control" id="location">
-                    <option>Everywhere</option>
-                    <option>Greenland</option>
-                    <option>Alaska</option>
-                    <option>Arctic Ocean</option>
-                    <option>Antarctica</option>
-                    <option>Custom Place</option>
-                </select>
-                &nbsp;&nbsp;
-            </div-->
+            <!--<div class="form-group" id="fromDateGroup">-->
+                <!--<label for="fromDate">From</label>-->
+                <!--<input type="date" class="form-control" id="fromDate" style="width: 148px" placeholder="yyyy-mm-dd" pattern='^(19|20)[0-9]{2}-(0[1-9]|1[012])-(0[1-9]|(1|2)[0-9]|3[01])$'> &nbsp;-->
+            <!--</div>-->
+            <!--<div class="form-group" id="toDateGroup">-->
+                <!--<label for="toDate">To</label>-->
+                <!--<input type="date" class="form-control" id="toDate" style="width: 148px" placeholder="yyyy-mm-dd"> &nbsp;&nbsp;-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <!--<label>In</label>-->
+                <!--<select class="form-control" id="location">-->
+                    <!--<option>Everywhere</option>-->
+                    <!--<option>Greenland</option>-->
+                    <!--<option>Alaska</option>-->
+                    <!--<option>Arctic Ocean</option>-->
+                    <!--<option>Antarctica</option>-->
+                    <!--<option>Custom Place</option>-->
+                <!--</select>-->
+                <!--&nbsp;&nbsp;-->
+            <!--</div>-->
             <div class="form-group">
                 <button class="btn btn-primary" id="btnSearch">Search</button>
                 <button id="spinner" class="btn btn-lg btn-warning" style="display: none">
@@ -245,7 +245,9 @@
                     var url2 = "bird9.json"; 
                     d3.json(dataJsonUrl, function (error, data) {
 
-                        if (error != null) alert(error);
+                        if (error != null) {
+                            //alert(error);
+                        }
                         //alert(dataJsonUrl);
                         //console.info(data.length);
                         //alert(data[0].title);
@@ -254,13 +256,16 @@
                         var once = true; 
                         for(var i=0; i<data.response.docs.length; i++)
                         {
-                            var title = data.response.docs[i].title;
+                            var title = '';
+                            if (data.response.docs[i].title) {
+                                title = data.response.docs[i].title[0]
+                            }
                             var xy = data.response.docs[i].location_coordinates;
-                            var radius = data.response.docs[i].score*25; 
+                            var radius = Math.pow(data.response.docs[i].score, 2)*25;
                             //if(i==0) alert(data.response.docs[i].location_coordinates);
                             if(xy !== undefined && xy !== null)
                             {
-                                //alert(xy); 
+                                //alert(xy);
                                 //var xyarray = xy.split(/\\,|\,/);
                                 for(var j=0; j<xy.length; j+=2)
                                 {
@@ -274,7 +279,8 @@
                                       //  alert(xyarray);
                                     } 
                                     if(x == NaN || y == NaN || x == undefined || y == undefined) continue; 
-                                    if(title == undefined) title = ""; 
+
+                                    if(title === undefined) title = "";
                                     var temp = new Object();
                                     temp["title"] = title;
                                     temp["longitude"] = y;
@@ -285,12 +291,14 @@
                                 }
                             }
                         }
-                        //alert(data2[0].title+" "+data2[0].longitude+" "+data2[0].latitude); 
+
+//                        alert(data2[0].title+" "+data2[0].longitude+" "+data2[0].latitude);
                         //draw bubbles
                         map.bubbles(data2, {
                             popupTemplate: function (geo, data) {
                                 //alert("hello");
-                                console.info(geo); 
+//                                console.info(geo);
+//                                console.log('data', data);
                                 var items = [];
                                 items.push('<div class="hoverinfo">');
                                 items.push('<strong>' + data.title + '</strong>');
@@ -322,8 +330,8 @@
 
             function validateInput() {
 
-               // $('#fromDateGroup').removeClass('has-error');
-               // $('#toDateGroup').removeClass('has-error');
+//                $('#fromDateGroup').removeClass('has-error');
+//                $('#toDateGroup').removeClass('has-error');
 
                 if ($('#query').val().trim().length == 0) {
                     $('#query').focus();
@@ -335,20 +343,20 @@
                     return false;
                 }
 
-                var dateRegexPattern = '^(19|20)[0-9]{2}-(0[1-9]|1[012])-(0[1-9]|(1|2)[0-9]|3[01])$';
-/*
-                if (!$('#fromDate').val().match(dateRegexPattern)) {
-                    $('#fromDateGroup').addClass('has-error');
-                    $('#fromDate').focus();
-                    return false;
-                }
+//                var dateRegexPattern = '^(19|20)[0-9]{2}-(0[1-9]|1[012])-(0[1-9]|(1|2)[0-9]|3[01])$';
+//
+//                if (!$('#fromDate').val().match(dateRegexPattern)) {
+//                    $('#fromDateGroup').addClass('has-error');
+//                    $('#fromDate').focus();
+//                    return false;
+//                }
+//
+//                if (!$('#toDate').val().match(dateRegexPattern)) {
+//                    $('#toDateGroup').addClass('has-error');
+//                    $('#toDate').focus();
+//                    return false;
+//                }
 
-                if (!$('#toDate').val().match(dateRegexPattern)) {
-                    $('#toDateGroup').addClass('has-error');
-                    $('#toDate').focus();
-                    return false;
-                }
-*/
                 return true;
             }
         </script>

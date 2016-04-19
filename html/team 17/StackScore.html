@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+  margin: 0px;
+  background-color:rgba(0,0,0,0.3);
+}
+#headerDiv{
+        height: 100px;
+        width: 100%;
+        margin: 0px;
+        padding-top: 10px;
+        background-color:rgba(0,0,0,0.7);
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 2px solid white;
+    }
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+#chartId{
+    width: 60px;
+}
+</style>
+<body>
+<div id="headerDiv"><p><span> Stacked Score Bar Chart Visualization</span></p></div>
+<div id="chartId"></div>
+
+  
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="StackScore.js"></script>
+</body>

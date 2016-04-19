@@ -49,7 +49,7 @@
     d3.json("../../data/team10/world-110m2.json", function(error, topology) {
 
 // load and display the cities
-        d3.csv("cities2.csv", function(error, data) {
+        d3.csv("../../data/team10/cities2.csv", function(error, data) {
             g.selectAll("circle")
                     .data(data)
                     .enter()

@@ -65,7 +65,7 @@ d3.select('.tooltip').style('padding',' 10px')
 .style('background',' white')
 .style('border-radius',' 10px')
 .style('box-shadow',' 4px 4px 10px rgba(0, 0, 0, 0.4)');
-d3.csv("metadata1.csv",  function(data) {
+d3.csv("../../data/team_11_data/team_11_metadata1.csv",  function(data) {
 
 console.log("in");
   x.domain(data.map(function(d) { d = ++count; return d;}));

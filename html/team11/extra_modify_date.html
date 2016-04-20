@@ -64,7 +64,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 var tooltip = d3.select('body').select('div.tooltip');
-d3.csv("media_modify_date.csv", type, function(error, data) {
+d3.csv("../../data/team_11_data/team_11_media_modify_date.csv", type, function(error, data) {
   if (error) throw error;
 var pie = d3.layout.pie()
 .sort(function(a,b){return d3.ascending(a.date,b.date)})

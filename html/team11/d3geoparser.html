@@ -31,7 +31,7 @@ var places = (function () {
     $.ajax({
         'async': false,
         'global': false,
-        'url': "geo_parser_op.json",
+        'url': "../../data/team_11_data/team_11_geo_parser_op.json",
         'dataType': "json",
         'success': function (data) {
             json = data;
@@ -63,7 +63,7 @@ svg.append("path")
     .attr("class", "graticule")
     .attr("d", path);
 
-d3.json("world-50m.json", function(error, world) {
+d3.json("../../data/team_11_data/world-50m.json", function(error, world) {
   if (error) throw error;
 
   svg.insert("path", ".graticule")

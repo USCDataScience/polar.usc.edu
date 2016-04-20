@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>TREC Explorer</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <style>
+        .sidePanel {
+            background: #e7e7e7;
+            margin-right:0px;
+        }
+
+        .sidePanel #buttons {
+            height: 544px;
+            overflow-y: auto;
+        }
+
+        .headLine {
+            text-align: center;
+            background: #990000;
+            color: #ffffff;
+            margin: auto;
+            vertical-align: middle;
+        }
+
+        .headLine h3 {
+            margin-top: 10px;
+        }
+
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom:0px;
+            border: 1px solid transparent;
+        }
+
+        #buttons {
+            width: 100%;
+        }
+
+        #buttons > div {
+            padding: 0 5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #buttons label {
+            margin-bottom: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        #buttons input {
+            margin-right: 5px;
+        }
+    
+    
+    </style>
+    <script src="../../js/team28/d3.v3.min.js" charset="utf-8"></script>
+    <script src="../../js/team28/d3pie.min.js"></script>
+    <script src="../../js/team28/jquery.min.js"></script>
+    <script src="../../js/team28/dimple.v2.1.6.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+   <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+
+    </script>
+</head>
+
+<body>
+<div id="header" style="margin-bottom:5%"> </div>
+<div class="container">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-static-top" >
+        <div class="container-fluid" >
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a style="color:#fff" href="index.html">Main</a></li>
+                    <li class="active"><a style="color:#fff"href="#">BFA</a></li>
+                    <li ><a style="color:#fff" href="bfc.html">BF Correlation</a></li>
+                    <li><a style="color:#fff" href="bfcc.html">BF Cross Correlation</a></li>
+                    <li><a style="color:#fff" href="fht.html">FHT</a></li>
+                    <li><a style="color:#fff" href="heatmap.html">Mime Diversity</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="chartContainer" class="col-xs-8">
+
+            </div>
+            <div class="col-xs-4 sidePanel">
+                <div class="row">
+                    <div class="headLine col-xs-12" >
+                        <h3>MIME Types</h3>
+                    </div>
+                    <div id="buttons" class="btn-group-vertical">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var svg = dimple.newSvg("#chartContainer", '100%', '600px');
+        var x;
+        var applicationCategories = [];
+        var myChart;
+        var data = null;
+        var output = [];
+        var options = ["application/atom+xml"];
+
+
+        var files = [
+            "../../data/team28data/bfa/outputBFA1.json",
+            "../../data/team28data/bfa/outputBFA2.json",
+            "../../data/team28data/bfa/outputBFA3.json"
+        ];
+
+        loadData();
+
+        function loadData() {
+
+            var count = 0;
+
+            files.forEach(function (file) {
+                d3.json(file, done);
+            });
+
+            function done(err, json) {
+                $.each(json, function (d, v) {
+
+                    for (var i = 1; i <= 256; i++) {
+                        output.push({
+                            'Type': d,
+                            'Byte Value': i-1,
+                            'Frequency': v[i - 1],
+                        });
+                    }
+                    applicationCategories.push(d);
+                });
+                count++;
+
+
+                if (count == files.length) {
+                    applicationCategories.sort();
+                    console.log(applicationCategories.length);
+                    loadCategories();
+                }
+            }
+
+        }
+
+        function loadCategories() {
+            $.each(applicationCategories, function (d, v) {
+                var checkedStr = _.includes(options, v) ? ' checked="checked"' : '';
+                $('#buttons').append('<div title="' + v + '"><label><input type="checkbox" value="' + v + '" onclick="buttonClick(this, this.value)"' + checkedStr + '>' + v + '</label></div>')
+            });
+
+            drawChart();
+
+            window.onresize = function () {
+                myChart.draw(0, true);
+            };
+        }
+
+        function drawChart() {
+            data = dimple.filterData(output, "Type", options);
+            console.log(data);
+            myChart = new dimple.chart(svg, data);
+            myChart.setMargins(70, 50, 15, 50);
+            x = myChart.addCategoryAxis("x", "Byte Value");
+            x.addOrderRule("Byte Value");
+            var y = myChart.addMeasureAxis("y", "Frequency");
+            y.tickFormat = '.3f';
+            var s = myChart.addSeries("Type", dimple.plot.line);
+
+            myChart.addLegend(-500, 10, 500, 500, "right");
+            updateChart();
+        }
+
+        function updateChart(delay) {
+            myChart.draw(0, true);
+            x.shapes.selectAll('text').filter(function (d, i) { return d % 30 !== 0; }).remove();
+            x.shapes.selectAll('line').filter(function (d, i) { return d % 5 !== 0; }).remove();
+            x.shapes.selectAll('line').filter(function (d, i) { return d % 30 !== 0; }).attr('y2', 3);
+            myChart.draw(delay || 0);
+        }
+
+        function buttonClick(event, value) {
+            if (event.checked) {
+                options.push(value);
+            } else {
+                options.splice(options.indexOf(value), 1);
+            }
+            data = dimple.filterData(output, "Type", options);
+            myChart.data = data;
+            updateChart(1000);
+        }
+
+    </script>
+</body>
+</div>
+
+</html>

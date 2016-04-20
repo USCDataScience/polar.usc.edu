@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Celgene Facet View</title>
+  <script src="../../js/jquery.js"></script>
+
+  <script>
+  $(function(){
+    $("#header").load("../headerdouble.html");
+  });
+
+  </script>
+<style>
+  .country:hover{
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.text{
+  font-size:10px;
+  text-transform:capitalize;
+}
+.hidden { 
+  display: none; 
+}
+div.tooltip {
+  color: #222; 
+  background: #fff; 
+  padding: .5em; 
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px; 
+  box-shadow: 0px 0px 2px 0px #a6a6a6; 
+  opacity: 0.9; 
+  position: absolute;
+}
+.graticule {
+  fill: none;
+  stroke: #bbb;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+.equator {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+ body {
+  padding-top: 5%;
+}
+</style>
+
+   <link href="../../css/styles.css" rel="stylesheet">
+   <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+     <script type="text/javascript" src="../../js/D3/Team29.Bootstrap.js"></script>
+     <script src="../../js/d3.min.js"></script>
+     <script src="../../js/topojson.v1.min.js"></script>
+     <script src="../../js/dynamicD3/Team29b.js"></script>
+
+
+</head>
+
+<body>
+    <div id="header"> </div>
+
+<div class="container">
+  <h3>Select a filter option by clicking the arrow below. Zoom into the map using the mouse scroll wheel and hover over points to see location names.
+  <div class="content">
+      <div class="page-header">
+    </div>
+  <div class="facet-view-simple">            
+    <div id="facetview">              
+      <div class="row-fluid">                
+        <div class="span3">                  
+        <div id="facetview_filters">
+          <h3>Filter by</h3>                     
+          <div class="btn-group">       
+
+          <a id="dropdownMenu" style="text-align:left; min-width:70%;" class="btn btn-default btn-sm" rel="year_exact">           
+          <i class="glyphicon glyphicon-plus "></i> Select Data</a>                       
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>                 
+          <ul id="dataChange" class="dropdown-menu">                         
+          <li onclick="drawMap('http://polar.usc.edu/solr/searchable2/select?q=text_en_searchable%3Aice&rows=10000&fl=location_coordinates&wt=csv&indent=true','Glaciers Data')"><a class="facetview_sort facetview_count">Glaciers Data</a></li>
+          <li onclick="drawMap('http://polar.usc.edu/solr/searchable2/select?q=icesheets~%0A&rows=10000&fl=location_coordinates&wt=csv&indent=true','Icesheet Data')"><a class="facetview_sort facetview_term">Icesheet Data</a></li>
+          <li onclick="drawMap('http://polar.usc.edu/solr/searchable2/select?q=snow+melt~%0A&rows=5000&fl=location_coordinates&wt=csv&indent=true','Snowmelt Data')"><a class="facetview_sort facetview_rcount">Snowmelt Data</a></li>
+          </ul>         
+          </div>             
+        </div>            
+        </div>            
+      </div>
+<div id="container">
+  <p></p>
+</div>
+</div>
+</body>
+</html>

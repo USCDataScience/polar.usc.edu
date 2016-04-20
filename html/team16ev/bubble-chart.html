@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        text {
+            font: 10px sans-serif;
+        }
+        .footer {
+             bottom: 0;
+             width: 100%;
+             text-align: center;
+             background-color: #f5f5f5;
+         }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <link href="../../css/header.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="header" style="margin-bottom:4%"> </div>
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Polar Data Visualizations</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Bar Chart</a></li>
+                    <li><a href="wordcloud.html">Word Cloud</a></li>
+                    <li class="active"><a href="bubble-chart.html">Bubble Chart</a></li>
+                    <li><a href="line-chart.html">Line Chart</a></li>
+                    <li><a href="dendogram.html">Dendrogram</a></li>
+                    <li><a href="chord-diagram.html">Chord Diagram</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- start row -->
+    <div class="row">
+        <!--div class="col-xs-12">
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="query" placeholder="Enter Geographical Name" />
+
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="rows" placeholder="Enter number of rows" />
+                <i><small>Note: default number of rows used is 100</small></i>
+            </div>
+            <div class="col-sm-2">
+                <input id = "btnSubmit" type="submit" value="Submit" class="btn btn-primary"/>
+            </div>
+        </div-->
+        <div class="col-xs-12">
+            <div id="bubbleChartContainer"></div>
+        </div>
+
+    </div>
+    <!-- end row-->
+
+    <footer class="footer">
+        <div class="container">
+            <p style="padding-top:5px;" class="text-muted">Developed by: TEAM 16 - Aravind Ram, Girish Rao &amp; Sandeep Kulkarni</p>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+
+    function drawD3() {
+        /*var rows = $("#rows").val();
+        var q = $("#query").val();
+        var restUrl = "http://localhost:8080/d3polardata/api/api/service/getBubbleChart";
+        if(rows){
+            restUrl = restUrl + "?rows="+rows;
+        }else{
+            restUrl = restUrl + "?rows=100";   //default 100  rows
+        }
+        if(q){
+            restUrl = restUrl + "&q="+q;
+        }*/
+
+        var restUrl = "../../data/team16data/hw2json/bubbleChartData.json";
+        $('#bubbleChartContainer').empty();
+        console.log(restUrl);
+
+        //
+        var diameter = 1080,
+                format = d3.format(",d"),
+                color = d3.scale.category20c();
+
+        var bubble = d3.layout.pack()
+                .sort(null)
+                .size([diameter, diameter])
+                .padding(1.5);
+
+        var svg = d3.select("#bubbleChartContainer").append("svg")
+                .attr("width", diameter)
+                .attr("height", diameter)
+                .attr("class", "bubble");
+
+        d3.json(restUrl, function (error, root) {
+            if (error) throw error;
+
+            var node = svg.selectAll(".node")
+                    .data(bubble.nodes(classes(root))
+                            .filter(function (d) {
+                                return !d.children;
+                            }))
+                    .enter().append("g")
+                    .attr("class", "node")
+                    .attr("transform", function (d) {
+                        return "translate(" + d.x + "," + d.y + ")";
+                    });
+
+            node.append("title")
+                    .text(function (d) {
+                        return d.className + ": " + format(d.value);
+                    });
+
+            node.append("circle")
+                    .attr("r", function (d) {
+                        return d.r;
+                    })
+                    .style("fill", function (d, i) {
+                        return color(i);
+                    });
+            /*.style("fill", function(d) { return color(d.packageName); });*/
+
+            node.append("text")
+                    .attr("dy", ".3em")
+                    .style("text-anchor", "middle")
+                    .text(function (d) {
+                        return d.className.substring(0, d.r / 3);
+                    });
+        });
+
+        // Returns a flattened hierarchy containing all leaf nodes under the root.
+        function classes(root) {
+            var classes = [];
+
+            function recurse(name, node) {
+                if (node.children) node.children.forEach(function (child) {
+                    recurse(node.name, child);
+                });
+                else classes.push({packageName: name, className: node.name, value: node.size});
+            }
+
+            recurse(null, root);
+            return {children: classes};
+        }
+
+        d3.select(self.frameElement).style("height", diameter + "px");
+    }
+
+    $(document).ready(function() {
+        drawD3();
+
+        /*$("#btnSubmit").click(function(){
+            drawD3();
+        });*/
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>TREC Explorer</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/team28/d3.tip.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.1/css/bootstrap-slider.min.css">
+
+    <style>
+        .sidePanel {
+            height: 600px;
+            background: #e7e7e7;
+            overflow: scroll;
+            margin-right:0px;
+
+        }
+
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom:0px;
+            border: 1px solid transparent;
+        }
+
+        .headLine {
+            text-align: center;
+            background: #089EFF;
+            color: #ffffff;
+            margin: auto;
+            vertical-align: middle;
+        }
+
+        .xLargeButton {
+            width:470px;
+        }
+
+        .panelButtons {
+            margin:0px;
+            padding:0px;
+        }
+
+        .main-container { margin-top: 10px; }
+        .row { margin-bottom: 10px; }
+        #colorScaleExponentSlider { width: calc(100% - 160px); margin-left: 10px; }
+
+        body { background-color: #eee; }
+        .axis path,.axis line {fill: none;stroke:black;shape-rendering: crispEdges;}
+        .axis text { font-size: 8pt; }
+    </style>
+    <script src="../../js/team28/jquery.min.js"></script>
+    <script src="../../js/team28/d3.v3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.1/bootstrap-slider.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+
+    </script>
+  </head>
+  <body>
+  <div id="header" style="margin-bottom:5%"> </div>
+
+  <div class="container">
+
+    <nav class="navbar navbar-default navbar-static-top" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a style="color:#fff" href="index.html">Main</a></li>
+            <li><a style="color:#fff" href="bfa.html">BFA</a></li>
+            <li ><a style="color:#fff" href="bfc.html">BF Correlation</a></li>
+            <li ><a style="color:#fff" href="bfcc.html">BF Cross Correlation</a></li>
+            <li class="active"><a style="color:#fff" href="#">FHT</a></li>
+            <li><a style="color:#fff" href="heatmap.html">Mime Diversity</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid main-container">
+      <div class="row">
+        <div class="col-xs-12">
+          <label>MIME Type:</label>
+          <select id="mimeTypeSelector" class="form-control">
+            <option value="">Loading ..</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Color scale exponent:</label>
+          <input id="colorScaleExponent" data-slider-id="colorScaleExponentSlider" type="text" data-slider-min="0" data-slider-max="3" data-slider-step="0.1" data-slider-value="1"/>
+        </div>
+      </div>
+      <div class="row">
+        <div id="chart-container" class="col-md-12"></div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        // configuration
+        var boxWidth = 2;
+        var boxHeight = 10;
+        var gap = 0;
+        var blue = 'blue';
+
+        var allData;
+        var mimeTypes;
+        var selectedType;
+
+        function init() {
+          bindEvent();
+          loadData();
+        }
+
+        function bindEvent() {
+          $('#mimeTypeSelector').change(function (e) {
+            selectedType = $(this).val();
+            drawGraph();
+          });
+
+          $('#colorScaleExponent').slider()
+          .change(_.debounce(drawGraph, 200));
+        }
+
+        function populateMimeTypes() {
+          mimeTypes = _.keys(allData).sort();
+
+          $('#mimeTypeSelector').html(mimeTypes.map(function (type) {
+            return '<option>' + type + '</option>';
+          }));
+
+          selectedType = $('#mimeTypeSelector').val();
+        }
+
+        function loadData() {
+          allData = {};
+
+          var count = 0;
+
+          var files = [
+            '../../data/team28data/fht/outputFHT1.json',
+            '../../data/team28data/fht/outputFHT2.json',
+            '../../data/team28data/fht/outputFHT3.json',
+          ];
+
+          files.forEach(function (file) {
+            d3.json(file, done);
+          });
+
+          function done(err, json) {
+            $.extend(allData, json);
+            count++;
+
+            if (count == files.length) {
+              populateMimeTypes();
+              drawGraph();
+            }
+          }
+        }
+
+        var byteSize = 256;
+        var totalPosition = 16;
+        var cellWidth = boxWidth + gap;
+        var cellHeight = boxHeight + gap;
+        var graphWidth = byteSize * cellWidth;
+        var graphHeight = totalPosition * cellHeight;
+
+        var svg = d3.select('#chart-container')
+          .append('svg')
+            .attr('width', graphWidth + 200)
+            .attr('height', graphHeight + 200)
+          .append('g')
+            .attr('class', 'container')
+            .attr('transform', 'translate(50, 40)');
+
+        // border
+        svg
+          .append('rect')
+          .attr('class', 'border')
+          .attr('width', graphWidth)
+          .attr('height', graphHeight)
+          .attr('fill', 'none')
+          .attr('stroke', 'black');
+
+        // tooltip
+        var tip = d3.tip()
+          .attr('class', 'd3-tip')
+          .offset([-7,  0])
+          .html(function(d) { return d.v; });
+
+        svg.call(tip);
+
+        // axes
+        var xScale = d3.scale.linear()
+          .domain([0, 255])
+          .range([0, graphWidth]);
+
+        var xTickValues = d3.range(0, 256, 3);
+
+        svg.append('g')
+          .attr('class', 'x axis')
+          .call(d3.svg.axis().scale(xScale).orient('top').tickValues(xTickValues));
+
+        svg.append('text')
+          .attr('class', 'x axis-title')
+          .attr('transform', 'translate(' + (graphWidth / 2) + ',-30)')
+          .attr('text-anchor', 'middle')
+          .text('Byte Value');
+
+        var yScale = d3.scale.linear()
+          .domain([0, 16])
+          .range([0, graphHeight]);
+
+        var yTickValues = d3.range(0, 17, 1);
+
+        svg.append('g')
+          .attr('class', 'y axis')
+          .call(d3.svg.axis().scale(yScale).orient('left').tickValues(yTickValues));
+
+        svg.append('text')
+          .attr('class', 'y axis-title')
+          .attr('text-anchor', 'middle')
+          .attr('transform', 'translate(-35,' + (graphHeight / 2) + '), rotate(-90)')
+          .text('Byte Position');
+
+        d3.selectAll('g.x.axis g.tick line')
+          .attr('y2', function (d) { return (d % 30 == 0) ? -6 : -3; });
+
+        d3.selectAll('g.y.axis g.tick line')
+          .attr('x2', function (d) { return (d % 2 == 0) ? -6 : -3; });
+
+        d3.selectAll('g.x.axis g.tick text')
+          .filter(function (d) { return (d % 30 != 0); })
+          .remove();
+
+        d3.selectAll('g.y.axis g.tick text')
+          .filter(function (d) { return (d % 2 != 0); })
+          .remove();
+
+        // color scale bar
+        var xColorScaleContainer = svg.append('g')
+          .attr('class', 'x colorscale-container')
+          .attr('transform', 'translate(0,' + (graphHeight + 10)+ ')');
+
+        xColorScaleContainer
+          .append('rect')
+          .attr('class', 'colorscale-border')
+          .attr('width', graphWidth)
+          .attr('height', 20)
+          .attr('fill', 'none')
+          .attr('stroke', 'black');
+
+        xColorScaleContainer.append('text')
+          .attr('class', 'y axis-title')
+          .attr('text-anchor', 'middle')
+          .attr('transform', 'translate(' + (graphWidth / 2) + ', 55)')
+          .text('Byte Value Frequency Difference');
+
+        var xColorScale = d3.scale.linear()
+          .domain([0, 1])
+          .range([0, graphWidth]);
+
+        xColorScaleContainer.append('g')
+          .attr('class', 'y axis')
+          .attr('transform', 'translate(0, 20)')
+          .call(d3.svg.axis().scale(xColorScale).orient('bottom'));
+
+        var xColorScaleBar = xColorScaleContainer.append('g')
+          .attr('class', 'x colorscale')
+          .selectAll('rect')
+          .data(d3.range(0, 256).map(d3.scale.linear().domain([0,255]).range([0, 1])));
+
+        xColorScaleBar.enter()
+          .append('rect')
+          .attr('x', function (d, i) { return i * cellWidth; })
+          .attr('width', cellWidth)
+          .attr('height', 20)
+          .attr('fill', 'none');
+
+        // resize svg
+        var container = d3.select('#chart-container svg');
+        var bbox = container.node().getBBox();
+        container.attr('width', bbox.x + bbox.width + 'px');
+        container.attr('height', bbox.y + bbox.height + 'px');
+
+        function drawGraph() {
+          data = allData[selectedType];
+
+          function getColorScale() {
+            var exp = $('#colorScaleExponent').val();
+            return d3.scale.pow().exponent(exp);
+          }
+
+          var blueScale = getColorScale()
+            .domain([0, 1])
+            .interpolate(d3.interpolateRgb)
+            .range(['white', blue]);
+
+          xColorScaleBar
+            .attr('fill', function (d, i) {
+              return blueScale(d);
+            });
+
+          // values
+          var rows = svg.selectAll('g.row')
+            .data(data);
+
+          rows.enter()
+            .append('g')
+            .attr('class', 'row')
+            .attr('transform', function (d, i) { return 'translate(0,' + (i * cellHeight) + ')'; });
+
+          var boxes = rows.selectAll('rect')
+            .data(function (d, i) { return d.map(function (v) { return { v: v, i: i }; }); });
+
+          boxes.enter()
+            .append('rect')
+            .attr('width', boxWidth)
+            .attr('height', boxHeight)
+            .attr('fill', 'white')
+            .attr('x', function (d, i) { return i * cellWidth; })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide);
+
+          boxes
+          .transition()
+          .delay(function (d, j) { return d.i * 2 + (j); })
+          .attr('fill', function(d, j) {
+            return blueScale(d.v);
+          });
+        }
+
+        init();
+      }());
+    </script>
+  </body>
+  </div>
+</html>

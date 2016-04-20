@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title> Diversity of Metadata</title>
+
+   <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+ <!--   <script src="../../js/bootstrap.min.js"></script>-->
+
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+        <style>
+        .bar:hover {
+            fill: black;
+        }
+
+        .chart text {
+            font: 10px arial;
+        }
+        .chart .title {
+            font: 12px bold arial;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+    
+        body{
+            background-color:#333;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div id="header" style="margin-bottom:4%"> </div>
+
+<div id="mimeSelector" class="row">
+    <div class="center-block" style="width:200px; margin-top: 4%;">
+
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                <span>Select MIME type</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="#">GIF</a></li>
+                <li><a href="#">TIFF</a></li>
+                <li><a href="#">RFC822</a></li>
+                <li><a href="#">JPEG</a></li>
+                <li><a href="#">DIF_XML</a></li>
+                <li><a href="#">PDF</a></li>
+                <li><a href="#">RTF</a></li>
+                <li><a href="#">XML</a></li>
+                <li><a href="#">BASIC</a></li>
+                <li><a href="#">MP4</a></li>
+                <li><a href="#">MPEG</a></li>
+                <li><a href="#">XHTML</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<svg class="chart"></svg>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="javascripts/mimeScore.js"></script>
+</body>
+</html>

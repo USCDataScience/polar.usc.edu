@@ -1,0 +1,37 @@
+ #hzBarChart .panel-body .legend {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: start;
+        font-size: 12px;
+      }
+
+      #hzBarChart .panel-body text {
+        
+        font: 10px sans-serif;
+        /*text-anchor: start;*/
+      }
+
+      #hzBarChart .panel-body .label {
+        fill: yellow;
+        font: 14px sans-serif;
+        /*text-anchor: start;*/
+      }
+
+      #hzBarChart .panel-body .bar:hover {
+        fill: yellow;
+      }
+
+      #hzBarChart .panel-body .axis path,
+      #hzBarChart .panel-body .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      #hzBarChart .panel-body .legend {
+        position: fixed;
+
+      }
+      .h1,h1{
+        color: "#fa9fb5"
+      }

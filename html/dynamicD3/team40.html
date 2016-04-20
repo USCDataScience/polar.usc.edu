@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>D3 > Bubble Map</title>
+
+    <!-- D3 -->
+    <script src="../../js/d3.v3.min.js" charset="utf-8"></script>
+    <script src="../../js/topojson.v1.min.js"></script>
+    <!--<script src="resources/datamaps.js"></script>-->
+    <script src="../../js/datamaps.world.min.js"></script>
+
+      <!-- Scrolling Nav CSS -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.light.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+      <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <!--<link href="../../css/styles.css" rel="stylesheet">-->
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+    </script>
+    <style>
+        #resultDiv {
+            position: relative;
+            width: 1000px;
+            height: 600px;
+        }
+        
+        circle.datamaps-bubble {
+            cursor: pointer;
+            cursor: hand;
+        }
+        
+        .form-control {
+            height: 30px;
+        }
+        
+        .form-inline .form-group input {
+            width: 200px;
+        }
+        
+        .row-centered {
+            text-align: center;
+        }
+        
+        .col-centered {
+            display: inline-block;
+            float: none;
+            /* reset the text-align */
+            
+            text-align: left;
+            /* inline-block space fix */
+            
+            margin-right: -4px;
+        }
+        /* ==== http://www.bootply.com/128062 ==== */
+        
+        .glyphicon-refresh-animate {
+            -animation: spin .7s infinite linear;
+            -webkit-animation: spin2 .7s infinite linear;
+        }
+        
+        @-webkit-keyframes spin2 {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            from {
+                transform: scale(1) rotate(0deg);
+            }
+            to {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="padding-top: 10px;">
+    <div id="header" > </div>
+
+
+    <div class="container-fluid text-center">
+
+        <h2>D3 Bubble Map</h2>
+        <div class="form-inline">
+            <div class="form-group">
+                <label>Query</label>
+                <input type="text" class="form-control" id="query" required placeholder="Search here .." style="width: 400px"> &nbsp;&nbsp;
+            </div>
+            <div class="form-group">
+                <label># Results</label>
+                <input type="number" class="form-control" id="top_k" value="100" step="10" style="width: 90px" pattern='^(19|20)[0-9]{2}-(0[1-9]|1[012])-(0[1-9]|(1|2)[0-9]|3[01])$'>
+            </div>
+        </div>
+        <br>
+        <div class="form-inline">
+            <!--<div class="form-group" id="fromDateGroup">-->
+                <!--<label for="fromDate">From</label>-->
+                <!--<input type="date" class="form-control" id="fromDate" style="width: 148px" placeholder="yyyy-mm-dd" pattern='^(19|20)[0-9]{2}-(0[1-9]|1[012])-(0[1-9]|(1|2)[0-9]|3[01])$'> &nbsp;-->
+            <!--</div>-->
+            <!--<div class="form-group" id="toDateGroup">-->
+                <!--<label for="toDate">To</label>-->
+                <!--<input type="date" class="form-control" id="toDate" style="width: 148px" placeholder="yyyy-mm-dd"> &nbsp;&nbsp;-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <!--<label>In</label>-->
+                <!--<select class="form-control" id="location">-->
+                    <!--<option>Everywhere</option>-->
+                    <!--<option>Greenland</option>-->
+                    <!--<option>Alaska</option>-->
+                    <!--<option>Arctic Ocean</option>-->
+                    <!--<option>Antarctica</option>-->
+                    <!--<option>Custom Place</option>-->
+                <!--</select>-->
+                <!--&nbsp;&nbsp;-->
+            <!--</div>-->
+            <div class="form-group">
+                <button class="btn btn-primary" id="btnSearch">Search</button>
+                <button id="spinner" class="btn btn-lg btn-warning" style="display: none">
+                    <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading ...
+                </button>
+            </div>
+        </div>
+
+        <div id="resultDiv" class="container-fluid"></div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="../../js/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="../../js/bootstrap.min.js"></script>
+
+        <script type='text/javascript'>
+            $(document).ready(function () {
+
+                urlPrefix = 'http://localhost:8888';
+
+                var dataMapOptions = {
+                    element: document.getElementById('resultDiv'),
+                    //projection: 'mercator',
+                    fills: {
+                        defaultFill: '#ddd', //any hex, color name or rgb/rgba value
+                        bubbleColor: 'Green',
+                        g: "blue"
+                    },
+                    geographyConfig: {
+                        hideAntarctica: false
+                    },
+                    bubblesConfig: {
+                        fillKey: 'bubbleColor',
+                        borderWidth: '0.5px',
+                        borderColor: 'white',
+                        fillOpacity: .5
+                    }
+                }
+                
+                var map = new Datamap(dataMapOptions);
+                
+                locations = {
+                    'Greenland': {
+                        'center_point': '71.074056463361,-39.375',
+                        'radius_km': 1426
+                    },
+                    'Alaska': {
+                        'center_point': '63.1543551965919,-156.62109375',
+                        'radius_km': 1125
+                    },
+                    'Antarctica': {
+                        'center_point': '-79.68718415450823,66.09375',
+                        'radius_km': 2905
+                    },
+                    'Arctic Ocean': {
+                        'center_point': '84.30218294503882,-24.2578125',
+                        'radius_km': 2420
+                    }
+                }
+
+                if (window.location.search.length > 0) {
+                    search(window.location.search);
+                } else {
+                    // set defaults
+                    //$("#query").val("ice shelves breaking");
+
+                    //$("#fromDate").val("1960-01-01");
+
+                    var today = new Date();
+                    var day = today.getDate();
+                    if (day < 10) day = "0" + day;
+                    var month = today.getMonth() + 1;
+                    if (month < 10) month = "0" + month;
+                    //$("#toDate").val(today.getFullYear() + "-" + month + "-" + day);
+                }
+
+                $("#btnSearch").click(function () {
+
+                    if (validateInput()) {
+                        var qs = '?q=' + $('#query').val();
+                        qs += "&rows=" +$('#top_k').val();
+                        qs +=  "&fl=location_name+location_coordinates+title+score&wt=json&indent=true";
+                       // qs += '&from=' + $('#fromDate').val() + 'T00:00:00Z';
+                       // qs += '&to=' + $('#toDate').val() + 'T00:00:00Z';
+/*
+                        var selectedLocation = $("#location").val();
+                        if (selectedLocation != "Everywhere") {
+                            qs += '&pt=' + locations[selectedLocation]['center_point'];
+                            qs += '&d=' + locations[selectedLocation]['radius_km'];
+                        }*/
+                       // alert(qs); 
+                        //console.info(qs);
+                        search(qs);
+                    }
+                });
+
+
+                function search(qs) {
+                    var dataJsonUrl = "http://polar.usc.edu/solr/searchable2/select" + qs;
+
+                    //console.info(dataJsonUrl);
+                    //alert(dataJsonUrl); 
+                    $(".resultDiv").empty();
+
+                    $('#spinner').show();
+                    var url2 = "bird9.json"; 
+                    d3.json(dataJsonUrl, function (error, data) {
+
+                        if (error != null) {
+                            //alert(error);
+                        }
+                        //alert(dataJsonUrl);
+                        //console.info(data.length);
+                        //alert(data[0].title);
+                        $('#spinner').hide();
+                        var data2 = [];
+                        var once = true; 
+                        for(var i=0; i<data.response.docs.length; i++)
+                        {
+                            var title = '';
+                            if (data.response.docs[i].title) {
+                                title = data.response.docs[i].title[0]
+                            }
+                            var xy = data.response.docs[i].location_coordinates;
+                            var radius = Math.pow(data.response.docs[i].score, 2)*25;
+                            //if(i==0) alert(data.response.docs[i].location_coordinates);
+                            if(xy !== undefined && xy !== null)
+                            {
+                                //alert(xy);
+                                //var xyarray = xy.split(/\\,|\,/);
+                                for(var j=0; j<xy.length; j+=2)
+                                {
+                                    var string = xy[j];
+                                    var xyarray = string.split(/\\,|\,/);
+                                    var x = xyarray[0];
+                                    var y = xyarray[1]; 
+                                    if( j==0 && once) 
+                                    {
+                                        once = false; 
+                                      //  alert(xyarray);
+                                    } 
+                                    if(x == NaN || y == NaN || x == undefined || y == undefined) continue; 
+
+                                    if(title === undefined) title = "";
+                                    var temp = new Object();
+                                    temp["title"] = title;
+                                    temp["longitude"] = y;
+                                    temp["latitude"] = x;
+                                    temp["radius"] = radius;
+                                    temp["fillKey"] = "g"; 
+                                    data2.push(temp); 
+                                }
+                            }
+                        }
+
+//                        alert(data2[0].title+" "+data2[0].longitude+" "+data2[0].latitude);
+                        //draw bubbles
+                        map.bubbles(data2, {
+                            popupTemplate: function (geo, data) {
+                                //alert("hello");
+//                                console.info(geo);
+//                                console.log('data', data);
+                                var items = [];
+                                items.push('<div class="hoverinfo">');
+                                items.push('<strong>' + data.title + '</strong>');
+                                if (data.author != null) {
+                                    items.push('<br>By: ' + data.author);
+                                }
+                                if (data.company != null) {
+                                    items.push('<br>At: ' + data.company);
+                                }
+                                items.push('<br>Coordinates: ' + data.longitude + ', ' + data.latitude);
+                                //items.push('<br>Score: ' + data.score);
+                                //items.push('<br>' + urlPrefix + data.doc_id);
+                                items.push('</div>');
+                                return items.join('');
+                            }
+                        });
+
+                        // add click event to bubbles
+                        d3.selectAll('circle.datamaps-bubble').on("click", function (data) {
+                            //console.info(data);
+                            window.open(urlPrefix + data.doc_id);
+                        });
+
+                    });
+                }
+            });
+
+
+
+            function validateInput() {
+
+//                $('#fromDateGroup').removeClass('has-error');
+//                $('#toDateGroup').removeClass('has-error');
+
+                if ($('#query').val().trim().length == 0) {
+                    $('#query').focus();
+                    return false;
+                }
+
+                if (!$('#top_k').val().match('[0-9]+')) {
+                    $('#top_k').focus();
+                    return false;
+                }
+
+//                var dateRegexPattern = '^(19|20)[0-9]{2}-(0[1-9]|1[012])-(0[1-9]|(1|2)[0-9]|3[01])$';
+//
+//                if (!$('#fromDate').val().match(dateRegexPattern)) {
+//                    $('#fromDateGroup').addClass('has-error');
+//                    $('#fromDate').focus();
+//                    return false;
+//                }
+//
+//                if (!$('#toDate').val().match(dateRegexPattern)) {
+//                    $('#toDateGroup').addClass('has-error');
+//                    $('#toDate').focus();
+//                    return false;
+//                }
+
+                return true;
+            }
+        </script>
+</body>
+
+</html>

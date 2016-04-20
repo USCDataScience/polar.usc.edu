@@ -295,7 +295,11 @@
 };
   
   var DURATION = 1500;
-  var DELAY    = 500;
+  var DELAY = 500;
+  
+
+
+  
   
   /**
    * draw the fancy line chart
@@ -685,11 +689,11 @@
   }
   
   function ಠ_ಠ() {
-    drawPieChart(     'pieChart',     data.pieChart );
     drawLineChart(    'lineChart',    data.lineChart );
+	drawPieChart(     'pieChart',     data.pieChart );
   }
   
-  // yeah, let's kick things off!!!
+  
   ಠ_ಠ();
   
 })();

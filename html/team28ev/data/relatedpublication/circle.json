@@ -1,0 +1,3225 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_30",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_31",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_25",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_24",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_27",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_26",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_21",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_23",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_22",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_29",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_28",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster0"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_30",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_31",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_25",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_24",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_27",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_26",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_21",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_23",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_22",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_29",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_28",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster1"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster2"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster3"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 2
+                },
+                {
+                    "name": "Author",
+                    "size": 2
+                },
+                {
+                    "name": "DATE",
+                    "size": 2
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 2
+                },
+                {
+                    "name": "id",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 2
+                },
+                {
+                    "name": "score",
+                    "size": 2
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 2
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 2
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 2
+                },
+                {
+                    "name": "TEI",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 2
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 2
+                },
+                {
+                    "name": "_version_",
+                    "size": 2
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                }
+            ],
+            "name": "cluster4"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 3
+                },
+                {
+                    "name": "Author",
+                    "size": 3
+                },
+                {
+                    "name": "DATE",
+                    "size": 3
+                },
+                {
+                    "name": "resourceName",
+                    "size": 3
+                },
+                {
+                    "name": "id",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 3
+                },
+                {
+                    "name": "score",
+                    "size": 3
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 3
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 3
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 3
+                },
+                {
+                    "name": "TEI",
+                    "size": 3
+                },
+                {
+                    "name": "MISC",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 3
+                },
+                {
+                    "name": "_version_",
+                    "size": 3
+                },
+                {
+                    "name": "PERSON",
+                    "size": 3
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 3
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                }
+            ],
+            "name": "cluster5"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 3
+                },
+                {
+                    "name": "Author",
+                    "size": 3
+                },
+                {
+                    "name": "resourceName",
+                    "size": 3
+                },
+                {
+                    "name": "id",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 3
+                },
+                {
+                    "name": "score",
+                    "size": 3
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 3
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 3
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 3
+                },
+                {
+                    "name": "TEI",
+                    "size": 3
+                },
+                {
+                    "name": "MISC",
+                    "size": 2
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 3
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 3
+                },
+                {
+                    "name": "PERSON",
+                    "size": 2
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 3
+                },
+                {
+                    "name": "DATE",
+                    "size": 2
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                }
+            ],
+            "name": "cluster6"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 3
+                },
+                {
+                    "name": "Author",
+                    "size": 3
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 3
+                },
+                {
+                    "name": "id",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_10",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_11",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_12",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_13",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_14",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_15",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_16",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_17",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_18",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_19",
+                    "size": 3
+                },
+                {
+                    "name": "score",
+                    "size": 3
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 3
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 3
+                },
+                {
+                    "name": "scholar_related_articles",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_2",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_3",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_1",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_6",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_7",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_4",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_5",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_8",
+                    "size": 3
+                },
+                {
+                    "name": "related_articles_9",
+                    "size": 3
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "related_articles_20",
+                    "size": 3
+                },
+                {
+                    "name": "_version_",
+                    "size": 3
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 3
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 2
+                },
+                {
+                    "name": "TEI",
+                    "size": 2
+                },
+                {
+                    "name": "PERSON",
+                    "size": 2
+                }
+            ],
+            "name": "cluster7"
+        },
+        {
+            "children": [
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "concepts",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 1
+                }
+            ],
+            "name": "cluster8"
+        },
+        {
+            "children": [
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 1
+                }
+            ],
+            "name": "cluster9"
+        },
+        {
+            "children": [
+                {
+                    "name": "Author",
+                    "size": 2
+                },
+                {
+                    "name": "DATE",
+                    "size": 2
+                },
+                {
+                    "name": "DURATION",
+                    "size": 2
+                },
+                {
+                    "name": "resourceName",
+                    "size": 2
+                },
+                {
+                    "name": "id",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 2
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 2
+                },
+                {
+                    "name": "_version_",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 2
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 2
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "concepts",
+                    "size": 1
+                }
+            ],
+            "name": "cluster10"
+        },
+        {
+            "children": [
+                {
+                    "name": "Author",
+                    "size": 1
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 1
+                },
+                {
+                    "name": "id",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "_version_",
+                    "size": 1
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "concepts",
+                    "size": 1
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 1
+                }
+            ],
+            "name": "cluster11"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 4
+                },
+                {
+                    "name": "Author",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 4
+                },
+                {
+                    "name": "MISC",
+                    "size": 3
+                },
+                {
+                    "name": "id",
+                    "size": 4
+                },
+                {
+                    "name": "DURATION",
+                    "size": 2
+                },
+                {
+                    "name": "score",
+                    "size": 4
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 4
+                },
+                {
+                    "name": "DATE",
+                    "size": 4
+                },
+                {
+                    "name": "resourceName",
+                    "size": 4
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 4
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 4
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 4
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 4
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 4
+                },
+                {
+                    "name": "PERSON",
+                    "size": 2
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                }
+            ],
+            "name": "cluster12"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "PERSON",
+                    "size": 2
+                },
+                {
+                    "name": "Author",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_NAME2",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE3",
+                    "size": 2
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "score",
+                    "size": 2
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 2
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE2",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "resourceName",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE3",
+                    "size": 2
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 2
+                },
+                {
+                    "name": "id",
+                    "size": 2
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_NAME3",
+                    "size": 2
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                }
+            ],
+            "name": "cluster13"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 2
+                },
+                {
+                    "name": "meta:author",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 2
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "Author",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 2
+                },
+                {
+                    "name": "DURATION",
+                    "size": 2
+                },
+                {
+                    "name": "score",
+                    "size": 2
+                },
+                {
+                    "name": "PERSON",
+                    "size": 2
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 2
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 2
+                },
+                {
+                    "name": "id",
+                    "size": 2
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 2
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 1
+                },
+                {
+                    "name": "concepts",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                }
+            ],
+            "name": "cluster14"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 5
+                },
+                {
+                    "name": "TEI",
+                    "size": 2
+                },
+                {
+                    "name": "DATE",
+                    "size": 7
+                },
+                {
+                    "name": "SET",
+                    "size": 5
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 6
+                },
+                {
+                    "name": "Author",
+                    "size": 7
+                },
+                {
+                    "name": "MISC",
+                    "size": 7
+                },
+                {
+                    "name": "_version_",
+                    "size": 7
+                },
+                {
+                    "name": "PERSON",
+                    "size": 5
+                },
+                {
+                    "name": "score",
+                    "size": 7
+                },
+                {
+                    "name": "meta:author",
+                    "size": 6
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 7
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 3
+                },
+                {
+                    "name": "DURATION",
+                    "size": 6
+                },
+                {
+                    "name": "resourceName",
+                    "size": 7
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 7
+                },
+                {
+                    "name": "id",
+                    "size": 7
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 7
+                },
+                {
+                    "name": "MONEY",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 3
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 3
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 2
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 2
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                }
+            ],
+            "name": "cluster15"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 9
+                },
+                {
+                    "name": "TEI",
+                    "size": 2
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 3
+                },
+                {
+                    "name": "Author",
+                    "size": 11
+                },
+                {
+                    "name": "MISC",
+                    "size": 10
+                },
+                {
+                    "name": "_version_",
+                    "size": 11
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 4
+                },
+                {
+                    "name": "PERSON",
+                    "size": 8
+                },
+                {
+                    "name": "score",
+                    "size": 11
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 9
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 11
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 11
+                },
+                {
+                    "name": "id",
+                    "size": 11
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 4
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 8
+                },
+                {
+                    "name": "DATE",
+                    "size": 10
+                },
+                {
+                    "name": "MONEY",
+                    "size": 7
+                },
+                {
+                    "name": "DURATION",
+                    "size": 9
+                },
+                {
+                    "name": "SET",
+                    "size": 7
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 4
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 2
+                },
+                {
+                    "name": "TIME",
+                    "size": 3
+                },
+                {
+                    "name": "entities",
+                    "size": 2
+                },
+                {
+                    "name": "concepts",
+                    "size": 2
+                },
+                {
+                    "name": "keywords",
+                    "size": 2
+                },
+                {
+                    "name": "scholar_related_articles",
+                    "size": 1
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 1
+                }
+            ],
+            "name": "cluster16"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 4
+                },
+                {
+                    "name": "SET",
+                    "size": 3
+                },
+                {
+                    "name": "Author",
+                    "size": 7
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 5
+                },
+                {
+                    "name": "_version_",
+                    "size": 7
+                },
+                {
+                    "name": "DURATION",
+                    "size": 4
+                },
+                {
+                    "name": "score",
+                    "size": 7
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 6
+                },
+                {
+                    "name": "MONEY",
+                    "size": 3
+                },
+                {
+                    "name": "DATE",
+                    "size": 6
+                },
+                {
+                    "name": "resourceName",
+                    "size": 7
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 7
+                },
+                {
+                    "name": "id",
+                    "size": 7
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 5
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 3
+                },
+                {
+                    "name": "entities",
+                    "size": 3
+                },
+                {
+                    "name": "concepts",
+                    "size": 3
+                },
+                {
+                    "name": "keywords",
+                    "size": 3
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 2
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 3
+                },
+                {
+                    "name": "PERSON",
+                    "size": 2
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                }
+            ],
+            "name": "cluster17"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 5
+                },
+                {
+                    "name": "meta:author",
+                    "size": 18
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 15
+                },
+                {
+                    "name": "Author",
+                    "size": 19
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 9
+                },
+                {
+                    "name": "MISC",
+                    "size": 15
+                },
+                {
+                    "name": "_version_",
+                    "size": 19
+                },
+                {
+                    "name": "PERSON",
+                    "size": 12
+                },
+                {
+                    "name": "score",
+                    "size": 19
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 16
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 19
+                },
+                {
+                    "name": "DATE",
+                    "size": 19
+                },
+                {
+                    "name": "resourceName",
+                    "size": 19
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 19
+                },
+                {
+                    "name": "id",
+                    "size": 19
+                },
+                {
+                    "name": "SET",
+                    "size": 6
+                },
+                {
+                    "name": "DURATION",
+                    "size": 15
+                },
+                {
+                    "name": "MONEY",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 6
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 6
+                },
+                {
+                    "name": "TIME",
+                    "size": 3
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 3
+                },
+                {
+                    "name": "MEASUREMENT",
+                    "size": 1
+                }
+            ],
+            "name": "cluster18"
+        },
+        {
+            "children": [
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 13
+                },
+                {
+                    "name": "Author",
+                    "size": 18
+                },
+                {
+                    "name": "MISC",
+                    "size": 13
+                },
+                {
+                    "name": "_version_",
+                    "size": 18
+                },
+                {
+                    "name": "PERSON",
+                    "size": 6
+                },
+                {
+                    "name": "score",
+                    "size": 18
+                },
+                {
+                    "name": "meta:author",
+                    "size": 17
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 9
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 16
+                },
+                {
+                    "name": "DATE",
+                    "size": 17
+                },
+                {
+                    "name": "resourceName",
+                    "size": 18
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 18
+                },
+                {
+                    "name": "id",
+                    "size": 18
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 5
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 5
+                },
+                {
+                    "name": "DURATION",
+                    "size": 12
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 3
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 8
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 6
+                },
+                {
+                    "name": "SET",
+                    "size": 5
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "TIME",
+                    "size": 2
+                }
+            ],
+            "name": "cluster19"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 2
+                },
+                {
+                    "name": "_version_",
+                    "size": 15
+                },
+                {
+                    "name": "Author",
+                    "size": 15
+                },
+                {
+                    "name": "MISC",
+                    "size": 12
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 4
+                },
+                {
+                    "name": "score",
+                    "size": 15
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 7
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 14
+                },
+                {
+                    "name": "DATE",
+                    "size": 14
+                },
+                {
+                    "name": "resourceName",
+                    "size": 15
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 4
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 15
+                },
+                {
+                    "name": "id",
+                    "size": 15
+                },
+                {
+                    "name": "meta:author",
+                    "size": 9
+                },
+                {
+                    "name": "PERSON",
+                    "size": 5
+                },
+                {
+                    "name": "TEI",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 6
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 2
+                },
+                {
+                    "name": "entities",
+                    "size": 3
+                },
+                {
+                    "name": "concepts",
+                    "size": 2
+                },
+                {
+                    "name": "keywords",
+                    "size": 3
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 5
+                },
+                {
+                    "name": "SET",
+                    "size": 2
+                },
+                {
+                    "name": "MONEY",
+                    "size": 3
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 2
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                },
+                {
+                    "name": "DURATION",
+                    "size": 4
+                }
+            ],
+            "name": "cluster20"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 9
+                },
+                {
+                    "name": "Author",
+                    "size": 9
+                },
+                {
+                    "name": "MONEY",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 4
+                },
+                {
+                    "name": "_version_",
+                    "size": 9
+                },
+                {
+                    "name": "DATE",
+                    "size": 7
+                },
+                {
+                    "name": "score",
+                    "size": 9
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 8
+                },
+                {
+                    "name": "DURATION",
+                    "size": 3
+                },
+                {
+                    "name": "resourceName",
+                    "size": 9
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 9
+                },
+                {
+                    "name": "id",
+                    "size": 9
+                },
+                {
+                    "name": "TEI",
+                    "size": 3
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 4
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 5
+                },
+                {
+                    "name": "SET",
+                    "size": 2
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 3
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "PERSON",
+                    "size": 2
+                }
+            ],
+            "name": "cluster21"
+        },
+        {
+            "children": [
+                {
+                    "name": "ORDINAL",
+                    "size": 3
+                },
+                {
+                    "name": "_version_",
+                    "size": 16
+                },
+                {
+                    "name": "Author",
+                    "size": 16
+                },
+                {
+                    "name": "MISC",
+                    "size": 11
+                },
+                {
+                    "name": "score",
+                    "size": 16
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 5
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                },
+                {
+                    "name": "resourceName",
+                    "size": 16
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 16
+                },
+                {
+                    "name": "id",
+                    "size": 16
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 14
+                },
+                {
+                    "name": "meta:author",
+                    "size": 7
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 4
+                },
+                {
+                    "name": "DURATION",
+                    "size": 6
+                },
+                {
+                    "name": "DATE",
+                    "size": 10
+                },
+                {
+                    "name": "taxonomy",
+                    "size": 2
+                },
+                {
+                    "name": "concepts",
+                    "size": 2
+                },
+                {
+                    "name": "keywords",
+                    "size": 2
+                },
+                {
+                    "name": "Geographic_LONGITUDE",
+                    "size": 3
+                },
+                {
+                    "name": "Geographic_NAME",
+                    "size": 3
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "entities",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 2
+                },
+                {
+                    "name": "Optional_LONGITUDE1",
+                    "size": 1
+                },
+                {
+                    "name": "Optional_LATITUDE1",
+                    "size": 1
+                }
+            ],
+            "name": "cluster22"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 18
+                },
+                {
+                    "name": "Author",
+                    "size": 18
+                },
+                {
+                    "name": "MISC",
+                    "size": 4
+                },
+                {
+                    "name": "DURATION",
+                    "size": 6
+                },
+                {
+                    "name": "score",
+                    "size": 18
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 15
+                },
+                {
+                    "name": "DATE",
+                    "size": 8
+                },
+                {
+                    "name": "resourceName",
+                    "size": 18
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 18
+                },
+                {
+                    "name": "id",
+                    "size": 18
+                },
+                {
+                    "name": "meta:author",
+                    "size": 14
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 2
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 6
+                },
+                {
+                    "name": "MONEY",
+                    "size": 2
+                },
+                {
+                    "name": "PERCENT",
+                    "size": 1
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 7
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 3
+                },
+                {
+                    "name": "SET",
+                    "size": 3
+                },
+                {
+                    "name": "TIME",
+                    "size": 1
+                }
+            ],
+            "name": "cluster23"
+        },
+        {
+            "children": [
+                {
+                    "name": "_version_",
+                    "size": 9
+                },
+                {
+                    "name": "SET",
+                    "size": 2
+                },
+                {
+                    "name": "Author",
+                    "size": 9
+                },
+                {
+                    "name": "score",
+                    "size": 9
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 7
+                },
+                {
+                    "name": "DATE",
+                    "size": 8
+                },
+                {
+                    "name": "resourceName",
+                    "size": 9
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 9
+                },
+                {
+                    "name": "id",
+                    "size": 9
+                },
+                {
+                    "name": "DURATION",
+                    "size": 2
+                },
+                {
+                    "name": "MISC",
+                    "size": 3
+                },
+                {
+                    "name": "PERSON",
+                    "size": 1
+                },
+                {
+                    "name": "meta:author",
+                    "size": 2
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "MONEY",
+                    "size": 1
+                }
+            ],
+            "name": "cluster24"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 30
+                },
+                {
+                    "name": "Author",
+                    "size": 44
+                },
+                {
+                    "name": "score",
+                    "size": 44
+                },
+                {
+                    "name": "_version_",
+                    "size": 44
+                },
+                {
+                    "name": "meta:keyword",
+                    "size": 26
+                },
+                {
+                    "name": "resourceName",
+                    "size": 44
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 44
+                },
+                {
+                    "name": "id",
+                    "size": 44
+                },
+                {
+                    "name": "MISC",
+                    "size": 9
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 14
+                },
+                {
+                    "name": "DATE",
+                    "size": 3
+                },
+                {
+                    "name": "SET",
+                    "size": 1
+                },
+                {
+                    "name": "grobid:header_Title",
+                    "size": 1
+                },
+                {
+                    "name": "LOCATION",
+                    "size": 1
+                },
+                {
+                    "name": "ORDINAL",
+                    "size": 1
+                },
+                {
+                    "name": "URL",
+                    "size": 2
+                }
+            ],
+            "name": "cluster25"
+        },
+        {
+            "children": [
+                {
+                    "name": "meta:author",
+                    "size": 62
+                },
+                {
+                    "name": "Author",
+                    "size": 68
+                },
+                {
+                    "name": "score",
+                    "size": 68
+                },
+                {
+                    "name": "_version_",
+                    "size": 68
+                },
+                {
+                    "name": "resourceName",
+                    "size": 68
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 68
+                },
+                {
+                    "name": "id",
+                    "size": 68
+                },
+                {
+                    "name": "MISC",
+                    "size": 1
+                },
+                {
+                    "name": "ORGANIZATION",
+                    "size": 3
+                },
+                {
+                    "name": "keywords",
+                    "size": 1
+                },
+                {
+                    "name": "DATE",
+                    "size": 1
+                }
+            ],
+            "name": "cluster26"
+        },
+        {
+            "children": [
+                {
+                    "name": "Author",
+                    "size": 475
+                },
+                {
+                    "name": "score",
+                    "size": 475
+                },
+                {
+                    "name": "resourceName",
+                    "size": 475
+                },
+                {
+                    "name": "_version_",
+                    "size": 475
+                },
+                {
+                    "name": "Content-Type",
+                    "size": 475
+                },
+                {
+                    "name": "id",
+                    "size": 475
+                }
+            ],
+            "name": "cluster27"
+        }
+    ],
+    "name": "clusters"
+}

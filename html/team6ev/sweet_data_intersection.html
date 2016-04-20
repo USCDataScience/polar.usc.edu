@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SWEET Ontology intersection</title>
+  <meta charset="utf-8">
+
+
+  <script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+  <script src="../../js/team6ev/sweet_data_intersection.js"></script>
+  <style>
+    .bubbleChart {
+      min-width: 1000px;
+      max-width: 1700px;
+      height: 1000px;
+      margin: 0 auto;
+    }
+    .bubbleChart svg{
+      background: #000000;
+    }
+
+    #title{
+  padding-left:800px;
+  width:1200px;
+  font-size: 45px;
+  font-family:arial;
+}
+
+
+
+
+  </style>
+      <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <!-- script src="../../js/jquery.js"></script-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("../headerdouble.html");
+        });
+    </script>
+</head>
+<body style="background: #000000">
+<div id="header" style="margin-bottom:5%"> </div>
+
+  <div style="float: left">
+  
+  <p id="title" style="color:white;text-decoration:underline; width: 100%;  padding-right: 25%; padding-left: 25%"> SWEET Ontology Intersection with existing dataset (in %)</p> 
+</div>
+<div class="bubbleChart"/>
+</body>
+</html>

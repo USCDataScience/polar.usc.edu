@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <title>TREC Explorer</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        .sidePanel {
+            background: #e7e7e7;
+            margin-right:0px;
+        }
+
+        .sidePanel #buttons {
+            height: 544px;
+            overflow-y: auto;
+        }
+
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom:0px;
+            border: 1px solid transparent;
+            color:white;
+        }
+
+        .headLine {
+            text-align: center;
+            background: #990000;
+            color: #ffffff;
+            margin: auto;
+            vertical-align: middle;
+        }
+
+        .headLine h3 {
+            margin-top: 10px;
+        }
+
+        .xLargeButton {
+            width:470px;
+        }
+
+        .panelButtons {
+            margin:0px;
+            padding:0px;
+        }
+    </style>
+    <script src="../../js/team28/d3.v3.min.js"  charset="utf-8"></script>
+    <script src="../../js/team28/d3pie.min.js"></script>
+    <script src="../../js/team28/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+
+    </script>
+  </head>
+  <body>
+  <div id="header" style="margin-bottom:5%"> </div>
+  <div class="container">
+
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" style="color:#fff">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Main</a></li>
+            <li><a style="color:#fff" href="bfa.html">BFA</a></li>
+            <li><a style="color:#fff" href="bfc.html">BF Correlation</a></li>
+            <li><a style="color:#fff" href="bfcc.html">BF Cross Correlation</a></li>
+            <li><a style="color:#fff" href="fht.html">FHT</a></li>
+            <li><a style="color:#fff" href="heatmap.html">Mime Diversity</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="pieChart" class="col-xs-8"></div>
+        <div class="col-xs-4 sidePanel">
+            <div class="row">
+                <div class="headLine col-xs-12">
+                    <h3>Categories</h3>
+                </div>
+                <div id="buttons" style="color:black" class="btn-group-vertical col-xs-12 panelButtons">
+
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">The Visualisations and Results have been created by Rahul, Tampong and Aishwarya.</p>
+      </div>
+    </footer>
+    <script>
+      //set the global variables
+      var data = [];
+      var option = "image"; // this is the default option
+      var pie = null;
+      var categories = [];
+      var filtered_elements = null;
+      loadData();
+      //get the claue of the button
+      //filter data and reload the pie chart
+      function buttonClick(e) {
+        option = $(e).attr('value');
+        $('#buttons button').removeClass('active');
+        $('#buttons button[value="' + option + '"]').addClass('active');
+        filterData();
+      }
+
+      //filter the data
+      function filterData() {
+          filtered_elements  = $.grep(data, function(v) {
+            return v.label.split("/")[0] == option
+          });
+          createChart();
+      }
+
+      function createChart() {
+        if(pie == null ){
+          pie = new d3pie("pieChart", {
+            "header": {
+              "title": {
+                "text": "Mime Sources",
+                "fontSize": 16,
+                "font": "verdana"
+              },
+            },
+            "size": {
+              "canvasHeight": 600,
+              "canvasWidth": 800
+            },
+            "data": {
+              "content": filtered_elements
+            },
+            "labels": {
+              "outer": {
+                "pieDistance": 32
+              }
+            }
+          });
+
+          $(window).resize(function () {
+            pie.options.size.canvasWidth = $('#pieChart').width();
+            pie.redraw();
+          });
+        } else  {
+          //update data
+          pie.updateProp("data.content",filtered_elements);
+        }
+      }
+
+      function loadData() {
+        // Get JSON data and wait for the response
+        d3.json("../../data/team28data/finaldata.json", function(error, json) {
+          //get the categories that are unique example: application, image, video, ...
+
+          //itearte over the json and store in a global data array
+          $.each(json, function(d,i){
+            data.push({
+              label: d,
+              value: parseInt(i)
+            });
+            //push data into categories array
+            if($.inArray(d.split("/")[0].trim(),categories))
+              categories.push(d.split("/")[0].trim());
+          });
+          var uniqueNames = [];
+          $.each(categories, function(i, el){
+              if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
+          });
+          categories = uniqueNames;
+          categories.sort();
+
+          //dynamically create buttons
+          $.each(categories, function(d,v) {
+            $('#buttons').append('<button type="button" class = "btn btn-default xlargeButton col-md-12" id="'+v+'" value="'+v+'" onclick="buttonClick(this)" >'+v+'</button>')
+          });
+
+          $('button[value="' + option + '"]').addClass('active');
+
+          filterData();
+        });
+      }
+    </script>
+  </div>
+  </body>
+</html>

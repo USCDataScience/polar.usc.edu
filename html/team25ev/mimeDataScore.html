@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mime Data Score</title>
+    <!-- Load c3.css -->
+    <link href="https://rawgit.com/masayuki0812/c3/master/c3.css" rel="stylesheet" type="text/css">
+
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script src="../../js/d3.min.js"></script>
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+</head>
+<body>
+<div id="header" style="margin-bottom:4%"> </div>
+
+<div id="chart" style="margin-top:4%"></div>
+
+<
+
+<!-- Load d3.js and c3.js -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://rawgit.com/masayuki0812/c3/master/c3.js"></script>
+<script>
+
+    var chart = c3.generate({
+        data: {
+            xs: {
+                'PDF': 'x1',
+                'DIF_XML': 'x2',
+                'RTF': 'x3',
+                'XML': 'x4',
+                'AUDIO_BASIC': 'x5',
+                'AUDIO_MP4': 'x6',
+                'AUDIO_MPEG': 'x7',
+                'XHTML_XML': 'x8',
+                'HTML': 'x9',
+                'IMAGE_GIF': 'x10',
+                'IMAGE_TIFF': 'x11',
+                'MSG_RFC': 'x12',
+                'IMAGE_JPEG': 'x13',
+            },
+            columns: [
+                ['x1', 0.3,0.37, 0.44, 0.51, 0.58],
+                ['x2', 0.3,0.339,0.378,0.417,0.456],
+                ['x3', 0.09,0.13,0.17,0.21,0.25],
+                ['x4', 0.08,0.17,0.26,0.35,0.44],
+                ['x5', 0,0.1,0.2,0.3,0.4],
+                ['x6', 0.12,0.17,0.22,0.27,0.32],
+                ['x7', 0.12,0.19,0.26,0.33,0.4],
+                ['x8', 0.09,0.19,0.29,0.39,0.49],
+                ['x9', 0.3,0.37,0.44,0.51,0.58],
+                ['x10', 0.154,0.163,0.172,0.181,0.19],
+                ['x11', 0.07,0.16,0.25,0.34,0.43],
+                ['x12', 0.11,0.122,0.134,0.146,0.158],
+                ['x13', 0.1,0.23,0.36,0.49,0.75],
+                ['PDF', 29.5114, 0.19544, 64.43, 0.032573, 5.8306],
+                ['DIF_XML', 99.9656,0,0,0,0.344],
+                ['RTF', 22.7273,9.0909,0,0,68.1818],
+                ['XML', 99.6902,0,0.11617,0.096805,0.096805],
+                ['AUDIO_BASIC', 0,0,0,100,0],
+                ['AUDIO_MP4', 50,0,0,0,50],
+                ['AUDIO_MPEG', 0.33841,0.33841,32.3181,25.8883,41.1168],
+                ['XHTML_XML', 0.14851,73.501,20.2525,4.4273,1.6707],
+                ['HTML', 45,15,5,13,12],
+                ['IMAGE_GIF', 34.4717,62.5069,0,2.5728,0.44864],
+                ['IMAGE_TIFF', 22.3214,31.25, 23.2143, 9.1518, 14.06],
+                ['MSG_RFC', 24.878, 1.4634, 56.0976, 0, 17.561],
+                ['MSG_RFC', 24.878, 1.4634, 56.0976, 0, 17.561],
+                ['IMAGE_JPEG', 52.7291, 32.3017, 12.1898, 2.0276, 0.75]
+            ]
+        }
+    });
+</script>
+</body>
+</html>

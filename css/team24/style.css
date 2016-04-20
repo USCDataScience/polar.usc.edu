@@ -1,0 +1,21 @@
+
+.main{
+	margin-left: 40px;
+}
+
+#chart{
+	margin: 0px;
+	padding-left: 0px;
+}
+.bfd{
+	margin: 0px;
+}
+
+.fileselect{
+	margin-bottom: 40px;
+	
+}
+#fileselection{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}

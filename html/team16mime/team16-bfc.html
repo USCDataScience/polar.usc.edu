@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        rect.bordered {
+            stroke: #E6E6E6;
+            stroke-width:2px;
+        }
+
+        text.mono {
+            font-size: 9pt;
+            font-family: Consolas, courier;
+            fill: #aaa;
+        }
+
+        text.axis-workweek {
+            fill: #000;
+        }
+
+        text.axis-worktime {
+            fill: #000;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+
+            <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <script src="../../js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("../headerdouble.html");
+    });
+    </script>
+</head>
+<body>
+
+<!--div class="container"-->
+<div class="container" >
+
+  <div id="header"> </div>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+<!-- Static navbar -->
+<nav class="navbar navbar-default" >
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a style="color:#fff" href="team16-bfa.html">BFA</a></li>
+                <li class="active"><a style="color:#fff" href="team16-bfc.html">BFC</a></li>
+                <li><a style="color:#fff" href="team16-fht.html">FHT</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<!-- Drop down for selecting visualizations for each of 15 mime types-->
+<div class="col-sm-3">
+    <h5>Select Mime-Type</h5>
+
+    <div>
+        <div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background:#990000">
+                    <span data-bind="label">XML</span>&nbsp;<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" id="xml">XML</a></li>
+                    <li><a href="#" id="mpeg">MPEG</a></li>
+                    <li><a href="#" id="x-wav">X-WAV</a></li>
+                    <li><a href="#" id="gzip">GZIP</a></li>
+                    <li><a href="#" id="gif">GIF</a></li>
+                    <li><a href="#" id="jpeg">JPEG</a></li>
+                    <li><a href="#" id="png">PNG</a></li>
+                    <li><a href="#" id="svgxml">SVG+XML</a></li>
+                    <li><a href="#" id="tiff">TIFF</a></li>
+                    <li><a href="#" id="pdf">PDF</a></li>
+                    <li><a href="#" id="html">HTML</a></li>
+                    <li><a href="#" id="mp4">MP4</a></li>
+                    <li><a href="#" id="quicktime">QUICK TIME</a></li>
+                    <li><a href="#" id="zip">ZIP</a></li>
+                    <li><a href="#" id="octet">OCTET-STREAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="chart"></div>
+
+
+<script type="text/javascript">
+    var margin = { top: 50, right: 20, bottom: 100, left: 30 },
+            width = 1540 - margin.left - margin.right,
+            height = 1500 - margin.top - margin.bottom,
+            gridSize = Math.floor(width / 256),
+            legendElementWidth = gridSize*10,
+            buckets = 4,
+            colors = ["#EDF8B1","#7FCDBB","#1d91c0","#081D58"],
+            days = ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100", "105", "110", "115", "120", "125", "130", "135", "140", "145", "150", "155", "160", "165", "170", "175", "180", "185", "190", "195", "200", "205", "210", "215", "220", "225", "230", "235", "240", "245", "250", "255"],//["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255"],
+            times = ["0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100", "105", "110", "115", "120", "125", "130", "135", "140", "145", "150", "155", "160", "165", "170", "175", "180", "185", "190", "195", "200", "205", "210", "215", "220", "225", "230", "235", "240", "245", "250", "255"],//["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255"];
+
+    //JSON files for each of 15 mime-types
+            BFCC_FILE_XML = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_xml.json",
+            BFCC_FILE_MPEG = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_mpeg.json",
+            BFCC_FILE_XWAV = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_xwav.json",
+            BFCC_FILE_GZIP = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_gzip.json",
+            BFCC_FILE_GIF = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_gif.json",
+            BFCC_FILE_JPEG = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_jpeg.json",
+            BFCC_FILE_PNG = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_png.json",
+            BFCC_FILE_SVGXML = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_svgxml.json",
+            BFCC_FILE_TIFF = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_tiff.json",
+            BFCC_FILE_PDF = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_pdf.json",
+            BFCC_FILE_HTML = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_html.json",
+            BFCC_FILE_MP4 = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_mp4.json",
+            BFCC_FILE_QUICKTIME = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_QT.json",
+            BFCC_FILE_ZIP = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_zip.json",
+            BFCC_FILE_OCTET = "../../data/team16data/bfc/BFCCFingerprints/BFC_fingerprint_octect_stream.json";
+
+    var svg = d3.select("#chart").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var dayLabels = svg.selectAll(".dayLabel")
+            .data(days)
+            .enter().append("text")
+            .text(function (d) { return d; })
+            .attr("x", 0)
+            .attr("y", function (d, i) { return i * gridSize * 5; })
+            .style("text-anchor", "end")
+            .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
+            .attr("class", function (d, i) { return ((i >= 0 && i <= 4) ? "dayLabel mono axis axis-workweek" : "dayLabel mono axis"); });
+
+    var timeLabels = svg.selectAll(".timeLabel")
+            .data(times)
+            .enter().append("text")
+            .text(function(d) { return d; })
+            .attr("x", function(d, i) { return i * gridSize * 5; })
+            .attr("y", 0)
+            .style("text-anchor", "middle")
+            .attr("transform", "translate(" + gridSize / 2 + ", -6)")
+            .attr("class", function(d, i) { return ((i >= 7 && i <= 16) ? "timeLabel mono axis axis-worktime" : "timeLabel mono axis"); });
+
+    /* HeatMap function for visualizing 255x255 matrix for each mime type
+     * */
+    var heatmapChart = function(jsonFile) {
+
+        d3.json(jsonFile,
+                function(error, data) {
+                    var colorScale = d3.scale.quantile()
+                            .domain(data.map(function(d){ return d.frequency}))
+                            .range(colors);
+
+                    var cards = svg.selectAll(".hour")
+                            .data(data, function(d) {return d.source+':'+d.target;});
+
+                    cards.append("title");
+
+                    cards.enter().append("rect")
+                            .attr("x", function(d) { return (d.target - 1) * gridSize; })
+                            .attr("y", function(d) { return (d.source - 1) * gridSize; })
+                            .attr("rx", 4)
+                            .attr("ry", 4)
+                            .attr("class", "hour bordered")
+                            .attr("width", gridSize)
+                            .attr("height", gridSize)
+                            .style("fill", colors[0]);
+
+                    cards.transition().duration(1000)
+                            .style("fill", function(d) { return colorScale(d.frequency); });
+
+                    cards.select("title").text(function(d) { return d.frequency; });
+
+                    cards.exit().remove();
+
+                    var legend = svg.selectAll(".legend")
+                            .data([0].concat(colorScale.quantiles()), function(d) { return d; });
+
+                    legend.enter().append("g")
+                            .attr("class", "legend");
+
+                    legend.append("rect")
+                            .attr("x", function(d, i) { return legendElementWidth * i; })
+                            .attr("y", height)
+                            .attr("width", legendElementWidth)
+                            .attr("height", gridSize * 2)
+                            .style("fill", function(d, i) { return colors[i]; });
+
+                    legend.append("text")
+                            .attr("class", "mono")
+                            .text(function(d) { return "≥ " + (d).toFixed(2); })
+                            .attr("x", function(d, i) { return legendElementWidth * i; })
+                            .attr("y", height + gridSize + 20);
+
+                    legend.exit().remove();
+
+
+                });
+
+    };
+
+    //By default generate heatmap for XML
+    heatmapChart(BFCC_FILE_XML);
+
+    //Capture click event of each value in dropdown and pass the corresponding json file for mime-type
+    jQuery("#xml").click(function(e){
+        console.log(BFCC_FILE_XML);
+        heatmapChart(BFCC_FILE_XML);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#mpeg").click(function(e){
+        console.log(BFCC_FILE_MPEG);
+        heatmapChart(BFCC_FILE_MPEG);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#x-wav").click(function(e){
+        console.log(BFCC_FILE_XWAV);
+        heatmapChart(BFCC_FILE_XWAV);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#gzip").click(function(e){
+        console.log(BFCC_FILE_GZIP);
+        heatmapChart(BFCC_FILE_GZIP);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#gif").click(function(e){
+        console.log(BFCC_FILE_GIF);
+        heatmapChart(BFCC_FILE_GIF);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#jpeg").click(function(e){
+        console.log(BFCC_FILE_JPEG);
+        heatmapChart(BFCC_FILE_JPEG);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#png").click(function(e){
+        console.log(BFCC_FILE_PNG);
+        heatmapChart(BFCC_FILE_PNG);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#svgxml").click(function(e){
+        console.log(BFCC_FILE_SVGXML);
+        heatmapChart(BFCC_FILE_SVGXML);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#tiff").click(function(e){
+        console.log(BFCC_FILE_TIFF);
+        heatmapChart(BFCC_FILE_TIFF);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#pdf").click(function(e){
+        console.log(BFCC_FILE_PDF);
+        heatmapChart(BFCC_FILE_PDF);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#html").click(function(e){
+        console.log(BFCC_FILE_HTML);
+        heatmapChart(BFCC_FILE_HTML);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#mp4").click(function(e){
+        console.log(BFCC_FILE_MP4);
+        heatmapChart(BFCC_FILE_MP4);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#quicktime").click(function(e){
+        console.log(BFCC_FILE_QUICKTIME);
+        heatmapChart(BFCC_FILE_QUICKTIME);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#zip").click(function(e){
+        console.log(BFCC_FILE_ZIP);
+        heatmapChart(BFCC_FILE_ZIP);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+    jQuery("#octet").click(function(e){
+        console.log(BFCC_FILE_OCTET);
+        heatmapChart(BFCC_FILE_OCTET);
+        var $target = $( e.currentTarget );
+        $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+        e.preventDefault();
+    });
+
+
+
+</script>
+</div>
+</body>
+</html>

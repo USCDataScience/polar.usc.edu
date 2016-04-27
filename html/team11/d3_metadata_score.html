@@ -1,34 +1,75 @@
 <html>
 <head>
-	<title>Metadata Score</title>
-	<style>
 
-.bar {
-  fill: steelblue;
-}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.bar:hover {
-  fill: brown;
-}
+    <title>Team 11 Content Enrichment Analysis</title>
 
-.axis {
-  font: 10px sans-serif;
-}
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
 
-.x.axis path {
-  display: none;
-}
-</style>
-	</head>
-	<body>
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <style>
+        tr, td, th{
+            padding:5px;
+        }
+    </style>
+  <style>
+
+    .bar {
+      fill: steelblue;
+    }
+
+    .bar:hover {
+      fill: brown;
+    }
+
+    .axis {
+      font: 10px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+      display: none;
+    }
+    </style>
+
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div id="header" > </div>
+<br/><br/><br/><br/>
+	<body class="container">
 	<script src="http://d3js.org/d3.v3.min.js"></script>
+  <h3>Metadata Score</h3>
 <script>
 	window.onload = function () {
 var margin = {top: 20, right: 20, bottom: 30, left: 40},

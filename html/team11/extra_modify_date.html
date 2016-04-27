@@ -19,7 +19,52 @@
   }
 
 </style>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Team 11 Content Enrichment Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <style>
+        tr, td, th{
+            padding:5px;
+        }
+    </style>
+
+
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div id="header" > </div>
+<br/><br/><br/><br/>
 <body>
+  <div class="container">
   <center>  <h1>Date Modified</h1>
     <h6>-use tooltip to check date modified and count</h6></center>
    <div class="tooltip" style="opacity: 0.01;padding: 10px;
@@ -30,6 +75,7 @@
         -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);"></div>
+      </div>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script>
 
@@ -137,7 +183,6 @@ function type(d) {
   d.count = +d.count;
   return d;
 }
-      
 
 
 </script>

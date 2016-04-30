@@ -1,0 +1,73 @@
+{
+  "name": "http://nsidc.org",
+  "children": [
+    {
+     "name": "/about",
+     "children": 
+     [
+       
+       {"name": "/green-data-center", "children": [{"name": "ddd"}]},
+       {"name": "/people.html"},
+       {"name": "/sponsors.html"},
+       {"name": "/contact.html"},
+       {"name": "/support.html"},
+       {"name": "/use_copyright.html"}
+     ]
+    },{
+     "name": "/arcticseaicenews",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/daac",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/data",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/greenland-today",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/icelights",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/news",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/research",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/rocs",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    }
+  ]
+}

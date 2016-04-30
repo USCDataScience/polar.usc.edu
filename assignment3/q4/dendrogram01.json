@@ -1,0 +1,117 @@
+{
+  "name": "http://nsidc.org",
+  "children": [
+    {
+     "name": "/about",
+     "children": 
+     [
+       {"name": "/overview"},
+       {"name": "/jobs", "children":[{"name": "/index.html"}]},
+       {"name": "/green-data-center"},
+       {"name": "/people.html"},
+       {"name": "/sponsors.html"},
+       {"name": "/contact.html"},
+       {"name": "/support.html"},
+       {"name": "/use_copyright.html"}
+     ]
+    },{
+     "name": "/arcticseaicenews",
+     "children": [
+       {"name": "/xmlrpc.php"},
+       {"name": "/xmlrpc.php%3Frsd"},
+       {"name": "/%3Fp=5231"},
+       {"name": "/%3Fp=5588"},
+       {"name": "/%3Fp=5623"},
+       {"name": "/%3Fp=5678"},
+       {"name": "/%3Fp=5696"}
+     ]
+    },
+    {
+     "name": "/daac"
+    },
+    {
+     "name": "/data",
+     "children": [
+       {"name": "/submit.html"},
+       {"name": "/g00472.html"},
+       {"name": "/tools"},
+       {"name": "/collections.html"},
+       {"name": "/data-search.html"},
+       {"name": "/g00472"},
+       {"name": "/g02156.html"},
+       {"name": "/masie", "children":[{"name": "/index.html"}]},
+       {"name": "/search"}
+     ]
+    },
+    {
+     "name": "/greenland-today",
+     "children": [
+       {"name": "/xmlrpc.php"},
+       {"name": "/%3Fp=157"},
+       {"name": "/%3Fp=200"},
+       {"name": "/%3Fp=230"},
+       {"name": "/%3Fp=303"},
+       {"name": "/%3Fp=310"},
+       {"name": "/%3Fp=35"},
+       {"name": "/%3Fp=370"},
+       {"name": "/%3Fp=399"},
+       {"name": "/%3Fp=450"},
+       {"name": "/%3Fp=467"}
+     ]
+    },
+    {
+     "name": "/icelights",
+     "children": [
+       {"name": "/xmlrpc.php"},
+       {"name": "/xmlrpc.php%3Frsd"}
+     ]
+    },
+    {
+     "name": "/news",
+     "children": [
+       {"name": "/feed"}
+     ]
+    },
+    {
+     "name": "/research",
+     "children": [
+       {"name": "/informatics"},
+       {"name": "/projects.html"},
+       {"name": "/publications.html"},
+       {"name": "/scientists.html"} 
+     ]
+    },
+    {
+     "name": "/rocs"
+    },
+    {
+     "name": "/soac"
+    },
+    {
+     "name": "/the-drift",
+     "children": [
+       {"name": "/xmlrpc.php"},
+       {"name": "/xmlrpc.php%3Frsd"}
+     ]
+    },
+    {
+     "name": "/cryosphere",
+     "children": [
+       {"name": "/allaboutcryosphere.html"},
+       {"name": "/climate-change.html"},
+       {"name": "/glossary"},
+       {"name": "/study-cryosphere.html"},
+       {"name": "/education-resources"},
+       {"name": "/glaciers"},
+       {"name": "/quick-facts"} 
+     ]
+    },
+    {
+     "name": "/monthlyhighlights",
+     "children": [
+       {"name": "/xmlrpc.php"},
+       {"name": "/xmlrpc.php%3Frsd"}
+     ]
+    }
+  ]
+}

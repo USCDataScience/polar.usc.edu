@@ -1,0 +1,16 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+	font-size: 0.95em;
+	text-align: center;
+}
+#chart{
+	background-color: #F5F2EB;
+	border: 1px solid #CCC;
+}
+
+.my_text{
+	font-family: sans-serif;
+	font-size: 10px;
+}

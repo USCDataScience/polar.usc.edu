@@ -41,10 +41,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Overview</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <div id="chart"></div>
                     </div>
                 </div>
             </div>
@@ -71,7 +68,25 @@
         $("#sidebar-wrapper").load("common/sidebar.html");
     });
     </script>
+    <!-- Load c3.css -->
+    <link href="css/c3.min.css" rel="stylesheet" type="text/css">
 
+    <!-- Load d3.js and c3.js -->
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/c3.min.js"></script>
+    <script>
+
+        var chart = c3.generate({
+            bindto: '#chart',
+            data: {
+                columns: [
+                    ['data1', 30, 200, 100, 400, 150, 250],
+                    ['data2', 50, 20, 10, 40, 15, 25]
+                ]
+            }
+        });
+
+    </script>
 </body>
 
 </html>

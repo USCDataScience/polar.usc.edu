@@ -1,0 +1,542 @@
+[
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 2,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 0,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 1,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 0,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "be"
+  },
+  {
+    "freq": {
+      "application/mp4": 15,
+      "application/msword": 0,
+      "application/octet-stream": 2,
+      "application/pdf": 27,
+      "application/rss+xml": 1,
+      "application/xhtml+xml": 1,
+      "application/xml": 1,
+      "audio/mpeg": 0,
+      "image/gif": 3,
+      "image/jpeg": 1,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 31,
+      "video/mp4": 2,
+      "video/quicktime": 0
+    },
+    "State": "ca"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 0,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 1,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 10,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "da"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 4,
+      "application/xhtml+xml": 5,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 2,
+      "text/plain": 0,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "de"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 333,
+      "application/octet-stream": 18,
+      "application/pdf": 4,
+      "application/rss+xml": 2378,
+      "application/xhtml+xml": 1209,
+      "application/xml": 502,
+      "audio/mpeg": 1,
+      "image/gif": 18,
+      "image/jpeg": 1,
+      "image/png": 1,
+      "text/html": 1025,
+      "text/plain": 2460,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "en"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 0,
+      "application/xml": 1,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 45,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "eo"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 5,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 3,
+      "application/xhtml+xml": 2,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 1,
+      "text/html": 0,
+      "text/plain": 1,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "es"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 4,
+      "application/pdf": 15,
+      "application/rss+xml": 295,
+      "application/xhtml+xml": 1262,
+      "application/xml": 641,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 8,
+      "image/png": 105,
+      "text/html": 704,
+      "text/plain": 1155,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "et"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 3,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 0,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "fa"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 1,
+      "application/xhtml+xml": 2,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 1,
+      "image/png": 0,
+      "text/html": 1,
+      "text/plain": 6,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "fi"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 9,
+      "application/rss+xml": 384,
+      "application/xhtml+xml": 67,
+      "application/xml": 91,
+      "audio/mpeg": 0,
+      "image/gif": 1,
+      "image/jpeg": 0,
+      "image/png": 1,
+      "text/html": 27,
+      "text/plain": 271,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "fr"
+  },
+  {
+    "freq": {
+      "application/mp4": 1,
+      "application/msword": 7,
+      "application/octet-stream": 10,
+      "application/pdf": 9,
+      "application/rss+xml": 11,
+      "application/xhtml+xml": 30,
+      "application/xml": 5,
+      "audio/mpeg": 0,
+      "image/gif": 14,
+      "image/jpeg": 8,
+      "image/png": 11,
+      "text/html": 13,
+      "text/plain": 53,
+      "video/mp4": 2,
+      "video/quicktime": 0
+    },
+    "State": "gl"
+  },
+  {
+    "freq": {
+      "application/mp4": 219,
+      "application/msword": 89,
+      "application/octet-stream": 80,
+      "application/pdf": 1849,
+      "application/rss+xml": 11,
+      "application/xhtml+xml": 1364,
+      "application/xml": 9,
+      "audio/mpeg": 391,
+      "image/gif": 6674,
+      "image/jpeg": 1396,
+      "image/png": 3555,
+      "text/html": 900,
+      "text/plain": 1077,
+      "video/mp4": 169,
+      "video/quicktime": 36
+    },
+    "State": "hu"
+  },
+  {
+    "freq": {
+      "application/mp4": 4,
+      "application/msword": 1,
+      "application/octet-stream": 43,
+      "application/pdf": 84,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 1,
+      "application/xml": 1,
+      "audio/mpeg": 0,
+      "image/gif": 164,
+      "image/jpeg": 113,
+      "image/png": 121,
+      "text/html": 0,
+      "text/plain": 37,
+      "video/mp4": 16,
+      "video/quicktime": 0
+    },
+    "State": "is"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 3,
+      "application/octet-stream": 0,
+      "application/pdf": 1,
+      "application/rss+xml": 773,
+      "application/xhtml+xml": 2624,
+      "application/xml": 362,
+      "audio/mpeg": 0,
+      "image/gif": 11,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 1617,
+      "text/plain": 1273,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "it"
+  },
+  {
+    "freq": {
+      "application/mp4": 6,
+      "application/msword": 10,
+      "application/octet-stream": 46,
+      "application/pdf": 779,
+      "application/rss+xml": 651,
+      "application/xhtml+xml": 1093,
+      "application/xml": 3176,
+      "audio/mpeg": 12,
+      "image/gif": 226,
+      "image/jpeg": 421,
+      "image/png": 721,
+      "text/html": 2881,
+      "text/plain": 1341,
+      "video/mp4": 35,
+      "video/quicktime": 6
+    },
+    "State": "lt"
+  },
+  {
+    "freq": {
+      "application/mp4": 1,
+      "application/msword": 0,
+      "application/octet-stream": 1,
+      "application/pdf": 0,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 1,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 2,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "nl"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 9,
+      "application/rss+xml": 50,
+      "application/xhtml+xml": 113,
+      "application/xml": 37,
+      "audio/mpeg": 0,
+      "image/gif": 4,
+      "image/jpeg": 0,
+      "image/png": 15,
+      "text/html": 302,
+      "text/plain": 941,
+      "video/mp4": 2,
+      "video/quicktime": 0
+    },
+    "State": "no"
+  },
+  {
+    "freq": {
+      "application/mp4": 8,
+      "application/msword": 4,
+      "application/octet-stream": 16,
+      "application/pdf": 266,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 4,
+      "application/xml": 1,
+      "audio/mpeg": 0,
+      "image/gif": 86,
+      "image/jpeg": 165,
+      "image/png": 122,
+      "text/html": 1,
+      "text/plain": 0,
+      "video/mp4": 4,
+      "video/quicktime": 0
+    },
+    "State": "pl"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 0,
+      "application/xml": 1,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 11,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "pt"
+  },
+  {
+    "freq": {
+      "application/mp4": 5,
+      "application/msword": 1,
+      "application/octet-stream": 4,
+      "application/pdf": 7,
+      "application/rss+xml": 410,
+      "application/xhtml+xml": 2055,
+      "application/xml": 152,
+      "audio/mpeg": 0,
+      "image/gif": 1,
+      "image/jpeg": 27,
+      "image/png": 12,
+      "text/html": 2170,
+      "text/plain": 1114,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "ro"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 3,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 0,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "ru"
+  },
+  {
+    "freq": {
+      "application/mp4": 239,
+      "application/msword": 47,
+      "application/octet-stream": 71,
+      "application/pdf": 6837,
+      "application/rss+xml": 15,
+      "application/xhtml+xml": 151,
+      "application/xml": 15,
+      "audio/mpeg": 96,
+      "image/gif": 2792,
+      "image/jpeg": 7859,
+      "image/png": 5335,
+      "text/html": 356,
+      "text/plain": 151,
+      "video/mp4": 270,
+      "video/quicktime": 58
+    },
+    "State": "sk"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 3,
+      "application/pdf": 0,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 2,
+      "application/xml": 5,
+      "audio/mpeg": 0,
+      "image/gif": 4,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 19,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "sl"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 1,
+      "application/pdf": 1,
+      "application/rss+xml": 1,
+      "application/xhtml+xml": 0,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 0,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "sv"
+  },
+  {
+    "freq": {
+      "application/mp4": 0,
+      "application/msword": 0,
+      "application/octet-stream": 0,
+      "application/pdf": 0,
+      "application/rss+xml": 12,
+      "application/xhtml+xml": 3,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 1,
+      "text/plain": 0,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "th"
+  },
+  {
+    "freq": {
+      "application/mp4": 2,
+      "application/msword": 0,
+      "application/octet-stream": 1,
+      "application/pdf": 101,
+      "application/rss+xml": 0,
+      "application/xhtml+xml": 5,
+      "application/xml": 0,
+      "audio/mpeg": 0,
+      "image/gif": 0,
+      "image/jpeg": 0,
+      "image/png": 0,
+      "text/html": 0,
+      "text/plain": 2,
+      "video/mp4": 0,
+      "video/quicktime": 0
+    },
+    "State": "uk"
+  }
+]

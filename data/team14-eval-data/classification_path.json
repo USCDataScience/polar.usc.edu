@@ -1,0 +1,947 @@
+
+  {
+    "name": "nsfpolardata.dyndns.org",
+    "parent": "null",
+    "children": [
+      {
+        "name": "dx.doi.org",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001",
+            "parent": "dx.doi.org",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "ner_sweet_AstronomicalBody",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "ner_sweet_Process",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "ner_sweet_X",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "ner_sweet_A",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "ner_sweet_state",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              },
+              {
+                "name": "ner_sweet_ClimateAverage",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0531.001"
+              }
+            ]
+          },
+          {
+            "name": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001",
+            "parent": "dx.doi.org",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              },
+              {
+                "name": "ner_sweet_state",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              },
+              {
+                "name": "ner_sweet_F",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              },
+              {
+                "name": "ner_sweet_Iteration",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-1246.001"
+              }
+            ]
+          },
+          {
+            "name": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001",
+            "parent": "dx.doi.org",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "ner_sweet_nitrogen",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "ner_sweet_process",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "ner_sweet_observe",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "ner_sweet_Ratio",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              },
+              {
+                "name": "ner_sweet_East",
+                "parent": "http://dx.doi.org/10.5067/MEASURES/CRYOSPHERE/nsidc-0614.001"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.bom.gov.au",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.bom.gov.au/australia/radar",
+            "parent": "www.bom.gov.au",
+            "children": [
+              {
+                "name": "ner_sweet_East",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "ner_sweet_Iteration",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "ner_sweet_VerticalDirection",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "ner_sweet_C",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              }
+            ]
+          },
+          {
+            "name": "http://www.bom.gov.au/climate/enso/",
+            "parent": "www.bom.gov.au",
+            "children": [
+              {
+                "name": "MONEY",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "ner_sweet_VerticalDirection",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "ner_sweet_Discovery",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "ner_sweet_AlkaliMetal",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "ner_sweet_Iodine",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "ner_sweet_greaterThan",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.polardata.ca",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1",
+            "parent": "dx.doi.org",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_AstronomicalBody",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_VerticalDirection",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_Discovery",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_C",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_PlanetaryPhenomena",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_A",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_order",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "ner_sweet_WaterSubstance",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              }
+            ]
+          },
+          {
+            "name": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2",
+            "parent": "dx.doi.org",
+            "children": [
+              {
+                "name": "MONEY",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "ner_sweet_DataProduct",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "ner_sweet_WaterSubstance",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "ner_sweet_fall",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "ner_sweet_X",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "ner_sweet_sulfur",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              }
+            ]
+          },
+          {
+            "name": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3",
+            "parent": "dx.doi.org",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "ner_sweet_nitrogen",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "ner_sweet_process",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "ner_sweet_observe",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "ner_sweet_Ratio",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "ner_sweet_East",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.cptec.inpe.br",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.cptec.inpe.br/",
+            "parent": "www.cptec.inpe.br",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_fall",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_state",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_process",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_visualization",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_E",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_P",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_F",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_H",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_O",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_Ratio",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ner_sweet_Sulfur",
+                "parent": "http://www.cptec.inpe.br/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "g.co",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "https://g.co/gbc",
+            "parent": "g.co",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "TIME",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "MONEY",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ner_sweet_Isotope",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ner_sweet_Iteration",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ner_sweet_Ratio",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ner_sweet_PhysicalProcess",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "DATE",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ner_sweet_Discovery",
+                "parent": "https://g.co/gbc"
+              },
+              {
+                "name": "ner_sweet_X",
+                "parent": "https://g.co/gbc"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "data.wien.gv.at",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://data.wien.gv.at/",
+            "parent": "data.wien.gv.at",
+            "children": [
+              {
+                "name": "ner_sweet_P",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ner_sweet_DataProduct",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ner_sweet_Iodine",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ner_sweet_Order",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ner_sweet_Organism",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ner_sweet_Carbon",
+                "parent": "http://data.wien.gv.at/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "arcticjournal.com",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://arcticjournal.com/climate/1016/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "ner_sweet_DataProduct",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_F",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Order",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Organism",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_visualization",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_H",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1029/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "ner_sweet_P",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_DataProduct",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Iodine",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Order",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Organism",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_F",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_observe",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_nitrogen",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1047/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "ner_sweet_P",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_DataProduct",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Iodine",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Order",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Organism",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1049/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "ner_sweet_X",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_P",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_state",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_A",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Order",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_nonmetal",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1111/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Order",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Organism",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Iodine",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1342/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "ner_sweet_Iodine",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Order",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_Organism",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_P",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "ner_sweet_DataProduct",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cpspolar.com",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://cpspolar.com/",
+            "parent": "cpspolar.com",
+            "children": [
+              {
+                "name": "ner_sweet_P",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ner_sweet_D",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ner_sweet_DataProduct",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ner_sweet_Iodine",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ner_sweet_Extensive",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ner_sweet_Carbon",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ner_sweet_visualization",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ner_sweet_F",
+                "parent": "http://cpspolar.com/"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

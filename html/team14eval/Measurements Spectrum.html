@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    
+    .bar {
+        fill: #66ccff;
+    }
+    
+    .bar1 {
+        fill: #cceeff;
+    }
+    
+    .avg3 {
+        fill: #005580;
+    }
+    
+    .x.axis path {
+        display: none;
+    }
+    
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+    }
+    /* Creates a small triangle extender for the tooltip */
+    
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+    /* Style northward tooltips differently */
+    
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+    
+    body {
+        font: 10px sans-serif;
+    }
+    
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;
+        margin: 0px 100px 10px 100px;
+        padding: 8px;
+        display: inline-block;
+    }
+
+</style>
+
+<body>
+    <div id="wrapper" style="text-align: center;">
+        <div class="legend" style='font-size: 1.3em;font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;'>
+            <p>This Measurement Spectrum shows the range of values (min, max and average) of the measurements obtained from NER</p>
+            <p>The x-axis shows the measuremnt type and y- axis indicates the range. The dark blue line indicates the average value. Hover on the bar to see the max, min and average values.</p>
+        </div>
+    </div>
+    Select:
+    <select id="types">
+        <option value="all">All Measurements</option>
+        <option value="type">Measurement Type (Length)</option>
+        <option value="domain">Domain</option>
+        <option value="pdf">MIME Type (PDF)</option>
+    </select>
+    <script src="../../js/d3.min.js"></script>
+    <script src="../../js/d3.tip.v0.6.3.js"></script>
+    <script>
+        var main = function(path) {
+            d3.select("svg").remove();
+            var margin = {
+                    top: 40,
+                    right: 20,
+                    bottom: 30,
+                    left: 40
+                },
+                width = 800 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            var formatPercent = d3.format(".0");
+
+            var x = d3.scale.ordinal()
+                .rangeRoundBands([0, width], .1);
+
+            var y = d3.scale.linear()
+                .range([height, 0]);
+
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom");
+
+            var yAxis = d3.svg.axis()
+                .scale(y)
+                .orient("left")
+                .tickFormat(formatPercent);
+
+            var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([-10, 0])
+                .html(function(d) {
+                    return "<strong>Max:</strong> <span style='color:#66ccff'>" + d.max + "</span><strong> Min:</strong> <span style='color:#66ccff'>" + d.startValue + "</span><strong> Average:</strong> <span style='color:#66ccff'>" + d.avg + "</span>";
+                })
+
+            var tip1 = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([-10, 0])
+                .html(function(d) {
+                    return "<strong> Average:</strong> <span style='color:#66ccff'>" + d.avg + "</span>";
+                })
+
+            var svg = d3.select("body").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            svg.call(tip);
+            svg.call(tip1);
+            d3.tsv(path, type, function(error, data) {
+                x.domain(data.map(function(d) {
+                    return d.letter;
+                }));
+                y.domain([0, d3.max(data, function(d) {
+                    return d.max;
+                })]);
+
+                svg.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(xAxis);
+
+                svg.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis)
+                    .append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 6)
+                    .attr("dy", ".71em")
+                    .style("text-anchor", "end")
+                    .text("Value");
+
+                svg.selectAll(".bar1")
+                    .data(data)
+                    .enter().append("rect")
+                    .attr("class", "bar1")
+                    .attr("x", function(d) {
+                        return x(d.letter);
+                    })
+                    .attr("width", x.rangeBand())
+                    .attr("y", function(d) {
+                        return (y(d.max));
+                    })
+                    .attr("height", function(d) {
+                        return (height - y(d.max));
+                    })
+                    .on('mouseover', tip.show)
+                    .on('mouseout', tip.hide)
+
+                svg.selectAll(".bar")
+                    .data(data)
+                    .enter().append("rect")
+                    .attr("class", "bar")
+                    .attr("x", function(d) {
+                        return x(d.letter);
+                    })
+                    .attr("width", x.rangeBand())
+                    .attr("y", function(d) {
+                        return (y(d.max));
+                    })
+                    .attr("height", function(d) {
+                        return (height - y(d.max - d.startValue));
+                    })
+                    .on('mouseover', tip.show)
+                    .on('mouseout', tip.hide)
+
+                svg.selectAll(".avg3")
+                    .data(data)
+                    .enter().append("rect")
+                    .attr("class", "avg3")
+                    .attr("x", function(d) {
+                        return x(d.letter);
+                    })
+                    .attr("width", x.rangeBand())
+                    .attr("y", function(d) {
+                        return (y(d.avg));
+                    })
+                    .attr("height", function(d) {
+                        return (5);
+                    })
+                    .on('mouseover', tip1.show)
+                    .on('mouseout', tip1.hide)
+
+            });
+        }
+
+        function type(d) {
+            d.max = +d.max;
+            return d;
+        }
+
+        window.onload = function() {
+
+            var val = d3.select("select#types")[0][0].value;
+            d3.select("select#types").on("change", function() {
+                mime_type = this.value;
+                path = "../../data/team14-eval-data/measurements_spectrum/" + mime_type + "_measures.tsv";
+                main(path);
+            });
+
+            main("../../data/team14-eval-data/measurements_spectrum/all_measures.tsv");
+        }
+
+    </script>

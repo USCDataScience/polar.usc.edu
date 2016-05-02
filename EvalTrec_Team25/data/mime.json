@@ -1,0 +1,62 @@
+{
+    "application/gzip": [
+        245
+    ], 
+    "text/x-matlab": [
+        933
+    ], 
+    "application/atom+xml": [
+        2563
+    ], 
+    "image/jpeg": [
+        62710
+    ], 
+    "text/html": [
+        21955
+    ], 
+    "image/gif": [
+        22034
+    ], 
+    "audio/mpeg": [
+        188
+    ], 
+    "video/quicktime": [
+        681
+    ], 
+    "image/png": [
+        28226
+    ], 
+    "application/x-tika-ooxml": [
+        510
+    ], 
+    "video/mp4": [
+        233
+    ], 
+    "image/vnd.microsoft.icon": [
+        553
+    ], 
+    "application/x-sh": [
+        1
+    ], 
+    "application/java-archive": [
+        1
+    ], 
+    "text/x-perl": [
+        10
+    ], 
+    "application/pdf": [
+        28631
+    ], 
+    "application/octet-stream": [
+        93546
+    ], 
+    "application/rtf": [
+        1
+    ], 
+    "application/rss+xml": [
+        7082
+    ], 
+    "text/plain": [
+        7
+    ]
+}

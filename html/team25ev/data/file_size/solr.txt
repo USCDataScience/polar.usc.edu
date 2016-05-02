@@ -1,0 +1,17 @@
+metadata:*plain*
+
+Size Categories:
+0 - 10 KB
+size:['' TO 10000]
+
+10 KB - 1 MB
+size:[10000 TO 1000000]
+
+1 MB - 10 MB
+size:[1000000 TO 10000000]
+
+10 MB - 100 MB
+size:[10000000 TO 100000000]
+
+100 MB+
+size:[100000000 TO *]

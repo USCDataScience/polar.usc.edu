@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style type="text/css">
+    .node {
+        cursor: pointer;
+    }
+    
+    .overlay {
+        background-color: #EEE;
+    }
+    
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    
+    .node text {
+        font-size: 10px;
+        font-family: sans-serif;
+    }
+    
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+    
+    .templink {
+        fill: none;
+        stroke: red;
+        stroke-width: 3px;
+    }
+    
+    .ghostCircle.show {
+        display: block;
+    }
+    
+    .ghostCircle,
+    .activeDrag .ghostCircle {
+        display: none;
+    }
+    
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;
+        margin: 0px 100px 10px 100px;
+        padding: 8px;
+        display: inline-block;
+    }
+
+</style>
+<script src="../../js/jquery-1.12.1.min.js"></script>
+<script src="../../js/d3.min.js"></script>
+<script src="../../js/team14-dndTree.js"></script>
+
+<body>
+    <div id="wrapper" style="text-align: center;">
+        <div class="legend">
+            <p>This collapsible tree shows the classification path from request to content. In the end it also shows the NER that were present for that content.</p>
+        </div>
+    </div>
+    <div id="tree-container"></div>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    .bar {
+        fill: steelblue;
+    }
+    
+    .bar:hover {
+        fill: brown;
+    }
+    
+    .axis {
+        font: 10px sans-serif;
+    }
+    
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    
+    .x.axis path {
+        display: none;
+    }
+    
+    body {
+        font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;
+    }
+    
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 0px 100px 10px 100px;
+        padding: 8px;
+        display: inline-block;
+    }
+
+</style>
+
+<body>
+
+    <div id="wrapper" style="text-align: center;">
+        <div class="legend">
+            <p>This visualization indicates the File size diversity of CCA dataset by MIME type</p>
+            <p>The size ratio of Solr index to file size original diversity was normalized to be between 0-1 for all files and then these  graphs were generated.</p>
+        </div>
+    </div>
+    
+    <p>
+        Mime Type:
+        <select id="mime_type">
+            <option value="application_mp4">application/mp4</option>
+            <option value="application_msword">application/msword</option>
+            <option value="application_octet-stream">application/octet stream</option>
+            <option value="application_pdf">application/pdf</option>
+            <option value="application_rss+xml">application/rss+xml</option>
+            <option value="application_xhtml+xml">application/xhtml+xml</option>
+            <option value="application_xml">application/xml</option>
+            <option value="audio_mpeg">audio/mpeg</option>
+            <option value="image_gif">image/gif</option>
+            <option value="image_jpeg">image/jpeg</option>
+            <option value="image_png">image/png</option>
+            <option value="text_html">text/html</option>
+            <option value="text_plain">text/plain</option>
+            <option value="video_mp4">video/mp4</option>
+            <option value="video_quicktime">video/quicktime</option>
+        </select>
+    </p>
+
+    <script src="../../js/d3.min.js"></script>
+    <script>
+        var main = function(path) {
+            d3.select("svg").remove();
+            var margin = {
+                    top: 20,
+                    right: 20,
+                    bottom: 30,
+                    left: 40
+                },
+                width = 960 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            var x = d3.scale.ordinal()
+                .rangeRoundBands([0, width], .1);
+
+            var y = d3.scale.linear()
+                .range([height, 0]);
+
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom");
+
+            var yAxis = d3.svg.axis()
+                .scale(y)
+                .orient("left")
+                .ticks(10);
+
+            var svg = d3.select("body").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            d3.tsv(path, type, function(error, data) {
+                if (error) throw error;
+
+                x.domain(data.map(function(d) {
+                    return d.Range;
+                }));
+                y.domain([0, d3.max(data, function(d) {
+                    return d.Frequency;
+                })]);
+
+                svg.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(xAxis);
+
+                svg.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis)
+                    .append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 6)
+                    .attr("dy", ".71em")
+                    .style("text-anchor", "end")
+                    .text("Frequency");
+
+                svg.selectAll(".bar")
+                    .data(data)
+                    .enter().append("rect")
+                    .attr("class", "bar")
+                    .attr("x", function(d) {
+                        return x(d.Range);
+                    })
+                    .attr("width", x.rangeBand())
+                    .attr("y", function(d) {
+                        return y(d.Frequency);
+                    })
+                    .attr("height", function(d) {
+                        return height - y(d.Frequency);
+                    });
+            });
+        }
+
+        function type(d) {
+            d.Frequency = +d.Frequency;
+            return d;
+        }
+
+        window.onload = function() {
+
+            var mime_type = d3.select("select#mime_type")[0][0].value;
+            d3.select("select#mime_type").on("change", function() {
+                mime_type = this.value;
+                path = "../../data/team14-eval-data/filesize_diversity_data/" + mime_type + "_data.tsv";
+                main(path);
+            });
+
+            main("../../data/team14-eval-data/filesize_diversity_data/application_mp4_data.tsv");
+        }
+
+    </script>

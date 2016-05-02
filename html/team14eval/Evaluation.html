@@ -1,0 +1,85 @@
+<html ng-app='app'>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery-1.12.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        .nav-tabs>li.active>a,
+        .nav-tabs>li.active>a:focus,
+        .nav-tabs>li.active>a:hover {
+            background-color: grey;
+            color: white;
+        }
+        
+        .nav-tabs>li>a {
+            color: black;
+        }
+        
+        .nob {
+            border: 0px;
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tab-content {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a data-toggle="tab" href="#classification_path">Classification Path</a></li>
+                    <li><a data-toggle="tab" href="#file_size_diversity">File Size Diversity</a></li>
+                    <li><a data-toggle="tab" href="#text_retrieved">Text Retrieved</a></li>
+                    <li><a data-toggle="tab" href="#metadata_retrieved">Metadata Retrieved</a></li>
+                    <li><a data-toggle="tab" href="#language_diversity">Language Diversity</a></li>
+                    <li><a data-toggle="tab" href="#word_cloud">Word Cloud</a></li>
+                    <li><a data-toggle="tab" href="#maximal_joint_agreement_ner">Max Joint Agreement NER</a></li>
+                    <li><a data-toggle="tab" href="#measurements_spectrum">Spectrum of Measurements</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+
+        <div class="tab-content">
+            <div id="classification_path" class="tab-pane fade in active">
+                <iframe src="Classification Path.html" class="nob"></iframe>
+            </div>
+            <div id="file_size_diversity" class="tab-pane fade">
+                <iframe src="File Size Diversity.html" class="nob"></iframe>
+            </div>
+            <div id="text_retrieved" class="tab-pane fade">
+                <iframe src="Text Retrieved.html" class="nob"></iframe>
+            </div>
+            <div id="metadata_retrieved" class="tab-pane fade">
+                <iframe src="Metadata Retrieved.html" class="nob"></iframe>
+            </div>
+            <div id="language_diversity" class="tab-pane fade">
+                <iframe src="Language Diversity Dashboard.html" class="nob"> </iframe>
+            </div>
+            <div id="word_cloud" class="tab-pane fade">
+                <iframe src="Word Cloud.html" class="nob"> </iframe>
+            </div>
+            <div id="maximal_joint_agreement_ner" class="tab-pane fade">
+                <iframe src="Maximal Joint Agreement NER.html" class="nob"> </iframe>
+            </div>
+            <div id="measurements_spectrum" class="tab-pane fade">
+                <iframe src="Measurements Spectrum.html" class="nob"> </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

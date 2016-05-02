@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grobid Quantity NER</title>
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+
+<script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+
+
+
+.bar--positive {
+  fill: steelblue;
+}
+
+.bar--negative {
+  fill: darkorange;
+}
+
+.axis text {
+  font: 9px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/>
+    <div class="container">
+<h2>Horizontal Bar Chart showing Frequency of Occurrence of different measurement units identified by the Grobid Quantity Parser</h2>
+
+<script>
+
+var fileName="../../data/team22-spring-2016-data/content-evaluation/grobid_quantity_output.json";  
+
+$.getJSON(fileName, function(json) {
+      var data=[];
+      var max=0;
+      var count=0;
+      var v=0;
+        $.each(json, function(i,field){
+          count=parseInt(field);
+          if(count>max)
+            max=count;
+        });
+
+       $.each(json, function(i,field){
+        count=parseInt(field);
+
+        console.log(i);
+        data.push({name: i,compandedValue:count ,value:count});
+  });
+
+
+
+var margin = {top: 20, right: 30, bottom: 40, left: 200},
+    width = 1500 - margin.left - margin.right,
+    height = 6000 - margin.top - margin.bottom;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+var x1 = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.ordinal()
+    .rangeRoundBands([0, height], 0.1);
+
+var xAxis = d3.svg.axis()
+    .scale(x1)
+    .orient("top");
+var x1Axis = d3.svg.axis()
+    .scale(x1)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickSize(0)
+    .tickPadding(6);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+x1.domain(d3.extent(data, function(d) { return d.value; })).nice();
+
+x.domain(d3.extent(data, function(d) { return d.compandedValue; })).nice();
+  y.domain(data.map(function(d) { return d.name; }));
+
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", function(d) { return "bar bar--" + (d.compandedValue < 0 ? "negative" : "positive"); })
+      .attr("x", function(d) { return x(Math.min(0, d.compandedValue)); })
+      .attr("y", function(d) { return y(d.name); })
+      .attr("width", function(d) { return Math.abs(x(d.compandedValue) - x(0)); })
+      .attr("height", y.rangeBand());
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .call(xAxis);
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0,"+height+")")
+      .call(x1Axis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + x(0) + ",0)")
+      .call(yAxis);
+
+});
+function type(d) {
+  d.value = +d.value;
+  return d;
+}
+
+</script>
+</div>
+</body>

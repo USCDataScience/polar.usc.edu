@@ -1,0 +1,5 @@
+unit,count,min,max,average
+turn,1,180.0,180.0,180.0
+Years,2,40.0,40.0,40.0
+pico,1,4.0,4.0,4.0
+degrees,2,20.0,20.0,20.0

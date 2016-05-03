@@ -1,0 +1,4 @@
+unit,count,min,max,average
+miles,6,336.0,336.0,336.0
+kilometer,6,30.0,30.0,30.0
+acres,5,543.0,543.0,543.0

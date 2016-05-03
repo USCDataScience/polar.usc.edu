@@ -1,0 +1,6 @@
+unit,count,min,max,average
+months,8,6.0,24.0,15.0
+minutes,2,30.0,30.0,30.0
+digits,1,10.0,10.0,10.0
+times,1,4.0,4.0,4.0
+length,1,0.0,0.0,0.0

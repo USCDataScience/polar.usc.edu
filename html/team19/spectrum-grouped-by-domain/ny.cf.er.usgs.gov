@@ -1,0 +1,5 @@
+unit,count,min,max,average
+year,1,100.0,100.0,100.0
+years,3,30.0,30.0,30.0
+legislation,1,2003.0,2003.0,2003.0
+feet,2,7.0,16.0,11.5

@@ -1,0 +1,2 @@
+unit,count,min,max,average
+cm,2,20.0,43.3,31.65

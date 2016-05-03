@@ -1,0 +1,4 @@
+unit,count,min,max,average
+nm,4,665.0,670.0,667.25
+months,2,6.0,24.0,15.0
+minutes,1,30.0,30.0,30.0

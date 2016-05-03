@@ -1,0 +1,4 @@
+unit,count,min,max,average
+page,1,99.0,99.0,99.0
+minutes,1,15.0,15.0,15.0
+hours,5,4.0,24.0,20.0

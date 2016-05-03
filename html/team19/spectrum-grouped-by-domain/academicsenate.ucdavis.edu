@@ -1,0 +1,5 @@
+unit,count,min,max,average
+units,25,3.0,72.0,20.4
+unit,1,1.0,1.0,1.0
+pages,3,5.0,10.0,8.333333333333334
+quarter,1,15.0,15.0,15.0

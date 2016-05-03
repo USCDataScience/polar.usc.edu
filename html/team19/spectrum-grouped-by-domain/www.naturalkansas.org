@@ -1,0 +1,2 @@
+unit,count,min,max,average
+miles,5,4.4,6.3,5.5200000000000005

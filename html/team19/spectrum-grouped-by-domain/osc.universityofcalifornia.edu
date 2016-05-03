@@ -1,0 +1,8 @@
+unit,count,min,max,average
+months,12,6.0,12.0,10.5
+volumes,1,9.0,9.0,9.0
+length,1,0.0,0.0,0.0
+minutes,1,5.0,5.0,5.0
+years,2,2.0,2.0,2.0
+survey,1,2011.0,2011.0,2011.0
+Section,1,1.0,1.0,1.0

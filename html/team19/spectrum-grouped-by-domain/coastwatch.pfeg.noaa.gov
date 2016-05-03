@@ -1,0 +1,3 @@
+unit,count,min,max,average
+minutes,8,5.0,10080.0,1268.75
+bit,13,32.0,64.0,54.15384615384616

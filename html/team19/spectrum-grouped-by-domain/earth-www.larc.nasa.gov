@@ -1,0 +1,5 @@
+unit,count,min,max,average
+hour,2,1997.0,1997.0,1997.0
+micron,1,10.7,10.7,10.7
+degree,1,60.0,60.0,60.0
+cm,5,1.5,5.0,3.0

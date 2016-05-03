@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,2,132.0,150.0,141.0
+acre,1,265.0,265.0,265.0
+inches,1,36.0,36.0,36.0

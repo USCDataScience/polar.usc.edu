@@ -1,0 +1,2 @@
+unit,count,min,max,average
+minutes,9,5.0,45.0,22.77777777777778

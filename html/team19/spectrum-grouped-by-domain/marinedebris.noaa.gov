@@ -1,0 +1,7 @@
+unit,count,min,max,average
+min,1,18.0,18.0,18.0
+times,1,30.0,30.0,30.0
+feet,1,55.0,55.0,55.0
+entries,1,55.0,55.0,55.0
+months,2,6.0,24.0,15.0
+minutes,1,30.0,30.0,30.0

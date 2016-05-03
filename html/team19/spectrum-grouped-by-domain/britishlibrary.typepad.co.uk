@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,8,15.0,200.0,75.0
+edition,2,1943.0,1943.0,1943.0
+hours,2,72.0,72.0,72.0
+year,2,12.0,12.0,12.0

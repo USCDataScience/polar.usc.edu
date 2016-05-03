@@ -1,0 +1,2 @@
+unit,count,min,max,average
+entries,7,7.0,69.0,26.142857142857142

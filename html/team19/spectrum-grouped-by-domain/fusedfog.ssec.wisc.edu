@@ -1,0 +1,4 @@
+unit,count,min,max,average
+feet,2,1000.0,2000.0,1500.0
+hours,1,2.0,2.0,2.0
+meters,1,1600.0,1600.0,1600.0

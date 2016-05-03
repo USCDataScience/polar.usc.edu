@@ -1,0 +1,5 @@
+unit,count,min,max,average
+system,6,3.0,5.0,4.333333333333333
+hours,1,24.0,24.0,24.0
+entries,1,800.0,800.0,800.0
+years,1,40.0,40.0,40.0

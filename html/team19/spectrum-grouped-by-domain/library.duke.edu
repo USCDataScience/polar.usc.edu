@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,4,24.0,24.0,24.0
+pages,3,6.0,25.0,12.333333333333334
+parts,2,4.0,4.0,4.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+hour,1,24.0,24.0,24.0
+day,1,90.0,90.0,90.0
+years,1,7.0,7.0,7.0
+acres,1,98.0,98.0,98.0

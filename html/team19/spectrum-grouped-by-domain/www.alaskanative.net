@@ -1,0 +1,4 @@
+unit,count,min,max,average
+acres,3,26.0,26.0,26.0
+foot,1,30.0,30.0,30.0
+year,1,15.0,15.0,15.0

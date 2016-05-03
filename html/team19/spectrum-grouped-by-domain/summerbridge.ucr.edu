@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,1,4.0,4.0,4.0
+part,1,35.0,35.0,35.0
+miles,6,40.0,40.0,40.0

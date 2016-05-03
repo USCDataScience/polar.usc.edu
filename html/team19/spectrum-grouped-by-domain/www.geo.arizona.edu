@@ -1,0 +1,4 @@
+unit,count,min,max,average
+meters,1,40.0,40.0,40.0
+feet,1,131.0,131.0,131.0
+years,2,1200.0,2000.0,1600.0

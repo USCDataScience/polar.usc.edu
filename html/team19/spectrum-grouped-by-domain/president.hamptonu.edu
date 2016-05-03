@@ -1,0 +1,7 @@
+unit,count,min,max,average
+Years,2,30.0,41.0,35.5
+pounds,1,15.0,15.0,15.0
+times,2,2.4,8.4,5.4
+points,2,300.0,300.0,300.0
+hours,1,40.0,40.0,40.0
+year,1,4.0,4.0,4.0

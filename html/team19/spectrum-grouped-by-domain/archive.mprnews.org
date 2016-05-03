@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,13,4.0,40.0,21.076923076923077
+minutes,1,90.0,90.0,90.0
+acres,1,320.0,320.0,320.0

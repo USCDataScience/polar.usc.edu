@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,2,4.0,48.0,26.0
+kilometers,1,550.0,550.0,550.0
+miles,1,340.0,340.0,340.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+Years,3,3.0,15.0,7.0
+times,2,20.0,20.0,20.0
+hectares,2,207.0,207.0,207.0
+Year,1,15.0,15.0,15.0

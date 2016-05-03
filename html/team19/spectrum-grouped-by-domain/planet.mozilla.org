@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,1,10.0,10.0,10.0
+bits,1,26.0,26.0,26.0
+times,1,100.0,100.0,100.0

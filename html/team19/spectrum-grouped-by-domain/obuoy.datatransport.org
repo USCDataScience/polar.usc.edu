@@ -1,0 +1,2 @@
+unit,count,min,max,average
+degrees,1,67.5,67.5,67.5

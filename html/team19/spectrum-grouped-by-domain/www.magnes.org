@@ -1,0 +1,5 @@
+unit,count,min,max,average
+miles,1,0.9,0.9,0.9
+mile,1,1.0,1.0,1.0
+years,1,40.0,40.0,40.0
+edition,1,2010.0,2010.0,2010.0

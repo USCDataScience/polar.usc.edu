@@ -1,0 +1,4 @@
+unit,count,min,max,average
+foot,1,100.0,100.0,100.0
+minutes,1,45.0,45.0,45.0
+hours,1,2.0,2.0,2.0

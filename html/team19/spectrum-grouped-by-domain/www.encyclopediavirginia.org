@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,1,300.0,300.0,300.0
+pounds,1,175.0,175.0,175.0
+page,1,1.0,1.0,1.0

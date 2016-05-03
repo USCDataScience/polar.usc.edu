@@ -1,0 +1,5 @@
+unit,count,min,max,average
+degrees,3,57.0,157.0,91.33333333333334
+inches,2,54.0,75.0,64.5
+minutes,2,52.0,53.0,52.5
+miles,1,1.5,1.5,1.5

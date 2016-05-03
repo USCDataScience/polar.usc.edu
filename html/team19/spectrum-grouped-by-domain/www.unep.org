@@ -1,0 +1,10 @@
+unit,count,min,max,average
+Years,4,20.0,60.0,32.5
+Year,1,1.0,1.0,1.0
+months,1,6.0,6.0,6.0
+minutes,1,16.0,16.0,16.0
+hours,1,24.0,24.0,24.0
+edition,2,2014.0,2014.0,2014.0
+Section,1,1.0,1.0,1.0
+length,1,0.0,0.0,0.0
+transitions,1,2.0,2.0,2.0

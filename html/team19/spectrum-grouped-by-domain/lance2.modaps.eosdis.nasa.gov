@@ -1,0 +1,4 @@
+unit,count,min,max,average
+pixel,1,1.0,1.0,1.0
+minutes,1,15.0,15.0,15.0
+hours,4,2.5,48.0,14.375

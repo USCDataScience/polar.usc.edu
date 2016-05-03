@@ -1,0 +1,5 @@
+unit,count,min,max,average
+hour,2,2.0,24.0,13.0
+months,2,6.0,24.0,15.0
+minutes,3,30.0,40.0,33.33333333333333
+degrees,1,55.0,55.0,55.0

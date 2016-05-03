@@ -1,0 +1,3 @@
+unit,count,min,max,average
+Months,22,3.0,6.0,5.590909090909089
+Frequency,1,2013.0,2013.0,2013.0

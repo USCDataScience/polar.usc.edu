@@ -1,0 +1,3 @@
+unit,count,min,max,average
+feet,1,15.0,15.0,15.0
+kb,2,153.0,607.0,380.0

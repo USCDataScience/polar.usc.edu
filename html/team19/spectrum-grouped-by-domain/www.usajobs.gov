@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,8,3.0,60.0,35.25
+year,1,1.0,1.0,1.0
+hours,9,2.0,640.0,106.0
+point,1,10.0,10.0,10.0

@@ -1,0 +1,3 @@
+unit,count,min,max,average
+meter,4,2.5,20.0,11.875
+meters,1,12.2,12.2,12.2

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+units,100,2.0,240.0,37.32999999999999
+unit,2,1.0,1.0,1.0
+quarter,3,1.0,135.0,48.0
+quarters,6,2.0,2.0,2.0

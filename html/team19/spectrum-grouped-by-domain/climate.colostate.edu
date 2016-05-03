@@ -1,0 +1,4 @@
+unit,count,min,max,average
+day,1,30.0,30.0,30.0
+degrees,14,2.0,20.0,6.928571428571427
+months,1,3.0,3.0,3.0

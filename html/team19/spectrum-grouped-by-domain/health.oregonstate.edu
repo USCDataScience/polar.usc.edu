@@ -1,0 +1,8 @@
+unit,count,min,max,average
+quarter,6,3.0,90.0,24.0
+hours,1,50.0,50.0,50.0
+years,5,2.0,30.0,17.4
+pounds,2,135.0,300.0,217.5
+minute,1,2.0,2.0,2.0
+minutes,1,40.0,40.0,40.0
+months,1,6.0,6.0,6.0

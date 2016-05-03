@@ -1,0 +1,4 @@
+unit,count,min,max,average
+section,16,10.8,10.8,10.800000000000004
+point,1,10.5,10.5,10.5
+years,1,30.0,30.0,30.0

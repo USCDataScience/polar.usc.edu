@@ -1,0 +1,5 @@
+unit,count,min,max,average
+meters,2,3.5,3.5,3.5
+meter,1,3.5,3.5,3.5
+micron,1,0.55,0.55,0.55
+times,3,10.0,1000.0,350.0

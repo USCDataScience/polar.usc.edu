@@ -1,0 +1,3 @@
+unit,count,min,max,average
+d,4,10.0,50.0,30.000000000000004
+times,1,4.0,4.0,4.0

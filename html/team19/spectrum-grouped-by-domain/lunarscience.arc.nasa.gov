@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,1,50.0,50.0,50.0
+year,1,14.0,14.0,14.0
+m2,1,80.0,80.0,80.0

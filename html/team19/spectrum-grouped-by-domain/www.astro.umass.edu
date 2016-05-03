@@ -1,0 +1,3 @@
+unit,count,min,max,average
+entries,1,2000.0,2000.0,2000.0
+volumes,1,4.0,4.0,4.0

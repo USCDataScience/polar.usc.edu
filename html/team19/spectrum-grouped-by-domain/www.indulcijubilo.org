@@ -1,0 +1,2 @@
+unit,count,min,max,average
+d,1,1978.0,1978.0,1978.0

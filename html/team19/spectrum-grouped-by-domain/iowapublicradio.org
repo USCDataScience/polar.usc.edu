@@ -1,0 +1,3 @@
+unit,count,min,max,average
+years,3,21.0,29.0,25.333333333333332
+pounds,3,35.0,79.2,56.1

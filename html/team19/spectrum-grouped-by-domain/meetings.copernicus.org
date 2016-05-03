@@ -1,0 +1,7 @@
+unit,count,min,max,average
+minutes,3,2.0,20.0,12.666666666666666
+minute,1,2.0,2.0,2.0
+min,1,30.0,30.0,30.0
+years,1,10.0,10.0,10.0
+kilometers,1,19.0,19.0,19.0
+pages,4,8.0,8.0,8.0

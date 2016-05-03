@@ -1,0 +1,7 @@
+unit,count,min,max,average
+years,2,5.0,10.0,7.5
+times,2,1.54,7.0,4.27
+edition,1,2010.0,2010.0,2010.0
+months,1,18.0,18.0,18.0
+year,1,4.0,4.0,4.0
+sections,2,24.0,24.0,24.0

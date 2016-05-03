@@ -1,0 +1,5 @@
+unit,count,min,max,average
+square,1,25.0,25.0,25.0
+time,1,2030.0,2030.0,2030.0
+legislation,1,32.0,32.0,32.0
+degrees,1,2.0,2.0,2.0

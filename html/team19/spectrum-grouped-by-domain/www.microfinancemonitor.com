@@ -1,0 +1,9 @@
+unit,count,min,max,average
+Years,1,3.0,3.0,3.0
+degrees,1,45.0,45.0,45.0
+feet,1,19.0,19.0,19.0
+inches,1,8.0,8.0,8.0
+meters,1,6.0,6.0,6.0
+centimeters,1,120.0,120.0,120.0
+pounds,1,128.0,128.0,128.0
+kilograms,1,58.0,58.0,58.0

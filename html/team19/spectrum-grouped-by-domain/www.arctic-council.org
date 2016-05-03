@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,2,16.0,100.0,58.0
+day,1,1.0,1.0,1.0
+kilometers,1,5400.0,5400.0,5400.0

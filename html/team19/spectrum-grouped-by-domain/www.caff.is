@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,1,30.0,30.0,30.0
+decisions,1,11.0,11.0,11.0
+d,1,50.0,50.0,50.0

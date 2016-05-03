@@ -1,0 +1,4 @@
+unit,count,min,max,average
+energy,1,8.0,8.0,8.0
+months,1,6.0,6.0,6.0
+years,2,11.0,22.0,16.5

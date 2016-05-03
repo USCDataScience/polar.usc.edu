@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,2,10.0,100.0,55.0
+months,1,5.0,5.0,5.0
+volumes,5,2.0,11.0,5.6
+cm,1,30.0,30.0,30.0

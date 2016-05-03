@@ -1,0 +1,5 @@
+unit,count,min,max,average
+quarter,1,90.0,90.0,90.0
+hours,1,10.0,10.0,10.0
+minutes,1,30.0,30.0,30.0
+units,1,80.0,80.0,80.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+minutes,1,30.0,30.0,30.0
+hours,3,9.0,48.0,22.0
+meter,2,40.0,40.0,40.0
+cm,2,10.0,30.0,20.0

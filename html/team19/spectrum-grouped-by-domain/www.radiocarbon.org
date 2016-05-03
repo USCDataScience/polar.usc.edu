@@ -1,0 +1,2 @@
+unit,count,min,max,average
+Frequency,1,4.559,4.559,4.559

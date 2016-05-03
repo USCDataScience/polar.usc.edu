@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,4,12.0,12.0,12.0
+degrees,39,10.0,75.0,47.05128205128205
+hour,1,12.0,12.0,12.0

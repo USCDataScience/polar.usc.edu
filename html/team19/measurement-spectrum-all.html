@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+/*
+.chart rect {
+  fill: steelblue;
+}
+*/
+.chart .legend {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: start;
+  font-size: 12px;
+}
+
+.chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.chart .label {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+</style>
+<svg class="chart"></svg>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var data = {
+  labels: ['Years', 'Minutes', 'Section', 'Inch', 'Feet', 'Months', 'Edition', 'Pages', 'Year', 'Steps', 'Hours', 'Survey', 'Miles', 'Parts', 'pixel', 'Hour', 'Degrees', 'rod', 'kB', 'Acres', 'Pounds', 'Inches', 'Times', 'Bytes', 'bit', 'degree', 'Page', 'mil', 'Part', 'M', 'nM', 'S', 'Min', 'mM', 'micron', 'T', 'Meters', 'Kilometers', 'cM', 'mile', 'knot', 'H', 'Time', 'E', 'Quarters', 'pound', 'hand', 'bar', 'Foot', 'base', 'centimeters', 'Points', 'Point', 'grams', 'D', 'Sections', 'Yards', 'Water', 'Legislation', 'ENERGY', 'mg', 'Minute', 'Document', 'mass', 'kG', 'Laboratory', 'Digits', 'Transitions', 'square', 'millimeters', 'Units', 'millimeter', 'Squares', 'Ounces', 'Deals', 'acre', 'Numbers', 'System', 'Periods', 'ha', 'Gallons', 'ounce', 'Bits', 'kHz', 'volt', 'Length', 'm/s', 'turn', 'pico', 'hecto', 'kilo', 'kilogram', 'kilograms', 'Liters', 'Barrel', 'liter', 'kilometer', 'hectares', 'tonne', 'Quantity', 'cup', 'Lists', 'M3', 'Chain', 'gallon', 'Decisions', 'Entries', 'centimeter', 'second', 'Volumes', 'laser', 'ps', 'micrometer', 'Examples', 'Speed', 'nS', 'Radiation', 'hertz', 'Frequency', 'm2/s', 'm2', 'Atoms', 'Colors', 'pints', 'wavelengths', 'Quarter', 'Step', 'cm3', 'lengths', 'mega', 'fluid', 'quart', 'Dimensions', 'gram', 'ton', 'kelvin', 'Grains', 'milligrams', 'nanometer', 'hectare', 'milligram', 'watt', 'Names', 'byte', 'micro', 'Quantities', 'RAD', 'Amount', 'm/s2', 'Newtons', 'atom', 'cm/s2', 'dynes', 'Unit', 'cord', 'Stone', 'milliliters', 'molecule', 'FM', 'ed.', 'Cal', 'Ph', 'teaspoons', 'Stones', 'Gases', 'Cables', 'pint', 'yard', 'kbit', 'mol', 'rem', 'league', 'fathoms', 'carat', 'cylinders', 'prefixes', 'dm3', 'Grain', 'milliliter', 'teaspoon', 'tablespoon', 'Symbols', 'Chains', 'Rods', 'furlongs', 'lumens', 'quarts', 'fathom', 'mole', 'deci', 'centi', 'milli', 'Clocks', 'cd/m2', 'weight', 'bushels', 'barn', 'henry', 'Siemens', 'Force', 'radian', 'gamma', 'gray', 'bpp', 'newton', 'microgram', 'joule', 'coulomb', 'lumen', 'neper', 'erg', 'decimeter', 'decimeters', 'm1', 'cGy', 'nano', 'bushel', 'gill', 'becquerel', 'peck', 'conforms', 'troy', 'avoirdupois', 'megagram', 'cm2/s', 'dram', 'deka', 'kibibyte', 'mebibyte', 'gibibyte', 'tebibyte', 'pebibyte', 'exbibyte', 'kg/mol', 'kilobit', 'femto', 'yocto', 'trits', 'dyn', 'hm2', 'dam2', 'pecks', 'township', 'bel', 'drachm'],
+  series: [
+    {
+      label: 'min',
+      values: [2.0, 5.0, 85721.0, 0.005, 1.0, 2.0, 2014.0, 3.0, 31.0, 12.0, 1.0, 0.000191, 1.25, 0.0071, 0.0, 0.0, 10.0, 1.0, 3.0, 2.83, 1.12, 0.004, 0.05, 3.0, 0.0, 0.0, 179.0, 0.57, 4.0, -3000.0, 0.2, 0.0, 1.0, 0.08, 0.004, 0.0, 0.3, 0.5, 0.0, 0.04, 0.1, 0.0, 2015.0, 891254.0, 2.0, 0.0022046, 1.0, 1e-05, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, 20.0, 2.0, 13.0, 24.0, 0.001, 0.0, 0.0, 1.0, 8.0, 13.0, 4.0, 2.0, 0.0066943799902, 0.0001, 0.0, 0.001, 3.0, 2e-06, 1.0, 0.0, 1.0, 1.0, 17.0, 0.0, 4.7, 3.53e-05, 0.0, 10.0, 1.0, 0.0, 0.0, 2.0, 1e-12, 10.0, 1.0, 0.001, 0.01192, 1.000025, 1.0, 0.001, 0.01, 0.1, 0.43971, 33.0, 0.0, 10.0, 0.0, 1.0, 0.2642, 15.0, 0.0, 0.01, 0.01, 2.0, 1.0, 0.5, 0.0, 2.0, 2.0, 3300.0, 2.0, 0.0, 4.0, 0.1, 0.0, 0.0, 5.4, 1.0, 2.0, 1.0, 0.1, 0.08, 2.0, 30.0, 1.0, 1.0, 8.0, 0.001, 0.034, 0.06, 0.0, 0.0005, 0.1, 0.1, 0.0005, 0.1, 4.2, 0.0, 0.001, 1.06, 0.00872665, 10.0, 1e-05, 0.2, 0.0, 0.02, 1.35, 0.5, 1.0, 73.0, 2.0, 1.0, 91.9, 1.0, 4.0, 80301.0, 2.0, 3.0, 3.0, 4.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.0, 0.54681, 0.01, 3.0, 2.0, 0.5, 320.0, 0.5, 1.0, 1.0, 3.3, 8.0, 4.0, 2.0, 12.57, 1.0567, 0.547, 1.0, 0.1, 0.01, 0.001, 40.4, 80.0, 0.05, 2.5, 1.0, 22.0, 1.11265e-12, 5182641.0, 1.0, 0.1, 0.0, 1.0, 0.00980665, 0.004, 0.1602, 1.0, 0.1, 1.0, 1.0, 1.0, 1.2, 500.0, 1000.0, 1e-06, 0.4, 184.0, 37000000000.0, 1.0, 2002.0, 0.473, 1.09714, 0.9072, 0.06, 1.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.001, 1.0, 1960.0, 1991.0, 6.0, 1.0, 1.0, 1.0, 4.0, 4.0, 1.0, 6.0]
+    },
+    {
+      label: 'max',
+      values: [25.0, 100.0, 85721.0, 152.0, 8847.0, 36.0, 2015.0, 92.0, 31.0, 12.0, 6500.0, 5280.0, 500.0, 6000.0, 8192.0, 640.0, 85.0, 150.0, 450.0, 1640.0, 2000.0, 355.0, 689209100.0, 1045227520.0, 7372800.0, 6000.0, 179.0, 93106.0, 2012.0, 6700.0, 1854.0, 116.0, 480.0, 940.0, 1000.0, 14850.0, 10000.0, 1000.0, 3500.0, 9000.0, 250.0, 8573.0, 2015.0, 891254.0, 2014.0, 5277.0, 7034.0, 2015.0, 6000.0, 45997.0, 100000.0, 71015.0, 36000.0, 670000000.0, 958332983.0, 300.0, 1760.0, 2015.0, 2013.0, 2010.0, 5101.0, 750.0, 19115.0, 21115.0, 8.0, 6920.0, 4.0, 2011.0, 191976.0, 9999.0, 400.0, 1000.0, 64.0, 1000.0, 10373.0, 6400.0, 2013.0, 2014.0, 2002.0, 16000.0, 50.0, 523.0, 2048.0, 10.0, 800.0, 416.0, 299792458.0, 2010.0, 1960.0, 1795.0, 1000000.0, 1000000.0, 6000.0, 750.0, 8000.0, 2214.0, 6000.0, 14000.0, 200.0, 33.0, 14.0, 25.0, 1000000000.0, 100.0, 3000.0, 15.0, 1114112.0, 165.0, 2014.0, 6089.0, 23000.0, 2009.0, 1000.0, 24.0, 2.0, 3300.0, 27.0, 9192631770.0, 21.0, 40000.0, 1000000.0, 0.0, 256.0, 644.0, 1650763.73, 2015.0, 4978220.0, 1000.0, 35.0, 1024.0, 200.0, 70.0, 8.0, 2000.0, 369000.0, 5200.0, 1500.0, 20000.0, 860.0, 500000.0, 80.0, 9809.5, 182.0, 27000.0, 5477.0, 10.0, 2009.0, 2010.0, 274.0, 491.0, 2005.0, 980.0, 2744.0, 216.0, 3.0, 968.0, 500.0, 594.0, 102.3, 2012.0, 8200.0, 90274.0, 768.0, 35.0, 9.3, 600.0, 53.0, 6449.0, 1000.0, 1800.0, 7000.0, 2015.0, 1000.0, 45.52, 1024.0, 2008.0, 1.000028, 320.0, 550.0, 2.0, 4.0, 3.3, 8.0, 12.0, 8.0, 5200.0, 400.0, 100.0, 76.0, 1.0, 1795.0, 1795.0, 40.4, 3000.0, 2000.0, 308.0, 3.0, 898755400000.0, 1000000000.0, 5182641.0, 1.0, 2001.0, 33117.0, 24.0, 16000.0, 20.0, 4184000000.0, 96521.9, 683.0, 1.0, 1052.0, 1.0, 10.0, 500.0, 1000.0, 8080.0, 85.0, 184.0, 37000000000.0, 1.0, 2002.0, 503.0, 2.2046, 1.0, 1.0, 2.0, 10.0, 10241.0, 10242.0, 10243.0, 10244.0, 10245.0, 10246.0, 0.0289644, 256.0, 1960.0, 1991.0, 6.0, 980665.0, 1.0, 1.0, 4.0, 4.0, 1.0, 6.0]
+    },
+    {
+      label: 'average',
+      values: [13.5, 31.108108108108116, 85721.0, 5.9765152927669405, 522.9924626865671, 11.852459016393444, 2014.6666666666665, 30.25, 31.0, 12.0, 42.46472248088954, 1511.0575430653196, 69.27775510204079, 234.87644128440354, 714.1359976851855, 14.365147058823485, 47.57142857142857, 57.55555555555556, 201.66666666666666, 302.20826923076936, 178.40700934579436, 24.311781249999992, 991749.3214532405, 32666320.359687496, 722.864278093884, 17.28083154602469, 179.0, 877.3564034334762, 675.0, 593.8231462857135, 423.35913978494654, 15.393212820512835, 22.854977777777755, 84.71860526315791, 29.778146687347665, 555.6925490196077, 643.6678546712802, 178.1711340206187, 45.042035381638854, 54.39947006172834, 30.941532258064527, 155.34801980198029, 2015.0, 891254.0, 143.58225806451614, 287.63586692562166, 534.8666666666667, 86.30632947867296, 136.82934420168064, 1487.1388206388208, 102.73667075621253, 1079.9230827067674, 1397.6807692307693, 664198.9127261484, 3387310.451011709, 42.357142857142854, 228.32641509433967, 410.4, 1504.0, 646.0, 249.43104327639776, 12.71013909224012, 1163.9090953545233, 1223.815757575757, 8.0, 3466.5, 4.0, 27.714285714285715, 597.3585670698722, 79.3097047179487, 18.034530456852778, 165.0370348101265, 18.71428571428571, 30.005238014409215, 1505.4999999999998, 241.49749249760464, 1341.6666666666667, 578.9733333333334, 1009.5, 334.916257465495, 20.94, 12.923812750632907, 70.20124999999997, 10.0, 40.10695175438596, 93.0, 863182.9402354327, 329.5, 1284.2758620691718, 848.6721311475413, 123541.16734693876, 15891.456441287408, 289.20057621621623, 116.7732118421053, 1152.7555714285716, 86.23272734939755, 25.769375621066597, 551.2413713414633, 9.473247966101699, 33.0, 1.1130434782608691, 15.0, 8620844.574336205, 34.733333333333334, 76.83430545454546, 15.0, 15352.629629629635, 15.021752577319598, 37.63793037974684, 1293.3100000000002, 1011.4947368421049, 73.874358974359, 35.396330140485226, 7.333333333333333, 2.0, 3300.0, 11.433333333333334, 119385122.82025973, 10.2, 4205.8099999999995, 1117.415541276736, 0.0, 94.23333333333333, 101.55555555555557, 26033.29496062992, 185.68656716417925, 995646.0199999999, 254.23681000000005, 17.624999999999996, 518.196153846154, 20.75, 4.041236666666665, 8.0, 109.28533597014918, 3475.977181818181, 68.37984374999996, 158.18195454545457, 1335.1161358433735, 216.8741176470589, 4660.731340795453, 6.552351612903227, 501.90807514285694, 90.24, 340.83663385826844, 255.93042780026985, 7.765000000000001, 131.49244099888884, 1010.0, 23.593874368932052, 135.0636363636364, 163.06730769230765, 492.6275, 1260.1958333333334, 9.853846153846153, 1.538461538461538, 520.5, 94.0238095238095, 212.22222222222223, 95.36666666666667, 309.09326923076935, 4726.0, 85287.5, 15.052083333333332, 17.214285714285715, 6.15, 203.0, 4.687499999999999, 311.1625098039216, 612.5428571428571, 419.015701971831, 562.0357142857143, 513.125, 262.3390797560975, 8.062, 115.8157894736842, 137.95833333333334, 0.5882369411764706, 320.0, 275.125, 1.020000000000001, 1.080808080808081, 3.3, 8.0, 8.0, 5.125000000000001, 868.535625, 44.38134, 15.076444444444444, 17.714285714285715, 0.7000000000000002, 1218.058214285714, 1182.2435517241377, 40.4, 865.0, 146.45735294117642, 93.07272727272729, 2.0, 449377700011.0, 250000047.75, 5182641.0, 1.0, 253.91250000000005, 3002.0, 9.787878787878787, 1319.861762733233, 0.7672037037037038, 209285772.71194533, 72375.9775, 171.275, 1.0, 631.7483, 1.0, 6.800000000000001, 500.0, 1000.0, 1621.7142859285716, 17.839999999999996, 184.0, 37000000000.0, 1.0, 2002.0, 20.268825, 1.1586655555555554, 0.9381333333333334, 0.37333333333333335, 1.5, 10.0, 1173.3888888888887, 549.6666666666666, 656.3333333333334, 1191.689, 1314.6923076923076, 1534.1818181818182, 0.014385760000000001, 38.15384615384615, 1960.0, 1991.0, 6.0, 287883.6, 1.0, 1.0, 4.0, 4.0, 1.0, 6.0]
+    },]
+};
+
+var chartWidth       = 300000,
+    barHeight        = 20,
+    groupHeight      = barHeight * data.series.length,
+    gapBetweenGroups = 30,
+    spaceForLabels   = 550,
+    spaceForLegend   = 150;
+
+// Zip the series data together (first values, second values, etc.)
+var zippedData = [];
+for (var i=0; i<data.labels.length; i++) {
+  for (var j=0; j<data.series.length; j++) {
+    zippedData.push(data.series[j].values[i]);
+  }
+}
+
+// Color scale
+var color = d3.scale.category20();
+var chartHeight = barHeight * zippedData.length + gapBetweenGroups * data.labels.length;
+
+var x = d3.scale.linear()
+    .domain([0, d3.max(zippedData)])
+    .range([0, chartWidth]);
+
+var y = d3.scale.linear()
+    .range([chartHeight + gapBetweenGroups, 0]);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .tickFormat('')
+    .tickSize(0)
+    .orient("left");
+
+// Specify the chart area and dimensions
+var chart = d3.select(".chart")
+    .attr("width", spaceForLabels + chartWidth + spaceForLegend)
+    .attr("height", chartHeight);
+
+// Create bars
+var bar = chart.selectAll("g")
+    .data(zippedData)
+    .enter().append("g")
+    .attr("transform", function(d, i) {
+      return "translate(" + spaceForLabels + "," + (i * barHeight + gapBetweenGroups * (0.5 + Math.floor(i/data.series.length))) + ")";
+    });
+
+// Create rectangles of the correct width
+bar.append("rect")
+    .attr("fill", function(d,i) { return color(i % data.series.length); })
+    .attr("class", "bar")
+    .attr("width", x)
+    .attr("height", barHeight - 1);
+
+// Add text label in bar
+bar.append("text")
+    .attr("x", function(d) { return x(d) + 120; })
+    .attr("y", barHeight / 2)
+    .attr("fill", "red")
+    .attr("dy", ".35em")
+    .text(function(d) { return d; });
+
+// Draw labels
+bar.append("text")
+    .attr("class", "label")
+    .attr("x", function(d) { return - 10; })
+    .attr("y", groupHeight / 2)
+    .attr("dy", ".35em")
+    .text(function(d,i) {
+      if (i % data.series.length === 0)
+        return data.labels[Math.floor(i/data.series.length)];
+      else
+        return ""});
+
+chart.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + spaceForLabels + ", " + -gapBetweenGroups/2 + ")")
+      .call(yAxis);
+
+// Draw legend
+var legendRectSize = 18,
+    legendSpacing  = 4;
+
+var legend = chart.selectAll('.legend')
+    .data(data.series)
+    .enter()
+    .append('g')
+    .attr('transform', function (d, i) {
+        var height = legendRectSize + legendSpacing;
+        var offset = -gapBetweenGroups/2;
+        var horz = spaceForLabels + chartWidth + 40 - legendRectSize;
+        var vert = i * height - offset;
+        return 'translate(' + horz + ',' + vert + ')';
+    });
+
+legend.append('rect')
+    .attr('width', legendRectSize)
+    .attr('height', legendRectSize)
+    .style('fill', function (d, i) { return color(i); })
+    .style('stroke', function (d, i) { return color(i); });
+
+legend.append('text')
+    .attr('class', 'legend')
+    .attr('x', legendRectSize + legendSpacing)
+    .attr('y', legendRectSize - legendSpacing)
+    .text(function (d) { return d.label; });
+
+</script>

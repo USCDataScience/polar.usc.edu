@@ -1,0 +1,6 @@
+unit,count,min,max,average
+years,14,4.0,200.0,42.0
+point,1,6.0,6.0,6.0
+Survey,1,2014.0,2014.0,2014.0
+times,1,10.0,10.0,10.0
+miles,1,4.0,4.0,4.0

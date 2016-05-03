@@ -1,0 +1,2 @@
+unit,count,min,max,average
+pages,5,70.0,600.0,281.2

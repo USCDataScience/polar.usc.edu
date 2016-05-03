@@ -1,0 +1,5 @@
+unit,count,min,max,average
+milligrams,1,4.6,4.6,4.6
+degrees,1,20.0,20.0,20.0
+years,3,45.0,50.0,48.333333333333336
+nm,1,490.0,490.0,490.0

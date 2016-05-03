@@ -1,0 +1,6 @@
+unit,count,min,max,average
+miles,3,620.0,620.0,620.0
+Years,9,10.0,80.0,36.88888888888889
+year,1,40.0,40.0,40.0
+minutes,1,10.0,10.0,10.0
+transitions,1,2.0,2.0,2.0

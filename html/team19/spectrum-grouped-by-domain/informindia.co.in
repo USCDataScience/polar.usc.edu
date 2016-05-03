@@ -1,0 +1,5 @@
+unit,count,min,max,average
+numbers,1,22.0,22.0,22.0
+years,5,3.0,50.0,17.6
+year,4,2011.0,2011.0,2011.0
+Sections,1,300.0,300.0,300.0

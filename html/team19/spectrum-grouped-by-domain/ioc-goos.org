@@ -1,0 +1,6 @@
+unit,count,min,max,average
+years,1,15.0,15.0,15.0
+times,1,20.0,20.0,20.0
+degree,1,0.3,0.3,0.3
+micron,1,270.0,270.0,270.0
+min,4,5.0,30.0,15.0

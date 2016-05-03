@@ -1,0 +1,5 @@
+unit,count,min,max,average
+year,1,90.0,90.0,90.0
+years,1,18.0,18.0,18.0
+months,4,6.0,12.0,9.0
+pixel,1,60.0,60.0,60.0

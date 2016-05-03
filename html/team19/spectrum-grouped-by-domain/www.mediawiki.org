@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,1,30.0,30.0,30.0
+minute,2,1.0,1.0,1.0
+Examples,1,1.0,1.0,1.0

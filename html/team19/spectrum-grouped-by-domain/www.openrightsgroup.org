@@ -1,0 +1,5 @@
+unit,count,min,max,average
+pages,3,18.0,18.0,18.0
+years,3,2.0,20.0,14.0
+Degrees,1,38.0,38.0,38.0
+point,1,10.0,10.0,10.0

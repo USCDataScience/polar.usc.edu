@@ -1,0 +1,6 @@
+unit,count,min,max,average
+survey,2,2012.0,2013.0,2012.5
+Point,1,388.0,388.0,388.0
+Year,1,5.0,5.0,5.0
+minutes,1,60.0,60.0,60.0
+degree,1,47.0,47.0,47.0

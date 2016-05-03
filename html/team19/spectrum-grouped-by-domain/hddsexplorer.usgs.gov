@@ -1,0 +1,6 @@
+unit,count,min,max,average
+Page,1,4.0,4.0,4.0
+colors,2,256.0,256.0,256.0
+square,1,32.0,32.0,32.0
+points,2,30.0,30.0,30.0
+degrees,1,90.0,90.0,90.0

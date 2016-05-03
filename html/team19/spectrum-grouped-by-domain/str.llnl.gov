@@ -1,0 +1,7 @@
+unit,count,min,max,average
+years,1,10.0,10.0,10.0
+hertz,2,6.0,8.0,7.0
+kilometers,1,100.0,100.0,100.0
+hours,4,24.0,24.0,24.0
+minutes,2,20.0,20.0,20.0
+hour,2,1.0,1.0,1.0

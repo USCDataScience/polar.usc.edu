@@ -1,0 +1,7 @@
+unit,count,min,max,average
+feet,1,30.0,30.0,30.0
+degrees,1,28.0,28.0,28.0
+kilometers,2,850.0,850.0,850.0
+miles,1,530.0,530.0,530.0
+meters,4,5.0,750.0,558.75
+years,1,30.0,30.0,30.0

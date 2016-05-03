@@ -1,0 +1,7 @@
+unit,count,min,max,average
+Points,1,100.0,100.0,100.0
+meters,2,2.4,6.6,4.5
+yards,2,2.6,7.2,4.9
+times,1,2.75,2.75,2.75
+Pages,1,2.0,2.0,2.0
+minutes,1,30.0,30.0,30.0

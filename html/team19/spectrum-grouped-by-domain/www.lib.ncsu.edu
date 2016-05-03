@@ -1,0 +1,3 @@
+unit,count,min,max,average
+meter,4,10.0,90.0,40.0
+kilometer,1,1.0,1.0,1.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+months,1,4.0,4.0,4.0
+acres,1,4.0,4.0,4.0
+years,1,30.0,30.0,30.0
+pounds,1,18.0,18.0,18.0

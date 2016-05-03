@@ -1,0 +1,4 @@
+unit,count,min,max,average
+kilometer,2,1.0,1.0,1.0
+meter,1,250.0,250.0,250.0
+degree,8,0.5,1.0,0.75

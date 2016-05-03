@@ -1,0 +1,4 @@
+unit,count,min,max,average
+feet,1,58.0,58.0,58.0
+inch,1,1.0,1.0,1.0
+years,2,4.0,30.0,17.0

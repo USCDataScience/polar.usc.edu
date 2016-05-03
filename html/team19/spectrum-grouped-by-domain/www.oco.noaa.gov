@@ -1,0 +1,3 @@
+unit,count,min,max,average
+feet,2,6000.0,6000.0,6000.0
+pounds,1,65.0,65.0,65.0

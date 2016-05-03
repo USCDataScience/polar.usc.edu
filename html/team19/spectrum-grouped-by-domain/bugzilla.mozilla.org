@@ -1,0 +1,4 @@
+unit,count,min,max,average
+bytes,33,669.0,942.0,847.7575757575759
+degrees,2,22.0,44.0,33.0
+hours,1,36.0,36.0,36.0

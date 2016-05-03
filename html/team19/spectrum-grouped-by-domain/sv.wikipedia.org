@@ -1,0 +1,4 @@
+unit,count,min,max,average
+m/s,2,65.0,80.0,72.5
+meter,2,5.2,13.0,9.1
+m,1,2.0,2.0,2.0

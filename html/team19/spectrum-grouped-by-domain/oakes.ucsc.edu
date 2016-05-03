@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,2,10.0,10.0,10.0
+quarter,2,2014.0,2014.0,2014.0
+hours,2,24.0,24.0,24.0

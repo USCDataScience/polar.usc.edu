@@ -1,0 +1,2 @@
+unit,count,min,max,average
+hours,12,3.0,23.0,11.083333333333332

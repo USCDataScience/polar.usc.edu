@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,3,7.0,40.0,29.0
+yards,1,200.0,200.0,200.0
+miles,1,10.0,10.0,10.0

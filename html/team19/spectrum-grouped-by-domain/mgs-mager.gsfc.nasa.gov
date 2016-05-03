@@ -1,0 +1,3 @@
+unit,count,min,max,average
+degrees,1,1.8,1.8,1.8
+times,2,30.0,30.0,30.0

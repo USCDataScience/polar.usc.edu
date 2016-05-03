@@ -1,0 +1,3 @@
+unit,count,min,max,average
+feet,2,7.0,7.0,7.0
+inches,2,11.0,11.0,11.0

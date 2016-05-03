@@ -1,0 +1,4 @@
+unit,count,min,max,average
+s,1,0.9,0.9,0.9
+years,2,4.0,550.0,277.0
+edition,1,2010.0,2010.0,2010.0

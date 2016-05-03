@@ -1,0 +1,7 @@
+unit,count,min,max,average
+d,1,4.0,4.0,4.0
+Units,1,3.6,3.6,3.6
+Quantities,1,4.4,4.4,4.4
+feet,1,3.0,3.0,3.0
+yard,1,1.0,1.0,1.0
+degrees,2,3.0,6.0,4.5

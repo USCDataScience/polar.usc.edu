@@ -1,0 +1,8 @@
+unit,count,min,max,average
+acres,1,419.0,419.0,419.0
+quarter,1,105.0,105.0,105.0
+minutes,3,90.0,90.0,90.0
+months,2,4.0,9.0,6.5
+years,8,2.0,4.0,2.875
+year,2,1.0,1.0,1.0
+hours,1,2.0,2.0,2.0

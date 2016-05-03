@@ -1,0 +1,4 @@
+unit,count,min,max,average
+months,2,6.0,6.0,6.0
+edition,4,2011.0,2011.0,2011.0
+pages,1,400.0,400.0,400.0

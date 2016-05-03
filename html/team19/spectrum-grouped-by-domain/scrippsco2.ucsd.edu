@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,4,19.0,1000.0,272.25
+pages,8,14.0,88.0,53.5
+kg,1,1.0,1.0,1.0
+part,1,1.0,1.0,1.0

@@ -1,0 +1,7 @@
+unit,count,min,max,average
+pages,1,50.0,50.0,50.0
+page,1,1.0,1.0,1.0
+year,1,4.0,4.0,4.0
+years,1,400.0,400.0,400.0
+units,1,12.0,12.0,12.0
+transitions,1,2.0,2.0,2.0

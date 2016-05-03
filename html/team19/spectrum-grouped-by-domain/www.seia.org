@@ -1,0 +1,2 @@
+unit,count,min,max,average
+energy,2,28.0,28.0,28.0

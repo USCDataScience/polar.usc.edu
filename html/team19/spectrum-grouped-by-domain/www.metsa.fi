@@ -1,0 +1,3 @@
+unit,count,min,max,average
+years,5,15.0,60.0,35.0
+ha,1,700.0,700.0,700.0

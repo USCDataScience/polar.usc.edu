@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,4,20.0,2000.0,1010.0
+degrees,2,65.0,65.0,65.0
+meters,2,15.0,15.0,15.0

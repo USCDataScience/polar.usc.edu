@@ -1,0 +1,2 @@
+unit,count,min,max,average
+kg,2,50.0,50.0,50.0

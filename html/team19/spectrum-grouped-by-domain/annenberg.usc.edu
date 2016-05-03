@@ -1,0 +1,6 @@
+unit,count,min,max,average
+hours,1,26.0,26.0,26.0
+years,4,10.0,23.0,17.0
+times,1,22.0,22.0,22.0
+volumes,2,2.0,3.0,2.5
+year,1,25.0,25.0,25.0

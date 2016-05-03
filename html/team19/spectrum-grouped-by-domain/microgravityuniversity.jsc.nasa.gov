@@ -1,0 +1,4 @@
+unit,count,min,max,average
+cm,12,10.0,10.0,10.0
+pounds,2,50.0,200.0,125.0
+hours,1,72.0,72.0,72.0

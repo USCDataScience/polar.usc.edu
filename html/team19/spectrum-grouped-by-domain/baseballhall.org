@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,5,26.0,86.0,44.4
+pounds,1,150.0,150.0,150.0
+feet,1,90.0,90.0,90.0

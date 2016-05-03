@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,1,11.0,11.0,11.0
+cm,2,14.0,50.0,32.0
+mm,1,8.0,8.0,8.0

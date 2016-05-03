@@ -1,0 +1,2 @@
+unit,count,min,max,average
+document,1,696.0,696.0,696.0

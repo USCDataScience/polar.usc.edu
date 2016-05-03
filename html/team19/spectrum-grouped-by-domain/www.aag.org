@@ -1,0 +1,4 @@
+unit,count,min,max,average
+Section,1,2.0,2.0,2.0
+years,4,25.0,100.0,47.0
+digits,2,10.0,10.0,10.0

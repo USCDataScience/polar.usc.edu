@@ -1,0 +1,3 @@
+unit,count,min,max,average
+years,4,25.0,60.0,42.5
+times,2,100.0,100.0,100.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+gibibyte,1,230.0,230.0,230.0
+tebibyte,1,240.0,240.0,240.0
+pebibyte,1,250.0,250.0,250.0
+exbibyte,1,260.0,260.0,260.0

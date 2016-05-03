@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,2,25.0,50.0,37.5
+feet,1,8.5,8.5,8.5
+meters,1,2.6,2.6,2.6
+miles,2,263.0,473.0,368.0

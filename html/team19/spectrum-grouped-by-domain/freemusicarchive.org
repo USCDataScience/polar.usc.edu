@@ -1,0 +1,3 @@
+unit,count,min,max,average
+foot,1,14.0,14.0,14.0
+years,3,8.0,18.0,14.666666666666666

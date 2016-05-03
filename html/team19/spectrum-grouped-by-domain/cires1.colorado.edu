@@ -1,0 +1,4 @@
+unit,count,min,max,average
+nm,1,600.0,600.0,600.0
+meters,1,2000.0,2000.0,2000.0
+years,1,10.0,10.0,10.0

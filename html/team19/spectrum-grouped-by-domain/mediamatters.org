@@ -1,0 +1,6 @@
+unit,count,min,max,average
+edition,7,27.0,27.0,27.0
+years,4,60.0,130.0,105.0
+inches,1,58.0,58.0,58.0
+hours,1,24.0,24.0,24.0
+miles,1,1000.0,1000.0,1000.0

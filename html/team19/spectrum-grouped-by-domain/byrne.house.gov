@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,2,30.0,30.0,30.0
+months,4,2.0,12.0,8.0
+ounces,3,4.0,64.0,44.0
+degrees,2,40.0,90.0,65.0

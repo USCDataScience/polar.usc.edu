@@ -1,0 +1,2 @@
+unit,count,min,max,average
+pixel,2,1.0,1.0,1.0

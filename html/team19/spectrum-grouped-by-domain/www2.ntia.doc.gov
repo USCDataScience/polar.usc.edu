@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,2,5.0,5.0,5.0
+miles,7,43.0,570.0,276.14285714285717
+system,1,911.0,911.0,911.0

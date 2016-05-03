@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,5,15.0,30.0,18.0
+feet,4,150.0,200.0,187.5
+page,1,1.0,1.0,1.0

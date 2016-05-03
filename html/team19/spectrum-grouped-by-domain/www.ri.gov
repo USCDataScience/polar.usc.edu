@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,4,4.0,100.0,31.0
+inches,1,12.0,12.0,12.0
+hand,1,56.0,56.0,56.0
+miles,2,40.0,384.0,212.0

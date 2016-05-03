@@ -1,0 +1,8 @@
+unit,count,min,max,average
+hour,4,1.0,1.0,1.0
+years,3,3.0,60.0,23.0
+mile,1,4.0,4.0,4.0
+foot,1,120.0,120.0,120.0
+minutes,2,15.0,50.0,32.5
+Dimensions,1,8.0,8.0,8.0
+months,1,15.0,15.0,15.0

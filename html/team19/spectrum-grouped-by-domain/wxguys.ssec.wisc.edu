@@ -1,0 +1,4 @@
+unit,count,min,max,average
+degrees,5,2.5,8.5,5.48
+inches,2,5.0,14.9,9.95
+years,2,20.0,25.0,22.5

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+feet,2,3000.0,3000.0,3000.0
+miles,2,60.0,60.0,60.0
+degrees,1,1.5,1.5,1.5
+cm,1,92.0,92.0,92.0

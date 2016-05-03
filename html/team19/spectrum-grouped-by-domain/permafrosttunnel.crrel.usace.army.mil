@@ -1,0 +1,10 @@
+unit,count,min,max,average
+meters,11,2.0,45.0,11.227272727272725
+inches,1,6.0,6.0,6.0
+feet,19,1.5,1000.0,171.26315789473688
+miles,2,16.0,16.0,16.0
+meter,1,1.0,1.0,1.0
+centimeters,2,5.0,45.0,25.0
+millimeters,3,0.05,1.5,0.55
+centimeter,2,1.0,1.0,1.0
+millimeter,2,1.0,1.0,1.0

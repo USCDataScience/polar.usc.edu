@@ -1,0 +1,2 @@
+unit,count,min,max,average
+years,12,67.6,72.6,70.04999999999998

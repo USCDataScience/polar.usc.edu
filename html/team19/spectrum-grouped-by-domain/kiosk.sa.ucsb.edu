@@ -1,0 +1,8 @@
+unit,count,min,max,average
+hours,4,2.0,30.0,10.25
+miles,1,2.0,2.0,2.0
+months,2,3.0,3.0,3.0
+years,3,3.0,47.0,18.333333333333332
+transitions,1,2.0,2.0,2.0
+pounds,3,5.0,15.0,10.0
+survey,1,2002.0,2002.0,2002.0

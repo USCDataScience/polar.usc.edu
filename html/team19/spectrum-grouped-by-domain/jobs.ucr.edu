@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,5,2.0,32.0,15.8
+miles,1,2500.0,2500.0,2500.0
+acres,1,40.0,40.0,40.0
+months,1,11.0,11.0,11.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,4,24.0,48.0,36.0
+minutes,2,3.0,3.0,3.0
+kHz,1,8746.0,8746.0,8746.0

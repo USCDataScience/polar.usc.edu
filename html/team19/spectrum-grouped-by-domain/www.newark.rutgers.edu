@@ -1,0 +1,6 @@
+unit,count,min,max,average
+acres,48,38.0,38.0,38.0
+Years,1,40.0,40.0,40.0
+minutes,2,15.0,20.0,17.5
+hour,1,20.0,20.0,20.0
+edition,1,2009.0,2009.0,2009.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,1,30.0,30.0,30.0
+page,1,404.0,404.0,404.0
+d,2,8.0,8.0,8.0

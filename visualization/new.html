@@ -1,0 +1,136 @@
+<html>
+
+<style>
+#container {
+    height: 400px; 
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+</style>
+<div id="container" style="height: 400px; margin-left:180px; margin-top:50px"></div>
+
+ <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column',
+            options3d: {
+                enabled: true,
+                alpha: 30,
+                beta: 0,
+                viewDistance: 25,
+                depth: 40
+            }
+        
+
+},credits: {
+            enabled: false
+        },
+
+
+        title: {
+            text: 'Measurement Distribution for Minimum - Maximum Values across the Dataset'
+        },
+
+        xAxis: {
+            categories: ['Kilometre','Celcius', 'centimeter', 'Hour', 'Kelvin', 'Volt', 'Feet', 'Fahrenheit', 'Second', 'Meter', 'Year', 'Watt', 'Ampere', 'Day', 'Mile', ]
+        },
+
+        yAxis: {
+            allowDecimals: true,
+            min: -650,
+            title: {
+                text: 'Numerical Value'
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<b>{point.key}</b><br>',
+            pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: {point.y}'
+        },
+
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                depth: 40
+            }
+        },
+	exporting: { enabled: false },
+
+        series: [{
+            name: 'Maximum',
+            data: [87,
+                   523,
+                   31.5,
+                   9,
+                   90,
+                   121,
+                   425,
+                   219,
+                   783,
+                   443,
+                   7,
+                   976,
+                   9,
+                   156,
+                   305],
+            stack: 'male'
+        },
+        {
+            name: 'Average',
+            data: [50,
+                   257.5,
+                   22,
+                   6.75,
+                   -92,
+                   102,
+                   262,
+                   18,
+                   391.5,
+                  277.5,
+                   3.5,
+                  582.5,
+                  5.25,
+                  87.5,
+                  242.5],
+            stack: 'kid'
+        },
+        {
+            name: 'Minimum',
+            data: [13,
+                   -8,
+                   12.5,
+                   4.5,
+                   -274,
+                   83,
+                   99,
+                   -183,
+                   0,
+                   112,
+                   0,
+                   189,
+                   1.5,
+                   19,
+                   180 ],
+            stack: 'female'
+
+        }
+        
+        //{
+            //name: 'Average'
+          //  data: [50,]
+            //stack: 'kid'
+        //}
+        ]
+    });
+});
+</script>
+</html>

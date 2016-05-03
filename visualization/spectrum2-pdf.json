@@ -1,0 +1,18 @@
+series: [{
+            name: 'Maximum',
+            data: [32, 1200, 92, 3, 480, 96, 850, 443, 7, 976],
+            stack: 'male'
+        },
+
+        {
+            name: 'Average',
+            data: [18.5, 601.5, 48.25, 3, 281.5, 77.5, 428, 222.5, 3.5, 535.5],
+            stack: 'kid'
+        },
+
+        {
+            name: 'Minimum',
+            data: [5, 3, 4.5, 3, 83, 59, 6, 2, 0, 189],
+            stack: 'female'
+        }
+        ]

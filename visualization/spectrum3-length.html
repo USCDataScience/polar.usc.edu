@@ -1,0 +1,88 @@
+<html>
+
+<style>
+#container {
+    height: 400px; 
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+</style>
+ <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<div id="container" style="height: 400px; margin-left:180px; margin-top:30px"></div>
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column',
+            options3d: {
+                enabled: true,
+                alpha: 30,
+                beta: 0,
+                viewDistance: 25,
+                depth: 40
+            }
+        
+
+},credits: {
+            enabled: false
+        },
+
+
+        title: {
+            text: 'Measurement Distribution for Minimum - Maximum Values across the Length units'
+        },
+
+        xAxis: {
+            categories: ['Kilometre','centimeter','Feet', 'Meter', 'Mile', ]
+        },
+
+        yAxis: {
+            allowDecimals: true,
+            min: 0,
+            title: {
+                text: 'Numerical Value'
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<b>{point.key}</b><br>',
+            pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: {point.y}'
+        },
+
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                depth: 40
+            }
+        },
+	exporting: { enabled: false },
+
+        series: [{
+            name: 'Maximum',
+            data: [87, 31.5, 425,443,305],
+            stack: 'male'
+        },
+                 {
+            name: 'Average',
+            data: [50,22,212.5,277.5,242.5],
+            stack: 'kid'
+        },
+        {
+            name: 'Minimum',
+            data: [13, 12.5, 0, 112,180 ],
+            stack: 'female'
+
+        }
+        
+        ]
+    });
+});
+</script>
+</html>

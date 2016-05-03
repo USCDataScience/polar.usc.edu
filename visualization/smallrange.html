@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="utf-8">
+<head>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+   <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.min.js"></script>
+  
+  <style type="text/css">
+  body {
+    font: 11px sans-serif;
+    margin: 10px;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .bar:hover {
+    fill: #bcbcbc ;
+  }
+
+  .x.axis path {
+    display: none;
+  }
+
+  .d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #efefef;
+    border-radius: 2px;
+  }
+
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+
+  /* Style northward tooltips differently */
+  .d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="vis" style="width: 100%; height: 100%; margin-left:20px"></div>
+<script type="text/javascript">
+
+var margin = {top: 45, right: 80, bottom: 20, left: 30},
+    width = 600 - margin.left - margin.right,
+    height = 90 - margin.top - margin.bottom;
+
+var formatvalues = d3.format("");
+
+var color = d3.scale.linear()
+          .range(["#D36ABE","#C35EDF","#7352BD","#29040B","#8812FE","#E7CFE7","#960061","#7C0032","#870042","#4E0018","#BDAED7"])
+          .domain([0,10,20,30,40,50,60,70,80,90,100]);
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], 0.1);
+
+// Scales. Note the inverted domain fo y-scale: bigger is up!
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+    
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(formatvalues);
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<strong>" + d.mimetype + "\t" + d.range + "</strong><br/><span style='color:#fff'>" + d.values + "</span>";
+  })
+
+// csv loaded asynchronously
+d3.csv("data_diversity.csv", type, function(data) {
+
+  // Data is nested by mimetype
+  var countries = d3.nest()
+      .key(function(d) { return d.mimetype; })
+      .entries(data);
+
+  // Parse dates and numbers. We assume values are sorted by date.
+  // Also compute the maximum price per symbol, needed for the y-domain.
+  // symbols.forEach(function(s) {
+  //   s.values.forEach(function(d) { d.date = parse(d.date); d.price = +d.price; });
+  //   s.maxPrice = d3.max(s.values, function(d) { return d.price; });
+  // });
+
+  // Compute the minimum and maximum range and values across symbols.
+  x.domain(data.map(function(d) { return d.range; }));
+  y.domain([0, d3.max(countries, function(s) { return s.values[0].values; })]);
+
+  // Add an SVG element for each mimetype, with the desired dimensions and margin.
+  var svg = d3.select("#vis").selectAll("svg")
+    .data(countries)
+    .enter()
+    .append("svg:svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      // Hide y axis
+      // .attr("class", "y axis")
+      // .call(yAxis)
+    .append("text")
+    .attr("x", width + 5)
+    .attr("y", height/3)
+    .attr("dy", ".71em")
+    .attr("text-anchor", "start")
+    .attr("font-size", "1.1em")
+    .text(function(d) { return d.key});
+
+  // Accessing nested data: https://groups.google.com/forum/#!topic/d3-js/kummm9mS4EA
+  // data(function(d) {return d.values;}) 
+  // this will dereference the values for nested data for each group
+  svg.selectAll(".bar")
+      .data(function(d) {return d.values;})
+      .enter()
+      .append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.range); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.values); })
+      .attr("height", function(d) { return height - y(d.values); })
+      .attr("fill", function(d) {return color(d.values)})
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+
+  svg.call(tip);
+
+});
+
+function type(d) {
+  d.values = +d.values;
+  return d;
+}
+
+</script>
+</body>
+</html>

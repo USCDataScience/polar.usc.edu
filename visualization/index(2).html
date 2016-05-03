@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Comparison of counts between OpenNLP, CoreNLP, NLTK and Common Named Entities Count'
+        },
+        xAxis: {
+            categories: ['1424609955000.pdf', '1424611198000.pptx','1424609970000', '1424609981000.pdf', '1424609999000.pdf', '1424611124000.doc','1424611172000.doc','1424611121000.xml','1424631397000.png','1424631683000.html','1424631864000.html','1424632786000.html','1424632829000.png','1424632984000.html','1424633253000.html','1424633382000.html','1424634310000.html','1424633240000.html','1424633408000.html','1424634818000.html','1424634925000.html','1424634938000.html','1424634959000.html','1424637060000.html','1428042500000.html','1428042548000.html','1428042576000.html','1424611185000.pdf','1424611186000.pdf','1424611193000.docx','1424611204000.png','1424611205000.pdf','1424611198000.ppt','1424611243000.doc'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Named Entities (count)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' Named Entities'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'CoreNLP count',
+            data: [93, 84, 66, 44,104, 64, 80, 81, 92, 81, 75, 82, 30, 41, 103, 90, 134, 14, 114, 68, 37, 66, 64, 77,150, 125, 59, 111, 51,17, 60, 115, 132, 101]
+        }, {
+            name: 'OpenNLP count',
+            data: [122, 83, 45, 13, 89, 105, 36, 81, 72, 16, 47, 76, 88, 62, 118, 52, 81, 11, 42, 93, 67, 33, 43, 18, 105, 57, 16, 20, 13, 52, 24, 104, 4, 32]
+        }, {
+            name: 'NLTK count',
+            data: [40, 14, 28, 110, 46, 96, 82, 81, 100, 76, 83, 80, 63, 19, 107, 101, 74, 32, 82, 77, 100, 36, 30, 3, 24, 57, 12, 1, 48, 37, 40, 97, 104, 58]
+        }, {
+            name: 'Common count',
+            data: [16,6,20,12,8,48,10,40,36,14,31,38,5,13,18,43,47,6,25,30,29,30,11,0,10,18,4,1,3,8,21,19,3,24]
+        }]
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="container" style="min-width: 310px; max-width: 800px; height: 2200px; margin: 0 auto"></div>
+
+</body>
+</html>

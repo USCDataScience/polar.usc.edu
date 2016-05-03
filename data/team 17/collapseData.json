@@ -1,116 +1,286 @@
 {  
-   "name":"cWJaDeWm.pdf",
+   "name":"Request",
    "children":[  
       {  
-         "name":"MEASUREMENT",
+         "name":"nsfpolardata.dyndns.org",
          "children":[  
             {  
-               "name":"WEIGHT",
+               "name":"lifewithalacrity.blogs.com",
                "children":[  
                   {  
-                     "name":"1,250 kilograms"
-                  },
-                  {  
-                     "name":"80 tons"
-                  },
-                  {  
-                     "name":"35,000 tons"
-                  },
-                  {  
-                     "name":"42,000 tons"
-                  },
-                  {  
-                     "name":"600,000 tons"
+                     "name":"http://lifewithalacrity.blogs.com/foaf.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
                   }
                ]
             },
             {  
-               "name":"HEIGHT",
+               "name":"www.gnu.org",
                "children":[  
                   {  
-                     "name":"80 kilometers"
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  },
+                  {  
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  },
+                  {  
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  },
+                  {  
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  },
+                  {  
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  },
+                  {  
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  },
+                  {  
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  },
+                  {  
+                     "name":"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
                   }
                ]
             },
             {  
-               "name":"DERIVED_UNITS",
+               "name":"bcct.unam.mx",
                "children":[  
                   {  
-                     "name":"5 Months"
-                  }
-               ]
-            }
-         ]
-      },
-      {  
-         "name":"SWEET",
-         "children":[  
-            {  
-               "name":"NONLIVING_SUBSTANCES",
-               "children":[  
-                  {  
-                     "name":"sand"
-                  },
-                  {  
-                     "name":"ore"
-                  },
-                  {  
-                     "name":"metal"
-                  },
-                  {  
-                     "name":"iron"
-                  },
-                  {  
-                     "name":"ice"
-                  },
-                  {  
-                     "name":"stone"
+                     "name":"http://bcct.unam.mx/web/fichero.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_ORGANIZATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_PERSON",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
                   }
                ]
             },
             {  
-               "name":"PHYSICAL_PROPERTIES",
+               "name":"www.epa.gov",
                "children":[  
                   {  
-                     "name":"ratio"
+                     "name":"http://www.epa.gov/labels.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
                   }
                ]
             },
             {  
-               "name":"LIVING_SUBSTANCES",
+               "name":"gcmd.nasa.gov",
                "children":[  
                   {  
-                     "name":"plant"
-                  },
-                  {  
-                     "name":"plants"
+                     "name":"http://gcmd.nasa.gov/records/rss.xml",
+                     "children":[  
+                        {  
+                           "name":"NER_ORGANIZATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
                   }
                ]
             },
             {  
-               "name":"EARTH_REALM",
+               "name":"i.media-imdb.com",
                "children":[  
                   {  
-                     "name":"river"
-                  },
-                  {  
-                     "name":"pacific"
+                     "name":"http://i.media-imdb.com/images/SFccbe1e4d909ef8b8077201c3c5aac349/imdbsearch.xml",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
                   }
                ]
-            }
-         ]
-      },
-      {  
-         "name":"GEOTOPIC",
-         "children":[  
+            },
             {  
-               "name":"Republic of the Philippines",
+               "name":"www.lifewithalacrity.com",
                "children":[  
                   {  
-                     "name":"LATITUDE: 13.0"
+                     "name":"http://www.lifewithalacrity.com/index.rdf",
+                     "children":[  
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        }
+                     ]
+                  }
+               ]
+            },
+            {  
+               "name":"robotics.nasa.gov.",
+               "children":[  
+                  {  
+                     "name":"http://robotics.nasa.gov./index.php",
+                     "children":[  
+                        {  
+                           "name":"NER_ORGANIZATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_LOCATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_PERSON",
+                           "size":5
+                        }
+                     ]
+                  }
+               ]
+            },
+            {  
+               "name":"www.cialc.unam.mx",
+               "children":[  
+                  {  
+                     "name":"http://www.cialc.unam.mx/videos.html",
+                     "children":[  
+                        {  
+                           "name":"NER_ORGANIZATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_LOCATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_PERSON",
+                           "size":5
+                        }
+                     ]
+                  }
+               ]
+            },
+            {  
+               "name":"www.dvb.no",
+               "children":[  
+                  {  
+                     "name":"https://www.dvb.no/news/business-weekly-19-december-2014-burma-myanmar/46712",
+                     "children":[  
+                        {  
+                           "name":"NER_PERSON",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_LOCATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_ORGANIZATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_PERCENT",
+                           "size":5
+                        }
+                     ]
                   },
                   {  
-                     "name":"LONGITUDE: 122.0"
+                     "name":"https://www.dvb.no/news/business-weekly-19-december-2014-burma-myanmar/46712",
+                     "children":[  
+                        {  
+                           "name":"NER_PERSON",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_LOCATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_DATE",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_ORGANIZATION",
+                           "size":5
+                        },
+                        {  
+                           "name":"NER_PERCENT",
+                           "size":5
+                        }
+                     ]
                   }
                ]
             }

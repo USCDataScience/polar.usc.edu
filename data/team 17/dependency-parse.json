@@ -1,0 +1,152 @@
+{  
+   "name":"START",
+   "children":[  
+      {  
+         "name":"PDF",
+         "children":[  
+            {  
+               "name":"DefaultParser",
+               "children":[  
+                  {  
+                     "name":"PDFParser",
+                      "children":[
+                          {
+                              "name":"Amount of Text :: 37.34%"
+                          },
+                          {
+                              "name":"Amount of Metadata :: 30.65%"
+                          }
+                      ]
+                  }
+               ]
+            }
+         ]
+      },
+    {  
+         "name":"MP3",
+         "children":[  
+            {  
+               "name":"DefaultParser",
+               "children":[  
+                  {  
+                     "name":"MP3Parser",
+                      "children":[
+                          {
+                              "name":"Amount of Text :: 17.31%"
+                          },
+                          {
+                              "name":"Amount of Metadata :: 3.78%"
+                          }
+                      ]
+                  }
+               ]
+            }
+         ]
+      },
+       {  
+         "name":"MP4",
+         "children":[  
+            {  
+               "name":"DefaultParser",
+               "children":[  
+                  {  
+                     "name":"MP4Parser",
+                      "children":[
+                          {
+                              "name":"Amount of Text :: 13.41%"
+                          },
+                          {
+                              "name":"Amount of Metadata :: 23.16%"
+                          }
+                      ]
+                  }
+               ]
+            }
+         ]
+      },
+       {  
+         "name":"MPEG",
+         "children":[  
+            {  
+               "name":"Default",
+               "children":[  
+                  {  
+                     "name":"CompositeExternal",
+                      "children":[
+                          {
+                              "name":"External",
+                              "children":[
+                                  {
+                                      "name":"Amount of Text :: 10.28%"
+                                  },
+                                  {
+                                      "name":"Amount of Metadata :: 40.96%"
+                                  }
+                              ]
+                          }
+                      ]
+                  }
+               ]
+            }
+         ]
+      },
+       {  
+         "name":"WAV",
+         "children":[  
+            {  
+               "name":"DefaultParser",
+               "children":[  
+                  {  
+                     "name":"AudioParser",
+                      "children":[
+                          {
+                              "name":"Amount of Text :: 7.92%"
+                          },
+                          {
+                              "name":"Amount of Metadata :: 37.44%"
+                          }
+                      ]
+                  }
+               ]
+            }
+         ]
+      },
+       {  
+         "name":"JAVA",
+         "children":[  
+            {  
+               "name":"Default",
+               "children":[  
+                  {  
+                     "name":"SourceCode",
+                      "children":[
+                          {
+                              "name":"Amount of Text :: 1.07%"
+                          },
+                          {
+                              "name":"Amount of Metadata :: 87.44%"
+                          }
+                      ]
+                  }
+               ]
+            }
+         ]
+      },
+       {  
+         "name":"XML/HTML",
+         "children":[  
+            {  
+               "name":"HtmlParser",
+               "children":[    
+                  {
+                      "name":"Amount of Text :: 67.88%"
+                  },
+                  {
+                      "name":"Amount of Metadata :: 91.39%"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

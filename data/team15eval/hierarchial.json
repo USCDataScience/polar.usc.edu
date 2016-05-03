@@ -1,0 +1,138 @@
+{
+	"name":"flare",
+	"children":[
+		{
+		"name":"length",
+		"children":[
+		{
+			"name": "am",
+			"children": [
+				{"name": "11","size": 1},
+				{"name": "10","size": 1},
+				{"name": "56","size": 1},
+				{"name": "0","size": 1},
+				{"name": "2015","size": 1}
+			]
+			},
+		{
+			"name":"km",
+			"children":[
+				{"name":"25","size":1}
+			]
+			},
+		{
+			"name":"pm",
+			"children":[
+				{"name": "9","size": 2},
+				{"name": "19","size": 1},
+				{"name": "0","size": 1},
+				{"name": "3","size": 1},
+				{"name": "2","size": 1},
+				{"name": "5","size": 2},
+				{"name": "4","size": 1},
+				{"name": "7","size": 1},
+				{"name": "2015","size": 1}
+			]
+		}
+		]
+		},
+		{
+		"name":"frequency",
+		"children":[
+		{
+			"name": "MHz",
+			"children": [
+				{"name": "933","size": 1},
+				{"name": "236","size": 1},
+				{"name": "375","size": 1}
+			]
+			}
+		]
+	},
+	{
+		"name":"mass",
+		"children":[
+		{
+			"name": "mg",
+			"children": [
+				{"name": "200","size": 1},
+				{"name": "20","size": 1},
+				{"name": "25","size": 1},
+				{"name": "50","size": 1},
+				{"name": "5","size": 1},
+				{"name": "12.5","size": 1},
+				{"name": "100","size": 1},
+				{"name": "10","size": 1}
+			]
+		}
+		]
+	},
+	{
+	"name":"time",
+	"children":[
+	{
+		"name": "seconds",
+		"children": [
+			{"name": "55","size": 1},
+			{"name": "10","size": 1},
+			{"name": "2","size": 1}
+		]
+		},
+	{
+		"name": "minutes",
+		"children": [
+			{"name": "25","size": 1},
+			{"name": "30","size": 1},
+			{"name": "15","size": 2},
+			{"name": "10","size": 1},
+			{"name": "56","size": 1},
+			{"name": "1","size": 1},
+			{"name": "5","size": 1}
+		]
+		},
+	{
+		"name": "hours",
+		"children": [
+			{"name": "60","size": 3},
+			{"name": "3","size": 1},
+			{"name": "24","size": 1}
+		]
+		},	
+	{
+		"name":"days",
+		"children":[
+			{"name":"60","size":1},
+			{"name":"3","size":1},
+			{"name":"14","size":1},
+			{"name":"7","size":2},
+			{"name":"90","size":1},
+			{"name":"30","size":6}
+		]
+		},
+		{
+		"name":"weeks",
+		"children":[
+			{"name":"10","size":1},
+			{"name":"2","size":1}
+		]
+		},
+	{
+		"name":"years",
+		"children":[
+			{"name": "10","size": 2},
+			{"name": "13","size": 1},
+			{"name": "20","size": 3},
+			{"name": "14","size": 1},
+			{"name": "22","size": 1},
+			{"name": "16","size": 2},
+			{"name": "30","size": 1},
+			{"name": "3","size": 10},
+			{"name": "124","size": 1},
+			{"name": "7","size": 2},
+			{"name": "70","size": 1}
+		]
+	}
+	]
+}
+	]
+}

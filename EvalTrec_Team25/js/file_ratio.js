@@ -24,11 +24,14 @@ function loadData(data) {
             mimeType: 'json'
         },
         axis: {
-        x: {
-            type: 'category',
-            categories: data
+            x: {
+                type: 'category',
+                categories: data
+            }
+        },
+        zoom: {
+            enabled: true
         }
-    }
     });
 
 }

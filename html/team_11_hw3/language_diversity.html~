@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+  .legend {
+    font-size: 12px;
+  }
+  rect {
+    stroke-width: 2;
+  }
+
+</style>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<body>
+
+  <center>  <h1>Language diversity</h1>
+    <h6>-use tooltip to check content-type and count</h6></center>
+				<form>
+					<label for="language">Languages:</label>
+		<select  id="language" class="form-control">
+<option value="en" selected>English</option>
+<option value="lt">Lithuanian</option>
+<option value="es">Spanish</option>
+<option value="gl">Galician</option>
+<option value="it">Italian</option>
+<option value="ro">Romanian</option>
+<option value="fi">Finnish</option>
+<option value="fr">French</option>
+<option value="no">Norwegian</option>
+<option value="pt">Portuguese</option>
+<option value="da">Danish</option>
+<option value="de">German</option>
+<option value="eo">Esperanto</option>
+<option value="et">Estonian</option>
+<option value="hu">Hungarian</option>
+<option value="ru">Russian</option>
+<option value="sk">Slovaksk</option>
+<option value="sv">Swedish</option>
+<option value="ca">Catalan</option>
+<option value="el">Greek</option>
+<option value="fa">Persian</option>
+<option value="nl">Dutch</option>
+<option value="pl">Polish</option>
+<option value="th">Thai</option>
+<option value="uk">Ukranian</option>
+			</select>
+		</form>
+   <div class="tooltip" style="opacity: 0.01;padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);"></div>
+	<div class="legend"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+var main = function(option) {
+	 d3.select("svg").remove();
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 1200 ,
+    height = 500,
+    radius = 500 / 2;
+
+    var legendRectSize = 18;
+var legendSpacing = 4;
+
+
+var color = d3.scale.category20();
+
+var arc = d3.svg.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(0);
+
+var labelArc = d3.svg.arc()
+    .outerRadius(radius + 80)
+    .innerRadius(radius - 40);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) { return d.count; });
+
+    d3.select('.tooltip').style('padding',' 10px')
+.style('background',' white')
+.style('border-radius',' 10px')
+.style('box-shadow',' 4px 4px 10px rgba(0, 0, 0, 0.4)');
+	var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    var legend = svg.selectAll('.legend')
+  .data(color.domain())
+  .enter()
+  .append('g')
+  .attr('class', 'legend')
+  .attr('transform', function(d, i) {
+    var height = legendRectSize + legendSpacing;
+    var offset =  height * color.domain().length / 2;
+    var horz = -2 * legendRectSize + 1000;
+    var vert = i * height - offset;
+    return 'translate(' + horz + ',' + vert + ')';
+  });
+	legend.append('rect')
+  .attr('width', legendRectSize)
+  .attr('height', legendRectSize)
+  .style('fill', color)
+  .style('stroke', color);
+	legend.append('text')
+  .attr('x', legendRectSize + legendSpacing)
+  .attr('y', legendRectSize - legendSpacing)
+  .text(function(d) { return d; });
+
+var tooltip = d3.select('body').select('div.tooltip');
+d3.csv(option, type, function(error, data) {
+  if (error) throw error;
+
+  var g = svg.selectAll(".arc")
+      .data(pie(data))
+    .enter().append("g")
+      .attr("class", "arc")
+	.attr("class", "lines");
+
+  g.append("path")
+      .attr("d", arc)
+      .style("fill", function(d) { return color(d.data.lang); })
+  .on('mouseover', function (d) {
+             tooltip.style("opacity", 0.8)
+	    .style('position', 'absolute')
+            .style("left", (d3.event.pageX + 35) + 'px')
+            .style("top", (d3.event.pageY + 30) + 'px')
+            .html("Content-Type: "+d.data.lang+"<br>Count: "+d.data.count);
+  });;
+
+});
+	
+
+function type(d) {
+  d.count = +d.count;
+  return d;
+}
+	}
+window.onload = function() {
+
+            var lan = d3.select("select#language")[0][0].value;
+            d3.select("select#language").on("change", function() {
+                lan = this.value;
+                path = "language/" + lan + ".csv";
+                main(path);
+            });
+
+            main("../../data/team_11_hw3/language/en.csv");
+        }
+
+</script>

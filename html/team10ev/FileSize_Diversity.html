@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>File Size</title></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="../../js/team10/d3pie.js"></script>
+
+<script>
+	var data;
+	d3.json("../../data/team10ev/size_diversity.json", function(error, json) {
+		if (error) return console.warn(error);
+		data = json;
+		var pie = new d3pie("pieChart", data);
+	});
+</script>
+
+</body>
+</html>

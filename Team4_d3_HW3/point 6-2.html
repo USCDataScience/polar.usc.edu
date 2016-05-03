@@ -1,0 +1,103 @@
+<html>
+ <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
+
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'MimeMetaRatio'
+        },
+        
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        	exporting: { enabled: false },
+
+        credits: {
+            enabled: false
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Numerical Ratio'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'Ratio: <b>{point.y:.5f}</b>'
+        },
+        series: [{
+            name: 'Population',
+            data: [
+               ['x-elc',0.008403362],
+               ['zlib',0.008403362],
+               ['vnd.ms-excel',0.061344538],
+               ['postscript',0.008403362],
+               ['x-ms-wmv',0.008403362],
+               ['x-bzip2',0.008403362],
+               ['tiff',0.18067227],
+               ['x-font-ttf',0.060690943],
+               ['xhtml+xml',0.05717269],
+               ['x-sqlite3',0.008403362],
+               ['zip',0.008403362],
+               ['png',0.09752376],
+               ['x-msdownload',0.029411765],
+               ['atom+xml',0.018807523],
+               ['rdf+xml',0.05600797],
+               ['gif',0.08002182],
+               ['msword',0.17027864],
+               ['html',0.052786496],
+               ['mpeg',0.040816326],
+               ['x-flv',0.05672269],['rfc822',0.021008404],
+               ['x-tika-msoffice',0.008403362],
+               ['kml+xml',0.008403362],
+               ['svg+xml',0.008477727],
+               ['photoshop',0.025210084],
+               ['octet-stream',0.008403362],
+               ['epub+zip',0.06092437],
+               ['x-ms-bmp',0.042016808],
+               ['xml',0.009543249],
+               ['jpeg',0.13317116],
+               ['rss+xml',0.021854991],           ,['plain',0.012605042],['mp4',0.008403362],
+               ['x-7z-compressed',0.008403362],
+               ['gzip',0.008403362],
+               ['x-tika-ooxml',0.008403362],
+               ['pdf',0.07096482]
+            ],
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y:.1f}', // one decimal
+                y: 10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    });
+});
+</script>
+</html>

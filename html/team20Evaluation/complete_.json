@@ -1,0 +1,108 @@
+{"name":"Mime-Types","children":
+ [
+     {"name":"atom+xml","children":[
+         {"name":"Default Parser","children":[
+            {"name":"18888","size":"2122"}]},
+         {"name":"AutoDetectParser","children":[
+            {"name":"CompositeParser","children":[
+                {"name":"FeedParser(73)","size":"2123"}]}]}]},
+     
+     {"name":"basic","children":[
+         {"name":"Default Parser","children":[
+            {"name":"53","size":"2122"}]}
+         ]},
+     
+     
+     {"name":"dif+xml","children":[
+         {"name":"Default Parser","children":[
+            {"name":"1","size":"2122"}]}
+         ]},
+
+{"name":"dita+xml","children":[
+         {"name":"Default Parser","children":[
+            {"name":"317","size":"2122"}]},
+         {"name":"AutoDetectParser","children":[
+            {"name":"CompositeParser","children":[
+                {"name":"XML Parser(2)","size":"2123"}]}]}]},
+
+
+{"name":"gif","children":[
+         {"name":"Default Parser","children":[
+            {"name":"14503","size":"2122"}]}
+         ]},
+
+{"name":"gzip","children":[
+         {"name":"Default Parser","children":[
+            {"name":"30","size":"2122"}]}
+        ]},
+
+
+{"name":"mpeg","children":[
+         {"name":"Default Parser","children":[
+            {"name":"263","size":"2122"}]}
+         ]},
+
+
+
+{"name":"Msword","children":[
+         {"name":"Default Parser","children":[
+            {"name":"175","size":"2122"}]},
+         {"name":"AutoDetectParser","children":[
+            {"name":"CompositeParser","children":[
+                {"name":"Office Parser(14)","size":"2123"}]}]}]},
+
+
+
+{"name":"PostScript","children":[
+         {"name":"Emptyparser","children":[
+            {"name":"6","size":"2122"}]}]},
+
+
+
+{"name":"QuickTime","children":[
+         {"name":"Default Parser","children":[
+            {"name":"511","size":"2122"}]},
+         {"name":"AutoDetectParser","children":[
+            {"name":"CompositeParser","children":[
+                {"name":"MP4 Parser(59)","size":"2123"}]}]}]},
+
+
+
+
+{"name":"rdf+xml","children":[
+         {"name":"Default Parser","children":[
+            {"name":"241","size":"2122"}]},
+         {"name":"AutoDetectParser","children":[
+            {"name":"CompositeParser","children":[
+                {"name":"XML Parser(35)","size":"2123"}]}]}]},
+
+
+
+{"name":"vnd.apple.keynote","children":[
+         {"name":"Default Parser","children":[
+            {"name":"1","size":"2122"}]}]},
+
+
+
+{"name":"vnd.google-earth.kml+xml","children":[
+         {"name":"Default Parser","children":[
+            {"name":"57","size":"2122"}]},
+         {"name":"AutoDetectParser","children":[
+            {"name":"CompositeParser","children":[
+                {"name":"XML Parser(36)","size":"2123"}]}]}]},
+
+
+
+{"name":"vnd.google-earth.kmz","children":[
+         {"name":"Default Parser","children":[
+            {"name":"11","size":"2122"}]}]},
+
+
+
+{"name":"vnd.ms-excel.sheet.macroenabled.12","children":[
+         {"name":"Default Parser","children":[
+            {"name":"1","size":"2122"}]}]}
+
+
+
+]}

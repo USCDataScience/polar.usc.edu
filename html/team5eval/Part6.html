@@ -30,7 +30,7 @@
 </style>
 <body>
 <!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
-<script src="d3/d3.min.js"></script>
+<script src="../../js/d3.min.js"></script>
 <script>
 
 var margin = 20,
@@ -52,7 +52,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-d3.json("part6Clusters.json", function(error, root) {
+d3.json("../../data/team5eval/part6Clusters.json", function(error, root) {
   if (error) return console.error(error);
 
   var focus = root,

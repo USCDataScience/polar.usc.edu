@@ -40,9 +40,8 @@
 
 </style>
 <svg class="chart"></svg>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src = "part9output.json"></script>
+<script src="../../js/d3.min.js"></script>
+<script src="../../js/jquery.js"></script>
 <script>
 
 /*var data = {
@@ -67,7 +66,7 @@
 };
 */
 var data;
-$.getJSON("part9output.json", function(json) {
+$.getJSON("../../data/team5eval/part9output.json", function(json) {
     //console.log(json)
     data = json;
 var chartWidth       = 300,

@@ -1,0 +1,846 @@
+{
+    "name": "FileSize", 
+    "children": [
+        {
+            "children": [
+                {
+                    "size": 7217, 
+                    "name": "application/xhtml+xml", 
+                    "description": "application/xhtml+xml"
+                }
+            ], 
+            "name": "DefaultParser,HtmlParser", 
+            "description": "DefaultParser,HtmlParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 15641, 
+                    "name": "application/vnd.ms-excel", 
+                    "description": "application/vnd.ms-excel"
+                }, 
+                {
+                    "size": 2087, 
+                    "name": "application/vnd.ms-powerpoint", 
+                    "description": "application/vnd.ms-powerpoint"
+                }, 
+                {
+                    "size": 4805, 
+                    "name": "application/msword", 
+                    "description": "application/msword"
+                }
+            ], 
+            "name": "DefaultParser,OfficeParser", 
+            "description": "DefaultParser,OfficeParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 327948, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 327948, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 327948, 
+                    "name": "text/x-c++src", 
+                    "description": "text/x-c++src"
+                }, 
+                {
+                    "size": 327948, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }, 
+                {
+                    "size": 327948, 
+                    "name": "application/octet-stream", 
+                    "description": "application/octet-stream"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,TXTParser,TikaResource$1,SourceCodeParser,PackageParser", 
+            "description": "DefaultParser,CompressorParser,TXTParser,TikaResource$1,SourceCodeParser,PackageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 54069, 
+                    "name": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", 
+                    "description": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                }
+            ], 
+            "name": "DefaultParser,OOXMLParser", 
+            "description": "DefaultParser,OOXMLParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 11000, 
+                    "name": "audio/x-flac", 
+                    "description": "audio/x-flac"
+                }
+            ], 
+            "name": "DefaultParser,FlacParser", 
+            "description": "DefaultParser,FlacParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 81973, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 81973, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 81973, 
+                    "name": "application/java-vm", 
+                    "description": "application/java-vm"
+                }, 
+                {
+                    "size": 81973, 
+                    "name": "text/html", 
+                    "description": "text/html"
+                }, 
+                {
+                    "size": 81973, 
+                    "name": "application/zip", 
+                    "description": "application/zip"
+                }, 
+                {
+                    "size": 81973, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,TXTParser,ClassParser,PackageParser,HtmlParser", 
+            "description": "DefaultParser,CompressorParser,TXTParser,ClassParser,PackageParser,HtmlParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "image/png", 
+                    "description": "image/png"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "image/x-ms-bmp", 
+                    "description": "image/x-ms-bmp"
+                }
+            ], 
+            "name": "DefaultParser,TesseractOCRParser,ImageParser", 
+            "description": "DefaultParser,TesseractOCRParser,ImageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser", 
+            "description": "DefaultParser,CompressorParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "image/vnd.microsoft.icon", 
+                    "description": "image/vnd.microsoft.icon"
+                }
+            ], 
+            "name": "DefaultParser,ImageParser", 
+            "description": "DefaultParser,ImageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1468, 
+                    "name": "image/jpeg", 
+                    "description": "image/jpeg"
+                }, 
+                {
+                    "size": 1468, 
+                    "name": "application/msword", 
+                    "description": "application/msword"
+                }
+            ], 
+            "name": "DefaultParser,OfficeParser,TesseractOCRParser,JpegParser", 
+            "description": "DefaultParser,OfficeParser,TesseractOCRParser,JpegParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 4185, 
+                    "name": "application/rtf", 
+                    "description": "application/rtf"
+                }
+            ], 
+            "name": "DefaultParser,RTFParser", 
+            "description": "DefaultParser,RTFParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "video/quicktime", 
+                    "description": "video/quicktime"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "video/mp4", 
+                    "description": "video/mp4"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "video/x-m4v", 
+                    "description": "video/x-m4v"
+                }
+            ], 
+            "name": "DefaultParser,MP4Parser", 
+            "description": "DefaultParser,MP4Parser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 2299, 
+                    "name": "application/rss+xml", 
+                    "description": "application/rss+xml"
+                }, 
+                {
+                    "size": 2224, 
+                    "name": "application/atom+xml", 
+                    "description": "application/atom+xml"
+                }
+            ], 
+            "name": "DefaultParser,FeedParser", 
+            "description": "DefaultParser,FeedParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 38201, 
+                    "name": "application/x-msmetafile", 
+                    "description": "application/x-msmetafile"
+                }, 
+                {
+                    "size": 38201, 
+                    "name": "image/png", 
+                    "description": "image/png"
+                }, 
+                {
+                    "size": 38201, 
+                    "name": "application/rtf", 
+                    "description": "application/rtf"
+                }, 
+                {
+                    "size": 38201, 
+                    "name": "image/jpeg", 
+                    "description": "image/jpeg"
+                }
+            ], 
+            "name": "DefaultParser,RTFParser,TesseractOCRParser,ImageParser,TikaResource$1,JpegParser", 
+            "description": "DefaultParser,RTFParser,TesseractOCRParser,ImageParser,TikaResource$1,JpegParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1024, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 1024, 
+                    "name": "application/xml", 
+                    "description": "application/xml"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,HtmlParser", 
+            "description": "DefaultParser,CompressorParser,HtmlParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,PackageParser", 
+            "description": "DefaultParser,CompressorParser,PackageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 27739, 
+                    "name": "application/rdf+xml", 
+                    "description": "application/rdf+xml"
+                }, 
+                {
+                    "size": 824, 
+                    "name": "application/xml", 
+                    "description": "application/xml"
+                }
+            ], 
+            "name": "HtmlParser", 
+            "description": "HtmlParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 2696, 
+                    "name": "application/vnd.ms-powerpoint", 
+                    "description": "application/vnd.ms-powerpoint"
+                }, 
+                {
+                    "size": 2741, 
+                    "name": "image/x-ms-bmp", 
+                    "description": "image/x-ms-bmp"
+                }, 
+                {
+                    "size": 2651, 
+                    "name": "image/png", 
+                    "description": "image/png"
+                }
+            ], 
+            "name": "DefaultParser,OfficeParser,TesseractOCRParser,ImageParser", 
+            "description": "DefaultParser,OfficeParser,TesseractOCRParser,ImageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 11321, 
+                    "name": "application/x-msmetafile", 
+                    "description": "application/x-msmetafile"
+                }, 
+                {
+                    "size": 11321, 
+                    "name": "application/vnd.ms-powerpoint", 
+                    "description": "application/vnd.ms-powerpoint"
+                }, 
+                {
+                    "size": 11321, 
+                    "name": "image/png", 
+                    "description": "image/png"
+                }
+            ], 
+            "name": "DefaultParser,OfficeParser,TikaResource$1,TesseractOCRParser,ImageParser", 
+            "description": "DefaultParser,OfficeParser,TikaResource$1,TesseractOCRParser,ImageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/x-font-ttf", 
+                    "description": "application/x-font-ttf"
+                }
+            ], 
+            "name": "DefaultParser,TrueTypeParser", 
+            "description": "DefaultParser,TrueTypeParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "image/tiff", 
+                    "description": "image/tiff"
+                }
+            ], 
+            "name": "DefaultParser,TesseractOCRParser,TiffParser", 
+            "description": "DefaultParser,TesseractOCRParser,TiffParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 60803, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 60803, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,TXTParser", 
+            "description": "DefaultParser,CompressorParser,TXTParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "audio/mpeg", 
+                    "description": "audio/mpeg"
+                }
+            ], 
+            "name": "DefaultParser,Mp3Parser", 
+            "description": "DefaultParser,Mp3Parser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/x-rar-compressed", 
+                    "description": "application/x-rar-compressed"
+                }
+            ], 
+            "name": "DefaultParser,RarParser,TXTParser", 
+            "description": "DefaultParser,RarParser,TXTParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 32268, 
+                    "name": "application/zip", 
+                    "description": "application/zip"
+                }, 
+                {
+                    "size": 36274, 
+                    "name": "application/vnd.google-earth.kml+xml", 
+                    "description": "application/vnd.google-earth.kml+xml"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "text/html", 
+                    "description": "text/html"
+                }
+            ], 
+            "name": "DefaultParser,PackageParser,HtmlParser", 
+            "description": "DefaultParser,PackageParser,HtmlParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 9018, 
+                    "name": "application/vnd.ms-powerpoint", 
+                    "description": "application/vnd.ms-powerpoint"
+                }, 
+                {
+                    "size": 9018, 
+                    "name": "image/jpeg", 
+                    "description": "image/jpeg"
+                }, 
+                {
+                    "size": 19018, 
+                    "name": "image/png", 
+                    "description": "image/png"
+                }, 
+                {
+                    "size": 19018, 
+                    "name": "application/x-emf", 
+                    "description": "application/x-emf"
+                }, 
+                {
+                    "size": 19018, 
+                    "name": "application/x-msmetafile", 
+                    "description": "application/x-msmetafile"
+                }, 
+                {
+                    "size": 19018, 
+                    "name": "application/x-tika-msoffice-embedded", 
+                    "description": "application/x-tika-msoffice-embedded"
+                }, 
+                {
+                    "size": 19018, 
+                    "name": "application/vnd.ms-excel", 
+                    "description": "application/vnd.ms-excel"
+                }
+            ], 
+            "name": "DefaultParser,OfficeParser,TikaResource$1,TesseractOCRParser,ImageParser,JpegParser", 
+            "description": "DefaultParser,OfficeParser,TikaResource$1,TesseractOCRParser,ImageParser,JpegParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "image/jpeg", 
+                    "description": "image/jpeg"
+                }
+            ], 
+            "name": "DefaultParser,TesseractOCRParser,JpegParser", 
+            "description": "DefaultParser,TesseractOCRParser,JpegParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 107552, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 107552, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 107552, 
+                    "name": "application/java-vm", 
+                    "description": "application/java-vm"
+                }, 
+                {
+                    "size": 107552, 
+                    "name": "text/x-java-source", 
+                    "description": "text/x-java-source"
+                }, 
+                {
+                    "size": 107552, 
+                    "name": "text/html", 
+                    "description": "text/html"
+                }, 
+                {
+                    "size": 107552, 
+                    "name": "image/gif", 
+                    "description": "image/gif"
+                }, 
+                {
+                    "size": 107552, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,ClassParser,SourceCodeParser,TXTParser,HtmlParser,TesseractOCRParser,ImageParser,PackageParser", 
+            "description": "DefaultParser,CompressorParser,ClassParser,SourceCodeParser,TXTParser,HtmlParser,TesseractOCRParser,ImageParser,PackageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/fits", 
+                    "description": "application/fits"
+                }
+            ], 
+            "name": "DefaultParser,GDALParser", 
+            "description": "DefaultParser,GDALParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/zlib", 
+                    "description": "application/zlib"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/x-compress", 
+                    "description": "application/x-compress"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/octet-stream", 
+                    "description": "application/octet-stream"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,TikaResource$1", 
+            "description": "DefaultParser,CompressorParser,TikaResource$1"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 14042, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }
+            ], 
+            "name": "DefaultParser,TXTParser", 
+            "description": "DefaultParser,TXTParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/x-hdf", 
+                    "description": "application/x-hdf"
+                }
+            ], 
+            "name": "DefaultParser,HDFParser", 
+            "description": "DefaultParser,HDFParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1150, 
+                    "name": "application/vnd.sun.xml.writer", 
+                    "description": "application/vnd.sun.xml.writer"
+                }
+            ], 
+            "name": "DefaultParser,OpenDocumentParser", 
+            "description": "DefaultParser,OpenDocumentParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 69845, 
+                    "name": "audio/mpeg", 
+                    "description": "audio/mpeg"
+                }, 
+                {
+                    "size": 69845, 
+                    "name": "application/zip", 
+                    "description": "application/zip"
+                }, 
+                {
+                    "size": 69845, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }
+            ], 
+            "name": "DefaultParser,PackageParser,TXTParser,Mp3Parser", 
+            "description": "DefaultParser,PackageParser,TXTParser,Mp3Parser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 125022, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 125022, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 125022, 
+                    "name": "application/java-vm", 
+                    "description": "application/java-vm"
+                }, 
+                {
+                    "size": 125022, 
+                    "name": "text/html", 
+                    "description": "text/html"
+                }, 
+                {
+                    "size": 125022, 
+                    "name": "application/octet-stream", 
+                    "description": "application/octet-stream"
+                }, 
+                {
+                    "size": 125022, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,ClassParser,TXTParser,HtmlParser,TikaResource$1,PackageParser", 
+            "description": "DefaultParser,CompressorParser,ClassParser,TXTParser,HtmlParser,TikaResource$1,PackageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 85247, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 85247, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 85247, 
+                    "name": "application/java-vm", 
+                    "description": "application/java-vm"
+                }, 
+                {
+                    "size": 85247, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }, 
+                {
+                    "size": 85247, 
+                    "name": "application/xml", 
+                    "description": "application/xml"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,TXTParser,ClassParser,HtmlParser,PackageParser", 
+            "description": "DefaultParser,CompressorParser,TXTParser,ClassParser,HtmlParser,PackageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/zip", 
+                    "description": "application/zip"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/x-mysql-table-definition", 
+                    "description": "application/x-mysql-table-definition"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/x-mysql-misam-data", 
+                    "description": "application/x-mysql-misam-data"
+                }
+            ], 
+            "name": "DefaultParser,PackageParser,TikaResource$1", 
+            "description": "DefaultParser,PackageParser,TikaResource$1"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 36113, 
+                    "name": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", 
+                    "description": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                }, 
+                {
+                    "size": 36113, 
+                    "name": "image/jpeg", 
+                    "description": "image/jpeg"
+                }
+            ], 
+            "name": "DefaultParser,OOXMLParser,TesseractOCRParser,JpegParser", 
+            "description": "DefaultParser,OOXMLParser,TesseractOCRParser,JpegParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/x-msdownload", 
+                    "description": "application/x-msdownload"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/x-executable", 
+                    "description": "application/x-executable"
+                }
+            ], 
+            "name": "DefaultParser,ExecutableParser", 
+            "description": "DefaultParser,ExecutableParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1055253, 
+                    "name": "application/pdf", 
+                    "description": "application/pdf"
+                }
+            ], 
+            "name": "DefaultParser,PDFParser", 
+            "description": "DefaultParser,PDFParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "image/svg+xml", 
+                    "description": "image/svg+xml"
+                }
+            ], 
+            "name": "DefaultParser,DcXMLParser", 
+            "description": "DefaultParser,DcXMLParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 24046, 
+                    "name": "application/zip", 
+                    "description": "application/zip"
+                }, 
+                {
+                    "size": 24046, 
+                    "name": "image/png", 
+                    "description": "image/png"
+                }, 
+                {
+                    "size": 24046, 
+                    "name": "application/vnd.google-earth.kml+xml", 
+                    "description": "application/vnd.google-earth.kml+xml"
+                }
+            ], 
+            "name": "DefaultParser,PackageParser,HtmlParser,TesseractOCRParser,ImageParser", 
+            "description": "DefaultParser,PackageParser,HtmlParser,TesseractOCRParser,ImageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 14867, 
+                    "name": "application/x-msmetafile", 
+                    "description": "application/x-msmetafile"
+                }, 
+                {
+                    "size": 14867, 
+                    "name": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", 
+                    "description": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                }
+            ], 
+            "name": "DefaultParser,OOXMLParser,TikaResource$1", 
+            "description": "DefaultParser,OOXMLParser,TikaResource$1"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 1000, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 1000, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,ExecutableParser,PackageParser", 
+            "description": "DefaultParser,CompressorParser,ExecutableParser,PackageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 187879, 
+                    "name": "application/x-tar", 
+                    "description": "application/x-tar"
+                }, 
+                {
+                    "size": 187879, 
+                    "name": "application/gzip", 
+                    "description": "application/gzip"
+                }, 
+                {
+                    "size": 187879, 
+                    "name": "text/plain", 
+                    "description": "text/plain"
+                }
+            ], 
+            "name": "DefaultParser,CompressorParser,TXTParser,PackageParser", 
+            "description": "DefaultParser,CompressorParser,TXTParser,PackageParser"
+        }, 
+        {
+            "children": [
+                {
+                    "size": 8827, 
+                    "name": "image/png", 
+                    "description": "image/png"
+                }, 
+                {
+                    "size": 8827, 
+                    "name": "image/jpeg", 
+                    "description": "image/jpeg"
+                }, 
+                {
+                    "size": 8827, 
+                    "name": "application/msword", 
+                    "description": "application/msword"
+                }
+            ], 
+            "name": "DefaultParser,OfficeParser,TesseractOCRParser,ImageParser,JpegParser", 
+            "description": "DefaultParser,OfficeParser,TesseractOCRParser,ImageParser,JpegParser"
+        }
+    ]
+}

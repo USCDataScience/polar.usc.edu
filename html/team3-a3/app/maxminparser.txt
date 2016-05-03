@@ -1,0 +1,110 @@
+{ 
+  "image/jpeg": {
+    "maxbody": 2068, 
+    "minmeta": 575, 
+    "maxmeta": 1610, 
+    "minbody": 99
+  }, 
+  "video/quicktime": {
+    "maxbody": 168, 
+    "minmeta": 841, 
+    "maxmeta": 981, 
+    "minbody": 157
+  }, 
+  "image/png": {
+    "maxbody": 2068, 
+    "minmeta": 588, 
+    "maxmeta": 1601, 
+    "minbody": 113
+  }, 
+  "text/xml": {
+    "maxbody": 74569, 
+    "minmeta": 736, 
+    "maxmeta": 25159, 
+    "minbody": 81
+  }, 
+  "application/pdf": {
+    "maxbody": 211002, 
+    "minmeta": 1099, 
+    "maxmeta": 56048, 
+    "minbody": 1472
+  }, 
+  "image/gif": {
+    "maxbody": 2056, 
+    "minmeta": 575, 
+    "maxmeta": 1582, 
+    "minbody": 107
+  }, 
+  "application/javascript": {
+    "maxbody": 254584, 
+    "minmeta": 634, 
+    "maxmeta": 66831, 
+    "minbody": 93
+  }, 
+  "application/xml": {
+    "maxbody": 723942, 
+    "minmeta": 756, 
+    "maxmeta": 221165, 
+    "minbody": 293
+  }, 
+  "application/x-javascript": {
+    "maxbody": 804837, 
+    "minmeta": 595, 
+    "maxmeta": 95982, 
+    "minbody": 29
+  }, 
+  "application/octet-stream": {
+    "maxbody": 209151, 
+    "minmeta": 4515, 
+    "maxmeta": 121170, 
+    "minbody": 15287
+  }, 
+  "application/rdf+xml": {
+    "maxbody": 37311, 
+    "minmeta": 4533, 
+    "maxmeta": 28037, 
+    "minbody": 9234
+  }, 
+  "text/plain": {
+    "maxbody": 844849, 
+    "minmeta": 649, 
+    "maxmeta": 188035, 
+    "minbody": 44
+  }, 
+  "application/atom+xml": {
+    "maxbody": 45275, 
+    "minmeta": 1633, 
+    "maxmeta": 36605, 
+    "minbody": 1081
+  }, 
+  "text/javascript": {
+    "maxbody": 965893, 
+    "minmeta": 871, 
+    "maxmeta": 192726, 
+    "minbody": 546
+  }, 
+  "text/html": {
+    "maxbody": 1404075, 
+    "minmeta": 580, 
+    "maxmeta": 468281, 
+    "minbody": 3
+  }, 
+  "application/rss+xml": {
+    "maxbody": 428897, 
+    "minmeta": 1045, 
+    "maxmeta": 141335, 
+    "minbody": 429
+  }, 
+  "video/mp4": {
+    "maxbody": 41, 
+    "minmeta": 721, 
+    "maxmeta": 757, 
+    "minbody": 41
+  }, 
+  "text/css": {
+    "maxbody": 187045, 
+    "minmeta": 599, 
+    "maxmeta": 60426, 
+    "minbody": 30
+  }
+}

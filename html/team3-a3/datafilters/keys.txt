@@ -1,0 +1,125 @@
+byte
+Celsius
+cubic
+day
+days
+dB
+dbar
+dBZ
+degree
+degree s-1
+degree_east
+degree_north
+degrees
+em
+Fahrenheit
+feet
+foot
+ft
+g
+gallon
+gb
+tb
+gram
+hour
+hr
+hrs
+ice
+J kg-1
+J kg-1 K-1
+J m-2
+K m
+K m s-1
+K m-1
+K m2 kg-1 s-1
+K Pa s-1
+K s
+K s-1
+K2
+kb
+kg
+kg m-1 s-1
+kg m-2
+kg m-2 s-1
+kg m-3
+kg m-3 s-1
+kg s-1
+kg s-1
+kg s-1 
+kg s-1 m-1
+kg2 s-2
+kilogram
+kilometer
+km
+m
+m s-1
+m s-2
+m-1
+m-1 s-1
+m-1 sr-1
+m-1 sr-1
+m-2
+m-2 s-1
+m-2 s-2
+m-3
+m2
+m2 s
+m2 s rad-1
+m2 s-1
+m2 s-1
+m2 s-2
+m2 s-2
+m3
+m3 s-1
+m3 s-2
+m4 s-1
+MB
+meter
+micro
+mile
+min
+minute
+mol
+mol kg-1
+mol m-2 s-1
+mol m-2 s-1 m-1
+mol m-2 s-1 m-1 sr-1
+mol m-2 s-1 sr-1
+mol m-3
+mol m-3 s-1
+mol s-1
+month
+Pa
+Pa m
+Pa m s-1
+Pa m s-2
+Pa m-1
+Pa s
+Pa s-1
+Pa-1 s-1
+Pa2 s-2
+per
+pixel
+pound
+psu
+px
+rad
+S m-1
+s-1
+s-1 m-3
+s-2
+sec
+second
+species
+sr^-1
+sheet
+volume
+W m-1
+W m-1 K-1
+W m-2
+W m-2 m-1
+W m-2 m-1 sr-1
+W m-2 sr-1
+W m-3
+W s m-2
+year

@@ -1,0 +1,12 @@
+degree
+second
+km
+byte
+minute
+kb
+min
+mb
+days
+per
+degrees
+tb

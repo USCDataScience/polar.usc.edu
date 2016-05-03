@@ -1,0 +1,8 @@
+pixel
+degree
+min
+foot
+year
+days
+km
+day

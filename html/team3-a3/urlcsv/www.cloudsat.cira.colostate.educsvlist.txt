@@ -1,0 +1,3 @@
+degrees
+db
+days

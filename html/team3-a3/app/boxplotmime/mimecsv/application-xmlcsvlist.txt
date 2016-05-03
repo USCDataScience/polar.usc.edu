@@ -1,0 +1,16 @@
+kb
+kg
+degree
+mb
+hr
+pa
+minute
+days
+per
+fahrenheit
+kilometer
+degrees
+km
+year
+species
+feet

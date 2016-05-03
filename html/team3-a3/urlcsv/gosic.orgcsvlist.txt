@@ -1,0 +1,4 @@
+degree
+degrees
+day
+km

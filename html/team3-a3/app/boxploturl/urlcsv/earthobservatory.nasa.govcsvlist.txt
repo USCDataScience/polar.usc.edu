@@ -1,0 +1,14 @@
+degree
+hr
+feet
+year
+minute
+kb
+kg
+kilometer
+mb
+days
+km
+fahrenheit
+pa
+degrees

@@ -1,0 +1,8 @@
+kilometer
+degrees
+meter
+degree
+mb
+sec
+km
+per

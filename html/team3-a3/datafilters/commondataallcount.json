@@ -1,0 +1,63 @@
+{
+  "MONEY": {
+    "commonopennltkMONEY": 21, 
+    "commonopencoreMONEY": 16, 
+    "NLTKNAMES": 180119, 
+    "commoncorenltkMONEY": 8, 
+    "CORENLPMONEY": 156, 
+    "OPENNLPMONEY": 3000
+  }, 
+  "PERSON": {
+    "OPENNLPPERSON": 22320, 
+    "NLTKNAMES": 180119, 
+    "commoncorenltkPERSON": 4284, 
+    "CORENLPPERSON": 18610, 
+    "commonopencorePERSON": 1391, 
+    "commonallPERSON": 954, 
+    "commonopennltkPERSON": 8023
+  }, 
+  "LOCATION": {
+    "commonopencoreLOCATION": 1253, 
+    "commoncorenltkLOCATION": 2929, 
+    "NLTKNAMES": 180119, 
+    "commonallLOCATION": 1029, 
+    "OPENNLPLOCATION": 12952, 
+    "commonopennltkLOCATION": 5494, 
+    "CORENLPLOCATION": 5600
+  }, 
+  "TIME": {
+    "OPENNLPTIME": 1375, 
+    "CORENLPTIME": 135, 
+    "NLTKNAMES": 180119, 
+    "commonopencoreTIME": 56, 
+    "commoncorenltkTIME": 18, 
+    "commonopennltkTIME": 12, 
+    "commonallTIME": 3
+  }, 
+  "DATE": {
+    "commonopennltkDATE": 5586, 
+    "OPENNLPDATE": 40366, 
+    "NLTKNAMES": 180119, 
+    "commonallDATE": 3307, 
+    "commoncorenltkDATE": 4919, 
+    "CORENLPDATE": 7377, 
+    "commonopencoreDATE": 3674
+  }, 
+  "ORGANIZATION": {
+    "commonallORGANIZATION": 4979, 
+    "commonopencoreORGANIZATION": 6977, 
+    "OPENNLPORGANIZATION": 74841, 
+    "commonopennltkORGANIZATION": 23335, 
+    "NLTKNAMES": 180119, 
+    "CORENLPORGANIZATION": 50336, 
+    "commoncorenltkORGANIZATION": 15701
+  }, 
+  "PERCENTAGE": {
+    "commonopencorePERCENTAGE": 68, 
+    "CORENLPPERCENT": 200, 
+    "OPENNLPPERCENTAGE": 2511, 
+    "NLTKNAMES": 180119, 
+    "commoncorenltkPERCENTAGE": 4, 
+    "commonopennltkPERCENTAGE": 14
+  }
+}

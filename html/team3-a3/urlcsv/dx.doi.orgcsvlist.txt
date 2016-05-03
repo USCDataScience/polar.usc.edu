@@ -1,0 +1,11 @@
+degree
+hr
+volume
+per
+day
+kb
+kg
+min
+mb
+days
+km

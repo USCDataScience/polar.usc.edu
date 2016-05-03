@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel = "stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<style type="text/css">
+	svg {
+		margin-bottom: 50px;
+	}
+</style>
+<html>
+  <body>
+  <div class="container" style="margin-top: 100px">
+      <div class="row">
+          <div class="col-md-8" id="visualisation" style="margin-top: 100px">
+          </div>
+          <div class="col-md-4">
+              <div id="radiocontainer" style="overflow-y: scroll; height:500px; margin-top: 100px">
+              </div>
+              <!-- <a href="../home.html" class="btn-lg">GO BACK</a> -->
+          </div>
+      </div>
+  </div>
+    <script type="text/javascript" src="boxplotmime/boxplot.js"></script>
+    <script>
+        $.get("boxplotmime/mimelist.txt", function(data, status){
+            mimelist = data.split("\n");
+            for(mime in mimelist) {
+                var key = mimelist[mime].replace("/", "-");
+                $('<div><input type="radio" id="'+mimelist[mime]+'" name="radio" onclick="createBoxPlot(\''+key+'\')"/>' +
+                    '<label for="'+mimelist[mime]+'"><span></span>'+mimelist[mime]+'</label></div>')
+                    .appendTo('#radiocontainer');
+            }
+            createBoxPlot('application-rss+xml');
+            $("#application\\/rss\\+xml").prop("checked", true);
+        });
+        function createBoxPlot(mime) {
+            $.get("boxplotmime/mimecsv/" + mime+"csvlist.txt", function(data, status) {
+                datarray = data.split("\n");
+                for(key in datarray) {
+                    createplot("boxplotmime/mimecsv/" + mime + "/" + datarray[key]);
+                }
+            });
+        }
+    	// $.get("csvlist.txt", function(data, status){
+    	// 	datarray = data.split('\n');
+    	// 	for(key in datarray) {
+    	// 		createplot(datarray[key]);
+    	// 	}
+    	// });
+    	// createplot('data');
+    	// createplot('data');
+    </script>     
+  </body>
+</html>

@@ -1,0 +1,380 @@
+
+[
+  {
+    "name": "Aromas",
+    "children": [
+      {
+        "name": "Enzymatic",
+        "children": [
+          {
+            "name": "Flowery",
+            "children": [
+              {
+                "name": "Floral",
+                "children": [
+                  {
+                    "name": "Coffee Blossom"
+                  },
+                  {
+                    "name": "Tea Rose"
+                  }
+                ]
+              },
+              {
+                "name": "Fragrant",
+                "children": [
+                  {
+                    "name": "Cardamon Caraway"
+                  },
+                  {
+                    "name": "Coriander Seeds"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fruity",
+            "children": [
+              {
+                "name": "Citrus",
+                "children": [
+                  {
+                    "name": "Lemon"
+                  },
+                  {
+                    "name": "Apple"
+                  }
+                ]
+              },
+              {
+                "name": "Berry-like",
+                "children": [
+                  {
+                    "name": "Apricot"
+                  },
+                  {
+                    "name": "Blackberry"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Herby",
+            "children": [
+              {
+                "name": "Alliaceous",
+                "children": [
+                  {
+                    "name": "Onion"
+                  },
+                  {
+                    "name": "Garlic"
+                  }
+                ]
+              },
+              {
+                "name": "Leguminous",
+                "children": [
+                  {
+                    "name": "Cucumber"
+                  },
+                  {
+                    "name": "Garden Peas"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sugar Browning",
+        "children": [
+          {
+            "name": "Nutty",
+            "children": [
+              {
+                "name": "Nut-like",
+                "children": [
+                  {
+                    "name": "Roasted Peanuts"
+                  },
+                  {
+                    "name": "Walnuts"
+                  }
+                ]
+              },
+              {
+                "name": "Malt-like",
+                "children": [
+                  {
+                    "name": "Balsamic Rice"
+                  },
+                  {
+                    "name": "Toast"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Carmelly",
+            "children": [
+              {
+                "name": "Candy-like",
+                "children": [
+                  {
+                    "name": "Roasted Hazelnut"
+                  },
+                  {
+                    "name": "Roasted Almond"
+                  }
+                ]
+              },
+              {
+                "name": "Syrup-like",
+                "children": [
+                  {
+                    "name": "Honey"
+                  },
+                  {
+                    "name": "Maple Syrup"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chocolatey",
+            "children": [
+              {
+                "name": "Chocolate-like",
+                "children": [
+                  {
+                    "name": "Bakers"
+                  },
+                  {
+                    "name": "Dark Chocolate"
+                  }
+                ]
+              },
+              {
+                "name": "Vanilla-like",
+                "children": [
+                  {
+                    "name": "Swiss"
+                  },
+                  {
+                    "name": "Butter"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dry Distillation",
+        "children": [
+          {
+            "name": "Resinous",
+            "children": [
+              {
+                "name": "Turpeny",
+                "children": [
+                  {
+                    "name": "Piney"
+                  },
+                  {
+                    "name": "Blackcurrant-like"
+                  }
+                ]
+              },
+              {
+                "name": "Medicinal",
+                "children": [
+                  {
+                    "name": "Camphoric"
+                  },
+                  {
+                    "name": "Cineolic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spicy",
+            "children": [
+              {
+                "name": "Warming",
+                "children": [
+                  {
+                    "name": "Cedar"
+                  },
+                  {
+                    "name": "Pepper"
+                  }
+                ]
+              },
+              {
+                "name": "Pungent",
+                "children": [
+                  {
+                    "name": "Clove"
+                  },
+                  {
+                    "name": "Thyme"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Carbony",
+            "children": [
+              {
+                "name": "Smokey",
+                "children": [
+                  {
+                    "name": "Tarry"
+                  },
+                  {
+                    "name": "Pipe Tobacco"
+                  }
+                ]
+              },
+              {
+                "name": "Ashy",
+                "children": [
+                  {
+                    "name": "Burnt"
+                  },
+                  {
+                    "name": "Charred"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tastes",
+    "children": [
+      {
+        "name": "Bitter",
+        "children": [
+          {
+            "name": "Pungent",
+            "children": [
+              {
+                "name": "Creosol"
+              },
+              {
+                "name": "Phenolic"
+              }
+            ]
+          },
+          {
+            "name": "Harsh",
+            "children": [
+              {
+                "name": "Caustic"
+              },
+              {
+                "name": "Alkaline"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salt",
+        "children": [
+          {
+            "name": "Sharp",
+            "children": [
+              {
+                "name": "Astringent"
+              },
+              {
+                "name": "Rough"
+              }
+            ]
+          },
+          {
+            "name": "Bland",
+            "children": [
+              {
+                "name": "Neutral"
+              },
+              {
+                "name": "Soft"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sweet",
+        "children": [
+          {
+            "name": "Mellow",
+            "children": [
+              {
+                "name": "Delicate"
+              },
+              {
+                "name": "Mild"
+              }
+            ]
+          },
+          {
+            "name": "Acidy",
+            "children": [
+              {
+                "name": "Nippy"
+              },
+              {
+                "name": "Piquant"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sour",
+        "children": [
+          {
+            "name": "Winey",
+            "children": [
+              {
+                "name": "Tangy"
+              },
+              {
+                "name": "Tart"
+              }
+            ]
+          },
+          {
+            "name": "Soury",
+            "children": [
+              {
+                "name": "Hard"
+              },
+              {
+                "name": "Acrid"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
+

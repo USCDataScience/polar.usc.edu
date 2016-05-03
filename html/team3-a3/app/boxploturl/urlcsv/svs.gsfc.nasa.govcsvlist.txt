@@ -1,0 +1,10 @@
+fahrenheit
+kb
+celsius
+per
+mb
+meter
+year
+gb
+km
+ice

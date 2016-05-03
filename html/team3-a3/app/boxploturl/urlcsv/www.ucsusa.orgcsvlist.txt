@@ -1,0 +1,11 @@
+degree
+feet
+sec
+km
+foot
+minute
+kg
+min
+days
+per
+degrees

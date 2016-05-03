@@ -1,0 +1,8 @@
+feet
+mile
+degrees
+hour
+foot
+days
+km
+day

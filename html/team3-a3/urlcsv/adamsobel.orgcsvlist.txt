@@ -1,0 +1,4 @@
+feet
+degrees
+day
+days

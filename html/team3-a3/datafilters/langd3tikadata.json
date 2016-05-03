@@ -1,0 +1,93 @@
+{
+  "name": "flare", 
+  "children": [
+    {
+      "name": "Swedish", 
+      "size": 3
+    }, 
+    {
+      "name": "Icelandic", 
+      "size": 7
+    }, 
+    {
+      "name": "Estonian", 
+      "size": 594
+    }, 
+    {
+      "name": "Romanian", 
+      "size": 975
+    }, 
+    {
+      "name": "Slovenian", 
+      "size": 16
+    }, 
+    {
+      "name": "Danish", 
+      "size": 80
+    }, 
+    {
+      "name": "Hungarian", 
+      "size": 1090
+    }, 
+    {
+      "name": "Norwegian", 
+      "size": 310
+    }, 
+    {
+      "name": "Lithuanian", 
+      "size": 1361
+    }, 
+    {
+      "name": "French", 
+      "size": 217
+    }, 
+    {
+      "name": "Catalan", 
+      "size": 69
+    }, 
+    {
+      "name": "Russian", 
+      "size": 8
+    }, 
+    {
+      "name": "Finnish", 
+      "size": 19
+    }, 
+    {
+      "name": "English", 
+      "size": 3163
+    }, 
+    {
+      "name": "Italian", 
+      "size": 1598
+    }, 
+    {
+      "name": "Portuguese", 
+      "size": 17
+    }, 
+    {
+      "name": "German", 
+      "size": 10
+    }, 
+    {
+      "name": "Galician", 
+      "size": 43
+    }, 
+    {
+      "name": "Slovak", 
+      "size": 411
+    }, 
+    {
+      "name": "Spanish", 
+      "size": 4
+    }, 
+    {
+      "name": "Polish", 
+      "size": 1
+    }, 
+    {
+      "name": "Esperanto", 
+      "size": 2
+    }
+  ]
+}

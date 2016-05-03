@@ -1,0 +1,8 @@
+feet
+kb
+mile
+ft
+cubic
+foot
+mb
+days

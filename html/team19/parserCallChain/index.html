@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Parser Call Chain</title>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+    <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+		div.tooltip {
+		  position: absolute; 
+		  text-align: center; 
+		  width: 600px;  
+		  height: 500px;   
+		  padding: 2px; 
+		  font: 12px sans-serif;  
+		  background: lightsteelblue; 
+		  border: 0px;          
+		  border-radius: 8px;
+		  overflow: scroll;
+		}
+		#results{
+			position: absolute;
+			top:20%;
+			left: 30%;
+			margin-top: -50px;
+			margin-left: -50px;
+		}​
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<h2 style="center">Tika Parser Call Chain Hierarchy</h2>
+<select id="selectId" onchange="onMimeSelection()">
+<option value="" selected>Pick a MIME Type</option>
+</select>
+<div id="results" style="center"></div>
+
+<script language="JavaScript">
+    var config1 = liquidFillGaugeDefaultSettings();
+    config1.circleColor = "#FF7777";
+    config1.textColor = "#FF4444";
+    config1.waveTextColor = "#FFAAAA";
+    config1.waveColor = "#FFDDDD";
+    config1.circleThickness = 0.2;
+    config1.textVertPosition = 0.2;
+    config1.waveAnimateTime = 1000;    
+    
+    var config2 = liquidFillGaugeDefaultSettings();
+    config2.circleColor = "#D4AB6A";
+    config2.textColor = "#553300";
+    config2.waveTextColor = "#805615";
+    config2.waveColor = "#AA7D39";
+    config2.circleThickness = 0.1;
+    config2.circleFillGap = 0.2;
+    config2.textVertPosition = 0.8;
+    config2.waveAnimateTime = 2000;
+    config2.waveHeight = 0.3;
+    config2.waveCount = 1;
+
+</script>
+<script>
+	var data;
+	var values = {};
+	d3.json("2_output/parserCallChainResult.json", function (error,json){
+		if (error) return console.warn(error);
+		data = json;
+		var option;
+		for(var mimekey in data)
+		{
+			option = $('<option></option>');			
+			option.attr("value", mimekey);
+			option.append(mimekey);
+			$("#selectId").append(option);
+		}
+	});
+	var div = d3.select("body")
+	  .append("div")  
+	  .attr("class", "tooltip")         
+	  .style("opacity", 0); 
+			  
+	function mapRange(range){
+		switch(range)
+		{
+			case "10" 			: return "	  fileSize < 10B		";
+			case "100" 			: return "    fileSize	< 100B		";
+			case "1000" 		: return "	  fileSize	< 1KB		";
+			case "10000"		: return "1KB 	< fileSize < 10KB	";
+			case "100000" 		: return "10KB 	< fileSize < 100KB	";
+			case "1000000"		: return "100KB < fileSize < 1MB	";
+			case "10000000"		: return "1MB 	< fileSize < 10MB	";
+			case "100000000" 	: return "10MB 	< fileSize < 100MB	";
+			case "1000000000"	: return "100MB < fileSize < 1GB	";
+			default: return range;
+		}
+	}
+	function displayFileInfo(event,fileName, contentSize, metaDataSize, metaDataString){
+		console.log("displayFileInfo");
+		div.style("visibility", "visible");
+		div.transition().duration(200)  
+			.style("opacity", .9);
+		div .html( '<h4>' + fileName +'</h4>' +
+		'<p>contentSize : '+contentSize+' bytes ' +
+		'metaDataSize : '+metaDataSize+' bytes</p>' +
+		'<p>MetaData : <br>'+unescape(metaDataString)+' bytes</p>')
+			.style("left", event.pageX + "px" )      
+			.style("top", event.pageY + "px")
+			.style("height", "150px")
+			.style("width", "500px")
+			.style("overflow-y", "auto")
+			.style("overflow-x", "auto");			
+	}
+	function hideFileInfo(){
+		div.style("visibility", "hidden");
+		div.transition().style('opacity', 0);
+	}
+	function onMimeSelection(){
+		var id = 0;
+		var mimeTable = $("<table border=1>");
+		console.log($("#selectId").val());
+		mimekey = $("#selectId").val();
+		if(mimekey !== "")
+		{
+			var mimeRow = $("<tr>");
+			//mimeRow.append($("<td>" + mimekey + "</td>"));
+			var mimeDiv = $("<div></div>");
+			var parserTables = $("<table border=1>");
+			var mimeData = data[mimekey];
+			for(var parserChainKey in mimeData){
+				var parserRow1 = $("<tr></tr>");
+				var parsers = parserChainKey.split(";");
+				var parserChainDisplay = "Sequence of Parsers Call : ";
+				for (parser in parsers)
+					parserChainDisplay = parserChainDisplay + "<br>&nbsp;&nbsp;&nbsp;" + (parsers[parser]);
+				parserRow1.append($("<td>" + parserChainDisplay + "</td>"));
+
+				var parserRow2 = $("<tr></tr>");
+				var rangeDiv = $("<div></div>")
+				var rangeBands = mimeData[parserChainKey];
+				var rangeTables = $("<table border=1>");
+				for(var range in rangeBands){
+					var rangeRow = $("<tr></tr>");
+					rangeRow.append($("<td>" + mapRange(range) + "</td>"));
+					var fileStats = rangeBands[range];
+					var filesDiv = $("<div></div>");
+					for(var fileSizeKey in fileStats){
+						var files = fileStats[fileSizeKey];				
+						var fileTable = $("<table border=1>");
+						for (var file in files){
+							var contentPercentage = files[file].contentSize/fileSizeKey * 100;
+							var metaDataPercentage = files[file].metaDataSize/fileSizeKey * 100;
+							var fileInfo = files[file].fileName + " : " + fileSizeKey + " " + files[file].contentSize + " " + files[file].metaDataSize;
+							//console.log(fileInfo);
+							id = id + 1;
+							var contentGaugeId = "contentGauge" + id;							
+							var contentSvg = $("<svg></svg>");
+							contentSvg.attr("id",contentGaugeId);
+							contentSvg.attr("width","50%");
+							contentSvg.attr("height","60");
+							
+							var metaGaugeId = "metaGauge" + id;
+							var metaSvg = $("<svg></svg>");
+							metaSvg.attr("id",metaGaugeId);
+							metaSvg.attr("width","50%");
+							metaSvg.attr("height","60");
+							
+							var svgDiv = $("<div></div>");
+							svgDiv.append(contentSvg);
+							svgDiv.append(metaSvg);
+							
+							//console.log(contentPercentage + " " + metaDataPercentage);
+							//fileTable.append($("<tr><td>" + fileSizeKey + "</td><td>" + contentPercentage + " " + metaDataPercentage + "</td></tr>"));
+							fileTable.append($("<tr><td width=40%><span onmouseover=displayFileInfo(event"
+																							   + ",'" + files[file].fileName 
+																							   + "','" + files[file].contentSize 
+																							   + "','" + files[file].metaDataSize
+																							   + "','" + escape(files[file].metaDataString)
+																							   + "')"
+																		+" onmouseout=hideFileInfo() >" 
+																							   + fileSizeKey + " bytes</span></td><td width=\"400px\">" + svgDiv.html() + "</td></tr>"));
+
+							values[contentGaugeId] = contentPercentage;
+							values[metaGaugeId] = metaDataPercentage;
+						}
+						filesDiv.append($(fileTable));						
+					}
+					rangeRow.append($("<td>" + filesDiv.html() + "</td>"));
+					
+					rangeTables.append(rangeRow);					
+				}
+				rangeDiv.append(rangeTables);
+				parserRow2.append($("<td>" + rangeDiv.html() + "</td>"));
+				
+				parserTables.append(parserRow1);
+				parserTables.append($("<tr><td>File Size Bucket &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|" +
+									" File Size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|" + 
+									" Amount of Text &nbsp;  Amount of MetaData</td></tr>"))
+				parserTables.append(parserRow2);
+			}
+			mimeDiv.append(parserTables);
+			mimeRow.append($("<td>" + mimeDiv.html() + "</td>"));
+			
+			mimeTable.append(mimeRow);
+		}
+		$("#results").html(mimeTable);
+		for(key in values)
+		{	
+			if(key.indexOf("contentGauge") !== -1)
+				loadLiquidFillGauge(key, values[key], config1);
+			else
+				loadLiquidFillGauge(key, values[key], config2);
+		}
+	}
+</script>
+</body>
+</html>

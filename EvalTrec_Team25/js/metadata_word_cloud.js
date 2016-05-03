@@ -9,7 +9,7 @@ $(function(){
 
         languages = []
         max_size = -1;
-        min_size = 0.25;
+        min_size = 0.2;
         for(var i=0;i<data.length;i+=2)
         {
             if (data[i+1] > max_size){
@@ -21,7 +21,7 @@ $(function(){
             });
         }
 
-        max_size /= 15;
+        max_size /= 100;
         for(var i =0; i<languages.length; i++){
             languages[i].size /= max_size;
         }
@@ -41,7 +41,7 @@ $(function(){
             .domain([0,1,2,3,4,5,6,10,15,20,100])
             .range(["red", "gold", "orange", "blue", "cyan", "lightblue", "black", "green", "pink", "purple", "yellow", "grey"]);
 
-        d3.layout.cloud().size([800, 300])
+        d3.layout.cloud().size([1000, 500])
             .words(frequency_list)
             .rotate(0)
             .fontSize(function(d) { return d.size; })
@@ -50,8 +50,8 @@ $(function(){
 
         function draw(words) {
             d3.select("body").append("svg")
-                .attr("width", 850)
-                .attr("height", 350)
+                .attr("width", 1050)
+                .attr("height", 550)
                 .attr("class", "wordcloud")
                 .append("g")
                 // without the transform, words words would get cutoff to the left and top, they would

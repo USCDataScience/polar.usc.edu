@@ -1,0 +1,398 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "name": "application/xml",
+          "ratio1": "Text To File Size Ratio = 77.50503153775118 %",
+          "ratio2": "Metadata To File Size Ratio = 41.31624982999595 %",
+          "size": 3
+        },
+        {
+          "name": "image/png",
+          "ratio1": "Text To File Size Ratio = 9.546757 %",
+          "ratio2": "Metadata To File Size Ratio = 13.613620477176494 %",
+          "size": 3
+        },
+        {
+          "name": "application/octet-stream",
+          "ratio1": "Text To File Size Ratio = 15.765443 %",
+          "ratio2": "Metadata To File Size Ratio = 12.232435354 %",
+          "size": 3
+        },
+        {
+          "name": "image/jpeg",
+          "ratio1": "Text To File Size Ratio = 11.2435446 %",
+          "ratio2": "Metadata To File Size Ratio = 77.51761393523185 %",
+          "size": 3
+        },
+        {
+          "name": "application/pdf",
+          "ratio1": "Text To File Size Ratio = 53.96374138594356 %",
+          "ratio2": "Metadata To File Size Ratio = 32.461649046098403 %",
+          "size": 3
+        },
+        {
+          "name": "application/msword",
+          "ratio1": "Text To File Size Ratio = 46.63133467344054 %",
+          "ratio2": "Metadata To File Size Ratio = 20.5745626316772 %",
+          "size": 3
+        },
+        {
+          "name": "application/atom+xml",
+          "ratio1": "Text To File Size Ratio = 78.42757570782126 %",
+          "ratio2": "Metadata To File Size Ratio = 30.61820097493643 %",
+          "size": 3
+        },
+        {
+          "name": "image/gif",
+          "ratio1": "Text To File Size Ratio = 18.1324354 %",
+          "ratio2": "Metadata To File Size Ratio = 60.30315859268414 %",
+          "size": 3
+        },
+        {
+          "name": "application/rdf+xml",
+          "ratio1": "Text To File Size Ratio = 28.946582222413798 %",
+          "ratio2": "Metadata To File Size Ratio = 26.940015547175867 %",
+          "size": 3
+        },
+        {
+          "name": "application/rss+xml",
+          "ratio1": "Text To File Size Ratio = 25.302376898209667 %",
+          "ratio2": "Metadata To File Size Ratio = 16.375174127440686 %",
+          "size": 3
+        },
+        {
+          "name": "image/svg+xml",
+          "ratio1": "Text To File Size Ratio = 27.877491234873207 %",
+          "ratio2": "Metadata To File Size Ratio = 12.549565779494686 %",
+          "size": 3
+        },
+        {
+          "name": "text/x-php",
+          "ratio1": "Text To File Size Ratio = 38.6739539098059 %",
+          "ratio2": "Metadata To File Size Ratio = 62.48556855954324 %",
+          "size": 3
+        },
+        {
+          "name": "application/xhtml+xml",
+          "ratio1": "Text To File Size Ratio = 46.64044626658904 %",
+          "ratio2": "Metadata To File Size Ratio = 1.0007054974651814 %",
+          "size": 3
+        },
+        {
+          "name": "text/html",
+          "ratio1": "Text To File Size Ratio = 60.208697285911335 %",
+          "ratio2": "Metadata To File Size Ratio = 7.190058926825184 %",
+          "size": 3
+        },
+        {
+          "name": "text/x-matlab",
+          "ratio1": "Text To File Size Ratio = 38.71118571712608 %",
+          "ratio2": "Metadata To File Size Ratio = 26.930469273645813 %",
+          "size": 3
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "ratio1": "Text To File Size Ratio = 17.643793923398265 %",
+          "ratio2": "Metadata To File Size Ratio = 99.71343900640361 %",
+          "size": 3
+        },
+        {
+          "name": "application/zip",
+          "ratio1": "Text To File Size Ratio = 10.24234355 %",
+          "ratio2": "Metadata To File Size Ratio = 9.145832578064579 %",
+          "size": 3
+        },
+        {
+          "name": "image/vnd.microsoft.icon",
+          "ratio1": "Text To File Size Ratio = 23.132342435 %",
+          "ratio2": "Metadata To File Size Ratio = 16.86343377940025 %",
+          "size": 3
+        },
+        {
+          "name": "video/quicktime",
+          "ratio1": "Text To File Size Ratio = 8.243546572334 %",
+          "ratio2": "Metadata To File Size Ratio = 18.291665156129158 %",
+          "size": 3
+        },
+        {
+          "name": "application/x-gtar",
+          "ratio1": "Text To File Size Ratio = 12.2434354656 %",
+          "ratio2": "Metadata To File Size Ratio = 9.322848692478732 %",
+          "size": 3
+        },
+        {
+          "name": "text/plain",
+          "ratio1": "Text To File Size Ratio = 38.99907166997021 %",
+          "ratio2": "Metadata To File Size Ratio = 10.708985194249499 %",
+          "size": 3
+        }
+      ],
+      "name": "NLTK Parser"
+    },
+    {
+      "children": [
+        {
+          "name": "application/xml",
+          "ratio1": "Text To File Size Ratio = 77.50503153775118 %",
+          "ratio2": "Metadata To File Size Ratio = 31.75893124851135 %",
+          "size": 3
+        },
+        {
+          "name": "image/png",
+          "ratio1": "Text To File Size Ratio = 13.243435646 %",
+          "ratio2": "Metadata To File Size Ratio = 12.969939248153012 %",
+          "size": 3
+        },
+        {
+          "name": "application/octet-stream",
+          "ratio1": "Text To File Size Ratio = 45.13243543546 %",
+          "ratio2": "Metadata To File Size Ratio = 34.13243354656 %",
+          "size": 3
+        },
+        {
+          "name": "image/jpeg",
+          "ratio1": "Text To File Size Ratio = 54.323243435 %",
+          "ratio2": "Metadata To File Size Ratio = 73.36053225508622 %",
+          "size": 3
+        },
+        {
+          "name": "application/pdf",
+          "ratio1": "Text To File Size Ratio = 53.96374138594356 %",
+          "ratio2": "Metadata To File Size Ratio = 29.73906457328335 %",
+          "size": 3
+        },
+        {
+          "name": "application/msword",
+          "ratio1": "Text To File Size Ratio = 46.63133467344054 %",
+          "ratio2": "Metadata To File Size Ratio = 18.4910626183428 %",
+          "size": 3
+        },
+        {
+          "name": "application/atom+xml",
+          "ratio1": "Text To File Size Ratio = 78.42757570782126 %",
+          "ratio2": "Metadata To File Size Ratio = 20.276975976215368 %",
+          "size": 3
+        },
+        {
+          "name": "image/gif",
+          "ratio1": "Text To File Size Ratio = 0 %",
+          "ratio2": "Metadata To File Size Ratio = 57.45098516749595 %",
+          "size": 3
+        },
+        {
+          "name": "application/rdf+xml",
+          "ratio1": "Text To File Size Ratio = 28.946582222413798 %",
+          "ratio2": "Metadata To File Size Ratio = 17.701964238853109 %",
+          "size": 3
+        },
+        {
+          "name": "application/rss+xml",
+          "ratio1": "Text To File Size Ratio = 25.302376898209667 %",
+          "ratio2": "Metadata To File Size Ratio = 13.035445958206807 %",
+          "size": 3
+        },
+        {
+          "name": "image/svg+xml",
+          "ratio1": "Text To File Size Ratio = 27.877491234873207 %",
+          "ratio2": "Metadata To File Size Ratio = 64.2559725939514 %",
+          "size": 3
+        },
+        {
+          "name": "text/x-php",
+          "ratio1": "Text To File Size Ratio = 38.6739539098059 %",
+          "ratio2": "Metadata To File Size Ratio = 89.74437363585406 %",
+          "size": 3
+        },
+        {
+          "name": "application/xhtml+xml",
+          "ratio1": "Text To File Size Ratio = 46.64044626658904 %",
+          "ratio2": "Metadata To File Size Ratio = 85.86616167835017 %",
+          "size": 3
+        },
+        {
+          "name": "text/html",
+          "ratio1": "Text To File Size Ratio = 60.208697285911335 %",
+          "ratio2": "Metadata To File Size Ratio = 6.428833086436008 %",
+          "size": 3
+        },
+        {
+          "name": "text/x-matlab",
+          "ratio1": "Text To File Size Ratio = 38.71118571712608 %",
+          "ratio2": "Metadata To File Size Ratio = 25.314042061037698 %",
+          "size": 3
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "ratio1": "Text To File Size Ratio = 17.643793923398265 %",
+          "ratio2": "Metadata To File Size Ratio = 82.21985321580649 %",
+          "size": 3
+        },
+        {
+          "name": "application/zip",
+          "ratio1": "Text To File Size Ratio = 9.13234245345 %",
+          "ratio2": "Metadata To File Size Ratio = 8.378762748936582 %",
+          "size": 3
+        },
+        {
+          "name": "image/vnd.microsoft.icon",
+          "ratio1": "Text To File Size Ratio = 12.2324324353 %",
+          "ratio2": "Metadata To File Size Ratio = 14.587733467654967 %",
+          "size": 3
+        },
+        {
+          "name": "video/quicktime",
+          "ratio1": "Text To File Size Ratio = 12.13243553 %",
+          "ratio2": "Metadata To File Size Ratio = 16.757525497873164 %",
+          "size": 3
+        },
+        {
+          "name": "application/x-gtar",
+          "ratio1": "Text To File Size Ratio = 12.13243546 %",
+          "ratio2": "Metadata To File Size Ratio = 8.378762748936582 %",
+          "size": 3
+        },
+        {
+          "name": "text/plain",
+          "ratio1": "Text To File Size Ratio = 38.99907166997021 %",
+          "ratio2": "Metadata To File Size Ratio = 10.551826618478985 %",
+          "size": 3
+        }
+      ],
+      "name": "CoreNLP Parser"
+    },
+    {
+      "children": [
+        {
+          "name": "application/xml",
+          "ratio1": "Text To File Size Ratio = 7.750503153775118 %",
+          "ratio2": "Metadata To File Size Ratio = 30.502699493340786 %",
+          "size": 3
+        },
+        {
+          "name": "image/png",
+          "ratio1": "Text To File Size Ratio = 23.2334456565 %",
+          "ratio2": "Metadata To File Size Ratio = 13.613620477176494 % ",
+          "size": 3
+        },
+        {
+          "name": "application/octet-stream",
+          "ratio1": "Text To File Size Ratio = 12.3232424 %",
+          "ratio2": "Metadata To File Size Ratio = 54.2425356 %",
+          "size": 3
+        },
+        {
+          "name": "image/jpeg",
+          "ratio1": "Text To File Size Ratio = 12.23243535 %",
+          "ratio2": "Metadata To File Size Ratio = 77.51761393523185% ",
+          "size": 3
+        },
+        {
+          "name": "application/pdf",
+          "ratio1": "Text To File Size Ratio = 53.96374138594356 %",
+          "ratio2": "Metadata To File Size Ratio = 6.197592853077499 %",
+          "size": 3
+        },
+        {
+          "name": "application/msword",
+          "ratio1": "Text To File Size Ratio = 46.63133467344054 %",
+          "ratio2": "Metadata To File Size Ratio = 28.7783439341814 % ",
+          "size": 3
+        },
+        {
+          "name": "application/atom+xml",
+          "ratio1": "Text To File Size Ratio = 78.42757570782126 %",
+          "ratio2": "Metadata To File Size Ratio = 22.42325885101812 %",
+          "size": 3
+        },
+        {
+          "name": "image/gif",
+          "ratio1": "Text To File Size Ratio =11.131432424 %",
+          "ratio2": "Metadata To File Size Ratio = 60.30315859268414 %",
+          "size": 3
+        },
+        {
+          "name": "application/rdf+xml",
+          "ratio1": "Text To File Size Ratio = 28.946582222413798 %",
+          "ratio2": "Metadata To File Size Ratio = 17.485205493071236 %",
+          "size": 3
+        },
+        {
+          "name": "application/rss+xml",
+          "ratio1": "Text To File Size Ratio = 25.302376898209667 %",
+          "ratio2": "Metadata To File Size Ratio = 12.09715801662636 %",
+          "size": 3
+        },
+        {
+          "name": "image/svg+xml",
+          "ratio1": "Text To File Size Ratio = 27.877491234873207 %",
+          "ratio2": "Metadata To File Size Ratio = 87.57793855618706 %",
+          "size": 3
+        },
+        {
+          "name": "text/x-php",
+          "ratio1": "Text To File Size Ratio = 38.6739539098059 %",
+          "ratio2": "Metadata To File Size Ratio = 13.797149030932705 %",
+          "size": 3
+        },
+        {
+          "name": "application/xhtml+xml",
+          "ratio1": "Text To File Size Ratio = 46.64044626658904 %",
+          "ratio2": "Metadata To File Size Ratio = 83.11353638187512 %",
+          "size": 3
+        },
+        {
+          "name": "text/html",
+          "ratio1": "Text To File Size Ratio = 60.208697285911335 %",
+          "ratio2": "Metadata To File Size Ratio = 6.34813897938743 %",
+          "size": 3
+        },
+        {
+          "name": "text/x-matlab",
+          "ratio1": "Text To File Size Ratio = 38.71118571712608 %",
+          "ratio2": "Metadata To File Size Ratio = 28.373780907019065 %",
+          "size": 3
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "ratio1": "Text To File Size Ratio = 17.643793923398265 %",
+          "ratio2": "Metadata To File Size Ratio = 16.760407749795432 %",
+          "size": 3
+        },
+        {
+          "name": "application/zip",
+          "ratio1": "Text To File Size Ratio = 12.32342435 %",
+          "ratio2": "Metadata To File Size Ratio = 0.9145832578064579 %",
+          "size": 3
+        },
+        {
+          "name": "image/vnd.microsoft.icon",
+          "ratio1": "Text To File Size Ratio = 12.1312424 %",
+          "ratio2": "Metadata To File Size Ratio = 16.86343377940025 %",
+          "size": 3
+        },
+        {
+          "name": "video/quicktime",
+          "ratio1": "Text To File Size Ratio = 12.1324352423 %",
+          "ratio2": "Metadata To File Size Ratio = 18.291665156129158 %",
+          "size": 3
+        },
+        {
+          "name": "application/x-gtar",
+          "ratio1": "Text To File Size Ratio = 14.12435355 %",
+          "ratio2": "Metadata To File Size Ratio = 93.22848692478732 %",
+          "size": 3
+        },
+        {
+          "name": "text/plain",
+          "ratio1": "Text To File Size Ratio = 38.99907166997021 %",
+          "ratio2": "Metadata To File Size Ratio = 10.708334954198261 %",
+          "size": 3
+        }
+      ],
+      "name": "OpenNLP Parser"
+    }
+    ],
+  "name": "parsers"
+}

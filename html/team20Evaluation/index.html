@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script> 
+<style>
+    body{
+           background-image: url(visual.jpg)
+         }
+</style>
+</head>
+    <body>            
+            <div style="position:absolute; top:50px; width:100%">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                          <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                <div class="panel panel-default" >
+                <div class="panel-heading">D3 Visualization for Trec Polar Dataset <span style="position:absolute; left:1200px"><button type="button" class="btn btn-default" href="#myCarousel" role="button" data-slide="next"> 
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          </button></span></div>
+                      <div class="panel-body"><span style="position:absolute; left:250px "> 
+                          Scientific Content Enrichment Evaluation of Polar Dynamic Domain Dataset Visualization.
+                          </span><br><br></div>
+                    </div>
+                       </div>
+                    <div class="item">
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading"><button type="button" class="btn btn-default" href="#myCarousel" role="button" data-slide="prev">   
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> Back</span>
+                          </button>
+                    </div>
+                        <div class="panel-body"><br>
+                        <div class="container">
+            <script>
+
+            </script>
+
+                <div id="content" style="width:1200px">
+                        <ul id="tabs" class="nav nav-pills" data-tabs="tabs">
+
+                            <li class="active"><a href="#ps" data-toggle="tab">Request to Content</a></li>
+                            <li><a href="#so" data-toggle="tab">File Size Diversity</a></li>
+                            <li><a href="#mq" data-toggle="tab">Parser Call</a></li>
+                            <li><a href="#dg" data-toggle="tab">Language Identification Tika</a></li>
+                            <li><a href="#dgnew" data-toggle="tab">Language Identification Optimaze</a></li>
+                            <li><a href="#ar" data-toggle="tab">Word Cloud</a></li>
+                            <li><a href="#sm" data-toggle="tab">NER Toolkits</a></li>
+                            <li><a href="#smnew" data-toggle="tab">Maximal Joint NER</a></li>
+                            <li onclick="window.open('D3_HW3_599.html')"><a href="#ps" data-toggle="tab">Spectrum</a></li>
+
+
+                        </ul>
+                        <div id="my-tab-content" class="tab-content">
+                            <div class="tab-pane active" id="ps">
+                                <div> 
+                                    <br />The following D3 visualization shows helps in evaluation of the crawling process. The request-response headers are investigated and metrics are provided below.
+                                </div>
+                                <iframe name="Framename1" src="request_content.html" width="1500" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+                            <div class="tab-pane" id="so">
+                                <div>
+                                    <br />
+                                    File Size diversity across all the MIME types.
+                                </div>
+                                <iframe name="Framename2" src="FileSize_Diversity_.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+
+                            <div class="tab-pane" id="mq">
+                                <div>
+                                    <br />
+                                    The following dendogram represents the parser chain called by Apache Tika
+                                </div>
+                                <iframe name="Framename3" src="ParserCallChain.html" width="900" height="700" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+
+                            <div class="tab-pane" id="dg">
+                                <div>
+                                    <br /> The following D3 identifies all the languages in the polar dataset using Apache Tika
+                                </div>
+                                <iframe name="Framename4" src="tikalang.html" width="1300" height="900" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+                            <div class="tab-pane" id="dgnew">
+                                <div>
+                                    <br /> The following D3 identifies all the languages in the polar dataset using Optimaize
+                                </div>
+                                <iframe name="Framename5" src="optimaize.html" width="1300" height="900" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+
+                            <div class="tab-pane" id="ar">
+                                <div>
+                                    <br />
+                                    
+                                </div>
+                                <iframe name="Framename6" src="Word_Cloud_Meta.html" width="1800" height="900" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+
+                            <div class="tab-pane" id="sm">
+                                <div>
+                                    <br /> The following lists sample NER entities and mappings
+                                </div>
+                                <iframe name="Framename7" src="connectedMap.html" width="1300" height="900" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+                            <div class="tab-pane" id="smnew">
+                                <div>
+                                    <br />The following lists maximal joint among NER toolkits
+                                    
+                                </div>
+                                <iframe name="Framename8" src="Maximal_Joint.html" width="1300" height="900" frameborder="0" scrolling="auto" class="frame-area">
+                                </iframe>
+
+                            </div>
+
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                            </div>
+                    </div>
+                    </div>
+                    </div>
+                </body>            

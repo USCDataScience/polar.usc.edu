@@ -1,0 +1,220 @@
+<div class="page-header row">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Measurement Diversity</h3>
+            <div class="col-md-8 col-xs-8 form-inline pull-right">
+                <input placeholder="Enter MIME Type" type="text" id="filterInput" class="form-control" disabled/>
+                <button type="button" id="filterBtn" class="form-control">Filter</button>
+            </div>
+        </div>
+        <div id="showAdvancedFilters" class="col-md-12">
+            <a class="pull-right" id="toggleFilters">Show Advanced Filters</a>
+        </div>
+        <div class="col-xs-12 col-md-12" id="advancedFilters" style="display: none;">
+            <div class="col-md-6">
+                <span>Filter by Domain</span><input placeholder="Filter by Page domain" type="text" id="domainFilter" class="form-control" disabled/>
+            </div>
+            <div class="col-md-6">
+                <span>Filter by Units</span><input placeholder="Filter by Units" type="text" id="typeFilter" class="form-control" disabled/>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+
+.page-header h3 {
+    margin-top: 0;
+    display: inline-block;
+}
+
+.page-header #filterInput {
+    width: calc(100% - 65px);
+    display: inline-block;
+}
+
+.page-header #filterBtn {
+    display: inline-block;
+    width: auto;
+}
+</style>
+<div id="chartContainer" style="height: 100%">
+  
+  <script type="text/javascript">
+    var allMimes;
+    var allUnits;
+    var allDomains;
+
+    // Create the svg and set the dimensions
+    var svg = dimple.newSvg("#chartContainer", 590, 1200);
+
+    $('#toggleFilters').click(function() {
+        $("#advancedFilters").css('display','inline-block');
+
+        $('#typeFilter').autocomplete({
+            source: allUnits
+        });
+
+        $('#domainFilter').autocomplete({
+            source: allDomains
+        });
+
+    });
+
+    $('#filterBtn').click(function() {
+        // var text = $('#filterInput').val();
+        // var domainFilterText = $("#domainFilter").val();
+        // var unitFilterText = $("#typeFilter").val();
+        // var requestText = "";
+
+        // if(text != "") {
+        //     requestText = '/api/measurement?type=mime&input='+text;
+        // } else if(domainFilterText != "") {
+        //     requestText = '/api/measurement?type=url&input='+domainFilterText;
+        // } else if(unitFilterText != "") {
+        //     requestText = '/api/measurement?type=units&input='+unitFilterText;
+        // } else {
+        //     requestText = '/api/measurement';
+        // }
+
+        // console.log(requestText);
+
+        // d3.json(requestText, function(obj) {
+        //     var allData = obj.data;
+        //     var keys = Object.keys(allData);
+        //     allUnits = keys;
+        //     svg.remove();
+        //     svg = dimple.newSvg("#chartContainer", 590, 1200);
+        //     drawVisualisation(allData, keys);
+        // });
+
+    });
+
+    // loads all mimes into autocomplete
+    // d3.json('/api/mimes', function(obj) {
+    //     allMimes = obj.data;
+
+    //     $('#filterInput').autocomplete({
+    //         source: allMimes
+    //     });
+
+    // });
+
+
+    // d3.json('/api/domains', function(obj) {
+    //     allDomains = obj.data;
+    //     console.log(allDomains);
+    // });
+
+    d3.json('vis/data/measurement.json', function(obj) {
+        var allData = obj.data;
+        var keys = Object.keys(allData);
+        allUnits = keys;
+
+        drawVisualisation(allData, keys);
+    });
+
+    function drawVisualisation(allData, keys) {
+      count = 30;
+      keys.forEach(function(d) {
+
+          data = allData[d].map(function(x) {
+            return parseFloat(x);
+          }); // array containing the values
+          addBullet(100, count, 430, 30, d, Math.min.apply(Math, data), Math.max.apply(Math, data), 
+        "Average", "Aperture", getAvg(data), "#80B1D3");
+          count+=60;
+      });
+    }
+
+    function getAvg(measure) {
+      return measure.reduce(function (p, c) {
+        return p + c;
+      }) / measure.length;
+    }
+
+    function addBullet(x, y, height, width, measure, lowMark,
+                        highMark, compareField, keyVal,
+                        compareVal, color) {
+        
+        // This is a custom algorithm to lighten the passed color, I find I can't
+        // get the results I want from the d3.rgb.brighter method.
+        function lighten(color, pct) {
+            return d3.rgb(
+                    d3.rgb(color).r + pct * (255 - d3.rgb(color).r),
+                    d3.rgb(color).g + pct * (255 - d3.rgb(color).g),
+                    d3.rgb(color).b + pct * (255 - d3.rgb(color).b)
+                );
+        }
+
+        // Create a single data row for bullet data.  Dimple doesn't
+        // quite handle bullets out of the box so we need to do some
+        // data manipulation here
+        var bData = [
+            {
+                "Metric":measure,
+                "Value":compareVal,
+                "Low Value":lowMark,
+                "High Value":highMark,
+                "Compare Value":compareVal
+            }
+        ];
+
+        // Add the key and compare values for coloring and pop-ups
+        bData[0][keyVal] = keyVal;
+        bData[0][compareVal] = compareVal;
+
+        // Create the bullet chart itself at the passed bounds
+        var bullet = new dimple.chart(svg, bData);
+        bullet.setBounds(x, y, height, width);
+
+        // Add the x and y for the main bar
+        var bY = bullet.addCategoryAxis("y", "Metric");
+        var bX = bullet.addMeasureAxis("x", "Value");
+
+        // Add a separate x axis for each measure, this is required
+        // where we want to do a series for each measure.  By passing
+        // another axis in place of the position we combine them to create
+        // a 4 measure composite.
+        var lX = bullet.addMeasureAxis(bX, "Low Value");
+        var hX = bullet.addMeasureAxis(bX, "High Value");
+        var cX = bullet.addMeasureAxis(bX, "Compare Value");
+
+        // Add a series for the marks first (the order defines)
+        // document z position - first at back, last on top
+        // NB. High/Low Mark here doesn't refer to a field in the data
+        // rather it tags the total value with a name we can use to color
+        var hm = bullet.addSeries("High Mark", dimple.plot.bar, [bY, hX]);
+        var lm = bullet.addSeries("Low Mark", dimple.plot.bar, [bY, lX]);
+        // Add the main series - keyVal is for color and tooltip
+        var b = bullet.addSeries(keyVal, dimple.plot.bar, [bY, bX]);
+        // Add the comparison series - compareVal is for color and tooltip
+        var m = bullet.addSeries(compareVal, dimple.plot.bar, [bY, cX]);
+
+        // Configure the markers as floating bars
+        m.stacked = false;
+        cX.floatingBarWidth = 2;
+
+        // Set the gaps for the bar series with a narrow main series and full
+        // width for the markers
+        hm.barGap = 0;
+        lm.barGap = 0;
+        b.barGap = 0.75;
+
+        // Assign the colors as different shades of the passed color
+        bullet.assignColor(keyVal, color);
+        bullet.assignColor(compareVal, d3.rgb(color).darker(0.5));
+        bullet.assignColor("Low Mark", lighten(color, 0.4));
+        bullet.assignColor("High Mark", lighten(color, 0.6));
+
+        // Draw the chart
+        bullet.draw();
+
+        // Once drawn we can remove titles
+        bX.titleShape.remove();
+        bY.titleShape.remove();
+
+      }
+
+  </script>
+</div>
+</html>

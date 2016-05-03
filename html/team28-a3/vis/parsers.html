@@ -1,0 +1,278 @@
+<div class="page-header row">
+    <div class="col-md-12">
+        <h3>Parser call chain</h3>
+        <div class="col-md-8 col-xs-8 form-inline pull-right">
+            <input type="text" placeholder="Enter MIME TYPE" id="filterInput" class="form-control" />
+            <button type="button" id="filterBtn" class="form-control">Filter</button>
+        </div>
+    </div>
+</div>
+<dic class="row">
+    <div class="col-md-12">
+        <b>Current MIME Type: </b><span id="currentMIME"></span>
+    </div>
+</div>
+<div class="vis-container">
+</div>
+
+<style>
+    .page-header h3 {
+        margin-top: 0;
+        display: inline-block;
+    }
+
+    .page-header #filterInput {
+        width: calc(100% - 65px);
+        display: inline-block;
+    }
+
+    .page-header #filterBtn {
+        display: inline-block;
+        width: auto;
+    }
+
+    .node circle {
+      cursor: pointer;
+      fill: #fff;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+    }
+
+    .node text {
+      font-size: 11px;
+    }
+
+    path.link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 1.5px;
+    }
+</style>
+<script type="text/javascript">
+(function () {
+    var allData;
+    var currentData;
+    var defaultMime = "application/pdf";
+    var currentMime = defaultMime;
+
+    $("#currentMIME").html(currentMime);
+
+    $("#filterBtn").click(function() {
+        currentMime = $('#filterInput').val();
+        $("#currentMIME").html(currentMime);
+        currentData = allData[currentMime];
+        updateChart();
+    });
+
+    d3.json('vis/data/parsers.json', function(obj) {
+        allData = obj;
+
+        $('#filterInput').autocomplete({
+            source: Object.keys(allData)
+        });
+
+        currentData = allData[currentMime]
+        initChart();
+    });
+
+    function updateChart() {
+        update(root);
+    }
+
+    function initChart() {
+        root = {
+            name: 'CombinedParser',
+            children: [
+                {
+                    name: 'TagRatioParser',
+                    children: [
+                        { name: 'StanfordCoreNLP' }
+                    ]
+                },
+                {
+                    name: 'LanguageDetectionParser'
+                },
+                {
+                    name: 'GoogleScholarParser',
+                    children: [
+                        {
+                            name: 'JournalParser',
+                            children: [
+                                { name: 'PDFParser' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: 'NLTKParser'
+                },
+                {
+                    name: 'GeoTopicParser'
+                },
+                {
+                    name: 'AlchemyParser'
+                },
+                {
+                    name: 'AutoDetectParser',
+                    children: [
+                        { name: 'TXTParser' },
+                        { name: 'PDFParser' },
+                        { name: 'HtmlParser' },
+                    ]
+                }
+            ]
+        };
+
+        root.x0 = h / 2;
+        root.y0 = 0;
+
+        update(root);
+    }
+
+    var m = [20, 120, 20, 120],
+        w = 800 - m[1] - m[3],
+        h = 600 - m[0] - m[2],
+        i = 0,
+        root;
+
+    var tree = d3.layout.tree()
+        .size([h, w]);
+
+    var diagonal = d3.svg.diagonal()
+        .projection(function(d) { return [d.y, d.x]; });
+
+    var vis = d3.select(".vis-container").append("svg:svg")
+        .attr("width", w + m[1] + m[3])
+        .attr("height", h + m[0] + m[2])
+      .append("svg:g")
+        .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+    // tooltip
+    var tip = d3.tip()
+      .attr('class', 'd3-tip')
+      .offset([-7,  0])
+      .html(function(d) {
+        var html = [];
+        var info = currentData[d.name];
+        if (info && info['metadataCount']) {
+            html.push('Avg Metadata Size: ' + info['metadataAvgSize'].toFixed(0) + ' bytes');
+            html.push('Metadata/File Size Ratio: ' + info['metadataRatio'].toFixed(2) + '%');
+        }
+        if (info && info['contentCount']) {
+            html.push('Avg Content Size: ' + info['contentAvgSize'].toFixed(0) + ' bytes');
+            html.push('Content/File Size Ratio: ' + info['contentRatio'].toFixed(2) + '%');
+        }
+
+        if (!html.length) {
+            return 'No Information';
+        }
+        return html.join('<br />');
+      });
+
+    vis.call(tip);
+
+    function update(source) {
+      var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+      // Compute the new tree layout.
+      var nodes = tree.nodes(root).reverse();
+
+      // Normalize for fixed-depth.
+      nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+      // Update the nodes…
+      var node = vis.selectAll("g.node")
+          .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+      // Enter any new nodes at the parent's previous position.
+      var nodeEnter = node.enter().append("svg:g")
+          .attr("class", "node")
+          .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+          .on("click", function(d) { toggle(d); update(d); });
+
+      nodeEnter.append("svg:circle")
+          .attr("r", 1e-6)
+          .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
+          .on("mouseenter", tip.show)
+          .on("mouseout", tip.hide);
+
+      nodeEnter.append("svg:text")
+          .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+          .attr("dy", ".35em")
+          .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+          .text(function(d) { return d.name; })
+          .style("fill-opacity", 1e-6);
+
+      // Transition nodes to their new position.
+      var nodeUpdate = node.transition()
+          .duration(duration)
+          .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+      nodeUpdate.select("circle")
+          .attr("r", 4.5)
+          .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+      nodeUpdate.select("text")
+          .style("fill-opacity", 1);
+
+      // Transition exiting nodes to the parent's new position.
+      var nodeExit = node.exit().transition()
+          .duration(duration)
+          .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+          .remove();
+
+      nodeExit.select("circle")
+          .attr("r", 1e-6);
+
+      nodeExit.select("text")
+          .style("fill-opacity", 1e-6);
+
+      // Update the links…
+      var link = vis.selectAll("path.link")
+          .data(tree.links(nodes), function(d) { return d.target.id; });
+
+      // Enter any new links at the parent's previous position.
+      link.enter().insert("svg:path", "g")
+          .attr("class", "link")
+          .attr("d", function(d) {
+            var o = {x: source.x0, y: source.y0};
+            return diagonal({source: o, target: o});
+          })
+        .transition()
+          .duration(duration)
+          .attr("d", diagonal);
+
+      // Transition links to their new position.
+      link.transition()
+          .duration(duration)
+          .attr("d", diagonal);
+
+      // Transition exiting nodes to the parent's new position.
+      link.exit().transition()
+          .duration(duration)
+          .attr("d", function(d) {
+            var o = {x: source.x, y: source.y};
+            return diagonal({source: o, target: o});
+          })
+          .remove();
+
+      // Stash the old positions for transition.
+      nodes.forEach(function(d) {
+        d.x0 = d.x;
+        d.y0 = d.y;
+      });
+    }
+
+    // Toggle children.
+    function toggle(d) {
+      if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+    }
+}());
+//# sourceURL=vis/parsers.js
+</script>

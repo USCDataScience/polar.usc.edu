@@ -1,0 +1,136 @@
+<div class="page-header row">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>File Diversity</h3>
+                <div class="col-md-8 col-xs-8 form-inline pull-right">
+                    <input type="text" placeholder="Enter MIME TYPE" id="filterInput" class="form-control" />
+                    <button type="button" id="filterBtn" class="form-control">Filter</button>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="col-md-12">
+    <p>The following graph shows the variability between index size and file size.</p><br>
+    <span><b>Current MIME Selection is:</b><span id="currentMIME"></span></span>
+</div>
+<style>
+    .page-header h3 {
+        margin-top: 0;
+        display: inline-block;
+    }
+
+    .page-header #filterInput {
+        width: calc(100% - 65px);
+        display: inline-block;
+    }
+
+    .page-header #filterBtn {
+        display: inline-block;
+        width: auto;
+    }
+
+</style>
+<div id="chartContainer">
+  
+  <script type="text/javascript">
+    var allData;
+    var keys;
+    var defaultValue = "application/xhtml+xml; charset=ISO-8859-1";
+    var filterKeys = [];
+    var myChart;
+    var x;
+
+
+    $("#filterBtn").click(function() {
+        updateChart();
+    });
+
+    $("#currentMIME").html(defaultValue);
+
+    d3.json('vis/data/filediversity.json', function(obj) {
+        allData = obj.data;
+        console.log(allData);
+
+        drawVis();
+    });
+
+    d3.json('vis/data/mimes.json', function(obj) {
+        filterKeys = obj.data;
+        $('#filterInput').autocomplete({
+            source: filterKeys
+        });
+        console.log('autocomplete loaded');
+    });
+
+    function drawVis() {
+        var svg = dimple.newSvg("#chartContainer", 800, 400);
+        data = cleanData(dimple.filterData(allData, "Content-Type", ["application/xhtml+xml; charset=ISO-8859-1"]));
+        
+        myChart = new dimple.chart(svg, data);
+        myChart.setBounds(60, 30, 765, 305);
+        x = myChart.addCategoryAxis("x", "index");
+        x.addOrderRule("index");
+
+        var y0 = myChart.addMeasureAxis("y", "ratio");
+        myChart.addSeries("MIME File Size", dimple.plot.line, [x, y0]);
+        
+        myChart.addLegend(60, 10, 500, 20, "right");
+        myChart.draw();
+
+        cleanAxis(x, 100);
+        
+    }
+
+    function cleanData(data) {
+        data.forEach(function(d,i) {
+            data[i]['index'] = parseInt(i)+1;
+            data[i]['filesize'] = parseInt(d['filesize']);
+            data[i]['indexSize'] = parseInt(d['indexSize']);
+        });
+        return data;
+    }
+
+    function updateMIMEHolder(text) {
+        $("#currentMIME").html(text);
+    }
+
+    function updateChart(delay) {
+        var text = $('#filterInput').val();
+        updateMIMEHolder(text);
+
+        var data = cleanData(dimple.filterData(allData, "Content-Type", text));
+        console.log(data);
+        myChart.series[0].data = dimple.filterData(data, "ratio", null);;
+
+        myChart.draw(0, true);
+        myChart.draw(delay || 0);
+        if(data.length > 1000)
+        cleanAxis(x,100);
+    }
+
+    // this is used to clean ticks for any axis
+    function cleanAxis(axis, oneInEvery) {
+
+     if (axis.shapes.length > 0) {
+         var del = false;
+             if (oneInEvery > 1) {
+                 axis.shapes.selectAll("text")
+                 .each(function (d) {
+                     // Remove all but the nth label
+                     if (del % oneInEvery !== 0) {
+                         this.remove();
+                         axis.shapes.selectAll("line").each(function (d2) {
+                             if (d === d2) {
+                                 this.remove();
+                             }
+                         });
+                     }
+                     del += 1;
+                 });
+             }
+         }
+    };
+
+  </script>
+</div>
+</html>

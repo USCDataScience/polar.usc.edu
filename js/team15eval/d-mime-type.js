@@ -23,7 +23,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("data/part10_text-html.tsv", type, function(error, data) {
+d3.tsv("../../data/team15eval/part10_text-html.tsv", type, function(error, data) {
   if (error) throw error;
 
   x.domain(data.map(function(d) { return d.year; }));

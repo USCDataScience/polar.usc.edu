@@ -5,7 +5,7 @@ var layout="";
 
 
 
-d3.json("data/wordcloud_sweet.json",function(error,responseWords)
+d3.json("../../data/team15eval/wordcloud_sweet.json",function(error,responseWords)
 {
 
  layout= d3.layout.cloud()

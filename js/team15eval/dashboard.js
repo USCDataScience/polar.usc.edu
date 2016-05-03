@@ -202,7 +202,7 @@ function dashboard(id, fData){
         leg= legend(tF);  // create the legend.
 }
 
-var freqData= d3.csv("data/dashboard.csv",function(d) {
+var freqData= d3.csv("../../data/team15eval/dashboard.csv",function(d) {
     return {
         File_Type : d.File_Type,
         freq : {

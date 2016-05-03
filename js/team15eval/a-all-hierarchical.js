@@ -29,7 +29,7 @@ svg.append("g")
     .attr("class", "y axis")
   .append("line")
     .attr("y1", "100%");
-d3.json("data/all-hierarchial.json", function(error, root) {
+d3.json("../../data/team15eval/all-hierarchial.json", function(error, root) {
   if (error) throw error;
   partition.nodes(root);
   x.domain([0, root.value]).nice();

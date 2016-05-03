@@ -1,7 +1,7 @@
 function refreshHzBarChart(){
 
     console.log("entered refreshHzBarChart");
-    d3.json('data/ner_comparison.json', function(error, data) {
+    d3.json('../../data/team15eval/ner_comparison.json', function(error, data) {
 
     if (error) throw error;
     console.log(data.labels);

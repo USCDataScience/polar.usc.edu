@@ -57,7 +57,7 @@ function load()
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    d3.json("data/parser_extraction/"+filename+".json",function(error, data) {
+    d3.json("../../data/team15eval/parser_extraction/"+filename+".json",function(error, data) {
       
        
        var xAxis = d3.svg.axis()

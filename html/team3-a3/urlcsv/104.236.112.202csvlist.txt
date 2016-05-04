@@ -1,5 +1,0 @@
-meter
-mile
-ft
-ice
-km

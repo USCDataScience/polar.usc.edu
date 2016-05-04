@@ -1,4 +1,0 @@
-min
-sec
-days
-day

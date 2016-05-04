@@ -1,4 +1,0 @@
-feet
-sec
-degrees
-mb

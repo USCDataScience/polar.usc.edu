@@ -1,7 +1,0 @@
-mb
-days
-km
-month
-feet
-degrees
-day

@@ -1,3 +1,0 @@
-degrees
-hour
-degree

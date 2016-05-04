@@ -1,2 +1,0 @@
-meter
-km

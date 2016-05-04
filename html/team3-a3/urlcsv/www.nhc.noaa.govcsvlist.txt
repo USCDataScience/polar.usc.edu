@@ -1,4 +1,0 @@
-ft
-days
-hour
-mb

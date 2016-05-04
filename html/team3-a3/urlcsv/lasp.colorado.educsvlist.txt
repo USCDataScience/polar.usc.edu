@@ -1,7 +1,0 @@
-kb
-degree
-mb
-km
-feet
-degrees
-year

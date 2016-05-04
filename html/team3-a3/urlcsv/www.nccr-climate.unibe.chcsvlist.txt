@@ -1,5 +1,0 @@
-kb
-degrees
-days
-km
-mb

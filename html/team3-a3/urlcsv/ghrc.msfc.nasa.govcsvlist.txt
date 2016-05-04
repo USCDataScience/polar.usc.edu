@@ -1,5 +1,0 @@
-feet
-kg
-degrees
-degree
-km

@@ -1,4 +1,0 @@
-kb
-days
-per
-mb

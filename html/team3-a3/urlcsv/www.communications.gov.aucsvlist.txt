@@ -1,4 +1,0 @@
-kb
-mb
-per
-min

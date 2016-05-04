@@ -1,5 +1,0 @@
-feet
-kb
-days
-km
-mb

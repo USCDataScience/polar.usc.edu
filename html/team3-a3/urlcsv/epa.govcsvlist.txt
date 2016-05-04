@@ -1,7 +1,0 @@
-kb
-pound
-degree
-mb
-days
-per
-degrees

@@ -1,5 +1,0 @@
-kb
-year
-degrees
-degree
-mb

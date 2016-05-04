@@ -1,3 +1,0 @@
-year
-days
-mb

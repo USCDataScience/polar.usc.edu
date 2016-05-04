@@ -1,5 +1,0 @@
-kb
-second
-sec
-km
-mb

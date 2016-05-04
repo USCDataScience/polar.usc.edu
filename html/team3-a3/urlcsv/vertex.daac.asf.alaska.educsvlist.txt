@@ -1,4 +1,0 @@
-km
-degrees
-days
-kilogram

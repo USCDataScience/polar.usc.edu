@@ -1,4 +1,0 @@
-kb
-minute
-hour
-day

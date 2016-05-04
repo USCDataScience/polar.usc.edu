@@ -1,4 +1,0 @@
-degrees
-day
-per
-year

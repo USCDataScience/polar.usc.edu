@@ -1,4 +1,0 @@
-second
-degrees
-day
-km

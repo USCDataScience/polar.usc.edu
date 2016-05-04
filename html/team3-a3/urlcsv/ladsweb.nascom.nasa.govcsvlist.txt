@@ -1,3 +1,0 @@
-minute
-pixel
-km

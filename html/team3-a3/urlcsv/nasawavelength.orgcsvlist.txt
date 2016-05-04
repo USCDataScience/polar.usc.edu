@@ -1,5 +1,0 @@
-min
-minute
-days
-per
-month

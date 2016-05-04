@@ -1,5 +1,0 @@
-hr
-degrees
-day
-hour
-days

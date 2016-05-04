@@ -1,7 +1,0 @@
-kb
-degree
-meter
-mile
-degrees
-km
-minute

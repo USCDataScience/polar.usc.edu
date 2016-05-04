@@ -1,6 +1,0 @@
-hour
-mb
-days
-kilogram
-second
-km

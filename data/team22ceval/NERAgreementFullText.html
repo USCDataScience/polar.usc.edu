@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>NER Agreement</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+<script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    
+    
+ <style type="text/css">
+
+      #hzBarChart .panel-body .legend {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: start;
+        font-size: 12px;
+      }
+
+      #hzBarChart .panel-body text {
+        
+        font: 10px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .label {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .bar:hover {
+        fill: yellow;
+      }
+
+      #hzBarChart .panel-body .axis path,
+      #hzBarChart .panel-body .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      #hzBarChart .panel-body .legend {
+        position: fixed;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/>
+    <div class="container">
+        <div id="hzBarChart" class="panel panel-info text-center">
+          <div class="panel-heading"><h3 class="panel-title">CoreNLP vs NLTK vs OpenNLP</h3></div>
+          <div class="panel-body"></div>
+        </div>
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Charts -->
+    <script src="hzBarChartFullText.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log("will call search");
+      search();
+    });
+    function search(){
+      console.log("will call refreshHzBarChart");
+      refreshHzBarChart();
+
+    }
+    </script>
+   
+  </body>
+</html>
+

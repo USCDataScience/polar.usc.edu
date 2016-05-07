@@ -1,0 +1,4205 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "DORIS",
+                            "size": 810
+                        },
+                        {
+                            "name": "Doris",
+                            "size": 444
+                        },
+                        {
+                            "name": "Goldstone",
+                            "size": 394
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 328
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 311
+                        },
+                        {
+                            "name": "Rios-Bergantinos Silvia",
+                            "size": 295
+                        },
+                        {
+                            "name": "Matera",
+                            "size": 269
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 254
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 234
+                        },
+                        {
+                            "name": "Willis",
+                            "size": 231
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Shanghai",
+                            "size": 974
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 827
+                        },
+                        {
+                            "name": "Beijing",
+                            "size": 677
+                        },
+                        {
+                            "name": "Potsdam",
+                            "size": 655
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 647
+                        },
+                        {
+                            "name": "Greenbelt",
+                            "size": 589
+                        },
+                        {
+                            "name": "Changchun",
+                            "size": 567
+                        },
+                        {
+                            "name": "Tahiti",
+                            "size": 429
+                        },
+                        {
+                            "name": "Oklahoma City",
+                            "size": 378
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 356
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "IDS Data Centers",
+                            "size": 737
+                        },
+                        {
+                            "name": "SSALTO",
+                            "size": 679
+                        },
+                        {
+                            "name": "Arequipa",
+                            "size": 663
+                        },
+                        {
+                            "name": "Maspalomas",
+                            "size": 604
+                        },
+                        {
+                            "name": "Mauna Kea MKEA",
+                            "size": 537
+                        },
+                        {
+                            "name": "Kellyville KELY",
+                            "size": 477
+                        },
+                        {
+                            "name": "McDonald",
+                            "size": 469
+                        },
+                        {
+                            "name": "Greenbelt",
+                            "size": 462
+                        },
+                        {
+                            "name": "Bangalore IISC",
+                            "size": 459
+                        },
+                        {
+                            "name": "Madrid MADR",
+                            "size": 458
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "pub"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "G. Yetman",
+                            "size": 83
+                        },
+                        {
+                            "name": "Zendesk",
+                            "size": 66
+                        },
+                        {
+                            "name": "Dilley",
+                            "size": 62
+                        },
+                        {
+                            "name": "Lori J. Tyahla",
+                            "size": 62
+                        },
+                        {
+                            "name": "U. Deichmann",
+                            "size": 60
+                        },
+                        {
+                            "name": "Kevin Murphy",
+                            "size": 51
+                        },
+                        {
+                            "name": "Matt Smith",
+                            "size": 48
+                        },
+                        {
+                            "name": "Edwin Grayzeck",
+                            "size": 48
+                        },
+                        {
+                            "name": "Carey E. Noll",
+                            "size": 47
+                        },
+                        {
+                            "name": "R.S. Chen",
+                            "size": 44
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Earth",
+                            "size": 1776
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 1730
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 1729
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 1498
+                        },
+                        {
+                            "name": "US",
+                            "size": 1346
+                        },
+                        {
+                            "name": "New York",
+                            "size": 703
+                        },
+                        {
+                            "name": "Palisades",
+                            "size": 302
+                        },
+                        {
+                            "name": "Arctic Sea",
+                            "size": 276
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 225
+                        },
+                        {
+                            "name": "North America",
+                            "size": 196
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 2635
+                        },
+                        {
+                            "name": "NSIDC",
+                            "size": 1559
+                        },
+                        {
+                            "name": "NSIDC User Services",
+                            "size": 1383
+                        },
+                        {
+                            "name": "Research</a> <li><a href=\"/research/scientists.html\"><img src=\"/sites/nsidc.org/files/images/about/researcher-100.jpg\" alt=\"\">Scientists</a></li> <li><a href=\"/research/projects.html\"><img src=\"/sites/nsidc.org/files/images/about/asina-100.jpg\" alt=\"\">Research Projects</a></li> <li><a href=\"/research/publications.html\"><img src=\"/sites/nsidc.org/files/images/about/publications-100.jpg\" alt=\"\">Scientific Publications</a></li> <li><a href=\"/research/informatics\"><img src=\"/sites/nsidc.org/files/images/about/informatics-100.jpg\" alt=\"\">Informatics Research</a></li> <li><a href=\"/news/press/expeditions.html\"><img src=\"/sites/nsidc.org/files/images/about/research-group-100.jpg\" alt=\"\">NSIDC",
+                            "size": 1181
+                        },
+                        {
+                            "name": "Facebook",
+                            "size": 1106
+                        },
+                        {
+                            "name": "Google Earth </a></li> <li><a href=\"/agdc/\">Antarctic Glaciological Data Center</a></li> <li><a href=\"http://eloka-arctic.org/\">Exchange for Local Observations",
+                            "size": 1086
+                        },
+                        {
+                            "name": "Earthdata Network",
+                            "size": 1029
+                        },
+                        {
+                            "name": "Media</a></li> <li><a href=\"/the-drift/data-update/\">Data Announcements</a></li> <li><a href=\"/arcticseaicenews/\">Arctic Sea Ice News &amp; Analysis</a></li> <li><a href=\"/greenland-today\">Greenland Today",
+                            "size": 912
+                        },
+                        {
+                            "name": "Socioeconomic Data",
+                            "size": 896
+                        },
+                        {
+                            "name": "Analysis &amp; Imaging Tools</a></li> <li><a href=\"/the-drift/data-update/\">Data Announcements</a></li> <li><a href=\"/data/submit.html\">Submit Your Data</a></li> <li><a href=\"https://nsidc.zendesk.com/account/dropboxes/20123172\" onclick=\"script: Zenbox.show(); return false;\">User Support</a></li> <li><a href=\"/arcticseaicenews\">Arctic Sea Ice News &amp; Analysis</a></li> <li><a href=\"/cgi-bin/glacier_photos/glacier_photo_search.pl\">Glacier Photograph Collection</a></li> <li><a href=\"/greenland-today/\">Greenland",
+                            "size": 793
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "data"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "DORIS",
+                            "size": 810
+                        },
+                        {
+                            "name": "Doris",
+                            "size": 444
+                        },
+                        {
+                            "name": "Goldstone",
+                            "size": 394
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 328
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 311
+                        },
+                        {
+                            "name": "Rios-Bergantinos Silvia",
+                            "size": 295
+                        },
+                        {
+                            "name": "Matera",
+                            "size": 270
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 254
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 234
+                        },
+                        {
+                            "name": "Willis",
+                            "size": 231
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Shanghai",
+                            "size": 974
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 821
+                        },
+                        {
+                            "name": "Beijing",
+                            "size": 675
+                        },
+                        {
+                            "name": "Potsdam",
+                            "size": 654
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 647
+                        },
+                        {
+                            "name": "Greenbelt",
+                            "size": 587
+                        },
+                        {
+                            "name": "Changchun",
+                            "size": 567
+                        },
+                        {
+                            "name": "Tahiti",
+                            "size": 429
+                        },
+                        {
+                            "name": "Oklahoma City",
+                            "size": 378
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 356
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "IDS Data Centers",
+                            "size": 737
+                        },
+                        {
+                            "name": "SSALTO",
+                            "size": 679
+                        },
+                        {
+                            "name": "Arequipa",
+                            "size": 663
+                        },
+                        {
+                            "name": "Maspalomas",
+                            "size": 604
+                        },
+                        {
+                            "name": "Mauna Kea MKEA",
+                            "size": 537
+                        },
+                        {
+                            "name": "Kellyville KELY",
+                            "size": 477
+                        },
+                        {
+                            "name": "McDonald",
+                            "size": 467
+                        },
+                        {
+                            "name": "Greenbelt",
+                            "size": 462
+                        },
+                        {
+                            "name": "Bangalore IISC",
+                            "size": 459
+                        },
+                        {
+                            "name": "Madrid MADR",
+                            "size": 458
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "report"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Smith",
+                            "size": 64
+                        },
+                        {
+                            "name": "J. Geophys",
+                            "size": 58
+                        },
+                        {
+                            "name": "Springer",
+                            "size": 44
+                        },
+                        {
+                            "name": "Jones",
+                            "size": 36
+                        },
+                        {
+                            "name": "Jacqueline M. Grebmeier",
+                            "size": 35
+                        },
+                        {
+                            "name": "Brown",
+                            "size": 30
+                        },
+                        {
+                            "name": "Anderson",
+                            "size": 28
+                        },
+                        {
+                            "name": "Davis",
+                            "size": 27
+                        },
+                        {
+                            "name": "Yetman",
+                            "size": 27
+                        },
+                        {
+                            "name": "Williams",
+                            "size": 25
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USA",
+                            "size": 306
+                        },
+                        {
+                            "name": "New York",
+                            "size": 142
+                        },
+                        {
+                            "name": "United States",
+                            "size": 140
+                        },
+                        {
+                            "name": "US",
+                            "size": 139
+                        },
+                        {
+                            "name": "UK",
+                            "size": 129
+                        },
+                        {
+                            "name": "China",
+                            "size": 127
+                        },
+                        {
+                            "name": "Africa",
+                            "size": 124
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 122
+                        },
+                        {
+                            "name": "Cambridge",
+                            "size": 109
+                        },
+                        {
+                            "name": "California",
+                            "size": 102
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Elsevier B.V. Cookies",
+                            "size": 198
+                        },
+                        {
+                            "name": "John Wiley & Sons, Inc",
+                            "size": 140
+                        },
+                        {
+                            "name": "Google",
+                            "size": 140
+                        },
+                        {
+                            "name": "Elsevier Ltd",
+                            "size": 117
+                        },
+                        {
+                            "name": "Columbia University",
+                            "size": 113
+                        },
+                        {
+                            "name": "USA",
+                            "size": 102
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 101
+                        },
+                        {
+                            "name": "Facebook",
+                            "size": 89
+                        },
+                        {
+                            "name": "American Geophysical Union",
+                            "size": 83
+                        },
+                        {
+                            "name": "Facebook Share",
+                            "size": 82
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "10"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Jon Campbell",
+                            "size": 293
+                        },
+                        {
+                            "name": "Ethan Alpern",
+                            "size": 293
+                        },
+                        {
+                            "name": "David Hebert",
+                            "size": 277
+                        },
+                        {
+                            "name": "Catherine Puckett",
+                            "size": 272
+                        },
+                        {
+                            "name": "Alex Demas",
+                            "size": 264
+                        },
+                        {
+                            "name": "Marisa Lubeck",
+                            "size": 262
+                        },
+                        {
+                            "name": "Barbara Wilcox",
+                            "size": 260
+                        },
+                        {
+                            "name": "Hannah Hamilton",
+                            "size": 257
+                        },
+                        {
+                            "name": "Jennifer LaVista",
+                            "size": 256
+                        },
+                        {
+                            "name": "Heidi Koontz",
+                            "size": 256
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 310
+                        },
+                        {
+                            "name": "United States",
+                            "size": 304
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 298
+                        },
+                        {
+                            "name": "America",
+                            "size": 292
+                        },
+                        {
+                            "name": "California",
+                            "size": 273
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 268
+                        },
+                        {
+                            "name": "Colorado",
+                            "size": 267
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 255
+                        },
+                        {
+                            "name": "San Francisco Bay",
+                            "size": 249
+                        },
+                        {
+                            "name": "Mexico",
+                            "size": 240
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USGS",
+                            "size": 327
+                        },
+                        {
+                            "name": "Environmental Health",
+                            "size": 290
+                        },
+                        {
+                            "name": "Congress",
+                            "size": 288
+                        },
+                        {
+                            "name": "Energy",
+                            "size": 288
+                        },
+                        {
+                            "name": "U.S. Geological Survey",
+                            "size": 284
+                        },
+                        {
+                            "name": "Minerals",
+                            "size": 280
+                        },
+                        {
+                            "name": "USGS </a></div><p>USGS",
+                            "size": 260
+                        },
+                        {
+                            "name": "National Ocean Policy",
+                            "size": 243
+                        },
+                        {
+                            "name": "USGS Library",
+                            "size": 230
+                        },
+                        {
+                            "name": "Tohoku Earthquake",
+                            "size": 228
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "blog"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Jon Campbell",
+                            "size": 300
+                        },
+                        {
+                            "name": "Ethan Alpern",
+                            "size": 300
+                        },
+                        {
+                            "name": "David Hebert",
+                            "size": 284
+                        },
+                        {
+                            "name": "Catherine Puckett",
+                            "size": 278
+                        },
+                        {
+                            "name": "Alex Demas",
+                            "size": 270
+                        },
+                        {
+                            "name": "Marisa Lubeck",
+                            "size": 267
+                        },
+                        {
+                            "name": "Barbara Wilcox",
+                            "size": 266
+                        },
+                        {
+                            "name": "Hannah Hamilton",
+                            "size": 264
+                        },
+                        {
+                            "name": "Jennifer LaVista",
+                            "size": 263
+                        },
+                        {
+                            "name": "Heidi Koontz",
+                            "size": 261
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 317
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 313
+                        },
+                        {
+                            "name": "United States",
+                            "size": 296
+                        },
+                        {
+                            "name": "America",
+                            "size": 295
+                        },
+                        {
+                            "name": "California",
+                            "size": 271
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 269
+                        },
+                        {
+                            "name": "Colorado",
+                            "size": 268
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 253
+                        },
+                        {
+                            "name": "San Francisco Bay",
+                            "size": 253
+                        },
+                        {
+                            "name": "Mexico",
+                            "size": 241
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USGS",
+                            "size": 338
+                        },
+                        {
+                            "name": "Environmental Health",
+                            "size": 297
+                        },
+                        {
+                            "name": "Energy",
+                            "size": 294
+                        },
+                        {
+                            "name": "U.S. Geological Survey",
+                            "size": 294
+                        },
+                        {
+                            "name": "Minerals",
+                            "size": 287
+                        },
+                        {
+                            "name": "Congress",
+                            "size": 283
+                        },
+                        {
+                            "name": "USGS </a></div><p>USGS",
+                            "size": 265
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 252
+                        },
+                        {
+                            "name": "National Ocean Policy",
+                            "size": 251
+                        },
+                        {
+                            "name": "USGS Library",
+                            "size": 236
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "featur"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Jon Campbell",
+                            "size": 276
+                        },
+                        {
+                            "name": "Ethan Alpern",
+                            "size": 275
+                        },
+                        {
+                            "name": "David Hebert",
+                            "size": 266
+                        },
+                        {
+                            "name": "Catherine Puckett",
+                            "size": 258
+                        },
+                        {
+                            "name": "Alex Demas",
+                            "size": 253
+                        },
+                        {
+                            "name": "Marisa Lubeck",
+                            "size": 252
+                        },
+                        {
+                            "name": "Barbara Wilcox",
+                            "size": 250
+                        },
+                        {
+                            "name": "Heidi Koontz",
+                            "size": 246
+                        },
+                        {
+                            "name": "Jenn LaVista",
+                            "size": 246
+                        },
+                        {
+                            "name": "Jennifer LaVista",
+                            "size": 244
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 314
+                        },
+                        {
+                            "name": "United States",
+                            "size": 287
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 280
+                        },
+                        {
+                            "name": "America",
+                            "size": 279
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 258
+                        },
+                        {
+                            "name": "Colorado",
+                            "size": 252
+                        },
+                        {
+                            "name": "California",
+                            "size": 247
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 244
+                        },
+                        {
+                            "name": "San Francisco Bay",
+                            "size": 242
+                        },
+                        {
+                            "name": "Mexico",
+                            "size": 231
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USGS",
+                            "size": 350
+                        },
+                        {
+                            "name": "U.S. Geological Survey",
+                            "size": 298
+                        },
+                        {
+                            "name": "Energy",
+                            "size": 276
+                        },
+                        {
+                            "name": "Environmental Health",
+                            "size": 276
+                        },
+                        {
+                            "name": "Congress",
+                            "size": 275
+                        },
+                        {
+                            "name": "Minerals",
+                            "size": 266
+                        },
+                        {
+                            "name": "USGS </a></div><p>USGS",
+                            "size": 252
+                        },
+                        {
+                            "name": "National Ocean Policy",
+                            "size": 233
+                        },
+                        {
+                            "name": "USGS Library",
+                            "size": 222
+                        },
+                        {
+                            "name": "Tohoku Earthquake",
+                            "size": 220
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "usg"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Jon Campbell",
+                            "size": 253
+                        },
+                        {
+                            "name": "Ethan Alpern",
+                            "size": 252
+                        },
+                        {
+                            "name": "David Hebert",
+                            "size": 243
+                        },
+                        {
+                            "name": "Catherine Puckett",
+                            "size": 238
+                        },
+                        {
+                            "name": "Alex Demas",
+                            "size": 231
+                        },
+                        {
+                            "name": "Marisa Lubeck",
+                            "size": 229
+                        },
+                        {
+                            "name": "Hannah Hamilton",
+                            "size": 229
+                        },
+                        {
+                            "name": "Barbara Wilcox",
+                            "size": 228
+                        },
+                        {
+                            "name": "Heidi Koontz",
+                            "size": 227
+                        },
+                        {
+                            "name": "Jenn LaVista",
+                            "size": 227
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 267
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 263
+                        },
+                        {
+                            "name": "United States",
+                            "size": 257
+                        },
+                        {
+                            "name": "America",
+                            "size": 253
+                        },
+                        {
+                            "name": "Colorado",
+                            "size": 232
+                        },
+                        {
+                            "name": "California",
+                            "size": 232
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 232
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 222
+                        },
+                        {
+                            "name": "San Francisco Bay",
+                            "size": 219
+                        },
+                        {
+                            "name": "Mexico",
+                            "size": 218
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USGS",
+                            "size": 261
+                        },
+                        {
+                            "name": "Environmental Health",
+                            "size": 253
+                        },
+                        {
+                            "name": "Energy",
+                            "size": 252
+                        },
+                        {
+                            "name": "U.S. Geological Survey",
+                            "size": 250
+                        },
+                        {
+                            "name": "Minerals",
+                            "size": 243
+                        },
+                        {
+                            "name": "Congress",
+                            "size": 242
+                        },
+                        {
+                            "name": "USGS </a></div><p>USGS",
+                            "size": 229
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 220
+                        },
+                        {
+                            "name": "National Ocean Policy",
+                            "size": 210
+                        },
+                        {
+                            "name": "USGS Library",
+                            "size": 201
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "stori"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Goldstone",
+                            "size": 390
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 328
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 308
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 251
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 231
+                        },
+                        {
+                            "name": "Darwin",
+                            "size": 173
+                        },
+                        {
+                            "name": "Katherine",
+                            "size": 157
+                        },
+                        {
+                            "name": "Holberg",
+                            "size": 58
+                        },
+                        {
+                            "name": "Matera",
+                            "size": 57
+                        },
+                        {
+                            "name": "Matt Smith",
+                            "size": 46
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Washington",
+                            "size": 774
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 641
+                        },
+                        {
+                            "name": "Oklahoma City",
+                            "size": 378
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 350
+                        },
+                        {
+                            "name": "Madrid",
+                            "size": 323
+                        },
+                        {
+                            "name": "D.C.",
+                            "size": 320
+                        },
+                        {
+                            "name": "Villafranca",
+                            "size": 316
+                        },
+                        {
+                            "name": "Seychelles",
+                            "size": 314
+                        },
+                        {
+                            "name": "Bucharest",
+                            "size": 305
+                        },
+                        {
+                            "name": "Yakutsk",
+                            "size": 301
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Maspalomas",
+                            "size": 598
+                        },
+                        {
+                            "name": "Mauna Kea MKEA",
+                            "size": 537
+                        },
+                        {
+                            "name": "Kellyville KELY",
+                            "size": 477
+                        },
+                        {
+                            "name": "Bangalore IISC",
+                            "size": 459
+                        },
+                        {
+                            "name": "Madrid MADR",
+                            "size": 458
+                        },
+                        {
+                            "name": "Potsdam POTM",
+                            "size": 442
+                        },
+                        {
+                            "name": "Matera MATE",
+                            "size": 438
+                        },
+                        {
+                            "name": "Kokee Park KOKB",
+                            "size": 434
+                        },
+                        {
+                            "name": "Norilsk NRIL",
+                            "size": 432
+                        },
+                        {
+                            "name": "Obninsk MOBN",
+                            "size": 430
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "summari"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Jon Campbell",
+                            "size": 253
+                        },
+                        {
+                            "name": "Ethan Alpern",
+                            "size": 252
+                        },
+                        {
+                            "name": "David Hebert",
+                            "size": 243
+                        },
+                        {
+                            "name": "Catherine Puckett",
+                            "size": 238
+                        },
+                        {
+                            "name": "Alex Demas",
+                            "size": 231
+                        },
+                        {
+                            "name": "Marisa Lubeck",
+                            "size": 229
+                        },
+                        {
+                            "name": "Hannah Hamilton",
+                            "size": 229
+                        },
+                        {
+                            "name": "Barbara Wilcox",
+                            "size": 228
+                        },
+                        {
+                            "name": "Heidi Koontz",
+                            "size": 227
+                        },
+                        {
+                            "name": "Jenn LaVista",
+                            "size": 227
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 255
+                        },
+                        {
+                            "name": "America",
+                            "size": 254
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 251
+                        },
+                        {
+                            "name": "United States",
+                            "size": 248
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 232
+                        },
+                        {
+                            "name": "Colorado",
+                            "size": 231
+                        },
+                        {
+                            "name": "California",
+                            "size": 227
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 220
+                        },
+                        {
+                            "name": "San Francisco Bay",
+                            "size": 219
+                        },
+                        {
+                            "name": "Mexico",
+                            "size": 218
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USGS",
+                            "size": 260
+                        },
+                        {
+                            "name": "Environmental Health",
+                            "size": 253
+                        },
+                        {
+                            "name": "Energy",
+                            "size": 252
+                        },
+                        {
+                            "name": "U.S. Geological Survey",
+                            "size": 248
+                        },
+                        {
+                            "name": "Minerals",
+                            "size": 243
+                        },
+                        {
+                            "name": "Congress",
+                            "size": 242
+                        },
+                        {
+                            "name": "USGS </a></div><p>USGS",
+                            "size": 229
+                        },
+                        {
+                            "name": "National Ocean Policy",
+                            "size": 210
+                        },
+                        {
+                            "name": "USGS Library",
+                            "size": 201
+                        },
+                        {
+                            "name": "Tohoku Earthquake",
+                            "size": 197
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "top"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Goldstone",
+                            "size": 390
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 328
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 308
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 251
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 231
+                        },
+                        {
+                            "name": "Darwin",
+                            "size": 173
+                        },
+                        {
+                            "name": "Katherine",
+                            "size": 157
+                        },
+                        {
+                            "name": "Holberg",
+                            "size": 58
+                        },
+                        {
+                            "name": "Matera",
+                            "size": 57
+                        },
+                        {
+                            "name": "Edwin Grayzeck",
+                            "size": 33
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Washington",
+                            "size": 771
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 641
+                        },
+                        {
+                            "name": "Oklahoma City",
+                            "size": 378
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 350
+                        },
+                        {
+                            "name": "Madrid",
+                            "size": 323
+                        },
+                        {
+                            "name": "D.C.",
+                            "size": 319
+                        },
+                        {
+                            "name": "Villafranca",
+                            "size": 316
+                        },
+                        {
+                            "name": "Seychelles",
+                            "size": 314
+                        },
+                        {
+                            "name": "Bucharest",
+                            "size": 305
+                        },
+                        {
+                            "name": "Yakutsk",
+                            "size": 301
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Maspalomas",
+                            "size": 598
+                        },
+                        {
+                            "name": "Mauna Kea MKEA",
+                            "size": 537
+                        },
+                        {
+                            "name": "Kellyville KELY",
+                            "size": 477
+                        },
+                        {
+                            "name": "Bangalore IISC",
+                            "size": 459
+                        },
+                        {
+                            "name": "Madrid MADR",
+                            "size": 458
+                        },
+                        {
+                            "name": "Potsdam POTM",
+                            "size": 442
+                        },
+                        {
+                            "name": "Matera MATE",
+                            "size": 438
+                        },
+                        {
+                            "name": "Kokee Park KOKB",
+                            "size": 434
+                        },
+                        {
+                            "name": "Norilsk NRIL",
+                            "size": 432
+                        },
+                        {
+                            "name": "Sutherland SUTM",
+                            "size": 430
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "gnss"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Goldstone",
+                            "size": 387
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 325
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 306
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 248
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 230
+                        },
+                        {
+                            "name": "Darwin",
+                            "size": 170
+                        },
+                        {
+                            "name": "Katherine",
+                            "size": 155
+                        },
+                        {
+                            "name": "Holberg",
+                            "size": 56
+                        },
+                        {
+                            "name": "Matera",
+                            "size": 56
+                        },
+                        {
+                            "name": "Borowa Gora BOGI",
+                            "size": 27
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Washington",
+                            "size": 768
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 639
+                        },
+                        {
+                            "name": "Oklahoma City",
+                            "size": 378
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 347
+                        },
+                        {
+                            "name": "Madrid",
+                            "size": 321
+                        },
+                        {
+                            "name": "D.C.",
+                            "size": 318
+                        },
+                        {
+                            "name": "Villafranca",
+                            "size": 314
+                        },
+                        {
+                            "name": "Seychelles",
+                            "size": 312
+                        },
+                        {
+                            "name": "Bucharest",
+                            "size": 303
+                        },
+                        {
+                            "name": "Yakutsk",
+                            "size": 299
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Maspalomas",
+                            "size": 595
+                        },
+                        {
+                            "name": "Mauna Kea MKEA",
+                            "size": 537
+                        },
+                        {
+                            "name": "Kellyville KELY",
+                            "size": 477
+                        },
+                        {
+                            "name": "Bangalore IISC",
+                            "size": 459
+                        },
+                        {
+                            "name": "Madrid MADR",
+                            "size": 458
+                        },
+                        {
+                            "name": "Potsdam POTM",
+                            "size": 442
+                        },
+                        {
+                            "name": "Matera MATE",
+                            "size": 438
+                        },
+                        {
+                            "name": "Kokee Park KOKB",
+                            "size": 434
+                        },
+                        {
+                            "name": "Norilsk NRIL",
+                            "size": 432
+                        },
+                        {
+                            "name": "Sutherland SUTM",
+                            "size": 430
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "highrat"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Goldstone",
+                            "size": 387
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 325
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 306
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 248
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 230
+                        },
+                        {
+                            "name": "Darwin",
+                            "size": 170
+                        },
+                        {
+                            "name": "Katherine",
+                            "size": 155
+                        },
+                        {
+                            "name": "Holberg",
+                            "size": 56
+                        },
+                        {
+                            "name": "Matera",
+                            "size": 56
+                        },
+                        {
+                            "name": "Borowa Gora BOGI",
+                            "size": 27
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Washington",
+                            "size": 768
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 639
+                        },
+                        {
+                            "name": "Oklahoma City",
+                            "size": 378
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 347
+                        },
+                        {
+                            "name": "Madrid",
+                            "size": 321
+                        },
+                        {
+                            "name": "D.C.",
+                            "size": 318
+                        },
+                        {
+                            "name": "Villafranca",
+                            "size": 314
+                        },
+                        {
+                            "name": "Seychelles",
+                            "size": 312
+                        },
+                        {
+                            "name": "Bucharest",
+                            "size": 303
+                        },
+                        {
+                            "name": "Yakutsk",
+                            "size": 299
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Maspalomas",
+                            "size": 595
+                        },
+                        {
+                            "name": "Mauna Kea MKEA",
+                            "size": 537
+                        },
+                        {
+                            "name": "Kellyville KELY",
+                            "size": 477
+                        },
+                        {
+                            "name": "Bangalore IISC",
+                            "size": 459
+                        },
+                        {
+                            "name": "Madrid MADR",
+                            "size": 458
+                        },
+                        {
+                            "name": "Potsdam POTM",
+                            "size": 442
+                        },
+                        {
+                            "name": "Matera MATE",
+                            "size": 438
+                        },
+                        {
+                            "name": "Kokee Park KOKB",
+                            "size": 434
+                        },
+                        {
+                            "name": "Norilsk NRIL",
+                            "size": 432
+                        },
+                        {
+                            "name": "Obninsk MOBN",
+                            "size": 430
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "leo"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Dan Lowenstein",
+                            "size": 37
+                        },
+                        {
+                            "name": "Susy",
+                            "size": 24
+                        },
+                        {
+                            "name": "Ted Scambos",
+                            "size": 22
+                        },
+                        {
+                            "name": "Venus",
+                            "size": 21
+                        },
+                        {
+                            "name": "Obama",
+                            "size": 20
+                        },
+                        {
+                            "name": "Michael Rampino",
+                            "size": 20
+                        },
+                        {
+                            "name": "David Hosansky",
+                            "size": 20
+                        },
+                        {
+                            "name": "Dean Lomax",
+                            "size": 19
+                        },
+                        {
+                            "name": "Scambos",
+                            "size": 18
+                        },
+                        {
+                            "name": "Edwin Grayzeck",
+                            "size": 17
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Earth",
+                            "size": 279
+                        },
+                        {
+                            "name": "US",
+                            "size": 209
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 207
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 182
+                        },
+                        {
+                            "name": "Mars",
+                            "size": 177
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 152
+                        },
+                        {
+                            "name": "United States",
+                            "size": 141
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 126
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 124
+                        },
+                        {
+                            "name": "Boulder",
+                            "size": 122
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 327
+                        },
+                        {
+                            "name": "Astronomy &amp; Space</span></a><ul class=\"dropdown-wrap\" role=\"menu\"><li class=\"full-sub-nav\" role=\"menuitem\"><a href=\"http://phys.org/space-news/\" class=\"full-sub-nav\"><span>All Astronomy &amp; Space</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Plasma Physics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Nanophysics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Plants &amp; Animals</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Nanotechnology</span></a><ul class=\"dropdown-wrap\" role=\"menu\"><li class=\"full-sub-nav\" role=\"menuitem\"><a href=\"http://phys.org/nanotech-news/\" class=\"full-sub-nav\"><span>All Nanotechnology</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Chemistry</span></a><ul class=\"dropdown-wrap\" role=\"menu\"><li class=\"full-sub-nav\" role=\"menuitem\"><a href=\"http://phys.org/chemistry-news/\" class=\"full-sub-nav\"><span>All Chemistry</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Quantum Physics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Optics &amp; Photonics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        },
+                        {
+                            "name": "Cell &amp; Microbiology</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 215
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "news"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "M. Holland",
+                            "size": 204
+                        },
+                        {
+                            "name": "S. Grebas",
+                            "size": 204
+                        },
+                        {
+                            "name": "M. Meaux",
+                            "size": 204
+                        },
+                        {
+                            "name": "T. Northcutt",
+                            "size": 204
+                        },
+                        {
+                            "name": "R. Bilodeau",
+                            "size": 204
+                        },
+                        {
+                            "name": "T. Stevens",
+                            "size": 204
+                        },
+                        {
+                            "name": "R. Vogel",
+                            "size": 204
+                        },
+                        {
+                            "name": "K. Shein",
+                            "size": 204
+                        },
+                        {
+                            "name": "A. Aleman",
+                            "size": 204
+                        },
+                        {
+                            "name": "H. Weir",
+                            "size": 204
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 432
+                        },
+                        {
+                            "name": "United States",
+                            "size": 430
+                        },
+                        {
+                            "name": "Alaska",
+                            "size": 388
+                        },
+                        {
+                            "name": "Barrow",
+                            "size": 218
+                        },
+                        {
+                            "name": "United States Of America",
+                            "size": 209
+                        },
+                        {
+                            "name": "S. Leicester",
+                            "size": 204
+                        },
+                        {
+                            "name": "USA",
+                            "size": 192
+                        },
+                        {
+                            "name": "Arctic Ocean",
+                            "size": 184
+                        },
+                        {
+                            "name": "Svalbard",
+                            "size": 177
+                        },
+                        {
+                            "name": "L.M.",
+                            "size": 171
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "UCAR",
+                            "size": 1890
+                        },
+                        {
+                            "name": "Keyword Topics Principal Investigators Projects Geographic Tools Contribute Data Templates & Guides",
+                            "size": 1560
+                        },
+                        {
+                            "name": "Advanced Cooperative Arctic Data",
+                            "size": 794
+                        },
+                        {
+                            "name": "Microsoft",
+                            "size": 512
+                        },
+                        {
+                            "name": "DML",
+                            "size": 421
+                        },
+                        {
+                            "name": "Data</a></li> <li class=\"dropdown menu-topics\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\">Topics<b class=\"caret\"></b></a> <ul class=\"dropdown-menu topics\"> <li class=\"menu-agriculture\"><a href=\"//www.data.gov/food/\"><i></i><span>Agriculture</span></a></li> <li class=\"menu-business\"><a href=\"//www.data.gov/business/\"><i></i><span>Business</span></a></li> <li class=\"menu-climate\"><a href=\"//www.data.gov/climate/\"><i></i><span>Climate</span></a></li> <li class=\"menu-consumer\"><a href=\"//www.data.gov/consumer/\"><i></i><span>Consumer</span></a></li> <li class=\"menu-ecosystems\"><a href=\"//www.data.gov/ecosystems/\"><i></i><span>Ecosystems</span></a></li> <li class=\"menu-education\"><a href=\"//www.data.gov/education/\"><i></i><span>Education</span></a></li> <li class=\"menu-energy\"><a href=\"//www.data.gov/energy/\"><i></i><span>Energy</span></a></li> <li class=\"menu-finance\"><a href=\"//www.data.gov/finance/\"><i></i><span>Finance</span></a></li> <li class=\"menu-health\"><a href=\"//www.data.gov/health/\"><i></i><span>Health</span></a></li> <li class=\"menu-local-government\"><a href=\"//www.data.gov/local\"><i></i><span>Local Government</span></a></li> <li class=\"menu-manufacturing\"><a href=\"//www.data.gov/manufacturing/\"><i></i><span>Manufacturing</span></a></li> <li class=\"menu-ocean\"><a href=\"//www.data.gov/ocean/\"><i></i><span>Ocean</span></a></li> <li class=\"menu-public-safety\"><a href=\"//www.data.gov/safety/\"><i></i><span>Public Safety</span></a></li> <li class=\"menu-science-research\"><a href=\"//www.data.gov/research/\"><i></i><span>Science &amp; Research</span></a></li> </li><li><a href=\"//www.data.gov/impact/\">Impact",
+                            "size": 405
+                        },
+                        {
+                            "name": "ESG Federation",
+                            "size": 389
+                        },
+                        {
+                            "name": "FAQ</a></li> <li><a href=\"//www.data.gov/media-inquiries/\">Media</a></li> <li><a href=\"//www.data.gov/glossary\">Glossary</a></li> <li><a href=\"//www.data.gov/metrics\">Federal Agency Participation</a></li> <li><a href=\"//www.data.gov/agencies/\">Data Publishers</a></li> <li><a href=\"//www.data.gov/accessibility\">Accessibility</a></li> <li><a href=\"//www.data.gov/data-policy\">Data",
+                            "size": 372
+                        },
+                        {
+                            "name": "US Census Bureau",
+                            "size": 305
+                        },
+                        {
+                            "name": "CISL",
+                            "size": 304
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "dataset"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Ted Scambos",
+                            "size": 29
+                        },
+                        {
+                            "name": "Dan Fagre</a></li><li style=\"white-space: normal; float: left; width: 100%;\" id=\"menu-3494-3\" class=\"middle even sf-item-2 sf-depth-2 sf-no-children\"><a style=\"float: none; width: auto;\" href=\"http://www.nrmsc.usgs.gov/staff/lmckeon\" title=\"\" class=\"sf-depth-2\">Lisa McKeon</a></li><li style=\"white-space: normal; float: left; width: 100%;\" id=\"menu-3495-3\" class=\"middle odd sf-item-3 sf-depth-2 sf-no-children\"><a style=\"float: none; width: auto;\" href=\"http://www.nrmsc.usgs.gov/staff/gpederson\" title=\"\" class=\"sf-depth-2\">Greg Pederson</a></li><li style=\"white-space: normal; float: left; width: 100%;\" id=\"menu-3496-3\" class=\"middle even sf-item-4 sf-depth-2 sf-no-children\"><a style=\"float: none; width: auto;\" href=\"http://www.nrmsc.usgs.gov/staff/peitzsch\" title=\"\" class=\"sf-depth-2\">Erich Peitzsch</a></li><li style=\"white-space: normal; float: left; width: 100%;\" id=\"menu-4819-3\" class=\"last odd sf-item-5 sf-depth-2 sf-no-children\"><a style=\"float: none; width: auto;\" href=\"http://www.nrmsc.usgs.gov/staff/clark\" title=\"\" class=\"sf-depth-2\">Adam Clark",
+                            "size": 27
+                        },
+                        {
+                            "name": "Springer",
+                            "size": 27
+                        },
+                        {
+                            "name": "M. Serreze",
+                            "size": 24
+                        },
+                        {
+                            "name": "Serreze",
+                            "size": 24
+                        },
+                        {
+                            "name": "R. G. Barry",
+                            "size": 23
+                        },
+                        {
+                            "name": "Steven Pawson",
+                            "size": 22
+                        },
+                        {
+                            "name": "James Gass",
+                            "size": 22
+                        },
+                        {
+                            "name": "S. Gearheard",
+                            "size": 21
+                        },
+                        {
+                            "name": "T. Scambos",
+                            "size": 21
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Earth",
+                            "size": 222
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 190
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 181
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 179
+                        },
+                        {
+                            "name": "US",
+                            "size": 150
+                        },
+                        {
+                            "name": "Arctic",
+                            "size": 112
+                        },
+                        {
+                            "name": "USA",
+                            "size": 107
+                        },
+                        {
+                            "name": "Alaska",
+                            "size": 92
+                        },
+                        {
+                            "name": "Boulder",
+                            "size": 81
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 80
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 254
+                        },
+                        {
+                            "name": "NSIDC",
+                            "size": 151
+                        },
+                        {
+                            "name": "NSF",
+                            "size": 136
+                        },
+                        {
+                            "name": "NSIDC User Services",
+                            "size": 124
+                        },
+                        {
+                            "name": "National Science Foundation",
+                            "size": 123
+                        },
+                        {
+                            "name": "UCAR",
+                            "size": 107
+                        },
+                        {
+                            "name": "Research</a> <li><a href=\"/research/scientists.html\"><img src=\"/sites/nsidc.org/files/images/about/researcher-100.jpg\" alt=\"\">Scientists</a></li> <li><a href=\"/research/projects.html\"><img src=\"/sites/nsidc.org/files/images/about/asina-100.jpg\" alt=\"\">Research Projects</a></li> <li><a href=\"/research/publications.html\"><img src=\"/sites/nsidc.org/files/images/about/publications-100.jpg\" alt=\"\">Scientific Publications</a></li> <li><a href=\"/research/informatics\"><img src=\"/sites/nsidc.org/files/images/about/informatics-100.jpg\" alt=\"\">Informatics Research</a></li> <li><a href=\"/news/press/expeditions.html\"><img src=\"/sites/nsidc.org/files/images/about/research-group-100.jpg\" alt=\"\">NSIDC",
+                            "size": 105
+                        },
+                        {
+                            "name": "Google Earth </a></li> <li><a href=\"/agdc/\">Antarctic Glaciological Data Center</a></li> <li><a href=\"http://eloka-arctic.org/\">Exchange for Local Observations",
+                            "size": 100
+                        },
+                        {
+                            "name": "USGS",
+                            "size": 81
+                        },
+                        {
+                            "name": "Media</a></li> <li><a href=\"/the-drift/data-update/\">Data Announcements</a></li> <li><a href=\"/arcticseaicenews/\">Arctic Sea Ice News &amp; Analysis</a></li> <li><a href=\"/greenland-today\">Greenland Today",
+                            "size": 68
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "research"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Obama",
+                            "size": 57
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 34
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 33
+                        },
+                        {
+                            "name": "Goldstone",
+                            "size": 33
+                        },
+                        {
+                            "name": "Felicity Arbuthnot",
+                            "size": 31
+                        },
+                        {
+                            "name": "Edward S. Herman",
+                            "size": 31
+                        },
+                        {
+                            "name": "Paul Kirk",
+                            "size": 31
+                        },
+                        {
+                            "name": "Salinger",
+                            "size": 31
+                        },
+                        {
+                            "name": "Peter Breschard",
+                            "size": 31
+                        },
+                        {
+                            "name": "Whipple</a><br><span class=\"sidebarMeta\">Adam Engel",
+                            "size": 31
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Earth",
+                            "size": 151
+                        },
+                        {
+                            "name": "US",
+                            "size": 126
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 109
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 103
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 97
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 89
+                        },
+                        {
+                            "name": "United States",
+                            "size": 87
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 80
+                        },
+                        {
+                            "name": "Canada",
+                            "size": 76
+                        },
+                        {
+                            "name": "Arctic",
+                            "size": 71
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 137
+                        },
+                        {
+                            "name": "Google",
+                            "size": 78
+                        },
+                        {
+                            "name": "NOAA",
+                            "size": 77
+                        },
+                        {
+                            "name": "NSIDC",
+                            "size": 71
+                        },
+                        {
+                            "name": "USGS",
+                            "size": 64
+                        },
+                        {
+                            "name": "Plasma Physics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 54
+                        },
+                        {
+                            "name": "Biology</span></a><ul class=\"dropdown-wrap\" role=\"menu\"><li class=\"full-sub-nav\" role=\"menuitem\"><a href=\"http://phys.org/biology-news/\" class=\"full-sub-nav\"><span>All Biology</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 54
+                        },
+                        {
+                            "name": "Analytical Chemistry</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 54
+                        },
+                        {
+                            "name": "Earth Sciences</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 54
+                        },
+                        {
+                            "name": "Economics &amp; Business</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 54
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "2014"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Andrew Moulden",
+                            "size": 38
+                        },
+                        {
+                            "name": "Tim Williams",
+                            "size": 38
+                        },
+                        {
+                            "name": "Lori J. Tyahla",
+                            "size": 30
+                        },
+                        {
+                            "name": "Carey Noll",
+                            "size": 29
+                        },
+                        {
+                            "name": "Phil Stoffer",
+                            "size": 24
+                        },
+                        {
+                            "name": "YCELP",
+                            "size": 22
+                        },
+                        {
+                            "name": "F. Fetterer",
+                            "size": 21
+                        },
+                        {
+                            "name": "Kyrsten Sinema",
+                            "size": 17
+                        },
+                        {
+                            "name": "J. Geophys",
+                            "size": 16
+                        },
+                        {
+                            "name": "Joycelyn Thomson Jones",
+                            "size": 16
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Earth",
+                            "size": 296
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 243
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 234
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 211
+                        },
+                        {
+                            "name": "US",
+                            "size": 176
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 169
+                        },
+                        {
+                            "name": "United States",
+                            "size": 95
+                        },
+                        {
+                            "name": "Antarctic",
+                            "size": 71
+                        },
+                        {
+                            "name": "Arctic",
+                            "size": 70
+                        },
+                        {
+                            "name": "Boulder",
+                            "size": 61
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 404
+                        },
+                        {
+                            "name": "NSIDC",
+                            "size": 211
+                        },
+                        {
+                            "name": "NOAA",
+                            "size": 190
+                        },
+                        {
+                            "name": "NSIDC User Services",
+                            "size": 166
+                        },
+                        {
+                            "name": "Facebook",
+                            "size": 132
+                        },
+                        {
+                            "name": "Research</a> <li><a href=\"/research/scientists.html\"><img src=\"/sites/nsidc.org/files/images/about/researcher-100.jpg\" alt=\"\">Scientists</a></li> <li><a href=\"/research/projects.html\"><img src=\"/sites/nsidc.org/files/images/about/asina-100.jpg\" alt=\"\">Research Projects</a></li> <li><a href=\"/research/publications.html\"><img src=\"/sites/nsidc.org/files/images/about/publications-100.jpg\" alt=\"\">Scientific Publications</a></li> <li><a href=\"/research/informatics\"><img src=\"/sites/nsidc.org/files/images/about/informatics-100.jpg\" alt=\"\">Informatics Research</a></li> <li><a href=\"/news/press/expeditions.html\"><img src=\"/sites/nsidc.org/files/images/about/research-group-100.jpg\" alt=\"\">NSIDC",
+                            "size": 123
+                        },
+                        {
+                            "name": "Google Earth </a></li> <li><a href=\"/agdc/\">Antarctic Glaciological Data Center</a></li> <li><a href=\"http://eloka-arctic.org/\">Exchange for Local Observations",
+                            "size": 118
+                        },
+                        {
+                            "name": "USGS",
+                            "size": 118
+                        },
+                        {
+                            "name": "Socioeconomic Data",
+                            "size": 102
+                        },
+                        {
+                            "name": "Earthdata Network",
+                            "size": 95
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "index"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Goldstone",
+                            "size": 166
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 165
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 163
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 162
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 110
+                        },
+                        {
+                            "name": "Darwin",
+                            "size": 91
+                        },
+                        {
+                            "name": "DORIS",
+                            "size": 89
+                        },
+                        {
+                            "name": "Katherine",
+                            "size": 67
+                        },
+                        {
+                            "name": "Rios-Bergantinos Silvia",
+                            "size": 66
+                        },
+                        {
+                            "name": "Doris",
+                            "size": 42
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Washington",
+                            "size": 179
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 166
+                        },
+                        {
+                            "name": "Villafranca",
+                            "size": 166
+                        },
+                        {
+                            "name": "Fredericton",
+                            "size": 165
+                        },
+                        {
+                            "name": "Frankfurt",
+                            "size": 165
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 164
+                        },
+                        {
+                            "name": "Singapore",
+                            "size": 164
+                        },
+                        {
+                            "name": "Shanghai",
+                            "size": 162
+                        },
+                        {
+                            "name": "Bucharest",
+                            "size": 161
+                        },
+                        {
+                            "name": "Melbourne",
+                            "size": 160
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "McDonald",
+                            "size": 170
+                        },
+                        {
+                            "name": "Maspalomas",
+                            "size": 166
+                        },
+                        {
+                            "name": "USNO",
+                            "size": 166
+                        },
+                        {
+                            "name": "Warnemuende",
+                            "size": 165
+                        },
+                        {
+                            "name": "Cagliari",
+                            "size": 149
+                        },
+                        {
+                            "name": "UNSA",
+                            "size": 146
+                        },
+                        {
+                            "name": "Norilsk",
+                            "size": 145
+                        },
+                        {
+                            "name": "Ajaccio",
+                            "size": 144
+                        },
+                        {
+                            "name": "Arequipa",
+                            "size": 143
+                        },
+                        {
+                            "name": "ARTU",
+                            "size": 143
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "2012"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "G. Yetman",
+                            "size": 82
+                        },
+                        {
+                            "name": "Dilley",
+                            "size": 61
+                        },
+                        {
+                            "name": "U. Deichmann",
+                            "size": 60
+                        },
+                        {
+                            "name": "B. Lyon",
+                            "size": 44
+                        },
+                        {
+                            "name": "R.S. Chen",
+                            "size": 44
+                        },
+                        {
+                            "name": "A.L. Lerner-Lam",
+                            "size": 44
+                        },
+                        {
+                            "name": "M. Arnold",
+                            "size": 44
+                        },
+                        {
+                            "name": "J. Agwe",
+                            "size": 44
+                        },
+                        {
+                            "name": "O. Kjekstad",
+                            "size": 44
+                        },
+                        {
+                            "name": "GuoBiao",
+                            "size": 26
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "New York",
+                            "size": 543
+                        },
+                        {
+                            "name": "Palisades",
+                            "size": 301
+                        },
+                        {
+                            "name": "North America",
+                            "size": 135
+                        },
+                        {
+                            "name": "Oceania",
+                            "size": 122
+                        },
+                        {
+                            "name": "South America",
+                            "size": 122
+                        },
+                        {
+                            "name": "China",
+                            "size": 102
+                        },
+                        {
+                            "name": "Europe",
+                            "size": 100
+                        },
+                        {
+                            "name": "Asia",
+                            "size": 99
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 93
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 90
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Facebook",
+                            "size": 942
+                        },
+                        {
+                            "name": "Socioeconomic Data",
+                            "size": 726
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 625
+                        },
+                        {
+                            "name": "Columbia University",
+                            "size": 582
+                        },
+                        {
+                            "name": "Earthdata Network",
+                            "size": 546
+                        },
+                        {
+                            "name": "CIESIN",
+                            "size": 536
+                        },
+                        {
+                            "name": "Earth Observing System Data",
+                            "size": 535
+                        },
+                        {
+                            "name": "NASA Socioeconomic Data",
+                            "size": 391
+                        },
+                        {
+                            "name": "Columbia University Search SEDAC",
+                            "size": 327
+                        },
+                        {
+                            "name": "Center for International Earth Science Information Network - CIESIN",
+                            "size": 247
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "set"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Steve Williams NCAR/EOL",
+                            "size": 18
+                        },
+                        {
+                            "name": "Ted Scambos",
+                            "size": 18
+                        },
+                        {
+                            "name": "Barrow",
+                            "size": 17
+                        },
+                        {
+                            "name": "Healy",
+                            "size": 15
+                        },
+                        {
+                            "name": "Shari Fox Gearheard",
+                            "size": 15
+                        },
+                        {
+                            "name": "Kevin Schaefer",
+                            "size": 13
+                        },
+                        {
+                            "name": "Shari Gearheard",
+                            "size": 11
+                        },
+                        {
+                            "name": "Steve Williams",
+                            "size": 11
+                        },
+                        {
+                            "name": "Welker",
+                            "size": 10
+                        },
+                        {
+                            "name": "Paul Robbins",
+                            "size": 9
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Japan",
+                            "size": 382
+                        },
+                        {
+                            "name": "Arctic",
+                            "size": 227
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 224
+                        },
+                        {
+                            "name": "Alaska",
+                            "size": 184
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 149
+                        },
+                        {
+                            "name": "Arctic Ocean",
+                            "size": 138
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 125
+                        },
+                        {
+                            "name": "US",
+                            "size": 115
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 104
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 62
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "UCAR",
+                            "size": 599
+                        },
+                        {
+                            "name": "Categories Download Ranking Project Ranking Develop Software Create Project Project Help Wanted Recently Registered Project Community",
+                            "size": 342
+                        },
+                        {
+                            "name": "Download Magazine Develop Pastebin Account Login Forget",
+                            "size": 275
+                        },
+                        {
+                            "name": "U.S. National Science Foundation",
+                            "size": 220
+                        },
+                        {
+                            "name": "Data Science Keyword Topics Principal Investigators Geographic Tools Contribute Data Templates & Guides",
+                            "size": 197
+                        },
+                        {
+                            "name": "Chemical Oceanography Data Management Office",
+                            "size": 176
+                        },
+                        {
+                            "name": "NSF",
+                            "size": 168
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 156
+                        },
+                        {
+                            "name": "Sakura",
+                            "size": 128
+                        },
+                        {
+                            "name": "Homebrew",
+                            "size": 125
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "project"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Ethan Alpern",
+                            "size": 58
+                        },
+                        {
+                            "name": "Jon Campbell",
+                            "size": 58
+                        },
+                        {
+                            "name": "David Hebert",
+                            "size": 58
+                        },
+                        {
+                            "name": "Marisa Lubeck",
+                            "size": 55
+                        },
+                        {
+                            "name": "Alex Demas",
+                            "size": 54
+                        },
+                        {
+                            "name": "Jennifer LaVista",
+                            "size": 54
+                        },
+                        {
+                            "name": "Catherine Puckett",
+                            "size": 54
+                        },
+                        {
+                            "name": "Aqsa Ahmed</a></div><p>The",
+                            "size": 54
+                        },
+                        {
+                            "name": "Barbara Wilcox",
+                            "size": 53
+                        },
+                        {
+                            "name": "Tohoku",
+                            "size": 51
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Earth",
+                            "size": 145
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 104
+                        },
+                        {
+                            "name": "United States",
+                            "size": 97
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 70
+                        },
+                        {
+                            "name": "California",
+                            "size": 68
+                        },
+                        {
+                            "name": "America",
+                            "size": 65
+                        },
+                        {
+                            "name": "Colorado",
+                            "size": 61
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 56
+                        },
+                        {
+                            "name": "US",
+                            "size": 56
+                        },
+                        {
+                            "name": "Africa",
+                            "size": 53
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 155
+                        },
+                        {
+                            "name": "USGS",
+                            "size": 105
+                        },
+                        {
+                            "name": "U.S. Geological Survey",
+                            "size": 64
+                        },
+                        {
+                            "name": "Energy",
+                            "size": 63
+                        },
+                        {
+                            "name": "Congress",
+                            "size": 61
+                        },
+                        {
+                            "name": "Minerals",
+                            "size": 58
+                        },
+                        {
+                            "name": "Environmental Health",
+                            "size": 58
+                        },
+                        {
+                            "name": "USGS </a></div><p>USGS",
+                            "size": 55
+                        },
+                        {
+                            "name": "National Ocean Policy",
+                            "size": 54
+                        },
+                        {
+                            "name": "USGS Library",
+                            "size": 52
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "scienc"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Goldstone",
+                            "size": 72
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 71
+                        },
+                        {
+                            "name": "Mizusawa",
+                            "size": 67
+                        },
+                        {
+                            "name": "Katherine",
+                            "size": 62
+                        },
+                        {
+                            "name": "Darwin",
+                            "size": 43
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 36
+                        },
+                        {
+                            "name": "Cachoeira Paulis",
+                            "size": 33
+                        },
+                        {
+                            "name": "Holberg",
+                            "size": 27
+                        },
+                        {
+                            "name": "Barrow",
+                            "size": 16
+                        },
+                        {
+                            "name": "Madison",
+                            "size": 16
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Washington",
+                            "size": 85
+                        },
+                        {
+                            "name": "Shanghai",
+                            "size": 81
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 76
+                        },
+                        {
+                            "name": "Singapore",
+                            "size": 76
+                        },
+                        {
+                            "name": "Istanbul",
+                            "size": 72
+                        },
+                        {
+                            "name": "Bucharest",
+                            "size": 72
+                        },
+                        {
+                            "name": "Quezon City",
+                            "size": 72
+                        },
+                        {
+                            "name": "Melbourne",
+                            "size": 72
+                        },
+                        {
+                            "name": "Fredericton",
+                            "size": 72
+                        },
+                        {
+                            "name": "Frankfurt",
+                            "size": 72
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "McDonald",
+                            "size": 74
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 74
+                        },
+                        {
+                            "name": "ISTA",
+                            "size": 73
+                        },
+                        {
+                            "name": "USNO",
+                            "size": 72
+                        },
+                        {
+                            "name": "Warnemuende",
+                            "size": 72
+                        },
+                        {
+                            "name": "Maspalomas",
+                            "size": 72
+                        },
+                        {
+                            "name": "Arequipa",
+                            "size": 66
+                        },
+                        {
+                            "name": "Greenbelt",
+                            "size": 65
+                        },
+                        {
+                            "name": "Bolzano",
+                            "size": 63
+                        },
+                        {
+                            "name": "Padova",
+                            "size": 63
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "2013"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "DORIS",
+                            "size": 58
+                        },
+                        {
+                            "name": "Boras",
+                            "size": 57
+                        },
+                        {
+                            "name": "Diego Garcia",
+                            "size": 47
+                        },
+                        {
+                            "name": "Goldstone",
+                            "size": 41
+                        },
+                        {
+                            "name": "Doris",
+                            "size": 19
+                        },
+                        {
+                            "name": "H. Fagard",
+                            "size": 18
+                        },
+                        {
+                            "name": "Y.E. Bar-Sever",
+                            "size": 18
+                        },
+                        {
+                            "name": "J. Geodyn.",
+                            "size": 18
+                        },
+                        {
+                            "name": "Willis",
+                            "size": 18
+                        },
+                        {
+                            "name": "C.R. Geoscience",
+                            "size": 18
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Washington",
+                            "size": 164
+                        },
+                        {
+                            "name": "Bishkek",
+                            "size": 151
+                        },
+                        {
+                            "name": "Seychelles",
+                            "size": 149
+                        },
+                        {
+                            "name": "Addis Ababa",
+                            "size": 54
+                        },
+                        {
+                            "name": "Santiago",
+                            "size": 49
+                        },
+                        {
+                            "name": "Madrid",
+                            "size": 35
+                        },
+                        {
+                            "name": "Bucharest",
+                            "size": 35
+                        },
+                        {
+                            "name": "Shanghai",
+                            "size": 29
+                        },
+                        {
+                            "name": "Townsville",
+                            "size": 27
+                        },
+                        {
+                            "name": "Potsdam",
+                            "size": 27
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Kokee Park KOKB",
+                            "size": 163
+                        },
+                        {
+                            "name": "Mauna Kea MKEA",
+                            "size": 163
+                        },
+                        {
+                            "name": "Maspalomas",
+                            "size": 163
+                        },
+                        {
+                            "name": "Ponta Delgada PDEL",
+                            "size": 161
+                        },
+                        {
+                            "name": "Arequipa AREQ",
+                            "size": 160
+                        },
+                        {
+                            "name": "Reykjavik REYK",
+                            "size": 159
+                        },
+                        {
+                            "name": "Herstmonceux HERT",
+                            "size": 158
+                        },
+                        {
+                            "name": "Shanghai SHAO",
+                            "size": 158
+                        },
+                        {
+                            "name": "Cagliari CAGZ",
+                            "size": 155
+                        },
+                        {
+                            "name": "Usno",
+                            "size": 155
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "2009"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Steve Williams NCAR/EOL",
+                            "size": 55
+                        },
+                        {
+                            "name": "Steve Williams",
+                            "size": 19
+                        },
+                        {
+                            "name": "Jorgen Jensen",
+                            "size": 18
+                        },
+                        {
+                            "name": "Cory Wolff",
+                            "size": 16
+                        },
+                        {
+                            "name": "Jim Moore",
+                            "size": 13
+                        },
+                        {
+                            "name": "Stuart Beaton",
+                            "size": 12
+                        },
+                        {
+                            "name": "William Brown",
+                            "size": 12
+                        },
+                        {
+                            "name": "Brigitte Baeuerle",
+                            "size": 11
+                        },
+                        {
+                            "name": "David Turner",
+                            "size": 10
+                        },
+                        {
+                            "name": "David Parsons OU Conrad Ziegler",
+                            "size": 10
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Japan",
+                            "size": 156
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 132
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 95
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 89
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 83
+                        },
+                        {
+                            "name": "United States",
+                            "size": 69
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 64
+                        },
+                        {
+                            "name": "Boulder",
+                            "size": 55
+                        },
+                        {
+                            "name": "Fairbanks</a></li><li style=\"white-space: normal; float: left; width: 100%;\" id=\"menu-1617-2\" class=\"middle even sf-item-2 sf-depth-3 main-nav-menu sf-no-children\"><a style=\"float: none; width: auto;\" href=\"http://www.arh.noaa.gov/wmofcst.php?wmo=FPAK51PAFG&amp;type=public\" class=\"external-link sf-depth-3\" target=\"_blank\">North Slope</a></li><li style=\"white-space: normal; float: left; width: 100%;\" id=\"menu-1618-2\" class=\"middle odd sf-item-3 sf-depth-3 main-nav-menu sf-no-children\"><a style=\"float: none; width: auto;\" href=\"http://www.arh.noaa.gov/wmofcst.php?wmo=FPAK52PAFG&amp;type=public\" class=\"external-link sf-depth-3\" target=\"_blank\">West",
+                            "size": 42
+                        },
+                        {
+                            "name": "Alaska",
+                            "size": 38
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Fabrication Services",
+                            "size": 336
+                        },
+                        {
+                            "name": "Project Management Office",
+                            "size": 323
+                        },
+                        {
+                            "name": "Deployments Facilities & Instruments Research Aircraft Ground & Airborne Remote Sensing Platforms Surface",
+                            "size": 284
+                        },
+                        {
+                            "name": "Earth Observing Laboratory Search",
+                            "size": 195
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 192
+                        },
+                        {
+                            "name": "USGS",
+                            "size": 188
+                        },
+                        {
+                            "name": "News Workshops & Seminars Conferences Help JIRA",
+                            "size": 155
+                        },
+                        {
+                            "name": "Sounding & Profiling Systems EOL Instrumentation Aircraft Instrumentation Request Facilities LAOF Digital Guide Letters of Intent Data & Software Field Catalogs Data Archive Data Legacy Software Center News & Events EOL",
+                            "size": 131
+                        },
+                        {
+                            "name": "EOL Development Deployment Data Services Discovery External Advisory Comittee Opportunities Our Organization Administration Computing",
+                            "size": 120
+                        },
+                        {
+                            "name": "NOAA",
+                            "size": 105
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "node"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Ted Scambos",
+                            "size": 54
+                        },
+                        {
+                            "name": "Rob Bauer",
+                            "size": 31
+                        },
+                        {
+                            "name": "Ted Maksym",
+                            "size": 27
+                        },
+                        {
+                            "name": "Muir Glacier",
+                            "size": 26
+                        },
+                        {
+                            "name": "Don Perovich",
+                            "size": 25
+                        },
+                        {
+                            "name": "Nilas",
+                            "size": 18
+                        },
+                        {
+                            "name": "B. Molnia",
+                            "size": 15
+                        },
+                        {
+                            "name": "William Osgood Field",
+                            "size": 15
+                        },
+                        {
+                            "name": "Tingjun Zhang",
+                            "size": 15
+                        },
+                        {
+                            "name": "Terry Haran",
+                            "size": 14
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Earth",
+                            "size": 829
+                        },
+                        {
+                            "name": "Antarctica",
+                            "size": 827
+                        },
+                        {
+                            "name": "USA Mountain Time",
+                            "size": 827
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 609
+                        },
+                        {
+                            "name": "US",
+                            "size": 535
+                        },
+                        {
+                            "name": "Boulder",
+                            "size": 142
+                        },
+                        {
+                            "name": "Arctic Sea",
+                            "size": 137
+                        },
+                        {
+                            "name": "Canada",
+                            "size": 129
+                        },
+                        {
+                            "name": "Alaska",
+                            "size": 126
+                        },
+                        {
+                            "name": "Arctic",
+                            "size": 119
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 773
+                        },
+                        {
+                            "name": "NSIDC",
+                            "size": 619
+                        },
+                        {
+                            "name": "NSIDC User Services",
+                            "size": 535
+                        },
+                        {
+                            "name": "Research</a> <li><a href=\"/research/scientists.html\"><img src=\"/sites/nsidc.org/files/images/about/researcher-100.jpg\" alt=\"\">Scientists</a></li> <li><a href=\"/research/projects.html\"><img src=\"/sites/nsidc.org/files/images/about/asina-100.jpg\" alt=\"\">Research Projects</a></li> <li><a href=\"/research/publications.html\"><img src=\"/sites/nsidc.org/files/images/about/publications-100.jpg\" alt=\"\">Scientific Publications</a></li> <li><a href=\"/research/informatics\"><img src=\"/sites/nsidc.org/files/images/about/informatics-100.jpg\" alt=\"\">Informatics Research</a></li> <li><a href=\"/news/press/expeditions.html\"><img src=\"/sites/nsidc.org/files/images/about/research-group-100.jpg\" alt=\"\">NSIDC",
+                            "size": 407
+                        },
+                        {
+                            "name": "Google Earth </a></li> <li><a href=\"/agdc/\">Antarctic Glaciological Data Center</a></li> <li><a href=\"http://eloka-arctic.org/\">Exchange for Local Observations",
+                            "size": 389
+                        },
+                        {
+                            "name": "Media</a></li> <li><a href=\"/the-drift/data-update/\">Data Announcements</a></li> <li><a href=\"/arcticseaicenews/\">Arctic Sea Ice News &amp; Analysis</a></li> <li><a href=\"/greenland-today\">Greenland Today",
+                            "size": 289
+                        },
+                        {
+                            "name": "Google Earth Sponsored Programs Antarctic Glaciological Data Center Exchange for Local Observations",
+                            "size": 286
+                        },
+                        {
+                            "name": "Media Newsroom",
+                            "size": 253
+                        },
+                        {
+                            "name": "NOAA",
+                            "size": 226
+                        },
+                        {
+                            "name": "Media For Data Users Data Announcements Current Conditions Arctic Sea Ice News & Analysis Greenland Today",
+                            "size": 204
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "cryospher"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Meas",
+                            "size": 23
+                        },
+                        {
+                            "name": "Daniel Stenberg",
+                            "size": 16
+                        },
+                        {
+                            "name": "Obama",
+                            "size": 16
+                        },
+                        {
+                            "name": "Dan Lowenstein",
+                            "size": 12
+                        },
+                        {
+                            "name": "Feeney",
+                            "size": 11
+                        },
+                        {
+                            "name": "Lamar Smith",
+                            "size": 11
+                        },
+                        {
+                            "name": "Shruti Sharma",
+                            "size": 10
+                        },
+                        {
+                            "name": "Daniel Anderson",
+                            "size": 10
+                        },
+                        {
+                            "name": "Matt Cantor",
+                            "size": 10
+                        },
+                        {
+                            "name": "Douglas Quenqua",
+                            "size": 10
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 97
+                        },
+                        {
+                            "name": "Mars",
+                            "size": 77
+                        },
+                        {
+                            "name": "US",
+                            "size": 74
+                        },
+                        {
+                            "name": "United States",
+                            "size": 67
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 63
+                        },
+                        {
+                            "name": "China",
+                            "size": 39
+                        },
+                        {
+                            "name": "USA",
+                            "size": 35
+                        },
+                        {
+                            "name": "California",
+                            "size": 34
+                        },
+                        {
+                            "name": "Greenland",
+                            "size": 32
+                        },
+                        {
+                            "name": "America",
+                            "size": 30
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "Astronomy &amp; Space</span></a><ul class=\"dropdown-wrap\" role=\"menu\"><li class=\"full-sub-nav\" role=\"menuitem\"><a href=\"http://phys.org/space-news/\" class=\"full-sub-nav\"><span>All Astronomy &amp; Space</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Plasma Physics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Earth Sciences</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Hi Tech &amp; Innovation</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Astronomy</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Bio &amp; Medicine</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Nanophysics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Plants &amp; Animals</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "General Physics</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        },
+                        {
+                            "name": "Economics &amp; Business</span></a><ul data-rel=\"placeholder\" class=\"hidden\"><li><span class=\"nav-placeholder\">Previews",
+                            "size": 77
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "2015"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "pierre",
+                            "size": 10
+                        },
+                        {
+                            "name": "helena",
+                            "size": 10
+                        },
+                        {
+                            "name": "Levy",
+                            "size": 9
+                        },
+                        {
+                            "name": "Liu",
+                            "size": 8
+                        },
+                        {
+                            "name": "Anderson",
+                            "size": 8
+                        },
+                        {
+                            "name": "Smith",
+                            "size": 8
+                        },
+                        {
+                            "name": "Perry",
+                            "size": 7
+                        },
+                        {
+                            "name": "Jones",
+                            "size": 7
+                        },
+                        {
+                            "name": "Wang",
+                            "size": 7
+                        },
+                        {
+                            "name": "M. K.",
+                            "size": 6
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "New York",
+                            "size": 166
+                        },
+                        {
+                            "name": "United States",
+                            "size": 55
+                        },
+                        {
+                            "name": "U.S.",
+                            "size": 49
+                        },
+                        {
+                            "name": "Africa",
+                            "size": 43
+                        },
+                        {
+                            "name": "CO",
+                            "size": 38
+                        },
+                        {
+                            "name": "Boulder",
+                            "size": 38
+                        },
+                        {
+                            "name": "Asia",
+                            "size": 34
+                        },
+                        {
+                            "name": "Europe",
+                            "size": 29
+                        },
+                        {
+                            "name": "South America",
+                            "size": 29
+                        },
+                        {
+                            "name": "North America",
+                            "size": 25
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "NASA",
+                            "size": 177
+                        },
+                        {
+                            "name": "Earthdata Network",
+                            "size": 165
+                        },
+                        {
+                            "name": "Columbia University",
+                            "size": 164
+                        },
+                        {
+                            "name": "CIESIN",
+                            "size": 161
+                        },
+                        {
+                            "name": "Earth Observing System Data",
+                            "size": 160
+                        },
+                        {
+                            "name": "Facebook",
+                            "size": 159
+                        },
+                        {
+                            "name": "NASA Earthdata Network Data Discovery Data Centers Community Science Disciplines Socioeconomic Data",
+                            "size": 56
+                        },
+                        {
+                            "name": "Columbia University Search SEDAC Data Web Pages",
+                            "size": 51
+                        },
+                        {
+                            "name": "Columbia University Search SEDAC Data",
+                            "size": 51
+                        },
+                        {
+                            "name": "UCAR",
+                            "size": 49
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "collect"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Jon Campbell",
+                            "size": 72
+                        },
+                        {
+                            "name": "Ethan Alpern",
+                            "size": 72
+                        },
+                        {
+                            "name": "David Hebert",
+                            "size": 68
+                        },
+                        {
+                            "name": "Catherine Puckett",
+                            "size": 67
+                        },
+                        {
+                            "name": "Heidi Koontz",
+                            "size": 65
+                        },
+                        {
+                            "name": "Alex Demas",
+                            "size": 65
+                        },
+                        {
+                            "name": "Hannah Hamilton",
+                            "size": 65
+                        },
+                        {
+                            "name": "Jenn LaVista",
+                            "size": 65
+                        },
+                        {
+                            "name": "Barbara Wilcox",
+                            "size": 64
+                        },
+                        {
+                            "name": "Marisa Lubeck",
+                            "size": 63
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "U.S.",
+                            "size": 72
+                        },
+                        {
+                            "name": "America",
+                            "size": 72
+                        },
+                        {
+                            "name": "Earth",
+                            "size": 70
+                        },
+                        {
+                            "name": "United States",
+                            "size": 68
+                        },
+                        {
+                            "name": "Colorado",
+                            "size": 67
+                        },
+                        {
+                            "name": "Mexico",
+                            "size": 66
+                        },
+                        {
+                            "name": "Japan",
+                            "size": 64
+                        },
+                        {
+                            "name": "California",
+                            "size": 63
+                        },
+                        {
+                            "name": "Washington",
+                            "size": 61
+                        },
+                        {
+                            "name": "San Francisco Bay",
+                            "size": 60
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USGS",
+                            "size": 73
+                        },
+                        {
+                            "name": "Environmental Health",
+                            "size": 72
+                        },
+                        {
+                            "name": "Energy",
+                            "size": 72
+                        },
+                        {
+                            "name": "U.S. Geological Survey",
+                            "size": 71
+                        },
+                        {
+                            "name": "Minerals",
+                            "size": 68
+                        },
+                        {
+                            "name": "Congress",
+                            "size": 68
+                        },
+                        {
+                            "name": "USGS </a></div><p>USGS",
+                            "size": 63
+                        },
+                        {
+                            "name": "National Ocean Policy",
+                            "size": 56
+                        },
+                        {
+                            "name": "USGS Library",
+                            "size": 54
+                        },
+                        {
+                            "name": "NASA",
+                            "size": 52
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "textlink"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "name": "Davis",
+                            "size": 27
+                        },
+                        {
+                            "name": "Ann Arbor",
+                            "size": 26
+                        },
+                        {
+                            "name": "Madison",
+                            "size": 25
+                        },
+                        {
+                            "name": "Jackson",
+                            "size": 25
+                        },
+                        {
+                            "name": "U. Houston",
+                            "size": 25
+                        },
+                        {
+                            "name": "U. Toledo",
+                            "size": 25
+                        },
+                        {
+                            "name": "Reno",
+                            "size": 25
+                        },
+                        {
+                            "name": "Mary",
+                            "size": 24
+                        },
+                        {
+                            "name": "U. MA",
+                            "size": 24
+                        },
+                        {
+                            "name": "Bozeman",
+                            "size": 24
+                        }
+                    ],
+                    "name": "person"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "New York",
+                            "size": 30
+                        },
+                        {
+                            "name": "Los Angeles",
+                            "size": 29
+                        },
+                        {
+                            "name": "San Antonio",
+                            "size": 28
+                        },
+                        {
+                            "name": "Seattle",
+                            "size": 28
+                        },
+                        {
+                            "name": "U. TX",
+                            "size": 27
+                        },
+                        {
+                            "name": "San Diego",
+                            "size": 27
+                        },
+                        {
+                            "name": "St. Louis",
+                            "size": 27
+                        },
+                        {
+                            "name": "Chicago",
+                            "size": 27
+                        },
+                        {
+                            "name": "Dallas",
+                            "size": 26
+                        },
+                        {
+                            "name": "Tampa",
+                            "size": 26
+                        }
+                    ],
+                    "name": "location"
+                },
+                {
+                    "children": [
+                        {
+                            "name": "USGS",
+                            "size": 48
+                        },
+                        {
+                            "name": "National Science Foundation",
+                            "size": 44
+                        },
+                        {
+                            "name": "National Center for Science and Engineering Statistics",
+                            "size": 44
+                        },
+                        {
+                            "name": "Higher Education Research and Development",
+                            "size": 44
+                        },
+                        {
+                            "name": "SUNY",
+                            "size": 28
+                        },
+                        {
+                            "name": "CUNY",
+                            "size": 27
+                        },
+                        {
+                            "name": "U. SC",
+                            "size": 27
+                        },
+                        {
+                            "name": "LA State U.",
+                            "size": 26
+                        },
+                        {
+                            "name": "U. NC",
+                            "size": 26
+                        },
+                        {
+                            "name": "Manoa",
+                            "size": 26
+                        }
+                    ],
+                    "name": "organization"
+                }
+            ],
+            "name": "html"
+        }
+    ],
+    "name": "keyword"
+}

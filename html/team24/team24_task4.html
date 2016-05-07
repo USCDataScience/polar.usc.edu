@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../css/team24/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/team24/style.css">
+  <script src="../../js/jquery.js"></script>
+    <link href="../../css/header.css" rel="stylesheet">
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+svg text{
+	font-size:12px;
+}
+rect{
+	shape-rendering:crispEdges;
+}
+</style>
+</head>
+<body>
+<div id="header"></div>
+    <ul class="nav navbar-inverse nav-pills nav-justified">
+    <li><a href="team24_index3.html">Home</a></li>
+    <li class="active"><a href="team24_task4.html">NER in CCA Dataset</a></li>
+    <li><a href="team24_task5.html">Metadata v/s File Sizes</a></li>
+    <li><a href="team24_task6a.html">TextExtraction vs Parser Heirarchy</a></li>
+    <li><a href="team24_task6b.html">Metadata vs Parser Heirarchy</a></li>
+    <li><a href="team24_task7.html">Language Diversity</a></li>
+    <li><a href="team24_langcloud.html">Language Word Cloud</a></li>
+    <li><a href="team24_wordsweet.html">Sweet Concepts Word Cloud</a></li>
+    <li><a href="team24_ner.html">Comparing NER toolkits</a></li>
+    <li><a href="team24_ner_file.html">NER on Files</a></li>
+    <li><a href="team24_task10ab.html">Measurements diversity (By Type)</a></li>
+    <li><a href="team24_task10c.html">Measurements diversity (By Domain)</a></li>
+    <li><a href="team24_task10d.html">Measurements diversity (By MIME Type)</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="../../js/team24/team24_task4.js"></script>
+<script>
+var sales_data=[
+["text-html","LOCATION","400","297"],
+["text-html","PERSON","374","128"],
+["text-html","ORGANIZATION","198","167"],
+["text-html","DATE","335","285"],
+["text-html","TIME","780","540"],
+["text-html","PERCENTAGE","95","40"],
+["text-html","MONEY","40","38"],
+["text-plain","LOCATION","18","11"],
+["text-plain","PERSON","18","9"],
+["text-plain","ORGANIZATION","18","9"],
+["text-plain","DATE","18","13"],
+["text-plain","TIME","18","6"],
+["text-plain","PERCENTAGE","18","5"],
+["text-plain","MONEY","18","3"],
+["application/xhtml+xml","LOCATION","18","12"],
+["application/xhtml+xml","PERSON","18","11"],
+["application/xhtml+xml","ORGANIZATION","18","9"],
+["application/xhtml+xml","DATE","18","15"],
+["application/xhtml+xml","TIME","18","5"],
+["application/xhtml+xml","PERCENTAGE","18","7"],
+["application/xhtml+xml","MONEY","18","5"],
+];
+var width = 1600, height = 610, margin ={b:30, t:40, l:170, r:50};
+
+var svg = d3.select("body")
+	.append("svg").attr('width',width).attr('height',(height+margin.b+margin.t))
+	.append("g").attr("transform","translate("+ margin.l+","+margin.t+")");
+
+var data = [ 
+	{data:bP.partData(sales_data,2), id:'SalesAttempts', header:["Channel","State", "Sales Attempts"]},
+];
+
+bP.draw(data, svg);
+
+</script>
+</body>

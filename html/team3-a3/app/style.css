@@ -1,0 +1,77 @@
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #777;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family: 'Arial';
+  font-size: 13px;
+}
+
+.tick {
+  stroke-dasharray: 1, 2;
+}
+
+.bar {
+  fill: FireBrick;
+}
+
+div {
+  margin: 0 0 0.75em 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  color: #292321;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label span {
+  background-color: #292321;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #1a75ff;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+
+#radiocontainer::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+#radiocontainer::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+#radiocontainer::-webkit-scrollbar-thumb
+{
+  background-color: #60B6FF;
+}

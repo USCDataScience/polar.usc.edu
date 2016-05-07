@@ -1,0 +1,11 @@
+degree
+volume
+celsius
+hrs
+year
+day
+minute
+hour
+mb
+days
+km

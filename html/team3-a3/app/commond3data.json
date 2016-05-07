@@ -1,0 +1,416 @@
+{
+  "name": "COMBINENER", 
+  "children": [
+    {
+      "name": "MONEY", 
+      "children": [
+        {
+          "name": "commonopennltkMONEY", 
+          "children": [
+            {
+              "name": 21
+            }
+          ]
+        }, 
+        {
+          "name": "commonopencoreMONEY", 
+          "children": [
+            {
+              "name": 16
+            }
+          ]
+        }, 
+        {
+          "name": "NLTKNAMES", 
+          "children": [
+            {
+              "name": 180119
+            }
+          ]
+        }, 
+        {
+          "name": "commoncorenltkMONEY", 
+          "children": [
+            {
+              "name": 8
+            }
+          ]
+        }, 
+        {
+          "name": "CORENLPMONEY", 
+          "children": [
+            {
+              "name": 156
+            }
+          ]
+        }, 
+        {
+          "name": "OPENNLPMONEY", 
+          "children": [
+            {
+              "name": 3000
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "PERSON", 
+      "children": [
+        {
+          "name": "OPENNLPPERSON", 
+          "children": [
+            {
+              "name": 22320
+            }
+          ]
+        }, 
+        {
+          "name": "NLTKNAMES", 
+          "children": [
+            {
+              "name": 180119
+            }
+          ]
+        }, 
+        {
+          "name": "commoncorenltkPERSON", 
+          "children": [
+            {
+              "name": 4284
+            }
+          ]
+        }, 
+        {
+          "name": "CORENLPPERSON", 
+          "children": [
+            {
+              "name": 18610
+            }
+          ]
+        }, 
+        {
+          "name": "commonopencorePERSON", 
+          "children": [
+            {
+              "name": 1391
+            }
+          ]
+        }, 
+        {
+          "name": "commonallPERSON", 
+          "children": [
+            {
+              "name": 954
+            }
+          ]
+        }, 
+        {
+          "name": "commonopennltkPERSON", 
+          "children": [
+            {
+              "name": 8023
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "LOCATION", 
+      "children": [
+        {
+          "name": "commonopencoreLOCATION", 
+          "children": [
+            {
+              "name": 1253
+            }
+          ]
+        }, 
+        {
+          "name": "commonallLOCATION", 
+          "children": [
+            {
+              "name": 1029
+            }
+          ]
+        }, 
+        {
+          "name": "NLTKNAMES", 
+          "children": [
+            {
+              "name": 180119
+            }
+          ]
+        }, 
+        {
+          "name": "commoncorenltkLOCATION", 
+          "children": [
+            {
+              "name": 2929
+            }
+          ]
+        }, 
+        {
+          "name": "OPENNLPLOCATION", 
+          "children": [
+            {
+              "name": 12952
+            }
+          ]
+        }, 
+        {
+          "name": "commonopennltkLOCATION", 
+          "children": [
+            {
+              "name": 5494
+            }
+          ]
+        }, 
+        {
+          "name": "CORENLPLOCATION", 
+          "children": [
+            {
+              "name": 5600
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "TIME", 
+      "children": [
+        {
+          "name": "OPENNLPTIME", 
+          "children": [
+            {
+              "name": 1375
+            }
+          ]
+        }, 
+        {
+          "name": "CORENLPTIME", 
+          "children": [
+            {
+              "name": 135
+            }
+          ]
+        }, 
+        {
+          "name": "NLTKNAMES", 
+          "children": [
+            {
+              "name": 180119
+            }
+          ]
+        }, 
+        {
+          "name": "commonopencoreTIME", 
+          "children": [
+            {
+              "name": 56
+            }
+          ]
+        }, 
+        {
+          "name": "commoncorenltkTIME", 
+          "children": [
+            {
+              "name": 18
+            }
+          ]
+        }, 
+        {
+          "name": "commonopennltkTIME", 
+          "children": [
+            {
+              "name": 12
+            }
+          ]
+        }, 
+        {
+          "name": "commonallTIME", 
+          "children": [
+            {
+              "name": 3
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "DATE", 
+      "children": [
+        {
+          "name": "commonopennltkDATE", 
+          "children": [
+            {
+              "name": 5586
+            }
+          ]
+        }, 
+        {
+          "name": "OPENNLPDATE", 
+          "children": [
+            {
+              "name": 40366
+            }
+          ]
+        }, 
+        {
+          "name": "NLTKNAMES", 
+          "children": [
+            {
+              "name": 180119
+            }
+          ]
+        }, 
+        {
+          "name": "commonallDATE", 
+          "children": [
+            {
+              "name": 3307
+            }
+          ]
+        }, 
+        {
+          "name": "commoncorenltkDATE", 
+          "children": [
+            {
+              "name": 4919
+            }
+          ]
+        }, 
+        {
+          "name": "CORENLPDATE", 
+          "children": [
+            {
+              "name": 7377
+            }
+          ]
+        }, 
+        {
+          "name": "commonopencoreDATE", 
+          "children": [
+            {
+              "name": 3674
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "ORGANIZATION", 
+      "children": [
+        {
+          "name": "commonallORGANIZATION", 
+          "children": [
+            {
+              "name": 4979
+            }
+          ]
+        }, 
+        {
+          "name": "commonopencoreORGANIZATION", 
+          "children": [
+            {
+              "name": 6977
+            }
+          ]
+        }, 
+        {
+          "name": "OPENNLPORGANIZATION", 
+          "children": [
+            {
+              "name": 74841
+            }
+          ]
+        }, 
+        {
+          "name": "commonopennltkORGANIZATION", 
+          "children": [
+            {
+              "name": 23335
+            }
+          ]
+        }, 
+        {
+          "name": "NLTKNAMES", 
+          "children": [
+            {
+              "name": 180119
+            }
+          ]
+        }, 
+        {
+          "name": "CORENLPORGANIZATION", 
+          "children": [
+            {
+              "name": 50336
+            }
+          ]
+        }, 
+        {
+          "name": "commoncorenltkORGANIZATION", 
+          "children": [
+            {
+              "name": 15701
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "PERCENTAGE", 
+      "children": [
+        {
+          "name": "commonopencorePERCENTAGE", 
+          "children": [
+            {
+              "name": 68
+            }
+          ]
+        }, 
+        {
+          "name": "commonopennltkPERCENTAGE", 
+          "children": [
+            {
+              "name": 14
+            }
+          ]
+        }, 
+        {
+          "name": "OPENNLPPERCENTAGE", 
+          "children": [
+            {
+              "name": 2511
+            }
+          ]
+        }, 
+        {
+          "name": "NLTKNAMES", 
+          "children": [
+            {
+              "name": 180119
+            }
+          ]
+        }, 
+        {
+          "name": "commoncorenltkPERCENTAGE", 
+          "children": [
+            {
+              "name": 4
+            }
+          ]
+        }, 
+        {
+          "name": "CORENLPPERCENT", 
+          "children": [
+            {
+              "name": 200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+degree
+days
+km
+pixel
+feet
+degrees
+day

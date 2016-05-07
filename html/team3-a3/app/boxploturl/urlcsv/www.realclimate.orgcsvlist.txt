@@ -1,0 +1,13 @@
+degree
+cubic
+month
+feet
+per
+year
+day
+minute
+hour
+days
+km
+fahrenheit
+degrees

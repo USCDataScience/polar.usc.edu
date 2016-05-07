@@ -1,0 +1,3 @@
+feet
+degrees
+km

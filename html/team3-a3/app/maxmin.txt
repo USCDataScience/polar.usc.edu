@@ -1,0 +1,50 @@
+{
+  "text/html": {
+    "maxbody": 1170909, 
+    "minmeta": 464, 
+    "maxmeta": 253982, 
+    "minbody": 0
+  }, 
+  "application/rss+xml": {
+    "maxbody": 168654, 
+    "minmeta": 736, 
+    "maxmeta": 52220, 
+    "minbody": 738
+  }, 
+  "image/vnd.microsoft.icon": {
+    "maxbody": 18739, 
+    "minmeta": 356, 
+    "maxmeta": 415, 
+    "minbody": 394
+  }, 
+  "image/gif": {
+    "maxbody": 12042, 
+    "minmeta": 350, 
+    "maxmeta": 22910, 
+    "minbody": 1120
+  }, 
+  "application/pdf": {
+    "maxbody": 20640920, 
+    "minmeta": 857, 
+    "maxmeta": 1099, 
+    "minbody": 20894
+  }, 
+  "application/xml": {
+    "maxbody": 500051, 
+    "minmeta": 756, 
+    "maxmeta": 45496, 
+    "minbody": 1045
+  }, 
+  "text/plain": {
+    "maxbody": 1636838, 
+    "minmeta": 374, 
+    "maxmeta": 468281, 
+    "minbody": 0
+  }, 
+  "application/xhtml+xml": {
+    "maxbody": 164518, 
+    "minmeta": 458, 
+    "maxmeta": 126289, 
+    "minbody": 316
+  }
+}

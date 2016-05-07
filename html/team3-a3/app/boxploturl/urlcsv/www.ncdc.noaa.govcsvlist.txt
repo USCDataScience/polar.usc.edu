@@ -1,0 +1,11 @@
+degree
+month
+feet
+hrs
+year
+foot
+hour
+mb
+days
+km
+degrees

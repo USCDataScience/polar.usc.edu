@@ -1,0 +1,7 @@
+hour
+mb
+hr
+min
+days
+degrees
+day

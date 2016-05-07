@@ -1,0 +1,13 @@
+ft
+degree
+meter
+feet
+second
+sec
+per
+year
+foot
+day
+days
+km
+degrees

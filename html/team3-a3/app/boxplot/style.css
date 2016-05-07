@@ -1,0 +1,51 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.whisker line,
+.median line,
+.box rect, {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+circle {
+  fill: black;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+circle:hover {
+  fill: orange;
+  stroke: orange;
+  opacity: 1;
+}
+
+.outlier {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.point {  
+  opacity: 0.25; 
+}
+
+.axis path {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {    
+    font-size: 10px;
+}

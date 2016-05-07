@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Size Analysis</title>
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+
+<script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: orangered ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/>
+    <div class="container">
+<h1 style="font-family: sans-serif;">File Size Summary</h1>
+<div id="d3"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script>
+
+var margin = {top: 40, right: 20, bottom: 250, left: 100},
+    width = 1200 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
+
+var formatPercent = d3.format("d");
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(formatPercent);
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    /* return "Frequency:</strong> <span style='color:red'>" + d.mean + "</span>"; */
+	return "<strong>Type</strong>:  " + d.type + "<br/>" +
+			"<strong>Count</strong>:  " + d.count + "<br/>" +
+			"<strong>Average</strong>:  " + d.mean.toFixed(2) + "<br/>" +
+			"<strong>Range</strong>:  " + "[" + d.min + ", " + d.max + "]";
+			
+  })
+
+var svg = d3.select("#d3").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.call(tip);
+
+d3.json("../../data/team22-spring-2016-data/content-evaluation/sizeSummary.json", function(error, data) {
+  x.domain(data.map(function(d) { return d.type; }));
+  y.domain([0, d3.max(data, function(d) { return d.mean; }) * 1.1]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+	.selectAll("text")
+	  .attr("transform", "rotate(90)")
+	  .style("text-anchor", "start")
+	  .attr("y", 0)
+      .attr("x", 9)
+      .attr("dy", ".35em");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(0)")
+      .attr("y", -15)
+	  .attr("x", -45)
+      .attr("dy", ".71em")
+      .style("text-anchor", "center")
+      .text("Average File Size (bytes)");
+
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.type); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.mean); })
+      .attr("height", function(d) { return height - y(d.mean) + 1; })
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+
+});
+
+function type(d) {
+  d.mean = +d.mean;
+  return d;
+}
+
+</script>
+</div>
+</body>

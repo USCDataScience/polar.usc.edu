@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Cloud</title>
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+
+<script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.layout.cloud.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+
+<style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+    }
+    div{
+        padding:40px;
+        margin-left: 10px;
+    }
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/><br/><br/><br/>
+    <div class="container">
+<h3>Word Cloud Representing Detected Language</h3>
+</body>
+<script>
+
+
+var fileName="../../data/team22-spring-2016-data/content-evaluation/langTika.json";  
+
+
+$.getJSON(fileName, function(json) {
+      var frequency_list=[];
+      var count=0;
+
+      var prev="";
+      var current=0;
+      $.each(json, function(i,field){
+
+        if(i%2==0)
+        {
+            var tempPrev=String(field);
+			prev=tempPrev;
+        }
+        else
+        {
+          current=parseInt(field);
+          current=parseInt((Math.log(current)*5)) + 10;
+          frequency_list.push({text: prev, size: current});
+        } 
+        });
+
+    var color = d3.scale.linear()
+            .domain([20,0])
+            .range(["#888888","#000000"])
+			.clamp(true);
+    
+            // .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
+
+    d3.layout.cloud().size([800, 300])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) { return d.size; })
+            .on("end", draw)
+            .start();
+
+    function draw(words) {
+        d3.select("body").append("svg")
+                .attr("width", 850)
+                .attr("height", 350)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(320,200)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size + "px"; })
+                .style("fill", function(d, i) { return color(i); })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+    }
+});
+</script>
+
+
+</html>

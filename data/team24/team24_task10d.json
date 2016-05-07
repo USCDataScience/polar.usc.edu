@@ -1,0 +1,2393 @@
+{
+ "name": "measurements",
+ "children":[
+    {
+        "name": "text/plain; charset=gb2312", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 5"
+                    }, 
+                    {
+                        "name": "max : 2312.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 2312.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=big5", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 16"
+                    }, 
+                    {
+                        "name": "max : 2312.0"
+                    }, 
+                    {
+                        "name": "range : 2307.0"
+                    }, 
+                    {
+                        "name": "min : 5.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 7.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 7.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 1148.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 1148.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "application/dita+xml; format=concept", 
+        "children": [
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 54"
+                    }, 
+                    {
+                        "name": "max : 1400.0"
+                    }, 
+                    {
+                        "name": "range : 1396.0"
+                    }, 
+                    {
+                        "name": "min : 4.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 6"
+                    }, 
+                    {
+                        "name": "max : 20.0"
+                    }, 
+                    {
+                        "name": "range : 15.0"
+                    }, 
+                    {
+                        "name": "min : 5.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 18"
+                    }, 
+                    {
+                        "name": "max : 120.0"
+                    }, 
+                    {
+                        "name": "range : 116.0"
+                    }, 
+                    {
+                        "name": "min : 4.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 8"
+                    }, 
+                    {
+                        "name": "max : 2755.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 2755.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 10"
+                    }, 
+                    {
+                        "name": "max : 1996.0"
+                    }, 
+                    {
+                        "name": "range : 1955.0"
+                    }, 
+                    {
+                        "name": "min : 41.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 1.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "joule", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 16.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 16.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "message/rfc822", 
+        "children": [
+            {
+                "name": "litre", 
+                "children": [
+                    {
+                        "name": "count : 93"
+                    }, 
+                    {
+                        "name": "max : 625.0"
+                    }, 
+                    {
+                        "name": "range : 617.0"
+                    }, 
+                    {
+                        "name": "min : 8.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "pound", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 0.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 268"
+                    }, 
+                    {
+                        "name": "max : 2076.5"
+                    }, 
+                    {
+                        "name": "range : 2071.5"
+                    }, 
+                    {
+                        "name": "min : 5.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 59"
+                    }, 
+                    {
+                        "name": "max : 630.0"
+                    }, 
+                    {
+                        "name": "range : 630.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "second", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 84073.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 84073.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 45"
+                    }, 
+                    {
+                        "name": "max : 8020.0"
+                    }, 
+                    {
+                        "name": "range : 2899.0"
+                    }, 
+                    {
+                        "name": "min : 5121.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 59"
+                    }, 
+                    {
+                        "name": "max : 16186.0"
+                    }, 
+                    {
+                        "name": "range : 15719.0"
+                    }, 
+                    {
+                        "name": "min : 467.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 72"
+                    }, 
+                    {
+                        "name": "max : 4395.0"
+                    }, 
+                    {
+                        "name": "range : 4394.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 123"
+                    }, 
+                    {
+                        "name": "max : 666.0"
+                    }, 
+                    {
+                        "name": "range : 665.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "quart", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 86.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 86.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "joule", 
+                "children": [
+                    {
+                        "name": "count : 134"
+                    }, 
+                    {
+                        "name": "max : 338.0"
+                    }, 
+                    {
+                        "name": "range : 327.8984"
+                    }, 
+                    {
+                        "name": "min : 10.1016"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=utf-16le", 
+        "children": [
+            {
+                "name": "litre", 
+                "children": [
+                    {
+                        "name": "count : 12"
+                    }, 
+                    {
+                        "name": "max : 4853.0"
+                    }, 
+                    {
+                        "name": "range : 4848.0"
+                    }, 
+                    {
+                        "name": "min : 5.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 9"
+                    }, 
+                    {
+                        "name": "max : 927.0"
+                    }, 
+                    {
+                        "name": "range : 79.0"
+                    }, 
+                    {
+                        "name": "min : 848.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 4"
+                    }, 
+                    {
+                        "name": "max : 83.0"
+                    }, 
+                    {
+                        "name": "range : 83.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 5"
+                    }, 
+                    {
+                        "name": "max : 7.0"
+                    }, 
+                    {
+                        "name": "range : 8.4"
+                    }, 
+                    {
+                        "name": "min : -1.4"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 615.0"
+                    }, 
+                    {
+                        "name": "range : 444.0"
+                    }, 
+                    {
+                        "name": "min : 171.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 775"
+                    }, 
+                    {
+                        "name": "max : 663399.0"
+                    }, 
+                    {
+                        "name": "range : 663407.0"
+                    }, 
+                    {
+                        "name": "min : -8.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 7"
+                    }, 
+                    {
+                        "name": "max : 1979.0"
+                    }, 
+                    {
+                        "name": "range : 1976.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "application/vnd.google-earth.kml+xml", 
+        "children": [
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 448"
+                    }, 
+                    {
+                        "name": "max : 850.0"
+                    }, 
+                    {
+                        "name": "range : 849.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 171"
+                    }, 
+                    {
+                        "name": "max : 20098.0"
+                    }, 
+                    {
+                        "name": "range : 20157.0"
+                    }, 
+                    {
+                        "name": "min : -59.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 41"
+                    }, 
+                    {
+                        "name": "max : 384.0"
+                    }, 
+                    {
+                        "name": "range : 372.0"
+                    }, 
+                    {
+                        "name": "min : 12.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 4"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 467"
+                    }, 
+                    {
+                        "name": "max : 1006030.0"
+                    }, 
+                    {
+                        "name": "range : 1006038.0"
+                    }, 
+                    {
+                        "name": "min : -8.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 363"
+                    }, 
+                    {
+                        "name": "max : 150.0"
+                    }, 
+                    {
+                        "name": "range : 149.62"
+                    }, 
+                    {
+                        "name": "min : 0.38"
+                    }
+                ]
+            }, 
+            {
+                "name": "joule", 
+                "children": [
+                    {
+                        "name": "count : 5"
+                    }, 
+                    {
+                        "name": "max : 10.1016"
+                    }, 
+                    {
+                        "name": "range : 7.1016"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "application/xslt+xml", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 1.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 14"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 1.5"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 1.5"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 4"
+                    }, 
+                    {
+                        "name": "max : 2003.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 2003.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=gb18030", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 7"
+                    }, 
+                    {
+                        "name": "max : 2312.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 2312.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 9"
+                    }, 
+                    {
+                        "name": "max : 66.0"
+                    }, 
+                    {
+                        "name": "range : 59.0"
+                    }, 
+                    {
+                        "name": "min : 7.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 4"
+                    }, 
+                    {
+                        "name": "max : 90.0"
+                    }, 
+                    {
+                        "name": "range : 61.5"
+                    }, 
+                    {
+                        "name": "min : 28.5"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "application/dif+xml", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 8.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 8.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 15"
+                    }, 
+                    {
+                        "name": "max : 14.0"
+                    }, 
+                    {
+                        "name": "range : 1.0"
+                    }, 
+                    {
+                        "name": "min : 13.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 53"
+                    }, 
+                    {
+                        "name": "max : 360.0"
+                    }, 
+                    {
+                        "name": "range : 350.0"
+                    }, 
+                    {
+                        "name": "min : 10.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 19"
+                    }, 
+                    {
+                        "name": "max : 214.0"
+                    }, 
+                    {
+                        "name": "range : 204.0"
+                    }, 
+                    {
+                        "name": "min : 10.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=shift_jis", 
+        "children": [
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 11"
+                    }, 
+                    {
+                        "name": "max : 5.0"
+                    }, 
+                    {
+                        "name": "range : 5.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=utf-8", 
+        "children": [
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 15860"
+                    }, 
+                    {
+                        "name": "max : 5.22499697445e+18"
+                    }, 
+                    {
+                        "name": "range : 5.22499697445e+18"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "pound", 
+                "children": [
+                    {
+                        "name": "count : 49"
+                    }, 
+                    {
+                        "name": "max : 1200.0"
+                    }, 
+                    {
+                        "name": "range : 1196.0"
+                    }, 
+                    {
+                        "name": "min : 4.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "yard", 
+                "children": [
+                    {
+                        "name": "count : 5"
+                    }, 
+                    {
+                        "name": "max : 300.0"
+                    }, 
+                    {
+                        "name": "range : 200.0"
+                    }, 
+                    {
+                        "name": "min : 100.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "cup", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 10.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 10.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "cubic", 
+                "children": [
+                    {
+                        "name": "count : 34"
+                    }, 
+                    {
+                        "name": "max : 900.0"
+                    }, 
+                    {
+                        "name": "range : 900.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 22192"
+                    }, 
+                    {
+                        "name": "max : 4000000019.0"
+                    }, 
+                    {
+                        "name": "range : 4000000017.0"
+                    }, 
+                    {
+                        "name": "min : 2.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "spoon", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 56.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 56.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "fahrenheit", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 84.2"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 84.2"
+                    }
+                ]
+            }, 
+            {
+                "name": "litre", 
+                "children": [
+                    {
+                        "name": "count : 3676"
+                    }, 
+                    {
+                        "name": "max : 980343.0"
+                    }, 
+                    {
+                        "name": "range : 978336.0"
+                    }, 
+                    {
+                        "name": "min : 2007.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "second", 
+                "children": [
+                    {
+                        "name": "count : 47"
+                    }, 
+                    {
+                        "name": "max : 6039.84"
+                    }, 
+                    {
+                        "name": "range : 6039.34"
+                    }, 
+                    {
+                        "name": "min : 0.5"
+                    }
+                ]
+            }, 
+            {
+                "name": "mile", 
+                "children": [
+                    {
+                        "name": "count : 1169"
+                    }, 
+                    {
+                        "name": "max : 5000.0"
+                    }, 
+                    {
+                        "name": "range : 4880.0"
+                    }, 
+                    {
+                        "name": "min : 120.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "ton", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 200.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 200.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 2652"
+                    }, 
+                    {
+                        "name": "max : 613752.0"
+                    }, 
+                    {
+                        "name": "range : 613682.0"
+                    }, 
+                    {
+                        "name": "min : 70.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "ounce", 
+                "children": [
+                    {
+                        "name": "count : 8"
+                    }, 
+                    {
+                        "name": "max : 218.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 218.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 452548"
+                    }, 
+                    {
+                        "name": "max : 1.00014240527e+40"
+                    }, 
+                    {
+                        "name": "range : 1.00014240527e+40"
+                    }, 
+                    {
+                        "name": "min : 2012.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gallon", 
+                "children": [
+                    {
+                        "name": "count : 48"
+                    }, 
+                    {
+                        "name": "max : 1270.0"
+                    }, 
+                    {
+                        "name": "range : 1269.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 10290"
+                    }, 
+                    {
+                        "name": "max : 5.3427732e+20"
+                    }, 
+                    {
+                        "name": "range : 5.3427732e+20"
+                    }, 
+                    {
+                        "name": "min : 10.5194"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 5993"
+                    }, 
+                    {
+                        "name": "max : 20080317.0"
+                    }, 
+                    {
+                        "name": "range : 20079417.0"
+                    }, 
+                    {
+                        "name": "min : 900.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "quart", 
+                "children": [
+                    {
+                        "name": "count : 9"
+                    }, 
+                    {
+                        "name": "max : 43.0"
+                    }, 
+                    {
+                        "name": "range : 59.0"
+                    }, 
+                    {
+                        "name": "min : -16.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "joule", 
+                "children": [
+                    {
+                        "name": "count : 1678"
+                    }, 
+                    {
+                        "name": "max : 54248643.0"
+                    }, 
+                    {
+                        "name": "range : 54248632.8984"
+                    }, 
+                    {
+                        "name": "min : 10.1016"
+                    }
+                ]
+            }, 
+            {
+                "name": "pint", 
+                "children": [
+                    {
+                        "name": "count : 17"
+                    }, 
+                    {
+                        "name": "max : 10.0"
+                    }, 
+                    {
+                        "name": "range : 7.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=windows-1252", 
+        "children": [
+            {
+                "name": "mile", 
+                "children": [
+                    {
+                        "name": "count : 372"
+                    }, 
+                    {
+                        "name": "max : 2000.0"
+                    }, 
+                    {
+                        "name": "range : 1800.0"
+                    }, 
+                    {
+                        "name": "min : 200.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "litre", 
+                "children": [
+                    {
+                        "name": "count : 2648"
+                    }, 
+                    {
+                        "name": "max : 1.15903720142e+16"
+                    }, 
+                    {
+                        "name": "range : 1.15903720142e+16"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "pound", 
+                "children": [
+                    {
+                        "name": "count : 66"
+                    }, 
+                    {
+                        "name": "max : 3600.0"
+                    }, 
+                    {
+                        "name": "range : 3590.0"
+                    }, 
+                    {
+                        "name": "min : 10.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "yard", 
+                "children": [
+                    {
+                        "name": "count : 12"
+                    }, 
+                    {
+                        "name": "max : 550.0"
+                    }, 
+                    {
+                        "name": "range : 540.0"
+                    }, 
+                    {
+                        "name": "min : 10.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "cubic", 
+                "children": [
+                    {
+                        "name": "count : 13"
+                    }, 
+                    {
+                        "name": "max : 625.0"
+                    }, 
+                    {
+                        "name": "range : 582.0"
+                    }, 
+                    {
+                        "name": "min : 43.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "kelvin", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 2010.0"
+                    }, 
+                    {
+                        "name": "range : 2.0"
+                    }, 
+                    {
+                        "name": "min : 2008.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 40859"
+                    }, 
+                    {
+                        "name": "max : 1.20002520143e+16"
+                    }, 
+                    {
+                        "name": "range : 1.20002520143e+16"
+                    }, 
+                    {
+                        "name": "min : 3842.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 11764"
+                    }, 
+                    {
+                        "name": "max : 6.35543334437e+17"
+                    }, 
+                    {
+                        "name": "range : 6.35543334437e+17"
+                    }, 
+                    {
+                        "name": "min : 9.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 755"
+                    }, 
+                    {
+                        "name": "max : 13286.0"
+                    }, 
+                    {
+                        "name": "range : 13226.0"
+                    }, 
+                    {
+                        "name": "min : 60.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "second", 
+                "children": [
+                    {
+                        "name": "count : 78"
+                    }, 
+                    {
+                        "name": "max : 1000.0"
+                    }, 
+                    {
+                        "name": "range : 999.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "celsius", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 0.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 2630"
+                    }, 
+                    {
+                        "name": "max : 1.23107820141e+16"
+                    }, 
+                    {
+                        "name": "range : 1.23107820141e+16"
+                    }, 
+                    {
+                        "name": "min : 4.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 54395"
+                    }, 
+                    {
+                        "name": "max : 1.23480267841e+14"
+                    }, 
+                    {
+                        "name": "range : 1.23480267841e+14"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gallon", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 0.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 9613"
+                    }, 
+                    {
+                        "name": "max : 1.19502820142e+16"
+                    }, 
+                    {
+                        "name": "range : 1.19502820142e+16"
+                    }, 
+                    {
+                        "name": "min : 10.5194"
+                    }
+                ]
+            }, 
+            {
+                "name": "quart", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 6.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 6.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "joule", 
+                "children": [
+                    {
+                        "name": "count : 1801"
+                    }, 
+                    {
+                        "name": "max : 1.20402320142e+16"
+                    }, 
+                    {
+                        "name": "range : 1.20402320142e+16"
+                    }, 
+                    {
+                        "name": "min : 5.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=iso-8859-8", 
+        "children": [
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 42"
+                    }, 
+                    {
+                        "name": "max : 404.0"
+                    }, 
+                    {
+                        "name": "range : 33523549.0"
+                    }, 
+                    {
+                        "name": "min : -33523145.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 12"
+                    }, 
+                    {
+                        "name": "max : 404.0"
+                    }, 
+                    {
+                        "name": "range : 33523549.0"
+                    }, 
+                    {
+                        "name": "min : -33523145.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 13"
+                    }, 
+                    {
+                        "name": "max : 7.0"
+                    }, 
+                    {
+                        "name": "range : 4.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 30.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 30.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 5"
+                    }, 
+                    {
+                        "name": "max : 1.0"
+                    }, 
+                    {
+                        "name": "range : 0.9"
+                    }, 
+                    {
+                        "name": "min : 0.1"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=iso-8859-2", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 12"
+                    }, 
+                    {
+                        "name": "max : 220.0"
+                    }, 
+                    {
+                        "name": "range : 9079.0"
+                    }, 
+                    {
+                        "name": "min : -8859.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=iso-8859-1", 
+        "children": [
+            {
+                "name": "pound", 
+                "children": [
+                    {
+                        "name": "count : 107"
+                    }, 
+                    {
+                        "name": "max : 5000.0"
+                    }, 
+                    {
+                        "name": "range : 4997.8"
+                    }, 
+                    {
+                        "name": "min : 2.2"
+                    }
+                ]
+            }, 
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 44806"
+                    }, 
+                    {
+                        "name": "max : 1.42461760933e+31"
+                    }, 
+                    {
+                        "name": "range : 1.42461760933e+31"
+                    }, 
+                    {
+                        "name": "min : 1994.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "second", 
+                "children": [
+                    {
+                        "name": "count : 402"
+                    }, 
+                    {
+                        "name": "max : 86400.0"
+                    }, 
+                    {
+                        "name": "range : 86398.0"
+                    }, 
+                    {
+                        "name": "min : 2.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "mile", 
+                "children": [
+                    {
+                        "name": "count : 274"
+                    }, 
+                    {
+                        "name": "max : 5000.0"
+                    }, 
+                    {
+                        "name": "range : 5000.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gallon", 
+                "children": [
+                    {
+                        "name": "count : 9"
+                    }, 
+                    {
+                        "name": "max : 800.0"
+                    }, 
+                    {
+                        "name": "range : 775.0"
+                    }, 
+                    {
+                        "name": "min : 25.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 123180"
+                    }, 
+                    {
+                        "name": "max : 7.89012345679e+65"
+                    }, 
+                    {
+                        "name": "range : 7.89012345679e+65"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "litre", 
+                "children": [
+                    {
+                        "name": "count : 10491"
+                    }, 
+                    {
+                        "name": "max : 8e+15"
+                    }, 
+                    {
+                        "name": "range : 8e+15"
+                    }, 
+                    {
+                        "name": "min : 2.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "cup", 
+                "children": [
+                    {
+                        "name": "count : 25"
+                    }, 
+                    {
+                        "name": "max : 5.0"
+                    }, 
+                    {
+                        "name": "range : 4.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "fahrenheit", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : -384.1"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : -384.1"
+                    }
+                ]
+            }, 
+            {
+                "name": "ounce", 
+                "children": [
+                    {
+                        "name": "count : 150"
+                    }, 
+                    {
+                        "name": "max : 8888888.0"
+                    }, 
+                    {
+                        "name": "range : 8888885.9"
+                    }, 
+                    {
+                        "name": "min : 2.1"
+                    }
+                ]
+            }, 
+            {
+                "name": "ton", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 5.3"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 5.3"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 699870"
+                    }, 
+                    {
+                        "name": "max : 1.00014240527e+40"
+                    }, 
+                    {
+                        "name": "range : 1.00014240527e+40"
+                    }, 
+                    {
+                        "name": "min : 2.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "pint", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 2.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 2.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "cubic", 
+                "children": [
+                    {
+                        "name": "count : 15"
+                    }, 
+                    {
+                        "name": "max : 3300.0"
+                    }, 
+                    {
+                        "name": "range : 3300.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "kelvin", 
+                "children": [
+                    {
+                        "name": "count : 8"
+                    }, 
+                    {
+                        "name": "max : 2011.0"
+                    }, 
+                    {
+                        "name": "range : 1.0"
+                    }, 
+                    {
+                        "name": "min : 2010.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "quart", 
+                "children": [
+                    {
+                        "name": "count : 22"
+                    }, 
+                    {
+                        "name": "max : 84.0"
+                    }, 
+                    {
+                        "name": "range : 74.0"
+                    }, 
+                    {
+                        "name": "min : 10.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "spoon", 
+                "children": [
+                    {
+                        "name": "count : 4"
+                    }, 
+                    {
+                        "name": "max : 56.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 56.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "joule", 
+                "children": [
+                    {
+                        "name": "count : 9019"
+                    }, 
+                    {
+                        "name": "max : 902122.0"
+                    }, 
+                    {
+                        "name": "range : 902121.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "yard", 
+                "children": [
+                    {
+                        "name": "count : 35"
+                    }, 
+                    {
+                        "name": "max : 900.0"
+                    }, 
+                    {
+                        "name": "range : 894.0"
+                    }, 
+                    {
+                        "name": "min : 6.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 161700"
+                    }, 
+                    {
+                        "name": "max : 1.42857142857e+16"
+                    }, 
+                    {
+                        "name": "range : 1.42857142857e+16"
+                    }, 
+                    {
+                        "name": "min : 1678.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "celsius", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 237.0"
+                    }, 
+                    {
+                        "name": "range : 468.1"
+                    }, 
+                    {
+                        "name": "min : -231.1"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 11442"
+                    }, 
+                    {
+                        "name": "max : 2147483647.0"
+                    }, 
+                    {
+                        "name": "range : 2147481640.0"
+                    }, 
+                    {
+                        "name": "min : 2007.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 9790"
+                    }, 
+                    {
+                        "name": "max : 31536000.0"
+                    }, 
+                    {
+                        "name": "range : 31535990.0"
+                    }, 
+                    {
+                        "name": "min : 10.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=iso-8859-7", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 2312.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 2312.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=iso-8859-6", 
+        "children": [
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : -8859.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : -8859.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "application/x-tar", 
+        "children": [
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 4.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 4.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=iso-8859-15", 
+        "children": [
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 16"
+                    }, 
+                    {
+                        "name": "max : 0.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 6"
+                    }, 
+                    {
+                        "name": "max : 1.0"
+                    }, 
+                    {
+                        "name": "range : 9.0"
+                    }, 
+                    {
+                        "name": "min : -8.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "application/vnd.ms-excel.sheet.4", 
+        "children": [
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 3.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "text/plain; charset=ibm866", 
+        "children": [
+            {
+                "name": "metre", 
+                "children": [
+                    {
+                        "name": "count : 2"
+                    }, 
+                    {
+                        "name": "max : 4.0"
+                    }, 
+                    {
+                        "name": "range : 3.0"
+                    }, 
+                    {
+                        "name": "min : 1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "feet", 
+                "children": [
+                    {
+                        "name": "count : 16"
+                    }, 
+                    {
+                        "name": "max : 1727.0"
+                    }, 
+                    {
+                        "name": "range : 827.0"
+                    }, 
+                    {
+                        "name": "min : 900.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "other", 
+                "children": [
+                    {
+                        "name": "count : 3"
+                    }, 
+                    {
+                        "name": "max : 41.0"
+                    }, 
+                    {
+                        "name": "range : 37.0"
+                    }, 
+                    {
+                        "name": "min : 4.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "gram", 
+                "children": [
+                    {
+                        "name": "count : 24"
+                    }, 
+                    {
+                        "name": "max : 465.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 465.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "inch", 
+                "children": [
+                    {
+                        "name": "count : 216"
+                    }, 
+                    {
+                        "name": "max : 2.98864060275e+14"
+                    }, 
+                    {
+                        "name": "range : 2.98864060275e+14"
+                    }, 
+                    {
+                        "name": "min : -1.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 37"
+                    }, 
+                    {
+                        "name": "max : 3.0"
+                    }, 
+                    {
+                        "name": "range : 1.0"
+                    }, 
+                    {
+                        "name": "min : 2.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "application/zip", 
+        "children": [
+            {
+                "name": "calorie", 
+                "children": [
+                    {
+                        "name": "count : 1"
+                    }, 
+                    {
+                        "name": "max : 14.0"
+                    }, 
+                    {
+                        "name": "range : 0.0"
+                    }, 
+                    {
+                        "name": "min : 14.0"
+                    }
+                ]
+            }
+        ]
+    }
+]
+}

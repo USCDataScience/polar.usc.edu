@@ -15,7 +15,17 @@
 	margin-bottom: 40px;
 	
 }
+
+.navbar-inverse{
+    margin-top: 40px;
+}
 #fileselection{
 	margin-top: 50px;
 	margin-bottom: 20px;
+}
+.navbar-default{
+    background-color: #990000;  
+}
+a{
+    color:white;
 }

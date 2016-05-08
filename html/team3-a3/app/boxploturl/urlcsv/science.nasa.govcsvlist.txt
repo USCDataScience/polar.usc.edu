@@ -1,0 +1,17 @@
+kb
+kg
+degree
+hour
+mb
+hr
+min
+days
+km
+feet
+celsius
+degrees
+ice
+year
+gallon
+meter
+per

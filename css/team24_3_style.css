@@ -1,0 +1,26 @@
+.node circle {
+                 fill: #fff;
+                 stroke: steelblue;
+                 stroke-width: 1.5px;
+                 }
+                 
+                 .node {
+                 font: 15px sans-serif;
+                 }
+                 
+                 .link {
+                 fill: none;
+                 stroke: #ccc;
+                 stroke-width: 1.5px;
+                 }
+				 
+				 
+.jumbotron  {
+      float:top;
+      background-color:black !important;
+      color:white;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      text-align: left;
+    }

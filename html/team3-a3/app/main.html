@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CSCI ASSIGNMENT 3</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ASSIGNMENT 3</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" onclick="loadinside('/app/piechartcombine.html')">MimeType</a></li>
+                <li><a href="#" onclick="loadinside('/app/taxonomy.html')">Request and Categories</a></li>
+                <li><a href="#" onclick="loadinside('/app/filesize.html')">File Size All</a></li>
+                <li><a href="#" onclick="loadinside('/app/filesizeradio.html')">File Size Mime Type</a></li>
+                <li><a href="#" onclick="loadinside('/app/parserradio.html')">File Size and Parser Call </a></li>
+                <li><a href="#" onclick="loadinside('/app/langtika.html')">Language Diversity</a></li>
+                <li><a href="#" onclick="loadinside('/app/concepts.html')">Sweet Concepts</a></li>
+                <li><a href="#" onclick="loadinside('/app/nerintersect.html')">Composite NER</a></li>
+                <li><a href="#" onclick="loadinside('/app/boxplot/index.html')">All Measurements</a></li>
+                <li><a href="#" onclick="loadinside('/app/boxplotmime/index.html')">Mime Measurements</a></li>
+                <li><a href="#" onclick="loadinside('/app/boxploturl/index.html')">Domain Measurements</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container" id="main">
+
+</div><!-- /.container -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+<script src="https://jardindesconnaissances.googlecode.com/svn-history/r82/trunk/public/js/d3.layout.cloud.js"></script>
+<script>
+    function loadinside(url) {
+        $('#main').empty();
+        $('svg').remove();
+        $('#main').load(url);
+    }
+    $(document).ready(function() {
+        $('#main').load('/app/piechartcombine.html');
+        $('.navbar li').click(function(e) {
+            $('.navbar li.active').removeClass('active');
+            var $this = $(this);
+            if (!$this.hasClass('active')) {
+                $this.addClass('active');
+            }
+            e.preventDefault();
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+degrees
+day
+per
+year

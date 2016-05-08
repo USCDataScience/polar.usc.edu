@@ -1,0 +1,856 @@
+{
+ "name": "measurements",
+ "children":[
+    {
+        "name": "pound", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "224"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "5000.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "5000.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "0.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "feet", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "72748"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "1.42461760933e+31"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1.42461760933e+31"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-2.30030050346e+15"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "second", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "530"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "86400.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "86402.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-2.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "mile", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "1815"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "5000.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "60000.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-55000.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "gallon", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "58"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "1270.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1270.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "0.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "calorie", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "143678"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "7.89012345679e+65"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "7.89012345679e+65"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-6285890.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "litre", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "16920"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "1.15903720142e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1.15903720142e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-97.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "cup", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "26"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "10.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "9.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "1.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "fahrenheit", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "2"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "84.2"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "468.3"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-384.1"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "ounce", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "158"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "8888888.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "8888890.11"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-2.11"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "ton", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "2"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "200.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "194.7"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "5.3"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "inch", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "1208418"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "1.00014240527e+40"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1.00014240527e+40"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-4.4e+24"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "pint", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "18"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "10.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "9.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "1.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "cubic", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "62"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "3300.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "3300.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "0.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "kelvin", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "11"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "2011.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1969.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "42.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "quart", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "35"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "86.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "2101.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-2015.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "spoon", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "7"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "56.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "0.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "56.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "joule", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "12639"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "1.20402320142e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1.20402320144e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-120521.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "yard", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "52"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "900.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "900.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "0.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "metre", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "225575"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "1.42857142857e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1.42857142901e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-4359433.159"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "celsius", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "3"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "237.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "468.1"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-231.1"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "gram", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "16827"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "1.23107820141e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "1.23107820141e+16"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-2012.0"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "other", 
+        "children": [
+            {
+                "name": "count", 
+                "children": [
+                    {
+                        "name": "16706"
+                    }
+                ]
+            }, 
+            {
+                "name": "max", 
+                "children": [
+                    {
+                        "name": "31536000.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "range", 
+                "children": [
+                    {
+                        "name": "31539000.0"
+                    }
+                ]
+            }, 
+            {
+                "name": "min", 
+                "children": [
+                    {
+                        "name": "-3000.0"
+                    }
+                ]
+            }
+        ]
+    }
+]
+}

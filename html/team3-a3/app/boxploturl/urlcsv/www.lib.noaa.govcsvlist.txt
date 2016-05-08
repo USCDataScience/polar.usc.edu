@@ -1,0 +1,10 @@
+feet
+kb
+ft
+minute
+mb
+species
+degrees
+days
+km
+month

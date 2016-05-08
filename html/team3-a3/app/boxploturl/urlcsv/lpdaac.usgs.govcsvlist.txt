@@ -1,0 +1,14 @@
+degree
+meter
+feet
+km
+day
+per
+kb
+min
+mb
+days
+ice
+kilometer
+degrees
+pixel

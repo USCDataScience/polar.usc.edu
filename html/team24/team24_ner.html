@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <title>NER ALGORITHMS VISUALIZATION</title>
+    <!-- Bootstrap core CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="../../js/jquery.js"></script>
+    <link rel="stylesheet" href="../../css/team24/style.css">
+    <link href="../../css/header.css" rel="stylesheet">
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+ <style type="text/css">
+
+      #hzBarChart .panel-body .legend {
+        fill: #2F4F4F;
+        font: 14px sans-serif;
+        text-anchor: start;
+        font-size: 12px;
+      }
+
+      #hzBarChart .panel-body text {
+        
+        font: 10px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .label {
+        fill: #2F4F4F;
+        font: 14px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .bar:hover {
+        fill: pink;
+      }
+
+      #hzBarChart .panel-body .axis path,
+      #hzBarChart .panel-body .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      #hzBarChart .panel-body .legend {
+        position: fixed;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+<div id="header"></div>
+    <ul class="nav navbar-inverse nav-pills nav-justified">
+    <li><a href="team24_index3.html">Home</a></li>
+    <li><a href="team24_task4.html">NER in CCA Dataset</a></li>
+    <li><a href="team24_task5.html">Metadata v/s File Sizes</a></li>
+    <li><a href="team24_task6a.html">TextExtraction vs Parser Heirarchy</a></li>
+    <li><a href="team24_task6b.html">Metadata vs Parser Heirarchy</a></li>
+    <li><a href="team24_task7.html">Language Diversity</a></li>
+    <li><a href="team24_langcloud.html">Language Word Cloud</a></li>
+    <li><a href="team24_wordsweet.html">Sweet Concepts Word Cloud</a></li>
+    <li class="active"><a href="team24_ner.html">Comparing NER toolkits</a></li>
+    <li><a href="team24_ner_file.html">NER on Files</a></li>
+    <li><a href="team24_task10ab.html">Measurements diversity (By Type)</a></li>
+    <li><a href="team24_task10c.html">Measurements diversity (By Domain)</a></li>
+    <li><a href="team24_task10d.html">Measurements diversity (By MIME Type)</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+      <div class="container">
+        <br/><br/><br/>
+        <div id="hzBarChart" class="panel panel-info text-center">
+          <div class="panel-heading"><h3 class="panel-title">Team 24 - NLTK vs OpenNLP vs CoreNLP vs Grobid vs nltk+open+Core vs ALL vs Measurement</h3></div>
+          <div class="panel-body"></div>
+        </div>
+      </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../../js/team24/jquery-2.2.1.min.js"></script>
+    <script src="../../js/team24/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Charts -->
+    <script src="../../js/team24/nlp_mitie.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log("will call search");
+      search();
+    });
+    function search(){
+      console.log("will call refreshHzBarChart");
+      refreshHzBarChart();
+
+    }
+    </script>
+   
+
+  </body>
+</html>
+

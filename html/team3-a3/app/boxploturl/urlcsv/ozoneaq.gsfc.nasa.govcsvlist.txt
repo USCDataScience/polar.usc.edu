@@ -1,0 +1,6 @@
+min
+km
+kilometer
+degrees
+year
+day

@@ -1,0 +1,10 @@
+feet
+kilometer
+ft
+degree
+cubic
+dbz
+degrees
+mb
+days
+km

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Language</title>
+<!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+<script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script> 
+
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.legend line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <div id="header" > </div>
+
+    <br/><br/><br/><br/>
+    <div class="container">
+<h2 style="font-family: sans-serif;">Tika Mixed Language Detection</h2>
+<div id="d3"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script>
+
+var margin = {top: 50, right: 40, bottom: 30, left: 10},
+    width = 1400 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .rangeRound([height, 0]);
+
+var color = d3.scale.ordinal()
+    .range(["#7b6888", "#ff8c00"]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(d3.format(".0%"));
+
+var svg = d3.select("#d3").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+	if (d.name == 'Same') {
+		return "<Strong>Different Rate:</strong> <span style='color:cyan'>" + (100 * d.y0 / d.y1).toFixed(2) + "%</span>";
+	}
+  })
+ 
+svg.call(tip);
+	
+d3.csv("../../data/team22-spring-2016-data/content-evaluation/mixedLanguage.csv", function(error, data) {
+  if (error) throw error;
+
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "Language"; }));
+
+  data.forEach(function(d) {
+    var y0 = 0;
+    d.ages = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+    d.ages.forEach(function(d) { d.y0 /= y0; d.y1 /= y0; });
+  });
+
+  // data.sort(function(a, b) { return b.total - a.total; });
+
+  x.domain(data.map(function(d) { return d.Language; }));
+  // y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+
+  var state = svg.selectAll(".state")
+      .data(data)
+    .enter().append("g")
+      .attr("class", "state")
+      .attr("transform", function(d) { return "translate(" + x(d.Language) + ",0)"; });
+
+  state.selectAll("rect")
+      .data(function(d) { return d.ages; })
+    .enter().append("rect")
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.y1); })
+      .attr("height", function(d) { return y(d.y0) - y(d.y1); })
+      .style("fill", function(d) { return color(d.name); })
+	  .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);;
+
+  var legend = svg.select(".state:last-child").selectAll(".legend")
+      .data(function(d) { return d.ages; })
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d) { return "translate(" + x.rangeBand() / 2 + "," + y((d.y0 + d.y1) / 2) + ")"; });
+
+  legend.append("line")
+      .attr("x2", 10);
+
+  legend.append("text")
+      .attr("x", 13)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.name; });
+});
+
+</script>
+</div>
+</body>

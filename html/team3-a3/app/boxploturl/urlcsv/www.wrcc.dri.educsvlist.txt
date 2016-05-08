@@ -1,0 +1,10 @@
+feet
+mile
+ft
+degree
+hour
+year
+degrees
+days
+per
+month

@@ -1,0 +1,8 @@
+kg
+km
+year
+degrees
+ft
+days
+per
+day

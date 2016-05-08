@@ -1,0 +1,6 @@
+kb
+mb
+per
+second
+km
+minute

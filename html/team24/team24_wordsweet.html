@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Sweet Cloud visualizations</title>
+<link rel="stylesheet" href="../../css/team24/style.css">
+	<style>
+		body { 
+			background: white !important;
+       overflow-x: hidden;
+		}
+		svg {margin-left:auto; margin-right:auto; display:block; padding-bottom: 100px; padding-left:500px; padding-right:375px; padding-top:500px;}
+.jumbotron  {
+      float:top;
+      background-color:black !important;
+      color:white;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      text-align: left;
+    }
+
+	</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="../../js/jquery.js"></script>
+    <link href="../../css/header.css" rel="stylesheet">
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="header"></div>
+    <ul class="nav navbar-inverse nav-pills nav-justified">
+    <li><a href="team24_index3.html">Home</a></li>
+    <li><a href="team24_task4.html">NER in CCA Dataset</a></li>
+    <li><a href="team24_task5.html">Metadata v/s File Sizes</a></li>
+    <li><a href="team24_task6a.html">TextExtraction vs Parser Heirarchy</a></li>
+    <li><a href="team24_task6b.html">Metadata vs Parser Heirarchy</a></li>
+    <li><a href="team24_task7.html">Language Diversity</a></li>
+    <li><a href="team24_langcloud.html">Language Word Cloud</a></li>
+    <li class="active"><a href="team24_wordsweet.html">Sweet Concepts Word Cloud</a></li>
+    <li><a href="team24_ner.html">Comparing NER toolkits</a></li>
+    <li><a href="team24_ner_file.html">NER on Files</a></li>
+    <li><a href="team24_task10ab.html">Measurements diversity (By Type)</a></li>
+    <li><a href="team24_task10c.html">Measurements diversity (By Domain)</a></li>
+    <li><a href="team24_task10d.html">Measurements diversity (By MIME Type)</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+<div class="jumbotron">
+            <h2>Word Cloud for SWEET ontologies</h2>      
+            <p style="color:grey;">Word cloud for extracted SWEET topics and categories</p>
+</div>
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+  <script src="../../js/team24/sweet_merged_parsed.js"></script>
+<script>
+
+var fill = d3.scale.category20();
+
+d3.layout.cloud().size([1200, 1200])
+      .words(json.map(function(d) {
+        return {text: d.text, size: d.size};
+      }))
+      .padding(6)
+      .rotate(function() { return ~~(Math.random() * 2) * 90; })
+      .font("Impact")
+      .fontSize(function(d) { return d.size+10; })
+      .on("end", draw)
+      .start();
+
+  function draw(words) {
+      d3.select("body").append("svg")
+        .attr("width", 1200)
+        .attr("height", 1200)
+      .append("g")
+        .attr("transform", "translate(150,150)")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size+10 + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+  }
+
+</script>
+</script>

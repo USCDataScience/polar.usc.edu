@@ -1,0 +1,6 @@
+degree
+days
+km
+feet
+kilometer
+degrees

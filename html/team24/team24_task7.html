@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Language Diversity</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Play:700,400' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="../../css/team24/style.css">
+  <script src="../../js/jquery.js"></script>
+    <link href="../../css/header.css" rel="stylesheet">
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+    <script type="text/javascript" src="http://iop.io/js/vendor/d3.v3.min.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerEvents/pointerevents.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerGestures/pointergestures.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/iopctrl.js"></script>
+    
+    <style>
+        body {
+            font: 16px arial;
+            background-color: #515151;
+			overflow: hidden;
+        }
+		
+		.jumbotron  {
+			float:top;
+			background-color:black !important;
+			color:white;
+			padding-left: 30px;
+			padding-bottom: 10px;
+			padding-top: 5px;
+			text-align: left;
+		}
+		
+		svg {
+			margin-left:auto; 
+			margin-right:auto;
+			display:block;
+		}
+		
+        .unselectable {
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* css formats for the gauge */
+        .gauge .domain {
+            stroke-width: 2px;
+            stroke: #fff;
+        }
+
+        .gauge .tick line {
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+        
+        .gauge line {
+            stroke: #fff;
+        }
+
+        .gauge .arc, .gauge .cursor {
+            opacity: 0;
+        }
+
+        .gauge .major {
+            fill: #fff;
+            font-size: 20px;
+            font-family: 'Play', verdana, sans-serif;
+            font-weight: normal;
+        }
+        
+        .gauge .indicator {
+            stroke: #EE3311;
+            fill: #000;
+            stroke-width: 4px;
+        }
+
+        /* css formats for the segment display */
+        .segdisplay .on {
+            fill: #00FFFF;
+        }
+
+        .segdisplay .off {
+            fill: #00FFFF;
+            opacity: 0.15;
+        }
+		
+		select {
+		  position: absolute;
+		  top: 15em;
+		  right: 15em;
+		}
+    </style>
+</head>
+<body>
+<div id="header"></div>
+    <ul class="nav navbar-inverse nav-pills nav-justified">
+    <li><a href="team24_index3.html">Home</a></li>
+    <li><a href="team24_task4.html">NER in CCA Dataset</a></li>
+    <li><a href="team24_task5.html">Metadata v/s File Sizes</a></li>
+    <li><a href="team24_task6a.html">TextExtraction vs Parser Heirarchy</a></li>
+    <li><a href="team24_task6b.html">Metadata vs Parser Heirarchy</a></li>
+    <li class="active"><a href="team24_task7.html">Language Diversity</a></li>
+    <li><a href="team24_langcloud.html">Language Word Cloud</a></li>
+    <li><a href="team24_wordsweet.html">Sweet Concepts Word Cloud</a></li>
+    <li><a href="team24_ner.html">Comparing NER toolkits</a></li>
+    <li><a href="team24_ner_file.html">NER on Files</a></li>
+    <li><a href="team24_task10ab.html">Measurements diversity (By Type)</a></li>
+    <li><a href="team24_task10c.html">Measurements diversity (By Domain)</a></li>
+    <li><a href="team24_task10d.html">Measurements diversity (By MIME Type)</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+	 <div class="jumbotron">
+    		<h2>Language visualizations</h2>      
+    		<p style="color:grey;">Click dropdown to see the number of documents gauge and percentage needle shoot up</p>
+  	</div>
+    <div>
+        <span id="speedometer"></span>
+		<select id="language_select"></select>
+    </div> 
+    <script src="../../js/team24/speedo.js" language="JavaScript">	</script>
+</body>

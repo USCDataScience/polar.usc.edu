@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../css/team24/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"-->
+  <link rel="stylesheet" href="../../css/team24/style.css">
+  <script src="../../js/jquery.js"></script>
+    <link href="../../css/header.css" rel="stylesheet">
+    <script>
+        $(function(){
+          $("#header").load("../headerdouble.html");
+        });
+    </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+
+/*
+.chart rect {
+  fill: steelblue;
+}
+*/
+.chart .legend {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: start;
+  font-size: 12px;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.chart .label {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+</style>
+</head>
+<body>
+<div id="header"></div>
+    <ul class="nav navbar-inverse nav-pills nav-justified">
+    <li><a href="team24_index3.html">Home</a></li>
+    <li><a href="team24_task4.html">NER in CCA Dataset</a></li>
+    <li class="active"><a href="team24_task5.html">Metadata v/s File Sizes</a></li>
+    <li><a href="team24_task6a.html">TextExtraction vs Parser Heirarchy</a></li>
+    <li><a href="team24_task6b.html">Metadata vs Parser Heirarchy</a></li>
+    <li><a href="team24_task7.html">Language Diversity</a></li>
+    <li><a href="team24_langcloud.html">Language Word Cloud</a></li>
+    <li><a href="team24_wordsweet.html">Sweet Concepts Word Cloud</a></li>
+    <li><a href="team24_ner.html">Comparing NER toolkits</a></li>
+    <li><a href="team24_ner_file.html">NER on Files</a></li>
+    <li><a href="team24_task10ab.html">Measurements diversity (By Type)</a></li>
+    <li><a href="team24_task10c.html">Measurements diversity (By Domain)</a></li>
+    <li><a href="team24_task10d.html">Measurements diversity (By MIME Type)</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+<svg class="chart"></svg>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var data = {
+  labels: ["SolrIndex/TextExtracted"],
+  series:[{"values": [0.0003023936847466259], "label": "application_x-debian-package_lang"}, {"values": [0.00027460894799969526], "label": "application_x-font-ttf_lang"}, {"values": [4.60705645479149e-06], "label": "application_x-hdf_lang"}, {"values": [0], "label": "application_x-elc_lang"}, {"values": [5.917470276823443e-06], "label": "video_x-m4v_lang"}, {"values": [0.06060606060606061], "label": "application_x-sqlite3_lang"}, {"values": [0.000425189437079556], "label": "audio_x-flac_lang"}, {"values": [0.00026112611251887235], "label": "application_rtf_lang"}, {"values": [0.0006236463082666847], "label": "application_xslt+xml_lang"}, {"values": [1.5099404933931889e-06], "label": "audio_x-aiff_lang"}, {"values": [0.00014859643200835284], "label": "audio_x-wav_lang"}, {"values": [0], "label": "application_x-java-jnilib_lang"}, {"values": [0.0003954492912331934], "label": "application_x-rar-compressed_lang"}, {"values": [0.0002176102880528442], "label": "application_x-tex_lang"}, {"values": [9.651769233799252e-05], "label": "application_google-earth_lang"}, {"values": [0], "label": "video_x-ms-wmv_lang"}, {"values": [1.47760701494918e-05], "label": "image_tiff_lang"}, {"values": [0.005623552762156798], "label": "text_x-diff_lang"}, {"values": [0.03858520900321544], "label": "application_x-lha_lang"}, {"values": [1.8991948038242665e-06], "label": "application_x-compress_lang"}, {"values": [0], "label": "application_x-7z-compressed_lang"}, {"values": [1.5832865594803967e-05], "label": "application_x-msdownload; format=pe32_lang"}, {"values": [0.0005454268366045576], "label": "image_x-bpg_lang"}, {"values": [0.06060606060606061], "label": "application_x-stuffit_lang"}, {"values": [0.0004824859030551375], "label": "text_x-matlab_lang"}, {"values": [0.0014092925225707006], "label": "application_x-bibtex-text-file_lang"}, {"values": [1.0313633201577352e-06], "label": "video_x-msvideo_lang"}, {"values": [4.390516580771379e-05], "label": "application_zip_lang"}, {"values": [0.00013171905603965664], "label": "text_plain_lang"}, {"values": [0], "label": "application_x-msmetafile_lang"}, {"values": [0], "label": "application_postscript_lang"}, {"values": [0.0008008080922200312], "label": "image_vnd"}, {"values": [0.00702576112412178], "label": "video_x-flv_lang"}, {"values": [0.0003099443428515765], "label": "image_x-ms-bmp_lang"}, {"values": [0.00037322629484877294], "label": "application_x-tar_lang"}, {"values": [0], "label": "application_fits_lang"}, {"values": [0.00013260441090490456], "label": "application_x-bzip2_lang"}, {"values": [0], "label": "video_x-ms-asf_lang"}, {"values": [1.0302096697098677e-06], "label": "video_mp4_lang"}, {"values": [0.0009497171403049709], "label": "image_jpeg_lang"}, {"values": [0], "label": "application_x-shockwave-flash_lang"}, {"values": [0.0002860424111240613], "label": "audio_mp4_lang"}, {"values": [0.00025040299231575815], "label": "application_x-msdownload; format=pe_lang"}, {"values": [0.00026931493014644], "label": "audio_basic_lang"}, {"values": [3.888792577374146e-06], "label": "video_quicktime_lang"}, {"values": [0.001049635655315799], "label": "message_rfc822_lang"}, {"values": [7.19476654125555e-05], "label": "application_x-msdownload_lang"}, {"values": [0], "label": "application_x-matroska_lang"}, {"values": [0.0009237122364703325], "label": "message_x-emlx_lang"}, {"values": [0.0005967752150320687], "label": "application_rss+xml_lang"}, {"values": [0.0005037398702471862], "label": "image_png_lang"}, {"values": [0.0009313678260590294], "label": "text_x-perl_lang"}, {"values": [0], "label": "video_mpeg_lang"}, {"values": [0.0005040388595793367], "label": "image_svg+xml_lang"}, {"values": [0.000723447511896015], "label": "application_dita+xml; format=concept_lang"}, {"values": [0.0002687750576746478], "label": "application_epub+zip_lang"}, {"values": [0.0003012888467332478], "label": "text_x-csrc_lang"}, {"values": [3.752362517650811e-05], "label": "application_x-executable_lang"}, {"values": [0], "label": "application_x-7z_lang"}, {"values": [0.00040509519737138227], "label": "application_x-gtar_lang"}, {"values": [0.0003196230034611094], "label": "application_xml_lang"}, {"values": [0.0035778175313059034], "label": "text_troff_lang"}, {"values": [0], "label": "application_zlib_lang"}, {"values": [0.00019869472847601144], "label": "application_java-vm_lang"}, {"values": [0.0004010974826419384], "label": "application_rdf+xml_lang"}, {"values": [0.00994504356677357], "label": "application_dif+xml_lang"}, {"values": [2.5486771833772588e-05], "label": "audio_mpeg_lang"}, {"values": [0.0015839930183019731], "label": "image_gif_lang"}, {"values": [0.0011699507389162562], "label": "application_x-grib_lang"}, {"values": [6.0], "label": "application_msword_lang"}, {"values": [0.0005076982788267682], "label": "application_atom+xml_lang"}, {"values": [0.0003510430400880095], "label": "text_x-php_lang"}, {"values": [0.0003519485584377289], "label": "text_x-python_lang"}, {"values": [0.0021987082588978977], "label": "image_x-xcf_lang"}, {"values": [0.0003102108003578148], "label": "application_x-sh_lang"}, {"values": [2.7361491251793657e-05], "label": "application_gzip_lang"}, {"values": [0], "label": "application_x-bittorrent_lang"}, {"values": [0.17391304347826086], "label": "application_x-rpm_lang"}, {"values": [0.00042098259389106564], "label": "text_html_lang"}, {"values": [0], "label": "application_vnd"}, {"values": [0.005828476269775187], "label": "text_x-vcard_lang"}, {"values": [0.000411062263715408], "label": "application_octet-stream_lang"}, {"values": [0], "label": "application_x-xz_lang"}, {"values": [0.06451612903225806], "label": "audio_x-mpegurl_lang"}, {"values": [0.0005465808332321147], "label": "text_x-jsp_lang"}, {"values": [0], "label": "application_x-tika-ooxml_lang"}, {"values": [0.0017368649587494573], "label": "audio_x-ms-wma_lang"},]
+};
+
+var chartWidth       = 800,
+    barHeight        = 20,
+    groupHeight      = barHeight * data.series.length,
+    gapBetweenGroups = 10,
+    spaceForLabels   = 150,
+    spaceForLegend   = 150;
+
+// Zip the series data together (first values, second values, etc.)
+var zippedData = [];
+for (var i=0; i<data.labels.length; i++) {
+  for (var j=0; j<data.series.length; j++) {
+    zippedData.push(data.series[j].values[0]*2000);
+  }
+}
+
+// Color scale
+var color = d3.scale.category20();
+var chartHeight = barHeight * zippedData.length + gapBetweenGroups * data.labels.length;
+
+var x = d3.scale.linear()
+    .domain([0, d3.mean(zippedData)])
+    .range([0, chartWidth]);
+
+var y = d3.scale.linear()
+    .range([chartHeight + gapBetweenGroups, 0]);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .tickFormat('')
+    .tickSize(0)
+    .orient("left");
+
+// Specify the chart area and dimensions
+var chart = d3.select(".chart")
+    .attr("width", spaceForLabels + chartWidth + spaceForLegend)
+    .attr("height", chartHeight);
+
+// Create bars
+var bar = chart.selectAll("g")
+    .data(zippedData)
+    .enter().append("g")
+    .attr("transform", function(d, i) {
+      return "translate(" + spaceForLabels + "," + (i * barHeight + gapBetweenGroups * (0.5 + Math.floor(i/data.series.length))) + ")";
+    });
+
+// Create rectangles of the correct width
+bar.append("rect")
+    .attr("fill", function(d,i) { return color(i % data.series.length); })
+    .attr("class", "bar")
+    .attr("width", x)
+    .attr("height", barHeight - 1);
+
+// Add text label in bar
+bar.append("text")
+    .attr("x", function(d) { return x(d) - 3; })
+    .attr("y", barHeight / 2)
+    .attr("fill", "red")
+    .attr("dy", ".35em")
+    .text(function(d) { return d/2000; });
+
+// Draw labels
+bar.append("text")
+    .attr("class", "label")
+    .attr("x", function(d) { return - 10; })
+    .attr("y", groupHeight / 2)
+    .attr("dy", ".35em")
+    .text(function(d,i) {
+      if (i % data.series.length === 0)
+        return data.labels[Math.floor(i/data.series.length)];
+      else
+        return ""});
+
+chart.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + spaceForLabels + ", " + -gapBetweenGroups/2 + ")")
+      .call(yAxis);
+
+// Draw legend
+var legendRectSize = 18,
+    legendSpacing  = 4;
+
+var legend = chart.selectAll('.legend')
+    .data(data.series)
+    .enter()
+    .append('g')
+    .attr('transform', function (d, i) {
+        var height = legendRectSize + legendSpacing;
+        var offset = -gapBetweenGroups/2;
+        var horz = spaceForLabels + chartWidth + 40 - legendRectSize;
+        var vert = i * height - offset;
+        return 'translate(' + horz + ',' + vert + ')';
+    });
+
+legend.append('rect')
+    .attr('width', legendRectSize)
+    .attr('height', legendRectSize)
+    .style('fill', function (d, i) { return color(i); })
+    .style('stroke', function (d, i) { return color(i); });
+
+legend.append('text')
+    .attr('class', 'legend')
+    .attr('x', legendRectSize + legendSpacing)
+    .attr('y', legendRectSize - legendSpacing)
+    .text(function (d) { return d.label; });
+
+</script>
+</body>
+</html>

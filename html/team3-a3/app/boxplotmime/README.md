@@ -1,0 +1,1 @@
+A simple boxplot implementation in d3.js. Also see [Jason Davies' implementation](http://bl.ocks.org/mbostock/4061502).

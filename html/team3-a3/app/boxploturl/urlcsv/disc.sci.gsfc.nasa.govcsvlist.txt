@@ -1,0 +1,10 @@
+mile
+degrees
+km
+degree
+min
+hr
+mb
+year
+days
+ice

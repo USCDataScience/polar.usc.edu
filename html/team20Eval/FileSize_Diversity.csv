@@ -1,0 +1,47 @@
+type,OriginalFileSize,OptimizedFileSize
+application/xml,0.0,0.0
+application/pdf,1.16851365E8,197453.0
+application/xhtml+xml,0.0,0.0
+text/html,3.60110987E8,976230.0
+text/plain,7.2796381E7,187819.0
+text/x-php,0.0,0.0
+audio/mpeg,1.0353439E7,920.0
+image/gif,163962.0,936376.0
+image/png,3.9460256E7,23753.0
+image/jpeg,9.2505944E7,24042.0
+video/quicktime,1.648881455E9,18460.0
+video/mp4,5.0790431E7,1196.0
+application/octet-stream,0.0,0.0
+application/postscript,0.0,0.0
+application/x-tika-msoffice,0.0,0.0
+text/x-matlab,0.0,0.0
+application/rss+xml,0.0,0.0
+video/x-m4v,3.62763311E8,4952.0
+
+
+
+
+var freqData=[
+ {State:'xml',freq:{Original_Size:0.0, Optimized_size:0.0}}
+,{State:'pdf',freq:{Original_Size:1.16851365E8, Optimized_size:197453.0}}
+,{State:'xhtml+xml',freq{Original_Size:0.0,Optimized_size:0.0}}
+,{State:'html',freq:{Original_Size:3.60110987E8, Optimized_size:976230.0}}
+,{State:'plain',freq:{Original_Size:7.2796381E7, Optimized_size:187819.0}}
+,{State:'x-php',freq:{Original_Size:0.0, Optimized_size:0.0}}
+,{State:'mpeg',freq:{Original_Size:1.0353439E7, Optimized_size:920.0}}
+,{State:'gif',freq:{Original_Size:163962.0, Optimized_size:936376.0}}
+,{State:'png',freq:{Original_Size:3.9460256E7, Optimized_size:1.232E34}}
+,{State:'jpeg',freq:{Original_Size:5029199, Optimized_size:23753.0}}
+,{State:'quicktime',freq:{Original_Size:1.648881455E9, Optimized_size:18460.0
+}}
+,{State:'mp4',freq:{Original_Size:5.0790431E7, Optimized_size:1.1196.0}}
+,{State:'octet-stream',freq:{Original_Size:0.0, Optimized_size:0.0}}
+,{State:'postscript',freq:{Original_Size:0.0, Optimized_size:0.0}}
+,{State:'msoofice',freq:{Original_Size:0.0, Optimized_size:0.0}}
+,{State:'x-matlab',freq:{Original_Size:0.0, Optimized_size:0.0}}
+,{State:'rss+xml',freq:{Original_Size:0.0, Optimized_size:0.0}}     
+,{State:'x-m4v',freq:{Original_Size:3.62763311E8, Optimized_size:4952.0}}    
+];
+
+
+

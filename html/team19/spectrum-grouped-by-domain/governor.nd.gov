@@ -1,0 +1,5 @@
+unit,count,min,max,average
+Year,1,31.0,31.0,31.0
+years,4,10.0,81.0,30.25
+sections,1,60.0,60.0,60.0
+miles,1,10.0,10.0,10.0

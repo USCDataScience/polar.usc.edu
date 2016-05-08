@@ -1,0 +1,4 @@
+unit,count,min,max,average
+m,3,3.0,25.0,11.0
+years,2,13.0,14.0,13.5
+kg,1,3.3,3.3,3.3

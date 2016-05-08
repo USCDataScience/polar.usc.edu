@@ -1,0 +1,2 @@
+unit,count,min,max,average
+Part,1,2012.0,2012.0,2012.0

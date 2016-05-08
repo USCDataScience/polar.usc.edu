@@ -1,0 +1,5 @@
+unit,count,min,max,average
+Years,2,100.0,100.0,100.0
+acres,1,11.0,11.0,11.0
+degrees,1,40.0,40.0,40.0
+gallons,1,70.0,70.0,70.0

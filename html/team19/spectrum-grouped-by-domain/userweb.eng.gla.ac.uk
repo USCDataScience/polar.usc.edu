@@ -1,0 +1,4 @@
+unit,count,min,max,average
+degrees,8,16.0,80.0,54.0
+degree,2,45.0,45.0,45.0
+years,4,6.0,40.0,23.0

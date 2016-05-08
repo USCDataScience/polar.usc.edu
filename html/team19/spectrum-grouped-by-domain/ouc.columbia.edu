@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hour,1,1.0,1.0,1.0
+Time,1,2014.0,2014.0,2014.0
+feet,2,91.0,120.0,105.5

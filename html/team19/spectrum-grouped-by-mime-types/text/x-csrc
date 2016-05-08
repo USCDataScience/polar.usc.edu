@@ -1,0 +1,4 @@
+unit,count,min,max,average
+second,7,10.0,40.0,20.571428571428573
+system,2,50.0,50.0,50.0
+time,2,10.0,11.0,10.5

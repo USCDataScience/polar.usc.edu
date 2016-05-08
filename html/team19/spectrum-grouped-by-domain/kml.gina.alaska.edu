@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,2,12.0,12.0,12.0
+day,2,6.0,6.0,6.0
+points,1,50.0,50.0,50.0

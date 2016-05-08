@@ -1,0 +1,5 @@
+unit,count,min,max,average
+hours,2,24.0,24.0,24.0
+times,2,4.0,4.0,4.0
+hour,2,1.0,1.0,1.0
+minutes,8,20.0,70.0,43.75

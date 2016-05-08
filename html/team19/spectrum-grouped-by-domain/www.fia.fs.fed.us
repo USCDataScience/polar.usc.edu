@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,2,50.0,50.0,50.0
+inch,2,11.0,11.0,11.0
+page,2,20.0,20.0,20.0
+pages,2,26.0,26.0,26.0

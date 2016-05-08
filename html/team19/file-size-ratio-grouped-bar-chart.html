@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+/*
+.chart rect {
+  fill: steelblue;
+}
+*/
+.chart .legend {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: start;
+  font-size: 12px;
+}
+
+.chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.chart .label {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+</style>
+<svg class="chart"></svg>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var data = {
+  labels: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'image/jpeg', 'image/svg+xml', 'application/x-sh', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/pdf', 'text/x-csrc', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/gzip', 'application/vnd.google-earth.kmz', 'message/rfc822', 'text/x-vcard', 'text/x-python', 'application/dita+xml;', 'application/xslt+xml', 'application/xml', 'application/vnd.ms-excel', 'text/x-php', 'application/x-compress', 'application/dif+xml', 'audio/mpeg', 'application/x-bibtex-text-file', 'application/x-debian-package', 'application/x-netcdf', 'text/x-perl', 'application/x-gtar', 'application/vnd.oasis.opendocument.text', 'application/rdf+xml', 'application/rtf', 'application/vnd.google-earth.kml+xml', 'text/plain', 'application/xhtml+xml', 'application/x-tar', 'application/vnd.ms-powerpoint', 'text/x-matlab', 'application/atom+xml', 'application/x-tex', 'text/html', 'application/rss+xml', 'application/zip', 'application/msword'],
+  series: [
+    {
+      label: 'min',
+      values: [0.000234156986569, 6.45e-05, 0.00423283429448, 0.000288895846992, 0.00301906483535, 4.076362815e-06, 0.00544694821668, 1.48559635683e-05, 0.00107896082585, 0.0476812540823, 0.00419552374636, 0.143919119833, 0.00660705566406, 0.00376944691933, 0.0164175962955, 0.00124611927229, 0.000543653350515, 0.0206498951782, 0.00491333007812, 0.0181015070154, 2.81332410883e-05, 0.0232724157624, 0.00432576197609, 6.02006912231e-06, 0.0173116818084, 0.00245901639344, 0.00964331706148, 0.00221882172915, 0.00285722160464, 0.00234246174236, 0.000297690468741, 0.000555, 0.0228515625, 0.000278299895465, 0.00196838378906, 0.00235461783933, 0.00918010212864, 9.10546446635e-05, 0.00282613000198, 3.73156392585e-06, 0.00064135015324]
+    },
+    {
+      label: 'max',
+      values: [0.379668477887, 0.0299003322259, 0.134808853119, 0.127574815391, 0.0991016602229, 2.36467143787, 0.0682079646018, 0.00460214637919, 2.56008911133, 1.65828310123, 0.534458509142, 0.814685314685, 0.0894430139585, 0.242902208202, 0.0338289161819, 1.57126168224, 0.220262984155, 0.883211678832, 0.0475393371276, 0.151898734177, 0.00802639656231, 0.931873479319, 0.00713827152945, 0.0217768296987, 0.248924731183, 0.027490234375, 0.0277869121999, 0.610927152318, 0.461139896373, 0.480941772461, 15.1, 1.07434726613, 0.612433556737, 0.0309132543103, 3.17777777778, 0.63606557377, 0.0342413302702, 1.86585365854, 0.665354330709, 2.8080543224, 0.0674045138889]
+    },
+    {
+      label: 'average',
+      values: [0.03838465564284359, 0.006035090378608375, 0.10078904247206091, 0.025834022310559618, 0.02531125951966684, 0.01089032306645914, 0.03682745640924, 0.0015603750683702332, 0.28236416758347904, 0.5399795453568332, 0.16717136600597418, 0.6347537548492856, 0.041811645123765, 0.12057277590020561, 0.0251232562387, 0.04253416267986153, 0.01688114831128325, 0.16101966863668463, 0.02622633360286, 0.07391160495468414, 0.0014889294696578822, 0.2696555951793874, 0.00573201675277, 0.007793572599430191, 0.06503390174103998, 0.01425000800461, 0.018715114630689998, 0.19208032859331675, 0.05471976420056799, 0.13545772605517714, 0.127539836079213, 0.020239138973777954, 0.20070632988557496, 0.010971855172151249, 0.19494912170135523, 0.04085902763024732, 0.019602320617785, 0.021059818078790076, 0.0760144201797693, 0.16142341229043333, 0.013561162089156031]
+    },]
+};
+
+var chartWidth       = 300,
+    barHeight        = 20,
+    groupHeight      = barHeight * data.series.length,
+    gapBetweenGroups = 30,
+    spaceForLabels   = 550,
+    spaceForLegend   = 150;
+
+// Zip the series data together (first values, second values, etc.)
+var zippedData = [];
+for (var i=0; i<data.labels.length; i++) {
+  for (var j=0; j<data.series.length; j++) {
+    zippedData.push(data.series[j].values[i]);
+  }
+}
+
+// Color scale
+var color = d3.scale.category20();
+var chartHeight = barHeight * zippedData.length + gapBetweenGroups * data.labels.length;
+
+var x = d3.scale.linear()
+    .domain([0, d3.max(zippedData)])
+    .range([0, chartWidth]);
+
+var y = d3.scale.linear()
+    .range([chartHeight + gapBetweenGroups, 0]);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .tickFormat('')
+    .tickSize(0)
+    .orient("left");
+
+// Specify the chart area and dimensions
+var chart = d3.select(".chart")
+    .attr("width", spaceForLabels + chartWidth + spaceForLegend)
+    .attr("height", chartHeight);
+
+// Create bars
+var bar = chart.selectAll("g")
+    .data(zippedData)
+    .enter().append("g")
+    .attr("transform", function(d, i) {
+      return "translate(" + spaceForLabels + "," + (i * barHeight + gapBetweenGroups * (0.5 + Math.floor(i/data.series.length))) + ")";
+    });
+
+// Create rectangles of the correct width
+bar.append("rect")
+    .attr("fill", function(d,i) { return color(i % data.series.length); })
+    .attr("class", "bar")
+    .attr("width", x)
+    .attr("height", barHeight - 1);
+
+// Add text label in bar
+bar.append("text")
+    .attr("x", function(d) { return x(d) + 120; })
+    .attr("y", barHeight / 2)
+    .attr("fill", "red")
+    .attr("dy", ".35em")
+    .text(function(d) { return d; });
+
+// Draw labels
+bar.append("text")
+    .attr("class", "label")
+    .attr("x", function(d) { return - 10; })
+    .attr("y", groupHeight / 2)
+    .attr("dy", ".35em")
+    .text(function(d,i) {
+      if (i % data.series.length === 0)
+        return data.labels[Math.floor(i/data.series.length)];
+      else
+        return ""});
+
+chart.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + spaceForLabels + ", " + -gapBetweenGroups/2 + ")")
+      .call(yAxis);
+
+// Draw legend
+var legendRectSize = 18,
+    legendSpacing  = 4;
+
+var legend = chart.selectAll('.legend')
+    .data(data.series)
+    .enter()
+    .append('g')
+    .attr('transform', function (d, i) {
+        var height = legendRectSize + legendSpacing;
+        var offset = -gapBetweenGroups/2;
+        var horz = spaceForLabels + chartWidth + 40 - legendRectSize;
+        var vert = i * height - offset;
+        return 'translate(' + horz + ',' + vert + ')';
+    });
+
+legend.append('rect')
+    .attr('width', legendRectSize)
+    .attr('height', legendRectSize)
+    .style('fill', function (d, i) { return color(i); })
+    .style('stroke', function (d, i) { return color(i); });
+
+legend.append('text')
+    .attr('class', 'legend')
+    .attr('x', legendRectSize + legendSpacing)
+    .attr('y', legendRectSize - legendSpacing)
+    .text(function (d) { return d.label; });
+
+</script>

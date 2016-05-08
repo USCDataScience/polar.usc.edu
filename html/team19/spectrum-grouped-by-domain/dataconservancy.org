@@ -1,0 +1,6 @@
+unit,count,min,max,average
+hours,4,5.0,80.0,27.5
+day,13,1.0,1.0,1.0
+page,2,2.0,2.0,2.0
+pages,1,17.0,17.0,17.0
+months,2,18.0,18.0,18.0

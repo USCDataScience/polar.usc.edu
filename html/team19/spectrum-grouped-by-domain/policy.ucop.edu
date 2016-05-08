@@ -1,0 +1,4 @@
+unit,count,min,max,average
+Page,1,4.0,4.0,4.0
+Months,9,3.0,12.0,10.0
+Section,1,2010.0,2010.0,2010.0

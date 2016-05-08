@@ -1,0 +1,7 @@
+unit,count,min,max,average
+m/s,1,17.0,17.0,17.0
+digits,1,2.0,2.0,2.0
+years,1,11.0,11.0,11.0
+times,2,1.5,1.5,1.5
+hour,1,24.0,24.0,24.0
+degrees,1,0.0,0.0,0.0

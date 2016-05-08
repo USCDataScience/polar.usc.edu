@@ -1,0 +1,6 @@
+unit,count,min,max,average
+degrees,2,25.0,90.0,57.5
+years,2,30.0,70.0,50.0
+gallons,2,7.48,448.0,227.74
+milligram,1,1.0,1.0,1.0
+minutes,1,60.0,60.0,60.0

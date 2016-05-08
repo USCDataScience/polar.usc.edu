@@ -1,0 +1,4 @@
+unit,count,min,max,average
+months,1,2.0,2.0,2.0
+inches,2,3.0,6.0,4.5
+years,1,120.0,120.0,120.0

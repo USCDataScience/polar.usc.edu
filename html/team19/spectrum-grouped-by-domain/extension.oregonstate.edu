@@ -1,0 +1,6 @@
+unit,count,min,max,average
+years,3,26.0,100.0,53.0
+feet,2,50.0,100.0,75.0
+minutes,1,15.0,15.0,15.0
+hours,3,12.0,12.0,12.0
+inches,1,48.0,48.0,48.0

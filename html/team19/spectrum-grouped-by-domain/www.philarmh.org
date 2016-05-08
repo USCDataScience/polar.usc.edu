@@ -1,0 +1,4 @@
+unit,count,min,max,average
+Years,4,18.0,40.0,25.25
+hours,5,24.0,24.0,24.0
+miles,1,25.0,25.0,25.0

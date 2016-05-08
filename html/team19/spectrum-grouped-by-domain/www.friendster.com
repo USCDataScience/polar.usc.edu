@@ -1,0 +1,9 @@
+unit,count,min,max,average
+minutes,4,5.0,30.0,13.75
+entries,4,5.0,5.0,5.0
+parts,1,4.0,4.0,4.0
+months,1,3.0,3.0,3.0
+hours,6,2.0,4.0,3.0
+Year,1,31.0,31.0,31.0
+Points,1,20.0,20.0,20.0
+times,1,999.0,999.0,999.0

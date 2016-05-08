@@ -1,0 +1,4 @@
+unit,count,min,max,average
+volumes,1,29.0,29.0,29.0
+edition,1,2012.0,2012.0,2012.0
+years,4,32.0,100.0,66.0

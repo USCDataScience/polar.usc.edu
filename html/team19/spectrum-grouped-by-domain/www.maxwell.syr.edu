@@ -1,0 +1,6 @@
+unit,count,min,max,average
+YEARS,6,10.0,35.0,21.0
+volumes,1,2.0,2.0,2.0
+edition,2,2014.0,2014.0,2014.0
+day,1,10.0,10.0,10.0
+months,1,20.0,20.0,20.0

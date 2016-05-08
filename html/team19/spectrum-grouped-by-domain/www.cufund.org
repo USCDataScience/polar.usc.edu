@@ -1,0 +1,4 @@
+unit,count,min,max,average
+Years,5,5.0,43.0,20.6
+months,1,14.0,14.0,14.0
+pounds,4,134.0,171.0,152.5

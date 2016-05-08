@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,1,4.0,4.0,4.0
+day,1,1.0,1.0,1.0
+symbols,2,3.0,3.0,3.0

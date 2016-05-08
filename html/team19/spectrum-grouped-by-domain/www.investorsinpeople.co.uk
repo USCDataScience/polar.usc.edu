@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,12,2.0,89.0,25.5
+minutes,10,10.0,30.0,25.999999999999996
+months,8,6.0,12.0,10.5
+steps,10,5.0,5.0,5.0

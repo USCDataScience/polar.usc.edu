@@ -1,0 +1,7 @@
+unit,count,min,max,average
+day,1,5.0,5.0,5.0
+degrees,2,4.0,97.8,50.9
+min,1,96.0,96.0,96.0
+miles,2,50.0,50.0,50.0
+minutes,1,60.0,60.0,60.0
+wavelengths,1,11.0,11.0,11.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+Year,1,2.0,2.0,2.0
+points,9,2.0,3.0,2.666666666666667
+length,3,0.0,0.0,0.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,5,2.0,12.0,10.0
+nm,2,274.0,810.0,542.0
+day,1,1.0,1.0,1.0

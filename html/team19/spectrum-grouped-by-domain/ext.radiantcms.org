@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,120,2.0,10.0,4.733333333333334
+year,3,1.0,1.0,1.0
+months,6,4.0,11.0,7.5

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+degrees,2,86.0,86.0,86.0
+pixel,1,9.0,9.0,9.0
+bit,49,32.0,64.0,37.87755102040816

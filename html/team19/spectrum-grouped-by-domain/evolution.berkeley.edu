@@ -1,0 +1,5 @@
+unit,count,min,max,average
+pounds,2,75.0,75.0,75.0
+inches,1,8.0,8.0,8.0
+years,7,10.0,150.0,70.57142857142857
+degrees,1,5.5,5.5,5.5

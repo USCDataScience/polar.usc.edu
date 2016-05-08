@@ -1,0 +1,2 @@
+unit,count,min,max,average
+kilometer,5,117.0,210.0,174.0

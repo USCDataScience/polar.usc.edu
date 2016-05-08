@@ -1,0 +1,4 @@
+unit,count,min,max,average
+mm,2,200.0,2000.0,1100.0
+degrees,2,0.35,3.5,1.925
+Years,8,10.0,460.0,66.25

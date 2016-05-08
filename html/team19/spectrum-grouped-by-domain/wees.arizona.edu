@@ -1,0 +1,5 @@
+unit,count,min,max,average
+page,8,1.0,2.0,1.25
+months,2,18.0,18.0,18.0
+time,2,2013.0,2013.0,2013.0
+times,2,2.0,2.0,2.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+transitions,1,2.0,2.0,2.0
+Year,1,1.0,1.0,1.0
+Years,1,20.0,20.0,20.0

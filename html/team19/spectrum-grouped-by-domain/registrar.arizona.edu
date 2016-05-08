@@ -1,0 +1,6 @@
+unit,count,min,max,average
+unit,1,4.0,4.0,4.0
+degree,1,2015.0,2015.0,2015.0
+minutes,2,50.0,60.0,55.0
+hours,6,15.0,45.0,37.5
+units,2,6.0,60.0,33.0

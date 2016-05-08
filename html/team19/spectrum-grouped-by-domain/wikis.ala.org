@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hour,1,1.0,1.0,1.0
+bytes,2,37.0,416.0,226.5
+years,2,2.0,2.0,2.0

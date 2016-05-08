@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,2,50.0,50.0,50.0
+legislation,2,2015.0,2015.0,2015.0
+year,2,31.0,31.0,31.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+min,5,5.0,30.0,18.0
+years,6,10.0,40.0,21.0
+mass,1,7.0,7.0,7.0
+miles,4,15.0,98.0,70.75

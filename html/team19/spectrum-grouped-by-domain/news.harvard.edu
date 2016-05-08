@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,6,20.0,50.0,31.666666666666664
+millimeters,3,1.2,3.0,2.0
+mm,1,1.8,1.8,1.8

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+times,1,23.0,23.0,23.0
+Years,2,18.0,450.0,234.0
+pages,2,22.0,25.0,23.5

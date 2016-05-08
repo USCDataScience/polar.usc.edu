@@ -1,0 +1,5 @@
+unit,count,min,max,average
+minutes,50,1.0,88.0,48.76
+Years,2,5.0,50.0,27.5
+Miles,1,500.0,500.0,500.0
+Degrees,1,400.0,400.0,400.0

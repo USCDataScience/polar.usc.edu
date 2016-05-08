@@ -1,0 +1,4 @@
+unit,count,min,max,average
+volumes,1,800.0,800.0,800.0
+pages,2,20.0,20.0,20.0
+years,1,120.0,120.0,120.0

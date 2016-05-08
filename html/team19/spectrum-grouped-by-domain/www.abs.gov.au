@@ -1,0 +1,4 @@
+unit,count,min,max,average
+min,1,1.0,1.0,1.0
+meters,4,2.0,10.0,6.0
+edition,1,2013.0,2013.0,2013.0

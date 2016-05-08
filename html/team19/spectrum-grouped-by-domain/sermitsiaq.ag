@@ -1,0 +1,6 @@
+unit,count,min,max,average
+cm,2,16.0,142.0,79.0
+meter,4,17.0,44.0,32.25
+centimeter,2,70.0,165.0,117.5
+kilometer,1,100.0,100.0,100.0
+kg,1,1.0,1.0,1.0

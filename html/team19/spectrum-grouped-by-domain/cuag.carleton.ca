@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,2,20.0,30.0,25.0
+hours,3,10.0,24.0,14.666666666666668
+square,2,449.0,860.0,654.5

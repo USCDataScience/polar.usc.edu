@@ -1,0 +1,5 @@
+unit,count,min,max,average
+pounds,1,105.0,105.0,105.0
+minutes,1,16.0,16.0,16.0
+years,1,26.0,26.0,26.0
+miles,1,300.0,300.0,300.0

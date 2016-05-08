@@ -1,0 +1,5 @@
+unit,count,min,max,average
+times,2,5.0,21.0,13.0
+degree,1,0.0,0.0,0.0
+degrees,2,10.0,20.0,15.0
+cm,2,1.0,3.0,2.0

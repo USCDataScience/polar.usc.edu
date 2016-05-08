@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,20,3.0,21.0,6.75
+survey,1,2007.0,2007.0,2007.0
+Section,1,952.0,952.0,952.0
+hours,1,40.0,40.0,40.0

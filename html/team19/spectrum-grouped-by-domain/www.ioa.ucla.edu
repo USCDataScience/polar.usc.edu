@@ -1,0 +1,7 @@
+unit,count,min,max,average
+YEARS,1,40.0,40.0,40.0
+months,1,14.0,14.0,14.0
+quarters,2,3.0,7.0,5.0
+quarter,1,1.0,1.0,1.0
+units,3,4.0,4.0,4.0
+unit,2,6.0,42.0,24.0

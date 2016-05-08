@@ -1,0 +1,5 @@
+unit,count,min,max,average
+names,1,95.0,95.0,95.0
+speed,1,4.0,4.0,4.0
+years,1,15.0,15.0,15.0
+hours,2,24.0,24.0,24.0

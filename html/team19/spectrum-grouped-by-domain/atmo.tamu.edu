@@ -1,0 +1,4 @@
+unit,count,min,max,average
+bit,1,14.0,14.0,14.0
+degree,1,1.5,1.5,1.5
+meters,1,62.5,62.5,62.5

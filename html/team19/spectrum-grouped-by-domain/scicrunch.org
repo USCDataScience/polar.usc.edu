@@ -1,0 +1,4 @@
+unit,count,min,max,average
+weight,1,33.0,33.0,33.0
+h,2,104.0,104.0,104.0
+hours,4,2.0,22.0,12.75

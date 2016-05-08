@@ -1,0 +1,5 @@
+unit,count,min,max,average
+meter,2,800.0,800.0,800.0
+meters,4,800.0,800.0,800.0
+years,5,10.0,50.0,28.4
+months,1,18.0,18.0,18.0

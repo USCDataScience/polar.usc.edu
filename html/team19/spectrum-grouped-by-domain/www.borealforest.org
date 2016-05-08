@@ -1,0 +1,5 @@
+unit,count,min,max,average
+degrees,1,70.0,70.0,70.0
+mm,2,400.0,700.0,550.0
+years,2,4.0,120.0,62.0
+hectares,1,30.0,30.0,30.0

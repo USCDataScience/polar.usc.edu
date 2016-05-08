@@ -1,0 +1,6 @@
+unit,count,min,max,average
+meters,1,740.0,740.0,740.0
+miles,1,60.0,60.0,60.0
+pounds,1,800.0,800.0,800.0
+hours,6,7.0,7.0,7.0
+day,7,1.0,1.0,1.0

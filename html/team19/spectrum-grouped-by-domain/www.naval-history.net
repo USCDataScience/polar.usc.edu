@@ -1,0 +1,5 @@
+unit,count,min,max,average
+inch,1,1.0,1.0,1.0
+miles,16,2.0,256.0,86.19375
+hours,3,24.0,24.0,24.0
+points,3,4.0,64.0,24.0

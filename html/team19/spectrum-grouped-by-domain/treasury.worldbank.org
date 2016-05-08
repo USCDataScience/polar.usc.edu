@@ -1,0 +1,4 @@
+unit,count,min,max,average
+times,1,4.0,4.0,4.0
+mile,1,8.0,8.0,8.0
+meters,1,4.0,4.0,4.0

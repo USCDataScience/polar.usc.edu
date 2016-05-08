@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,2,6.0,8.0,7.0
+kilograms,2,8.0,75.0,41.5
+minutes,5,20.0,100.0,46.4
+months,1,18.0,18.0,18.0

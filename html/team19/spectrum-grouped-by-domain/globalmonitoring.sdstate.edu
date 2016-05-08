@@ -1,0 +1,5 @@
+unit,count,min,max,average
+year,9,5.0,5.0,5.0
+years,2,5.0,5.0,5.0
+day,1,7.0,7.0,7.0
+Degrees,1,0.01,0.01,0.01

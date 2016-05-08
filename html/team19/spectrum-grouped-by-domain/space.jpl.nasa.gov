@@ -1,0 +1,4 @@
+unit,count,min,max,average
+degree,1,0.0001,0.0001,0.0001
+degrees,4,0.5,180.0,82.625
+inches,2,8.0,18.0,13.0

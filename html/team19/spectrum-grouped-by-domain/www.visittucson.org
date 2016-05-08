@@ -1,0 +1,5 @@
+unit,count,min,max,average
+Miles,10,5.0,500.0,65.3
+degree,1,70.0,70.0,70.0
+Year,1,90.0,90.0,90.0
+acres,1,60.0,60.0,60.0

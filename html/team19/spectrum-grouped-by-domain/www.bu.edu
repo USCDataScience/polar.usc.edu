@@ -1,0 +1,5 @@
+unit,count,min,max,average
+minutes,1,45.0,45.0,45.0
+bits,1,40.0,40.0,40.0
+times,2,15.0,50.0,32.5
+Years,1,60.0,60.0,60.0

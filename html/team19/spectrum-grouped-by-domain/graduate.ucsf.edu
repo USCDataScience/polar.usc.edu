@@ -1,0 +1,7 @@
+unit,count,min,max,average
+years,2,2.0,2.0,2.0
+units,5,6.0,16.0,9.6
+quarter,2,18.0,2015.0,1016.5
+months,2,12.0,12.0,12.0
+hours,1,20.0,20.0,20.0
+quarters,1,18.0,18.0,18.0

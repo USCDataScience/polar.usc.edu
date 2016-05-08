@@ -1,0 +1,4 @@
+unit,count,min,max,average
+times,1,100.0,100.0,100.0
+micron,2,0.55,1.25,0.9
+degrees,1,30.0,30.0,30.0

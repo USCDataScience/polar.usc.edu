@@ -1,0 +1,6 @@
+unit,count,min,max,average
+Years,1,75.0,75.0,75.0
+Quantity,1,98.0,98.0,98.0
+pages,1,432.0,432.0,432.0
+survey,2,2000.0,2007.0,2003.5
+times,1,2.0,2.0,2.0

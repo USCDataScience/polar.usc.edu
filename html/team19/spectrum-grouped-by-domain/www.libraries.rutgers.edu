@@ -1,0 +1,7 @@
+unit,count,min,max,average
+edition,4,1669.0,1669.0,1669.0
+years,2,38.0,38.0,38.0
+hours,1,24.0,24.0,24.0
+minutes,3,10.0,10.0,10.0
+months,2,3.0,12.0,7.5
+transitions,1,2.0,2.0,2.0

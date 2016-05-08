@@ -1,0 +1,2 @@
+unit,count,min,max,average
+gamma,3,4.0,17.0,8.666666666666668

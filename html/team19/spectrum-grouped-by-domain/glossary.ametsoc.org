@@ -1,0 +1,4 @@
+unit,count,min,max,average
+times,3,430.0,674.0,560.0
+cm,2,0.0254,1.0,0.5127
+years,1,41.0,41.0,41.0

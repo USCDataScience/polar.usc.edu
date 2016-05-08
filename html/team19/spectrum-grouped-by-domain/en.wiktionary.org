@@ -1,0 +1,4 @@
+unit,count,min,max,average
+Years,2,15.0,50.0,32.5
+mm,2,215.9,355.6,285.75
+edition,1,1913.0,1913.0,1913.0

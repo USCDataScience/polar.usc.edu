@@ -1,0 +1,2 @@
+unit,count,min,max,average
+mg,4,10.0,40.0,25.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+miles,2,30.0,30.0,30.0
+parts,3,0.075,75.0,28.025
+hours,5,8.0,24.0,17.6

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+pages,1,200.0,200.0,200.0
+degrees,2,2.0,90.0,46.0
+m,4,0.0,2.0,1.5

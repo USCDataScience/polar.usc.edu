@@ -1,0 +1,5 @@
+unit,count,min,max,average
+Quarter,1,14.0,14.0,14.0
+units,4,20.0,20.0,20.0
+hour,2,48.0,48.0,48.0
+degrees,1,2014.0,2014.0,2014.0

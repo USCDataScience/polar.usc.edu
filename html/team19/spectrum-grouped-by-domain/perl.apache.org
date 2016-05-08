@@ -1,0 +1,3 @@
+unit,count,min,max,average
+steps,1,10.0,10.0,10.0
+Pages,6,39.99,924.0,369.33166666666665

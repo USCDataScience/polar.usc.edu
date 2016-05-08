@@ -1,0 +1,3 @@
+unit,count,min,max,average
+year,10,7.0,18.0,13.200000000000003
+cm,1,3.0,3.0,3.0

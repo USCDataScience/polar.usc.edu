@@ -1,0 +1,5 @@
+unit,count,min,max,average
+degrees,4,20.0,64.0,31.0
+meters,3,100.0,100.0,100.0
+m,4,10.0,100.0,47.5
+kilometer,1,1.0,1.0,1.0

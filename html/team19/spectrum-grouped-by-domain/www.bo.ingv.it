@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,4,42.0,42.0,42.0
+pages,5,431.0,10995.0,2691.8
+volumes,1,11.0,11.0,11.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+feet,6,100.0,100.0,100.0
+years,8,35.0,50.0,44.12500000000001
+months,1,6.0,6.0,6.0

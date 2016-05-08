@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,2,24.0,24.0,24.0
+inches,1,10.0,10.0,10.0
+years,2,30.0,40.0,35.0

@@ -1,0 +1,6 @@
+unit,count,min,max,average
+years,11,1.5,17.0,10.681818181818182
+minutes,2,15.0,15.0,15.0
+inches,1,12.0,12.0,12.0
+System,1,6.0,6.0,6.0
+Parts,1,2.0,2.0,2.0

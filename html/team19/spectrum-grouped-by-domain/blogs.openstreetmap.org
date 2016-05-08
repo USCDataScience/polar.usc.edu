@@ -1,0 +1,6 @@
+unit,count,min,max,average
+years,2,2.0,33.0,17.5
+meter,1,1.0,1.0,1.0
+meters,2,100.0,100.0,100.0
+minutes,1,45.0,45.0,45.0
+day,1,1.0,1.0,1.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,3,10.0,40.0,25.0
+inch,1,2.5,2.5,2.5
+degrees,3,18.0,53.0,31.666666666666668

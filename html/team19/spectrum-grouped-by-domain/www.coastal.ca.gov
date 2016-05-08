@@ -1,0 +1,6 @@
+unit,count,min,max,average
+minutes,3,30.0,30.0,30.0
+miles,1,7.0,7.0,7.0
+water,1,2.0,2.0,2.0
+acres,1,3.17,3.17,3.17
+years,1,5.0,5.0,5.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+times,3,20.0,250.0,102.0
+meters,3,10.0,50.0,26.666666666666664
+centimeters,2,10.0,20.0,15.0
+inches,1,32.0,32.0,32.0

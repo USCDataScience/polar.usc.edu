@@ -1,0 +1,8 @@
+unit,count,min,max,average
+years,13,16.0,44.0,33.84615384615385
+milliliters,6,100.0,100.0,100.0
+millimeters,7,0.0625,0.0625,0.0625
+pH,1,9.0,9.0,9.0
+m,8,0.0,5.0,2.5
+KILOMETERS,1,30.0,30.0,30.0
+micrometer,1,0.45,0.45,0.45

@@ -1,0 +1,9 @@
+unit,count,min,max,average
+years,12,10.0,45.0,28.0
+transitions,1,2.0,2.0,2.0
+entries,1,250.0,250.0,250.0
+document,1,2020.0,2020.0,2020.0
+minute,1,1.0,1.0,1.0
+minutes,1,56.0,56.0,56.0
+edition,1,2014.0,2014.0,2014.0
+lists,2,10.0,10.0,10.0

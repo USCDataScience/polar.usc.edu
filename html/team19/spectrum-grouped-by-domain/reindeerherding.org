@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,2,3.0,15.0,9.0
+transitions,1,2.0,2.0,2.0
+pixel,1,3.0,3.0,3.0

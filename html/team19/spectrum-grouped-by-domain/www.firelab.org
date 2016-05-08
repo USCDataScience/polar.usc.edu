@@ -1,0 +1,7 @@
+unit,count,min,max,average
+Years,1,80.0,80.0,80.0
+dimensions,1,2.0,2.0,2.0
+pages,31,3.0,131.0,30.93548387096773
+hour,1,1.0,1.0,1.0
+kilometers,2,50.0,50.0,50.0
+meters,1,100.0,100.0,100.0

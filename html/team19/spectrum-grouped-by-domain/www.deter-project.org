@@ -1,0 +1,2 @@
+unit,count,min,max,average
+RAD,1,2009.0,2009.0,2009.0

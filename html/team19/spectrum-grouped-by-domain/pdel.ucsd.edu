@@ -1,0 +1,5 @@
+unit,count,min,max,average
+water,1,160.0,160.0,160.0
+years,1,25.0,25.0,25.0
+survey,1,2012.0,2012.0,2012.0
+months,2,13.0,16.0,14.5

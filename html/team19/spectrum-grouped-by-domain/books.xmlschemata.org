@@ -1,0 +1,2 @@
+unit,count,min,max,average
+bits,5,8.0,64.0,25.599999999999998

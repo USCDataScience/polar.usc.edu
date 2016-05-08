@@ -1,0 +1,6 @@
+unit,count,min,max,average
+entries,1,22.0,22.0,22.0
+years,2,5.0,7.0,6.0
+hours,1,8000.0,8000.0,8000.0
+months,1,6.0,6.0,6.0
+laboratory,1,663.0,663.0,663.0

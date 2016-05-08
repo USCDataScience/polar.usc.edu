@@ -1,0 +1,4 @@
+unit,count,min,max,average
+entries,1,65536.0,65536.0,65536.0
+bits,1,96.0,96.0,96.0
+years,1,128.0,128.0,128.0

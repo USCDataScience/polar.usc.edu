@@ -1,0 +1,4 @@
+unit,count,min,max,average
+mm,1,0.5,0.5,0.5
+day,3,1.0,1.0,1.0
+min,1,7.0,7.0,7.0

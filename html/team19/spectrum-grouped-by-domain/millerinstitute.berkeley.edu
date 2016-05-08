@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,2,3.0,3.0,3.0
+pages,1,2.0,2.0,2.0
+point,2,11.0,11.0,11.0
+acres,1,250.0,250.0,250.0

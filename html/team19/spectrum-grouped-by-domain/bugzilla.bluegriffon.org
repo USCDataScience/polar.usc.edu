@@ -1,0 +1,4 @@
+unit,count,min,max,average
+bytes,8,359.0,808.0,610.625
+document,2,1.1,1.1,1.1
+dimensions,1,3.0,3.0,3.0

@@ -1,0 +1,2 @@
+unit,count,min,max,average
+pounds,1,100.0,100.0,100.0

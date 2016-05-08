@@ -1,0 +1,7 @@
+unit,count,min,max,average
+hours,2,20.0,24.0,22.0
+minutes,2,30.0,30.0,30.0
+Units,1,30.0,30.0,30.0
+inches,2,4.0,6.0,5.0
+months,1,12.0,12.0,12.0
+yards,1,200.0,200.0,200.0

@@ -1,0 +1,7 @@
+unit,count,min,max,average
+hours,1,24.0,24.0,24.0
+years,14,2.0,3.0,2.285714285714286
+units,3,6.0,12.0,10.0
+months,2,12.0,12.0,12.0
+pages,1,2.0,2.0,2.0
+Dimensions,1,8.0,8.0,8.0

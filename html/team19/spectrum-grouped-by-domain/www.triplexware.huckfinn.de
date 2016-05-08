@@ -1,0 +1,4 @@
+unit,count,min,max,average
+byte,1,4.0,4.0,4.0
+degrees,1,90.0,90.0,90.0
+points,1,4.0,4.0,4.0

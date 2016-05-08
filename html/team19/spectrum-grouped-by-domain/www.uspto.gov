@@ -1,0 +1,4 @@
+unit,count,min,max,average
+times,3,2.0,2.0,2.0
+years,1,40.0,40.0,40.0
+degree,2,30.0,90.0,60.0

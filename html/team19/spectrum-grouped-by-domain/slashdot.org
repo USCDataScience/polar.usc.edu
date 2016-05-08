@@ -1,0 +1,3 @@
+unit,count,min,max,average
+feet,3,24.0,764.0,362.6666666666667
+miles,1,260.0,260.0,260.0

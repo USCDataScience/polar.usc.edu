@@ -1,0 +1,4 @@
+unit,count,min,max,average
+kbit/s,1,250.0,250.0,250.0
+months,1,18.0,18.0,18.0
+degrees,2,2.0,120.0,61.0

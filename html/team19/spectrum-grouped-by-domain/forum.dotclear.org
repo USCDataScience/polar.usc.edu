@@ -1,0 +1,5 @@
+unit,count,min,max,average
+Pages,1,27.0,27.0,27.0
+points,2,93.0,93.0,93.0
+times,2,3.0,3.0,3.0
+Entries,1,89.0,89.0,89.0

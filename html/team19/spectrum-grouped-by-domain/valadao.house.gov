@@ -1,0 +1,4 @@
+unit,count,min,max,average
+miles,1,160.0,160.0,160.0
+years,1,200.0,200.0,200.0
+months,2,6.0,18.0,12.0

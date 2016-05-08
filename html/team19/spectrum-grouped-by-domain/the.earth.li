@@ -1,0 +1,4 @@
+unit,count,min,max,average
+system,4,8.0,8.0,8.0
+bytes,2,100.0,100.0,100.0
+bits,4,1024.0,1024.0,1024.0

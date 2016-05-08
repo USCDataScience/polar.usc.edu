@@ -1,0 +1,4 @@
+unit,count,min,max,average
+Pages,1,192.0,192.0,192.0
+Years,3,30.0,100.0,71.0
+inches,1,480.0,480.0,480.0

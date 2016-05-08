@@ -1,0 +1,5 @@
+unit,count,min,max,average
+Frequency,1,12.4,12.4,12.4
+years,1,3.0,3.0,3.0
+months,1,3.0,3.0,3.0
+digits,3,3.0,13.0,7.666666666666666

@@ -1,0 +1,2 @@
+unit,count,min,max,average
+m/s,2,5.3,5.6,5.449999999999999

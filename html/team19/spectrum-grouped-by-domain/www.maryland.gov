@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,3,12.0,26.0,17.0
+hours,13,2.0,13.0,8.0
+years,2,36.0,36.0,36.0

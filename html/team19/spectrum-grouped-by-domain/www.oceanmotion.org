@@ -1,0 +1,2 @@
+unit,count,min,max,average
+centimeters,2,45.0,45.0,45.0

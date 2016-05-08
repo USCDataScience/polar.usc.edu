@@ -1,0 +1,6 @@
+unit,count,min,max,average
+years,12,12.0,1000.0,114.75
+year,1,1.0,1.0,1.0
+units,1,11.0,11.0,11.0
+transitions,1,2.0,2.0,2.0
+inch,1,1.0,1.0,1.0

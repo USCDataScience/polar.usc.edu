@@ -1,0 +1,4 @@
+unit,count,min,max,average
+bit,1,16.0,16.0,16.0
+hours,2,24.0,24.0,24.0
+h,2,24.0,24.0,24.0

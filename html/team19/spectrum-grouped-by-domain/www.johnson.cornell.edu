@@ -1,0 +1,4 @@
+unit,count,min,max,average
+months,6,12.0,22.0,16.833333333333336
+years,10,4.0,60.0,28.6
+Section,1,768.0,768.0,768.0

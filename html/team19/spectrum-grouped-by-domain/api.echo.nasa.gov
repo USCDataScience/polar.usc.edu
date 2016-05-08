@@ -1,0 +1,7 @@
+unit,count,min,max,average
+degree,6,2.5,5.0,3.75
+months,3,3.0,3.0,3.0
+year,3,1.0,1.0,1.0
+Names,1,1.0,1.0,1.0
+Units,1,1.0,1.0,1.0
+Time,1,1.0,1.0,1.0

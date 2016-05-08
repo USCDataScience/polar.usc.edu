@@ -1,0 +1,6 @@
+unit,count,min,max,average
+Years,1,25.0,25.0,25.0
+year,3,1.0,1.0,1.0
+times,1,50.0,50.0,50.0
+points,4,0.0,4.0,2.25
+point,1,1.0,1.0,1.0

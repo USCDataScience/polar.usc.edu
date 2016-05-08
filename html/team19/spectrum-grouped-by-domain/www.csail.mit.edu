@@ -1,0 +1,7 @@
+unit,count,min,max,average
+edition,2,5.0,17.0,11.0
+years,5,20.0,50.0,26.0
+minutes,4,10.0,30.0,19.25
+miles,2,1.5,10.0,5.75
+mile,1,1.0,1.0,1.0
+times,1,10.0,10.0,10.0

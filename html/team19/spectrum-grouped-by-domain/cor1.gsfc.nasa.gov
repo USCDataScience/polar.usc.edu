@@ -1,0 +1,5 @@
+unit,count,min,max,average
+hours,4,8.0,24.0,15.0
+degrees,3,6.3,90.0,40.1
+kilometers,3,800.0,2200.0,1333.3333333333333
+minutes,1,20.0,20.0,20.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+kilometers,1,20.0,20.0,20.0
+years,1,10.0,10.0,10.0
+times,1,10.0,10.0,10.0

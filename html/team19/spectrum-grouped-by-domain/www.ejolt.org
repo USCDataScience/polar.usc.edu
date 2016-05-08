@@ -1,0 +1,3 @@
+unit,count,min,max,average
+liters,1,530.0,530.0,530.0
+kilometers,1,100.0,100.0,100.0

@@ -1,0 +1,2 @@
+unit,count,min,max,average
+deals,1,60.0,60.0,60.0

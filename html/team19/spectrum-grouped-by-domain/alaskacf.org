@@ -1,0 +1,2 @@
+unit,count,min,max,average
+survey,1,2020.0,2020.0,2020.0

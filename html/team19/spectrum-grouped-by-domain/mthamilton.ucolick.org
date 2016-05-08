@@ -1,0 +1,6 @@
+unit,count,min,max,average
+degree,3,12.0,18.0,16.0
+cm,2,10.8,13.3,12.05
+years,1,100.0,100.0,100.0
+minutes,1,28.0,28.0,28.0
+meter,2,1.0,3.0,2.0

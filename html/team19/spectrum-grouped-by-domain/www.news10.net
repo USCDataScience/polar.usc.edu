@@ -1,0 +1,4 @@
+unit,count,min,max,average
+gallons,1,70.0,70.0,70.0
+Entries,1,0.0,0.0,0.0
+hours,2,2.0,7.0,4.5

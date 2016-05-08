@@ -1,0 +1,4 @@
+unit,count,min,max,average
+min,1,15.0,15.0,15.0
+survey,1,30.0,30.0,30.0
+years,2,10.0,15.0,12.5

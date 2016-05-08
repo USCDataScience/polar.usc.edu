@@ -1,0 +1,3 @@
+unit,count,min,max,average
+bits,2,128.0,128.0,128.0
+bit,1,128.0,128.0,128.0

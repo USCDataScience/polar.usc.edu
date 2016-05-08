@@ -1,0 +1,4 @@
+unit,count,min,max,average
+acres,1,650.0,650.0,650.0
+degree,1,40.0,40.0,40.0
+min,1,4.0,4.0,4.0

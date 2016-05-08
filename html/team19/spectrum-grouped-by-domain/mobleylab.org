@@ -1,0 +1,4 @@
+unit,count,min,max,average
+molecule,1,504.0,504.0,504.0
+ph,1,92617.0,92617.0,92617.0
+years,1,4.0,4.0,4.0

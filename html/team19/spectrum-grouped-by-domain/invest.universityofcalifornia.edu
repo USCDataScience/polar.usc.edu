@@ -1,0 +1,4 @@
+unit,count,min,max,average
+years,6,10.0,80.0,51.666666666666664
+times,1,80.0,80.0,80.0
+transitions,1,2.0,2.0,2.0

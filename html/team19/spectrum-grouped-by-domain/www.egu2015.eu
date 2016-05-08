@@ -1,0 +1,8 @@
+unit,count,min,max,average
+hours,1,1.5,1.5,1.5
+units,1,6.0,6.0,6.0
+minutes,4,2.0,45.0,20.75
+minute,1,2.0,2.0,2.0
+kilometers,1,19.0,19.0,19.0
+min,1,30.0,30.0,30.0
+hour,1,1.0,1.0,1.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+degrees,1,90.0,90.0,90.0
+year,1,30.0,30.0,30.0
+feet,1,300.0,300.0,300.0

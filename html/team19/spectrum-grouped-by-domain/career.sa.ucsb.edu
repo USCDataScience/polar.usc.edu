@@ -1,0 +1,4 @@
+unit,count,min,max,average
+hours,2,10.0,40.0,25.0
+Time,1,2015.0,2015.0,2015.0
+survey,1,2014.0,2014.0,2014.0

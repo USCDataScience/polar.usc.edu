@@ -1,0 +1,5 @@
+unit,count,min,max,average
+hours,1,72.0,72.0,72.0
+pounds,1,6.0,6.0,6.0
+ounces,1,14.0,14.0,14.0
+years,1,50.0,50.0,50.0

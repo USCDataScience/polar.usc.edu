@@ -1,0 +1,6 @@
+unit,count,min,max,average
+kilometers,3,30.0,30.0,30.0
+years,3,5.0,40.0,18.333333333333336
+hour,1,1.0,1.0,1.0
+Time,1,2012.0,2012.0,2012.0
+minutes,1,6.0,6.0,6.0

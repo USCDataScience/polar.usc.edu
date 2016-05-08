@@ -1,0 +1,5 @@
+unit,count,min,max,average
+colors,2,256.0,256.0,256.0
+pixel,2,1.0,1.0,1.0
+years,1,2.0,2.0,2.0
+Hours,1,8.0,8.0,8.0

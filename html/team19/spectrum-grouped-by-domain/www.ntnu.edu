@@ -1,0 +1,5 @@
+unit,count,min,max,average
+minutes,3,10.0,10.0,10.0
+months,1,4.0,4.0,4.0
+hours,3,12.0,37.5,20.5
+bar,2,10.0,18.0,14.0

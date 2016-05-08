@@ -1,0 +1,2 @@
+unit,count,min,max,average
+bytes,3,2.0,65535.0,21930.666666666668

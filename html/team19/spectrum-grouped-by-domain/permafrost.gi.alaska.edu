@@ -1,0 +1,4 @@
+unit,count,min,max,average
+meters,5,15.0,200.0,52.6
+centimeters,1,8.0,8.0,8.0
+cm,1,40.0,40.0,40.0

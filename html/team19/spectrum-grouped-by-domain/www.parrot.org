@@ -1,0 +1,2 @@
+unit,count,min,max,average
+bit,6,32.0,32.0,32.0

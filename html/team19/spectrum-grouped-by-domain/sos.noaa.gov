@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,1,5.0,5.0,5.0
+meter,2,6.0,6.0,6.0
+meters,1,10.0,10.0,10.0

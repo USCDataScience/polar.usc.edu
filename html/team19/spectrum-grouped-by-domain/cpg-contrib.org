@@ -1,0 +1,4 @@
+unit,count,min,max,average
+minutes,1,2.0,2.0,2.0
+pounds,1,17.5,17.5,17.5
+mg,1,50.0,50.0,50.0

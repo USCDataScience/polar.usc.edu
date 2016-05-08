@@ -1,0 +1,4 @@
+unit,count,min,max,average
+millimeter,1,16.0,16.0,16.0
+page,1,300.0,300.0,300.0
+minutes,1,7.0,7.0,7.0

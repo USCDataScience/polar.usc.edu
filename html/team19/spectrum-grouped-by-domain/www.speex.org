@@ -1,0 +1,2 @@
+unit,count,min,max,average
+kHz,1,32.0,32.0,32.0

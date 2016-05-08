@@ -1,0 +1,5 @@
+unit,count,min,max,average
+meter,1,1.0,1.0,1.0
+miles,1,220.0,220.0,220.0
+pages,1,2.0,2.0,2.0
+minute,1,10.0,10.0,10.0

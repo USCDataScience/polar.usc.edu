@@ -1,0 +1,5 @@
+unit,count,min,max,average
+years,1,6.0,6.0,6.0
+examples,1,11.0,11.0,11.0
+m,2,20.0,100.0,60.0
+kilometer,1,1.0,1.0,1.0

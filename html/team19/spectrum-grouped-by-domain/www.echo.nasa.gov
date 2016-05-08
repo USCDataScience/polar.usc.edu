@@ -1,0 +1,7 @@
+unit,count,min,max,average
+mm,4,70.0,70.0,70.0
+step,1,2.0,2.0,2.0
+degrees,1,72.1,72.1,72.1
+degree,4,2.5,5.0,3.75
+months,2,3.0,3.0,3.0
+year,2,1.0,1.0,1.0

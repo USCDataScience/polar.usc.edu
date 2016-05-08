@@ -1,0 +1,4 @@
+unit,count,min,max,average
+feet,10,0.41,75.0,38.661
+foot,2,0.1,0.1,0.1
+water,1,2006.0,2006.0,2006.0

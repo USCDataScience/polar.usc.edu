@@ -1,0 +1,9 @@
+unit,count,min,max,average
+parts,1,3.0,3.0,3.0
+names,1,2.0,2.0,2.0
+pages,2,10.0,200.0,105.0
+inches,1,0.4,0.4,0.4
+ounces,1,13.0,13.0,13.0
+minutes,1,20.0,20.0,20.0
+hours,1,8.0,8.0,8.0
+page,1,5.0,5.0,5.0

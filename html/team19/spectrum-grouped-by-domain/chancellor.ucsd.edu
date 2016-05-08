@@ -1,0 +1,6 @@
+unit,count,min,max,average
+times,1,10.0,10.0,10.0
+minutes,3,15.0,30.0,20.0
+pages,2,99.0,99.0,99.0
+Years,1,25.0,25.0,25.0
+prefixes,1,21.0,21.0,21.0

@@ -1,0 +1,5 @@
+unit,count,min,max,average
+min,2,5.0,40.0,22.5
+edition,1,2012.0,2012.0,2012.0
+hour,2,1.0,3.0,2.0
+examples,1,130.0,130.0,130.0

@@ -1,0 +1,4 @@
+unit,count,min,max,average
+watt,1,100.0,100.0,100.0
+minutes,1,30.0,30.0,30.0
+day,2,100.0,200.0,150.0

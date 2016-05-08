@@ -1,0 +1,2 @@
+unit,count,min,max,average
+bytes,7,657.0,943.0,843.8571428571429

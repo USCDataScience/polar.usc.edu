@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.layout.cloud.js"></script>
+<head>
+    <title>Word Cloud Example</title>
+</head>
+<style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+    }
+    .bld {
+        font-weight: bold;
+    }
+</style>
+<body>
+
+</body>
+<script>
+
+    var frequency_list = [{"text": "", "size": 18}, {"text": "Norris, Marian R. (HQ-DM000)", "size": 14}, {"text": "Microsoft PowerPoint", "size": 16},{"text": "JJMARSHA", "size": 36}, {"text": "23", "size": 8}, {"text": "Microsoft\u00ae Excel\u00ae 2010", "size": 36}, {"text": "Kristina Creek", "size": 14}, {"text": "Freedom Loaner No. 3", "size": 88}, {"text": "Clayton, Diane (HQ-HA000)[Virginia Space Grant Consortium / LaRC]", "size": 36}, {"text": "application/xhtml+xml; charset=UTF-8", "size": 402}, {"text": "bloewy", "size": 9}, {"text": "Sten Odenwald", "size": 36}, {"text": "lkane", "size": 18}, {"text": "PScript5.dll Version 5.2.2", "size": 16}, {"text": "Acrobat PDFMaker 7.0 for Word", "size": 36}, {"text": "SciReq0808 (Read-Only) - Microsoft Word", "size": 37}, {"text": "html2ps version 1.0 beta3", "size": 12}, {"text": "Acrobat PDFMaker 5.0 for PowerPoint", "size": 62}, {"text": "Matt DeLand", "size": 8}, {"text": "John Falkingham", "size": 36}, {"text": "Acrobat PDFMaker 10.1 for Word", "size": 16}, {"text": "eva", "size": 12}, {"text": "Adobe PageMaker 7.0", "size": 16}, {"text": "Abello (Braatz)", "size": 36}, {"text": "R and OS php pdf writer, http://www.ros.co.nz", "size": 36}, {"text": "Peter Pulsifer", "size": 28}, {"text": "JTdolinka", "size": 43}, {"text": "Lene Kielsen Holm", "size": 12}, {"text": "Environment Canada", "size": 43}, {"text": "Keynote", "size": 29}, {"text": "Simon Clarke", "size": 10}, {"text": "University of California", "size": 12}, {"text": "text/html; charset=ISO-8859-1", "size": 128}, {"text": "IDL Version 8.1 (linux x86_64 m64)", "size": 12}, {"text": "Acrobat PDFMaker 6.0 for PowerPoint", "size": 36}, {"text": "PScript5.dll Version 5.2", "size": 12}, {"text": "Acrobat PDFMaker 8.1 for Word", "size": 12}, {"text": "text/plain; charset=ISO-8859-1", "size": 12}, {"text": "U.S. Government Printing Office", "size": 36}, {"text": "Word", "size": 12}, {"text": "text/html; charset=UTF-8", "size": 337}, {"text": "David Hathaway", "size": 36}, {"text": "o3watch@triffid.gsfc.nasa.gov, ", "size": 36}, {"text": "john horel", "size": 36}, {"text": "jrobertson", "size": 36}, {"text": "ADNET", "size": 88}, {"text": "SSAI", "size": 22}, {"text": "Kevin Murphy", "size": 36}, {"text": "NASA", "size": 16}, {"text": "duday", "size": 73}, {"text": "Acrobat PDFMaker 9.1 for Word", "size": 11}, {"text": "Microsoft\u00ae Office Word 2007", "size": 45}, {"text": "application/pdf", "size": 128}, {"text": "Alisha Drabek", "size": 12}, {"text": "Student Academic Services, UCOP", "size": 62}, {"text": "William Suckow", "size": 36}, {"text": "Connor", "size": 36}, {"text": "akwok", "size": 36}, {"text": "EBFLOWERS", "size": 36}, {"text": "Roger De Abreu", "size": 36}, {"text": "ACOMP.exe   WinVer 1c15  Aug 31 2005", "size": 36}, {"text": "Adobe InDesign CS3 (5.0)", "size": 12}, {"text": "mcullen", "size": 12}, {"text": "PDFCreator Version 0.9.6", "size": 36}, {"text": "higoodmr", "size": 36}, {"text": "default", "size": 36}, {"text": "Betsy Sheffield", "size": 36}, {"text": "GHCC", "size": 36}, {"text": "PowerPoint", "size": 36}, {"text": "Writer", "size": 36}, {"text": "Chris McNeave", "size": 88}, {"text": "Acrobat PDFMaker 9.1 for Excel", "size": 36}, {"text": "Acrobat PDFMaker 11 for Word", "size": 36}, {"text": "ray", "size": 36}, {"text": "QuarkXPress\u00aa 4.11: LaserWriter 8 Z2-8.7", "size": 88}, {"text": "Adobe InDesign CS6 (Windows)", "size": 36}, {"text": "Microsoft\u00ae Word 2010", "size": 36}, {"text": "MicroStation 8.11.9.357", "size": 12}, {"text": "Hicks", "size": 36}, {"text": "ckellehe", "size": 36}, {"text": "Microsoft Excel", "size": 36}, {"text": "Acrobat PDFMaker 8.1 for PowerPoint", "size": 18}, {"text": "text/html; charset=windows-1252", "size": 16}, {"text": "dsoltesz", "size": 36}, {"text": "United States Coast Guard", "size": 36}, {"text": "Microsoft Word", "size": 19}];
+
+    var color = d3.scale.linear()
+            .domain([0,1,2,3,4,5,6,10,15,20,100])
+            .range(["#CB1C39", "#CB1C9C", "#B01CCB", "#5F1CCB", "#1C3CCB", "#1CBCCB", "#1CCB96", "#1CCB45", "#45CB1C", "#CBB01C", "#CB701C", "CB311C"]);
+
+    d3.layout.cloud().size([800, 300])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) { return d.size; })
+            .on("end", draw)
+            .start();
+
+    function draw(words) {
+        d3.select("body").append("svg")
+                .attr("width", 1200)
+                .attr("height", 350)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(320,200)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size + "px"; })
+                .style("fill", function(d, i) { return color(i); })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+    }
+</script>
+
+<div style="width: 40%;">
+    <div class="legend">
+ Commonly used words are larger and less common words are smaller.
+    </div>
+
+</div>
+
+
+</html>

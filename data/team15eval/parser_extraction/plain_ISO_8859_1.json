@@ -1,0 +1,10 @@
+{
+    "data": [
+        {
+            "extracted_content": 170115,
+            "extracted_metadata": 112369,
+            "name": "org.apache.tika.parser.DefaultParser,org.apache.tika.parser.txt.TXTParser",
+            "raw_content": 171192
+        }
+    ]
+}

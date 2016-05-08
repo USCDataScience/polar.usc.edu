@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title>Metadata Extraction And Analysis</title>
+<style>
+
+text {
+  font: 10px sans-serif;
+}
+ #hzBarChart .panel-body .legend {   fill: black;   font: 14px sans-serif;   text-anchor: start;   font-size: 12px; }
+ #hzBarChart .panel-body text {      font: 10px sans-serif;   text-anchor: end; }
+ #hzBarChart .panel-body .label {   fill: black;   font: 14px sans-serif;   text-anchor: end; }
+ #hzBarChart .panel-body .bar:hover {   fill: yellow; }
+ #hzBarChart .panel-body .axis path, #hzBarChart .panel-body .axis line {   fill: none;   stroke: #000;   shape-rendering: crispEdges; }
+ #hzBarChart .panel-body .legend {   position: fixed;}
+ .panel-info{border: none !important;}
+</style>
+ 
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../css/bootstrap-theme.css" />
+        <link rel="stylesheet" href="../../css/Team15_css/styles.css">
+</head>
+<body>
+<div id="body">
+      
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                   <a class="navbar-brand" href="./index.html">Polar Data Analysis</a>
+               </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="./4.html">Response Analysis</a></li>
+                    <li><a href="./5.html">Solar and CCA Filesize comparison</a></li>
+                    <li ><a href="./6.html">Parser Extraction</a></li>
+                    <li><a href="./7.html">Language Diversity</a></li>
+                    <li ><a href="./8a.html">Wcloud sweet</a></li>
+                    <li><a href="./8b.html">Wcloud metadata</a></li>
+                    <li><a href="./8c.html">Wcloud Language</a></li>
+                    <li class="active"><a href="./9.html">Ner comparison</a></li>
+                    <li><a href="./10a.html">Measurements Analysis</a></li>
+                    <li><a href="./10b.html">Type Analysis</a></li>
+                    <li><a href="./10c.html">Domain Analysis</a></li>
+                    <li><a href="./10d.html">MIME Analysis</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="legend">Displays the entities found by different NER Recognisers ,Agreed means majority of the recognisers found the same thing,The files shown below are the files with most entities extracted across the dataset</div>
+         <div class="container">
+        <br/><br/><br/>
+        <div id="hzBarChart" class="panel panel-info text-center">
+         
+          <div class="panel-body"></div>
+        </div>
+      </div><!-- /.container -->
+    </div>
+<script src="../../js/jquery-2.2.2.min.js"></script>
+  <script src="../../js/d3.v3.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+<!-- Charts -->
+<script src="../../js/team15eval/hzBarChart.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log("will call search");
+      search();
+    });
+    function search(){
+      console.log("will call refreshHzBarChart");
+      refreshHzBarChart();
+
+    }
+  </script>
+</body>

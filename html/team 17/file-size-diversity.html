@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+/*
+.chart rect {
+  fill: steelblue;
+}
+*/
+.chart .legend {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: start;
+  font-size: 12px;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.chart .label {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+#headerDiv{
+        height: 100px;
+        width: 100%;
+        margin: 0px;
+        padding-top: 10px;
+        background-color:rgba(0,0,0,0.7);
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 2px solid white;
+    }
+
+</style>
+<body>
+<div id="headerDiv"><p><span> File Size Diversity Visualization</span></p></div>
+
+<svg class="chart"></svg>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var data = {
+  labels: [
+    'text/html','text/plain','video/quicktime','video/mpeg','application/atom+xml', 
+    'application/gzip', 'application/octet-stream','application/pdf', 'application/rdf+xml',
+    'application/rss+xml','audio/mpeg','image/gif','image/jpeg','image/png','image/svg+xml'
+  ],
+  series: [
+    {
+      label: 'File Size (MB)',
+      values: [ 36782, 65790, 14500, 1530, 2314, 1893, 22341, 21095, 19034, 3459, 987, 1998, 1196, 1894, 1109]
+    },
+    {
+      label: 'Metadata File Size (MB)',
+      values: [32782, 55790, 3356, 543, 1314, 1293,17341, 20025, 11034, 2398, 487, 1091,406, 1271, 825]
+    },]
+};
+
+var chartWidth       = 450,
+    barHeight        = 20,
+    groupHeight      = barHeight * data.series.length,
+    gapBetweenGroups = 10,
+    spaceForLabels   = 450,
+    spaceForLegend   = 250;
+
+// Zip the series data together (first values, second values, etc.)
+var zippedData = [];
+for (var i=0; i<data.labels.length; i++) {
+  for (var j=0; j<data.series.length; j++) {
+    zippedData.push(data.series[j].values[i]);
+  }
+}
+
+// Color scale
+var color = d3.scale.category20();
+var chartHeight = barHeight * zippedData.length + gapBetweenGroups * data.labels.length;
+
+var x = d3.scale.linear()
+    .domain([0, d3.max(zippedData)])
+    .range([0, chartWidth]);
+
+var y = d3.scale.linear()
+    .range([chartHeight + gapBetweenGroups, 0]);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .tickFormat('')
+    .tickSize(0)
+    .orient("left");
+
+// Specify the chart area and dimensions
+var chart = d3.select(".chart")
+    .attr("width", spaceForLabels + chartWidth + spaceForLegend)
+    .attr("height", chartHeight);
+
+// Create bars
+var bar = chart.selectAll("g")
+    .data(zippedData)
+    .enter().append("g")
+    .attr("transform", function(d, i) {
+      return "translate(" + spaceForLabels + "," + (i * barHeight + gapBetweenGroups * (0.5 + Math.floor(i/data.series.length))) + ")";
+    });
+
+// Create rectangles of the correct width
+bar.append("rect")
+    .attr("fill", function(d,i) { return color(i % data.series.length); })
+    .attr("class", "bar")
+    .attr("width", x)
+    .attr("height", barHeight - 1);
+
+// Add text label in bar
+bar.append("text")
+    .attr("x", function(d) { return x(d) - 3; })
+    .attr("y", barHeight / 2)
+    .attr("fill", "red")
+    .attr("dy", ".35em")
+    .text(function(d) { return d; });
+
+// Draw labels
+bar.append("text")
+    .attr("class", "label")
+    .attr("x", function(d) { return - 10; })
+    .attr("y", groupHeight / 2)
+    .attr("dy", ".35em")
+    .text(function(d,i) {
+      if (i % data.series.length === 0)
+        return data.labels[Math.floor(i/data.series.length)];
+      else
+        return ""});
+
+chart.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + spaceForLabels + ", " + -gapBetweenGroups/2 + ")")
+      .call(yAxis);
+
+// Draw legend
+var legendRectSize = 18,
+    legendSpacing  = 4;
+
+var legend = chart.selectAll('.legend')
+    .data(data.series)
+    .enter()
+    .append('g')
+    .attr('transform', function (d, i) {
+        var height = legendRectSize + legendSpacing;
+        var offset = -gapBetweenGroups/2;
+        var horz = spaceForLabels + chartWidth + 40 - legendRectSize;
+        var vert = i * height - offset;
+        return 'translate(' + horz + ',' + vert + ')';
+    });
+
+legend.append('rect')
+    .attr('width', legendRectSize)
+    .attr('height', legendRectSize)
+    .style('fill', function (d, i) { return color(i); })
+    .style('stroke', function (d, i) { return color(i); });
+
+legend.append('text')
+    .attr('class', 'legend')
+    .attr('x', legendRectSize + legendSpacing)
+    .attr('y', legendRectSize - legendSpacing)
+    .text(function (d) { return d.label; });
+
+</script>
+</body>

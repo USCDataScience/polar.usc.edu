@@ -1,0 +1,822 @@
+{"title" : "PART 10", 
+ "children" :
+ [{
+"title":"MIME Type",
+"children":
+[
+{
+"title" : "application/xml",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 1800716.0"},
+    {"title" : "avg : 8528.46"}
+]
+},
+{
+"title" : "text/html",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 4444.0"},
+    {"title" : "avg : 242.46"}
+]
+},
+{
+"title" : "application/atom+xml",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 5013.0"},
+    {"title" : "avg : 281.42"}
+]
+},
+{
+"title" : "application/rdf+xml",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 1.033902010017E12"},
+    {"title" : "avg : 1.0020188385615419E11"}
+]
+},
+{
+"title" : "text/x-matlab",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 255.0"},
+    {"title" : "avg : 10.0"}
+]
+},
+{
+"title" : "application/rss+xml",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 2.01502110453351E26"},
+    {"title" : "avg : 1.9587800849147025E25"}
+]
+},
+{
+"title" : "image/svg+xml",
+"children":[
+    {"title" : "min : 600.0"},
+    {"title" : "max : 600.0"},
+    {"title" : "avg : 333.3333333333333"}
+]
+},
+{
+"title" : "application/x-bibtex-text-file",
+"children":[
+    {"title" : "min : 3.0"},
+    {"title" : "max : 100.0"},
+    {"title" : "avg : 18.0"}
+]
+},
+{
+"title" : "application/xhtml+xml",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 1.0097791094517117E34"},
+    {"title" : "avg : 7.741480463869838E29"}
+]
+},
+{
+"title" : "text/plain",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 3.873883893903914E91"},
+    {"title" : "avg : 6.783197152694649E87"}
+]
+}
+]},
+{
+"title":"Measurement Units",
+"children":[
+{
+"title" : "week",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 6500.0"},
+    {"title" : "avg : 96.1978021978022"}
+]
+},
+{
+"title" : "terabyte",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 300.0"},
+    {"title" : "avg : 44.333333333333336"}
+]
+},
+{
+"title" : "year",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 2.0152016E7"},
+    {"title" : "avg : 19484.795600366637"}
+]
+},
+{
+"title" : "megabyte",
+"children":[
+    {"title" : "min : 2.0"},
+    {"title" : "max : 1490.0"},
+    {"title" : "avg : 85.05291005291005"}
+]
+},
+{
+"title" : "kilobyte",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 80404.0"},
+    {"title" : "avg : 2026.6553672316384"}
+]
+},
+{
+"title" : "acre",
+"children":[
+    {"title" : "min : 12.0"},
+    {"title" : "max : 3252323.0"},
+    {"title" : "avg : 235214.3672316384"}
+]
+},
+{
+"title" : "gigabyte",
+"children":[
+    {"title" : "min : 2.0"},
+    {"title" : "max : 450.0"},
+    {"title" : "avg : 20.857142857142858"}
+]
+},
+{
+"title" : "celcius",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 13.308335739116983E24"},
+    {"title" : "avg : 8.250213813259905E21"}
+]
+},
+{
+"title" : "bit",
+"children":[
+    {"title" : "min : 3.0"},
+    {"title" : "max : 4.832118587421184E39"},
+    {"title" : "3.993486435885278E37"}
+]
+},
+{
+"title" : "percent",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 151696.0"},
+    {"title" : "avg : 434.66838046272494"}
+]
+},
+{
+"title" : "second",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 193830.0"},
+    {"title" : "avg : 819.8359908883826"}
+]
+},
+{
+"title" : "pound",
+"children":[
+    {"title" : "min : 2.0"},
+    {"title" : "max : 33191.0"},
+    {"title" : "avg : 1536.8367346938776"}
+]
+},
+{
+"title" : "ton",
+"children":[
+    {"title" : "min : 60000.0"},
+    {"title" : "max : 60000.0"},
+    {"title" : "avg : 60000.0"}
+]
+},
+{
+"title" : "hour",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 40000.0"},
+    {"title" : "avg : 102.14629948364887"}
+]
+},
+{
+"title" : "fahrenheit",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 6.974117697669747E31"},
+    {"title" : "avg : 9.554251206778988E29"}
+]
+},
+    
+{
+"title" : "kilogram",
+"children":[
+    {"title" : "min : 49.0"},
+    {"title" : "max : 49.0"},
+    {"title" : "avg : 49.0"}
+]
+},
+{
+"title" : "kilohertz",
+"children":[
+    {"title" : "min : 12.0"},
+    {"title" : "max : 3432.0"},
+    {"title" : "avg : 454.0"}
+]
+},
+{
+"title" : "megahertz",
+"children":[
+    {"title" : "min : 123.0"},
+    {"title" : "max : 3423.0"},
+    {"title" : "avg : 433.0"}
+]
+},
+{
+"title" : "day",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 8.38909263176042E25"},
+    {"title" : "avg : 8.551572509439775E22"}
+]
+},
+{
+"title" : "foot",
+"children":[
+    {"title" : "min : 2.0"},
+    {"title" : "max : 1.12123409E8"},
+    {"title" : "avg : 1305716.387755102"}
+]
+},
+{
+"title" : "meter",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 3.339350591594615E52"},
+    {"title" : "avg : 7.212420284221631E49"}
+]
+} ,
+    
+{
+"title" : "mile",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 533000.0"},
+    {"title" : "avg : 5380.245901639344"}
+]
+},
+{
+"title" : "day",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 8.38909263176042E25"},
+    {"title" : "avg : 8.551572509439775E22"}
+]
+},
+{
+"title" : "byte",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 1.650784E7"},
+    {"title" : "avg : 434871.2653061224"}
+]
+},
+{
+"title" : "gram",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 2002.0"},
+    {"title" : "avg : 275.8666666666667"}
+]
+},    
+{
+"title" : "degree",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 434.0"},
+    {"title" : "avg : 136.38095238095238"}
+]
+},
+{
+"title" : "gigahertz",
+"children":[
+    {"title" : "min : 22.0"},
+    {"title" : "max : 890.0"},
+    {"title" : "avg : 143.23076923076923"}
+]
+},
+{
+"title" : "am",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 9.291503304489633E35"},
+    {"title" : "avg : 9.394846617316809E32"}
+]
+},
+{
+"title" : "minute",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 2.015022E7"},
+    {"title" : "avg : 138508.43642611685"}
+]
+},    
+{
+"title" : "hertz",
+"children":[
+    {"title" : "min : 5.0"},
+    {"title" : "max : 45.0"},
+    {"title" : "avg : 9.818181818181818"}
+]
+},
+{
+"title" : "month",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 122014.0"},
+    {"title" : "avg : 522.409282700422"}
+]
+},
+{
+"title" : "kilometer",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 840000.0"},
+    {"title" : "avg : 10015.463087248321"}
+]
+},
+{
+"title" : "ounce",
+"children":[
+    {"title" : "min : 6.0"},
+    {"title" : "max : 1968.0"},
+    {"title" : "avg : 187.8181818181818"}
+]
+},
+
+{
+"title" : "inch",
+"children":[
+    {"title" : "min : 0.0"},
+    {"title" : "max : 2.014121E7"},
+    {"title" : "avg : 453112.3081081081"}
+]
+},
+{
+"title" : "pm",
+"children":[
+    {"title" : "min : 1.0"},
+    {"title" : "max : 1.000201311E11"},
+    {"title" : "avg : 4.555547963944298E7"}
+]}
+]},
+{
+"title" : "Measurement Units Types",
+"children":[
+  {
+    "title": "data_byte",
+    "children": [
+      {
+        "title": "min : 0.0"
+      },
+      {
+        "title": "max : 4.832118587421184E39"
+      },
+      {
+        "title": "avg : 8.260031773369549E36"
+      }
+    ]
+  },
+  {
+    "title": "area",
+    "children": [
+      {
+        "title": "min : 13.0"
+      },
+      {
+        "title": "max : 1311.43"
+      },
+      {
+        "title": "avg : 342.536395"
+      }
+    ]
+  },
+  {
+    "title": "distance",
+    "children": [
+      {
+        "title": "min : 0.0"
+      },
+      {
+        "title": "max : 3.339350591594615E52"
+      },
+      {
+        "title": "avg : 2.9577950324132993E49"
+      }
+    ]
+  },
+  {
+    "title": "temperature",
+    "children": [
+      {
+        "title": "min : 0.0"
+      },
+      {
+        "title": "max : 6.974117697669747E31"
+      },
+      {
+        "title": "avg : 1.4683376235331022E29"
+      }
+    ]
+  },
+  {
+    "title": "weight",
+    "children": [
+      {
+        "title": "min : 0.0"
+      },
+      {
+        "title": "max : 60000.0"
+      },
+      {
+        "title": "avg : 1380.9223300970873"
+      }
+    ]
+  },
+  {
+    "title": "angle",
+    "children": [
+      {
+        "title": "min : 1.0"
+      },
+      {
+        "title": "max : 434.0"
+      },
+      {
+        "title": "avg : 136.38095238095238"
+      }
+    ]
+  },
+  {
+    "title": "time",
+    "children": [
+      {
+        "title": "min : 0.0"
+      },
+      {
+        "title": "max : 9.291503304489633E35"
+      },
+      {
+        "title": "avg : 1.262604063781116E32"
+      }
+    ]
+  },
+  {
+    "title": "percent",
+    "children": [
+      {
+        "title": "min : 0.0"
+      },
+      {
+        "title": "max : 151696.0"
+      },
+      {
+        "title": "avg : 434.66838046272494"
+      }
+    ]
+  },
+  {
+    "title": "frequency",
+    "children": [
+      {
+        "title": "min : 5.0"
+      },
+      {
+        "title": "max : 890.0"
+      },
+      {
+        "title": "avg : 78.8"
+      }
+    ]
+  }
+]
+},
+{
+    "title" : "Domain(www.abc7news.com)",
+    "children":
+    [
+{
+    "title": "hour",
+    "children": [
+      {
+        "title": "min : 812"
+      },
+      {
+        "title": "max : 1812"
+      },
+      {
+        "title": "avg : 1268.54875454"
+      }
+    ]
+  },
+  {
+    "title": "year",
+    "children": [
+      {
+        "title": "min : 5"
+      },
+      {
+        "title": "max : 5000"
+      },
+      {
+        "title": "avg : 1431.142857142857"
+      }
+    ]
+  },
+   {
+    "title": "kilobyte",
+    "children": [
+      {
+        "title": "min : 1"
+      },
+      {
+        "title": "max : 1000"
+      },
+      {
+        "title": "avg : 658.54798487"
+      }
+    ]
+  },
+  {
+    "title": "inch",
+    "children": [
+      {
+        "title": "min : 88"
+      },
+      {
+        "title": "max : 489"
+      },
+      {
+        "title": "avg : 123.9598"
+      }
+    ]
+  },
+    {
+    "title": "celcius",
+    "children": [
+      {
+        "title": "min : 10"
+      },
+      {
+        "title": "max : 20"
+      },
+      {
+        "title": "avg : 11.6666666666666666"
+      }
+    ]
+  },
+  {
+    "title": "fahrenheit",
+    "children": [
+      {
+        "title": "min : 10"
+      },
+      {
+        "title": "max : 100"
+      },
+      {
+        "title": "avg : 15.545454"
+      }
+    ]
+  },
+  {
+    "title": "day",
+    "children": [
+      {
+        "title": "min : 3"
+      },
+      {
+        "title": "max : 30"
+      },
+      {
+        "title": "avg : 18"
+      }
+    ]
+  },
+    {
+    "title": "second",
+    "children": [
+      {
+        "title": "min : 1"
+      },
+      {
+        "title": "max : 120"
+      },
+      {
+        "title": "avg : 60.00001"
+      }
+    ]
+  },
+  {
+    "title": "mile",
+    "children": [
+      {
+        "title": "min : 20"
+      },
+      {
+        "title": "max : 10005"
+      },
+      {
+        "title": "avg : 1000.555550123"
+      }
+    ]
+  },
+  {
+    "title": "foot",
+    "children": [
+      {
+        "title": "min : 8"
+      },
+      {
+        "title": "max : 1000"
+      },
+      {
+        "title": "avg : 566.21345679"
+      }
+    ]
+  },
+  {
+    "title": "gram",
+    "children": [
+      {
+        "title": "min : 65"
+      },
+      {
+        "title": "max : 1059"
+      },
+      {
+        "title": "avg : 568.456789"
+      }
+    ]
+  },
+  {
+    "title": "ounce",
+    "children": [
+      {
+        "title": "min : 15"
+      },
+      {
+        "title": "max : 606"
+      },
+      {
+        "title": "avg : 300.01547"
+      }
+    ]
+  },
+  {
+    "title": "meter",
+    "children": [
+      {
+        "title": "min : 1"
+      },
+      {
+        "title": "max : 10002"
+      },
+      {
+        "title": "avg : 565.514787878"
+      }
+    ]
+  },
+  {
+    "title": "kilometer",
+    "children": [
+      {
+        "title": "min : 100"
+      },
+      {
+        "title": "max : 50002"
+      },
+      {
+        "title": "avg : 1565.514787878"
+      }
+    ]
+  },
+  {
+    "title": "kilogram",
+    "children": [
+      {
+        "title": "min : 5"
+      },
+      {
+        "title": "max : 7002"
+      },
+      {
+        "title": "avg : 665.514787878"
+      }
+    ]
+  },
+  {
+    "title": "bit",
+    "children": [
+      {
+        "title": "min : 1"
+      },
+      {
+        "title": "max : 1024"
+      },
+      {
+        "title": "avg : 512.12545"
+      }
+    ]
+  },
+  {
+    "title": "ton",
+    "children": [
+      {
+        "title": "min : 10"
+      },
+      {
+        "title": "max : 11232"
+      },
+      {
+        "title": "avg : 6587.514787878"
+      }
+    ]
+  },
+  {
+    "title": "acre",
+    "children": [
+      {
+        "title": "min : 56"
+      },
+      {
+        "title": "max : 582"
+      },
+      {
+        "title": "avg : 245.514787878"
+      }
+    ]
+  },
+  {
+    "title": "day",
+    "children": [
+      {
+        "title": "min : 1"
+      },
+      {
+        "title": "max : 25"
+      },
+      {
+        "title": "avg : 16"
+      }
+    ]
+  },
+  {
+    "title": "month",
+    "children": [
+      {
+        "title": "min : 1"
+      },
+      {
+        "title": "max : 12"
+      },
+      {
+        "title": "avg : 6"
+      }
+    ]
+  },
+  {
+    "title": "acre",
+    "children": [
+      {
+        "title": "min : 56"
+      },
+      {
+        "title": "max : 582"
+      },
+      {
+        "title": "avg : 245.514787878"
+      }
+    ]
+  },
+  {
+    "title": "minute",
+    "children": [
+      {
+        "title": "min : 1"
+      },
+      {
+        "title": "max : 55"
+      },
+      {
+        "title": "avg : 12"
+      }
+    ]
+  }
+]
+}
+]}
+              
+
+

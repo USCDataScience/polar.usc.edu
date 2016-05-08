@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- based on https://bl.ocks.org/mbostock/3885304 -->
+<meta charset="utf-8">
+<style>
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+<body>
+<script src="../../js/d3.min.js"></script>
+<script>
+
+var margin = {top: 20, right: 20, bottom: 400, left: 70},
+    width = 960 - margin.left - margin.right,
+    height = 1500 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(20);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var rawData =
+{"image/jpeg": 0.014012561576940696, "image/svg+xml": 0.09668275846092982, "video/quicktime": 0.001678466796875, "image/png": 0.04687151173592899, "image/vnd.microsoft.icon": 0.061560974249900154, "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 0.010540572370745495, "application/pdf": 0.09431330247391469, "application/gzip": 1.1464056487654488, "application/vnd.google-earth.kmz": 0.07635184536423058, "application/x-tika-ooxml": 0.001678466796875, "image/gif": 0.33640020288748784, "application/xml": 0.43911894553957853, "text/x-php": 0.3239344973430214, "application/x-bibtex-text-file": 0.8281181137064786, "application/x-elc": 0.04418752051283954, "application/x-gtar": 0.001678466796875, "application/rdf+xml": 0.18767893589786322, "text/plain": 10.82671551236579, "application/xhtml+xml": 0.12074830331046917, "text/x-matlab": 0.9546961246173302, "application/atom+xml": 0.20365598594036965, "text/html": 0.31197048564637697, "application/rss+xml": 0.3671809238181737, "video/mp4": 0.00168388825105243, "application/zip": 0.001678466796875, "application/msword": 0.005741381431577519}
+
+var data = Object.keys(rawData).map(function(k) {
+  return {label: k, value: rawData[k]};
+});  
+data.sort(function(a, b) {
+    return b.value - a.value;
+});
+
+  x.domain(data.map(function(d) { return d.label; }));
+  y.domain([0, d3.max(data, function(d) { return d.value; })]);
+
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis)
+  // rotated axis label code from http://bl.ocks.org/mbostock/4403522
+  .selectAll("text")
+    .attr("y", 0)
+    .attr("x", 9)
+    .attr("dy", ".35em")
+    .attr("transform", "rotate(90)")
+    .style("text-anchor", "start");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -50)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Average ratio of Solr index size to file size");
+
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.label); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.value); })
+      .attr("height", function(d) { return height - y(d.value); });
+
+function type(d) {
+  d.value = +d.value;
+  return d;
+}
+
+</script>
+

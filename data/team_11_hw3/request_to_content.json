@@ -1,0 +1,483 @@
+
+  {
+    "name": "nsfpolardata.dyndns.org",
+    "parent": "null",
+    "children": [
+      {
+        "name": "www.summerschoolalpbach.at",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.summerschoolalpbach.at/index.php?file=start_uk.php",
+            "parent": "www.summerschoolalpbach.at",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=start_uk.php"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=start_uk.php"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=start_uk.php"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=start_uk.php"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=start_uk.php"
+              }
+            ]
+          },
+          {
+            "name": "http://www.summerschoolalpbach.at/index.php?file=alpbach.htm",
+            "parent": "www.summerschoolalpbach.at",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=alpbach.htm"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=alpbach.htm"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=alpbach.htm"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=alpbach.htm"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://www.summerschoolalpbach.at/index.php?file=alpbach.htm"
+              }
+            ]
+          },
+          {
+            "name": "http://www.summerschoolalpbach.at/docs/2014/presentations/Team_GREEN_Report.pdf",
+            "parent": "www.summerschoolalpbach.at",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.summerschoolalpbach.at/docs/2014/presentations/Team_GREEN_Report.pdf"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.summerschoolalpbach.at/docs/2014/presentations/Team_GREEN_Report.pdf"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.summerschoolalpbach.at/docs/2014/presentations/Team_GREEN_Report.pdf"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.summerschoolalpbach.at/docs/2014/presentations/Team_GREEN_Report.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.bom.gov.au",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.bom.gov.au/australia/radar",
+            "parent": "www.bom.gov.au",
+            "children": [
+              {
+                "name": "TIME",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.bom.gov.au/australia/radar"
+              }
+            ]
+          },
+          {
+            "name": "http://www.bom.gov.au/climate/enso/",
+            "parent": "www.bom.gov.au",
+            "children": [
+              {
+                "name": "MONEY",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              },
+              {
+                "name": "PERSON",
+                "parent": "http://www.bom.gov.au/climate/enso/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.polardata.ca",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1",
+            "parent": "www.summerschoolalpbach.at",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=1"
+              }
+            ]
+          },
+          {
+            "name": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2",
+            "parent": "www.summerschoolalpbach.at",
+            "children": [
+              {
+                "name": "MONEY",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              },
+              {
+                "name": "PERCENT",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=2"
+              }
+            ]
+          },
+          {
+            "name": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3",
+            "parent": "www.summerschoolalpbach.at",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.polardata.ca/whitesnow/PDCSearchDOI.jsp?doi_id=10786&doi_name=3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "www.cptec.inpe.br",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.cptec.inpe.br/",
+            "parent": "www.cptec.inpe.br",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.cptec.inpe.br/"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.cptec.inpe.br/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "pkp.sfu.ca",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "https://pkp.sfu.ca/software-developer-join-our-team",
+            "parent": "pkp.sfu.ca",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "https://pkp.sfu.ca/software-developer-join-our-team"
+              },
+              {
+                "name": "TIME",
+                "parent": "https://pkp.sfu.ca/software-developer-join-our-team"
+              },
+              {
+                "name": "MONEY",
+                "parent": "https://pkp.sfu.ca/software-developer-join-our-team"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "https://pkp.sfu.ca/software-developer-join-our-team"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "https://pkp.sfu.ca/software-developer-join-our-team"
+              },
+              {
+                "name": "DATE",
+                "parent": "https://pkp.sfu.ca/software-developer-join-our-team"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "data.wien.gv.at",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://data.wien.gv.at/",
+            "parent": "data.wien.gv.at",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://data.wien.gv.at/"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://data.wien.gv.at/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "arcticjournal.com",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://arcticjournal.com/climate/1016/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1016/spoiled-isolation"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1029/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1029/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1047/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1047/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1049/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1049/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1111/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://arcticjournal.com/climate/1111/spoiled-isolation"
+              }
+            ]
+          },
+          {
+            "name": "http://arcticjournal.com/climate/1342/spoiled-isolation",
+            "parent": "arcticjournal.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "TIME",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "MONEY",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://arcticjournal.com/climate/1342/spoiled-isolation"
+              }
+			]
+          }
+        ]
+      },
+      {
+        "name": "cpspolar.com",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://cpspolar.com/",
+            "parent": "cpspolar.com",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "DATE",
+                "parent": "http://cpspolar.com/"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://cpspolar.com/"
+              }
+            ]
+          }
+        ]
+      },
+		{
+        "name": "www.ubc.ca",
+        "parent": "nsfpolardata.dyndns.org",
+        "children": [
+          {
+            "name": "http://www.ubc.ca/stories/2015-winter/smartest-coffee-talk-you-will-ever-overhear.html",
+            "parent": "www.ubc.ca",
+            "children": [
+              {
+                "name": "PERSON",
+                "parent": "http://www.ubc.ca/stories/2015-winter/smartest-coffee-talk-you-will-ever-overhear.html"
+              },
+              {
+                "name": "LOCATION",
+                "parent": "http://www.ubc.ca/stories/2015-winter/smartest-coffee-talk-you-will-ever-overhear.html"
+              },
+              {
+                "name": "ORGANIZATION",
+                "parent": "http://www.ubc.ca/stories/2015-winter/smartest-coffee-talk-you-will-ever-overhear.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

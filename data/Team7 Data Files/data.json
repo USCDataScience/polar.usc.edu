@@ -1,0 +1,55 @@
+{
+  "name": "File Classification",
+  "children": [
+
+    {
+      "name": "Relevent_Files_Extrated",
+      "children": [
+        {
+          "name": "969953"
+
+        }
+      ]
+    },
+    {
+      "name": "NonRelevent_Files_Extrated",
+      "children": [
+        {
+          "name": "Broken_Files_Extrated",
+          "children": [
+            {
+              "name": "212055"
+
+            }
+          ]
+
+
+        },
+        {
+          "name": "Corrupted_Files_Extrated",
+          "children": [
+            {
+              "name": "148890"
+
+            }
+          ]
+
+
+        },
+        {
+          "name": "WrongNER_Files_Extrated",
+          "children": [
+            {
+              "name": "969953"
+
+            }
+          ]
+
+
+        }
+      ]
+    }
+
+
+  ]
+}

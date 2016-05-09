@@ -45,7 +45,7 @@ d3.json("../../data/team26eval/graphFile.json", function(json) {
       .data(json.links)
     .enter().append("line")
       .attr("class", "link")
-    .style("stroke-width", function(d) { return Math.sqrt(d.weight); });
+    .style("stroke-width", function(d) { if (!undefined(d.weight)) {return Math.sqrt(d.weight);} else return 3;  });
 
 /*  var node = svg.selectAll(".node")
       .data(json.nodes)

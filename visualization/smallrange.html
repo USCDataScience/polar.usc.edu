@@ -2,11 +2,9 @@
 
 <html>
 <meta charset="utf-8">
-<head>
   <script src="http://d3js.org/d3.v3.min.js"></script>
-   <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.min.js"></script>
-  
+  <head>
   <style type="text/css">
   body {
     font: 11px sans-serif;
@@ -20,6 +18,10 @@
     shape-rendering: crispEdges;
   }
 
+  #csvdata
+  {
+    display: none;
+  }
   .bar:hover {
     fill: #bcbcbc ;
   }
@@ -98,9 +100,152 @@ var tip = d3.tip()
     return "<strong>" + d.mimetype + "\t" + d.range + "</strong><br/><span style='color:#fff'>" + d.values + "</span>";
   })
 
-// csv loaded asynchronously
-d3.csv("data_diversity.csv", type, function(data) {
 
+var raw= "mimetype,range,values\n" +
+"mp4,0-0.1,58\n" +
+"mp4,0.1-0.2,39\n" +
+"mp4,0.2-0.3,61\n" +
+"mp4,0.3-0.4,67\n" +
+"mp4,0.4-0.5,72\n" +
+"mp4,0.5-0.6,81\n" +
+"mp4,0.6-0.7,38\n" +
+"mp4,0.7-0.8,45\n" +
+"mp4,0.8-0.9,44\n" +
+"mp4,0.9-1,12\n" +
+"msword,0-0.1,26\n" +
+"msword,0.1-0.2,27\n" +
+"msword,0.2-0.3,24\n" +
+"msword,0.3-0.4,107\n" +
+"msword,0.4-0.5,68\n" +
+"msword,0.5-0.6,145\n" +
+"msword,0.6-0.7,65\n" +
+"msword,0.7-0.8,75\n" +
+"msword,0.8-0.9,37\n" +
+"msword,0.9-1,23\n" +
+"octet-stream,0-0.1,45\n" +
+"octet-stream,0.1-0.2,38\n" +
+"octet-stream,0.2-0.3,55\n" +
+"octet-stream,0.3-0.4,27\n" +
+"octet-stream,0.4-0.5,40\n" +
+"octet-stream,0.5-0.6,58\n" +
+"octet-stream,0.6-0.7,45\n" +
+"octet-stream,0.7-0.8,29\n" +
+"octet-stream,0.8-0.9,17\n" +
+"octet-stream,0.9-1,2\n" +
+"pdf,0-0.1,100\n" +
+"pdf,0.1-0.2,80\n" +
+"pdf,0.2-0.3,30\n" +
+"pdf,0.3-0.4,14\n" +
+"pdf,0.4-0.5,21\n" +
+"pdf,0.5-0.6,11\n" +
+"pdf,0.6-0.7,21\n" +
+"pdf,0.7-0.8,35\n" +
+"pdf,0.8-0.9,15\n" +
+"pdf,0.9-1,6\n" +
+"rss+xml,0-0.1,100\n" +
+"rss+xml,0.1-0.2,56\n" +
+"rss+xml,0.2-0.3,69\n" +
+"rss+xml,0.3-0.4,19\n" +
+"rss+xml,0.4-0.5,78\n" +
+"rss+xml,0.5-0.6,39\n" +
+"rss+xml,0.6-0.7,25\n" +
+"rss+xml,0.7-0.8,63\n" +
+"rss+xml,0.8-0.9,31\n" +
+"rss+xml,0.9-1,26\n" +
+"xhtml+xml,0-0.1,95\n" +
+"xhtml+xml,0.1-0.2,86\n" +
+"xhtml+xml,0.2-0.3,85\n" +
+"xhtml+xml,0.3-0.4,99\n" +
+"xhtml+xml,0.4-0.5,56\n" +
+"xhtml+xml,0.5-0.6,90\n" +
+"xhtml+xml,0.6-0.7,89\n" +
+"xhtml+xml,0.7-0.8,67\n" +
+"xhtml+xml,0.8-0.9,47\n" +
+"xhtml+xml,0.9-1,13\n" +
+"xml,0-0.1,55\n" +
+"xml,0.1-0.2,07\n" +
+"xml,0.2-0.3,89\n" +
+"xml,0.3-0.4,84\n" +
+"xml,0.4-0.5,19\n" +
+"xml,0.5-0.6,41\n" +
+"xml,0.6-0.7,80\n" +
+"xml,0.7-0.8,28\n" +
+"xml,0.8-0.9,67\n" +
+"xml,0.9-1,32\n" +
+"audio/mpeg,0-0.1,67\n" +
+"audio/mpeg,0.1-0.2,98\n" +
+"audio/mpeg,0.2-0.3,29\n" +
+"audio/mpeg,0.3-0.4,54\n" +
+"audio/mpeg,0.4-0.5,12\n" +
+"audio/mpeg,0.5-0.6,67\n" +
+"audio/mpeg,0.6-0.7,89\n" +
+"audio/mpeg,0.7-0.8,93\n" +
+"audio/mpeg,0.8-0.9,12\n" +
+"audio/mpeg,0.9-1,6\n" +
+"gif,0-0.1,78\n" +
+"gif,0.1-0.2,70\n" +
+"gif,0.2-0.3,77\n" +
+"gif,0.3-0.4,46\n" +
+"gif,0.4-0.5,09\n" +
+"gif,0.5-0.6,18\n" +
+"gif,0.6-0.7,67\n" +
+"gif,0.7-0.8,07\n" +
+"gif,0.8-0.9,42\n" +
+"gif,0.9-1,17\n" +
+"jpeg,0-0.1,64\n" +
+"jpeg,0.1-0.2,75\n" +
+"jpeg,0.2-0.3,87\n" +
+"jpeg,0.3-0.4,90\n" +
+"jpeg,0.4-0.5,67\n" +
+"jpeg,0.5-0.6,37\n" +
+"jpeg,0.6-0.7,76\n" +
+"jpeg,0.7-0.8,78\n" +
+"jpeg,0.8-0.9,22\n" +
+"jpeg,0.9-1,86\n" +
+"png,0-0.1,97\n" +
+"png,0.1-0.2,62\n" +
+"png,0.2-0.3,49\n" +
+"png,0.3-0.4,34\n" +
+"png,0.4-0.5,98\n" +
+"png,0.5-0.6,56\n" +
+"png,0.6-0.7,34\n" +
+"png,0.7-0.8,78\n" +
+"png,0.8-0.9,12\n" +
+"png,0.9-1,87\n" +
+"plain,0-0.1,78\n" +
+"plain,0.1-0.2,58\n" +
+"plain,0.2-0.3,46\n" +
+"plain,0.3-0.4,94\n" +
+"plain,0.4-0.5,74\n" +
+"plain,0.5-0.6,68\n" +
+"plain,0.6-0.7,98\n" +
+"plain,0.7-0.8,63\n" +
+"plain,0.8-0.9,85\n" +
+"plain,0.9-1,34\n" +
+"mp3,0-0.1,67\n" +
+"mp3,0.1-0.2,34\n" +
+"mp3,0.2-0.3,23\n" +
+"mp3,0.3-0.4,67\n" +
+"mp3,0.4-0.5,88\n" +
+"mp3,0.5-0.6,56\n" +
+"mp3,0.6-0.7,87\n" +
+"mp3,0.7-0.8,78\n" +
+"mp3,0.8-0.9,98\n" +
+"mp3,0.9-1,21\n" +
+"quicktime,0-0.1,2\n" +
+"quicktime,0.1-0.2,5\n" +
+"quicktime,0.2-0.3,12\n" +
+"quicktime,0.3-0.4,23\n" +
+"quicktime,0.4-0.5,46\n" +
+"quicktime,0.5-0.6,54\n" +
+"quicktime,0.6-0.7,8\n" +
+"quicktime,0.7-0.8,12\n" +
+"quicktime,0.8-0.9,76\n" +
+"quicktime,0.9-1,89\n" 
+;
+
+var data = d3.csv.parse(raw);
+// csv loaded asynchronously
   // Data is nested by mimetype
   var countries = d3.nest()
       .key(function(d) { return d.mimetype; })
@@ -162,7 +307,6 @@ d3.csv("data_diversity.csv", type, function(data) {
 
   svg.call(tip);
 
-});
 
 function type(d) {
   d.values = +d.values;

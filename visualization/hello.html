@@ -81,8 +81,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a data-toggle="tab" href="#classification_path">Classification Path</a></li>
-                    <li><a data-toggle="tab" href="#file_size_diversity">File Size Diversity</a></li>
+                    
+                    <li class="active"><a data-toggle="tab" href="#file_size_diversity">File Size Diversity</a></li>
+                    <li><a data-toggle="tab" href="#classification_path">Classification Path</a></li>
+                    
                     <li><a data-toggle="tab" href="#text_retrieved">Text Retrieved</a></li>
                     <li><a data-toggle="tab" href="#metadata_retrieved">Metadata Retrieved</a></li>
                     <li><a data-toggle="tab" href="#language_diversity">Language Diversity</a></li>
@@ -97,11 +99,11 @@
 
         <div class="tab-content">
 
-        <div id="classification_path" class="tab-pane fade in active">
+        <div id="classification_path" class="tab-pane fade">
         
         <ul class="nav nav-pills nav-justified">
   <li class="active"><a data-toggle="pill" href="#cca1">Word Cloud-Entities</a></li>
-  <li ><a data-toggle="pill" href="#cca2">Request Response Dendogram</a></li>
+  <li><a data-toggle="pill" href="#cca2">Request Response Dendogram</a></li>
 </ul>
 
 <div class="tab-content">
@@ -118,20 +120,20 @@
 
             </div>
             </div>
-            <div id="file_size_diversity" class="tab-pane fade">
-                <iframe src="http://cs-server.usc.edu:46737/smallrange.html" class="nob"></iframe>
+            <div id="file_size_diversity" class="tab-pane fade in active">
+                <iframe src="smallrange.html" class="nob"></iframe>
             </div>
             <div id="text_retrieved" class="tab-pane fade">
-                <iframe src="http://cs-server.usc.edu:46737/text-retrieved.html" class="nob"></iframe>
+                <iframe src="text-retrieved.html" class="nob"></iframe>
             </div>
             <div id="metadata_retrieved" class="tab-pane fade">
-                <iframe src="http://cs-server.usc.edu:46737/metadata-retrieved(1).html" class="nob"></iframe>
+                <iframe src="metadata-retrieved(1).html" class="nob"></iframe>
             </div>
             <div id="language_diversity" class="tab-pane fade">
-                <
+            
                    <h4 style="margin-top: -5px;"> This Dashboard is a comprehensive visualization of the language diversity across the TRECC Polar Dataset.
                 </h4>
-                <iframe src="http://cs-server.usc.edu:46737/dashboard_language.html" class="nob"  style="margin-top:-62px"> </iframe>
+                <iframe src="dashboard_language.html" class="nob"  style="margin-top:-62px"> </iframe>
             </div>
 
             <div id="word_cloud" class="tab-pane fade">

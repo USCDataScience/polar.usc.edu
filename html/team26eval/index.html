@@ -36,7 +36,7 @@ ___Green:html<br>
 ___Orange:pdf<br>
 ___LightGreen:txt<br>
 ___Red:xhtml<br>
-<script src="https://d3js.org/d3.v4.0.0-alpha.29.min.js"></script>
+<script src="../../js/team26eval/d3.v4.0.0-alpha.29.min.js"></script>
 <script>
 
 var width = 960,
@@ -56,7 +56,7 @@ var treemap = d3.treemap()
     .padding(1)
     .round(true);
 
-d3.csv("flare.csv", type, function(error, data) {
+d3.csv("../../data/team26eval/flare.csv", type, function(error, data) {
   if (error) throw error;
 
   var root = stratify(data)

@@ -39,7 +39,7 @@ body {
 </style>
 <body>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="../../js/team4eval/d3.min.js"></script>
 <script>
 
 
@@ -82,7 +82,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("domain.csv", function(error, data) {
+d3.csv("../../data/team4eval/domain.csv", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "State"; }));
   
   

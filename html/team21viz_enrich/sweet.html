@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.layout.clouds.js"></script>
+<head>
+    <title>Word Cloud Example</title>
+</head>
+<style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+    }
+    .bld {
+        font-weight: bold;
+    }
+</style>
+<body>
+
+</body>
+<script>
+
+        var frequency_list = [{"text": "zonal", "size": 4}, {"text": "force", "size": 38}, {"text": "burning", "size": 8}, {"text": "process", "size": 48}, {"text": "radiative", "size": 8}, {"text": "energy", "size": 172}, {"text": "saline", "size": 6}, {"text": "phenomena", "size": 12}, {"text": "gravity", "size": 14}, {"text": "solute", "size": 6}, {"text": "thermal", "size": 68}, {"text": "medium", "size": 14}, {"text": "eddy", "size": 8}, {"text": "fast", "size": 14}, {"text": "sea", "size": 196}, {"text": "insulation", "size": 6}, {"text": "salinity", "size": 16}, {"text": "speed", "size": 8}, {"text": "film", "size": 8}, {"text": "chemistry", "size": 28}, {"text": "orbital", "size": 16}, {"text": "chemical", "size": 8}, {"text": "rapid", "size": 24}, {"text": "crystal", "size": 20}, {"text": "glacier", "size": 28}, {"text": "transfer", "size": 66}, {"text": "radiation", "size": 46}, {"text": "snow", "size": 112}, {"text": "ice", "size": 394}, {"text": "flushing", "size": 8}, {"text": "current", "size": 58}, {"text": "cooling", "size": 8}, {"text": "decompression", "size": 8}, {"text": "moisture", "size": 38}, {"text": "glacial", "size": 8}, {"text": "waste", "size": 6}, {"text": "bubble", "size": 6}, {"text": "genesis", "size": 8}, {"text": "plasma", "size": 8}, {"text": "tension", "size": 2}, {"text": "mixture", "size": 12}, {"text": "electric", "size": 12}, {"text": "trace", "size": 40}, {"text": "snowpack", "size": 2}, {"text": "material", "size": 34}, {"text": "gas", "size": 34}, {"text": "fluid", "size": 12}, {"text": "rain", "size": 2}, {"text": "wave", "size": 50}, {"text": "water", "size": 116}, {"text": "pressure", "size": 16}, {"text": "seawater", "size": 4}, {"text": "substance", "size": 6}, {"text": "severe", "size": 4}, {"text": "firn", "size": 6}, {"text": "path", "size": 2}, {"text": "rotation", "size": 2}, {"text": "neutral", "size": 4}, {"text": "burned", "size": 4}, {"text": "dry", "size": 6}, {"text": "droplet", "size": 2}, {"text": "effluent", "size": 6}, {"text": "particle", "size": 16}, {"text": "liquid", "size": 34}, {"text": "glass", "size": 4}, {"text": "solid", "size": 82}, {"text": "light", "size": 42}, {"text": "oxide", "size": 12}, {"text": "drop", "size": 8}, {"text": "solution", "size": 20}, {"text": "air", "size": 116}, {"text": "motion", "size": 16}, {"text": "frozen", "size": 4}, {"text": "depth", "size": 64}, {"text": "heating", "size": 8}, {"text": "groundwater", "size": 8}, {"text": "iron", "size": 28}, {"text": "electromagnetic", "size": 8}, {"text": "effect", "size": 8}, {"text": "vapor", "size": 16}, {"text": "wastewater", "size": 8}, {"text": "greenhouse", "size": 16}];
+
+    var color = d3.scale.linear()
+            .domain([0,10,20,30,40,50,60,70,80,90,100])
+            .range(["#803737", "#375680", "#5A43BA", "#43BA68", "#EEE34A", "#800080", "#FFA000", "#EEE34A", "#FFFF00", "#EEE34A", "#0000FF", "#FF0000"]);
+
+    d3.layout.cloud().size([1000, 500])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) { return d.size; })
+            .on("end", draw)
+            .start();
+
+    function draw(words) {
+        d3.select("body").append("svg")
+                .attr("width", 850)
+                .attr("height", 350)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(320,200)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size + "px"; })
+                .style("fill", function(d, i) { return color(i); })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+    }
+</script>
+
+<div style="width: 40%;">
+    <div class="legend">
+       Commonly used words are larger and less common words are smaller.
+
+    </div>
+
+</div>
+
+
+</html>

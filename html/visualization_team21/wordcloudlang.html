@@ -24,19 +24,16 @@
 
 </body>
 <script>
-
     var frequency_list = [{"text": "fr", "size": 120}, {"text": "lt", "size": 34}, {"text": "en", "size": 160}, {"text": "it", "size": 56}, {"text": "hu", "size": 48}, {"text": "sk", "size": 106}, {"text": "lt", "size": 197}, {"text": "es", "size": 18}, {"text": "et", "size": 88},{"text": "de", "size": 110}, {"text": "gl", "size": 30}, {"text": "hu", "size": 16}, {"text": "is", "size": 56}, {"text": "fi", "size": 48}, {"text": "eo", "size": 16}, {"text": "pl", "size": 197}, {"text": "sk", "size": 188}, {"text": "et", "size": 8}];
     var color = d3.scale.linear()
             .domain([0,1,2,3,4,5,6,10,15,20,100])
             .range(["#803737", "#375680", "#5A43BA", "#43BA68", "#EEE34A", "#800080", "#FFA000", "#EEE34A", "#FFFF00", "#EEE34A", "#0000FF", "#FF0000"]);
-
     d3.layout.cloud().size([800, 300])
             .words(frequency_list)
             .rotate(0)
             .fontSize(function(d) { return d.size; })
             .on("end", draw)
             .start();
-
     function draw(words) {
         d3.select("body").append("svg")
                 .attr("width", 850)

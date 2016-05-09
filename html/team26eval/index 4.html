@@ -24,7 +24,7 @@
 
 </style>
 <body>
-<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="../../js/team26eval/d3.v3.min.js"></script>
 <script>
 
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
@@ -47,7 +47,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("flare.json", function(error, flare) {
+d3.json("../../data/team26eval/flare.json", function(error, flare) {
   if (error) throw error;
 
   root = flare;

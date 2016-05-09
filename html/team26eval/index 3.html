@@ -46,8 +46,8 @@ body {
 
 </style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="box.js"></script>
+<script src="../../js/team26eval/d3.v2.2.9.3.min.js"></script>
+<script src="../../js/team26eval/box.js"></script>
 <script>
 var labels = true; // show the text labels beside individual boxplots?
 
@@ -59,7 +59,7 @@ var min = Infinity,
     max = -Infinity;
 	
 // parse in the data	
-d3.csv("data.csv", function(error, csv) {
+d3.csv("../../data/team26eval/data.csv", function(error, csv) {
 	// using an array of arrays with
 	// data[n][2] 
 	// where n = number of columns in the csv file 

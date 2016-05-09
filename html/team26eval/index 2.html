@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<script src="../../js/team26eval/d3.v2.2.9.3.min.js"></script>
+<script src="../../js/team26eval/d3.v3.min.js"></script>
 <style>
 
 .link {
@@ -41,11 +41,11 @@ d3.json("../../data/team26eval/graphFile.json", function(json) {
       .links(json.links)
       .start();
 
-  /*var link = svg.selectAll(".link")
+  var link = svg.selectAll(".link")
       .data(json.links)
     .enter().append("line")
       .attr("class", "link")
-    .style("stroke-width", function(d) { if (!undefined(d.weight)) {return Math.sqrt(d.weight);} else return 3;  });*/
+    .style("stroke-width", function(d) { return Math.sqrt(d.weight); });
 
   var node = svg.selectAll(".node")
       .data(json.nodes)

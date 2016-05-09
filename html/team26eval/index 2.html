@@ -47,11 +47,11 @@ d3.json("../../data/team26eval/graphFile.json", function(json) {
       .attr("class", "link")
     .style("stroke-width", function(d) { return Math.sqrt(d.weight); });
 
-  var node = svg.selectAll(".node")
+/*  var node = svg.selectAll(".node")
       .data(json.nodes)
     .enter().append("g")
       .attr("class", "node")
-      .call(force.drag);
+      .call(force.drag);*/
 
   node.append("circle")
       .attr("r","5");

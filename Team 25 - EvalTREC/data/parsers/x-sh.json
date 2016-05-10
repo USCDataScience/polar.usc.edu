@@ -1,0 +1,4 @@
+{
+    "org.apache.tika.parser.txt.TXTParser": 1, 
+    "org.apache.tika.parser.DefaultParser": 1
+}

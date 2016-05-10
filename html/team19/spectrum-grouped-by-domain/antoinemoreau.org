@@ -1,2 +1,0 @@
-unit,count,min,max,average
-pages,1,2009.0,2009.0,2009.0

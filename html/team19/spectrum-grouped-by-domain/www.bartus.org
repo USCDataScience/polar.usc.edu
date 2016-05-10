@@ -1,2 +1,0 @@
-unit,count,min,max,average
-cm,3,10.0,10.0,10.0

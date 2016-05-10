@@ -1,2 +1,0 @@
-unit,count,min,max,average
-Years,2,70.0,70.0,70.0

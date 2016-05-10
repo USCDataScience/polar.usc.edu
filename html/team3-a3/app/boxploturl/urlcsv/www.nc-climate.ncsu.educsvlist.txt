@@ -1,5 +1,0 @@
-feet
-foot
-degrees
-days
-degree

@@ -1,4 +1,0 @@
-unit,count,min,max,average
-quarter,5,21.0,90.0,76.2
-minutes,1,30.0,30.0,30.0
-second,1,1.0,1.0,1.0

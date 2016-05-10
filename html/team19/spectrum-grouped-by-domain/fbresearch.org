@@ -1,3 +1,0 @@
-unit,count,min,max,average
-hours,5,2.0,17.0,10.0
-year,1,40.0,40.0,40.0

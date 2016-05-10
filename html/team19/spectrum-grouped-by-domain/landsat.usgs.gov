@@ -1,8 +1,0 @@
-unit,count,min,max,average
-hours,1,24.0,24.0,24.0
-miles,2,1.4,373.0,187.2
-kilometers,1,600.0,600.0,600.0
-Years,1,32.0,32.0,32.0
-system,2,7.0,10.1,8.55
-meters,5,15.0,60.0,39.0
-months,1,6.0,6.0,6.0

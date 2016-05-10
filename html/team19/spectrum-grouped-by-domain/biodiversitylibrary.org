@@ -1,5 +1,0 @@
-unit,count,min,max,average
-volumes,1,543.0,543.0,543.0
-pages,1,53015.0,53015.0,53015.0
-hours,4,14.0,17.0,15.5
-hour,1,1.0,1.0,1.0

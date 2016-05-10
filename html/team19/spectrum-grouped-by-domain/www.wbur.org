@@ -1,3 +1,0 @@
-unit,count,min,max,average
-inches,6,8.0,61.6,29.983333333333327
-Years,2,20.0,20.0,20.0

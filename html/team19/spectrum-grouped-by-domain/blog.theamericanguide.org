@@ -1,3 +1,0 @@
-unit,count,min,max,average
-acres,1,2700.0,2700.0,2700.0
-years,1,80.0,80.0,80.0

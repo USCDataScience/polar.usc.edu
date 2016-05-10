@@ -1,2 +1,0 @@
-unit,count,min,max,average
-kb,21,38.0,724.0,140.95238095238096

@@ -1,8 +1,0 @@
-unit,count,min,max,average
-cm,5,25.0,50.0,36.0
-feet,5,0.82,1.64,1.176
-prefixes,1,21.0,21.0,21.0
-meters,4,10.0,100.0,55.0
-meter,2,1.0,1.0,1.0
-degrees,2,6.0,8.0,7.0
-digits,2,5.0,5.0,5.0

@@ -1,3 +1,0 @@
-unit,count,min,max,average
-Years,2,40.0,100.0,70.0
-page,1,140.0,140.0,140.0

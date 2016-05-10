@@ -1,2 +1,0 @@
-unit,count,min,max,average
-meters,1,5000.0,5000.0,5000.0

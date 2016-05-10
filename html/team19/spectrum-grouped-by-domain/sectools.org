@@ -1,4 +1,0 @@
-unit,count,min,max,average
-months,39,2.0,12.0,7.820512820512823
-years,32,2.0,18.0,5.5
-year,7,1.0,1.0,1.0

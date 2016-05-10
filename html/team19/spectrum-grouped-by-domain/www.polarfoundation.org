@@ -1,4 +1,0 @@
-unit,count,min,max,average
-years,1,10.0,10.0,10.0
-edition,6,2014.0,2014.0,2014.0
-prefixes,1,21.0,21.0,21.0

@@ -1,5 +1,0 @@
-unit,count,min,max,average
-meters,1,30.0,30.0,30.0
-years,3,3.0,10.0,7.666666666666666
-hours,1,10.0,10.0,10.0
-minutes,1,20.0,20.0,20.0

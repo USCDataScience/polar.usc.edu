@@ -1,8 +1,0 @@
-unit,count,min,max,average
-hours,8,2.0,72.0,19.75
-day,1,1.0,1.0,1.0
-Hour,1,24.0,24.0,24.0
-year,1,1.0,1.0,1.0
-minutes,1,15.0,15.0,15.0
-pages,2,10.0,10.0,10.0
-transitions,2,2.0,2.0,2.0

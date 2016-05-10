@@ -1,5 +1,0 @@
-unit,count,min,max,average
-pages,5,107.0,692.0,399.0
-months,1,6.0,6.0,6.0
-kB,1,916.0,916.0,916.0
-years,1,5.0,5.0,5.0

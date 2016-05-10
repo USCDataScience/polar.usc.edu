@@ -1,0 +1,4 @@
+{
+    "org.apache.tika.parser.DefaultParser": 553, 
+    "org.apache.tika.parser.image.ImageParser": 553
+}

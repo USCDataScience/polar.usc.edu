@@ -1,0 +1,4 @@
+{
+    "org.apache.tika.parser.DefaultParser": 607, 
+    "org.apache.tika.parser.mp4.MP4Parser": 607
+}

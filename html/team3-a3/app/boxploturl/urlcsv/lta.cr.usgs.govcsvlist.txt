@@ -1,8 +1,0 @@
-feet
-kb
-kilometer
-minute
-degree
-mb
-foot
-per

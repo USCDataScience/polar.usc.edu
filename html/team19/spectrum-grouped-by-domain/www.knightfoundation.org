@@ -1,7 +1,0 @@
-unit,count,min,max,average
-years,6,17.0,200.0,59.5
-hours,16,2.0,24.0,10.3125
-minutes,16,2.0,57.0,21.625
-hour,1,1.0,1.0,1.0
-minute,1,1.0,1.0,1.0
-length,1,0.0,0.0,0.0

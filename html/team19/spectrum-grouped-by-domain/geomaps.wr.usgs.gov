@@ -1,7 +1,0 @@
-unit,count,min,max,average
-miles,4,7.0,15.0,10.5
-feet,4,317.0,620.0,462.75
-millimeters,2,0.0625,2.0,1.03125
-degrees,1,90.0,90.0,90.0
-times,1,20.0,20.0,20.0
-years,1,150.0,150.0,150.0

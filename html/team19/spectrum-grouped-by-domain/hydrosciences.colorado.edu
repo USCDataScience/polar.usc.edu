@@ -1,5 +1,0 @@
-unit,count,min,max,average
-minute,1,10.0,10.0,10.0
-months,1,18.0,18.0,18.0
-gallons,1,6000.0,6000.0,6000.0
-meters,1,170.0,170.0,170.0

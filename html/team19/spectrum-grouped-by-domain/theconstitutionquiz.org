@@ -1,2 +1,0 @@
-unit,count,min,max,average
-points,9,12.0,664.0,217.88888888888886

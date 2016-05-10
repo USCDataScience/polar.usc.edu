@@ -1,0 +1,22 @@
+[
+  "application/gzip",
+  "text/x-matlab",
+  "application/atom+xml",
+  "image/jpeg",
+  "text/html",
+  "image/gif",
+  "audio/mpeg",
+  "video/quicktime",
+  "image/png",
+  "application/x-tika-ooxml",
+  "video/mp4",
+  "image/vnd.microsoft.icon",
+  "application/x-sh",
+  "application/java-archive",
+  "text/x-perl",
+  "application/pdf",
+  "application/octet-stream",
+  "application/rtf",
+  "application/rss+xml",
+  "text/plain"
+]

@@ -1,4 +1,0 @@
-volume
-degrees
-hrs
-km

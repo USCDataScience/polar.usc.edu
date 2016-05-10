@@ -1,3 +1,0 @@
-unit,count,min,max,average
-entries,1,500.0,500.0,500.0
-page,1,122.0,122.0,122.0

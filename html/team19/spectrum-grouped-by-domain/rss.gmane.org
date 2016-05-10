@@ -1,6 +1,0 @@
-unit,count,min,max,average
-bits,3,85.0,136.0,102.0
-years,2,30.0,30.0,30.0
-minutes,3,20.0,50.0,40.0
-numbers,1,10.0,10.0,10.0
-minute,1,1.0,1.0,1.0

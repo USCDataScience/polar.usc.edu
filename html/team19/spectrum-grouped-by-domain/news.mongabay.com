@@ -1,9 +1,0 @@
-unit,count,min,max,average
-years,10,10.0,450.0,107.3
-acres,2,2.79,140.0,71.395
-meters,1,1.2,1.2,1.2
-feet,1,4.0,4.0,4.0
-kilograms,1,230.0,230.0,230.0
-pounds,1,500.0,500.0,500.0
-kilometers,1,560.0,560.0,560.0
-hectares,1,1.13,1.13,1.13

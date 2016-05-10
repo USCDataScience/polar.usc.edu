@@ -1,6 +1,0 @@
-unit,count,min,max,average
-minutes,3,15.0,60.0,40.0
-cm,2,90.0,200.0,145.0
-months,1,6.0,6.0,6.0
-hours,1,24.0,24.0,24.0
-transitions,1,2.0,2.0,2.0

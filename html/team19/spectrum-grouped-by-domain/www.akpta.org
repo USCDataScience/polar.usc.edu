@@ -1,2 +1,0 @@
-unit,count,min,max,average
-degree,3,180.0,180.0,180.0

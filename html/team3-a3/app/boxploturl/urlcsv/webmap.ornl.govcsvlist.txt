@@ -1,7 +1,0 @@
-degree
-days
-km
-kilometer
-degrees
-day
-minute

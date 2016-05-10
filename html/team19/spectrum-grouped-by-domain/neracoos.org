@@ -1,4 +1,0 @@
-unit,count,min,max,average
-hours,5,12.0,48.0,40.8
-degree,1,0.25,0.25,0.25
-m,1,4.6,4.6,4.6

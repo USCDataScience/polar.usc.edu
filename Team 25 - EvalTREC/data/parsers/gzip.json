@@ -1,0 +1,19 @@
+{
+    "org.apache.tika.parser.rtf.RTFParser": 3, 
+    "org.apache.tika.parser.ocr.TesseractOCRParser": 51, 
+    "org.apache.tika.parser.executable.ExecutableParser": 13, 
+    "org.apache.tika.parser.pkg.PackageParser": 120, 
+    "org.apache.tika.parser.txt.TXTParser": 1821, 
+    "org.apache.tika.parser.hdf.HDFParser": 2, 
+    "org.apache.tika.parser.html.HtmlParser": 239, 
+    "org.apache.tika.parser.asm.ClassParser": 50, 
+    "org.apache.tika.parser.image.ImageParser": 45, 
+    "org.apache.tika.server.resource.TikaResource$1": 102, 
+    "org.apache.tika.parser.microsoft.OfficeParser": 1, 
+    "org.apache.tika.parser.netcdf.NetCDFParser": 1, 
+    "org.apache.tika.parser.code.SourceCodeParser": 143, 
+    "org.apache.tika.parser.pdf.PDFParser": 4, 
+    "org.apache.tika.parser.pkg.CompressorParser": 245, 
+    "org.apache.tika.parser.DefaultParser": 2666, 
+    "org.apache.tika.parser.jpeg.JpegParser": 8
+}

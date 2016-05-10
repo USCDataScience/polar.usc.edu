@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tree Example</title>
+
+    <style>
+	
+	.node {
+		cursor: pointer;
+	}
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+	}
+
+	.node text {
+	  font: 12px sans-serif;
+	}
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 2px;
+	}
+	
+    </style>
+
+  </head>
+
+  <body>
+
+<!-- load the d3.js library -->	
+<script src="http://d3js.org/d3.v3.min.js"></script>
+	
+<script>
+
+var treeData = [
+  {
+	"name": "Titles",
+	"children": [{
+		"name": "Monika Waelti",
+		"children": [{
+			"name": "2007",
+			"children": [{
+				"name": "Climate Economics at the NCCR Climate",
+				"size": 3938
+			}]
+		}, {
+			"name": "2011",
+			"children": [{
+				"name": "C2SM, MeteoSwiss, ETH, NCCR Climate, and OcCC",
+				"size": 3534
+			}, {
+				"name": "Quantifying direct and induced economic costs of climate change",
+				"size": 5731
+			}, {
+				"name": "Zurich, Switzerland: C2SM, MeteoSwiss, ETH, NCCR Climate and OcCC",
+				"size": 7840
+			}]
+		}, {
+			"name": "2005",
+			"children": [{
+				"name": "Climate Economics at the NCCR Climate",
+				"size": 7074
+			}]
+		}]
+	}, {
+		"name": "Suzette Kimball",
+		"children": [{
+			"name": "1988",
+			"children": [{
+				"name": "Coastal erosion and accretion",
+				"size": 1983
+			}, {
+				"name": "REDD2 expression in rat skeletal muscle correlates with nutrient-induced activation of mTORC1",
+				"size": 1983
+			}]
+		}, {
+			"name": "1995",
+			"children": [{
+				"name": "Late Quaternary paleochannel systems on the continental shelf, south of the Chesapeake Bay entrance",
+				"size": 1983
+			}, {
+				"name": "Population ecology of white-tailed deer in Big Cypress National Preserve and Everglades National Park",
+				"size": 1983
+			}]
+		}, {
+			"name": "2009",
+			"children": [{
+				"name": "Mercury, Methylmercury, and Other Constituents in Sediment and Water from Seasonal and Permanent Wetlands",
+				"size": 1983
+			}]
+		}, {
+			"name": "2013",
+			"children": [{
+				"name": "Users, uses, and value of Landsat satellite imagery",
+				"size": 1983
+			}, {
+				"name": "More Than One Million Years of History in Lake Ohrid Cores",
+				"size": 1983
+			}, {
+				"name": "Proposed US Geological Survey Budget Would Provide Significant Increase",
+				"size": 1983
+			}, {
+				"name": "xperts Examine Role Scientists Play in Oil Transportation Issues",
+				"size": 1983
+			}]
+		}, {
+			"name": "1989",
+			"children": [{
+				"name": "Physiographic and Geological Setting of the Coastal Engineering Research Center's Field Research",
+				"size": 1983
+			}]
+		}, {
+			"name": "1985",
+			"children": [{
+				"name": "Coastal hazards, 1985",
+				"size": 1983
+			}]
+		}]
+	}, {
+		"name": "Carolyn Branecky",
+		"children": [{
+			"name": "2015",
+			"children": [{
+				"name": "Grounding Zones, Subglacial Lakes, and Dynamics of an Antarctic",
+				"size": 721
+			}, {
+				"name": "Environment at the Grounding Zone of the Whillans Ice Stream-Ross Ice Shelf, West Antarctica",
+				"size": 4294
+			}, {
+				"name": "Deep and Dark: Geophysical Exploration of the Cryosphere I Posters",
+				"size": 4294
+			}, {
+				"name": "Feedback between deglaciation and volcanism in arc settings: the example of the Mount Mazama volcanic system",
+				"size": 4294
+			}]
+		}, {
+			"name": "2011",
+			"children": [{
+				"name": "GEOMORPHOLOGY, OSL AGES AND VOLUME ESTIMATES OF A NIPISSING BEACH RIDGE/DUNE COMPLEX NEAR KANGAROO LAKE",
+				"size": 721
+			}]
+		}]
+	}, {
+		"name": "Matthew Deland",
+		"children": [{
+			"name": "2003",
+			"children": [{
+				"name": "Neutral atmospheric influences of the solar proton events in October–November",
+				"size": 721
+			}, {
+				"name": "Solar backscattered ultraviolet (SBUV) observations of polar mesospheric clouds (PMCs) over two solar cycles",
+				"size": 4294
+			}]
+		}, {
+			"name": "2006",
+			"children": [{
+				"name": "Composite Mg II solar activity index for solar cycles 21 and 22",
+				"size": 721
+			}]
+		}, {
+			"name": "2005",
+			"children": [{
+				"name": "A quarter-century of satellite polar mesospheric cloud observations",
+				"size": 721
+			}, {
+				"name": "The influence of the several very large solar proton events in years 2000–2003 on the neutral middle atmosphere",
+				"size": 721
+			}]
+		}, {
+			"name": "2007",
+			"children": [{
+				"name": "Latitude-dependent long-term variations in polar mesospheric clouds from SBUV version 3 PMC data",
+				"size": 721
+			}]
+		}, {
+			"name": "1998",
+			"children": [{
+				"name": "Comparisons of the NOAA-11 SBUV/2, UARS SOLSTICE, and UARS SUSIM Mg II solar activity proxy indexes",
+				"size": 721
+			}]
+		}, {
+			"name": "2012",
+			"children": [{
+				"name": "How does the Sun's spectrum vary?",
+				"size": 721
+			}]
+		}]
+	}, {
+		"name": "ED Waddington",
+		"children": [{
+			"name": "1984",
+			"children": [{
+				"name": "Nutritional hazards of elimination diets in children with atopic eczema",
+				"size": 721
+			}]
+		}, {
+			"name": "1996",
+			"children": [{
+				"name": "Climate change during the last deglaciation in Antarctica",
+				"size": 721
+			}, {
+				"name": "The effects of snow ventilation on chemical concentrations",
+				"size": 721
+			}, {
+				"name": "Red wine polyphenolic compounds inhibit atherosclerosis in apolipoprotein E–deficient mice",
+				"size": 721
+			}]
+		}, {
+			"name": "1999",
+			"children": [{
+				"name": "Past and future grounding-line retreat of the West Antarctic Ice Sheet",
+				"size": 721
+			}, {
+				"name": "Distortion of isochronous layers in ice revealed by ground-penetrating radar",
+				"size": 4294
+			}]
+		}, {
+			"name": "1989",
+			"children": [{
+				"name": "Time-scale for adjustment of glaciers to changes in mass balance",
+				"size": 721
+			}]
+		}, {
+			"name": "1998",
+			"children": [{
+				"name": "Synchronous climate changes in Antarctica and the North Atlantic",
+				"size": 721
+			}]
+		}, {
+			"name": "1994",
+			"children": [{
+				"name": "The accumulation record from the GISP2 core as an indicator of climate change throughout the Holocene",
+				"size": 721
+			}]
+		}, {
+			"name": "1993",
+			"children": [{
+				"name": "Electrical conductivity measurements from the GISP 2 and GRIP Greenland ice cores",
+				"size": 721
+			}]
+		}, {
+			"name": "2000",
+			"children": [{
+				"name": "Numerical simulations of glacial-valley longitudinal profile evolution",
+				"size": 721
+			}, {
+				"name": "Wisconsinan and Holocene climate history from an ice core at Taylor Dome, western Ross Embayment, Antarctica",
+				"size": 721
+			}]
+		}]
+	}]
+}
+];
+
+
+// ************** Generate the tree diagram	 *****************
+var margin = {top: 20, right: 120, bottom: 20, left: 120},
+	width = 1000 - margin.right - margin.left,
+	height = 1200 - margin.top - margin.bottom;
+	
+var i = 0,
+	duration = 750,
+	root;
+
+var tree = d3.layout.tree()
+	.size([height, width]);
+
+var diagonal = d3.svg.diagonal()
+	.projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+	.attr("width", width + margin.right + margin.left)
+	.attr("height", height + margin.top + margin.bottom)
+  .append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+root = treeData[0];
+root.x0 = height / 2;
+root.y0 = 0;
+  
+update(root);
+
+d3.select(self.frameElement).style("height", "1300px");
+
+function update(source) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+	  links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+	  .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+	  .attr("class", "node")
+	  .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+	  .on("click", click);
+
+  nodeEnter.append("circle")
+	  .attr("r", 1e-6)
+	  .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("text")
+	  .attr("x", function(d) { return d.children || d._children ? -13 : 13; })
+	  .attr("dy", ".35em")
+	  .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+	  .text(function(d) { return d.name; })
+	  .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+	  .duration(duration)
+	  .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+	  .attr("r", 10)
+	  .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+	  .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+	  .duration(duration)
+	  .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+	  .remove();
+
+  nodeExit.select("circle")
+	  .attr("r", 1e-6);
+
+  nodeExit.select("text")
+	  .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+	  .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+	  .attr("class", "link")
+	  .attr("d", function(d) {
+		var o = {x: source.x0, y: source.y0};
+		return diagonal({source: o, target: o});
+	  });
+
+  // Transition links to their new position.
+  link.transition()
+	  .duration(duration)
+	  .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+	  .duration(duration)
+	  .attr("d", function(d) {
+		var o = {x: source.x, y: source.y};
+		return diagonal({source: o, target: o});
+	  })
+	  .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+	d.x0 = d.x;
+	d.y0 = d.y;
+  });
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+	d._children = d.children;
+	d.children = null;
+  } else {
+	d.children = d._children;
+	d._children = null;
+  }
+  update(d);
+}
+
+</script>
+	
+  </body>
+</html>

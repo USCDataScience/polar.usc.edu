@@ -1,0 +1,47 @@
+<html>
+ <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Content Ratio per Mime Type',
+            x: -20 //center
+        },
+        xAxis: {
+            categories: ['x-elc', 'zlib', 'vnd.ms-excel', 'postscript', 'x-ms-wmv', 'x-bzip2',
+                'tiff', 'vnd.openxml', 'x-font-ttf', 'xhtml+xml', 'x-sqlite3', 'zip', 'png', 'x-msdownload', 'atom+xml', 'rdf+xml', 'gif', 'msword', 'text/html', 'mpeg', 'x-flv', 'rfc822', 'x-tika-msoffice', 'kml+xml','x-shockwave-flash','svg+xml','octet-stream','epub+zip','x-ms-bmp','xml','jpeg','rss+xml','mp4','gzip','pdf']
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+       
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+	exporting: { enabled: false },
+	credits: {
+            enabled: false
+        },
+        series: [
+        {
+            name: 'Ratio',
+            data: [0.0,0.5258789,0.0514516,0.0,0.0,0.0,0.0,0.17222707,0.0,0.51827985,0.19270578,0.0,0.0023857527,0.0,0.0,0.027014975,0.6435153,0.0,0.09459585,0.15406315,7.9908053E-4,0.0,0.16997027,0.0,0.4359847,0.0,0.0,0.016668005,0.0,0.0,0.80862314,0.0,0.4078394,0.0,0.12831837,0.94359815,0.0,0.0,2.2245491E-5,0.0,0.02135039]
+        }]
+    });
+});
+</script>
+</html>

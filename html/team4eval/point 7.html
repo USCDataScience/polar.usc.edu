@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../../css/team4eval/nv.d3.css" rel="stylesheet" type="text/css">
+    <script src="../../js/team4eval/d3.min.js" charset="utf-8"></script>
+    <script src="../../js/team4eval/nv.d3.js"></script>
+    <script src="../../js/team4eval/stream_layers.js"></script>
+
+    <style>
+        text {
+            font: 12px sans-serif;
+        }
+        
+        .testBlock {
+            display: block;
+            float: left;
+            height: 600px;
+            width: 600px;
+        }
+        
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Language diversity : Polar Dataset</h2>
+
+    <div class="testBlock">
+        <svg id="test1"></svg>
+    </div>
+
+    <script>
+        var testdata = [
+            {
+                key: "Romanian",
+                y: 38549
+            },
+            {
+                key: "Catalan",
+                y: 33
+            },
+            {
+                key: "Norwegian",
+                y: 10003
+            },
+            {
+                key: "Hungarian",
+                y: 21732
+            },
+            {
+                key: "Lithuanian",
+                y: 28778
+            },
+            {
+                key: "Thai",
+                y: 2
+            },
+            {
+                key: "German",
+                y: 75
+            },
+            {
+                key: "Finnish",
+                y: 31
+            },
+            {
+                key: "Swedish",
+                y: 16
+            },
+            {
+                key: "French",
+                y: 1280
+            },
+            {
+                key: "Belarusian",
+                y: 8
+            },
+            {
+                key: "Slovenian",
+                y: 14
+            },
+            {
+                key: "Slovak",
+                y: 15914
+            },
+            {
+                key: "Ukrainian",
+                y: 33
+            },
+            {
+                key: "Icelandic",
+                y: 304
+            },
+            {
+                key: "Danish",
+                y: 42
+            },
+            {
+                key: "Italian",
+                y: 53848
+            },
+            {
+                key: "Persian",
+                y: 3
+            },
+            {
+                key: "Galician",
+                y: 496
+            },
+            {
+                key: "Greek",
+                y: 1
+            },
+            {
+                key: "Polish",
+                y: 294
+            },
+            {
+                key: "Portuguese",
+                y: 27
+            },
+            {
+                key: "Esperanto",
+                y: 3
+            },
+            {
+                key: "English",
+                y: 17292
+            },
+            {
+                key: "Russian",
+                y: 8
+            },
+            {
+                key: "Estonian",
+                y: 11189
+            },
+            {
+                key: "Dutch",
+                y: 1
+            }
+    ];
+
+        var width = 600;
+        var height = 600;
+
+        nv.addGraph(function () {
+            var chart = nv.models.pie()
+                .x(function (d) {
+                    return d.key;
+                })
+                .y(function (d) {
+                    return d.y;
+                })
+                .width(width)
+                .height(height)
+                .labelType(function (d, i, values) {
+                    return values.key + ':' + values.value;
+                });
+
+            d3.select("#test1")
+                .datum([testdata])
+                .transition().duration(1200)
+                .attr('width', width)
+                .attr('height', height)
+                .call(chart);
+
+            return chart;
+        });
+    </script>
+</body>
+
+</html>

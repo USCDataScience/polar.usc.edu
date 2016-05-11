@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        .footer {
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.2.0.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--a class="navbar-brand" href="#">HW 3: Evaluating TREC Polar Dataset</a-->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Classification Path</a></li>
+                    <li><a href="barchart.html">File Size Diversity</a></li>
+                    <li><a href="bubblematrix.html">Data Retrieved</a></li>
+                    <li><a href="d3pie.html">Language Identification</a></li>
+                    <li><a href="wordcloud.html">Word Cloud</a></li>
+                    <li><a href="ner-agreement.html">Maximal Joint Agreement</a></li>
+                    <li class="active"><a href="linechart.html">Measurement Spectrum</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Drop down for selecting visualizations for each of 15 mime types-->
+    <div class="col-xs-12">
+        <h5 style="display: inline-block;"><b>Select Measurement Spectrum: </b></h5>
+        <div style="display: inline-block;">
+            <div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span data-bind="label">All Measurements</span>&nbsp;<span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#" id="all">All Measurements</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">MIME TYPE</li>
+                        <li><a href="#" id="mime-html">text/html</a></li>
+                        <li><a href="#" id="mime-xml">application/xml</a></li>
+                        <li><a href="#" id="mime-pdf">application/pdf</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">DOMAINS</li>
+                        <li><a href="#" id="arcticjournal">arcticjournal.com</a></li>
+                        <li><a href="#" id="cpspolar">cpspolar.com</a></li>
+                        <li><a href="#" id="polardata">polardata.ca</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">MEASUREMENT TYPE</li>
+                        <li><a href="#" id="length">Length</a></li>
+                        <li><a href="#" id="weight">Weight</a></li>
+                        <li><a href="#" id="temperature">Temperature</a></li>
+                        <li><a href="#" id="time">Time</a></li>
+                        <li><a href="#" id="frequency">Frequency</a></li>
+                        <li><a href="#" id="power">Power</a></li>
+                        <li><a href="#" id="gas">Gas</a></li>
+                        <li><a href="#" id="volume">Volume</a></li>
+                        <li><a href="#" id="pressure">Pressure</a></li>
+                        <li><a href="#" id="force">Force</a></li>
+                        <li><a href="#" id="energy">Energy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- start row -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="chartContainer"></div>
+        </div>
+    </div>
+    <!-- end row-->
+
+    <footer class="footer">
+        <div class="container">
+            <p style="padding-top:5px;" class="text-muted">Developed by: TEAM 16 - Aravind Ram, Girish Rao &amp; Sandeep Kulkarni</p>
+        </div>
+    </footer>
+
+</div>
+
+    <script type="text/javascript">
+        var allVals = ["application/xml", "application/pdf", "text/html"];
+        //["FREQUENCY","TEMPERATURE","POWER","LENGTH","GAS","TIME","WEIGHT","VOLUME","PRESSURE","FORCE","ENERGY"]
+
+        jQuery(document).ready(function() {
+            createD3LineChart();
+            //createCategoryD3LineChart();
+        });
+
+        //Capture click event of each value in dropdown and pass the corresponding json file for mime-type
+        jQuery("#all").click(function(e){
+            allVals = []; allVals = ["application/xml", "application/pdf", "text/html"];
+            createD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#mime-html").click(function(e){
+            allVals = []; allVals = ["text/html"];
+            createD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#mime-xml").click(function(e){
+            allVals = []; allVals = ["application/xml"];
+            createD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#mime-pdf").click(function(e){
+            allVals = []; allVals = ["application/pdf"];
+            createD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+
+        //
+        jQuery("#arcticjournal").click(function(e){
+            allVals = []; allVals = ["arcticjournal.com"];
+            createDomainD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#cpspolar").click(function(e){
+            allVals = []; allVals = ["cpspolar.com"];
+            createDomainD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#polardata").click(function(e){
+            allVals = []; allVals = ["www.polardata.ca"];
+            createDomainD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+
+        //
+        jQuery("#length").click(function(e){
+            allVals = []; allVals = ["LENGTH"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#weight").click(function(e){
+            allVals = []; allVals = ["WEIGHT"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#temperature").click(function(e){
+            allVals = []; allVals = ["TEMPERATURE"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#time").click(function(e){
+            allVals = []; allVals = ["TIME"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#frequency").click(function(e){
+            allVals = []; allVals = ["FREQUENCY"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#power").click(function(e){
+            allVals = []; allVals = ["POWER"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#gas").click(function(e){
+            allVals = []; allVals = ["GAS"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#volume").click(function(e){
+            allVals = []; allVals = ["VOLUME"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#pressure").click(function(e){
+            allVals = []; allVals = ["PRESSURE"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#force").click(function(e){
+            allVals = []; allVals = ["FORCE"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+        jQuery("#energy").click(function(e){
+            allVals = []; allVals = ["ENERGY"];
+            createCategoryD3LineChart();
+            var $target = $( e.currentTarget );
+            $target.closest( '.btn-group' ).find( '[data-bind="label"]' ).text( $target.text() ).end().children( '.dropdown-toggle' ).dropdown( 'toggle' );
+            e.preventDefault();
+        });
+
+
+        //
+        function createD3LineChart() {
+            //alert("createD3LineChart - "+ allVals);
+            $('#chartContainer').empty();
+            var svg = dimple.newSvg("#chartContainer", 1030, 600);
+
+            d3.json("../../data/team16data/hw3json/linechart.json", function (data) {
+
+                data = dimple.filterData(data.all, "mimetype", allVals);
+
+                var myChart = new dimple.chart(svg, data);
+                myChart.setBounds(60, 30, 960, 500);
+
+                var x = myChart.addCategoryAxis("x", ["measurement", "min", "max", "mean"]);
+                x.addOrderRule("measurement");
+
+                var y = myChart.addMeasureAxis("y", ["value"]);
+                myChart.addSeries("mimetype", dimple.plot.line);
+                myChart.addLegend(5, 10, 1030, 20, "right");
+                myChart.draw();
+
+                x.titleShape.text("Measurements");
+                y.titleShape.text("Value");
+            });
+        }
+        function createCategoryD3LineChart() {
+            //alert("createCategoryD3LineChart - "+ allVals);
+            $('#chartContainer').empty();
+            var svg = dimple.newSvg("#chartContainer", 1030, 600);
+
+            d3.json("../../data/team16data/hw3json/linechart.json", function (data) {
+                data = dimple.filterData(data.measurementType, "category", allVals);
+
+                var myChart = new dimple.chart(svg, data);
+                myChart.setBounds(60, 30, 960, 500);
+
+                var x = myChart.addCategoryAxis("x", ["measurement", "min", "max", "mean"]);
+                x.addOrderRule("measurement");
+
+                var y = myChart.addMeasureAxis("y", ["value"]);
+                myChart.addSeries("mimetype", dimple.plot.line);
+                myChart.addLegend(5, 10, 1030, 20, "right");
+                myChart.draw();
+
+                x.titleShape.text("Measurements");
+                y.titleShape.text("Value");
+            });
+        }
+        function createDomainD3LineChart() {
+            //alert("createDomainD3LineChart - "+ allVals);
+            $('#chartContainer').empty();
+            var svg = dimple.newSvg("#chartContainer", 1030, 600);
+
+            d3.json("../../data/team16data/hw3json/linechart.json", function (data) {
+                data = dimple.filterData(data.domain, "domain", allVals);
+
+                var myChart = new dimple.chart(svg, data);
+                myChart.setBounds(60, 30, 960, 500);
+
+                var x = myChart.addCategoryAxis("x", ["measurement", "min", "max", "mean"]);
+                x.addOrderRule("measurement");
+
+                var y = myChart.addMeasureAxis("y", ["value"]);
+                myChart.addSeries("mimetype", dimple.plot.line);
+                myChart.addLegend(5, 10, 1030, 20, "right");
+                myChart.draw();
+
+                x.titleShape.text("Measurements");
+                y.titleShape.text("Value");
+            });
+        }
+
+
+    </script>
+
+</body>
+</html>
+

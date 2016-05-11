@@ -1,0 +1,635 @@
+<html>
+
+<head></head>
+
+<body>
+
+    <div id="pieChart"></div>
+
+    <script src="../../js/team4eval/d3.min.js"></script>
+    <script src="../../js/team4eval/d3pie.min.js"></script>
+    <script>
+        var pie = new d3pie("pieChart", {
+            "header": {
+                "title": {
+                    "text": "Tika MIME TYPE",
+                    "fontSize": 24,
+                    "font": "open sans"
+                },
+                "subtitle": {
+                    "text": "A full pie chart to show MIME TYPEs detected by APACHE TIKA",
+                    "color": "#999999",
+                    "fontSize": 12,
+                    "font": "open sans"
+                },
+                "titleSubtitlePadding": 9
+            },
+            "footer": {
+                "color": "#999999",
+                "fontSize": 10,
+                "font": "open sans",
+                "location": "bottom-left"
+            },
+            "size": {
+                "canvasHeight": 700,
+                "canvasWidth": 790,
+                "pieOuterRadius": "97%"
+            },
+            "data": {
+                "sortOrder": "label-asc",
+            "smallSegmentGrouping": {
+			"enabled": true,
+			"color": "#221010"
+		      },
+                "content": [
+                    {
+                        "label": "image/x-ms-bmp",
+                        "value": 4,
+                        "color": "#2484c1"
+                    },
+                    {
+                        "label": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                        "value": 5,
+                        "color": "#0c6197"
+                    },
+                    {
+                        "label": "application/postscript",
+                        "value": 5,
+                        "color": "#4daa4b"
+                    },
+                    {
+                        "label": "video/quicktime",
+                        "value": 8,
+                        "color": "#90c469"
+                    },
+                    {
+                        "label": "image/png",
+                        "value": 2013,
+                        "color": "#daca61"
+                    },
+                    {
+                        "label": "application/x-font-ttf",
+                        "value": 9,
+                        "color": "#e4a14b"
+                    },
+                    {
+                        "label": "image/vnd.microsoft.icon",
+                        "value": 120,
+                        "color": "#e98125"
+                    },
+                    {
+                        "label": "application/x-bzip2",
+                        "value": 7,
+                        "color": "#cb2121"
+                    },
+                    {
+                        "label": "text/troff",
+                        "value": 2,
+                        "color": "#830909"
+                    },
+                    {
+                        "label": "application/x-sqlite3",
+                        "value": 1,
+                        "color": "#923e99"
+                    },
+                    {
+                        "label": "application/gzip",
+                        "value": 8,
+                        "color": "#ae83d5"
+                    },
+                    {
+                        "label": "message/rfc822",
+                        "value": 205,
+                        "color": "#bf273e"
+                    },
+                    {
+                        "label": "image/svg+xml",
+                        "value": 28,
+                        "color": "#ce2aeb"
+                    },
+                    {
+                        "label": "application/x-rpm",
+                        "value": 3,
+                        "color": "#bca44a"
+                    },
+                    {
+                        "label": "application/zlib",
+                        "value": 22,
+                        "color": "#618d1b"
+                    },
+                    {
+                        "label": "audio/x-wav",
+                        "value": 61,
+                        "color": "#1ee67b"
+                    },
+                    {
+                        "label": "application/x-bibtex-text-file",
+                        "value": 131,
+                        "color": "#b0ec44"
+                    },
+                    {
+                        "label": "application/x-executable",
+                        "value": 6,
+                        "color": "#a4a0c9"
+                    },
+                    {
+                        "label": "application/rtf",
+                        "value": 44,
+                        "color": "#322849"
+                    },
+                    {
+                        "label": "application/vnd.google-earth.kml+xml",
+                        "value": 249,
+                        "color": "#86f71a"
+                    },
+                    {
+                        "label": "application/x-stuffit",
+                        "value": 1,
+                        "color": "#d1c87f"
+                    },
+                    {
+                        "label": "text/html",
+                        "value": 30367,
+                        "color": "#7d9058"
+                    },
+                    {
+                        "label": "text/x-python",
+                        "value": 5,
+                        "color": "#44b9b0"
+                    },
+                    {
+                        "label": "application/epub+zip",
+                        "value": 29,
+                        "color": "#7c37c0"
+                    },
+                    {
+                        "label": "application/x-java-jnilib",
+                        "value": 1,
+                        "color": "#cc9fb1"
+                    },
+                    {
+                        "label": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                        "value": 140,
+                        "color": "#e65414"
+                    },
+                    {
+                        "label": "application/x-7z-compressed",
+                        "value": 2,
+                        "color": "#8b6834"
+                    },
+                    {
+                        "label": "application/fits",
+                        "value": 24,
+                        "color": "#248838"
+                    },
+                    {
+                        "label": "application/x-msdownload; format=pe",
+                        "value": 9,
+                        "color": "#efefef"
+                    },
+                    {
+                        "label": "video/x-m4v",
+                        "value": 1,
+                        "color": "#d79b9b"
+                    },
+                    {
+                        "label": "application/vnd.google-earth.kmz",
+                        "value": 105,
+                        "color": "#e43030"
+                    },
+                    {
+                        "label": "application/x-shockwave-flash",
+                        "value": 121,
+                        "color": "#853fa1"
+                    },
+                    {
+                        "label": "application/x-xz",
+                        "value": 1,
+                        "color": "#48804f"
+                    },
+                    {
+                        "label": "application/xslt+xml",
+                        "value": 4,
+                        "color": "#526e39"
+                    },
+                    {
+                        "label": "application/x-grib",
+                        "value": 3,
+                        "color": "#302f3e"
+                    },
+                    {
+                        "label": "application/vnd.apple.keynote",
+                        "value": 1,
+                        "color": "#5d3bae"
+                    },
+                    {
+                        "label": "application/xml",
+                        "value": 3207,
+                        "color": "#b2a0d4"
+                    },
+                    {
+                        "label": "text/x-php",
+                        "value": 24,
+                        "color": "#f39a9a"
+                    },
+                    {
+                        "label": "video/x-ms-asf",
+                        "value": 25,
+                        "color": "#f00f0f"
+                    },
+                    {
+                        "label": "application/x-gtar",
+                        "value": 45,
+                        "color": "#9c0e0e"
+                    },
+                    {
+                        "label": "application/vnd.openxmlformats-officedocument",
+                        "value": 17,
+                        "color": "#670808"
+                    },
+                    {
+                        "label": "application/octet-stream",
+                        "value": 24,
+                        "color": "#430202"
+                    },
+                    {
+                        "label": "application/x-mspublisher",
+                        "value": 2,
+                        "color": "#f3f0c8"
+                    },
+                    {
+                        "label": "text/plain",
+                        "value": 11009,
+                        "color": "#eee39e"
+                    },
+                    {
+                        "label": "application/x-matroska",
+                        "value": 65,
+                        "color": "#d1e437"
+                    },
+                    {
+                        "label": "text/x-matlab",
+                        "value": 1,
+                        "color": "#e9da15"
+                    },
+                    {
+                        "label": "application/atom+xml",
+                        "value": 56,
+                        "color": "#bdeeb3"
+                    },
+                    {
+                        "label": "application/x-tex",
+                        "value": 11,
+                        "color": "#6bee64"
+                    },
+                    {
+                        "label": "video/mp4",
+                        "value": 618,
+                        "color": "#52f60f"
+                    },
+                    {
+                        "label": "application/x-lha",
+                        "value": 2,
+                        "color": "#04bb11"
+                    },
+                    {
+                        "label": "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+                        "value": 1,
+                        "color": "#1c8306"
+                    },
+                    {
+                        "label": "application/zip",
+                        "value": 245,
+                        "color": "#710b0b"
+                    },
+                    {
+                        "label": "text/x-jsp",
+                        "value": 3,
+                        "color": "#3f1abb"
+                    },
+                    {
+                        "label": "application/vnd.sun.xml.writer",
+                        "value": 1,
+                        "color": "#926603"
+                    },
+                    {
+                        "label": "application/x-sh",
+                        "value": 1066,
+                        "color": "#5f4d24"
+                    },
+                    {
+                        "label": "audio/vorbis",
+                        "value": 3,
+                        "color": "#85f0fb"
+                    },
+                    {
+                        "label": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                        "value": 45,
+                        "color": "#2bb9df"
+                    },
+                    {
+                        "label": "application/pdf",
+                        "value": 3352,
+                        "color": "#a70f0f"
+                    },
+                    {
+                        "label": "image/x-bpg",
+                        "value": 7,
+                        "color": "#6e2929"
+                    },
+                    {
+                        "label": "application/dita+xml; format=concept",
+                        "value": 319,
+                        "color": "#1339d7"
+                    },
+                    {
+                        "label": "text/x-vcard",
+                        "value": 13,
+                        "color": "#463b3b"
+                    },
+                    {
+                        "label": "application/x-tika-msoffice",
+                        "value": 1568,
+                        "color": "#2e9542"
+                    },
+                    {
+                        "label": "application/x-msdownload",
+                        "value": 72,
+                        "color": "#535383"
+                    },
+                    {
+                        "label": "image/gif",
+                        "value": 1242,
+                        "color": "#668885"
+                    },
+                    {
+                        "label": "image/vnd.dwg",
+                        "value": 3,
+                        "color": "#082085"
+                    },
+                    {
+                        "label": "image/tiff",
+                        "value": 5,
+                        "color": "#712828"
+                    },
+                    {
+                        "label": "text/x-diff",
+                        "value": 1,
+                        "color": "#4977a7"
+                    },
+                    {
+                        "label": "application/java-vm",
+                        "value": 1,
+                        "color": "#73f3c1"
+                    },
+                    {
+                        "label": "application/x-elc",
+                        "value": 29,
+                        "color": "#4d659c"
+                    },
+                    {
+                        "label": "application/vnd.oasis.opendocument.text",
+                        "value": 5,
+                        "color": "#6b6fa7"
+                    },
+                    {
+                        "label": "application/x-msdownload; format=pe32",
+                        "value": 15,
+                        "color": "#38764b"
+                    },
+                    {
+                        "label": "application/xhtml+xml",
+                        "value": 19335,
+                        "color": "#807979"
+                    },
+                    {
+                        "label": "video/x-ms-wmv",
+                        "value": 122,
+                        "color": "#b68c8c"
+                    },
+                    {
+                        "label": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+                        "value": 1,
+                        "color": "#1d6741"
+                    },
+                    {
+                        "label": "image/x-xcf",
+                        "value": 1,
+                        "color": "#586c34"
+                    },
+                    {
+                        "label": "video/mpeg",
+                        "value": 231,
+                        "color": "#869c4e"
+                    },
+                    {
+                        "label": "audio/x-aiff",
+                        "value": 9,
+                        "color": "#577117"
+                    },
+                    {
+                        "label": "application/x-rar-compressed",
+                        "value": 1,
+                        "color": "#86c07f"
+                    },
+                    {
+                        "label": "application/x-tika-ooxml-protected",
+                        "value": 1,
+                        "color": "#5c9784"
+                    },
+                    {
+                        "label": "text/x-csrc",
+                        "value": 3,
+                        "color": "#21907f"
+                    },
+                    {
+                        "label": "image/jpeg",
+                        "value": 2562,
+                        "color": "#33ca98"
+                    },
+                    {
+                        "label": "application/vnd.ms-excel.sheet.macroenabled.12",
+                        "value": 1,
+                        "color": "#3fccda"
+                    },
+                    {
+                        "label": "application/x-msmetafile",
+                        "value": 5,
+                        "color": "#337992"
+                    },
+                    {
+                        "label": "application/vnd.ms-htmlhelp",
+                        "value": 1,
+                        "color": "#2d7995"
+                    },
+                    {
+                        "label": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                        "value": 3,
+                        "color": "#5c77a7"
+                    },
+                    {
+                        "label": "message/x-emlx",
+                        "value": 1,
+                        "color": "#274b9c"
+                    },
+                    {
+                        "label": "audio/x-ms-wma",
+                        "value": 55,
+                        "color": "#304fd2"
+                    },
+                    {
+                        "label": "application/vnd.ms-excel.sheet.4",
+                        "value": 1,
+                        "color": "#874dbb"
+                    },
+                    {
+                        "label": "application/x-tika-ooxml",
+                        "value": 789,
+                        "color": "#c274da"
+                    },
+                    {
+                        "label": "audio/x-mpegurl",
+                        "value": 2,
+                        "color": "#a592a9"
+                    },
+                    {
+                        "label": "audio/mp4",
+                        "value": 18,
+                        "color": "#8021c3"
+                    },
+                    {
+                        "label": "application/vnd.ms-excel",
+                        "value": 10,
+                        "color": "#dc5bdb"
+                    },
+                    {
+                        "label": "application/x-compress",
+                        "value": 40,
+                        "color": "#ee48d8"
+                    },
+                    {
+                        "label": "application/dif+xml",
+                        "value": 2906,
+                        "color": "#e1226d"
+                    },
+                    {
+                        "label": "image/vnd.adobe.photoshop",
+                        "value": 4,
+                        "color": "#eb1a5f"
+                    },
+                    {
+                        "label": "application/x-hdf",
+                        "value": 26,
+                        "color": "#f09dd2"
+                    },
+                    {
+                        "label": "audio/mpeg",
+                        "value": 52,
+                        "color": "#96cab6"
+                    },
+                    {
+                        "label": "video/x-flv",
+                        "value": 12,
+                        "color": "#28763c"
+                    },
+                    {
+                        "label": "application/x-debian-package",
+                        "value": 4,
+                        "color": "#3fa117"
+                    },
+                    {
+                        "label": "text/x-perl",
+                        "value": 14,
+                        "color": "#85da25"
+                    },
+                    {
+                        "label": "application/rdf+xml",
+                        "value": 927,
+                        "color": "#65b386"
+                    },
+                    {
+                        "label": "application/x-tar",
+                        "value": 5,
+                        "color": "#059c58"
+                    },
+                    {
+                        "label": "application/vnd.ms-powerpoint",
+                        "value": 48,
+                        "color": "#35e661"
+                    },
+                    {
+                        "label": "audio/basic",
+                        "value": 54,
+                        "color": "#efefef"
+                    },
+                    {
+                        "label": "application/rss+xml",
+                        "value": 589,
+                        "color": "#000000"
+                    },
+                    {
+                        "label": "application/vnd.rn-realmedia",
+                        "value": 103,
+                        "color": "#393939"
+                    },
+                    {
+                        "label": "video/x-msvideo",
+                        "value": 100,
+                        "color": "#888888"
+                    },
+                    {
+                        "label": "audio/x-flac",
+                        "value": 2,
+                        "color": "#cacaca"
+                    },
+                    {
+                        "label": "application/msword",
+                        "value": 686,
+                        "color": "#904747"
+                    }
+		]
+            },
+            "labels": {
+                "outer": {
+                    "pieDistance": 32
+                },
+                "inner": {
+                    "hideWhenLessThanPercentage": 3
+                },
+                "mainLabel": {
+                    "fontSize": 11
+                },
+                "percentage": {
+                    "color": "#ffffff",
+                    "decimalPlaces": 0
+                },
+                "value": {
+                    "color": "#adadad",
+                    "fontSize": 11
+                },
+                "lines": {
+                    "enabled": true
+                },
+                "truncation": {
+                    "enabled": true
+                }
+            },
+            "effects": {
+                "pullOutSegmentOnClick": {
+                    "effect": "linear",
+                    "speed": 400,
+                    "size": 8
+                }
+            },
+            "misc": {
+                "gradient": {
+                    "enabled": true,
+                    "percentage": 100
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

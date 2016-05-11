@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Quality Score Model</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Play:700,400' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="http://iop.io/js/vendor/d3.v3.min.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerEvents/pointerevents.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerGestures/pointergestures.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/iopctrl.js"></script>
+    
+    <style>
+        body {
+            font: 16px arial;
+            background-color: #515151;
+			overflow: hidden;
+        }
+		
+		.jumbotron  {
+			float:top;
+			background-color:black !important;
+			color:white;
+			padding-left: 20px;
+			padding-bottom: 10px;
+			padding-top: 5px;
+			text-align: left;
+		}
+		
+		svg {
+			margin-left:auto; 
+			margin-right:auto;
+			display:block;
+		}
+		
+        .unselectable {
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        /* css formats for the gauge */
+        .gauge .domain {
+            stroke-width: 2px;
+            stroke: #fff;
+        }
+        .gauge .tick line {
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+        
+        .gauge line {
+            stroke: #fff;
+        }
+        .gauge .arc, .gauge .cursor {
+            opacity: 0;
+        }
+        .gauge .major {
+            fill: #fff;
+            font-size: 20px;
+            font-family: 'Play', verdana, sans-serif;
+            font-weight: normal;
+        }
+        
+        .gauge .indicator {
+            stroke: #EE3311;
+            fill: #000;
+            stroke-width: 4px;
+        }
+        /* css formats for the segment display */
+        .segdisplay .on {
+            fill: #00FFFF;
+        }
+        .segdisplay .off {
+            fill: #00FFFF;
+            opacity: 0.15;
+        }
+		
+		select {
+		  position: absolute;
+		  top: 15em;
+		  right: 15em;
+		}
+    </style>
+</head>
+<body>
+<div id="header"></div>
+	 <div class="jumbotron">
+    		<h2>Metadata Quality Score visualizations</h2>      
+    		<p style="color:grey;">Click dropdown to see the number of documents gauge and percentage needle shoot up relative to the calculated Metadata Quality Score</p>
+  	</div>
+    <div>
+        <span id="speedometer"></span>
+		<select id="language_select"></select>
+    </div> 
+    <script>
+
+
+var sum=0;
+    window.onload = function() {
+        var selection = d3.select("#language_select")
+
+        var data = [
+    {
+        "size": 395, 
+        "text": "XML"
+    }, 
+    {
+        "size": 26847, 
+        "text": "HTML"
+    }, 
+    {
+        "size": 603, 
+        "text": "RDF+XML"
+    }, 
+    {
+        "size": 5033, 
+        "text": "PNG"
+    }, 
+    {
+        "size": 4607, 
+        "text": "PDF"
+    }, 
+    {
+        "size": 9211, 
+        "text": "QUICKTIME"
+    }, 
+    {
+        "size": 1820, 
+        "text": "ASPX"
+    }, 
+    {
+        "size": 820, 
+        "text": "MP4"
+    }
+];
+
+        
+          data.forEach(function(d) {
+            selection.append("option")
+                    .text(d.text)
+                    .attr('value',d.size)
+            sum+=d.size;
+          });
+
+        selection.on('change', function() {
+            var valueSelected = d3.event.target.value;  
+            display_data(valueSelected);
+        });
+    }
+
+    var svg = d3.select("#speedometer")
+    .append("svg:svg")
+    .attr("width", 900)
+    .attr("height", 700);
+
+    var gauge = iopctrl.arcslider()
+            .radius(275)
+            .events(false)
+            .indicator(iopctrl.defaultGaugeIndicator);
+    gauge.axis().orient("in")
+            .normalize(true)
+            .ticks(12)
+            .tickSubdivide(4)
+            .tickSize(10, 10, 10)
+            .tickPadding(5)
+            .scale(d3.scale.linear()
+                    .domain([0, 100])
+                    .range([-3*Math.PI/4, 3*Math.PI/4]));
+
+    var segDisplay = iopctrl.segdisplay()
+            .width(80)
+            .digitCount(6)
+            .negative(false)
+            .decimals(0);
+
+    svg.append("g")
+            .attr("class", "segdisplay")
+            .attr("transform", "translate(275, 500)")
+            .call(segDisplay);
+
+    svg.append("g")
+            .attr("class", "gauge")
+            .call(gauge);
+
+    function display_data(data) {
+        segDisplay.value(data);
+        gauge.value(data/sum*100);
+        console.log(data)
+    }
+    	</script>
+</body>

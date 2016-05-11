@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>Metadata Extraction And Analysis</title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../css/bootstrap-theme.css" />
+        <link rel="stylesheet" href="../../css/Team15_css/styles.css">
+        <style>
+            .bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis {
+  font: 5px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+.y
+{
+    font:12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.bar:hover {
+  fill: orangered ;
+}
+.x.axis path {
+  display: none;
+}
+.d3-tip {
+  line-height: 2;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+.tip_v
+{
+    color:white;
+    font-size:140%;
+}
+.tip_h
+{
+    color:red;
+    font-size:140%;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                   <a class="navbar-brand" href="./index.html">Polar Data Analysis</a>
+               </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="./4.html">Response Analysis</a></li>
+                    <li><a href="./5.html">Solar and CCA Filesize comparison</a></li>
+                    <li class="active" ><a href="./6.html">Parser Extraction</a></li>
+                    <li><a href="./7.html">Language Diversity</a></li>
+                    <li><a href="./8a.html">Wcloud sweet</a></li>
+                    <li><a href="./8b.html">Wcloud metadata</a></li>
+                    <li><a href="./8c.html">Wcloud Language</a></li>
+                    <li><a href="./9.html">Ner comparison</a></li>
+                    <li><a href="./10a.html">Measurements Analysis</a></li>
+                    <li><a href="./10b.html">Type Analysis</a></li>
+                    <li><a href="./10c.html">Domain Analysis</a></li>
+                    <li><a href="./10d.html">MIME Analysis</a></li>
+                </ul>
+
+
+
+                
+            </div>
+
+        </nav>
+        <div class="legend">You can use the dropdown to pick mimetype<br/>
+         </div>
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                  <label for="fileType" class="col-sm-2 control-label">File Type</label>
+                  <div class="col-sm-6">
+                      <select id="fileType" class="form-control">
+                          <option value="html">HTML</option>
+                           <option value="plain">TEXT</option>
+                           <option value="plain_ISO_8859_1">TEXT IS0 8859-1</option>
+                           <option value="plain_UTF8">TEXT UTF8</option>
+                           <option value="plain_windows_1252">TEXT windows-1252</option>
+                           <option value="rss_xml">RSS_XML</option>
+                           <option value="xhtml_xml">XHTML_XML</option>  
+                      </select>
+                </div>
+                </div>
+    <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-6">
+             <button id="file_load" class="btn btn-default" onclick="load()">Load JSON!</button>
+        </div>
+        </div>
+        </div>
+
+        <div id = "visualization">
+
+        </div>
+<!--        Bootstrap and jQuery inclusion-->
+  <script src="../../js/jquery-2.2.2.min.js"></script>
+  <script src="../../js/d3.v3.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/d3.tip.v0.6.3.js"></script>
+  <script src="../../js/team15eval/bar_chart.js"></script>
+
+    </body>
+</html>

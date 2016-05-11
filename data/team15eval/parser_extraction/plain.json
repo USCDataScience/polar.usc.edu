@@ -1,0 +1,10 @@
+{
+    "data": [
+        {
+            "extracted_content": 90175,
+            "extracted_metadata": 9725,
+            "name": "org.apache.tika.parser.CompositeParser,org.apache.tika.parser.ner.NamedEntityParser",
+            "raw_content": 90550
+        }
+    ]
+}

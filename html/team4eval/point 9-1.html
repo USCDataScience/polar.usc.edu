@@ -1,0 +1,46 @@
+<html>
+ <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Analysis of Grobid Quantities',
+            x: -20 //center
+        },
+        xAxis: {
+            categories: ['s/hqdefault',  'year',  'User_Inquiries',  'tvI',  '_ww_wwlin',  'deg',  'Ceiling',  '/parroty_bit_0',  'INDUSTRIAL',  'Profilers',  'YEAR',  'pounds',  'gallons',  'SeeAlso',  'millions',  'MHz',  'Key',  'A',  'weeks',  'C',  'D',  '\u003cGo',  'E',  'CZECH',  'I',  'J',  'K',  'Incl',  'M',  'BP',  'Ra',  'mil',  'm7}',  'Rinder',  'min',  '136',  'U',  'Rdf',  'Ask',  'temperature',  'RDFS',  'Z',  '° 51',  '/tei_allPlus',  'CA',  'Jul',  'XPath',  'st',  'a',  '/benchmarking_perl',  '\u0026quot',  'c',  'e',  'h',  'cm',  '_Ernst_GEOkomm',  'Mailing',  'k',  'ShareAlike',  'm',  'n',  'p',  'Master',  'MOÇÃO',  'degree Monthly Grid',  's',  'th',  't',  'y',  'days',  'inch',  '|',  'dc',  'k_ca',  'million+',  'screening',  's.\u0026#8230',  'Creator',  'Manuel',  'UC',  'news@kuleuven',  'frequency',  'hs y',  '°/6',  'Lovely',  '_us drg_24k_ca doqq_bw_ca doqq_cir_ca doqq_geotiff_ca ap_flights',  'Que',  'eg',  'Years',  'degree',  'em',  '©',  'g3',  '%2',  'hr_tenthDeg',  'et',  '′ 36″ S',  '°',  'AVG',  'Chemotherapy',  'month',  'AIRBORNE',  'in / 1005',  'kilometres',  'ï¿½C',  'years Over sixty',  'VEGETATION',  'minutes/UK',  'NVIDIA',  'UNESCO',  'September',  'mass',  'Mark',  '’s years',  'km/h',  'ft',  'miles',  'DepartmentRecent',  'Michel',  '°18',  '613',  'e6 km',  'Million',  'International',  '° S',  'hours',  'cubic',  'milioni',  'per hour / $10',  'length',  'Besucher',  '/ NOAA',  'Jean',  'GS',  'electric conductance',  'history@rahs',  '°22',  '61234567',  '% 2',  'in / 1027',  'time',  'Community',  '\u0026d',  'n/a',  'MPH',  'http',  'Considerations',  'hs',  'years',  'degrees',  'meters 100 km - \u003c 250 km',  'inches',  'km2',  'seconds',  'Massiver',  '\u003ciframe',  'redaktion@ag',  '°38',  'MAYERHOFER',  'y 1998/99',  'm/s',  'COMMUNICABLE',  '650',  'More',  '532',  'millones',  'kb',  'KB',  'kg',  'km',  'KM',  'USA',  'may',  'Werke',  'pa/GSSTF/GSSTFM_NCEP',  'JotForm',  '\u0026search',  'Manage',  'SEASON',  'k}',  'days a year',  'Northernmost_Latitude',  'am – 2',  'Day',  'feet',  'New',  'KCSB',  'UTC',  'm Saturday',  'channel_thumb',  'pa/GSSTF/GSSTFSC',  'Mapping',  'Univ',  'Shades',  'Copyright',  '°C',  'MB',  'percentage',  'members',  'Emerging',  'day',  '° 31',  'MeV',  'Tool',  'Rothera',  'mm',  'new',  'months',  '/extreme_publishing',  'meter',  'minutes',  'Terms',  'year I\u0026#8217',  'TRUE',  'mph / 14km/h',  'kb!',  '_Joerg_Wien',  'square',  'Professional',  'CC_Wiki',  'GHz',  'MACROECONOMICS',  'minutter',  'MEU',  'kronen',  'nm',  'MEZ',  'Region_ID',  'NT',  'My',  'percent',  'Westernmost_Longitude',  'meters',  'Publishing',  'hour',  'billion',  'men',  'CEOP',  'meters - \u003c 1 km',  'km/h Wednesday',  'will',  '/4',  '\u0026results_as_file',  'Vendor',  'velocity',  ' 55″ S',  'minute',  'Weather',  '/structured_classes',  'MALCS',  'Easternmost_Longitude',  'Total',  'Minnie',  'AHRNetS',  'Exp',  'PM',  'pm']
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+       
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+	exporting: { enabled: false },
+	credits: {
+            enabled: false
+        },
+        series: [
+        {
+            name: 'Ratio',
+            data: [1,6,1,1,1,1,1,2,1,1,1,1,1,1,1,2,2,6,5,2,1,3,2,2,1,1,1,1,4,1,2,3,2,2,5,6,1,1,1,1,1,57,1,1,1,1,4,5,22,2,3,1,4,5,10,1,1,9,1,45,2,31,1,1,1,26,24,6,10,28,1,2,1,1,1,1,1,1,1,3,1,3,4,1,1,1,1,1,2,8,3,1,1,1,1,1,1,7,1,1,2,2,1,3,1,1,1,1,2,2,1,2,1,1,2,1,6,6,1,1,1,1,25,1,4,17,1,1,1,121,1,5,1,1,1,16,1,2,4,1,237,1,10,3,1,1,5,74,6,1,7,1,9,1,1,3,1,2,1,1,1,1,1,2,32,2,2,2,3,21,4,2,1,1,2,1,1,1,1,2,1,576,1,1,3,1,1,3,1,1,1,1,1,1,1,3,9,1,1,1,13,1,1,1,1,3,5,17,2,3,25,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,4,2,1,1,342,7,1,7,12,1,1,1,1,1,1,1,2,3,1,12,1,2,1,41,1,1,1,1,11,26]
+        }]
+    });
+});
+</script>
+</html>

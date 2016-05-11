@@ -1,0 +1,90 @@
+<html>
+ <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
+
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Size Ratio ~ Mime Type(Post-Removal)'
+        },
+        
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        	exporting: { enabled: false },
+
+        credits: {
+            enabled: false
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Size Ratio(x10^-6)'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'Ratio(x10^-6): <b>{point.y:.5f}</b>'
+        },
+        series: [{
+            name: 'Size Ratio',
+            data: [
+['image/jpeg',2864.10195596],
+['image/svg+xml',12014.7813401],
+['image/png',7011.22818672],
+['image/vnd.microsoft.icon',15846.5092839],
+['application/vnd.openxmlformats-officedocument.wordprocessingml.document',635.5040125443],
+['application/pdf',329.498950094],
+['application/octet-stream',14374.32951875],
+['application/rss+xml',13258.6456409],
+['application/atom+xml',6034.16619126],
+['image/gif',67545.0287492],
+['application/xml',2288.4757148],
+['application/dif+xml',6320.37324089],
+['text/plain',30701.4445027],
+['application/atom+xml',6034.16619126],
+['text/html',18277.9009929],
+['application/zip',1455.02812634],
+['audio/mpeg',389.868342492]
+['application/x-elc',2607.24825566],
+['application/rdf+xml',2334.85895087],
+['application/msword',481.387549425],
+
+            ],
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y:.1f}', // one decimal
+                y: 10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    });
+});
+</script>
+</html>

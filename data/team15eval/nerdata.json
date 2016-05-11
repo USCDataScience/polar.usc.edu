@@ -1,0 +1,195 @@
+{
+ "nodes": [
+  {
+   "name": "application/rss+xml"
+  }, 
+  {
+   "name": "NER_ORGANIZATION"
+  }, 
+  {
+   "name": "NER_MEASUREMENTS"
+  }, 
+  {
+   "name": "NER_PERSON"
+  }, 
+  {
+   "name": "NER_LOCATION"
+  }, 
+  {
+   "name": "NER_DATE"
+  }, 
+  {
+   "name": "text/plain"
+  }, 
+  {
+   "name": "NER_PERCENT"
+  }, 
+  {
+   "name": "NER_NAMES"
+  }, 
+  {
+   "name": "text/html"
+  }, 
+  {
+   "name": "NER_MONEY"
+  }, 
+  {
+   "name": "NER_TIME"
+  }, 
+  {
+   "name": "application/xhtml+xml"
+  }
+ ], 
+ "links": [
+  {
+   "source": 0, 
+   "target": 1, 
+   "value": 2
+  }, 
+  {
+   "source": 0, 
+   "target": 2, 
+   "value": 2
+  }, 
+  {
+   "source": 0, 
+   "target": 3, 
+   "value": 3
+  }, 
+  {
+   "source": 0, 
+   "target": 4, 
+   "value": 2
+  }, 
+  {
+   "source": 0, 
+   "target": 5, 
+   "value": 2
+  }, 
+  {
+   "source": 6, 
+   "target": 3, 
+   "value": 38
+  }, 
+  {
+   "source": 6, 
+   "target": 4, 
+   "value": 66
+  }, 
+  {
+   "source": 6, 
+   "target": 5, 
+   "value": 169
+  }, 
+  {
+   "source": 6, 
+   "target": 1, 
+   "value": 88
+  }, 
+  {
+   "source": 6, 
+   "target": 7, 
+   "value": 1
+  }, 
+  {
+   "source": 6, 
+   "target": 2, 
+   "value": 152
+  }, 
+  {
+   "source": 6, 
+   "target": 8, 
+   "value": 211
+  }, 
+  {
+   "source": 9, 
+   "target": 3, 
+   "value": 795
+  }, 
+  {
+   "source": 9, 
+   "target": 10, 
+   "value": 40
+  }, 
+  {
+   "source": 9, 
+   "target": 4, 
+   "value": 839
+  }, 
+  {
+   "source": 9, 
+   "target": 5, 
+   "value": 689
+  }, 
+  {
+   "source": 9, 
+   "target": 1, 
+   "value": 1140
+  }, 
+  {
+   "source": 9, 
+   "target": 7, 
+   "value": 20
+  }, 
+  {
+   "source": 9, 
+   "target": 2, 
+   "value": 175
+  }, 
+  {
+   "source": 9, 
+   "target": 11, 
+   "value": 13
+  }, 
+  {
+   "source": 9, 
+   "target": 8, 
+   "value": 302
+  }, 
+  {
+   "source": 12, 
+   "target": 3, 
+   "value": 353
+  }, 
+  {
+   "source": 12, 
+   "target": 10, 
+   "value": 12
+  }, 
+  {
+   "source": 12, 
+   "target": 4, 
+   "value": 413
+  }, 
+  {
+   "source": 12, 
+   "target": 5, 
+   "value": 521
+  }, 
+  {
+   "source": 12, 
+   "target": 1, 
+   "value": 564
+  }, 
+  {
+   "source": 12, 
+   "target": 7, 
+   "value": 25
+  }, 
+  {
+   "source": 12, 
+   "target": 2, 
+   "value": 61
+  }, 
+  {
+   "source": 12, 
+   "target": 11, 
+   "value": 22
+  }, 
+  {
+   "source": 12, 
+   "target": 8, 
+   "value": 127
+  }
+ ]
+}

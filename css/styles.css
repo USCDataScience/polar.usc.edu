@@ -123,6 +123,15 @@ body {
     height: 30%;
 }
 
+#eval-viz .thumbnail img{
+    height: 200px;
+    width: 400px;
+}
+
+#eval-viz .thumbnail{
+    height: 30%;
+}
+
 #d3-other .thumbnail img{
     height: 200px;
     width: 400px;

@@ -1,0 +1,53 @@
+{
+       "name": "data",
+       "children": [
+        
+        {
+         "name": "algorithm1",
+         "children": [
+         {"name": "word1", "size": 3938},
+         {"name": "word2", "size": 3812},
+         {"name": "word3", "size": 6714},
+         {"name": "word4", "size": 743}
+         ]
+    },
+
+        {
+         "name": "algorithm2",
+         "children": [
+         {"name": "word1", "size": 3938},
+         {"name": "word2", "size": 3812},
+         {"name": "word3", "size": 6714},
+         {"name": "word4", "size": 743},
+         {"name": "word1", "size": 3938},
+         {"name": "word2", "size": 323},
+         {"name": "word3", "size": 614},
+         {"name": "word4", "size": 743}
+         ]
+    },
+
+        {
+         "name": "algorithm3",
+         "children": [
+         {"name": "word1", "size": 3938},
+         {"name": "word2", "size": 323},
+         {"name": "word3", "size": 614},
+         {"name": "word4", "size": 743},
+         {"name": "word1", "size": 3938},
+         {"name": "word2", "size": 323},
+         {"name": "word3", "size": 614},
+         {"name": "word4", "size": 743}
+         ]
+    },
+
+        {
+         "name": "joint",
+         "children": [
+         {"name": "word1", "size": 3938},
+         {"name": "word2", "size": 1223},
+         {"name": "word3", "size": 6714},
+         {"name": "word4", "size": 743}
+         ]
+    }
+       ]
+      }

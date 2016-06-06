@@ -1,0 +1,165 @@
+{
+ "name": "Measurement ",
+ "children": [
+  {
+   "name": "Part_a - Descriptive Statistics on Measurements",
+   "children": [
+
+
+    {
+     "name": "Accent",
+     "children": [
+      {"name": "Max: 5", "size": 3534},
+      {"name": "Average: 2.45", "size": 5731},
+      {"name": "Min: 1", "size": 5731}
+
+     ]
+    },
+
+    {
+     "name": "%",
+     "children": [
+      {"name": "Max: 120", "size": 3534},
+      {"name": "Average: 21.25", "size": 5731},
+      {"name": "Min: 0.0", "size": 5731}
+
+     ]
+    },
+
+    {
+     "name": "years",
+     "children": [
+      {"name": "Max: 28", "size": 3534},
+      {"name": "Average: 3.6", "size": 5731},
+      {"name": "Min: 2", "size": 5731}
+
+     ]
+    },
+
+
+    {
+     "name": "minutes",
+     "children": [
+      {"name": "Max: 90", "size": 3534},
+      {"name": "Average: 8.25", "size": 5731},
+      {"name": "Min: 2", "size": 5731}
+
+     ]
+    },
+
+
+    {
+     "name": "cm",
+     "children": [
+      {"name": "Max: 28", "size": 3534},
+      {"name": "Average: 8", "size": 5731},
+      {"name": "Min: 1", "size": 5731}
+
+     ]
+    },
+
+
+    {
+     "name": "F",
+     "children": [
+      {"name": "Max: 212", "size": 3534},
+      {"name": "Average: 45.9", "size": 5731},
+      {"name": "Min: -100.2", "size": 5731}
+
+     ]
+    },
+
+       {
+     "name": "C",
+     "children": [
+      {"name": "Max: 70", "size": 3534},
+      {"name": "Average: 19", "size": 5731},
+      {"name": "Min: -115", "size": 5731}
+
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Part_b - Computed for all temperature",
+   "children": [
+    {
+     "name": "measurement values",
+     "children": [
+    {
+     "name": "F",
+     "children": [
+      {"name": "Max: 212", "size": 3534},
+      {"name": "Average: 45.9", "size": 5731},
+      {"name": "Min: -100.2", "size": 5731}
+
+     ]
+    },
+
+       {
+     "name": "C",
+     "children": [
+      {"name": "Max: 70", "size": 3534},
+      {"name": "Average: 19", "size": 5731},
+      {"name": "Min: -115", "size": 5731}
+
+     ]
+    }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Part_c - Statistics for one domain 'www'",
+   "children": [
+    {
+     "name": "%",
+     "children": [
+      {"name": "Max: 10", "size": 3534},
+      {"name": "Average: 10", "size": 5731},
+      {"name": "Min: 10", "size": 5731}
+
+     ]
+    },
+
+    {
+     "name": "minutes",
+     "children": [
+      {"name": "Max: 14", "size": 3534},
+      {"name": "Average: 14", "size": 5731},
+      {"name": "Min: 14", "size": 5731}
+
+     ]
+    },
+
+
+    {
+     "name": "cm",
+     "children": [
+      {"name": "Max: 4", "size": 3534},
+      {"name": "Average: 2.5", "size": 5731},
+      {"name": "Min: 1", "size": 5731}
+
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Part_d",
+   "children": [
+    {"name": "DirtySprite", "size": 8833},
+    {"name": "LineSprite", "size": 1732},
+    {"name": "RectSprite", "size": 3623},
+    {"name": "TextSprite", "size": 10066}
+   ]
+  },
+  {
+   "name": "EXTRA CREDIT - Combining Temperatures both into C",
+   "children": [
+    {"name": "Combined Max: 100.0", "size": 8833},
+    {"name": "Combined Average: 12.55", "size": 1732},
+    {"name": "Combined Min:-115.0", "size": 3623}
+   ]
+  }
+ ]
+}

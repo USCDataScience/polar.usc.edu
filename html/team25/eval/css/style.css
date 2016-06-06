@@ -1,0 +1,19 @@
+
+.bar:hover {
+  fill: black;
+}
+
+.chart text {
+  font: 10px arial;
+}
+.chart .title {
+  font: 12px bold arial;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+

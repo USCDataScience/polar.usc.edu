@@ -1,0 +1,5 @@
+{
+    "org.apache.tika.parser.ocr.TesseractOCRParser": 28097, 
+    "org.apache.tika.parser.DefaultParser": 28097, 
+    "org.apache.tika.parser.image.ImageParser": 28097
+}

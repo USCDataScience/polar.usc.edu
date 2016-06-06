@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <title>NER Tools</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+ <style type="text/css">
+
+      #hzBarChart .panel-body .legend {
+        fill: #2F4F4F;
+        font: 14px sans-serif;
+        text-anchor: start;
+        font-size: 12px;
+      }
+
+      #hzBarChart .panel-body text {
+        
+        font: 10px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .label {
+        fill: #2F4F4F;
+        font: 14px sans-serif;
+        text-anchor: end;
+      }
+
+      #hzBarChart .panel-body .bar:hover {
+        fill: pink;
+      }
+
+      #hzBarChart .panel-body .axis path,
+      #hzBarChart .panel-body .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      #hzBarChart .panel-body .legend {
+        position: fixed;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <form id="inputForm" name="inputForm">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Words</a>
+          <a class="navbar-brand" href="mitie.html">Files</a>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+      <div class="container">
+        <br/><br/><br/>
+        <div id="hzBarChart" class="panel panel-info text-center">
+          <div class="panel-heading"><h3 class="panel-title">NER Tools</h3></div>
+          <div class="panel-body"></div>
+        </div>
+      </div><!-- /.container -->
+    </form>
+</form>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+
+    <!-- Charts -->
+    <script src="js/nlp_mitie.js"></script>
+    <script>
+    $(document).ready(function(){
+      console.log("will call search");
+      search();
+    });
+    function search(){
+      console.log("will call refreshHzBarChart");
+      refreshHzBarChart();
+
+    }
+    </script>
+   
+
+  </body>
+</html>
+

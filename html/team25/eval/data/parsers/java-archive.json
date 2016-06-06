@@ -1,0 +1,17 @@
+{
+    "org.apache.tika.parser.ocr.TesseractOCRParser": 32, 
+    "org.apache.tika.parser.executable.ExecutableParser": 14, 
+    "org.apache.tika.parser.font.TrueTypeParser": 3, 
+    "org.apache.tika.parser.pkg.PackageParser": 2, 
+    "org.apache.tika.parser.txt.TXTParser": 527, 
+    "org.apache.tika.parser.html.HtmlParser": 427, 
+    "org.apache.tika.parser.asm.ClassParser": 26915, 
+    "org.apache.tika.parser.image.ImageParser": 31, 
+    "org.apache.tika.server.resource.TikaResource$1": 4397, 
+    "org.apache.tika.parser.microsoft.OfficeParser": 1, 
+    "org.apache.tika.parser.microsoft.JackcessParser": 4, 
+    "org.apache.tika.parser.font.AdobeFontMetricParser": 14, 
+    "org.apache.tika.parser.jpeg.JpegParser": 1, 
+    "org.apache.tika.parser.DefaultParser": 27531, 
+    "org.apache.tika.parser.microsoft.ooxml.OOXMLParser": 1
+}

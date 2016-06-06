@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eval-Trek | Team 25</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Overview</h1>
+                        <p>Evaluating your Content Analysis Text Retrieval
+                            Conference (TREC) Polar Dynamic Domain Dataset.</p>
+
+                        <p>
+                            Total number of files considered : 270110
+                        </p>
+                        <p>
+                            List of things completed:
+                        </p>
+                        <ul>
+                            <li><a href="mime.html">MIME Diversity</a></li>
+                            <li><a href="NER_correlation.html">NER Correlation</a></li>
+                            <li>File Size Diversity</li>
+                            <ul>
+                                <li><a href="file_size.html">File Size</a></li>
+                                <li><a href="file_ratio.html">File Size Ratio</a></li>
+                            </ul>
+                            <li>Parsing Diversity</li>
+                            <ul>
+                                <li><a href="metadata_size.html">Metadata size</a></li>
+                                <li><a href="content_size.html">Content size</a></li>
+                                <li><a href="parsers.html">Parsers Chain</a></li>
+                            </ul>
+                            <li>Language Diversity</li>
+                            <ul>
+                                <li><a href="language.html">Language Diversity per MIME type</a></li>
+
+                                <li><a href="language_dendogram.html">Language Dendogram</a></li>
+                            </ul>
+                            <li>Word Clouds</li>
+                            <ul>
+                                <li><a href="language_word.html">Language</a></li>
+                                <li><a href="metadata_word.html">Meta data</a></li>
+                                <li><a href="content_word_cloud.html">Content</a></li>
+                            </ul>
+                            <li>NER</li>
+                            <ul>
+                                <li><a href="nlp_mitie.html">Words</a></li>
+                                <li><a href="mitie.html">Files</a></li>
+                            </ul>
+
+                            <li>Measurement Diversity</li>
+                            <ul>
+                                <li><a href="measurements.html">Measurements Diversity per MIME type</a></li>
+                                <li><a href="measurements_overall.html">Overall Measurements Diversity</a></li>
+                                <li><a href="measurements_type.html">Overall Measurements Diversity By Type</a></li>
+                                <li><a href="measurements_domain.html">Overall Measurements Diversity By Type</a></li>
+                            </ul>
+
+                        </ul>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    $(function(){
+        $("#sidebar-wrapper").load("common/sidebar.html");
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+{
+    "org.apache.tika.parser.rtf.RTFParser": 1, 
+    "org.apache.tika.parser.DefaultParser": 1
+}

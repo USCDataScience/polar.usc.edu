@@ -1,0 +1,22 @@
+{
+	"text/css":0.007217,
+	"application/javascript":0.005508,
+	"text/csv":0.00192965,
+	"image/tiff":0.001237,
+	"image/gif":0.0128,
+	"audio/mpeg":0.00431,
+	"application/vnd.google-earth.kml+xml":0.004303,
+	"application/octet-stream":0.0334,
+	"application/xml":0.06814,
+	"application/json":0.0430,
+	"text/x-matlab":0.2945,
+	"text/plain":0.08511,
+	"video/quicktime":0.001061,
+	"application/pdf":0.10647,
+	"image/png":0.055717,
+	"text/html":0.33719,
+	"image/jpeg":0.01559,
+	"video/mp4":0.001278,
+	"text/x-php":0.0045667,
+	"video/mpeg":0.00661
+}

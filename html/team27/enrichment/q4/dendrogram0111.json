@@ -1,0 +1,69 @@
+{
+  "name": "http://nsidc.org",
+  "children": [
+    {
+     "name": "/about",
+     "children": 
+     [
+       {"name": "child A1"},
+       {"name": "child A2"},
+       {"name": "child A3"}
+     ]
+    },{
+     "name": "/arcticseaicenews",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/daac",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/data",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/greenland-today",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/icelights",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/news",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/research",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    },
+    {
+     "name": "/rocs",
+     "children": [
+       {"name": "child B1"},
+       {"name": "child B2"}
+     ]
+    }
+  ]
+}

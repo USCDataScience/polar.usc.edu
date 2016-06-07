@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    body{
+        width:1060px;
+        margin:50px auto;
+    }
+    path {  stroke: #fff; }
+    path:hover {  opacity:0.9; }
+    rect:hover {  fill:blue; }
+    .axis {  font: 10px sans-serif; }
+    .legend tr{    border-bottom:1px solid grey; }
+    .legend tr:first-child{    border-top:1px solid grey; }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .x.axis path {  display: none; }
+    .legend{
+        margin-bottom:76px;
+        display:inline-block;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        margin-left: 800px;
+        margin-top: -300px;
+    }
+    .legend td{
+        padding:4px 5px;
+        vertical-align:bottom;
+    }
+    .legendFreq, .legendPerc{
+        align:right;
+        width:50px;
+    }
+
+</style>
+<body>
+<div id='dashboard'>
+</div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+    function dashboard(id, fData){
+        var barColor = 'steelblue';
+
+
+        function segColor(c) {
+            return {
+                'application/mp4': "#001711",
+                'application/msword': "#c00125",
+                'application/octet-stream': "#045e60",
+                'application/pdf': "#1aafd0",
+                'application/rss+xml': "#3bf7d1",
+                'application/xhtml+xml': "#ffc019",
+                'application/xml': "#1b372b",
+                'audio/mpeg': "#ff7b9c",
+                'image/gif': "#3b2242",
+                'image/jpeg': "#b5007b",
+                'image/png': "#9600ff",
+                'text/html': "#005eff",
+                'text/plain': "#fdff00",
+                'video/mp4': "#502d17",
+                'video/quicktime': "#b00135"
+            }[c];
+        }
+        // compute total for each state.
+        fData.forEach(function(d) {
+            d.total = d.freq['application/mp4'] + d.freq['application/msword'] + d.freq['application/octet-stream'] + d.freq['application/pdf'] + d.freq['application/rss+xml'] + d.freq['application/xhtml+xml'] + d.freq['application/xml'] + d.freq['audio/mpeg'] + d.freq['image/gif'] + d.freq['image/jpeg'] + d.freq['image/png'] + d.freq['text/html'] + d.freq['text/plain'] + d.freq['video/mp4'] + d.freq['video/quicktime'];
+        });
+        // function to handle histogram.
+        function histoGram(fD){
+            var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
+            hGDim.w = 500 - hGDim.l - hGDim.r,
+                    hGDim.h = 300 - hGDim.t - hGDim.b;
+
+            //create svg for histogram.
+            var hGsvg = d3.select(id).append("svg")
+                    .attr("width", hGDim.w + hGDim.l + hGDim.r)
+                    .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+                    .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+
+            // create function for x-axis mapping.
+            var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+                    .domain(fD.map(function(d) { return d[0]; }));
+
+            // Add x-axis to the histogram svg.
+            hGsvg.append("g").attr("class", "x axis")
+                    .attr("transform", "translate(0," + hGDim.h + ")")
+                    .call(d3.svg.axis().scale(x).orient("bottom"));
+
+            // Create function for y-axis map.
+            var y = d3.scale.linear().range([hGDim.h, 0])
+                    .domain([0, d3.max(fD, function(d) { return d[1]; })]);
+
+            // Create bars for histogram to contain rectangles and freq labels.
+            var bars = hGsvg.selectAll(".bar").data(fD).enter()
+                    .append("g").attr("class", "bar");
+
+            //create the rectangles.
+            bars.append("rect")
+                    .attr("x", function(d) { return x(d[0]); })
+                    .attr("y", function(d) { return y(d[1]); })
+                    .attr("width", x.rangeBand())
+                    .attr("height", function(d) { return hGDim.h - y(d[1]); })
+                    .attr('fill',barColor)
+                    .on("mouseover",mouseover)// mouseover is defined below.
+                    .on("mouseout",mouseout);// mouseout is defined below.
+
+            //Create the frequency labels above the rectangles.
+            bars.append("text").text(function(d){ return d3.format(",")(d[1])})
+                    .attr("x", function(d) { return x(d[0])+x.rangeBand()/2; })
+                    .attr("y", function(d) { return y(d[1])-5; })
+                    .attr("text-anchor", "middle");
+
+            function mouseover(d){  // utility function to be called on mouseover.
+                // filter for selected state.
+                var st = fData.filter(function(s){ return s.State == d[0];})[0],
+                        nD = d3.keys(st.freq).map(function(s){ return {type:s, freq:st.freq[s]};});
+
+                // call update functions of pie-chart and legend.
+                pC.update(nD);
+                leg.update(nD);
+            }
+
+            function mouseout(d){    // utility function to be called on mouseout.
+                // reset the pie-chart and legend.
+                pC.update(tF);
+                leg.update(tF);
+            }
+
+            // create function to update the bars. This will be used by pie-chart.
+            hG.update = function(nD, color){
+                // update the domain of the y-axis map to reflect change in frequencies.
+                y.domain([0, d3.max(nD, function(d) { return d[1]; })]);
+
+                // Attach the new data to the bars.
+                var bars = hGsvg.selectAll(".bar").data(nD);
+
+                // transition the height and color of rectangles.
+                bars.select("rect").transition().duration(500)
+                        .attr("y", function(d) {return y(d[1]); })
+                        .attr("height", function(d) { return hGDim.h - y(d[1]); })
+                        .attr("fill", color);
+
+                // transition the frequency labels location and change value.
+                bars.select("text").transition().duration(500)
+                        .text(function(d){ return d3.format(",")(d[1])})
+                        .attr("y", function(d) {return y(d[1])-5; });
+            }
+            return hG;
+        }
+
+        // function to handle pieChart.
+        function pieChart(pD){
+            var pC ={},    pieDim ={w:250, h: 250};
+            pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+
+            // create svg for pie chart.
+            var piesvg = d3.select(id).append("svg")
+                    .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+                    .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")");
+
+            // create function to draw the arcs of the pie slices.
+            var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+
+            // create a function to compute the pie slice angles.
+            var pie = d3.layout.pie().sort(null).value(function(d) { return d.freq; });
+
+            // Draw the pie slices.
+            piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+                    .each(function(d) { this._current = d; })
+                    .style("fill", function(d) { return segColor(d.data.type); })
+                    .on("mouseover",mouseover).on("mouseout",mouseout);
+
+            // create function to update pie-chart. This will be used by histogram.
+            pC.update = function(nD){
+                piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+                        .attrTween("d", arcTween);
+            }
+            // Utility function to be called on mouseover a pie slice.
+            function mouseover(d){
+                // call the update function of histogram with new data.
+                hG.update(fData.map(function(v){
+                    return [v.State,v.freq[d.data.type]];}),segColor(d.data.type));
+            }
+            //Utility function to be called on mouseout a pie slice.
+            function mouseout(d){
+                // call the update function of histogram with all data.
+                hG.update(fData.map(function(v){
+                    return [v.State,v.total];}), barColor);
+            }
+            // Animating the pie-slice requiring a custom function which specifies
+            // how the intermediate paths should be drawn.
+            function arcTween(a) {
+                var i = d3.interpolate(this._current, a);
+                this._current = i(0);
+                return function(t) { return arc(i(t));    };
+            }
+            return pC;
+        }
+
+        // function to handle legend.
+        function legend(lD){
+            var leg = {};
+
+            // create table for legend.
+            var legend = d3.select(id).append("table").attr('class','legend');
+
+            // create one row per segment.
+            var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+
+            // create the first column for each segment.
+            tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+                    .attr("width", '16').attr("height", '16')
+                    .attr("fill",function(d){ return segColor(d.type); });
+
+            // create the second column for each segment.
+            tr.append("td").text(function(d){ return d.type;});
+
+            // create the third column for each segment.
+            tr.append("td").attr("class",'legendFreq')
+                    .text(function(d){ return d3.format(",")(d.freq);});
+
+            // create the fourth column for each segment.
+            tr.append("td").attr("class",'legendPerc')
+                    .text(function(d){ return getLegend(d,lD);});
+
+            // Utility function to be used to update the legend.
+            leg.update = function(nD){
+                // update the data attached to the row elements.
+                var l = legend.select("tbody").selectAll("tr").data(nD);
+
+                // update the frequencies.
+                l.select(".legendFreq").text(function(d){ return d3.format(",")(d.freq);});
+
+                // update the percentage column.
+                l.select(".legendPerc").text(function(d){ return getLegend(d,nD);});
+            }
+
+            function getLegend(d,aD){ // Utility function to compute percentage.
+                return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
+            }
+
+            return leg;
+        }
+
+        // calculate total frequency by segment for all state.
+        var tF = ['application/mp4', 'application/msword', 'application/octet-stream', 'application/pdf', 'application/rss+xml', 'application/xhtml+xml', 'application/xml', 'audio/mpeg', 'image/gif', 'image/jpeg', 'image/png', 'text/html', 'text/plain', 'video/mp4', 'video/quicktime'].map(function(d) {
+            return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))};
+        });
+
+        // calculate total frequency by state for all segment.
+        var sF = fData.map(function(d){return [d.State,d.total];});
+
+        var hG = histoGram(sF), // create the histogram.
+                pC = pieChart(tF), // create the pie-chart.
+                leg= legend(tF);  // create the legend.
+    }
+</script>
+
+<script>
+    var freqData=[
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 2,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 0,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 1,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 0,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "be"
+        },
+        {
+            "freq": {
+                "application/mp4": 15,
+                "application/msword": 0,
+                "application/octet-stream": 2,
+                "application/pdf": 27,
+                "application/rss+xml": 1,
+                "application/xhtml+xml": 1,
+                "application/xml": 1,
+                "audio/mpeg": 0,
+                "image/gif": 3,
+                "image/jpeg": 1,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 31,
+                "video/mp4": 2,
+                "video/quicktime": 0
+            },
+            "State": "ca"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 0,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 1,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 10,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "da"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 4,
+                "application/xhtml+xml": 5,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 2,
+                "text/plain": 0,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "de"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 333,
+                "application/octet-stream": 18,
+                "application/pdf": 4,
+                "application/rss+xml": 2378,
+                "application/xhtml+xml": 1209,
+                "application/xml": 502,
+                "audio/mpeg": 1,
+                "image/gif": 18,
+                "image/jpeg": 1,
+                "image/png": 1,
+                "text/html": 1025,
+                "text/plain": 2460,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "en"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 0,
+                "application/xml": 1,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 45,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "eo"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 5,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 3,
+                "application/xhtml+xml": 2,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 1,
+                "text/html": 0,
+                "text/plain": 1,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "es"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 4,
+                "application/pdf": 15,
+                "application/rss+xml": 295,
+                "application/xhtml+xml": 1262,
+                "application/xml": 641,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 8,
+                "image/png": 105,
+                "text/html": 704,
+                "text/plain": 1155,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "et"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 3,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 0,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "fa"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 1,
+                "application/xhtml+xml": 2,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 1,
+                "image/png": 0,
+                "text/html": 1,
+                "text/plain": 6,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "fi"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 9,
+                "application/rss+xml": 384,
+                "application/xhtml+xml": 67,
+                "application/xml": 91,
+                "audio/mpeg": 0,
+                "image/gif": 1,
+                "image/jpeg": 0,
+                "image/png": 1,
+                "text/html": 27,
+                "text/plain": 271,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "fr"
+        },
+        {
+            "freq": {
+                "application/mp4": 1,
+                "application/msword": 7,
+                "application/octet-stream": 10,
+                "application/pdf": 9,
+                "application/rss+xml": 11,
+                "application/xhtml+xml": 30,
+                "application/xml": 5,
+                "audio/mpeg": 0,
+                "image/gif": 14,
+                "image/jpeg": 8,
+                "image/png": 11,
+                "text/html": 13,
+                "text/plain": 53,
+                "video/mp4": 2,
+                "video/quicktime": 0
+            },
+            "State": "gl"
+        },
+        {
+            "freq": {
+                "application/mp4": 219,
+                "application/msword": 89,
+                "application/octet-stream": 80,
+                "application/pdf": 1849,
+                "application/rss+xml": 11,
+                "application/xhtml+xml": 1364,
+                "application/xml": 9,
+                "audio/mpeg": 391,
+                "image/gif": 6674,
+                "image/jpeg": 1396,
+                "image/png": 3555,
+                "text/html": 900,
+                "text/plain": 1077,
+                "video/mp4": 169,
+                "video/quicktime": 36
+            },
+            "State": "hu"
+        },
+        {
+            "freq": {
+                "application/mp4": 4,
+                "application/msword": 1,
+                "application/octet-stream": 43,
+                "application/pdf": 84,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 1,
+                "application/xml": 1,
+                "audio/mpeg": 0,
+                "image/gif": 164,
+                "image/jpeg": 113,
+                "image/png": 121,
+                "text/html": 0,
+                "text/plain": 37,
+                "video/mp4": 16,
+                "video/quicktime": 0
+            },
+            "State": "is"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 3,
+                "application/octet-stream": 0,
+                "application/pdf": 1,
+                "application/rss+xml": 773,
+                "application/xhtml+xml": 2624,
+                "application/xml": 362,
+                "audio/mpeg": 0,
+                "image/gif": 11,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 1617,
+                "text/plain": 1273,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "it"
+        },
+        {
+            "freq": {
+                "application/mp4": 6,
+                "application/msword": 10,
+                "application/octet-stream": 46,
+                "application/pdf": 779,
+                "application/rss+xml": 651,
+                "application/xhtml+xml": 1093,
+                "application/xml": 3176,
+                "audio/mpeg": 12,
+                "image/gif": 226,
+                "image/jpeg": 421,
+                "image/png": 721,
+                "text/html": 2881,
+                "text/plain": 1341,
+                "video/mp4": 35,
+                "video/quicktime": 6
+            },
+            "State": "lt"
+        },
+        {
+            "freq": {
+                "application/mp4": 1,
+                "application/msword": 0,
+                "application/octet-stream": 1,
+                "application/pdf": 0,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 1,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 2,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "nl"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 9,
+                "application/rss+xml": 50,
+                "application/xhtml+xml": 113,
+                "application/xml": 37,
+                "audio/mpeg": 0,
+                "image/gif": 4,
+                "image/jpeg": 0,
+                "image/png": 15,
+                "text/html": 302,
+                "text/plain": 941,
+                "video/mp4": 2,
+                "video/quicktime": 0
+            },
+            "State": "no"
+        },
+        {
+            "freq": {
+                "application/mp4": 8,
+                "application/msword": 4,
+                "application/octet-stream": 16,
+                "application/pdf": 266,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 4,
+                "application/xml": 1,
+                "audio/mpeg": 0,
+                "image/gif": 86,
+                "image/jpeg": 165,
+                "image/png": 122,
+                "text/html": 1,
+                "text/plain": 0,
+                "video/mp4": 4,
+                "video/quicktime": 0
+            },
+            "State": "pl"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 0,
+                "application/xml": 1,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 11,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "pt"
+        },
+        {
+            "freq": {
+                "application/mp4": 5,
+                "application/msword": 1,
+                "application/octet-stream": 4,
+                "application/pdf": 7,
+                "application/rss+xml": 410,
+                "application/xhtml+xml": 2055,
+                "application/xml": 152,
+                "audio/mpeg": 0,
+                "image/gif": 1,
+                "image/jpeg": 27,
+                "image/png": 12,
+                "text/html": 2170,
+                "text/plain": 1114,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "ro"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 3,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 0,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "ru"
+        },
+        {
+            "freq": {
+                "application/mp4": 239,
+                "application/msword": 47,
+                "application/octet-stream": 71,
+                "application/pdf": 6837,
+                "application/rss+xml": 15,
+                "application/xhtml+xml": 151,
+                "application/xml": 15,
+                "audio/mpeg": 96,
+                "image/gif": 2792,
+                "image/jpeg": 7859,
+                "image/png": 5335,
+                "text/html": 356,
+                "text/plain": 151,
+                "video/mp4": 270,
+                "video/quicktime": 58
+            },
+            "State": "sk"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 3,
+                "application/pdf": 0,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 2,
+                "application/xml": 5,
+                "audio/mpeg": 0,
+                "image/gif": 4,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 19,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "sl"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 1,
+                "application/pdf": 1,
+                "application/rss+xml": 1,
+                "application/xhtml+xml": 0,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 0,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "sv"
+        },
+        {
+            "freq": {
+                "application/mp4": 0,
+                "application/msword": 0,
+                "application/octet-stream": 0,
+                "application/pdf": 0,
+                "application/rss+xml": 12,
+                "application/xhtml+xml": 3,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 1,
+                "text/plain": 0,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "th"
+        },
+        {
+            "freq": {
+                "application/mp4": 2,
+                "application/msword": 0,
+                "application/octet-stream": 1,
+                "application/pdf": 101,
+                "application/rss+xml": 0,
+                "application/xhtml+xml": 5,
+                "application/xml": 0,
+                "audio/mpeg": 0,
+                "image/gif": 0,
+                "image/jpeg": 0,
+                "image/png": 0,
+                "text/html": 0,
+                "text/plain": 2,
+                "video/mp4": 0,
+                "video/quicktime": 0
+            },
+            "State": "uk"
+        }
+    ];
+
+    dashboard('#dashboard',freqData);
+</script>

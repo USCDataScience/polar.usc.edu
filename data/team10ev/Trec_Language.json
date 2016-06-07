@@ -1,0 +1,160 @@
+{
+	"header": {
+		"title": {
+			"text": "Language Diversity of TREC Dataset",
+			"fontSize": 54,
+			"font": "open sans"
+		},
+		"subtitle": {
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "open sans"
+		},
+		"titleSubtitlePadding": 9
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 10,
+		"font": "open sans",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasHeight": 900,
+		"canvasWidth": 1200,
+		"pieInnerRadius": "13%",
+		"pieOuterRadius": "92%"
+	},
+	"data": {
+		"sortOrder": "value-desc",
+		"smallSegmentGrouping": {
+			"enabled": true,
+			"value": 0.01
+		},
+		"content": [
+    {
+        "label": "Belarusian", 
+        "value": 10000, 
+        "color": "#667f57"
+    }, 
+    {
+        "label": "French", 
+        "value": 14000, 
+        "color": "#45578b"
+    }, 
+    {
+        "label": "English", 
+        "value": 90000, 
+        "color": "#858d3e"
+    }, 
+    {
+        "label": "Norwegian", 
+        "value": 10000, 
+        "color": "#14555e"
+    }, 
+    {
+        "label": "Catalan; Valencian", 
+        "value": 3000, 
+        "color": "#c3dde6"
+    }, 
+    {
+        "label": "Italian", 
+        "value": 28000, 
+        "color": "#3b479e"
+    }, 
+    {
+        "label": "Hungarian", 
+        "value": 16600, 
+        "color": "#d55f6e"
+    }, 
+    {
+        "label": "Slovak", 
+        "value": 11400, 
+        "color": "#e09a67"
+    }, 
+    {
+        "label": "Lithuanian", 
+        "value": 5880, 
+        "color": "#0aa1da"
+    }, 
+    {
+        "label": "Spanish; Castilian", 
+        "value": 2000, 
+        "color": "#b2e547"
+    }, 
+    {
+        "label": "Estonian", 
+        "value": 1600, 
+        "color": "#02378d"
+    }, 
+    {
+        "label": "Romanian, Moldavian, Moldovan", 
+        "value": 3100, 
+        "color": "#9cd6fd"
+    }, 
+    {
+        "label": "Icelandic", 
+        "value": 1800, 
+        "color": "#7e492d"
+    }, 
+    {
+        "label": "Polish", 
+        "value": 500, 
+        "color": "#8d51bc"
+    }, 
+    {
+        "label": "Galician", 
+        "value": 400, 
+        "color": "#8e57c6"
+    }
+]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-value1",
+			"pieDistance": 50
+		},
+		"inner": {
+			"hideWhenLessThanPercentage": 2
+		},
+		"mainLabel": {
+			"fontSize": 11
+		},
+		"percentage": {
+			"color": "#ffffff",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#adadad",
+			"fontSize": 11
+		},
+		"lines": {
+			"enabled": true
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"tooltips": {
+		"enabled": true,
+		"type": "placeholder",
+		"string": "{label}: {value}",
+		"styles": {
+			"borderRadius": 4,
+			"font": "verdana",
+			"fontSize": 14
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 25
+		}
+	},
+	"misc": {
+		"gradient": {
+			"enabled": true,
+			"percentage": 100
+		}
+	}
+}

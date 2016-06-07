@@ -1,0 +1,4 @@
+{
+    "org.apache.tika.parser.DefaultParser": 21955, 
+    "org.apache.tika.parser.html.HtmlParser": 21955
+}

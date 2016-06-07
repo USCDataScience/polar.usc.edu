@@ -1,0 +1,205 @@
+{
+    "tooltips": {
+        "styles": {
+            "borderRadius": 4, 
+            "font": "verdana", 
+            "fontSize": 14
+        }, 
+        "type": "placeholder", 
+        "enabled": true, 
+        "string": "{label}: {value}"
+    }, 
+    "footer": {
+        "color": "#999999", 
+        "font": "open sans", 
+        "fontSize": 10, 
+        "location": "bottom-left"
+    }, 
+    "labels": {
+        "mainLabel": {
+            "fontSize": 11
+        }, 
+        "outer": {
+            "pieDistance": 50, 
+            "format": "label-value1"
+        }, 
+        "lines": {
+            "enabled": true
+        }, 
+        "value": {
+            "color": "#adadad", 
+            "fontSize": 11
+        }, 
+        "inner": {
+            "hideWhenLessThanPercentage": 2
+        }, 
+        "percentage": {
+            "color": "#ffffff", 
+            "decimalPlaces": 0
+        }, 
+        "truncation": {
+            "enabled": true
+        }
+    }, 
+    "misc": {
+        "gradient": {
+            "percentage": 100, 
+            "enabled": true
+        }
+    }, 
+    "header": {
+        "subtitle": {
+            "color": "#999999", 
+            "font": "open sans", 
+            "fontSize": 12
+        }, 
+        "titleSubtitlePadding": 9, 
+        "title": {
+            "text": "File Size Diversity by Mime Type", 
+            "font": "open sans", 
+            "fontSize": 54
+        }
+    }, 
+    "effects": {
+        "pullOutSegmentOnClick": {
+            "speed": 400, 
+            "effect": "linear", 
+            "size": 25
+        }
+    }, 
+    "data": {
+        "content": [
+            {
+                "label": "image/x-ms-bmp", 
+                "value": 0.0, 
+                "color": "#b8bdc1"
+            }, 
+            {
+                "label": "image/jpeg", 
+                "value": 0.0, 
+                "color": "#cdec53"
+            }, 
+            {
+                "label": "image/svg+xml", 
+                "value": 0.0, 
+                "color": "#91cddf"
+            }, 
+            {
+                "label": "image/vnd.microsoft.icon", 
+                "value": 0.01, 
+                "color": "#8338f1"
+            }, 
+            {
+                "label": "application/fits", 
+                "value": 0.01, 
+                "color": "#e64fa8"
+            }, 
+            {
+                "label": "application/pdf", 
+                "value": 0.14, 
+                "color": "#80975d"
+            }, 
+            {
+                "label": "message/rfc822", 
+                "value": 0.0, 
+                "color": "#8a20b0"
+            }, 
+            {
+                "label": "image/gif", 
+                "value": 0.0, 
+                "color": "#433d6a"
+            }, 
+            {
+                "label": "application/xml", 
+                "value": 0.13, 
+                "color": "#d8090b"
+            }, 
+            {
+                "label": "audio/mpeg", 
+                "value": 0.58, 
+                "color": "#89e644"
+            }, 
+            {
+                "label": "audio/x-wav", 
+                "value": 0.0, 
+                "color": "#ebebd4"
+            }, 
+            {
+                "label": "application/mp4", 
+                "value": 0.01, 
+                "color": "#cd2c4d"
+            }, 
+            {
+                "label": "application/rdf+xml", 
+                "value": 0.0, 
+                "color": "#0f7538"
+            }, 
+            {
+                "label": "application/vnd.google-earth.kml+xml", 
+                "value": 0.0, 
+                "color": "#ae5079"
+            }, 
+            {
+                "label": "text/plain", 
+                "value": 0.02, 
+                "color": "#cd7671"
+            }, 
+            {
+                "label": "application/xhtml+xml", 
+                "value": 0.41, 
+                "color": "#093176"
+            }, 
+            {
+                "label": "application/atom+xml", 
+                "value": 0.0, 
+                "color": "#5f99ec"
+            }, 
+            {
+                "label": "audio/basic", 
+                "value": 0.0, 
+                "color": "#edc2bc"
+            }, 
+            {
+                "label": "text/html", 
+                "value": 0.39, 
+                "color": "#1bbad9"
+            }, 
+            {
+                "label": "image/x-xcf", 
+                "value": 0.0, 
+                "color": "#acff16"
+            }, 
+            {
+                "label": "application/rss+xml", 
+                "value": 0.0, 
+                "color": "#f170c7"
+            }, 
+            {
+                "label": "application/zip", 
+                "value": 0.0, 
+                "color": "#d64654"
+            }, 
+            {
+                "label": "audio/x-aiff", 
+                "value": 0.76, 
+                "color": "#79923e"
+            }, 
+            {
+                "label": "application/epub+zip", 
+                "value": 0.0, 
+                "color": "#3a9265"
+            }
+        ], 
+        "smallSegmentGrouping": {
+            "enabled": true, 
+            "value": 0.01
+        }, 
+        "sortOrder": "value-desc"
+    }, 
+    "size": {
+        "canvasHeight": 900, 
+        "canvasWidth": 1200, 
+        "pieInnerRadius": "13%", 
+        "pieOuterRadius": "92%"
+    }
+}

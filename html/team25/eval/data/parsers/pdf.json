@@ -1,0 +1,6 @@
+{
+    "org.apache.tika.parser.pdf.PDFParser": 28558, 
+    "org.apache.tika.parser.microsoft.OfficeParser": 1, 
+    "org.apache.tika.parser.DefaultParser": 28569, 
+    "org.apache.tika.parser.txt.TXTParser": 10
+}

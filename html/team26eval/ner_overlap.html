@@ -23,8 +23,7 @@ path.link {
 
 </style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="../../js/team26eval/d3.v3.min.js"></script>
 <script>
 
 var margin = {top: 30, right: 20, bottom: 30, left: 20},
@@ -47,7 +46,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("/Users/dhruvbhatia/Documents/Assignment3_CSCI599/ner_overlap.json", function(error, flare) {
+d3.json("../../data/team26eval/ner_overlap.json", function(error, flare) {
   if (error) throw error;
 
   flare.x0 = 0;

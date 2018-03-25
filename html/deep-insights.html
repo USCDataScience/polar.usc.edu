@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>USC Data Science - Polar Database</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scrolling Nav CSS -->
+    <link href="/css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/styles.css" rel="stylesheet">
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <div id="nav-main">
+    <nav class="navbar mav-main navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/" style="color:white">IRDS</a>
+            </div>
+        </div>
+    </nav>
+  </div>
+
+    <!-- Intro Section -->
+    <!-- <div>
+        <section id="intro" class="intro-section">
+            <div class="container" style="padding-top:100px">
+                <div class="row">
+                    <div class="col-lg-12" >
+                        <h1 class="title">Polar Data Insights</h1>
+                        <h3>USC Data Science</h3>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top:180px">
+                  <div class="col-md-12">
+                    <a class="btn btn-default btn-lg page-scroll" href="#about" style="margin-top:5%">Learn More</a>
+                  </div>
+                </div>
+
+                <div class="row" style="padding-top:30px">
+                    <div class="col-md-3 col-md-offset-1">
+                      <a class="btn btn-default btn-lg page-scroll pull-right"
+                      href="http://polar.usc.edu/Polar/banana/#/dashboard" style="margin-top:2%">Search Banana</a>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="btn btn-default btn-lg page-scroll"
+                      href="html/d3-examples.html" style="margin-top:2%">Explore Visualizations</a>
+                    </div>
+                    <div class="col-md-3">
+                      <a class="btn btn-default btn-lg page-scroll pull-left"
+                      href="http://polar.usc.edu/Polar/facetview/" style="margin-top:2%">Search Facetview</a>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top:30px">
+                  <div class="col-md-4 col-md-offset-4">
+                      <a class="btn btn-default btn-lg page-scroll btn-block"
+                      href="/html/deep-insights.html" style="margin-top:2%">Deep Insights</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div> -->
+
+    <!-- About Section -->
+    <!-- <div>
+        <section id="about" class="about-section" style="margin-top:-1%; margin-bottom:5%">
+            <div class="container">
+                <div class="row">
+
+                    <hr class="about-divider">
+                    <h1>About Us</h1>
+                    <hr class="about-divider">
+
+                    <div class="jumbotron" style="margin-bottom:5%; margin-top:3%">
+                        <h2>What is Polar Data Insights?</h2>
+                        <p class="lead text-left" style="margin-top:2%">JPL and USC, under the direction of Dr. Chris Mattmann, have worked to collect a corpus of “deep web” polar datasets spanning many file types containing scientific data such as images, videos, and other information on the Web. These pieces of data were collected using Apache Nutch, Apache Tika, and Apache Solr.</p>
+                        <p class="lead text-left">Our goal is to aggregate this data into an intuitive search engine that scientists can utilize for polar research. Additionally, the data is analyzed and illustrated using visualization APIs Banana and D3.js, providing researchers a better understanding of the data's relationship within the Polar ecosystem.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                       <div class="media">
+                          <div class="media-left">
+                              <img class="media-object" src="images/searchimg.jpg" alt="...">
+                          </div>
+                          <div class="media-body">
+                              <h4 class="media-heading">Search Engine</h4>
+                              Providing researchers with a powerful tool to find relevant data sets and websites.
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                       <div class="media">
+                          <div class="media-left">
+                              <img class="media-object" src="images/visualimg.jpg" alt="...">
+                          </div>
+                          <div class="media-body">
+                              <h4 class="media-heading">Visualizer</h4>
+                              Illustrating data set connections and related terms to narrow searches.
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                       <div class="media">
+                          <div class="media-left">
+                              <img class="media-object" src="images/publicizer.png" alt="...">
+                          </div>
+                          <div class="media-body">
+                              <h4 class="media-heading">Publicizer</h4>
+                              Demonstrate the value of these polar data sets to the NSF, USC, and NASA.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> -->
+
+    <!-- Features Section -->
+    <div>
+        <section id="features" class="features-section" style="margin-top:-1%; margin-bottom:5%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                      <h1>Deep Insights</h1>
+                      <hr class="featurette-divider">
+                    </div>
+
+                    <!--Banana Feature-->
+                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                        <div class="col-md-7">
+                          <h2 align=left class="featurette-heading">
+                            Semantic search and prediction
+                          </h2>
+                          <p align=left class="lead">Filter documents through relationships between concepts;
+                            Study aggregate conceptual trends;
+                            Higher order conceptual inference</p>
+                        </div>
+                        <div class="col-md-5">
+                          <img class="featurette-image img-responsive center-block"
+                            src="/images/deep-1.png"
+                            alt="Generic placeholder image"
+                            width="300"/>
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                        <div class="col-md-7 col-md-push-5">
+                          <h2 align=left class="featurette-heading">Temporal Trends</h2>
+                          <p align=left class="lead">Study how mentions of concepts/keywords varie over time</p>
+                        </div>
+                        <div class="col-md-5 col-md-pull-7">
+                          <img class="featurette-image img-responsive center-block"
+                            src="/images/deep-3.png"
+                            alt="Generic placeholder image"/>
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette" style="margin-top:3%">
+                        <div class="col-md-7">
+                          <h2 align=left class="featurette-heading">Spatial Trends</h2>
+                          <p align=left class="lead">Study how frequently locatations are mentioned within specfic document subsets</p>
+                        </div>
+                        <div class="col-md-5">
+                          <img class="featurette-image img-responsive center-block"
+                            src="/images/deep-2.png"
+                            alt="Generic placeholder image"/>
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette" style="margin-top:3%; margin-bottom:3%">
+                        <div class="col-md-7 col-md-push-5">
+                          <h2 align=left class="featurette-heading">Measurement trends</h2>
+                          <p align=left class="lead">Study detailed histogram of measurements</p>
+                        </div>
+                        <div class="col-md-5 col-md-pull-7">
+                          <img class="featurette-image img-responsive center-block"
+                            src="/images/deep-4.png"
+                            alt="Generic placeholder image"
+                            width="300"/>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div>
+      <div class="container">
+        <h3>Getting started</h3>
+        <ol>
+          <li>Navigate to the web application <a href="http://polar.usc.edu/html/polar-deep-insights/#/config">configration page</a></li>
+          <li>
+            Click on "NSIDC-Crawl" (blue button) to point the application to the latest crawl index. This will loadd the configration form.
+            <i>Don't forget to click on save.</i>
+            <img class="img-responsive" src="/images/deep-5.png" width="300"/>
+          </li>
+          <li>
+            Click on "download" (yellow button) to download the ontology graph onto your browser's local storage.
+            <img class="img-responsive" src="/images/deep-6.png" width="300"/>
+          </li>
+          <li>
+            Click on "download" (bright blue button) additional precomputed info for the app to function.
+            <img class="img-responsive" src="/images/deep-7.png" width="300"/>
+          </li>
+          <li>
+            You are all set to get started with the <a href="http://polar.usc.edu/html/polar-deep-insights/#/query">visualizations</a>.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div>
+      <div class="container">
+        <h3>Useful links</h3>
+        <ol>
+          <li><a href="https://youtu.be/VP38faQMM-g">Walk through video</a></li>
+          <li><a href="/docs/polar-deep-insights.pdf">Instruction manual</a></li>
+          <li><a href="https://github.com/uscDataScience/polar-deep-insights/wiki">Wiki</a></li>
+          <li><a href="https://github.com/uscDataScience/polar-deep-insights">Contribute here</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div>
+      <div class="container">
+        <h3>Presentations</h3>
+        <ol>
+          <li><a href="http://commons.esipfed.org/node/9663">Mining insights from the scientific web</a></li>
+          <li><a href="https://cpaess.ucar.edu/sites/default/files/meetings/earthcube2017/abstracts/mattmann-chris-abstract.pdf">Polar domain discovery</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div>
+        <div class="container">
+            <footer>
+                <p align=center>©USC Data Science Group 2016, All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/scrolling-nav.js"></script>
+    <script src="/js/cardpanel.js"></script>
+</body>
+
+</html>
